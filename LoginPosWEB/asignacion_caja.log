@@ -1,0 +1,2500 @@
+2025-03-06 15:11:00,588 - INFO - Inicio del script
+2025-03-06 15:11:14,975 - INFO - Perfil 'Administrador' seleccionado.
+2025-03-06 15:11:19,115 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-11-00\login_2025-03-06_15-11-00.png
+2025-03-06 15:11:19,115 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 15:11:19,115 - INFO - Iniciando gesti�n de caja.
+2025-03-06 15:11:19,152 - INFO - Accedi� al men� 'Administr.or'.
+2025-03-06 15:11:20,193 - INFO - Accedi� a 'Gesti�n .ja'.
+2025-03-06 15:11:21,228 - INFO - Men� lateral cerrado.
+2025-03-06 15:11:22,268 - INFO - Se presion� 'Cerrar Ca.'.
+2025-03-06 15:11:23,304 - INFO - Cierre de caja confirmado.
+2025-03-06 15:11:24,336 - INFO - Se presion� 'Abrir Ca.'.
+2025-03-06 15:11:25,404 - INFO - N�mero de documento del cajero ingresado.
+2025-03-06 15:11:26,430 - INFO - Opci�n 'Vendedor Fijo' seleccionada.
+2025-03-06 15:11:27,459 - INFO - Cajero asignado correctamente.
+2025-03-06 15:11:28,459 - INFO - Gesti�n de caja completada exitosamente.
+2025-03-06 15:11:28,515 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-11-00\gestion_caja_2025-03-06_15-11-00.png
+2025-03-06 15:11:30,940 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-11-00\logout_2025-03-06_15-11-00.png
+2025-03-06 15:11:30,940 - INFO - Cierre de sesi�n exitoso.
+2025-03-06 15:11:34,258 - INFO - Navegador cerrado.
+2025-03-06 15:12:17,418 - INFO - Inicio del script
+2025-03-06 15:12:30,758 - INFO - Perfil 'Administrador' seleccionado.
+2025-03-06 15:12:34,516 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-12-17\login_2025-03-06_15-12-17.png
+2025-03-06 15:12:34,516 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 15:12:34,516 - INFO - Iniciando gesti�n de caja.
+2025-03-06 15:12:34,549 - INFO - Accedi� al men� 'Administr.or'.
+2025-03-06 15:12:35,594 - INFO - Accedi� a 'Gesti�n .ja'.
+2025-03-06 15:12:36,634 - INFO - Men� lateral cerrado.
+2025-03-06 15:12:37,668 - INFO - Se presion� 'Cerrar Ca.'.
+2025-03-06 15:12:38,701 - INFO - Cierre de caja confirmado.
+2025-03-06 15:12:39,784 - INFO - Se presion� 'Abrir Ca.'.
+2025-03-06 15:12:40,848 - INFO - N�mero de documento del cajero ingresado.
+2025-03-06 15:12:41,880 - INFO - Opci�n 'Vendedor Fijo' seleccionada.
+2025-03-06 15:12:42,910 - INFO - Cajero asignado correctamente.
+2025-03-06 15:12:43,911 - INFO - Gesti�n de caja completada exitosamente.
+2025-03-06 15:12:43,959 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-12-17\gestion_caja_2025-03-06_15-12-17.png
+2025-03-06 15:12:46,369 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-12-17\logout_2025-03-06_15-12-17.png
+2025-03-06 15:12:46,369 - INFO - Cierre de sesi�n exitoso.
+2025-03-06 15:12:49,729 - INFO - Navegador cerrado.
+2025-03-06 15:17:01,863 - INFO - Inicio del script
+2025-03-06 15:17:14,756 - INFO - Perfil 'Administrador' seleccionado.
+2025-03-06 15:17:23,170 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-17-01\login_2025-03-06_15-17-01.png
+2025-03-06 15:17:23,170 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 15:17:23,170 - INFO - Iniciando gesti�n de caja.
+2025-03-06 15:17:33,278 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-06 15:17:33,314 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-17-01\gestion_caja_2025-03-06_15-17-01.png
+2025-03-06 15:17:40,480 - INFO - Navegador cerrado.
+2025-03-06 15:17:51,399 - INFO - Inicio del script
+2025-03-06 15:18:06,055 - INFO - Perfil 'Administrador' seleccionado.
+2025-03-06 15:18:09,964 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-17-51\login_2025-03-06_15-17-51.png
+2025-03-06 15:18:09,964 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 15:18:09,964 - INFO - Iniciando gesti�n de caja.
+2025-03-06 15:18:10,002 - INFO - Accedi� al men� 'Administr.or'.
+2025-03-06 15:18:11,040 - INFO - Accedi� a 'Gesti�n .ja'.
+2025-03-06 15:18:12,081 - INFO - Men� lateral cerrado.
+2025-03-06 15:18:13,117 - INFO - Se presion� 'Cerrar Ca.'.
+2025-03-06 15:18:14,160 - INFO - Cierre de caja confirmado.
+2025-03-06 15:18:15,191 - INFO - Se presion� 'Abrir Ca.'.
+2025-03-06 15:18:16,256 - INFO - N�mero de documento del cajero ingresado.
+2025-03-06 15:18:17,287 - INFO - Opci�n 'Vendedor Fijo' seleccionada.
+2025-03-06 15:18:18,326 - INFO - Cajero asignado correctamente.
+2025-03-06 15:18:19,326 - INFO - Gesti�n de caja completada exitosamente.
+2025-03-06 15:18:19,360 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-17-51\gestion_caja_2025-03-06_15-17-51.png
+2025-03-06 15:18:21,782 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-17-51\logout_2025-03-06_15-17-51.png
+2025-03-06 15:18:21,782 - INFO - Cierre de sesi�n exitoso.
+2025-03-06 15:18:25,307 - INFO - Navegador cerrado.
+2025-03-06 15:18:25,308 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-17-51\login_2025-03-06_15-17-51.log
+2025-03-06 15:35:28,317 - INFO - Inicio del script
+2025-03-06 15:35:45,358 - INFO - Perfil 'Administrador' seleccionado.
+2025-03-06 15:35:48,672 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-35-28\login_2025-03-06_15-35-28.png
+2025-03-06 15:35:48,658 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 15:35:48,658 - INFO - Iniciando gesti�n de caja.
+2025-03-06 15:35:48,705 - INFO - Accedi� al men� 'Administr.or'.
+2025-03-06 15:35:49,756 - INFO - Accedi� a 'Gesti�n .ja'.
+2025-03-06 15:35:50,816 - INFO - Men� lateral cerrado.
+2025-03-06 15:35:51,942 - INFO - Se presion� 'Cerrar Ca.'.
+2025-03-06 15:35:52,982 - INFO - Cierre de caja confirmado.
+2025-03-06 15:35:54,013 - INFO - Se presion� 'Abrir Ca.'.
+2025-03-06 15:35:55,064 - INFO - N�mero de documento del cajero ingresado.
+2025-03-06 15:35:56,089 - INFO - Opci�n 'Vendedor Fijo' seleccionada.
+2025-03-06 15:35:57,118 - INFO - Cajero asignado correctamente.
+2025-03-06 15:35:58,118 - INFO - Gesti�n de caja completada exitosamente.
+2025-03-06 15:35:58,154 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-35-28\gestion_caja_2025-03-06_15-35-28.png
+2025-03-06 15:36:00,521 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-35-28\logout_2025-03-06_15-35-28.png
+2025-03-06 15:36:00,521 - INFO - Cierre de sesi�n exitoso.
+2025-03-06 15:36:03,800 - INFO - Navegador cerrado.
+2025-03-06 15:36:03,802 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-35-28\login_2025-03-06_15-35-28.log
+2025-03-06 15:36:09,139 - INFO - Inicio del script
+2025-03-06 15:36:24,572 - INFO - Navegador cerrado.
+2025-03-06 15:37:10,077 - INFO - Inicio del script
+2025-03-06 15:37:26,321 - INFO - Perfil 'Administrador' seleccionado.
+2025-03-06 15:37:30,166 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-37-10\login_2025-03-06_15-37-10.png
+2025-03-06 15:37:30,167 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 15:37:30,167 - INFO - Iniciando gesti�n de caja.
+2025-03-06 15:37:30,211 - INFO - Accedi� al men� 'Administr.or'.
+2025-03-06 15:37:31,249 - INFO - Accedi� a 'Gesti�n .ja'.
+2025-03-06 15:37:32,288 - INFO - Men� lateral cerrado.
+2025-03-06 15:37:33,325 - INFO - Se presion� 'Cerrar Ca.'.
+2025-03-06 15:37:34,352 - INFO - Cierre de caja confirmado.
+2025-03-06 15:37:35,384 - INFO - Se presion� 'Abrir Ca.'.
+2025-03-06 15:37:36,446 - INFO - N�mero de documento del cajero ingresado.
+2025-03-06 15:37:37,478 - INFO - Opci�n 'Vendedor Fijo' seleccionada.
+2025-03-06 15:37:38,510 - INFO - Cajero asignado correctamente.
+2025-03-06 15:37:39,510 - INFO - Gesti�n de caja completada exitosamente.
+2025-03-06 15:37:39,592 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-37-10\gestion_caja_2025-03-06_15-37-10.png
+2025-03-06 15:37:41,996 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-37-10\logout_2025-03-06_15-37-10.png
+2025-03-06 15:37:41,997 - INFO - Cierre de sesi�n exitoso.
+2025-03-06 15:37:45,357 - INFO - Navegador cerrado.
+2025-03-06 15:37:45,359 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-37-10\login_2025-03-06_15-37-10.log
+2025-03-06 15:37:45,630 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-37-10\login_logs_2025-03-06_15-37-10.pdf
+2025-03-06 15:37:45,706 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-37-10\gestion_caja_2025-03-06_15-37-10.pdf
+2025-03-06 15:46:08,847 - INFO - Inicio del script
+2025-03-06 15:46:21,262 - INFO - Perfil 'Administrador' seleccionado.
+2025-03-06 15:46:26,886 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-46-08\login_2025-03-06_15-46-08.png
+2025-03-06 15:46:26,886 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 15:46:26,886 - INFO - Iniciando gesti�n de caja.
+2025-03-06 15:46:26,928 - INFO - Accedi� al men� 'Administr.or'.
+2025-03-06 15:46:27,969 - INFO - Accedi� a 'Gesti�n .ja'.
+2025-03-06 15:46:29,005 - INFO - Men� lateral cerrado.
+2025-03-06 15:46:30,041 - INFO - Se presion� 'Cerrar Ca.'.
+2025-03-06 15:46:31,071 - INFO - Cierre de caja confirmado.
+2025-03-06 15:46:32,107 - INFO - Se presion� 'Abrir Ca.'.
+2025-03-06 15:46:33,202 - INFO - N�mero de documento del cajero ingresado.
+2025-03-06 15:46:34,228 - INFO - Opci�n 'Vendedor Fijo' seleccionada.
+2025-03-06 15:46:35,259 - INFO - Cajero asignado correctamente.
+2025-03-06 15:46:36,259 - INFO - Gesti�n de caja completada exitosamente.
+2025-03-06 15:46:36,295 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-46-08\gestion_caja_2025-03-06_15-46-08.png
+2025-03-06 15:46:38,658 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-46-08\logout_2025-03-06_15-46-08.png
+2025-03-06 15:46:38,658 - INFO - Cierre de sesi�n exitoso.
+2025-03-06 15:46:41,992 - INFO - Navegador cerrado.
+2025-03-06 15:46:41,993 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-46-08\login_2025-03-06_15-46-08.log
+2025-03-06 15:46:42,233 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-46-08\login_logs_2025-03-06_15-46-08.pdf
+2025-03-06 15:46:42,321 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-46-08\gestion_caja_2025-03-06_15-46-08.pdf
+2025-03-06 15:52:52,756 - INFO - Inicio del script
+2025-03-06 15:53:04,811 - INFO - Perfil 'Administrador' seleccionado.
+2025-03-06 15:53:12,603 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-52-52\login_2025-03-06_15-52-52.png
+2025-03-06 15:53:12,603 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 15:53:12,603 - INFO - Iniciando gesti�n de caja.
+2025-03-06 15:53:12,647 - INFO - Accedi� al men� 'Administr.or'.
+2025-03-06 15:53:13,687 - INFO - Accedi� a 'Gesti�n .ja'.
+2025-03-06 15:53:14,729 - INFO - Men� lateral cerrado.
+2025-03-06 15:53:15,770 - INFO - Se presion� 'Cerrar Ca.'.
+2025-03-06 15:53:16,803 - INFO - Cierre de caja confirmado.
+2025-03-06 15:53:17,836 - INFO - Se presion� 'Abrir Ca.'.
+2025-03-06 15:53:18,901 - INFO - N�mero de documento del cajero ingresado.
+2025-03-06 15:53:19,933 - INFO - Opci�n 'Vendedor Fijo' seleccionada.
+2025-03-06 15:53:20,963 - INFO - Cajero asignado correctamente.
+2025-03-06 15:53:21,964 - INFO - Gesti�n de caja completada exitosamente.
+2025-03-06 15:53:22,004 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-52-52\gestion_caja_2025-03-06_15-52-52.png
+2025-03-06 15:53:24,455 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-52-52\logout_2025-03-06_15-52-52.png
+2025-03-06 15:53:24,456 - INFO - Cierre de sesi�n exitoso.
+2025-03-06 15:53:27,989 - INFO - Navegador cerrado.
+2025-03-06 15:53:27,991 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-52-52\login_2025-03-06_15-52-52.log
+2025-03-06 15:53:28,239 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-52-52\login_logs_2025-03-06_15-52-52.pdf
+2025-03-06 15:53:28,323 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-52-52\gestion_caja_2025-03-06_15-52-52.pdf
+2025-03-06 15:57:36,922 - INFO - Inicio del script
+2025-03-06 15:57:50,629 - INFO - Perfil 'Administrador' seleccionado.
+2025-03-06 15:57:59,167 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-57-36\login_2025-03-06_15-57-36.png
+2025-03-06 15:57:59,167 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 15:57:59,167 - INFO - Iniciando gesti�n de caja.
+2025-03-06 15:58:09,276 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-06 15:58:09,308 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-57-36\gestion_caja_2025-03-06_15-57-36.png
+2025-03-06 15:58:19,512 - ERROR - Error durante el proceso: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-06 15:58:23,057 - INFO - Navegador cerrado.
+2025-03-06 15:58:23,060 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-57-36\login_2025-03-06_15-57-36.log
+2025-03-06 15:58:23,167 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-57-36\login_logs_2025-03-06_15-57-36.pdf
+2025-03-06 15:58:23,244 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-57-36\gestion_caja_2025-03-06_15-57-36.pdf
+2025-03-06 15:58:28,218 - INFO - Inicio del script
+2025-03-06 15:58:40,419 - INFO - Perfil 'Administrador' seleccionado.
+2025-03-06 15:58:44,366 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-58-28\login_2025-03-06_15-58-28.png
+2025-03-06 15:58:44,366 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 15:58:44,367 - INFO - Iniciando gesti�n de caja.
+2025-03-06 15:58:44,424 - INFO - Accedi� al men� 'Administr.or'.
+2025-03-06 15:58:45,478 - INFO - Accedi� a 'Gesti�n .ja'.
+2025-03-06 15:58:46,525 - INFO - Men� lateral cerrado.
+2025-03-06 15:58:47,560 - INFO - Se presion� 'Cerrar Ca.'.
+2025-03-06 15:58:48,613 - INFO - Cierre de caja confirmado.
+2025-03-06 15:58:49,653 - INFO - Se presion� 'Abrir Ca.'.
+2025-03-06 15:58:50,589 - INFO - N�mero de documento del cajero ingresado.
+2025-03-06 15:58:51,765 - INFO - Opci�n 'Vendedor Fijo' seleccionada.
+2025-03-06 15:58:52,795 - INFO - Cajero asignado correctamente.
+2025-03-06 15:58:53,795 - INFO - Gesti�n de caja completada exitosamente.
+2025-03-06 15:58:53,830 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-58-28\gestion_caja_2025-03-06_15-58-28.png
+2025-03-06 15:58:56,218 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-58-28\logout_2025-03-06_15-58-28.png
+2025-03-06 15:58:56,218 - INFO - Cierre de sesi�n exitoso.
+2025-03-06 15:58:59,544 - INFO - Navegador cerrado.
+2025-03-06 15:58:59,546 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-58-28\login_2025-03-06_15-58-28.log
+2025-03-06 15:58:59,801 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_15-58-28\login_logs_2025-03-06_15-58-28.pdf
+2025-03-06 15:58:59,896 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_15-58-28\gestion_caja_2025-03-06_15-58-28.pdf
+2025-03-06 16:11:36,097 - INFO - Inicio del script
+2025-03-06 16:11:46,895 - INFO - Navegador abierto y p�gina cargada
+2025-03-06 16:11:46,976 - INFO - Redirigido a la p�gina de login
+2025-03-06 16:11:47,606 - INFO - Usuario ingresado
+2025-03-06 16:11:47,661 - INFO - Contrase�a ingresada
+2025-03-06 16:11:48,118 - INFO - Perfil 'Administrador' seleccionado
+2025-03-06 16:11:50,745 - INFO - Bot�n de login presionado
+2025-03-06 16:11:53,785 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_16-11-36\login_2025-03-06_16-11-36.png
+2025-03-06 16:11:53,786 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-06 16:11:53,786 - INFO - Iniciando gesti�n de caja.
+2025-03-06 16:11:53,823 - INFO - Accedi� al men� 'Administr.or'.
+2025-03-06 16:11:54,868 - INFO - Accedi� a 'Gesti�n .ja'.
+2025-03-06 16:11:55,902 - INFO - Men� lateral cerrado.
+2025-03-06 16:11:56,935 - INFO - Se presion� 'Cerrar Ca.'.
+2025-03-06 16:11:57,964 - INFO - Cierre de caja confirmado.
+2025-03-06 16:11:59,001 - INFO - Se presion� 'Abrir Ca.'.
+2025-03-06 16:12:00,091 - INFO - N�mero de documento del cajero ingresado.
+2025-03-06 16:12:01,132 - INFO - Opci�n 'Vendedor Fijo' seleccionada.
+2025-03-06 16:12:02,160 - INFO - Cajero asignado correctamente.
+2025-03-06 16:12:03,160 - INFO - Gesti�n de caja completada exitosamente.
+2025-03-06 16:12:03,202 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_16-11-36\gestion_caja_2025-03-06_16-11-36.png
+2025-03-06 16:12:05,587 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_16-11-36\logout_2025-03-06_16-11-36.png
+2025-03-06 16:12:05,587 - INFO - Cierre de sesi�n exitoso
+2025-03-06 16:12:08,917 - INFO - Navegador cerrado
+2025-03-06 16:12:08,918 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_16-11-36\login_2025-03-06_16-11-36.log
+2025-03-06 16:12:09,127 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-06_16-11-36\login_logs_2025-03-06_16-11-36.pdf
+2025-03-06 16:12:09,207 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-06_16-11-36\gestion_caja_2025-03-06_16-11-36.pdf
+2025-03-07 09:21:23,460 - INFO - Inicio del script
+2025-03-07 09:21:36,772 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 09:21:37,345 - INFO - Redirigido a la p�gina de login
+2025-03-07 09:21:38,162 - INFO - Usuario ingresado
+2025-03-07 09:21:38,217 - INFO - Contrase�a ingresada
+2025-03-07 09:21:38,607 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 09:21:39,674 - INFO - Bot�n de login presionado
+2025-03-07 09:21:42,717 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-21-23\login_2025-03-07_09-21-23.png
+2025-03-07 09:21:42,717 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 09:21:42,718 - INFO - Iniciando Ventas.
+2025-03-07 09:21:42,753 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 09:21:43,795 - INFO - Accedi� a 'Vent.'.
+2025-03-07 09:21:44,795 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 09:21:53,741 - INFO - Navegador cerrado
+2025-03-07 09:38:30,505 - INFO - Inicio del script
+2025-03-07 09:38:41,241 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 09:38:41,324 - INFO - Redirigido a la p�gina de login
+2025-03-07 09:38:41,904 - INFO - Usuario ingresado
+2025-03-07 09:38:41,993 - INFO - Contrase�a ingresada
+2025-03-07 09:38:42,488 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 09:38:42,780 - INFO - Bot�n de login presionado
+2025-03-07 09:38:45,822 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-38-30\login_2025-03-07_09-38-30.png
+2025-03-07 09:38:45,822 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 09:38:45,822 - INFO - Iniciando Ventas.
+2025-03-07 09:38:45,855 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 09:38:46,898 - INFO - Accedi� a 'Vent.'.
+2025-03-07 09:38:47,930 - INFO - Accedi� a 'Factur.'.
+2025-03-07 09:38:55,502 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 09:38:56,534 - INFO - Accedi� a 'Buscar Produc.'.
+2025-03-07 09:38:57,567 - INFO - Texto '12957' enviado al campo de b�squeda.
+2025-03-07 09:38:58,568 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 09:39:08,685 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 09:39:08,845 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_09-38-30\gestion_caja_2025-03-07_09-38-30.png
+2025-03-07 09:39:14,509 - INFO - Navegador cerrado
+2025-03-07 09:48:04,256 - INFO - Inicio del script
+2025-03-07 09:48:15,098 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 09:48:15,197 - INFO - Redirigido a la p�gina de login
+2025-03-07 09:48:18,424 - INFO - Usuario ingresado
+2025-03-07 09:48:18,519 - INFO - Contrase�a ingresada
+2025-03-07 09:48:18,966 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 09:48:20,006 - INFO - Bot�n de login presionado
+2025-03-07 09:48:23,051 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-48-04\login_2025-03-07_09-48-04.png
+2025-03-07 09:48:23,052 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 09:48:23,052 - INFO - Iniciando Ventas.
+2025-03-07 09:48:23,086 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 09:48:24,123 - INFO - Accedi� a 'Vent.'.
+2025-03-07 09:48:25,175 - INFO - Accedi� a 'Factur.'.
+2025-03-07 09:48:32,959 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 09:48:37,367 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 09:48:47,774 - INFO - Navegador cerrado
+2025-03-07 09:48:59,304 - INFO - Inicio del script
+2025-03-07 09:49:12,971 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 09:49:13,033 - INFO - Redirigido a la p�gina de login
+2025-03-07 09:49:13,668 - INFO - Usuario ingresado
+2025-03-07 09:49:13,726 - INFO - Contrase�a ingresada
+2025-03-07 09:49:14,155 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 09:49:14,457 - INFO - Bot�n de login presionado
+2025-03-07 09:49:17,498 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-48-59\login_2025-03-07_09-48-59.png
+2025-03-07 09:49:17,498 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 09:49:17,498 - INFO - Iniciando Ventas.
+2025-03-07 09:49:17,530 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 09:49:18,574 - INFO - Accedi� a 'Vent.'.
+2025-03-07 09:49:19,617 - INFO - Accedi� a 'Factur.'.
+2025-03-07 09:49:27,325 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 09:49:31,826 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 09:49:41,938 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 09:49:42,012 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_09-48-59\gestion_caja_2025-03-07_09-48-59.png
+2025-03-07 09:49:44,494 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-48-59\logout_2025-03-07_09-48-59.png
+2025-03-07 09:49:44,495 - INFO - Cierre de sesi�n exitoso
+2025-03-07 09:49:47,904 - INFO - Navegador cerrado
+2025-03-07 09:49:47,905 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-48-59\login_2025-03-07_09-48-59.log
+2025-03-07 09:49:48,178 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-48-59\login_logs_2025-03-07_09-48-59.pdf
+2025-03-07 09:49:48,286 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_09-48-59\gestion_caja_2025-03-07_09-48-59.pdf
+2025-03-07 09:53:08,098 - INFO - Inicio del script
+2025-03-07 09:53:19,031 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 09:53:19,106 - INFO - Redirigido a la p�gina de login
+2025-03-07 09:53:19,718 - INFO - Usuario ingresado
+2025-03-07 09:53:19,775 - INFO - Contrase�a ingresada
+2025-03-07 09:53:20,252 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 09:53:21,134 - INFO - Bot�n de login presionado
+2025-03-07 09:53:24,179 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-53-08\login_2025-03-07_09-53-08.png
+2025-03-07 09:53:24,180 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 09:53:24,180 - INFO - Iniciando Ventas.
+2025-03-07 09:53:24,222 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 09:53:25,259 - INFO - Accedi� a 'Vent.'.
+2025-03-07 09:53:26,324 - INFO - Accedi� a 'Factur.'.
+2025-03-07 09:53:33,856 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 09:53:38,366 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 09:53:48,470 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 09:53:48,537 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_09-53-08\gestion_caja_2025-03-07_09-53-08.png
+2025-03-07 09:53:51,067 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-53-08\logout_2025-03-07_09-53-08.png
+2025-03-07 09:53:51,067 - INFO - Cierre de sesi�n exitoso
+2025-03-07 09:53:56,104 - INFO - Navegador cerrado
+2025-03-07 09:53:56,106 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-53-08\login_2025-03-07_09-53-08.log
+2025-03-07 09:53:56,342 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-53-08\login_logs_2025-03-07_09-53-08.pdf
+2025-03-07 09:53:56,445 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_09-53-08\gestion_caja_2025-03-07_09-53-08.pdf
+2025-03-07 09:54:30,267 - INFO - Inicio del script
+2025-03-07 09:54:42,871 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 09:54:42,946 - INFO - Redirigido a la p�gina de login
+2025-03-07 09:54:43,558 - INFO - Usuario ingresado
+2025-03-07 09:54:43,584 - INFO - Contrase�a ingresada
+2025-03-07 09:54:43,981 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 09:54:44,322 - INFO - Bot�n de login presionado
+2025-03-07 09:54:47,366 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-54-30\login_2025-03-07_09-54-30.png
+2025-03-07 09:54:47,366 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 09:54:47,366 - INFO - Iniciando Ventas.
+2025-03-07 09:54:47,397 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 09:54:48,432 - INFO - Accedi� a 'Vent.'.
+2025-03-07 09:54:49,476 - INFO - Accedi� a 'Factur.'.
+2025-03-07 09:54:56,914 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 09:55:00,241 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 09:55:10,380 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 09:55:10,467 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_09-54-30\gestion_caja_2025-03-07_09-54-30.png
+2025-03-07 09:55:13,131 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-54-30\logout_2025-03-07_09-54-30.png
+2025-03-07 09:55:13,131 - INFO - Cierre de sesi�n exitoso
+2025-03-07 09:55:16,521 - INFO - Navegador cerrado
+2025-03-07 09:55:16,523 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-54-30\login_2025-03-07_09-54-30.log
+2025-03-07 09:55:16,585 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_09-54-30\login_logs_2025-03-07_09-54-30.pdf
+2025-03-07 09:55:16,835 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_09-54-30\gestion_caja_2025-03-07_09-54-30.pdf
+2025-03-07 10:05:48,033 - INFO - Inicio del script
+2025-03-07 10:05:58,212 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:05:58,321 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:05:58,943 - INFO - Usuario ingresado
+2025-03-07 10:05:58,972 - INFO - Contrase�a ingresada
+2025-03-07 10:05:59,363 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:06:00,240 - INFO - Bot�n de login presionado
+2025-03-07 10:06:03,285 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-05-48\login_2025-03-07_10-05-48.png
+2025-03-07 10:06:03,285 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:06:03,285 - INFO - Iniciando Ventas.
+2025-03-07 10:06:03,323 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:06:04,370 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:06:05,414 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:06:12,903 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:06:16,303 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:06:17,353 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:06:29,029 - INFO - Navegador cerrado
+2025-03-07 10:06:47,711 - INFO - Inicio del script
+2025-03-07 10:07:01,595 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:07:01,665 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:07:02,277 - INFO - Usuario ingresado
+2025-03-07 10:07:02,335 - INFO - Contrase�a ingresada
+2025-03-07 10:07:02,749 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:07:03,571 - INFO - Bot�n de login presionado
+2025-03-07 10:07:06,644 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-06-47\login_2025-03-07_10-06-47.png
+2025-03-07 10:07:06,645 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:07:06,645 - INFO - Iniciando Ventas.
+2025-03-07 10:07:06,687 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:07:07,723 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:07:08,782 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:07:16,512 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:07:19,893 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:07:20,947 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:07:33,403 - ERROR - Error en la gesti�n de caja: Message: 
+
+2025-03-07 10:07:33,403 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 10:07:43,502 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 10:07:43,606 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_10-06-47\gestion_caja_2025-03-07_10-06-47.png
+2025-03-07 10:07:47,292 - INFO - Navegador cerrado
+2025-03-07 10:10:22,593 - INFO - Inicio del script
+2025-03-07 10:10:35,967 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:10:36,034 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:10:36,638 - INFO - Usuario ingresado
+2025-03-07 10:10:36,693 - INFO - Contrase�a ingresada
+2025-03-07 10:10:37,080 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:10:37,860 - INFO - Bot�n de login presionado
+2025-03-07 10:10:40,900 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-10-22\login_2025-03-07_10-10-22.png
+2025-03-07 10:10:40,900 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:10:40,901 - INFO - Iniciando Ventas.
+2025-03-07 10:10:40,932 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:10:41,970 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:10:43,010 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:10:50,377 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:10:53,821 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:10:54,865 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:11:07,357 - ERROR - Error en la gesti�n de caja: Message: 
+
+2025-03-07 10:11:07,357 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 10:11:17,453 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 10:11:17,534 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_10-10-22\gestion_caja_2025-03-07_10-10-22.png
+2025-03-07 10:11:20,991 - INFO - Navegador cerrado
+2025-03-07 10:14:52,528 - INFO - Inicio del script
+2025-03-07 10:15:05,474 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:15:05,541 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:15:06,165 - INFO - Usuario ingresado
+2025-03-07 10:15:06,224 - INFO - Contrase�a ingresada
+2025-03-07 10:15:06,654 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:15:06,989 - INFO - Bot�n de login presionado
+2025-03-07 10:15:10,032 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-14-52\login_2025-03-07_10-14-52.png
+2025-03-07 10:15:10,032 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:15:10,033 - INFO - Iniciando Ventas.
+2025-03-07 10:15:10,066 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:15:11,104 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:15:12,157 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:15:19,948 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:15:23,495 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:15:24,537 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:15:37,052 - ERROR - Error en la gesti�n de caja: Message: 
+
+2025-03-07 10:15:37,053 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 10:15:48,579 - INFO - Navegador cerrado
+2025-03-07 10:20:58,367 - INFO - Inicio del script
+2025-03-07 10:21:12,454 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:21:12,532 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:21:13,132 - INFO - Usuario ingresado
+2025-03-07 10:21:13,187 - INFO - Contrase�a ingresada
+2025-03-07 10:21:13,607 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:21:13,875 - INFO - Bot�n de login presionado
+2025-03-07 10:21:16,919 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-20-58\login_2025-03-07_10-20-58.png
+2025-03-07 10:21:16,920 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:21:16,920 - INFO - Iniciando Ventas.
+2025-03-07 10:21:16,952 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:21:17,988 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:21:19,029 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:21:26,510 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:21:29,915 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:21:30,967 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:21:33,257 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:21:34,257 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 10:21:44,369 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 10:21:44,459 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_10-20-58\gestion_caja_2025-03-07_10-20-58.png
+2025-03-07 10:21:47,386 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-20-58\logout_2025-03-07_10-20-58.png
+2025-03-07 10:21:47,387 - INFO - Cierre de sesi�n exitoso
+2025-03-07 10:21:51,346 - INFO - Navegador cerrado
+2025-03-07 10:21:51,347 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-20-58\login_2025-03-07_10-20-58.log
+2025-03-07 10:21:51,578 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-20-58\login_logs_2025-03-07_10-20-58.pdf
+2025-03-07 10:21:51,660 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_10-20-58\gestion_caja_2025-03-07_10-20-58.pdf
+2025-03-07 10:38:06,290 - INFO - Inicio del script
+2025-03-07 10:38:18,502 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:38:18,615 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:38:19,765 - INFO - Usuario ingresado
+2025-03-07 10:38:19,818 - INFO - Contrase�a ingresada
+2025-03-07 10:38:20,376 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:38:23,968 - INFO - Bot�n de login presionado
+2025-03-07 10:38:27,019 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-38-06\login_2025-03-07_10-38-06.png
+2025-03-07 10:38:27,019 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:38:27,019 - INFO - Iniciando Ventas.
+2025-03-07 10:38:27,055 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:38:28,096 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:38:29,144 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:38:48,326 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:38:51,667 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:38:52,710 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:38:55,010 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:39:00,558 - INFO - Navegador cerrado
+2025-03-07 10:40:52,987 - INFO - Inicio del script
+2025-03-07 10:41:03,874 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:41:03,958 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:41:04,592 - INFO - Usuario ingresado
+2025-03-07 10:41:04,639 - INFO - Contrase�a ingresada
+2025-03-07 10:41:05,219 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:41:05,604 - INFO - Bot�n de login presionado
+2025-03-07 10:41:08,644 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-40-52\login_2025-03-07_10-40-52.png
+2025-03-07 10:41:08,644 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:41:08,644 - INFO - Iniciando Ventas.
+2025-03-07 10:41:08,677 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:41:09,744 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:41:10,810 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:41:41,077 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:41:48,245 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:41:49,310 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:41:51,784 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:41:57,368 - INFO - Navegador cerrado
+2025-03-07 10:43:05,770 - INFO - Inicio del script
+2025-03-07 10:43:17,877 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:43:17,969 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:43:18,564 - INFO - Usuario ingresado
+2025-03-07 10:43:18,624 - INFO - Contrase�a ingresada
+2025-03-07 10:43:19,080 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:43:19,897 - INFO - Bot�n de login presionado
+2025-03-07 10:43:22,948 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-43-05\login_2025-03-07_10-43-05.png
+2025-03-07 10:43:22,949 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:43:22,949 - INFO - Iniciando Ventas.
+2025-03-07 10:43:22,994 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:43:24,035 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:43:25,096 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:43:37,752 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:43:45,350 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:43:46,419 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:43:48,749 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:43:53,693 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 10:44:07,376 - INFO - Navegador cerrado
+2025-03-07 10:44:12,900 - INFO - Inicio del script
+2025-03-07 10:44:25,704 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:44:25,770 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:44:26,385 - INFO - Usuario ingresado
+2025-03-07 10:44:26,452 - INFO - Contrase�a ingresada
+2025-03-07 10:44:26,868 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:44:27,166 - INFO - Bot�n de login presionado
+2025-03-07 10:44:30,209 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-44-12\login_2025-03-07_10-44-12.png
+2025-03-07 10:44:30,209 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:44:30,209 - INFO - Iniciando Ventas.
+2025-03-07 10:44:30,239 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:44:31,322 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:44:32,354 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:44:39,912 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:44:43,428 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:44:44,477 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:44:46,798 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:44:48,993 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 10:45:01,792 - INFO - Navegador cerrado
+2025-03-07 10:46:24,261 - INFO - Inicio del script
+2025-03-07 10:46:37,414 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:46:37,478 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:46:38,082 - INFO - Usuario ingresado
+2025-03-07 10:46:38,136 - INFO - Contrase�a ingresada
+2025-03-07 10:46:38,538 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:46:39,411 - INFO - Bot�n de login presionado
+2025-03-07 10:46:42,452 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-46-24\login_2025-03-07_10-46-24.png
+2025-03-07 10:46:42,452 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:46:42,452 - INFO - Iniciando Ventas.
+2025-03-07 10:46:42,487 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:46:43,522 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:46:44,572 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:46:51,832 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:46:56,891 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:46:57,948 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:47:00,388 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:47:06,728 - INFO - Navegador cerrado
+2025-03-07 10:52:18,281 - INFO - Inicio del script
+2025-03-07 10:52:30,653 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:52:30,719 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:52:31,317 - INFO - Usuario ingresado
+2025-03-07 10:52:31,365 - INFO - Contrase�a ingresada
+2025-03-07 10:52:31,793 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:52:32,704 - INFO - Bot�n de login presionado
+2025-03-07 10:52:35,752 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-52-18\login_2025-03-07_10-52-18.png
+2025-03-07 10:52:35,752 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:52:35,752 - INFO - Iniciando Ventas.
+2025-03-07 10:52:35,788 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:52:36,834 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:52:37,897 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:52:45,816 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:52:49,580 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:52:50,632 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:52:52,938 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:52:59,365 - INFO - Navegador cerrado
+2025-03-07 10:53:04,274 - INFO - Inicio del script
+2025-03-07 10:53:14,037 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:53:14,213 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:53:14,819 - INFO - Usuario ingresado
+2025-03-07 10:53:14,886 - INFO - Contrase�a ingresada
+2025-03-07 10:53:15,295 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:53:17,717 - INFO - Bot�n de login presionado
+2025-03-07 10:53:20,769 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-53-04\login_2025-03-07_10-53-04.png
+2025-03-07 10:53:20,769 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:53:20,769 - INFO - Iniciando Ventas.
+2025-03-07 10:53:20,812 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:53:21,857 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:53:22,920 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:53:30,250 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:53:33,970 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:53:35,036 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:53:37,329 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:53:43,670 - INFO - Navegador cerrado
+2025-03-07 10:55:09,358 - INFO - Inicio del script
+2025-03-07 10:55:19,593 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:55:19,677 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:55:20,291 - INFO - Usuario ingresado
+2025-03-07 10:55:20,358 - INFO - Contrase�a ingresada
+2025-03-07 10:55:20,771 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:55:21,560 - INFO - Bot�n de login presionado
+2025-03-07 10:55:24,610 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-55-09\login_2025-03-07_10-55-09.png
+2025-03-07 10:55:24,611 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:55:24,611 - INFO - Iniciando Ventas.
+2025-03-07 10:55:24,650 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:55:25,711 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:55:26,770 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:55:34,091 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:55:38,141 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:55:39,228 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:55:41,535 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:55:47,948 - INFO - Navegador cerrado
+2025-03-07 10:58:49,318 - INFO - Inicio del script
+2025-03-07 10:59:03,997 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 10:59:04,071 - INFO - Redirigido a la p�gina de login
+2025-03-07 10:59:04,705 - INFO - Usuario ingresado
+2025-03-07 10:59:04,758 - INFO - Contrase�a ingresada
+2025-03-07 10:59:05,209 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 10:59:05,568 - INFO - Bot�n de login presionado
+2025-03-07 10:59:08,610 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_10-58-49\login_2025-03-07_10-58-49.png
+2025-03-07 10:59:08,611 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 10:59:08,611 - INFO - Iniciando Ventas.
+2025-03-07 10:59:08,647 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 10:59:09,686 - INFO - Accedi� a 'Vent.'.
+2025-03-07 10:59:10,583 - INFO - Accedi� a 'Factur.'.
+2025-03-07 10:59:18,105 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 10:59:21,787 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:59:22,837 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 10:59:25,155 - INFO - Accedi� a 'Clien.'.
+2025-03-07 10:59:31,427 - INFO - Navegador cerrado
+2025-03-07 11:01:16,287 - INFO - Inicio del script
+2025-03-07 11:01:28,505 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:01:28,571 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:01:29,149 - INFO - Usuario ingresado
+2025-03-07 11:01:29,184 - INFO - Contrase�a ingresada
+2025-03-07 11:01:29,600 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:01:30,360 - INFO - Bot�n de login presionado
+2025-03-07 11:01:33,410 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-01-16\login_2025-03-07_11-01-16.png
+2025-03-07 11:01:33,410 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:01:33,410 - INFO - Iniciando Ventas.
+2025-03-07 11:01:33,458 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:01:34,498 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:01:35,564 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:01:43,401 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:01:47,590 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:01:48,668 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:01:51,018 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:01:55,402 - INFO - Navegador cerrado
+2025-03-07 11:02:00,290 - INFO - Inicio del script
+2025-03-07 11:02:14,138 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:02:14,265 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:02:14,961 - INFO - Usuario ingresado
+2025-03-07 11:02:15,017 - INFO - Contrase�a ingresada
+2025-03-07 11:02:15,517 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:02:16,441 - INFO - Bot�n de login presionado
+2025-03-07 11:02:19,490 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-02-00\login_2025-03-07_11-02-00.png
+2025-03-07 11:02:19,490 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:02:19,490 - INFO - Iniciando Ventas.
+2025-03-07 11:02:19,528 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:02:23,005 - INFO - Navegador cerrado
+2025-03-07 11:02:27,947 - INFO - Inicio del script
+2025-03-07 11:02:39,277 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:02:39,374 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:02:43,042 - INFO - Usuario ingresado
+2025-03-07 11:02:43,094 - INFO - Contrase�a ingresada
+2025-03-07 11:02:43,489 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:02:44,234 - INFO - Bot�n de login presionado
+2025-03-07 11:02:47,277 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-02-27\login_2025-03-07_11-02-27.png
+2025-03-07 11:02:47,277 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:02:47,277 - INFO - Iniciando Ventas.
+2025-03-07 11:02:47,333 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:02:48,368 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:02:49,420 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:02:57,028 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:03:01,168 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:03:02,430 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:03:04,748 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:03:09,391 - INFO - Navegador cerrado
+2025-03-07 11:04:23,755 - INFO - Inicio del script
+2025-03-07 11:04:36,325 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:04:36,400 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:04:37,031 - INFO - Usuario ingresado
+2025-03-07 11:04:37,101 - INFO - Contrase�a ingresada
+2025-03-07 11:04:37,619 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:04:38,537 - INFO - Bot�n de login presionado
+2025-03-07 11:04:41,581 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-04-23\login_2025-03-07_11-04-23.png
+2025-03-07 11:04:41,581 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:04:41,581 - INFO - Iniciando Ventas.
+2025-03-07 11:04:41,644 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:04:42,686 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:04:43,781 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:04:51,037 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:04:54,923 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:04:55,988 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:04:59,318 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:05:05,119 - INFO - Navegador cerrado
+2025-03-07 11:09:21,971 - INFO - Inicio del script
+2025-03-07 11:09:35,577 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:09:35,656 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:09:36,229 - INFO - Usuario ingresado
+2025-03-07 11:09:36,280 - INFO - Contrase�a ingresada
+2025-03-07 11:09:36,727 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:09:37,524 - INFO - Bot�n de login presionado
+2025-03-07 11:09:40,567 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-09-21\login_2025-03-07_11-09-21.png
+2025-03-07 11:09:40,568 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:09:40,568 - INFO - Iniciando Ventas.
+2025-03-07 11:09:40,611 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:09:41,646 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:09:42,698 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:09:49,962 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:09:53,931 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:09:54,995 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:09:58,298 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:10:02,711 - INFO - Navegador cerrado
+2025-03-07 11:21:42,877 - INFO - Inicio del script
+2025-03-07 11:21:52,782 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:21:52,862 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:21:55,685 - INFO - Usuario ingresado
+2025-03-07 11:21:55,721 - INFO - Contrase�a ingresada
+2025-03-07 11:21:56,210 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:21:56,585 - INFO - Bot�n de login presionado
+2025-03-07 11:21:59,625 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-21-42\login_2025-03-07_11-21-42.png
+2025-03-07 11:21:59,625 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:21:59,625 - INFO - Iniciando Ventas.
+2025-03-07 11:21:59,663 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:22:00,699 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:22:01,585 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:22:09,034 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:22:12,757 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:22:13,789 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:22:17,114 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:22:21,614 - INFO - Navegador cerrado
+2025-03-07 11:23:30,122 - INFO - Inicio del script
+2025-03-07 11:23:42,921 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:23:42,986 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:23:43,605 - INFO - Usuario ingresado
+2025-03-07 11:23:43,686 - INFO - Contrase�a ingresada
+2025-03-07 11:23:44,095 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:23:44,437 - INFO - Bot�n de login presionado
+2025-03-07 11:23:47,485 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-23-30\login_2025-03-07_11-23-30.png
+2025-03-07 11:23:47,486 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:23:47,486 - INFO - Iniciando Ventas.
+2025-03-07 11:23:47,521 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:23:48,563 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:23:49,597 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:23:56,826 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:24:00,371 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:24:01,427 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:24:04,693 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:24:09,228 - INFO - Navegador cerrado
+2025-03-07 11:25:00,846 - INFO - Inicio del script
+2025-03-07 11:25:11,092 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:25:11,176 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:25:11,744 - INFO - Usuario ingresado
+2025-03-07 11:25:11,781 - INFO - Contrase�a ingresada
+2025-03-07 11:25:12,155 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:25:12,884 - INFO - Bot�n de login presionado
+2025-03-07 11:25:15,925 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-25-00\login_2025-03-07_11-25-00.png
+2025-03-07 11:25:15,926 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:25:15,926 - INFO - Iniciando Ventas.
+2025-03-07 11:25:15,957 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:25:17,014 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:25:18,061 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:25:25,266 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:25:28,834 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:25:29,881 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:25:33,239 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:25:41,912 - INFO - Navegador cerrado
+2025-03-07 11:26:34,472 - INFO - Inicio del script
+2025-03-07 11:26:47,468 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:26:47,566 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:26:48,151 - INFO - Usuario ingresado
+2025-03-07 11:26:48,191 - INFO - Contrase�a ingresada
+2025-03-07 11:26:48,613 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:26:49,430 - INFO - Bot�n de login presionado
+2025-03-07 11:26:52,471 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-26-34\login_2025-03-07_11-26-34.png
+2025-03-07 11:26:52,472 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:26:52,472 - INFO - Iniciando Ventas.
+2025-03-07 11:26:52,503 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:26:53,556 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:26:54,595 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:27:01,839 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:27:05,295 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:27:06,342 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:27:09,638 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:27:18,137 - INFO - Navegador cerrado
+2025-03-07 11:28:35,828 - INFO - Inicio del script
+2025-03-07 11:28:48,303 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:28:48,397 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:28:48,970 - INFO - Usuario ingresado
+2025-03-07 11:28:49,016 - INFO - Contrase�a ingresada
+2025-03-07 11:28:49,374 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:28:50,068 - INFO - Bot�n de login presionado
+2025-03-07 11:28:53,120 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-28-35\login_2025-03-07_11-28-35.png
+2025-03-07 11:28:53,121 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:28:53,121 - INFO - Iniciando Ventas.
+2025-03-07 11:28:53,161 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:28:54,204 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:28:55,245 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:29:03,018 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:29:06,362 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:29:07,436 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:29:10,740 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:29:15,168 - INFO - Navegador cerrado
+2025-03-07 11:30:41,167 - INFO - Inicio del script
+2025-03-07 11:30:53,637 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:30:53,742 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:30:54,362 - INFO - Usuario ingresado
+2025-03-07 11:30:54,425 - INFO - Contrase�a ingresada
+2025-03-07 11:30:54,782 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:30:55,554 - INFO - Bot�n de login presionado
+2025-03-07 11:30:58,599 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-30-41\login_2025-03-07_11-30-41.png
+2025-03-07 11:30:58,599 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:30:58,600 - INFO - Iniciando Ventas.
+2025-03-07 11:30:58,641 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:30:59,687 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:31:00,745 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:31:07,878 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:31:11,436 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:31:12,487 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:31:16,003 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:31:20,458 - INFO - Navegador cerrado
+2025-03-07 11:32:21,770 - INFO - Inicio del script
+2025-03-07 11:32:34,134 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:32:34,237 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:32:34,850 - INFO - Usuario ingresado
+2025-03-07 11:32:34,905 - INFO - Contrase�a ingresada
+2025-03-07 11:32:35,347 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:32:36,314 - INFO - Bot�n de login presionado
+2025-03-07 11:32:39,356 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-32-21\login_2025-03-07_11-32-21.png
+2025-03-07 11:32:39,356 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:32:39,356 - INFO - Iniciando Ventas.
+2025-03-07 11:32:39,387 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:32:40,432 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:32:41,458 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:32:49,550 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:32:53,143 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:32:54,253 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:32:57,581 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:33:04,000 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 11:33:15,109 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 11:33:15,110 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 11:33:25,802 - INFO - Navegador cerrado
+2025-03-07 11:33:36,584 - INFO - Inicio del script
+2025-03-07 11:33:47,891 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:33:47,970 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:33:48,604 - INFO - Usuario ingresado
+2025-03-07 11:33:48,669 - INFO - Contrase�a ingresada
+2025-03-07 11:33:49,118 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:33:49,483 - INFO - Bot�n de login presionado
+2025-03-07 11:33:52,530 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-33-36\login_2025-03-07_11-33-36.png
+2025-03-07 11:33:52,530 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:33:52,530 - INFO - Iniciando Ventas.
+2025-03-07 11:33:52,567 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:33:53,624 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:33:54,696 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:34:01,855 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:34:05,272 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:34:06,322 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:34:09,603 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:34:14,277 - INFO - Navegador cerrado
+2025-03-07 11:34:21,752 - INFO - Inicio del script
+2025-03-07 11:34:32,993 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:34:33,103 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:34:33,811 - INFO - Usuario ingresado
+2025-03-07 11:34:33,901 - INFO - Contrase�a ingresada
+2025-03-07 11:34:34,488 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:34:34,860 - INFO - Bot�n de login presionado
+2025-03-07 11:34:37,922 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-34-21\login_2025-03-07_11-34-21.png
+2025-03-07 11:34:37,923 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:34:37,923 - INFO - Iniciando Ventas.
+2025-03-07 11:34:37,971 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:34:39,029 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:34:40,095 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:34:47,475 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:34:50,995 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:34:52,061 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:34:55,308 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:35:01,623 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 11:35:12,743 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 11:35:12,743 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 11:35:22,886 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 11:35:22,978 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_11-34-21\gestion_caja_2025-03-07_11-34-21.png
+2025-03-07 11:35:26,849 - INFO - Navegador cerrado
+2025-03-07 11:37:41,168 - INFO - Inicio del script
+2025-03-07 11:37:55,016 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:37:55,083 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:37:55,677 - INFO - Usuario ingresado
+2025-03-07 11:37:55,761 - INFO - Contrase�a ingresada
+2025-03-07 11:37:56,232 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:37:57,119 - INFO - Bot�n de login presionado
+2025-03-07 11:38:00,191 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-37-41\login_2025-03-07_11-37-41.png
+2025-03-07 11:38:00,192 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:38:00,192 - INFO - Iniciando Ventas.
+2025-03-07 11:38:00,227 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:38:01,309 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:38:02,351 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:38:09,619 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:38:12,995 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:38:14,043 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:38:17,365 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:38:22,090 - INFO - Navegador cerrado
+2025-03-07 11:39:21,424 - INFO - Inicio del script
+2025-03-07 11:39:32,880 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:39:33,009 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:39:36,400 - INFO - Usuario ingresado
+2025-03-07 11:39:36,448 - INFO - Contrase�a ingresada
+2025-03-07 11:39:37,015 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:39:38,136 - INFO - Bot�n de login presionado
+2025-03-07 11:39:41,181 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-39-21\login_2025-03-07_11-39-21.png
+2025-03-07 11:39:41,181 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:39:41,181 - INFO - Iniciando Ventas.
+2025-03-07 11:39:41,217 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:39:42,251 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:39:43,288 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:39:50,810 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:39:54,396 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:39:55,487 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:39:58,853 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:40:05,144 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 11:40:17,205 - INFO - Navegador cerrado
+2025-03-07 11:41:20,217 - INFO - Inicio del script
+2025-03-07 11:41:30,021 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:41:30,119 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:41:32,813 - INFO - Usuario ingresado
+2025-03-07 11:41:32,857 - INFO - Contrase�a ingresada
+2025-03-07 11:41:33,263 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:41:34,011 - INFO - Bot�n de login presionado
+2025-03-07 11:41:37,052 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-41-20\login_2025-03-07_11-41-20.png
+2025-03-07 11:41:37,053 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:41:37,053 - INFO - Iniciando Ventas.
+2025-03-07 11:41:37,089 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:41:38,124 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:41:39,163 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:41:46,771 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:41:51,022 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:41:52,066 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:41:55,348 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:42:06,458 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 11:42:06,458 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 11:42:17,514 - INFO - Navegador cerrado
+2025-03-07 11:43:30,403 - INFO - Inicio del script
+2025-03-07 11:43:40,214 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:43:40,319 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:43:42,922 - INFO - Usuario ingresado
+2025-03-07 11:43:42,957 - INFO - Contrase�a ingresada
+2025-03-07 11:43:43,311 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:43:44,023 - INFO - Bot�n de login presionado
+2025-03-07 11:43:47,058 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-43-30\login_2025-03-07_11-43-30.png
+2025-03-07 11:43:47,058 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:43:47,058 - INFO - Iniciando Ventas.
+2025-03-07 11:43:47,112 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:43:48,155 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:43:49,211 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:43:56,787 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:44:00,701 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:44:01,761 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:44:05,035 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:44:16,170 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 11:44:16,170 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 11:44:26,271 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 11:44:26,346 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_11-43-30\gestion_caja_2025-03-07_11-43-30.png
+2025-03-07 11:44:28,943 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-43-30\logout_2025-03-07_11-43-30.png
+2025-03-07 11:44:28,943 - INFO - Cierre de sesi�n exitoso
+2025-03-07 11:44:32,268 - INFO - Navegador cerrado
+2025-03-07 11:44:32,271 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-43-30\login_2025-03-07_11-43-30.log
+2025-03-07 11:44:32,528 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-43-30\login_logs_2025-03-07_11-43-30.pdf
+2025-03-07 11:44:32,635 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_11-43-30\gestion_caja_2025-03-07_11-43-30.pdf
+2025-03-07 11:45:32,002 - INFO - Inicio del script
+2025-03-07 11:45:43,614 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:45:43,722 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:45:44,281 - INFO - Usuario ingresado
+2025-03-07 11:45:44,316 - INFO - Contrase�a ingresada
+2025-03-07 11:45:44,642 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:45:45,370 - INFO - Bot�n de login presionado
+2025-03-07 11:45:48,436 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-45-32\login_2025-03-07_11-45-32.png
+2025-03-07 11:45:48,437 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:45:48,437 - INFO - Iniciando Ventas.
+2025-03-07 11:45:48,477 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:45:49,528 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:45:50,608 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:45:57,498 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:46:00,876 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:46:01,922 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:46:05,166 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:46:16,291 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 11:46:16,291 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 11:46:26,382 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 11:46:26,446 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_11-45-32\gestion_caja_2025-03-07_11-45-32.png
+2025-03-07 11:46:28,894 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-45-32\logout_2025-03-07_11-45-32.png
+2025-03-07 11:46:28,894 - INFO - Cierre de sesi�n exitoso
+2025-03-07 11:46:32,118 - INFO - Navegador cerrado
+2025-03-07 11:46:32,120 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-45-32\login_2025-03-07_11-45-32.log
+2025-03-07 11:46:32,334 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-45-32\login_logs_2025-03-07_11-45-32.pdf
+2025-03-07 11:46:32,428 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_11-45-32\gestion_caja_2025-03-07_11-45-32.pdf
+2025-03-07 11:47:30,493 - INFO - Inicio del script
+2025-03-07 11:47:40,718 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 11:47:40,816 - INFO - Redirigido a la p�gina de login
+2025-03-07 11:47:41,419 - INFO - Usuario ingresado
+2025-03-07 11:47:41,447 - INFO - Contrase�a ingresada
+2025-03-07 11:47:41,860 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 11:47:42,134 - INFO - Bot�n de login presionado
+2025-03-07 11:47:45,174 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_11-47-30\login_2025-03-07_11-47-30.png
+2025-03-07 11:47:45,175 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 11:47:45,175 - INFO - Iniciando Ventas.
+2025-03-07 11:47:45,206 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 11:47:46,245 - INFO - Accedi� a 'Vent.'.
+2025-03-07 11:47:47,285 - INFO - Accedi� a 'Factur.'.
+2025-03-07 11:47:54,230 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 11:47:57,758 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:47:58,827 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 11:48:02,096 - INFO - Accedi� a 'Clien.'.
+2025-03-07 11:48:15,815 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 11:48:15,815 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 11:48:22,742 - INFO - Navegador cerrado
+2025-03-07 13:38:18,957 - INFO - Inicio del script
+2025-03-07 13:38:30,048 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 13:38:30,121 - INFO - Redirigido a la p�gina de login
+2025-03-07 13:38:30,784 - INFO - Usuario ingresado
+2025-03-07 13:38:30,817 - INFO - Contrase�a ingresada
+2025-03-07 13:38:31,284 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 13:38:31,588 - INFO - Bot�n de login presionado
+2025-03-07 13:38:34,632 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_13-38-18\login_2025-03-07_13-38-18.png
+2025-03-07 13:38:34,632 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 13:38:34,632 - INFO - Iniciando Ventas.
+2025-03-07 13:38:34,664 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 13:38:35,700 - INFO - Accedi� a 'Vent.'.
+2025-03-07 13:38:36,589 - INFO - Accedi� a 'Factur.'.
+2025-03-07 13:38:43,996 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 13:38:47,560 - INFO - Accedi� a 'Clien.'.
+2025-03-07 13:38:48,601 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 13:38:51,888 - INFO - Accedi� a 'Clien.'.
+2025-03-07 13:39:03,015 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 13:39:03,015 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 13:39:09,791 - INFO - Navegador cerrado
+2025-03-07 13:40:35,718 - INFO - Inicio del script
+2025-03-07 13:40:45,396 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 13:40:45,470 - INFO - Redirigido a la p�gina de login
+2025-03-07 13:40:46,111 - INFO - Usuario ingresado
+2025-03-07 13:40:46,192 - INFO - Contrase�a ingresada
+2025-03-07 13:40:46,642 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 13:40:48,695 - INFO - Bot�n de login presionado
+2025-03-07 13:40:51,740 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_13-40-35\login_2025-03-07_13-40-35.png
+2025-03-07 13:40:51,741 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 13:40:51,741 - INFO - Iniciando Ventas.
+2025-03-07 13:40:51,782 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 13:40:52,854 - INFO - Accedi� a 'Vent.'.
+2025-03-07 13:40:53,933 - INFO - Accedi� a 'Factur.'.
+2025-03-07 13:41:01,316 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 13:41:04,619 - INFO - Accedi� a 'Clien.'.
+2025-03-07 13:41:05,681 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 13:41:08,935 - INFO - Accedi� a 'Clien.'.
+2025-03-07 13:41:15,533 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 13:41:26,638 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 13:41:26,638 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 13:41:36,584 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 13:41:36,810 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_13-40-35\gestion_caja_2025-03-07_13-40-35.png
+2025-03-07 13:41:40,122 - INFO - Navegador cerrado
+2025-03-07 14:00:24,661 - INFO - Inicio del script
+2025-03-07 14:00:39,795 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 14:00:39,958 - INFO - Redirigido a la p�gina de login
+2025-03-07 14:00:40,829 - INFO - Usuario ingresado
+2025-03-07 14:00:40,924 - INFO - Contrase�a ingresada
+2025-03-07 14:00:41,469 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 14:00:43,840 - INFO - Bot�n de login presionado
+2025-03-07 14:00:46,894 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_14-00-24\login_2025-03-07_14-00-24.png
+2025-03-07 14:00:46,895 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 14:00:46,895 - INFO - Iniciando Ventas.
+2025-03-07 14:00:46,931 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 14:00:47,974 - INFO - Accedi� a 'Vent.'.
+2025-03-07 14:00:49,053 - INFO - Accedi� a 'Factur.'.
+2025-03-07 14:00:56,582 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 14:01:00,137 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:01:01,200 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 14:01:04,504 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:01:11,114 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 14:01:22,233 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 14:01:22,233 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 14:01:32,351 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 14:01:32,450 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_14-00-24\gestion_caja_2025-03-07_14-00-24.png
+2025-03-07 14:01:34,957 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_14-00-24\logout_2025-03-07_14-00-24.png
+2025-03-07 14:01:34,957 - INFO - Cierre de sesi�n exitoso
+2025-03-07 14:01:38,412 - INFO - Navegador cerrado
+2025-03-07 14:01:38,421 - ERROR - No se encontr� el archivo de log: C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_14-00-24\login_2025-03-07_14-00-24.log
+2025-03-07 14:01:38,784 - INFO - PDF de login generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_14-00-24\login_logs_2025-03-07_14-00-24.pdf
+2025-03-07 14:01:38,930 - INFO - PDF de gesti�n de caja generado en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_14-00-24\gestion_caja_2025-03-07_14-00-24.pdf
+2025-03-07 14:02:56,407 - INFO - Inicio del script
+2025-03-07 14:03:06,877 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 14:03:06,950 - INFO - Redirigido a la p�gina de login
+2025-03-07 14:03:07,541 - INFO - Usuario ingresado
+2025-03-07 14:03:07,577 - INFO - Contrase�a ingresada
+2025-03-07 14:03:07,993 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 14:03:08,802 - INFO - Bot�n de login presionado
+2025-03-07 14:03:11,847 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_14-02-56\login_2025-03-07_14-02-56.png
+2025-03-07 14:03:11,847 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 14:03:11,847 - INFO - Iniciando Ventas.
+2025-03-07 14:03:11,880 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 14:03:12,918 - INFO - Accedi� a 'Vent.'.
+2025-03-07 14:03:13,958 - INFO - Accedi� a 'Factur.'.
+2025-03-07 14:03:21,207 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 14:03:24,642 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:03:25,694 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 14:03:28,970 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:03:33,094 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 14:03:44,203 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 14:03:44,204 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 14:03:54,301 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-07 14:03:54,390 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Gestion_Caja\2025-03-07_14-02-56\gestion_caja_2025-03-07_14-02-56.png
+2025-03-07 14:03:57,760 - INFO - Navegador cerrado
+2025-03-07 14:06:09,065 - INFO - Inicio del script
+2025-03-07 14:06:21,829 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 14:06:21,908 - INFO - Redirigido a la p�gina de login
+2025-03-07 14:06:22,503 - INFO - Usuario ingresado
+2025-03-07 14:06:22,553 - INFO - Contrase�a ingresada
+2025-03-07 14:06:22,886 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 14:06:23,619 - INFO - Bot�n de login presionado
+2025-03-07 14:06:26,667 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_14-06-09\login_2025-03-07_14-06-09.png
+2025-03-07 14:06:26,668 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 14:06:26,668 - INFO - Iniciando Ventas.
+2025-03-07 14:06:26,708 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 14:06:27,750 - INFO - Accedi� a 'Vent.'.
+2025-03-07 14:06:28,794 - INFO - Accedi� a 'Factur.'.
+2025-03-07 14:06:36,592 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 14:06:39,911 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:06:40,964 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 14:06:44,243 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:06:48,226 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 14:06:59,995 - INFO - Navegador cerrado
+2025-03-07 14:09:39,378 - INFO - Inicio del script
+2025-03-07 14:09:51,313 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 14:09:51,393 - INFO - Redirigido a la p�gina de login
+2025-03-07 14:09:52,012 - INFO - Usuario ingresado
+2025-03-07 14:09:52,057 - INFO - Contrase�a ingresada
+2025-03-07 14:09:52,426 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 14:09:55,081 - INFO - Bot�n de login presionado
+2025-03-07 14:09:58,126 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_14-09-39\login_2025-03-07_14-09-39.png
+2025-03-07 14:09:58,127 - INFO - Login exitoso, iniciando ventas...
+2025-03-07 14:09:58,127 - INFO - Iniciando Ventas.
+2025-03-07 14:09:58,162 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 14:09:59,199 - INFO - Accedi� a 'Vent.'.
+2025-03-07 14:10:00,240 - INFO - Accedi� a 'Factur.'.
+2025-03-07 14:10:07,966 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 14:10:11,254 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:10:12,307 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 14:10:15,593 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:10:19,589 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 14:10:27,537 - INFO - Navegador cerrado
+2025-03-07 14:12:58,686 - INFO - Inicio del script
+2025-03-07 14:13:13,369 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 14:13:13,462 - INFO - Redirigido a la p�gina de login
+2025-03-07 14:13:14,044 - INFO - Usuario ingresado
+2025-03-07 14:13:14,086 - INFO - Contrase�a ingresada
+2025-03-07 14:13:14,453 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 14:13:15,363 - INFO - Bot�n de login presionado
+2025-03-07 14:13:18,423 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_14-12-58\login_2025-03-07_14-12-58.png
+2025-03-07 14:13:18,424 - INFO - Login exitoso, ejecutando cajero...
+2025-03-07 14:13:18,424 - INFO - Iniciando Ventas.
+2025-03-07 14:13:18,483 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 14:13:19,535 - INFO - Accedi� a 'Vent.'.
+2025-03-07 14:13:20,601 - INFO - Accedi� a 'Factur.'.
+2025-03-07 14:13:27,972 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 14:13:31,454 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:13:32,505 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 14:13:35,809 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:13:42,394 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 14:13:52,233 - INFO - Navegador cerrado
+2025-03-07 14:23:45,588 - INFO - Inicio del script
+2025-03-07 14:23:55,902 - INFO - Navegador abierto y p�gina cargada
+2025-03-07 14:23:55,975 - INFO - Redirigido a la p�gina de login
+2025-03-07 14:23:56,572 - INFO - Usuario ingresado
+2025-03-07 14:23:56,624 - INFO - Contrase�a ingresada
+2025-03-07 14:23:57,055 - INFO - Perfil 'Administrador' seleccionado
+2025-03-07 14:23:57,981 - INFO - Bot�n de login presionado
+2025-03-07 14:24:01,022 - INFO - Captura de pantalla guardada en C:\Users\mreyes\Documents\LoginPosweb\reportes_pdf\Login\2025-03-07_14-23-45\login_2025-03-07_14-23-45.png
+2025-03-07 14:24:01,022 - INFO - Login exitoso, ejecutando cajero...
+2025-03-07 14:24:01,022 - INFO - Iniciando Ventas.
+2025-03-07 14:24:01,059 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-07 14:24:02,092 - INFO - Accedi� a 'Vent.'.
+2025-03-07 14:24:03,141 - INFO - Accedi� a 'Factur.'.
+2025-03-07 14:24:10,817 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-07 14:24:14,170 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:24:15,227 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-07 14:24:18,521 - INFO - Accedi� a 'Clien.'.
+2025-03-07 14:24:25,158 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-07 14:24:31,125 - ERROR - Error en la gesti�n de caja: Message: Browsing context has been discarded
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:706:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:538:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
+GeckoDriver.prototype.findElement@chrome://remote/content/marionette/driver.sys.mjs:1780:15
+despatch@chrome://remote/content/marionette/server.sys.mjs:318:40
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2025-03-07 14:24:31,125 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-07 14:24:33,267 - INFO - Navegador cerrado
+2025-03-20 10:09:03,655 - INFO - Inicio del script
+2025-03-20 10:09:13,814 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 10:09:13,925 - INFO - Redirigido a la p�gina de login
+2025-03-20 10:09:14,648 - INFO - Usuario ingresado
+2025-03-20 10:09:14,692 - INFO - Contrase�a ingresada
+2025-03-20 10:09:15,084 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 10:09:16,601 - INFO - Bot�n de login presionado
+2025-03-20 10:09:19,602 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 10:09:19,602 - INFO - Iniciando devoluci�n.
+2025-03-20 10:09:29,706 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:09:29,706 - INFO - Login exitoso, ejecutando cajero...
+2025-03-20 10:09:29,706 - INFO - Iniciando Ventas.
+2025-03-20 10:09:29,742 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 10:09:30,779 - INFO - Accedi� a 'Vent.'.
+2025-03-20 10:09:31,825 - INFO - Accedi� a 'Factur.'.
+2025-03-20 10:09:51,807 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-20 10:10:00,914 - INFO - Accedi� a 'Clien.'.
+2025-03-20 10:10:01,985 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-20 10:10:05,318 - INFO - Accedi� a 'Clien.'.
+2025-03-20 10:10:21,920 - ERROR - Error en la gesti�n de caja: Message: 
+
+2025-03-20 10:10:21,920 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-20 10:10:32,024 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:10:35,714 - INFO - Cierre de sesi�n exitoso
+2025-03-20 10:10:39,341 - INFO - Navegador cerrado
+2025-03-20 10:13:26,577 - INFO - Inicio del script
+2025-03-20 10:13:34,748 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 10:13:34,885 - INFO - Redirigido a la p�gina de login
+2025-03-20 10:13:35,519 - INFO - Usuario ingresado
+2025-03-20 10:13:35,550 - INFO - Contrase�a ingresada
+2025-03-20 10:13:35,896 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 10:13:36,580 - INFO - Bot�n de login presionado
+2025-03-20 10:13:39,580 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 10:13:39,580 - INFO - Iniciando devoluci�n.
+2025-03-20 10:13:49,864 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:13:49,864 - INFO - Login exitoso, ejecutando cajero...
+2025-03-20 10:13:49,864 - INFO - Iniciando Ventas.
+2025-03-20 10:13:49,896 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 10:13:50,929 - INFO - Accedi� a 'Vent.'.
+2025-03-20 10:13:51,975 - INFO - Accedi� a 'Factur.'.
+2025-03-20 10:14:02,944 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-20 10:14:06,543 - INFO - Accedi� a 'Clien.'.
+2025-03-20 10:14:07,578 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-20 10:14:10,869 - INFO - Accedi� a 'Clien.'.
+2025-03-20 10:14:19,511 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-20 10:14:30,622 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:14:30,622 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-20 10:14:40,587 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:14:44,014 - INFO - Navegador cerrado
+2025-03-20 10:31:25,579 - INFO - Inicio del script
+2025-03-20 10:31:34,212 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 10:31:34,313 - INFO - Redirigido a la p�gina de login
+2025-03-20 10:31:34,900 - INFO - Usuario ingresado
+2025-03-20 10:31:34,942 - INFO - Contrase�a ingresada
+2025-03-20 10:31:35,357 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 10:31:36,201 - INFO - Bot�n de login presionado
+2025-03-20 10:31:39,201 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 10:31:39,202 - INFO - Iniciando devoluci�n.
+2025-03-20 10:31:49,327 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:31:49,327 - INFO - Login exitoso, ejecutando cajero...
+2025-03-20 10:31:49,328 - INFO - Iniciando Ventas.
+2025-03-20 10:31:49,360 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 10:31:50,395 - INFO - Accedi� a 'Vent.'.
+2025-03-20 10:31:51,427 - INFO - Accedi� a 'Factur.'.
+2025-03-20 10:32:11,768 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-20 10:32:19,749 - INFO - Accedi� a 'Clien.'.
+2025-03-20 10:32:20,841 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-20 10:32:24,202 - INFO - Accedi� a 'Clien.'.
+2025-03-20 10:32:31,718 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-20 10:32:42,833 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:32:42,833 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-20 10:32:52,946 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:32:56,693 - INFO - Navegador cerrado
+2025-03-20 10:43:08,417 - INFO - Inicio del script
+2025-03-20 10:43:16,488 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 10:43:16,559 - INFO - Redirigido a la p�gina de login
+2025-03-20 10:43:17,182 - INFO - Usuario ingresado
+2025-03-20 10:43:17,239 - INFO - Contrase�a ingresada
+2025-03-20 10:43:17,646 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 10:43:18,515 - INFO - Bot�n de login presionado
+2025-03-20 10:43:21,515 - INFO - Iniciando devoluci�n.
+2025-03-20 10:43:31,631 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:43:31,632 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 10:43:31,632 - INFO - Iniciando devoluci�n.
+2025-03-20 10:43:41,584 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:43:41,585 - INFO - Login exitoso, ejecutando cajero...
+2025-03-20 10:43:41,585 - INFO - Iniciando Ventas.
+2025-03-20 10:43:41,766 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 10:43:42,801 - INFO - Accedi� a 'Vent.'.
+2025-03-20 10:43:43,862 - INFO - Accedi� a 'Factur.'.
+2025-03-20 10:43:52,149 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-20 10:43:55,470 - INFO - Accedi� a 'Clien.'.
+2025-03-20 10:43:56,530 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-20 10:43:59,806 - INFO - Accedi� a 'Clien.'.
+2025-03-20 10:44:03,874 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-20 10:44:14,991 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:44:14,991 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-20 10:44:25,098 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:44:28,199 - INFO - Navegador cerrado
+2025-03-20 10:46:07,047 - INFO - Inicio del script
+2025-03-20 10:46:14,844 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 10:46:14,951 - INFO - Redirigido a la p�gina de login
+2025-03-20 10:46:15,611 - INFO - Usuario ingresado
+2025-03-20 10:46:15,655 - INFO - Contrase�a ingresada
+2025-03-20 10:46:16,020 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 10:46:16,761 - INFO - Bot�n de login presionado
+2025-03-20 10:46:19,761 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 10:46:19,761 - INFO - Iniciando devoluci�n.
+2025-03-20 10:46:29,883 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:46:32,261 - INFO - Cierre de sesi�n exitoso
+2025-03-20 10:46:35,491 - INFO - Navegador cerrado
+2025-03-20 10:47:11,295 - INFO - Inicio del script
+2025-03-20 10:47:19,217 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 10:47:19,343 - INFO - Redirigido a la p�gina de login
+2025-03-20 10:47:20,028 - INFO - Usuario ingresado
+2025-03-20 10:47:20,058 - INFO - Contrase�a ingresada
+2025-03-20 10:47:20,402 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 10:47:20,726 - INFO - Bot�n de login presionado
+2025-03-20 10:47:23,727 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-20 10:47:33,044 - INFO - Gesti�n de caja completada.
+2025-03-20 10:47:35,355 - INFO - Cierre de sesi�n exitoso
+2025-03-20 10:47:38,604 - INFO - Navegador cerrado
+2025-03-20 10:47:50,054 - INFO - Inicio del script
+2025-03-20 10:47:58,645 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 10:47:58,782 - INFO - Redirigido a la p�gina de login
+2025-03-20 10:47:59,377 - INFO - Usuario ingresado
+2025-03-20 10:47:59,432 - INFO - Contrase�a ingresada
+2025-03-20 10:47:59,806 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 10:48:00,097 - INFO - Bot�n de login presionado
+2025-03-20 10:48:03,098 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-20 10:48:12,440 - INFO - Gesti�n de caja completada.
+2025-03-20 10:48:14,775 - INFO - Cierre de sesi�n exitoso
+2025-03-20 10:48:18,176 - INFO - Navegador cerrado
+2025-03-20 10:55:02,431 - INFO - Inicio del script
+2025-03-20 10:55:10,512 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 10:55:10,584 - INFO - Redirigido a la p�gina de login
+2025-03-20 10:55:11,225 - INFO - Usuario ingresado
+2025-03-20 10:55:11,255 - INFO - Contrase�a ingresada
+2025-03-20 10:55:11,696 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 10:55:12,508 - INFO - Bot�n de login presionado
+2025-03-20 10:55:15,508 - INFO - Login exitoso, iniciando gesti�n de caja...
+2025-03-20 10:55:22,261 - INFO - Navegador cerrado
+2025-03-20 10:55:51,250 - INFO - Inicio del script
+2025-03-20 10:56:00,104 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 10:56:00,254 - INFO - Redirigido a la p�gina de login
+2025-03-20 10:56:00,922 - INFO - Usuario ingresado
+2025-03-20 10:56:00,961 - INFO - Contrase�a ingresada
+2025-03-20 10:56:01,292 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 10:56:02,029 - INFO - Bot�n de login presionado
+2025-03-20 10:56:05,029 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 10:56:05,029 - INFO - Iniciando devoluci�n.
+2025-03-20 10:56:15,143 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 10:56:17,500 - INFO - Cierre de sesi�n exitoso
+2025-03-20 10:56:20,805 - INFO - Navegador cerrado
+2025-03-20 11:01:09,305 - INFO - Inicio del script
+2025-03-20 11:01:19,463 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:01:19,533 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:01:20,197 - INFO - Usuario ingresado
+2025-03-20 11:01:20,232 - INFO - Contrase�a ingresada
+2025-03-20 11:01:20,676 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:01:21,606 - INFO - Bot�n de login presionado
+2025-03-20 11:01:24,606 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:01:24,607 - INFO - Iniciando Ventas.
+2025-03-20 11:01:24,648 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:01:25,680 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:01:29,010 - INFO - Cierre de sesi�n exitoso
+2025-03-20 11:01:32,259 - INFO - Navegador cerrado
+2025-03-20 11:01:37,077 - INFO - Inicio del script
+2025-03-20 11:01:45,155 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:01:45,261 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:01:45,955 - INFO - Usuario ingresado
+2025-03-20 11:01:45,990 - INFO - Contrase�a ingresada
+2025-03-20 11:01:46,437 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:01:47,233 - INFO - Bot�n de login presionado
+2025-03-20 11:01:50,233 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:01:50,233 - INFO - Iniciando Ventas.
+2025-03-20 11:01:50,265 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:01:51,299 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:01:54,618 - INFO - Cierre de sesi�n exitoso
+2025-03-20 11:01:57,919 - INFO - Navegador cerrado
+2025-03-20 11:02:19,886 - INFO - Inicio del script
+2025-03-20 11:02:27,843 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:02:27,941 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:02:28,540 - INFO - Usuario ingresado
+2025-03-20 11:02:28,586 - INFO - Contrase�a ingresada
+2025-03-20 11:02:28,983 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:02:29,821 - INFO - Bot�n de login presionado
+2025-03-20 11:02:32,821 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:02:32,821 - INFO - Iniciando Ventas.
+2025-03-20 11:02:32,871 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:02:33,915 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:02:34,996 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:02:38,807 - INFO - Cierre de sesi�n exitoso
+2025-03-20 11:02:42,067 - INFO - Navegador cerrado
+2025-03-20 11:21:22,037 - INFO - Inicio del script
+2025-03-20 11:21:30,541 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:21:30,670 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:21:31,293 - INFO - Usuario ingresado
+2025-03-20 11:21:31,448 - INFO - Contrase�a ingresada
+2025-03-20 11:21:31,797 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:21:32,172 - INFO - Bot�n de login presionado
+2025-03-20 11:21:35,172 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:21:35,158 - INFO - Iniciando Ventas.
+2025-03-20 11:21:35,211 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:21:36,244 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:21:37,284 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:21:40,596 - INFO - Cierre de sesi�n exitoso
+2025-03-20 11:21:43,815 - INFO - Navegador cerrado
+2025-03-20 11:21:48,575 - INFO - Inicio del script
+2025-03-20 11:21:56,349 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:21:56,478 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:21:57,139 - INFO - Usuario ingresado
+2025-03-20 11:21:57,179 - INFO - Contrase�a ingresada
+2025-03-20 11:21:57,516 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:21:58,252 - INFO - Bot�n de login presionado
+2025-03-20 11:22:01,252 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:22:01,252 - INFO - Iniciando Ventas.
+2025-03-20 11:22:01,285 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:22:02,316 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:22:03,358 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:22:06,674 - INFO - Cierre de sesi�n exitoso
+2025-03-20 11:22:09,955 - INFO - Navegador cerrado
+2025-03-20 11:23:51,930 - INFO - Inicio del script
+2025-03-20 11:23:59,858 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:24:00,001 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:24:00,591 - INFO - Usuario ingresado
+2025-03-20 11:24:00,626 - INFO - Contrase�a ingresada
+2025-03-20 11:24:01,059 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:24:01,874 - INFO - Bot�n de login presionado
+2025-03-20 11:24:04,874 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:24:04,874 - INFO - Iniciando Ventas.
+2025-03-20 11:24:04,909 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:24:05,946 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:24:06,984 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:24:08,033 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:24:12,268 - INFO - Navegador cerrado
+2025-03-20 11:38:54,506 - INFO - Inicio del script
+2025-03-20 11:39:03,614 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:39:03,760 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:39:04,353 - INFO - Usuario ingresado
+2025-03-20 11:39:04,404 - INFO - Contrase�a ingresada
+2025-03-20 11:39:04,791 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:39:05,557 - INFO - Bot�n de login presionado
+2025-03-20 11:39:08,557 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:39:08,558 - INFO - Iniciando Ventas.
+2025-03-20 11:39:08,591 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:39:09,632 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:39:10,667 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:39:11,712 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:39:12,744 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:39:16,990 - INFO - Navegador cerrado
+2025-03-20 11:43:10,243 - INFO - Inicio del script
+2025-03-20 11:43:18,153 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:43:18,247 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:43:18,852 - INFO - Usuario ingresado
+2025-03-20 11:43:18,915 - INFO - Contrase�a ingresada
+2025-03-20 11:43:19,362 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:43:19,647 - INFO - Bot�n de login presionado
+2025-03-20 11:43:22,648 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:43:22,648 - INFO - Iniciando Ventas.
+2025-03-20 11:43:22,684 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:43:23,722 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:43:24,762 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:43:25,819 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:43:26,853 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:43:27,900 - INFO - N�mero de factura '3994' ingresado correctamente.
+2025-03-20 11:43:32,291 - INFO - Navegador cerrado
+2025-03-20 11:46:07,266 - INFO - Inicio del script
+2025-03-20 11:46:15,198 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:46:15,302 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:46:15,963 - INFO - Usuario ingresado
+2025-03-20 11:46:16,007 - INFO - Contrase�a ingresada
+2025-03-20 11:46:16,342 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:46:17,122 - INFO - Bot�n de login presionado
+2025-03-20 11:46:20,123 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:46:20,123 - INFO - Iniciando Ventas.
+2025-03-20 11:46:20,161 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:46:21,211 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:46:22,251 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:46:23,318 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:46:24,361 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:46:25,402 - INFO - N�mero de factura '3994' ingresado correctamente.
+2025-03-20 11:46:26,441 - INFO - N�mero de caja '20' ingresado correctamente.
+2025-03-20 11:46:30,758 - INFO - Navegador cerrado
+2025-03-20 11:46:50,433 - INFO - Inicio del script
+2025-03-20 11:46:58,450 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:46:58,547 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:46:59,179 - INFO - Usuario ingresado
+2025-03-20 11:46:59,219 - INFO - Contrase�a ingresada
+2025-03-20 11:46:59,607 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:46:59,895 - INFO - Bot�n de login presionado
+2025-03-20 11:47:02,896 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:47:02,896 - INFO - Iniciando Ventas.
+2025-03-20 11:47:02,927 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:47:03,960 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:47:04,997 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:47:06,052 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:47:07,084 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:47:08,127 - INFO - N�mero de factura '3994' ingresado correctamente.
+2025-03-20 11:47:09,166 - INFO - N�mero de caja '20' ingresado correctamente.
+2025-03-20 11:47:13,508 - INFO - Navegador cerrado
+2025-03-20 11:49:14,000 - INFO - Inicio del script
+2025-03-20 11:49:22,228 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:49:22,333 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:49:23,002 - INFO - Usuario ingresado
+2025-03-20 11:49:23,044 - INFO - Contrase�a ingresada
+2025-03-20 11:49:23,383 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:49:23,585 - INFO - Bot�n de login presionado
+2025-03-20 11:49:26,585 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:49:26,585 - INFO - Iniciando Ventas.
+2025-03-20 11:49:26,771 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:49:27,804 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:49:28,844 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:49:29,895 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:49:30,932 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:49:31,984 - INFO - N�mero de factura '3994' ingresado correctamente.
+2025-03-20 11:49:33,029 - INFO - N�mero de caja '20' ingresado correctamente.
+2025-03-20 11:49:37,376 - INFO - Navegador cerrado
+2025-03-20 11:53:38,251 - INFO - Inicio del script
+2025-03-20 11:53:46,387 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:53:46,472 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:53:47,064 - INFO - Usuario ingresado
+2025-03-20 11:53:47,118 - INFO - Contrase�a ingresada
+2025-03-20 11:53:47,558 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:53:47,882 - INFO - Bot�n de login presionado
+2025-03-20 11:53:50,882 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:53:50,883 - INFO - Iniciando Ventas.
+2025-03-20 11:53:50,918 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:53:51,957 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:53:52,996 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:53:54,048 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:53:55,083 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:53:56,128 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 11:53:57,187 - INFO - N�mero de caja '20' ingresado correctamente.
+2025-03-20 11:53:58,267 - INFO - Clic en 'Devolver.
+2025-03-20 11:54:02,584 - INFO - Navegador cerrado
+2025-03-20 11:58:18,540 - INFO - Inicio del script
+2025-03-20 11:58:26,934 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:58:27,061 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:58:27,658 - INFO - Usuario ingresado
+2025-03-20 11:58:27,827 - INFO - Contrase�a ingresada
+2025-03-20 11:58:28,232 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:58:28,488 - INFO - Bot�n de login presionado
+2025-03-20 11:58:31,488 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:58:31,489 - INFO - Iniciando Ventas.
+2025-03-20 11:58:31,526 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:58:32,564 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:58:33,601 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:58:34,693 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:58:35,729 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:58:36,776 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 11:58:37,832 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 11:58:38,875 - INFO - Clic en 'Devolver.
+2025-03-20 11:58:39,881 - ERROR - Error de WebDriver: Message: Given xpath expression "body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-footer > div > button" is invalid: TypeError: Document.evaluate: Result type mismatch; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+InvalidSelectorError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:443:5
+find_@chrome://remote/content/shared/DOM.sys.mjs:170:11
+
+2025-03-20 11:58:43,355 - INFO - Navegador cerrado
+2025-03-20 11:58:48,227 - INFO - Inicio del script
+2025-03-20 11:58:57,529 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 11:58:57,691 - INFO - Redirigido a la p�gina de login
+2025-03-20 11:58:58,431 - INFO - Usuario ingresado
+2025-03-20 11:58:58,496 - INFO - Contrase�a ingresada
+2025-03-20 11:58:59,003 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 11:58:59,325 - INFO - Bot�n de login presionado
+2025-03-20 11:59:02,326 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 11:59:02,326 - INFO - Iniciando Ventas.
+2025-03-20 11:59:02,361 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 11:59:03,400 - INFO - Accedi� a 'Vent.'.
+2025-03-20 11:59:04,477 - INFO - Accedi� a 'Factur.'.
+2025-03-20 11:59:05,530 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:59:06,565 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 11:59:07,612 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 11:59:08,670 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 11:59:09,710 - INFO - Clic en 'Devolver.
+2025-03-20 11:59:10,717 - ERROR - Error de WebDriver: Message: Given xpath expression "body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-footer > div > button" is invalid: TypeError: Document.evaluate: Result type mismatch; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+InvalidSelectorError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:443:5
+find_@chrome://remote/content/shared/DOM.sys.mjs:170:11
+
+2025-03-20 11:59:14,012 - INFO - Navegador cerrado
+2025-03-20 12:04:35,207 - INFO - Inicio del script
+2025-03-20 12:04:43,716 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 12:04:43,865 - INFO - Redirigido a la p�gina de login
+2025-03-20 12:04:44,469 - INFO - Usuario ingresado
+2025-03-20 12:04:44,505 - INFO - Contrase�a ingresada
+2025-03-20 12:04:44,838 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 12:04:45,593 - INFO - Bot�n de login presionado
+2025-03-20 12:04:48,593 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 12:04:48,593 - INFO - Iniciando Ventas.
+2025-03-20 12:04:48,633 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 12:04:49,672 - INFO - Accedi� a 'Vent.'.
+2025-03-20 12:04:50,722 - INFO - Accedi� a 'Factur.'.
+2025-03-20 12:04:51,766 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 12:04:52,798 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 12:04:53,845 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 12:04:54,899 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 12:04:55,937 - INFO - Clic en 'Devolver.
+2025-03-20 12:05:07,030 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 12:05:10,358 - INFO - Navegador cerrado
+2025-03-20 12:05:29,578 - INFO - Inicio del script
+2025-03-20 12:05:37,538 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 12:05:37,649 - INFO - Redirigido a la p�gina de login
+2025-03-20 12:05:38,248 - INFO - Usuario ingresado
+2025-03-20 12:05:38,301 - INFO - Contrase�a ingresada
+2025-03-20 12:05:38,718 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 12:05:39,066 - INFO - Bot�n de login presionado
+2025-03-20 12:05:42,067 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 12:05:42,067 - INFO - Iniciando Ventas.
+2025-03-20 12:05:42,101 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 12:05:43,135 - INFO - Accedi� a 'Vent.'.
+2025-03-20 12:05:44,168 - INFO - Accedi� a 'Factur.'.
+2025-03-20 12:05:45,229 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 12:05:46,261 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 12:05:47,305 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 12:05:48,357 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 12:05:49,405 - INFO - Clic en 'Devolver.
+2025-03-20 12:05:50,429 - INFO - Clic en 'Devolver.
+2025-03-20 12:05:54,718 - INFO - Navegador cerrado
+2025-03-20 12:09:18,310 - INFO - Inicio del script
+2025-03-20 12:09:26,458 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 12:09:26,545 - INFO - Redirigido a la p�gina de login
+2025-03-20 12:09:27,137 - INFO - Usuario ingresado
+2025-03-20 12:09:27,184 - INFO - Contrase�a ingresada
+2025-03-20 12:09:27,563 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 12:09:28,354 - INFO - Bot�n de login presionado
+2025-03-20 12:09:31,355 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 12:09:31,355 - INFO - Iniciando Ventas.
+2025-03-20 12:09:31,388 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 12:09:32,428 - INFO - Accedi� a 'Vent.'.
+2025-03-20 12:09:33,461 - INFO - Accedi� a 'Factur.'.
+2025-03-20 12:09:34,505 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 12:09:35,538 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 12:09:36,580 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 12:09:37,634 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 12:09:38,676 - INFO - Clic en 'Devolver.
+2025-03-20 12:09:39,705 - INFO - Clic en 'Devolver.
+2025-03-20 12:09:40,711 - ERROR - Error de WebDriver: Message: Given css selector expression "//*[@id='CausalDevolucion']/option[4]" is invalid: InvalidSelectorError: Document.querySelector: '//*[@id='CausalDevolucion']/option[4]' is not a valid selector: "//*[@id='CausalDevolucion']/option[4]"; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+InvalidSelectorError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:443:5
+find_@chrome://remote/content/shared/DOM.sys.mjs:170:11
+
+2025-03-20 12:09:43,966 - INFO - Navegador cerrado
+2025-03-20 13:53:57,069 - INFO - Inicio del script
+2025-03-20 13:54:06,171 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 13:54:06,286 - INFO - Redirigido a la p�gina de login
+2025-03-20 13:54:06,903 - INFO - Usuario ingresado
+2025-03-20 13:54:06,932 - INFO - Contrase�a ingresada
+2025-03-20 13:54:07,261 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 13:54:08,017 - INFO - Bot�n de login presionado
+2025-03-20 13:54:11,017 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 13:54:11,018 - INFO - Iniciando Ventas.
+2025-03-20 13:54:11,051 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 13:54:12,089 - INFO - Accedi� a 'Vent.'.
+2025-03-20 13:54:13,123 - INFO - Accedi� a 'Factur.'.
+2025-03-20 13:54:14,170 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 13:54:15,203 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 13:54:16,249 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 13:54:17,298 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 13:54:18,335 - INFO - Clic en 'Devolver.
+2025-03-20 13:54:19,361 - INFO - Clic en 'Devolver.
+2025-03-20 13:54:20,366 - ERROR - Error de WebDriver: Message: Given css selector expression "//*[@id='CausalDevolucion']/option[4]" is invalid: InvalidSelectorError: Document.querySelector: '//*[@id='CausalDevolucion']/option[4]' is not a valid selector: "//*[@id='CausalDevolucion']/option[4]"; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+InvalidSelectorError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:443:5
+find_@chrome://remote/content/shared/DOM.sys.mjs:170:11
+
+2025-03-20 13:54:23,755 - INFO - Navegador cerrado
+2025-03-20 13:55:37,772 - INFO - Inicio del script
+2025-03-20 13:55:45,583 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 13:55:45,899 - INFO - Redirigido a la p�gina de login
+2025-03-20 13:55:46,518 - INFO - Usuario ingresado
+2025-03-20 13:55:46,554 - INFO - Contrase�a ingresada
+2025-03-20 13:55:46,940 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 13:55:47,783 - INFO - Bot�n de login presionado
+2025-03-20 13:55:50,783 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 13:55:50,783 - INFO - Iniciando Ventas.
+2025-03-20 13:55:50,818 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 13:55:51,854 - INFO - Accedi� a 'Vent.'.
+2025-03-20 13:55:52,906 - INFO - Accedi� a 'Factur.'.
+2025-03-20 13:55:53,971 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 13:55:55,008 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 13:55:56,068 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 13:55:57,124 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 13:55:58,160 - INFO - Clic en 'Devolver.
+2025-03-20 13:55:59,189 - INFO - Clic en 'Devolver.
+2025-03-20 13:56:00,197 - ERROR - Error de WebDriver: Message: Given css selector expression "//*[@id='CausalDevolucion']/option[4]" is invalid: InvalidSelectorError: Document.querySelector: '//*[@id='CausalDevolucion']/option[4]' is not a valid selector: "//*[@id='CausalDevolucion']/option[4]"; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+InvalidSelectorError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:443:5
+find_@chrome://remote/content/shared/DOM.sys.mjs:170:11
+
+2025-03-20 13:56:03,450 - INFO - Navegador cerrado
+2025-03-20 13:56:17,620 - INFO - Inicio del script
+2025-03-20 13:56:26,874 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 13:56:27,140 - INFO - Redirigido a la p�gina de login
+2025-03-20 13:56:27,580 - INFO - Usuario ingresado
+2025-03-20 13:56:27,758 - INFO - Contrase�a ingresada
+2025-03-20 13:56:28,148 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 13:56:28,842 - INFO - Bot�n de login presionado
+2025-03-20 13:56:31,843 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 13:56:31,843 - INFO - Iniciando Ventas.
+2025-03-20 13:56:31,876 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 13:56:32,908 - INFO - Accedi� a 'Vent.'.
+2025-03-20 13:56:33,947 - INFO - Accedi� a 'Factur.'.
+2025-03-20 13:56:34,988 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 13:56:36,023 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 13:56:37,066 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 13:56:38,106 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 13:56:39,145 - INFO - Clic en 'Devolver.
+2025-03-20 13:56:40,169 - INFO - Clic en 'Devolver.
+2025-03-20 13:56:41,180 - ERROR - Error de WebDriver: Message: Given css selector expression "//*[@id='CausalDevolucion']/option[4]" is invalid: InvalidSelectorError: Document.querySelector: '//*[@id='CausalDevolucion']/option[4]' is not a valid selector: "//*[@id='CausalDevolucion']/option[4]"; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+InvalidSelectorError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:443:5
+find_@chrome://remote/content/shared/DOM.sys.mjs:170:11
+
+2025-03-20 13:56:44,679 - INFO - Navegador cerrado
+2025-03-20 13:57:13,464 - INFO - Inicio del script
+2025-03-20 13:57:21,510 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 13:57:21,608 - INFO - Redirigido a la p�gina de login
+2025-03-20 13:57:22,176 - INFO - Usuario ingresado
+2025-03-20 13:57:22,218 - INFO - Contrase�a ingresada
+2025-03-20 13:57:22,621 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 13:57:23,432 - INFO - Bot�n de login presionado
+2025-03-20 13:57:26,432 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 13:57:26,432 - INFO - Iniciando Ventas.
+2025-03-20 13:57:26,467 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 13:57:27,503 - INFO - Accedi� a 'Vent.'.
+2025-03-20 13:57:28,539 - INFO - Accedi� a 'Factur.'.
+2025-03-20 13:57:29,583 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 13:57:30,630 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 13:57:31,672 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 13:57:32,723 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 13:57:33,758 - INFO - Clic en 'Devolver.
+2025-03-20 13:57:34,781 - INFO - Clic en 'Devolver.
+2025-03-20 13:57:35,787 - ERROR - Error de WebDriver: Message: Given css selector expression "//*[@id='CausalDevolucion']" is invalid: InvalidSelectorError: Document.querySelector: '//*[@id='CausalDevolucion']' is not a valid selector: "//*[@id='CausalDevolucion']"; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+InvalidSelectorError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:443:5
+find_@chrome://remote/content/shared/DOM.sys.mjs:170:11
+
+2025-03-20 13:57:39,032 - INFO - Navegador cerrado
+2025-03-20 14:05:28,039 - INFO - Inicio del script
+2025-03-20 14:05:36,577 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:05:36,660 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:05:37,288 - INFO - Usuario ingresado
+2025-03-20 14:05:37,355 - INFO - Contrase�a ingresada
+2025-03-20 14:05:37,793 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:05:38,615 - INFO - Bot�n de login presionado
+2025-03-20 14:05:41,615 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:05:41,615 - INFO - Iniciando Ventas.
+2025-03-20 14:05:41,652 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:05:42,692 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:05:43,587 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:05:44,791 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:05:45,826 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:05:46,874 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:05:47,981 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:05:49,021 - INFO - Clic en 'Devolver.
+2025-03-20 14:05:50,050 - INFO - Clic en 'Devolver.
+2025-03-20 14:05:51,075 - INFO - Clic en 'Devolver.
+2025-03-20 14:05:55,779 - INFO - Navegador cerrado
+2025-03-20 14:12:11,512 - INFO - Inicio del script
+2025-03-20 14:12:19,767 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:12:19,858 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:12:20,505 - INFO - Usuario ingresado
+2025-03-20 14:12:20,547 - INFO - Contrase�a ingresada
+2025-03-20 14:12:20,978 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:12:21,323 - INFO - Bot�n de login presionado
+2025-03-20 14:12:24,324 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:12:24,324 - INFO - Iniciando Ventas.
+2025-03-20 14:12:24,358 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:12:25,393 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:12:26,432 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:12:27,482 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:12:28,515 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:12:29,559 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:12:30,610 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:12:31,652 - INFO - Clic en 'Devolver.
+2025-03-20 14:12:32,679 - INFO - Clic en 'Devolver.
+2025-03-20 14:12:33,707 - INFO - Clic en 'Devolver.
+2025-03-20 14:12:37,996 - INFO - Navegador cerrado
+2025-03-20 14:18:16,725 - INFO - Inicio del script
+2025-03-20 14:18:24,810 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:18:24,961 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:18:25,569 - INFO - Usuario ingresado
+2025-03-20 14:18:25,691 - INFO - Contrase�a ingresada
+2025-03-20 14:18:26,018 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:18:26,855 - INFO - Bot�n de login presionado
+2025-03-20 14:18:29,856 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:18:29,856 - INFO - Iniciando Ventas.
+2025-03-20 14:18:29,889 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:18:30,925 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:18:31,960 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:18:33,007 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:18:34,038 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:18:35,081 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:18:36,134 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:18:37,171 - INFO - Clic en 'Devolver.
+2025-03-20 14:18:38,196 - INFO - Clic en 'Devolver.
+2025-03-20 14:18:39,485 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:18:42,580 - INFO - Navegador cerrado
+2025-03-20 14:30:01,102 - INFO - Inicio del script
+2025-03-20 14:30:09,596 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:30:09,677 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:30:10,301 - INFO - Usuario ingresado
+2025-03-20 14:30:10,377 - INFO - Contrase�a ingresada
+2025-03-20 14:30:10,850 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:30:11,633 - INFO - Bot�n de login presionado
+2025-03-20 14:30:14,634 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:30:14,634 - INFO - Iniciando Ventas.
+2025-03-20 14:30:14,667 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:30:15,701 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:30:16,741 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:30:17,784 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:30:18,815 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:30:19,858 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:30:20,950 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:30:21,987 - INFO - Clic en 'Devolver.
+2025-03-20 14:30:23,012 - INFO - Clic en 'Devolver.
+2025-03-20 14:30:24,293 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:30:24,533 - INFO - Clic realizado en 'cuerpoDevolver.
+2025-03-20 14:30:27,882 - INFO - Navegador cerrado
+2025-03-20 14:31:20,339 - INFO - Inicio del script
+2025-03-20 14:31:28,403 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:31:28,557 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:31:29,209 - INFO - Usuario ingresado
+2025-03-20 14:31:29,281 - INFO - Contrase�a ingresada
+2025-03-20 14:31:29,716 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:31:30,114 - INFO - Bot�n de login presionado
+2025-03-20 14:31:33,115 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:31:33,115 - INFO - Iniciando Ventas.
+2025-03-20 14:31:33,149 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:31:34,184 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:31:35,223 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:31:36,269 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:31:37,303 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:31:38,347 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:31:39,386 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:31:40,470 - INFO - Clic en 'Devolver.
+2025-03-20 14:31:41,496 - INFO - Clic en 'Devolver.
+2025-03-20 14:31:42,780 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:31:42,784 - INFO - Desplazamiento hacia abajo realizado.
+2025-03-20 14:31:46,047 - INFO - Navegador cerrado
+2025-03-20 14:32:28,059 - INFO - Inicio del script
+2025-03-20 14:32:36,139 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:32:36,243 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:32:36,804 - INFO - Usuario ingresado
+2025-03-20 14:32:36,839 - INFO - Contrase�a ingresada
+2025-03-20 14:32:37,191 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:32:37,964 - INFO - Bot�n de login presionado
+2025-03-20 14:32:40,965 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:32:40,965 - INFO - Iniciando Ventas.
+2025-03-20 14:32:40,997 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:32:42,035 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:32:43,058 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:32:44,115 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:32:45,147 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:32:46,189 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:32:47,242 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:32:48,279 - INFO - Clic en 'Devolver.
+2025-03-20 14:32:49,306 - INFO - Clic en 'Devolver.
+2025-03-20 14:32:50,594 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:32:50,598 - INFO - Desplazamiento al final de la p�gina realizado.
+2025-03-20 14:32:53,856 - INFO - Navegador cerrado
+2025-03-20 14:36:26,195 - INFO - Inicio del script
+2025-03-20 14:36:35,154 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:36:35,220 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:36:35,816 - INFO - Usuario ingresado
+2025-03-20 14:36:35,863 - INFO - Contrase�a ingresada
+2025-03-20 14:36:36,234 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:36:36,970 - INFO - Bot�n de login presionado
+2025-03-20 14:36:39,971 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:36:39,971 - INFO - Iniciando Ventas.
+2025-03-20 14:36:40,001 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:36:41,038 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:36:42,074 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:36:43,119 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:36:44,154 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:36:45,197 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:36:46,251 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:36:47,290 - INFO - Clic en 'Devolver.
+2025-03-20 14:36:48,317 - INFO - Clic en 'Devolver.
+2025-03-20 14:36:49,609 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:36:52,879 - INFO - Navegador cerrado
+2025-03-20 14:38:19,876 - INFO - Inicio del script
+2025-03-20 14:38:28,503 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:38:28,585 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:38:29,170 - INFO - Usuario ingresado
+2025-03-20 14:38:29,201 - INFO - Contrase�a ingresada
+2025-03-20 14:38:29,584 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:38:30,353 - INFO - Bot�n de login presionado
+2025-03-20 14:38:33,353 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:38:33,354 - INFO - Iniciando Ventas.
+2025-03-20 14:38:33,385 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:38:34,420 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:38:35,454 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:38:36,509 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:38:37,540 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:38:38,583 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:38:39,636 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:38:40,679 - INFO - Clic en 'Devolver.
+2025-03-20 14:38:41,708 - INFO - Clic en 'Devolver.
+2025-03-20 14:38:43,046 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:38:46,302 - INFO - Navegador cerrado
+2025-03-20 14:40:26,438 - INFO - Inicio del script
+2025-03-20 14:40:34,876 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:40:34,964 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:40:35,546 - INFO - Usuario ingresado
+2025-03-20 14:40:35,575 - INFO - Contrase�a ingresada
+2025-03-20 14:40:35,928 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:40:36,207 - INFO - Bot�n de login presionado
+2025-03-20 14:40:39,208 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:40:39,208 - INFO - Iniciando Ventas.
+2025-03-20 14:40:39,241 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:40:40,280 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:40:41,324 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:40:42,377 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:40:43,415 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:40:44,461 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:40:45,520 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:40:46,568 - INFO - Clic en 'Devolver.
+2025-03-20 14:40:47,600 - INFO - Clic en 'Devolver.
+2025-03-20 14:40:48,890 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:40:52,253 - INFO - Navegador cerrado
+2025-03-20 14:41:00,486 - INFO - Inicio del script
+2025-03-20 14:41:09,101 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:41:09,280 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:41:09,884 - INFO - Usuario ingresado
+2025-03-20 14:41:09,970 - INFO - Contrase�a ingresada
+2025-03-20 14:41:10,310 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:41:11,083 - INFO - Bot�n de login presionado
+2025-03-20 14:41:14,083 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:41:14,083 - INFO - Iniciando Ventas.
+2025-03-20 14:41:14,116 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:41:15,157 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:41:16,198 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:41:17,242 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:41:18,277 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:41:19,329 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:41:20,390 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:41:21,431 - INFO - Clic en 'Devolver.
+2025-03-20 14:41:22,455 - INFO - Clic en 'Devolver.
+2025-03-20 14:41:23,794 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:41:27,076 - INFO - Navegador cerrado
+2025-03-20 14:43:51,851 - INFO - Inicio del script
+2025-03-20 14:44:00,244 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:44:00,351 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:44:01,018 - INFO - Usuario ingresado
+2025-03-20 14:44:01,054 - INFO - Contrase�a ingresada
+2025-03-20 14:44:01,467 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:44:02,296 - INFO - Bot�n de login presionado
+2025-03-20 14:44:05,297 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:44:05,297 - INFO - Iniciando Ventas.
+2025-03-20 14:44:05,329 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:44:06,371 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:44:07,405 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:44:08,448 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:44:09,481 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:44:10,523 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:44:11,575 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:44:12,613 - INFO - Clic en 'Devolver.
+2025-03-20 14:44:13,640 - INFO - Clic en 'Devolver.
+2025-03-20 14:44:14,980 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:44:15,007 - INFO - Clic en 'Devolver.
+2025-03-20 14:44:19,295 - INFO - Navegador cerrado
+2025-03-20 14:48:52,523 - INFO - Inicio del script
+2025-03-20 14:49:00,863 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:49:00,959 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:49:01,563 - INFO - Usuario ingresado
+2025-03-20 14:49:01,614 - INFO - Contrase�a ingresada
+2025-03-20 14:49:02,076 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:49:02,908 - INFO - Bot�n de login presionado
+2025-03-20 14:49:05,909 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:49:05,909 - INFO - Iniciando Ventas.
+2025-03-20 14:49:05,942 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:49:06,982 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:49:08,021 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:49:09,064 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:49:10,094 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:49:11,138 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:49:12,193 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:49:13,230 - INFO - Clic en 'Devolver.
+2025-03-20 14:49:14,258 - INFO - Clic en 'Devolver.
+2025-03-20 14:49:15,584 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:49:15,613 - INFO - Clic en 'Devolver.
+2025-03-20 14:49:16,640 - INFO - Clic en 'OK' de la devoluci�n realizado correctamente.
+2025-03-20 14:49:20,911 - INFO - Navegador cerrado
+2025-03-20 14:54:26,866 - INFO - Inicio del script
+2025-03-20 14:54:35,123 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:54:35,198 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:54:35,797 - INFO - Usuario ingresado
+2025-03-20 14:54:35,849 - INFO - Contrase�a ingresada
+2025-03-20 14:54:36,276 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:54:37,078 - INFO - Bot�n de login presionado
+2025-03-20 14:54:40,078 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:54:40,078 - INFO - Iniciando Ventas.
+2025-03-20 14:54:40,113 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:54:41,152 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:54:42,186 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:54:43,229 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:54:44,260 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:54:45,302 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:54:46,354 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:54:47,393 - INFO - Clic en 'Devolver.
+2025-03-20 14:54:48,417 - INFO - Clic en 'Devolver.
+2025-03-20 14:54:49,747 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:54:49,779 - INFO - Clic en 'Devolver.
+2025-03-20 14:54:50,806 - INFO - Clic en 'OK' de la devoluci�n realizado correctamente.
+2025-03-20 14:54:55,167 - INFO - Navegador cerrado
+2025-03-20 14:54:59,929 - INFO - Inicio del script
+2025-03-20 14:55:08,308 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:55:08,399 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:55:08,986 - INFO - Usuario ingresado
+2025-03-20 14:55:09,031 - INFO - Contrase�a ingresada
+2025-03-20 14:55:09,423 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:55:10,197 - INFO - Bot�n de login presionado
+2025-03-20 14:55:13,197 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:55:13,198 - INFO - Iniciando Ventas.
+2025-03-20 14:55:13,230 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:55:14,265 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:55:15,298 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:55:16,343 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:55:17,376 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:55:18,421 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:55:19,458 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:55:20,513 - INFO - Clic en 'Devolver.
+2025-03-20 14:55:21,544 - INFO - Clic en 'Devolver.
+2025-03-20 14:55:22,828 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:55:22,860 - INFO - Clic en 'Devolver.
+2025-03-20 14:55:23,890 - INFO - Clic en 'OK' de la devoluci�n realizado correctamente.
+2025-03-20 14:55:28,191 - INFO - Navegador cerrado
+2025-03-20 14:58:05,034 - INFO - Inicio del script
+2025-03-20 14:58:13,929 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 14:58:13,999 - INFO - Redirigido a la p�gina de login
+2025-03-20 14:58:14,574 - INFO - Usuario ingresado
+2025-03-20 14:58:14,620 - INFO - Contrase�a ingresada
+2025-03-20 14:58:14,936 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 14:58:15,723 - INFO - Bot�n de login presionado
+2025-03-20 14:58:18,723 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 14:58:18,724 - INFO - Iniciando Ventas.
+2025-03-20 14:58:18,756 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 14:58:19,789 - INFO - Accedi� a 'Vent.'.
+2025-03-20 14:58:20,872 - INFO - Accedi� a 'Factur.'.
+2025-03-20 14:58:21,916 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:58:22,947 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 14:58:23,991 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 14:58:25,069 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 14:58:26,101 - INFO - Clic en 'Devolver.
+2025-03-20 14:58:27,125 - INFO - Clic en 'Devolver.
+2025-03-20 14:58:28,411 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 14:58:28,440 - INFO - Clic en 'Devolver.
+2025-03-20 14:58:29,478 - INFO - Clic en 'OK' de la devoluci�n realizado correctamente.
+2025-03-20 14:58:30,503 - INFO - Clic en 'OK' de la devoluci�n realizado correctamente.
+2025-03-20 14:58:34,764 - INFO - Navegador cerrado
+2025-03-20 15:16:52,165 - INFO - Inicio del script
+2025-03-20 15:17:00,839 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 15:17:00,939 - INFO - Redirigido a la p�gina de login
+2025-03-20 15:17:01,500 - INFO - Usuario ingresado
+2025-03-20 15:17:01,526 - INFO - Contrase�a ingresada
+2025-03-20 15:17:01,893 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 15:17:02,619 - INFO - Bot�n de login presionado
+2025-03-20 15:17:05,620 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 15:17:14,930 - INFO - Gesti�n de caja completada.
+2025-03-20 15:17:17,279 - INFO - Cierre de sesi�n exitoso
+2025-03-20 15:17:20,545 - INFO - Navegador cerrado
+2025-03-20 15:17:48,585 - INFO - Inicio del script
+2025-03-20 15:17:57,121 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 15:17:57,189 - INFO - Redirigido a la p�gina de login
+2025-03-20 15:17:57,771 - INFO - Usuario ingresado
+2025-03-20 15:17:57,820 - INFO - Contrase�a ingresada
+2025-03-20 15:17:58,193 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 15:17:58,919 - INFO - Bot�n de login presionado
+2025-03-20 15:18:01,920 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 15:18:15,178 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 15:18:17,488 - INFO - Cierre de sesi�n exitoso
+2025-03-20 15:18:20,699 - INFO - Navegador cerrado
+2025-03-20 15:26:35,882 - INFO - Inicio del script
+2025-03-20 15:26:44,518 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 15:26:44,696 - INFO - Redirigido a la p�gina de login
+2025-03-20 15:26:45,325 - INFO - Usuario ingresado
+2025-03-20 15:26:45,354 - INFO - Contrase�a ingresada
+2025-03-20 15:26:45,709 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 15:26:45,989 - INFO - Bot�n de login presionado
+2025-03-20 15:26:48,990 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 15:26:52,123 - ERROR - Error en la gesti�n de caja: Message: Unable to locate element: //span[@id='caja-actual']; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 15:26:54,446 - INFO - Cierre de sesi�n exitoso
+2025-03-20 15:26:57,584 - INFO - Navegador cerrado
+2025-03-20 15:30:20,807 - INFO - Inicio del script
+2025-03-20 15:30:29,088 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 15:30:29,239 - INFO - Redirigido a la p�gina de login
+2025-03-20 15:30:29,841 - INFO - Usuario ingresado
+2025-03-20 15:30:29,947 - INFO - Contrase�a ingresada
+2025-03-20 15:30:30,321 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 15:30:30,658 - INFO - Bot�n de login presionado
+2025-03-20 15:30:33,659 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 15:30:46,875 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 15:30:49,212 - INFO - Cierre de sesi�n exitoso
+2025-03-20 15:30:52,430 - INFO - Navegador cerrado
+2025-03-20 15:36:59,158 - INFO - Inicio del script
+2025-03-20 15:37:08,018 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 15:37:08,101 - INFO - Redirigido a la p�gina de login
+2025-03-20 15:37:08,727 - INFO - Usuario ingresado
+2025-03-20 15:37:08,771 - INFO - Contrase�a ingresada
+2025-03-20 15:37:09,174 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 15:37:09,937 - INFO - Bot�n de login presionado
+2025-03-20 15:37:12,938 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 15:37:15,012 - ERROR - Error en la gesti�n de caja: Message: Unable to locate element: //span[@id='caja-actual']; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 15:37:17,296 - INFO - Cierre de sesi�n exitoso
+2025-03-20 15:37:20,558 - INFO - Navegador cerrado
+2025-03-20 15:37:40,244 - INFO - Inicio del script
+2025-03-20 15:37:48,672 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 15:37:48,797 - INFO - Redirigido a la p�gina de login
+2025-03-20 15:37:49,395 - INFO - Usuario ingresado
+2025-03-20 15:37:49,428 - INFO - Contrase�a ingresada
+2025-03-20 15:37:49,810 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 15:37:50,593 - INFO - Bot�n de login presionado
+2025-03-20 15:37:53,594 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 15:37:53,594 - INFO - Iniciando Ventas.
+2025-03-20 15:37:53,625 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-20 15:37:54,666 - INFO - Accedi� a 'Vent.'.
+2025-03-20 15:37:55,703 - INFO - Accedi� a 'Factur.'.
+2025-03-20 15:37:56,757 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 15:37:57,789 - INFO - Accedi� a 'Devoluci.'.
+2025-03-20 15:37:58,834 - INFO - N�mero de factura '4006' ingresado correctamente.
+2025-03-20 15:37:59,886 - INFO - N�mero de caja '91' ingresado correctamente.
+2025-03-20 15:38:00,924 - INFO - Clic en 'Devolver.
+2025-03-20 15:38:01,951 - INFO - Clic en 'Devolver.
+2025-03-20 15:38:03,290 - INFO - Causal de devoluci�n seleccionada correctamente: �ndice 3.
+2025-03-20 15:38:03,318 - INFO - Clic en 'Devolver.
+2025-03-20 15:38:04,349 - INFO - Clic en 'OK' de la devoluci�n realizado correctamente.
+2025-03-20 15:38:05,377 - INFO - Clic en 'OK' de la devoluci�n realizado correctamente.
+2025-03-20 15:38:09,631 - INFO - Navegador cerrado
+2025-03-20 15:38:27,786 - INFO - Inicio del script
+2025-03-20 15:38:36,432 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 15:38:36,581 - INFO - Redirigido a la p�gina de login
+2025-03-20 15:38:37,185 - INFO - Usuario ingresado
+2025-03-20 15:38:37,244 - INFO - Contrase�a ingresada
+2025-03-20 15:38:37,592 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 15:38:38,353 - INFO - Bot�n de login presionado
+2025-03-20 15:38:41,354 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 15:38:54,566 - ERROR - Error al generar el PDF: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 15:38:56,885 - INFO - Cierre de sesi�n exitoso
+2025-03-20 15:39:00,046 - INFO - Navegador cerrado
+2025-03-20 15:39:29,144 - INFO - Inicio del script
+2025-03-20 15:39:37,492 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 15:39:37,629 - INFO - Redirigido a la p�gina de login
+2025-03-20 15:39:38,227 - INFO - Usuario ingresado
+2025-03-20 15:39:38,256 - INFO - Contrase�a ingresada
+2025-03-20 15:39:38,625 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 15:39:38,911 - INFO - Bot�n de login presionado
+2025-03-20 15:39:41,912 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 15:39:51,218 - INFO - Gesti�n de caja completada.
+2025-03-20 15:39:53,565 - INFO - Cierre de sesi�n exitoso
+2025-03-20 15:39:56,759 - INFO - Navegador cerrado
+2025-03-20 15:49:48,569 - INFO - Inicio del script
+2025-03-20 15:49:56,996 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 15:49:57,141 - INFO - Redirigido a la p�gina de login
+2025-03-20 15:49:57,753 - INFO - Usuario ingresado
+2025-03-20 15:49:57,801 - INFO - Contrase�a ingresada
+2025-03-20 15:49:58,233 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 15:49:59,002 - INFO - Bot�n de login presionado
+2025-03-20 15:50:02,002 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 15:50:05,116 - ERROR - Error al generar el PDF: Message: Unable to locate element: //*[@id='cerrar-caja-1']; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-20 15:50:07,409 - INFO - Cierre de sesi�n exitoso
+2025-03-20 15:50:10,610 - INFO - Navegador cerrado
+2025-03-20 15:59:46,681 - INFO - Inicio del script
+2025-03-20 15:59:55,008 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 15:59:55,142 - INFO - Redirigido a la p�gina de login
+2025-03-20 15:59:55,585 - INFO - Usuario ingresado
+2025-03-20 15:59:55,767 - INFO - Contrase�a ingresada
+2025-03-20 15:59:56,144 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 15:59:56,927 - INFO - Bot�n de login presionado
+2025-03-20 15:59:59,927 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 16:00:09,240 - INFO - Gesti�n de caja completada.
+2025-03-20 16:00:11,609 - INFO - Cierre de sesi�n exitoso
+2025-03-20 16:00:14,851 - INFO - Navegador cerrado
+2025-03-20 16:03:15,556 - INFO - Inicio del script
+2025-03-20 16:03:23,820 - INFO - Navegador abierto y p�gina cargada
+2025-03-20 16:03:24,020 - INFO - Redirigido a la p�gina de login
+2025-03-20 16:03:24,699 - INFO - Usuario ingresado
+2025-03-20 16:03:24,741 - INFO - Contrase�a ingresada
+2025-03-20 16:03:25,050 - INFO - Perfil 'Administrador' seleccionado
+2025-03-20 16:03:25,932 - INFO - Bot�n de login presionado
+2025-03-20 16:03:28,932 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-20 16:03:38,257 - INFO - Gesti�n de caja completada.
+2025-03-20 16:03:40,562 - INFO - Cierre de sesi�n exitoso
+2025-03-20 16:03:43,783 - INFO - Navegador cerrado
+2025-03-21 08:39:33,581 - INFO - Inicio del script
+2025-03-21 08:39:46,050 - INFO - Navegador abierto y p�gina cargada
+2025-03-21 08:39:46,148 - INFO - Redirigido a la p�gina de login
+2025-03-21 08:39:47,220 - INFO - Usuario ingresado
+2025-03-21 08:39:47,247 - INFO - Contrase�a ingresada
+2025-03-21 08:39:47,558 - INFO - Perfil 'Administrador' seleccionado
+2025-03-21 08:39:47,897 - INFO - Bot�n de login presionado
+2025-03-21 08:39:50,898 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-21 08:39:50,898 - INFO - Iniciando Ventas.
+2025-03-21 08:39:50,980 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-21 08:39:52,013 - INFO - Accedi� a 'Vent.'.
+2025-03-21 08:39:53,060 - INFO - Accedi� a 'Factur.'.
+2025-03-21 08:39:54,207 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-21 08:40:05,507 - ERROR - Error en la gesti�n de caja: Message: 
+
+2025-03-21 08:40:07,856 - INFO - Cierre de sesi�n exitoso
+2025-03-21 08:40:11,058 - INFO - Navegador cerrado
+2025-03-21 08:40:15,934 - INFO - Inicio del script
+2025-03-21 08:40:24,013 - INFO - Navegador abierto y p�gina cargada
+2025-03-21 08:40:24,090 - INFO - Redirigido a la p�gina de login
+2025-03-21 08:40:24,679 - INFO - Usuario ingresado
+2025-03-21 08:40:24,715 - INFO - Contrase�a ingresada
+2025-03-21 08:40:25,059 - INFO - Perfil 'Administrador' seleccionado
+2025-03-21 08:40:25,317 - INFO - Bot�n de login presionado
+2025-03-21 08:40:28,317 - INFO - Login exitoso, realizando devoluci�n ...
+2025-03-21 08:40:28,318 - INFO - Iniciando Ventas.
+2025-03-21 08:40:28,349 - INFO - Accedi� al men� 'Ca.ro'.
+2025-03-21 08:40:29,382 - INFO - Accedi� a 'Vent.'.
+2025-03-21 08:40:30,421 - INFO - Accedi� a 'Factur.'.
+2025-03-21 08:41:00,540 - INFO - Accedi� a 'Iniciar Factu.'.
+2025-03-21 08:41:09,747 - INFO - Accedi� a 'Clien.'.
+2025-03-21 08:41:10,787 - INFO - Accedi� a 'descuento_clien.'.
+2025-03-21 08:41:14,144 - INFO - Accedi� a 'Clien.'.
+2025-03-21 08:41:23,389 - INFO - Accedi� a 'Facturar Ven.'.
+2025-03-21 08:41:34,510 - ERROR - Error en la gesti�n de caja: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:527:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-03-21 08:41:37,158 - INFO - Cierre de sesi�n exitoso
+2025-03-21 08:41:40,667 - INFO - Navegador cerrado

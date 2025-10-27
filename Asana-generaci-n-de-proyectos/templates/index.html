@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatización Asana</title>
+    <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        :root {
+            --bg: #0b1220;
+            --card: #0f1724;
+            --muted: #9ca3b3;
+            --text: #e6eef3;
+            --accent: #ff7a18;
+            --accent-600: #e66b10;
+            --surface: #07121a;
+        }
+        body {
+            padding: 20px;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 1000px;
+            background-color: var(--card);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+            border: 1px solid rgba(255,255,255,0.03);
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        input.form-control, .form-control:focus {
+            background-color: #07121a;
+            border: 1px solid rgba(255,255,255,0.06);
+            color: var(--text);
+            box-shadow: none;
+        }
+        #sprint_number {
+            width: 120px;
+        }
+        #portfolio_preview {
+            font-weight: 600;
+            color: var(--text);
+            background-color: rgba(255,122,24,0.06);
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 0;
+            border: 1px solid rgba(255,122,24,0.12);
+        }
+        h1, h3 {
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+        .btn-asana {
+            padding: 12px 22px;
+            font-size: 17px;
+            font-weight: 600;
+            border-radius: 10px;
+            background: linear-gradient(180deg, var(--accent) 0%, var(--accent-600) 100%);
+            color: #fff;
+            border: none;
+            box-shadow: 0 6px 18px rgba(255,122,24,0.20);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            min-height: 48px;
+            line-height: 1;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .btn-asana svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .btn-asana:hover {
+            background: linear-gradient(180deg, var(--accent-600) 0%, #cc5f12 100%);
+            color: #fff;
+        }
+        .loading {
+            display: none;
+            color: var(--accent);
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        #results_table {
+            margin-top: 15px;
+        }
+        #results_table .table {
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(2,6,23,0.6);
+            background-color: var(--surface);
+            color: var(--text);
+        }
+        #results_table thead th {
+            background-color: #0b1a22;
+            color: var(--muted);
+            font-weight: 600;
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+        }
+        #results_table tbody tr:nth-child(odd) {
+            background-color: #071a22;
+        }
+        #results_table tbody tr:nth-child(even) {
+            background-color: #08121a;
+        }
+        #results_table tbody tr:hover {
+            background-color: rgba(255,122,24,0.04);
+        }
+        #results_table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid rgba(220, 220, 220, 0.02);
+            color:#07121a;
+            vertical-align: middle;
+        }
+        #results_table td.url-cell {
+            max-width: 250px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        #results_table a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        #results_table a:hover {
+            color: var(--accent-600);
+            text-decoration: underline;
+        }
+        #results_table .name-cell {
+            max-width: 350px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .row {
+            align-items: center;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            #results_table .table {
+                font-size: 14px;
+            }
+            #results_table td.url-cell {
+                max-width: 150px;
+            }
+            #results_table .name-cell {
+                max-width: 200px;
+            }
+            .row {
+                flex-direction: column;
+            }
+            .row .col-md-2, .row .col-md-4, .row .col-md-6 {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        /* Chips (pequeñas etiquetas) para los proyectos */
+        .chips {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,122,24,0.08);
+            color: var(--text);
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 14px;
+            border: 1px solid rgba(255,122,24,0.12);
+        }
+        .chip span {
+            font-weight: 600;
+            color: var(--text);
+            margin-left: 4px;
+        }
+
+        /* Posicionar acciones (botón) en la esquina inferior derecha del contenedor */
+        .form-actions {
+            position: relative;
+            padding-top: 20px;
+        }
+        .form-actions .btn-asana {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 576px) {
+            .form-actions .btn-asana {
+                position: static;
+                width: 100%;
+            }
+            .form-actions {
+                padding-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-3">Automatización Asana</h1>
+        <form id="automation-form">
+            <div class="row mb-3">
+                <div class="col-md-2 form-group">
+                    <label for="sprint_number" class="form-label">Número de Sprint</label>
+                    <input type="text" class="form-control" id="sprint_number" name="sprint_number" required pattern="\d{1,5}" maxlength="5">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label for="date_range" class="form-label">Seleccionar Fechas</label>
+                    <input type="text" class="form-control" id="date_range" name="date_range" required>
+                    <input type="hidden" id="start_date" name="start_date">
+                    <input type="hidden" id="end_date" name="end_date">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label class="form-label">Nombre del Portafolio</label>
+                    <p id="portfolio_preview">Sprint [Número] - [Fecha Inicio] al [Fecha Fin]</p>
+                </div>
+            </div>
+            <div class="form-group mb-3 project-chips">
+                <p style="margin: 0 0 8px 0;"><strong>Proyectos a crear (fijos):</strong></p>
+                <div class="chips" aria-hidden="false">
+                    <span class="chip">Proyecto <span id="sprint_preview">[Sprint Number]</span></span>
+                    <span class="chip">Soporte <span id="sprint_preview2">[Sprint Number]</span></span>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <p id="loading" class="loading">Ejecutando automatización...</p>
+                <button type="submit" class="btn-asana">
+                    <!-- Icono cohete SVG -->
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M2 21c4.5-1 8-4.5 9-9l-2-2c-4.5 1-7 4.5-7 7 0 .5.1 1 .2 1.5L2 21z" fill="rgba(255,255,255,0.12)"/>
+                        <path d="M14.5 3.5c1.8 1.8 2.5 4 2.5 6.5 0 2.5-.7 4.7-2.5 6.5l-1.4-1.4c1.4-1.4 1.9-3.2 1.9-5.1 0-1.9-.6-3.7-1.9-5.1L14.5 3.5z" fill="white" opacity="0.95"/>
+                        <path d="M20.5 2.5l1 1c.6.6.6 1.6 0 2.2l-2 2c-.6.6-1.6.6-2.2 0l-1-1 3.2-4.2z" fill="var(--surface)"/>
+                    </svg>
+                    Iniciar
+                </button>
+            </div>
+        </form>
+
+        <div id="results_table" style="display: none;">
+            <h3>Resultados</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Nombre</th>
+                        <th>Equipo</th>
+                        <th>URL</th>
+                    </tr>
+                </thead>
+                <tbody id="results_body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="http://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="http://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
+    <script>
+        const months = [
+            'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+            'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+        ];
+
+        function formatDateToSpanish(dateStr) {
+            if (!dateStr) return '[Fecha]';
+            try {
+                const [year, month, day] = dateStr.split('-').map(Number);
+                return `${day} ${months[month - 1]} ${year}`;
+            } catch {
+                return '[Fecha Inválida]';
+            }
+        }
+
+        function updatePreview() {
+            const sprintNumber = document.getElementById('sprint_number').value.trim();
+            const startDate = document.getElementById('start_date').value;
+            const endDate = document.getElementById('end_date').value;
+
+            const portfolioPreview = `Sprint ${sprintNumber || '[Número]'} - ${formatDateToSpanish(startDate)} al ${formatDateToSpanish(endDate)}`;
+            document.getElementById('portfolio_preview').textContent = portfolioPreview;
+
+            document.getElementById('sprint_preview').textContent = sprintNumber || '[Sprint Number]';
+            document.getElementById('sprint_preview2').textContent = sprintNumber || '[Sprint Number]';
+        }
+
+        // Filtrar caracteres no numéricos en tiempo real
+        document.getElementById('sprint_number').addEventListener('input', function(e) {
+            e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 5);
+            updatePreview();
+        });
+
+        // Inicializar Flatpickr para selector de rango de fechas
+        flatpickr("#date_range", {
+            mode: "range",
+            dateFormat: "Y-m-d",
+            locale: "es",
+            onClose: function(selectedDates, dateStr, instance) {
+                if (selectedDates.length === 2) {
+                    document.getElementById('start_date').value = selectedDates[0].toISOString().split('T')[0];
+                    document.getElementById('end_date').value = selectedDates[1].toISOString().split('T')[0];
+                    updatePreview();
+                }
+            }
+        });
+
+        document.getElementById('automation-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const sprintNumber = document.getElementById('sprint_number').value.trim();
+            const startDate = document.getElementById('start_date').value;
+            const endDate = document.getElementById('end_date').value;
+
+            if (!sprintNumber || !/^\d{1,5}$/.test(sprintNumber)) {
+                alert('El número de sprint es obligatorio y debe ser un número válido (no negativo, máximo 5 dígitos).');
+                return;
+            }
+            if (!startDate) {
+                alert('La fecha de inicio es obligatoria.');
+                return;
+            }
+            if (!endDate) {
+                alert('La fecha de fin es obligatoria.');
+                return;
+            }
+            if (new Date(endDate) <= new Date(startDate)) {
+                alert('La fecha de fin debe ser posterior a la fecha de inicio.');
+                return;
+            }
+
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results_table').style.display = 'none';
+            document.getElementById('results_body').innerHTML = '';
+
+            const formData = new FormData();
+            formData.append('sprint_number', sprintNumber);
+            formData.append('start_date', startDate);
+            formData.append('end_date', endDate);
+
+            try {
+                const response = await fetch('/run', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+
+                document.getElementById('loading').style.display = 'none';
+
+                if (result.error) {
+                    alert(result.error);
+                    return;
+                }
+
+                alert(result.message);
+                if (result.results && result.results.length > 0) {
+                    const tbody = document.getElementById('results_body');
+                    result.results.forEach(item => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${item.type}</td>
+                            <td class="name-cell">${item.name}</td>
+                            <td>${item.team}</td>
+                            <td class="url-cell"><a href="${item.url}" target="_blank">${item.url}</a></td>
+                        `;
+                        tbody.appendChild(row);
+                    });
+                    document.getElementById('results_table').style.display = 'block';
+                }
+
+                // Restablecer el formulario y actualizar la vista previa
+                const form = document.getElementById('automation-form');
+                form.reset();
+                document.getElementById('date_range').value = '';
+                document.getElementById('start_date').value = '';
+                document.getElementById('end_date').value = '';
+                updatePreview();
+            } catch (error) {
+                document.getElementById('loading').style.display = 'none';
+                alert('Error en la comunicación con el servidor. Revisa los logs.');
+            }
+        });
+    </script>
+    <script src="http://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

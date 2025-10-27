@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatización Docuseal</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('http://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .pulse:hover {
+            animation: pulse 0.5s ease-in-out;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .loader {
+            display: none;
+            border: 5px solid #FAF0E6;
+            border-top: 5px solid #8B4513;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        /* Colores cafesitos personalizados */
+        .bg-beige-light { background-color: #F5F5DC; }
+        .bg-beige-medium { background-color: #FAF0E6; }
+        .bg-brown-light { background-color: #D2B48C; }
+        .bg-brown-medium { background-color: #A1887F; }
+        .bg-brown-dark { background-color: #8B4513; }
+        .text-brown-light { color: #A1887F; }
+        .text-brown-medium { color: #8B4513; }
+        .text-brown-dark { color: #5D4037; }
+        .border-brown-light { border-color: #D2B48C; }
+    </style>
+</head>
+<body class="bg-beige-light flex flex-col items-center justify-center min-h-screen py-12">
+    <!-- Contenedor principal más amplio y con más padding -->
+    <div class="bg-gradient-to-b from-beige-medium to-beige-light rounded-3xl shadow-2xl p-12 max-w-3xl w-full text-center border border-brown-light mx-4">
+        <img src="images/Docuseal.png" alt="Docuseal" class="logo mb-6 mx-auto block" style="max-width: 160px; max-height: 160px; object-fit: contain;" />
+        <h1 class="text-4xl md:text-5xl font-bold text-brown-dark mb-4">Automatización Docuseal</h1>
+        <p class="text-brown-light mb-8 text-lg md:text-xl">Gestiona tus documentos con un clic, al estilo cálido de DocuSeal</p>
+
+        <!-- Botones alineados: apilan en móvil, en fila en md+ -->
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
+            <button id="startBtn" class="bg-brown-medium text-white font-semibold py-3 md:py-4 px-6 md:px-10 rounded-lg shadow-lg hover:bg-brown-dark transition duration-300 w-full md:w-auto flex items-center justify-center gap-3 pulse text-base md:text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 md:h-6 w-5 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>Iniciar Automatización</span>
+            </button>
+
+            {% if sheet_link %}
+            <a href="{{ sheet_link }}" target="_blank" id="sheetBtn" class="inline-flex items-center justify-center gap-3 bg-brown-light text-brown-dark font-semibold py-3 md:py-4 px-6 md:px-8 rounded-lg shadow hover:bg-brown-medium transition duration-300 w-full md:w-auto pulse" style="text-decoration:none;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 md:h-6 w-5 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20h9" />
+                </svg>
+                <span class="text-sm md:text-base">Ver Hoja de Cálculo</span>
+            </a>
+            {% endif %}
+        </div>
+
+        <p id="status" class="mt-2 text-brown-medium text-sm italic"></p>
+        <div id="loader" class="loader mt-4"></div>
+    </div>
+
+    <script>
+        document.getElementById('startBtn').addEventListener('click', function() {
+            document.getElementById('status').textContent = 'Iniciando automatización...';
+            document.getElementById('loader').style.display = 'block';
+            document.getElementById('startBtn').disabled = true;
+            fetch('/start')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('status').textContent = data;
+                    document.getElementById('loader').style.display = 'none';
+                    document.getElementById('startBtn').disabled = false;
+                    alert(data);
+                })
+                .catch(error => {
+                    document.getElementById('status').textContent = 'Error: ' + error;
+                    document.getElementById('loader').style.display = 'none';
+                    document.getElementById('startBtn').disabled = false;
+                    alert('Error: ' + error);
+                });
+        });
+    </script>
+</body>
+</html>

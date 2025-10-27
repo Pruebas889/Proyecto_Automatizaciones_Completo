@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatizaciones Copservir</title>
+    <link rel="stylesheet" href="/dashboard.css?v=4"> <!-- Versión actualizada para forzar recarga -->
+    <link rel="icon" type="image/x-icon" href="/images/Logo_Copservir.png">
+    <link href="http://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <header class="app-header">
+            <img src="/images/Logo_Copservir.png" alt="Logo de Copservir" class="logo">
+            {% if logged_in %}
+                <form action="/logout" method="get" class="logout-form">
+                    <button type="submit" class="logout-button">Cerrar sesión</button>
+                </form>
+            {% endif %}
+        </header>
+
+        <section class="user-greeting">
+            {% if logged_in %}
+                <h2>Bienvenido, {{ username }}!</h2>
+                <p>Explora nuestras soluciones de automatización:</p>
+            {% else %}
+                <h2>Panel de Automatizaciones</h2>
+                <p>Selecciona una automatización para continuar:</p>
+            {% endif %}
+        </section>
+        
+        <section class="automation-info">
+            <div class="info-grid">
+                <a href="/login_claro" class="icon-link">
+                    <div class="info-card">
+                        <img src="/images/Claro.png" alt="Logo Claro" class="icon-img">
+                        <h3>Claro</h3>
+                        <p>Descarga de Recibos</p>
+                    </div>
+                </a>
+                <a href="/login_colpensiones" class="icon-link">
+                    <div class="info-card">
+                        <img src="/images/Colpenciones.png" alt="Logo Colpensiones" class="icon-img">
+                        <h3>Colpensiones</h3>
+                        <p>Extracción de Información</p>
+                    </div>
+                </a>
+                <a href="/login_asana" class="icon-link">
+                    <div class="info-card">
+                        <img src="/images/Asana.png" alt="Logo Asana" class="icon-img">
+                        <h3>Asana</h3>
+                        <p>Creación de Portafolios y Proyectos</p>
+                    </div>
+                </a>
+                <a href="/login_larebaja" class="icon-link">
+                    <div class="info-card">
+                        <img src="/images/Rebaja.png" alt="Logo La Rebaja" class="icon-img">
+                        <h3>La Rebaja</h3>
+                        <p>Gestion Tipos de Logueo</p>
+                    </div>
+                </a>
+                <a href="/login_docuseal" class="icon-link">
+                    <div class="info-card">
+                        <img src="/images/Docuseal.png" alt="Logo Docuseal" class="icon-img">
+                        <h3>Docuseal</h3>
+                        <p>Automatización de Procesos Documentales</p>
+                    </div>
+                </a>
+                <a href="/login_posweb" class="icon-link">
+                    <div class="info-card">
+                        <img src="/images/PosWeb.png" alt="Logo PosWeb" class="icon-img">
+                        <h3>PosWeb</h3>
+                        <p>Automatización de Procesos PosWeb</p>
+                    </div>
+                </a>
+                <a href="/login_mensajeros" class="icon-link">
+                    <div class="info-card">
+                        <img src="/images/Simit.png" alt="Logo PosWeb" class="icon-img">
+                        <h3>Mensajeros</h3>
+                        <p>Automatización de Mensajeros</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

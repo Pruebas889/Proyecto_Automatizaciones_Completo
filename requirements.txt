@@ -1,0 +1,1 @@
+Flask==2.0.1 python-dotenv==0.19.0 mysql-connector-python==8.0.28 bcrypt==3.2.0 google-api-python-client==2.86.0 google-auth==2.21.0 google-auth-httplib2==0.1.0

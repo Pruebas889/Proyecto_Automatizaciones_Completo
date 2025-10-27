@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automatización La Rebaja</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #fff;
+            color: #e72026;
+            text-align: center;
+            padding: 40px;
+        }
+        .container {
+            max-width: 420px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(231,32,38,0.10);
+            border: 2px solid #e72026;
+            padding: 32px 24px 24px 24px;
+        }
+        .logo {
+            width: 120px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            color: #e72026;
+            font-size: 2.1em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        button {
+            background: #e72026;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 36px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(231,32,38,0.10);
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #b71c1c;
+        }
+        #status {
+            margin-top: 24px;
+            font-size: 1.1em;
+            color: #b71c1c;
+            font-weight: 500;
+        }
+        #logContainer {
+            max-height: 300px;
+            overflow-y: auto;
+            background: #f5f5f5;
+            border: 1px solid #e72026;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: left;
+            font-size: 0.9em;
+            color: #333;
+        }
+        .footer {
+            margin-top: 32px;
+            font-size: 0.95em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/images/Rebaja.png" alt="La Rebaja Logo" class="logo" />
+        <h1>Automatización La Rebaja Virtual</h1>
+        <button id="automationBtn" onclick="toggleAutomation()">Iniciar Automatización</button>
+        <p id="status">Estado: En espera</p>
+        <pre id="logContainer"></pre>
+    </div>
+    <div class="footer">&copy; 2025 La Rebaja Virtual</div>
+    <script>
+        let running = false;
+        const btn = document.getElementById('automationBtn');
+        const status = document.getElementById('status');
+        const logContainer = document.getElementById('logContainer');
+
+        function startLogStream() {
+            const evtSource = new EventSource('/stream-logs');
+            evtSource.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                logContainer.textContent += `${data.message}\n`;
+                logContainer.scrollTop = logContainer.scrollHeight;
+            };
+            evtSource.onerror = () => {
+                logContainer.textContent += 'Error en la conexión de logs. Verifica si la automatización está corriendo.\n';
+                evtSource.close();
+            };
+        }
+
+        async function toggleAutomation() {
+            if (!running) {
+                status.textContent = 'Estado: Iniciando...';
+                try {
+                    const response = await fetch('/start', { method: 'POST' });
+                    const result = await response.json();
+                    console.log('Respuesta /start:', response.status, result);
+                    status.textContent = result.status === 'success' ? 'Estado: En ejecución' : `Estado: Error - ${result.error}`;
+                    if (result.status === 'success') {
+                        running = true;
+                        btn.textContent = 'Detener Automatización';
+                        startLogStream();
+                    } else {
+                        logContainer.textContent += `Error: ${result.error}\n`;
+                    }
+                } catch (error) {
+                    status.textContent = 'Estado: Error al iniciar';
+                    console.error('Error:', error);
+                    logContainer.textContent += `Error al iniciar: ${error}\n`;
+                }
+            } else {
+                status.textContent = 'Estado: Deteniendo...';
+                try {
+                    const response = await fetch('/stop', { method: 'POST', credentials: 'include' });
+                    if (!response.ok && response.status === 401) {
+                        logContainer.textContent += 'Sesión expirada, redirigiendo a login...\n';
+                        window.location.href = 'http://192.168.21.36:5000';
+                        return;
+                    }
+                    const result = await response.json();
+                    console.log('Respuesta /stop:', response.status, result);
+                    if (result.status === 'success') {
+                        running = false;
+                        btn.textContent = 'Iniciar Automatización';
+                        status.textContent = 'Estado: Detenida';
+                        logContainer.textContent += `Automatización detenida, navegador cerrado\n`;
+                        logContainer.scrollTop = logContainer.scrollHeight;
+                    } else {
+                        status.textContent = `Estado: Error - ${result.message}`;
+                        logContainer.textContent += `Error: ${result.message}\n`;
+                    }
+                } catch (error) {
+                    status.textContent = 'Estado: Error al detener';
+                    console.error('Error al detener:', error);
+                    logContainer.textContent += `Error al detener: ${error}\n`;
+                }
+            }
+        }
+
+        window.onload = async () => {
+            try {
+                const response = await fetch('/status');
+                const result = await response.json();
+                console.log('Estado inicial:', result);
+                running = result.is_running;
+                btn.textContent = running ? 'Detener Automatización' : 'Iniciar Automatización';
+                status.textContent = running ? 'Estado: En ejecución' : 'Estado: En espera';
+                if (running) startLogStream();
+            } catch (error) {
+                console.error('Error verificando estado:', error);
+                logContainer.textContent += `Error verificando estado: ${error}\n`;
+            }
+        };
+</script>
+</body>
+</html>

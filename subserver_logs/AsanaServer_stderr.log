@@ -1,0 +1,8 @@
+2025-10-08 12:01:59,502 - INFO - Iniciando el servidor de la interfaz web para Asana... \U0001f680
+2025-10-08 12:01:59,513 - INFO -  * Restarting with stat
+2025-10-08 12:02:00,136 - INFO - Iniciando el servidor de la interfaz web para Asana... \U0001f680
+2025-10-08 12:02:00,143 - WARNING -  * Debugger is active!
+2025-10-08 12:02:00,146 - INFO -  * Debugger PIN: 107-530-431
+2025-10-08 12:02:00,522 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-10-08 12:02:00,523 - INFO -  * Running on http://192.168.21.36:5003/ (Press CTRL+C to quit)

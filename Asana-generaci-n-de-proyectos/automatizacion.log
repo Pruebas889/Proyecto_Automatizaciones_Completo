@@ -1,0 +1,2173 @@
+2025-09-09 13:42:00,509 - INFO - ====== WebDriver manager ======
+2025-09-09 13:42:02,606 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 13:42:02,778 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 13:42:02,929 - INFO - Driver [C:\Users\svega\.wdm\drivers\chromedriver\win64\139.0.7258.154\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 13:42:06,072 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-09 13:42:07,694 - INFO - Conexión exitosa a Google Sheets.
+2025-09-09 13:42:14,178 - INFO - Navegando a la página de Asana.
+2025-09-09 13:42:16,543 - INFO - Correo ingresado.
+2025-09-09 13:42:16,614 - INFO - Botón 'Continue' clickeado.
+2025-09-09 13:42:20,939 - INFO - Contraseña ingresada.
+2025-09-09 13:42:21,021 - INFO - Botón 'Log in' clickeado.
+2025-09-09 13:42:27,022 - INFO - Login completado.
+2025-09-09 13:42:27,273 - INFO - Portafolio leído: Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024
+2025-09-09 13:42:27,281 - INFO - Proyectos leídos: ['Proyecto 199 -', 'Soporte 199 -']
+2025-09-09 13:42:27,345 - INFO - Procesando equipo: Team prueba
+2025-09-09 13:42:33,343 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-09 13:42:36,906 - INFO - Menú 'More actions' abierto.
+2025-09-09 13:42:37,404 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-09 13:42:41,266 - INFO - Nombre del portafolio ingresado: Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024
+2025-09-09 13:42:41,831 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-09 13:42:42,581 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado y accedido exitosamente.
+2025-09-09 13:42:46,578 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado. Link guardado en fila 6.
+2025-09-09 13:42:46,660 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 13:42:46,846 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 13:42:48,169 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 13:42:48,727 - INFO - Nombre del proyecto ingresado: Proyecto 199 - Prueba
+2025-09-09 13:42:48,898 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 13:42:49,159 - INFO - Proyecto 'Proyecto 199 - Prueba' creado exitosamente.
+2025-09-09 13:42:54,413 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 13:42:57,925 - INFO - Proyecto 'Proyecto 199 - Prueba' creado. Link guardado en fila 7.
+2025-09-09 13:42:57,997 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 13:42:58,202 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 13:42:58,989 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 13:42:59,462 - INFO - Nombre del proyecto ingresado: Soporte 199 - Prueba
+2025-09-09 13:42:59,707 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 13:43:00,282 - INFO - Proyecto 'Soporte 199 - Prueba' creado exitosamente.
+2025-09-09 13:43:05,486 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 13:43:08,978 - INFO - Proyecto 'Soporte 199 - Prueba' creado. Link guardado en fila 8.
+2025-09-09 13:43:11,287 - INFO - Procesando equipo: Team QA
+2025-09-09 13:43:11,463 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-09 13:43:14,528 - INFO - Menú 'More actions' abierto.
+2025-09-09 13:43:14,710 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-09 13:43:18,161 - INFO - Nombre del portafolio ingresado: Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024
+2025-09-09 13:43:18,728 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-09 13:43:19,426 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado y accedido exitosamente.
+2025-09-09 13:43:23,048 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado. Link guardado en fila 10.
+2025-09-09 13:43:23,325 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 13:43:23,676 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 13:43:24,430 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 13:43:24,930 - INFO - Nombre del proyecto ingresado: Proyecto 199 - QA
+2025-09-09 13:43:25,061 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 13:43:25,355 - INFO - Proyecto 'Proyecto 199 - QA' creado exitosamente.
+2025-09-09 13:43:30,542 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 13:43:34,014 - INFO - Proyecto 'Proyecto 199 - QA' creado. Link guardado en fila 11.
+2025-09-09 13:43:34,105 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 13:43:34,310 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 13:43:35,041 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 13:43:35,437 - INFO - Nombre del proyecto ingresado: Soporte 199 - QA
+2025-09-09 13:43:35,644 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 13:43:36,172 - INFO - Proyecto 'Soporte 199 - QA' creado exitosamente.
+2025-09-09 13:43:41,317 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 13:43:44,837 - INFO - Proyecto 'Soporte 199 - QA' creado. Link guardado en fila 12.
+2025-09-09 13:43:47,023 - INFO - Procesamiento completado para todos los teams.
+2025-09-09 13:43:47,023 - INFO - Automatización completada exitosamente para todos los equipos y proyectos.
+2025-09-09 13:43:49,643 - INFO - Driver cerrado.
+2025-09-09 15:00:08,724 - INFO - ====== WebDriver manager ======
+2025-09-09 15:00:10,870 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 15:00:11,039 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 15:00:11,188 - INFO - Driver [C:\Users\svega\.wdm\drivers\chromedriver\win64\139.0.7258.154\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 15:00:14,234 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-09 15:00:16,659 - INFO - Conexión exitosa a Google Sheets.
+2025-09-09 15:00:24,108 - INFO - Navegando a la página de Asana.
+2025-09-09 15:00:26,423 - INFO - Correo ingresado.
+2025-09-09 15:00:26,499 - INFO - Botón 'Continue' clickeado.
+2025-09-09 15:00:30,733 - INFO - Contraseña ingresada.
+2025-09-09 15:00:30,793 - INFO - Botón 'Log in' clickeado.
+2025-09-09 15:00:36,794 - INFO - Login completado.
+2025-09-09 15:00:37,113 - INFO - Portafolio leído: Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024
+2025-09-09 15:00:37,114 - INFO - Proyectos leídos: ['Proyecto 199 -', 'Soporte 199 -']
+2025-09-09 15:00:37,116 - INFO - Procesando equipo: Team prueba
+2025-09-09 15:00:41,844 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-09 15:00:45,110 - INFO - Menú 'More actions' abierto.
+2025-09-09 15:00:45,707 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-09 15:00:49,310 - INFO - Nombre del portafolio ingresado: Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024
+2025-09-09 15:00:49,875 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-09 15:00:50,630 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado y accedido exitosamente.
+2025-09-09 15:00:54,194 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado. Link guardado en fila 6.
+2025-09-09 15:00:54,269 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 15:00:54,624 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 15:00:55,544 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 15:00:56,041 - INFO - Nombre del proyecto ingresado: Proyecto 199 - Prueba
+2025-09-09 15:00:56,149 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 15:00:56,446 - INFO - Proyecto 'Proyecto 199 - Prueba' creado exitosamente.
+2025-09-09 15:01:01,639 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 15:01:05,193 - INFO - Proyecto 'Proyecto 199 - Prueba' creado. Link guardado en fila 7.
+2025-09-09 15:01:05,260 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 15:01:05,444 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 15:01:06,198 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 15:01:06,680 - INFO - Nombre del proyecto ingresado: Soporte 199 - Prueba
+2025-09-09 15:01:06,807 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 15:01:07,252 - INFO - Proyecto 'Soporte 199 - Prueba' creado exitosamente.
+2025-09-09 15:01:12,414 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 15:01:15,970 - INFO - Proyecto 'Soporte 199 - Prueba' creado. Link guardado en fila 8.
+2025-09-09 15:01:18,181 - INFO - Procesando equipo: Team QA
+2025-09-09 15:01:18,342 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-09 15:01:21,410 - INFO - Menú 'More actions' abierto.
+2025-09-09 15:01:21,615 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-09 15:01:25,190 - INFO - Nombre del portafolio ingresado: Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024
+2025-09-09 15:01:25,740 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-09 15:01:26,417 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado y accedido exitosamente.
+2025-09-09 15:01:29,908 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado. Link guardado en fila 10.
+2025-09-09 15:01:29,968 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 15:01:30,151 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 15:01:30,826 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 15:01:31,288 - INFO - Nombre del proyecto ingresado: Proyecto 199 - QA
+2025-09-09 15:01:31,359 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 15:01:31,590 - INFO - Proyecto 'Proyecto 199 - QA' creado exitosamente.
+2025-09-09 15:01:36,764 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 15:01:40,372 - INFO - Proyecto 'Proyecto 199 - QA' creado. Link guardado en fila 11.
+2025-09-09 15:01:40,455 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 15:01:40,660 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 15:01:41,357 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 15:01:41,765 - INFO - Nombre del proyecto ingresado: Soporte 199 - QA
+2025-09-09 15:01:41,880 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 15:01:42,173 - INFO - Proyecto 'Soporte 199 - QA' creado exitosamente.
+2025-09-09 15:01:47,392 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 15:01:50,922 - INFO - Proyecto 'Soporte 199 - QA' creado. Link guardado en fila 12.
+2025-09-09 15:01:53,093 - INFO - Procesamiento completado para todos los teams.
+2025-09-09 15:01:53,094 - INFO - Automatización completada exitosamente para todos los equipos y proyectos.
+2025-09-09 15:01:55,846 - INFO - Driver cerrado.
+2025-09-09 15:04:53,110 - INFO - ====== WebDriver manager ======
+2025-09-09 15:04:55,134 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 15:04:55,310 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 15:04:56,468 - INFO - Driver [C:\Users\svega\.wdm\drivers\chromedriver\win64\139.0.7258.154\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 15:04:58,157 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-09 15:04:59,744 - INFO - Conexión exitosa a Google Sheets.
+2025-09-09 15:05:09,028 - INFO - Navegando a la página de Asana.
+2025-09-09 15:05:11,559 - INFO - Correo ingresado.
+2025-09-09 15:05:11,654 - INFO - Botón 'Continue' clickeado.
+2025-09-09 15:05:15,942 - INFO - Contraseña ingresada.
+2025-09-09 15:05:16,055 - INFO - Botón 'Log in' clickeado.
+2025-09-09 15:05:22,061 - INFO - Login completado.
+2025-09-09 15:05:22,356 - INFO - Portafolio leído: Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024
+2025-09-09 15:05:22,357 - INFO - Proyectos leídos: ['Proyecto 199 -', 'Soporte 199 -']
+2025-09-09 15:05:22,359 - INFO - Procesando equipo: Team prueba
+2025-09-09 15:05:30,132 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-09 15:05:35,584 - INFO - Menú 'More actions' abierto.
+2025-09-09 15:05:36,168 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-09 15:05:40,134 - INFO - Nombre del portafolio ingresado: Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024
+2025-09-09 15:05:40,764 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-09 15:05:41,535 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado y accedido exitosamente.
+2025-09-09 15:05:45,096 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado. Link guardado en fila 6.
+2025-09-09 15:05:45,217 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 15:05:45,533 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 15:05:46,482 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 15:05:47,178 - INFO - Nombre del proyecto ingresado: Proyecto 199 - Prueba
+2025-09-09 15:05:47,261 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 15:05:47,564 - INFO - Proyecto 'Proyecto 199 - Prueba' creado exitosamente.
+2025-09-09 15:05:52,779 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 15:05:56,292 - INFO - Proyecto 'Proyecto 199 - Prueba' creado. Link guardado en fila 7.
+2025-09-09 15:05:56,361 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 15:05:56,772 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 15:05:57,533 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 15:05:58,325 - INFO - Nombre del proyecto ingresado: Soporte 199 - Prueba
+2025-09-09 15:05:58,457 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 15:05:58,853 - INFO - Proyecto 'Soporte 199 - Prueba' creado exitosamente.
+2025-09-09 15:06:04,012 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 15:06:07,641 - INFO - Proyecto 'Soporte 199 - Prueba' creado. Link guardado en fila 8.
+2025-09-09 15:06:09,838 - INFO - Procesando equipo: Team QA
+2025-09-09 15:06:09,976 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-09 15:06:13,051 - INFO - Menú 'More actions' abierto.
+2025-09-09 15:06:13,321 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-09 15:06:16,790 - INFO - Nombre del portafolio ingresado: Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024
+2025-09-09 15:06:17,365 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-09 15:06:18,180 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado y accedido exitosamente.
+2025-09-09 15:06:21,712 - INFO - Portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024' creado. Link guardado en fila 10.
+2025-09-09 15:06:21,797 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 15:06:22,215 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 15:06:22,935 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 15:06:23,879 - INFO - Nombre del proyecto ingresado: Proyecto 199 - QA
+2025-09-09 15:06:23,985 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 15:06:24,339 - INFO - Proyecto 'Proyecto 199 - QA' creado exitosamente.
+2025-09-09 15:06:29,521 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 15:06:33,126 - INFO - Proyecto 'Proyecto 199 - QA' creado. Link guardado en fila 11.
+2025-09-09 15:06:33,193 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-09 15:06:33,390 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-09 15:06:34,122 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-09 15:06:34,604 - INFO - Nombre del proyecto ingresado: Soporte 199 - QA
+2025-09-09 15:06:34,690 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-09 15:06:35,008 - INFO - Proyecto 'Soporte 199 - QA' creado exitosamente.
+2025-09-09 15:06:40,189 - INFO - Regresando al portafolio 'Sprint 199 - 25 Noviembre 2024 al 06 Diciembre 2024'.
+2025-09-09 15:06:43,697 - INFO - Proyecto 'Soporte 199 - QA' creado. Link guardado en fila 12.
+2025-09-09 15:06:45,870 - INFO - Procesamiento completado para todos los teams.
+2025-09-09 15:06:45,871 - INFO - Automatización completada exitosamente para todos los equipos y proyectos.
+2025-09-09 15:06:48,752 - INFO - Driver cerrado.
+2025-09-09 15:29:57,800 - ERROR - Error al configurar Google Sheets: Archivo de credenciales 'sheets.json' no encontrado.
+2025-09-09 15:34:18,649 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.31:5003
+2025-09-09 15:34:18,650 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 15:34:18,654 - INFO -  * Restarting with stat
+2025-09-09 15:34:20,255 - WARNING -  * Debugger is active!
+2025-09-09 15:34:20,261 - INFO -  * Debugger PIN: 107-283-771
+2025-09-09 15:34:23,261 - INFO - 192.168.21.31 - - [09/Sep/2025 15:34:23] "GET / http/1.1" 200 -
+2025-09-09 15:34:23,818 - INFO - 192.168.21.31 - - [09/Sep/2025 15:34:23] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-09 15:46:04,323 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-09 15:46:04,567 - INFO -  * Restarting with stat
+2025-09-09 15:46:08,921 - WARNING -  * Debugger is active!
+2025-09-09 15:46:08,927 - INFO -  * Debugger PIN: 107-283-771
+2025-09-09 15:46:32,300 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\frond.py', reloading
+2025-09-09 15:46:32,623 - INFO -  * Restarting with stat
+2025-09-09 15:47:28,902 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.31:5003
+2025-09-09 15:47:28,903 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 15:47:28,906 - INFO -  * Restarting with stat
+2025-09-09 15:47:30,544 - WARNING -  * Debugger is active!
+2025-09-09 15:47:30,548 - INFO -  * Debugger PIN: 107-283-771
+2025-09-09 15:47:33,451 - INFO - 192.168.21.31 - - [09/Sep/2025 15:47:33] "GET / http/1.1" 200 -
+2025-09-09 15:47:47,731 - INFO - 192.168.21.31 - - [09/Sep/2025 15:47:47] "GET / http/1.1" 200 -
+2025-09-09 16:14:34,118 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-09 16:14:34,659 - INFO -  * Restarting with stat
+2025-09-09 16:17:52,981 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.31:5003
+2025-09-09 16:17:52,982 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 16:17:52,998 - INFO -  * Restarting with stat
+2025-09-09 16:17:55,089 - WARNING -  * Debugger is active!
+2025-09-09 16:17:55,109 - INFO -  * Debugger PIN: 107-283-771
+2025-09-09 16:17:57,708 - INFO - 192.168.21.31 - - [09/Sep/2025 16:17:57] "GET / http/1.1" 200 -
+2025-09-09 16:22:12,838 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-09 16:22:12,988 - INFO -  * Restarting with stat
+2025-09-09 16:22:15,704 - WARNING -  * Debugger is active!
+2025-09-09 16:22:15,708 - INFO -  * Debugger PIN: 107-283-771
+2025-09-09 16:22:16,538 - INFO - Iniciando automatización para Sprint 123, 2025-11-12 al 2025-12-18
+2025-09-09 16:22:16,538 - INFO - ====== WebDriver manager ======
+2025-09-09 16:22:18,689 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:18,974 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:19,184 - INFO - There is no [win64] chromedriver "140.0.7339.81" for browser google-chrome "140.0.7339" in cache
+2025-09-09 16:22:19,185 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:19,843 - INFO - WebDriver version 140.0.7339.81 selected
+2025-09-09 16:22:19,852 - INFO - Modern chrome version http://storage.googleapis.com/chrome-for-testing-public/140.0.7339.81/win32/chromedriver-win32.zip
+2025-09-09 16:22:19,852 - INFO - About to download new driver from http://storage.googleapis.com/chrome-for-testing-public/140.0.7339.81/win32/chromedriver-win32.zip
+2025-09-09 16:22:20,158 - INFO - Driver downloading response is 200
+2025-09-09 16:22:22,229 - INFO - Iniciando automatización para Sprint 123, 2025-11-12 al 2025-12-18
+2025-09-09 16:22:22,230 - INFO - ====== WebDriver manager ======
+2025-09-09 16:22:22,596 - INFO - Iniciando automatización para Sprint 123, 2025-11-12 al 2025-12-18
+2025-09-09 16:22:22,596 - INFO - ====== WebDriver manager ======
+2025-09-09 16:22:22,713 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:22,799 - INFO - Iniciando automatización para Sprint 123, 2025-11-12 al 2025-12-18
+2025-09-09 16:22:22,799 - INFO - ====== WebDriver manager ======
+2025-09-09 16:22:23,016 - INFO - Iniciando automatización para Sprint 123, 2025-11-12 al 2025-12-18
+2025-09-09 16:22:23,018 - INFO - ====== WebDriver manager ======
+2025-09-09 16:22:23,209 - INFO - Iniciando automatización para Sprint 123, 2025-11-12 al 2025-12-18
+2025-09-09 16:22:23,211 - INFO - ====== WebDriver manager ======
+2025-09-09 16:22:23,237 - INFO - Driver has been saved in cache [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81]
+2025-09-09 16:22:24,846 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:25,068 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:25,316 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 16:22:25,334 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:25,578 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:25,743 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:25,754 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 16:22:25,933 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:25,967 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:26,093 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:26,137 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 16:22:26,333 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 16:22:26,356 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:26,526 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:26,681 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 16:22:27,144 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-09 16:22:27,145 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-09 16:22:27,147 - INFO - 192.168.21.31 - - [09/Sep/2025 16:22:27] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-09 16:22:27,155 - INFO - Iniciando automatización para Sprint 123, 2025-11-12 al 2025-12-18
+2025-09-09 16:22:27,155 - INFO - ====== WebDriver manager ======
+2025-09-09 16:22:27,362 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-09 16:22:27,363 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-09 16:22:27,364 - INFO - 192.168.21.31 - - [09/Sep/2025 16:22:27] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-09 16:22:27,370 - INFO - Iniciando automatización para Sprint 123, 2025-11-12 al 2025-12-18
+2025-09-09 16:22:27,370 - INFO - ====== WebDriver manager ======
+2025-09-09 16:22:27,800 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-09 16:22:27,801 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-09 16:22:27,802 - INFO - 192.168.21.31 - - [09/Sep/2025 16:22:27] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-09 16:22:27,813 - INFO - Iniciando automatización para Sprint 123, 2025-11-12 al 2025-12-18
+2025-09-09 16:22:27,816 - INFO - ====== WebDriver manager ======
+2025-09-09 16:22:28,175 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-09 16:22:28,177 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-09 16:22:28,179 - INFO - 192.168.21.31 - - [09/Sep/2025 16:22:28] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-09 16:22:28,188 - INFO - Iniciando automatización para Sprint 123, 2025-11-12 al 2025-12-18
+2025-09-09 16:22:28,191 - INFO - ====== WebDriver manager ======
+2025-09-09 16:22:28,363 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-09 16:22:28,364 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-09 16:22:28,366 - INFO - 192.168.21.31 - - [09/Sep/2025 16:22:28] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-09 16:22:28,709 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-09 16:22:28,710 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-09 16:22:28,711 - INFO - 192.168.21.31 - - [09/Sep/2025 16:22:28] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-09 16:22:29,454 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:29,716 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:29,733 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:29,971 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:29,988 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 16:22:30,180 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:30,194 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 16:22:30,391 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:30,454 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:30,556 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 16:22:30,608 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-09 16:22:30,805 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-09 16:22:32,035 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-09 16:22:32,036 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-09 16:22:32,037 - INFO - 192.168.21.31 - - [09/Sep/2025 16:22:32] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-09 16:22:32,245 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-09 16:22:32,246 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-09 16:22:32,246 - INFO - 192.168.21.31 - - [09/Sep/2025 16:22:32] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-09 16:22:32,589 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-09 16:22:32,590 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-09 16:22:32,591 - INFO - 192.168.21.31 - - [09/Sep/2025 16:22:32] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-09 16:22:32,845 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.81\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-09 16:22:32,847 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-09 16:22:32,849 - INFO - 192.168.21.31 - - [09/Sep/2025 16:22:32] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-09 16:25:46,091 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-09 16:25:46,257 - INFO -  * Restarting with stat
+2025-09-09 16:25:48,519 - WARNING -  * Debugger is active!
+2025-09-09 16:25:48,522 - INFO -  * Debugger PIN: 107-283-771
+2025-09-09 16:25:54,419 - INFO - 192.168.21.31 - - [09/Sep/2025 16:25:54] "GET / http/1.1" 200 -
+2025-09-09 16:26:10,190 - INFO - Iniciando automatización para Sprint 199, 2025-09-09 al 2025-11-01
+2025-09-09 16:26:12,178 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-09 16:26:12,178 - ERROR - Error al configurar Google Sheets: Archivo de credenciales 'sheets.json' no encontrado.
+2025-09-09 16:26:12,179 - ERROR - No se pudo conectar a Google Sheets. Terminando.
+2025-09-09 16:26:14,346 - INFO - 192.168.21.31 - - [09/Sep/2025 16:26:14] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 06:51:17,382 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-10 06:51:17,382 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 06:51:17,387 - INFO -  * Restarting with stat
+2025-09-10 06:51:19,092 - WARNING -  * Debugger is active!
+2025-09-10 06:51:19,096 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 06:51:21,674 - INFO - 192.168.21.36 - - [10/Sep/2025 06:51:21] "GET / http/1.1" 200 -
+2025-09-10 06:51:22,460 - INFO - 192.168.21.36 - - [10/Sep/2025 06:51:22] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-10 06:51:44,586 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-13
+2025-09-10 06:51:44,587 - INFO - ====== WebDriver manager ======
+2025-09-10 06:51:46,171 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-10 06:51:46,381 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-10 06:51:46,522 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-10 06:51:49,107 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-10 06:51:49,108 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-10 06:51:49,109 - INFO - 192.168.21.36 - - [10/Sep/2025 06:51:49] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 06:53:34,337 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-10 06:53:34,338 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 06:53:34,343 - INFO -  * Restarting with stat
+2025-09-10 06:53:36,222 - WARNING -  * Debugger is active!
+2025-09-10 06:53:36,229 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 06:53:41,916 - INFO - 192.168.21.36 - - [10/Sep/2025 06:53:41] "GET / http/1.1" 200 -
+2025-09-10 06:53:51,949 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-11
+2025-09-10 06:53:53,533 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 06:54:00,079 - INFO - Navegando a la página de Asana.
+2025-09-10 06:54:02,367 - INFO - Correo ingresado.
+2025-09-10 06:54:32,579 - ERROR - Error durante el login: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7c983fca5+79861]
+	GetHandleVerifier [0x0x7ff7c983fd00+79952]
+	(No symbol) [0x0x7ff7c95bcada]
+	(No symbol) [0x0x7ff7c9614457]
+	(No symbol) [0x0x7ff7c961471c]
+	(No symbol) [0x0x7ff7c9668217]
+	(No symbol) [0x0x7ff7c963cb1f]
+	(No symbol) [0x0x7ff7c9664f8b]
+	(No symbol) [0x0x7ff7c963c8b3]
+	(No symbol) [0x0x7ff7c9605272]
+	(No symbol) [0x0x7ff7c9606043]
+	GetHandleVerifier [0x0x7ff7c9afb9dd+2946349]
+	GetHandleVerifier [0x0x7ff7c9af5c5a+2922410]
+	GetHandleVerifier [0x0x7ff7c9b159e7+3052855]
+	GetHandleVerifier [0x0x7ff7c985aa8e+189918]
+	GetHandleVerifier [0x0x7ff7c9862a2f+222591]
+	GetHandleVerifier [0x0x7ff7c9848ac4+116244]
+	GetHandleVerifier [0x0x7ff7c9848c79+116681]
+	GetHandleVerifier [0x0x7ff7c982f058+11176]
+	BaseThreadInitThunk [0x0x7ffdbaf2e8d7+23]
+	RtlUserThreadStart [0x0x7ffdbb65c34c+44]
+
+2025-09-10 06:54:32,580 - ERROR - Fallo en el login. Terminando.
+2025-09-10 06:54:34,827 - INFO - Driver cerrado.
+2025-09-10 06:54:34,828 - INFO - 192.168.21.36 - - [10/Sep/2025 06:54:34] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 06:57:21,523 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 06:57:21,711 - INFO -  * Restarting with stat
+2025-09-10 06:57:25,705 - WARNING -  * Debugger is active!
+2025-09-10 06:57:25,711 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 06:57:53,354 - INFO - 192.168.21.36 - - [10/Sep/2025 06:57:53] "GET / http/1.1" 200 -
+2025-09-10 06:58:05,032 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-13
+2025-09-10 06:58:05,032 - INFO - ====== WebDriver manager ======
+2025-09-10 06:58:06,861 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-10 06:58:07,188 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-10 06:58:07,335 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-10 06:58:09,399 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-10 06:58:09,399 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-10 06:58:09,400 - INFO - 192.168.21.36 - - [10/Sep/2025 06:58:09] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 06:58:51,357 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 06:58:51,472 - INFO -  * Restarting with stat
+2025-09-10 06:58:55,196 - WARNING -  * Debugger is active!
+2025-09-10 06:58:55,205 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 06:59:17,867 - INFO - 192.168.21.36 - - [10/Sep/2025 06:59:17] "GET / http/1.1" 200 -
+2025-09-10 06:59:30,127 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-15
+2025-09-10 06:59:31,690 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 06:59:38,475 - INFO - Navegando a la página de Asana.
+2025-09-10 06:59:38,875 - INFO - Correo ingresado.
+2025-09-10 07:00:09,089 - ERROR - Error durante el login: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7c765fca5+79861]
+	GetHandleVerifier [0x0x7ff7c765fd00+79952]
+	(No symbol) [0x0x7ff7c73dcada]
+	(No symbol) [0x0x7ff7c7434457]
+	(No symbol) [0x0x7ff7c743471c]
+	(No symbol) [0x0x7ff7c7488217]
+	(No symbol) [0x0x7ff7c745cb1f]
+	(No symbol) [0x0x7ff7c7484f8b]
+	(No symbol) [0x0x7ff7c745c8b3]
+	(No symbol) [0x0x7ff7c7425272]
+	(No symbol) [0x0x7ff7c7426043]
+	GetHandleVerifier [0x0x7ff7c791b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7c7915c5a+2922410]
+	GetHandleVerifier [0x0x7ff7c79359e7+3052855]
+	GetHandleVerifier [0x0x7ff7c767aa8e+189918]
+	GetHandleVerifier [0x0x7ff7c7682a2f+222591]
+	GetHandleVerifier [0x0x7ff7c7668ac4+116244]
+	GetHandleVerifier [0x0x7ff7c7668c79+116681]
+	GetHandleVerifier [0x0x7ff7c764f058+11176]
+	BaseThreadInitThunk [0x0x7ffdbaf2e8d7+23]
+	RtlUserThreadStart [0x0x7ffdbb65c34c+44]
+
+2025-09-10 07:00:09,090 - ERROR - Fallo en el login. Terminando.
+2025-09-10 07:00:11,344 - INFO - Driver cerrado.
+2025-09-10 07:00:11,344 - INFO - 192.168.21.36 - - [10/Sep/2025 07:00:11] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 07:06:25,545 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-10 07:06:25,579 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 07:06:25,584 - INFO -  * Restarting with stat
+2025-09-10 07:06:27,069 - WARNING -  * Debugger is active!
+2025-09-10 07:06:27,073 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 07:07:23,376 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 07:07:23,539 - INFO -  * Restarting with stat
+2025-09-10 07:07:25,687 - WARNING -  * Debugger is active!
+2025-09-10 07:07:25,692 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 07:07:28,892 - INFO - 192.168.21.36 - - [10/Sep/2025 07:07:28] "GET / http/1.1" 200 -
+2025-09-10 07:07:38,743 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-12
+2025-09-10 07:07:40,335 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 07:07:45,789 - INFO - Navegando a la página de Asana.
+2025-09-10 07:07:46,175 - INFO - Correo ingresado.
+2025-09-10 07:07:46,321 - INFO - Botón 'Continue' clickeado.
+2025-09-10 07:07:47,023 - INFO - Contraseña ingresada.
+2025-09-10 07:08:17,324 - ERROR - Error durante el login: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7a3a8fca5+79861]
+	GetHandleVerifier [0x0x7ff7a3a8fd00+79952]
+	(No symbol) [0x0x7ff7a380cada]
+	(No symbol) [0x0x7ff7a3864457]
+	(No symbol) [0x0x7ff7a386471c]
+	(No symbol) [0x0x7ff7a38b8217]
+	(No symbol) [0x0x7ff7a388cb1f]
+	(No symbol) [0x0x7ff7a38b4f8b]
+	(No symbol) [0x0x7ff7a388c8b3]
+	(No symbol) [0x0x7ff7a3855272]
+	(No symbol) [0x0x7ff7a3856043]
+	GetHandleVerifier [0x0x7ff7a3d4b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7a3d45c5a+2922410]
+	GetHandleVerifier [0x0x7ff7a3d659e7+3052855]
+	GetHandleVerifier [0x0x7ff7a3aaaa8e+189918]
+	GetHandleVerifier [0x0x7ff7a3ab2a2f+222591]
+	GetHandleVerifier [0x0x7ff7a3a98ac4+116244]
+	GetHandleVerifier [0x0x7ff7a3a98c79+116681]
+	GetHandleVerifier [0x0x7ff7a3a7f058+11176]
+	BaseThreadInitThunk [0x0x7ffdbaf2e8d7+23]
+	RtlUserThreadStart [0x0x7ffdbb65c34c+44]
+
+2025-09-10 07:08:17,326 - ERROR - Fallo en el login. Terminando.
+2025-09-10 07:08:19,590 - INFO - Driver cerrado.
+2025-09-10 07:08:19,591 - INFO - 192.168.21.36 - - [10/Sep/2025 07:08:19] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 07:08:34,140 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 07:08:34,286 - INFO -  * Restarting with stat
+2025-09-10 07:08:37,401 - WARNING -  * Debugger is active!
+2025-09-10 07:08:37,405 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 07:08:37,440 - INFO - 192.168.21.36 - - [10/Sep/2025 07:08:37] "GET / http/1.1" 200 -
+2025-09-10 07:08:46,594 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-12
+2025-09-10 07:08:48,011 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 07:08:53,950 - INFO - Navegando a la página de Asana.
+2025-09-10 07:08:54,370 - INFO - Correo ingresado.
+2025-09-10 07:08:54,541 - INFO - Botón 'Continue' clickeado.
+2025-09-10 07:08:55,266 - INFO - Contraseña ingresada.
+2025-09-10 07:08:55,320 - INFO - Botón 'Log in' clickeado.
+2025-09-10 07:09:01,813 - INFO - Login completado.
+2025-09-10 07:09:01,846 - INFO - Procesando equipo: Team prueba
+2025-09-10 07:09:05,655 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 07:09:06,399 - INFO - Menú 'More actions' abierto.
+2025-09-10 07:09:06,769 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 07:09:08,018 - INFO - Nombre del portafolio ingresado: Sprint 199 - 10 Septiembre 2025 al 12 Septiembre 2025
+2025-09-10 07:09:08,183 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 07:09:08,409 - INFO - Portafolio 'Sprint 199 - 10 Septiembre 2025 al 12 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 07:09:08,458 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 199 - 10 Septiembre 2025 al 12 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211314642516430/list, Team: Team prueba
+2025-09-10 07:09:10,113 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:09:10,334 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:09:11,611 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:09:12,172 - INFO - Nombre del proyecto ingresado: Proyecto 199 - Prueba
+2025-09-10 07:09:12,292 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:09:12,618 - INFO - Proyecto 'Proyecto 199 - Prueba' creado exitosamente.
+2025-09-10 07:09:42,669 - ERROR - Error al crear proyecto 'Proyecto 199 - Prueba': Message: 
+
+2025-09-10 07:09:42,669 - WARNING - No se pudo crear proyecto Proyecto 199 - Prueba en Team prueba
+2025-09-10 07:10:12,958 - ERROR - Error al crear proyecto 'Soporte 199 - Prueba': Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7a3a8fca5+79861]
+	GetHandleVerifier [0x0x7ff7a3a8fd00+79952]
+	(No symbol) [0x0x7ff7a380cada]
+	(No symbol) [0x0x7ff7a3864457]
+	(No symbol) [0x0x7ff7a386471c]
+	(No symbol) [0x0x7ff7a38b8217]
+	(No symbol) [0x0x7ff7a388cb1f]
+	(No symbol) [0x0x7ff7a38b4f8b]
+	(No symbol) [0x0x7ff7a388c8b3]
+	(No symbol) [0x0x7ff7a3855272]
+	(No symbol) [0x0x7ff7a3856043]
+	GetHandleVerifier [0x0x7ff7a3d4b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7a3d45c5a+2922410]
+	GetHandleVerifier [0x0x7ff7a3d659e7+3052855]
+	GetHandleVerifier [0x0x7ff7a3aaaa8e+189918]
+	GetHandleVerifier [0x0x7ff7a3ab2a2f+222591]
+	GetHandleVerifier [0x0x7ff7a3a98ac4+116244]
+	GetHandleVerifier [0x0x7ff7a3a98c79+116681]
+	GetHandleVerifier [0x0x7ff7a3a7f058+11176]
+	BaseThreadInitThunk [0x0x7ffdbaf2e8d7+23]
+	RtlUserThreadStart [0x0x7ffdbb65c34c+44]
+
+2025-09-10 07:10:12,959 - WARNING - No se pudo crear proyecto Soporte 199 - Prueba en Team prueba
+2025-09-10 07:10:13,298 - INFO - 192.168.21.36 - - [10/Sep/2025 07:10:13] "GET / http/1.1" 200 -
+2025-09-10 07:10:13,523 - INFO - Regresado a la página de Sprints.
+2025-09-10 07:10:13,523 - INFO - Procesando equipo: Team QA
+2025-09-10 07:10:13,749 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 07:10:14,322 - INFO - Menú 'More actions' abierto.
+2025-09-10 07:10:14,480 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 07:10:15,398 - INFO - Nombre del portafolio ingresado: Sprint 199 - 10 Septiembre 2025 al 12 Septiembre 2025
+2025-09-10 07:10:15,522 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 07:10:15,639 - INFO - Portafolio 'Sprint 199 - 10 Septiembre 2025 al 12 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 07:10:15,661 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 199 - 10 Septiembre 2025 al 12 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211314642516438/list, Team: Team QA
+2025-09-10 07:10:17,246 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:10:17,386 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:10:18,082 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:10:18,431 - INFO - Nombre del proyecto ingresado: Proyecto 199 - QA
+2025-09-10 07:10:18,507 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:10:18,680 - INFO - Proyecto 'Proyecto 199 - QA' creado exitosamente.
+2025-09-10 07:10:48,795 - ERROR - Error al crear proyecto 'Proyecto 199 - QA': Message: 
+
+2025-09-10 07:10:48,795 - WARNING - No se pudo crear proyecto Proyecto 199 - QA en Team QA
+2025-09-10 07:11:15,632 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:11:15,784 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:11:16,477 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:11:16,795 - INFO - Nombre del proyecto ingresado: Soporte 199 - QA
+2025-09-10 07:11:16,864 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:11:17,067 - INFO - Proyecto 'Soporte 199 - QA' creado exitosamente.
+2025-09-10 07:11:47,588 - ERROR - Error al crear proyecto 'Soporte 199 - QA': Message: 
+
+2025-09-10 07:11:47,589 - WARNING - No se pudo crear proyecto Soporte 199 - QA en Team QA
+2025-09-10 07:11:47,901 - INFO - Regresado a la página de Sprints.
+2025-09-10 07:11:47,901 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 07:11:47,901 - INFO - Automatización completada exitosamente.
+2025-09-10 07:11:52,025 - INFO - Driver cerrado.
+2025-09-10 07:11:52,025 - INFO - 192.168.21.36 - - [10/Sep/2025 07:11:52] "POST /run http/1.1" 200 -
+2025-09-10 07:14:37,685 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 07:14:37,906 - INFO -  * Restarting with stat
+2025-09-10 07:14:41,957 - WARNING -  * Debugger is active!
+2025-09-10 07:14:41,961 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 07:15:53,464 - INFO - 192.168.21.36 - - [10/Sep/2025 07:15:53] "GET / http/1.1" 200 -
+2025-09-10 07:15:53,739 - INFO - 192.168.21.36 - - [10/Sep/2025 07:15:53] "GET / http/1.1" 200 -
+2025-09-10 07:16:09,854 - INFO - Iniciando automatización para Sprint 158, 2025-09-10 al 2025-09-15
+2025-09-10 07:16:09,854 - INFO - ====== WebDriver manager ======
+2025-09-10 07:16:12,012 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-10 07:16:12,316 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-10 07:16:12,457 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-10 07:16:14,534 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
+
+2025-09-10 07:16:14,534 - ERROR - No se pudo iniciar el driver. Terminando.
+2025-09-10 07:16:14,535 - INFO - 192.168.21.36 - - [10/Sep/2025 07:16:14] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 07:16:45,840 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 07:16:45,981 - INFO -  * Restarting with stat
+2025-09-10 07:16:48,331 - WARNING -  * Debugger is active!
+2025-09-10 07:16:48,336 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 07:16:48,370 - INFO - 192.168.21.36 - - [10/Sep/2025 07:16:48] "GET / http/1.1" 200 -
+2025-09-10 07:17:07,461 - INFO - Iniciando automatización para Sprint 201, 2025-09-10 al 2025-10-01
+2025-09-10 07:17:09,058 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 07:17:13,503 - INFO - Navegando a la página de login de Asana.
+2025-09-10 07:17:13,899 - INFO - Correo ingresado.
+2025-09-10 07:17:13,958 - INFO - Botón 'Continue' clickeado.
+2025-09-10 07:17:14,643 - INFO - Contraseña ingresada.
+2025-09-10 07:17:14,768 - INFO - Botón 'Log in' clickeado.
+2025-09-10 07:17:45,244 - ERROR - Timeout durante el login: Message: 
+
+2025-09-10 07:17:45,245 - ERROR - Fallo en el login. Terminando.
+2025-09-10 07:17:47,631 - INFO - Driver cerrado.
+2025-09-10 07:17:47,631 - INFO - 192.168.21.36 - - [10/Sep/2025 07:17:47] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 07:18:17,905 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 07:18:18,015 - INFO -  * Restarting with stat
+2025-09-10 07:18:21,151 - WARNING -  * Debugger is active!
+2025-09-10 07:18:21,159 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 07:18:55,944 - INFO - 192.168.21.36 - - [10/Sep/2025 07:18:55] "GET / http/1.1" 200 -
+2025-09-10 07:18:56,930 - INFO - 192.168.21.36 - - [10/Sep/2025 07:18:56] "GET / http/1.1" 200 -
+2025-09-10 07:18:57,156 - INFO - 192.168.21.36 - - [10/Sep/2025 07:18:57] "GET / http/1.1" 200 -
+2025-09-10 07:19:14,726 - INFO - Iniciando automatización para Sprint 899, 2025-09-10 al 2025-10-01
+2025-09-10 07:19:16,202 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 07:19:22,484 - INFO - Navegando a la página de Asana.
+2025-09-10 07:19:22,896 - INFO - Correo ingresado.
+2025-09-10 07:19:22,943 - INFO - Botón 'Continue' clickeado.
+2025-09-10 07:19:23,590 - INFO - Contraseña ingresada.
+2025-09-10 07:19:23,631 - INFO - Botón 'Log in' clickeado.
+2025-09-10 07:19:28,743 - INFO - Login completado.
+2025-09-10 07:19:28,751 - INFO - Procesando equipo: Team prueba
+2025-09-10 07:19:30,602 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 07:19:31,675 - INFO - Menú 'More actions' abierto.
+2025-09-10 07:19:33,451 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 07:19:34,871 - INFO - Nombre del portafolio ingresado: Sprint 899 - 10 Septiembre 2025 al 1 Octubre 2025
+2025-09-10 07:19:34,976 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 07:19:35,207 - INFO - Portafolio 'Sprint 899 - 10 Septiembre 2025 al 1 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 07:19:35,241 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 899 - 10 Septiembre 2025 al 1 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211314808618338/list, Team: Team prueba
+2025-09-10 07:19:36,913 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:19:37,057 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:19:38,233 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:19:38,750 - INFO - Nombre del proyecto ingresado: Proyecto 899 - Prueba
+2025-09-10 07:19:38,895 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:19:39,301 - INFO - Proyecto 'Proyecto 899 - Prueba' creado exitosamente.
+2025-09-10 07:20:09,377 - ERROR - Error al crear proyecto 'Proyecto 899 - Prueba': Message: 
+
+2025-09-10 07:20:09,377 - WARNING - No se pudo crear proyecto Proyecto 899 - Prueba en Team prueba
+2025-09-10 07:20:39,640 - ERROR - Error al crear proyecto 'Soporte 899 - Prueba': Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7a3a8fca5+79861]
+	GetHandleVerifier [0x0x7ff7a3a8fd00+79952]
+	(No symbol) [0x0x7ff7a380cada]
+	(No symbol) [0x0x7ff7a3864457]
+	(No symbol) [0x0x7ff7a386471c]
+	(No symbol) [0x0x7ff7a38b8217]
+	(No symbol) [0x0x7ff7a388cb1f]
+	(No symbol) [0x0x7ff7a38b4f8b]
+	(No symbol) [0x0x7ff7a388c8b3]
+	(No symbol) [0x0x7ff7a3855272]
+	(No symbol) [0x0x7ff7a3856043]
+	GetHandleVerifier [0x0x7ff7a3d4b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7a3d45c5a+2922410]
+	GetHandleVerifier [0x0x7ff7a3d659e7+3052855]
+	GetHandleVerifier [0x0x7ff7a3aaaa8e+189918]
+	GetHandleVerifier [0x0x7ff7a3ab2a2f+222591]
+	GetHandleVerifier [0x0x7ff7a3a98ac4+116244]
+	GetHandleVerifier [0x0x7ff7a3a98c79+116681]
+	GetHandleVerifier [0x0x7ff7a3a7f058+11176]
+	BaseThreadInitThunk [0x0x7ffdbaf2e8d7+23]
+	RtlUserThreadStart [0x0x7ffdbb65c34c+44]
+
+2025-09-10 07:20:39,640 - WARNING - No se pudo crear proyecto Soporte 899 - Prueba en Team prueba
+2025-09-10 07:20:40,202 - INFO - Regresado a la página de Sprints.
+2025-09-10 07:20:40,203 - INFO - Procesando equipo: Team QA
+2025-09-10 07:20:40,406 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 07:20:41,016 - INFO - Menú 'More actions' abierto.
+2025-09-10 07:20:41,223 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 07:20:43,082 - INFO - Nombre del portafolio ingresado: Sprint 899 - 10 Septiembre 2025 al 1 Octubre 2025
+2025-09-10 07:20:43,118 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 07:20:43,265 - INFO - Portafolio 'Sprint 899 - 10 Septiembre 2025 al 1 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 07:20:43,282 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 899 - 10 Septiembre 2025 al 1 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211314808618346/list, Team: Team QA
+2025-09-10 07:20:44,371 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:20:44,544 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:20:45,783 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:20:46,121 - INFO - Nombre del proyecto ingresado: Proyecto 899 - QA
+2025-09-10 07:20:46,189 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:20:46,390 - INFO - Proyecto 'Proyecto 899 - QA' creado exitosamente.
+2025-09-10 07:21:16,683 - ERROR - Error al crear proyecto 'Proyecto 899 - QA': Message: 
+
+2025-09-10 07:21:16,683 - WARNING - No se pudo crear proyecto Proyecto 899 - QA en Team QA
+2025-09-10 07:21:46,990 - ERROR - Error al crear proyecto 'Soporte 899 - QA': Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7a3a8fca5+79861]
+	GetHandleVerifier [0x0x7ff7a3a8fd00+79952]
+	(No symbol) [0x0x7ff7a380cada]
+	(No symbol) [0x0x7ff7a3864457]
+	(No symbol) [0x0x7ff7a386471c]
+	(No symbol) [0x0x7ff7a38b8217]
+	(No symbol) [0x0x7ff7a388cb1f]
+	(No symbol) [0x0x7ff7a38b4f8b]
+	(No symbol) [0x0x7ff7a388c8b3]
+	(No symbol) [0x0x7ff7a3855272]
+	(No symbol) [0x0x7ff7a3856043]
+	GetHandleVerifier [0x0x7ff7a3d4b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7a3d45c5a+2922410]
+	GetHandleVerifier [0x0x7ff7a3d659e7+3052855]
+	GetHandleVerifier [0x0x7ff7a3aaaa8e+189918]
+	GetHandleVerifier [0x0x7ff7a3ab2a2f+222591]
+	GetHandleVerifier [0x0x7ff7a3a98ac4+116244]
+	GetHandleVerifier [0x0x7ff7a3a98c79+116681]
+	GetHandleVerifier [0x0x7ff7a3a7f058+11176]
+	BaseThreadInitThunk [0x0x7ffdbaf2e8d7+23]
+	RtlUserThreadStart [0x0x7ffdbb65c34c+44]
+
+2025-09-10 07:21:46,991 - WARNING - No se pudo crear proyecto Soporte 899 - QA en Team QA
+2025-09-10 07:21:47,344 - INFO - Regresado a la página de Sprints.
+2025-09-10 07:21:47,344 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 07:21:47,345 - INFO - Automatización completada exitosamente.
+2025-09-10 07:21:49,685 - INFO - Driver cerrado.
+2025-09-10 07:21:49,686 - INFO - 192.168.21.36 - - [10/Sep/2025 07:21:49] "POST /run http/1.1" 200 -
+2025-09-10 07:41:14,884 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-10 07:41:14,885 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 07:41:14,889 - INFO -  * Restarting with stat
+2025-09-10 07:41:16,794 - WARNING -  * Debugger is active!
+2025-09-10 07:41:16,799 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 07:41:17,870 - INFO - 192.168.21.36 - - [10/Sep/2025 07:41:17] "GET / http/1.1" 200 -
+2025-09-10 07:41:32,016 - INFO - Iniciando automatización para Sprint 896, 2025-09-10 al 2025-10-01
+2025-09-10 07:41:33,644 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 07:41:43,791 - INFO - Navegando a la página de Asana.
+2025-09-10 07:41:44,305 - INFO - Correo ingresado.
+2025-09-10 07:41:44,366 - INFO - Botón 'Continue' clickeado.
+2025-09-10 07:41:45,060 - INFO - Contraseña ingresada.
+2025-09-10 07:41:45,113 - INFO - Botón 'Log in' clickeado.
+2025-09-10 07:41:50,294 - INFO - Login completado.
+2025-09-10 07:41:50,302 - INFO - Procesando equipo: Team prueba
+2025-09-10 07:41:51,894 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 07:41:53,624 - INFO - Menú 'More actions' abierto.
+2025-09-10 07:41:55,383 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 07:41:56,784 - INFO - Nombre del portafolio ingresado: Sprint 896 - 10 Septiembre 2025 al 1 Octubre 2025
+2025-09-10 07:41:56,932 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 07:41:57,189 - INFO - Portafolio 'Sprint 896 - 10 Septiembre 2025 al 1 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 07:41:57,229 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 896 - 10 Septiembre 2025 al 1 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211314783514583/list, Team: Team prueba
+2025-09-10 07:41:58,567 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:41:58,942 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:42:00,186 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:42:00,718 - INFO - Nombre del proyecto ingresado: Proyecto 896 - Prueba
+2025-09-10 07:42:00,803 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:42:01,201 - INFO - Proyecto 'Proyecto 896 - Prueba' creado exitosamente.
+2025-09-10 07:42:04,135 - INFO - Regresando al portafolio 'Sprint 896 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 07:42:04,355 - INFO - Tipo: Proyecto, Nombre: Proyecto 896 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211314783514587/list, Team: Team prueba
+2025-09-10 07:42:04,470 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:42:04,681 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:42:05,415 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:42:06,065 - INFO - Nombre del proyecto ingresado: Soporte 896 - Prueba
+2025-09-10 07:42:06,174 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:42:06,449 - INFO - Proyecto 'Soporte 896 - Prueba' creado exitosamente.
+2025-09-10 07:42:08,699 - INFO - Regresando al portafolio 'Sprint 896 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 07:42:08,916 - INFO - Tipo: Proyecto, Nombre: Soporte 896 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211314783514591/list, Team: Team prueba
+2025-09-10 07:42:09,216 - INFO - Regresado a la página de Sprints.
+2025-09-10 07:42:09,217 - INFO - Procesando equipo: Team QA
+2025-09-10 07:42:09,526 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 07:42:10,116 - INFO - Menú 'More actions' abierto.
+2025-09-10 07:42:10,279 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 07:42:11,168 - INFO - Nombre del portafolio ingresado: Sprint 896 - 10 Septiembre 2025 al 1 Octubre 2025
+2025-09-10 07:42:11,227 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 07:42:11,364 - INFO - Portafolio 'Sprint 896 - 10 Septiembre 2025 al 1 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 07:42:11,404 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 896 - 10 Septiembre 2025 al 1 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211314783514595/list, Team: Team QA
+2025-09-10 07:42:13,003 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:42:13,136 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:42:13,814 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:42:14,532 - INFO - Nombre del proyecto ingresado: Proyecto 896 - QA
+2025-09-10 07:42:14,643 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:42:14,985 - INFO - Proyecto 'Proyecto 896 - QA' creado exitosamente.
+2025-09-10 07:42:17,371 - INFO - Regresando al portafolio 'Sprint 896 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 07:42:17,688 - INFO - Tipo: Proyecto, Nombre: Proyecto 896 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211314783514599/list, Team: Team QA
+2025-09-10 07:42:17,766 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:42:17,969 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:42:18,682 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:42:19,068 - INFO - Nombre del proyecto ingresado: Soporte 896 - QA
+2025-09-10 07:42:19,185 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:42:19,488 - INFO - Proyecto 'Soporte 896 - QA' creado exitosamente.
+2025-09-10 07:42:21,606 - INFO - Regresando al portafolio 'Sprint 896 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 07:42:21,989 - INFO - Tipo: Proyecto, Nombre: Soporte 896 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211314783514603/list, Team: Team QA
+2025-09-10 07:42:22,657 - INFO - Regresado a la página de Sprints.
+2025-09-10 07:42:22,658 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 07:42:22,658 - INFO - Automatización completada exitosamente.
+2025-09-10 07:42:25,299 - INFO - Driver cerrado.
+2025-09-10 07:42:25,300 - INFO - 192.168.21.36 - - [10/Sep/2025 07:42:25] "POST /run http/1.1" 200 -
+2025-09-10 07:50:42,228 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 07:50:42,511 - INFO -  * Restarting with stat
+2025-09-10 07:50:47,343 - WARNING -  * Debugger is active!
+2025-09-10 07:50:47,351 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 07:51:08,543 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\frond.py', reloading
+2025-09-10 07:51:08,665 - INFO -  * Restarting with stat
+2025-09-10 07:52:01,645 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-10 07:52:01,645 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 07:52:01,647 - INFO -  * Restarting with stat
+2025-09-10 07:52:03,191 - WARNING -  * Debugger is active!
+2025-09-10 07:52:03,195 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 07:52:04,758 - INFO - 192.168.21.36 - - [10/Sep/2025 07:52:04] "GET / http/1.1" 200 -
+2025-09-10 07:52:19,931 - INFO - Iniciando automatización para Sprint 655, 2025-09-10 al 2025-10-01
+2025-09-10 07:52:21,515 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 07:52:29,491 - INFO - Navegando a la página de Asana.
+2025-09-10 07:52:29,823 - INFO - Correo ingresado.
+2025-09-10 07:52:29,925 - INFO - Botón 'Continue' clickeado.
+2025-09-10 07:52:30,683 - INFO - Contraseña ingresada.
+2025-09-10 07:52:30,739 - INFO - Botón 'Log in' clickeado.
+2025-09-10 07:52:37,511 - INFO - Login completado.
+2025-09-10 07:52:37,519 - INFO - Procesando equipo: Team prueba
+2025-09-10 07:52:40,095 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 07:52:43,390 - INFO - Menú 'More actions' abierto.
+2025-09-10 07:52:43,945 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 07:52:45,169 - INFO - Nombre del portafolio ingresado: Sprint 655 - 10 Septiembre 2025 al 1 Octubre 2025
+2025-09-10 07:52:45,250 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 07:52:45,447 - INFO - Portafolio 'Sprint 655 - 10 Septiembre 2025 al 1 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 07:52:45,515 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 655 - 10 Septiembre 2025 al 1 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211314886606072/list, Team: Team prueba
+2025-09-10 07:52:47,277 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:52:47,656 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:52:49,353 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:52:50,404 - INFO - Nombre del proyecto ingresado: Proyecto 655 - Prueba
+2025-09-10 07:52:50,558 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:52:50,982 - INFO - Proyecto 'Proyecto 655 - Prueba' creado exitosamente.
+2025-09-10 07:52:52,984 - INFO - Regresando al portafolio 'Sprint 655 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 07:52:53,289 - INFO - Tipo: Proyecto, Nombre: Proyecto 655 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211314886606076/list, Team: Team prueba
+2025-09-10 07:52:53,366 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:52:53,577 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:52:54,395 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:52:55,336 - INFO - Nombre del proyecto ingresado: Soporte 655 - Prueba
+2025-09-10 07:52:55,430 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:52:55,842 - INFO - Proyecto 'Soporte 655 - Prueba' creado exitosamente.
+2025-09-10 07:52:57,933 - INFO - Regresando al portafolio 'Sprint 655 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 07:52:58,264 - INFO - Tipo: Proyecto, Nombre: Soporte 655 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211314891472486/list, Team: Team prueba
+2025-09-10 07:52:58,669 - INFO - Regresado a la página de Sprints.
+2025-09-10 07:52:58,670 - INFO - Procesando equipo: Team QA
+2025-09-10 07:52:59,373 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 07:52:59,961 - INFO - Menú 'More actions' abierto.
+2025-09-10 07:53:00,165 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 07:53:01,074 - INFO - Nombre del portafolio ingresado: Sprint 655 - 10 Septiembre 2025 al 1 Octubre 2025
+2025-09-10 07:53:01,133 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 07:53:01,275 - INFO - Portafolio 'Sprint 655 - 10 Septiembre 2025 al 1 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 07:53:01,317 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 655 - 10 Septiembre 2025 al 1 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211314891472490/list, Team: Team QA
+2025-09-10 07:53:02,947 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:53:03,159 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:53:03,831 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:53:04,160 - INFO - Nombre del proyecto ingresado: Proyecto 655 - QA
+2025-09-10 07:53:04,231 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:53:04,661 - INFO - Proyecto 'Proyecto 655 - QA' creado exitosamente.
+2025-09-10 07:53:06,919 - INFO - Regresando al portafolio 'Sprint 655 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 07:53:07,102 - INFO - Tipo: Proyecto, Nombre: Proyecto 655 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211314891472494/list, Team: Team QA
+2025-09-10 07:53:07,302 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 07:53:07,481 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 07:53:08,134 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 07:53:08,589 - INFO - Nombre del proyecto ingresado: Soporte 655 - QA
+2025-09-10 07:53:08,690 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 07:53:08,948 - INFO - Proyecto 'Soporte 655 - QA' creado exitosamente.
+2025-09-10 07:53:10,801 - INFO - Regresando al portafolio 'Sprint 655 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 07:53:11,044 - INFO - Tipo: Proyecto, Nombre: Soporte 655 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211314891472498/list, Team: Team QA
+2025-09-10 07:53:11,706 - INFO - Regresado a la página de Sprints.
+2025-09-10 07:53:11,707 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 07:53:11,707 - INFO - Automatización completada exitosamente.
+2025-09-10 07:53:14,234 - INFO - Driver cerrado.
+2025-09-10 07:53:14,235 - INFO - 192.168.21.36 - - [10/Sep/2025 07:53:14] "POST /run http/1.1" 200 -
+2025-09-10 08:12:28,914 - INFO - 192.168.21.36 - - [10/Sep/2025 08:12:28] "GET / http/1.1" 200 -
+2025-09-10 08:14:07,523 - INFO - Iniciando automatización para Sprint 789, 2025-09-10 al 2025-09-11
+2025-09-10 08:14:09,140 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 08:14:15,625 - INFO - Navegando a la página de Asana.
+2025-09-10 08:14:16,050 - INFO - Correo ingresado.
+2025-09-10 08:14:16,129 - INFO - Botón 'Continue' clickeado.
+2025-09-10 08:14:16,848 - INFO - Contraseña ingresada.
+2025-09-10 08:14:16,899 - INFO - Botón 'Log in' clickeado.
+2025-09-10 08:14:23,204 - INFO - Login completado.
+2025-09-10 08:14:23,206 - INFO - Procesando equipo: Team prueba
+2025-09-10 08:14:25,187 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 08:14:27,099 - INFO - Menú 'More actions' abierto.
+2025-09-10 08:14:27,445 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 08:14:30,941 - INFO - Nombre del portafolio ingresado: Sprint 789 - 10 Septiembre 2025 al 11 Septiembre 2025
+2025-09-10 08:14:31,025 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 08:14:31,253 - INFO - Portafolio 'Sprint 789 - 10 Septiembre 2025 al 11 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 08:14:31,293 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 789 - 10 Septiembre 2025 al 11 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211315411323154/list, Team: Team prueba
+2025-09-10 08:14:32,687 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:14:32,926 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:14:34,694 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:14:35,365 - INFO - Nombre del proyecto ingresado: Proyecto 789 - Prueba
+2025-09-10 08:14:35,708 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:14:36,185 - INFO - Proyecto 'Proyecto 789 - Prueba' creado exitosamente.
+2025-09-10 08:14:38,429 - INFO - Regresando al portafolio 'Sprint 789 - 10 Septiembre 2025 al 11 Septiembre 2025'.
+2025-09-10 08:14:38,915 - INFO - Tipo: Proyecto, Nombre: Proyecto 789 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211315411323158/list, Team: Team prueba
+2025-09-10 08:14:39,018 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:14:39,283 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:14:40,070 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:14:40,802 - INFO - Nombre del proyecto ingresado: Soporte 789 - Prueba
+2025-09-10 08:14:40,929 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:14:41,358 - INFO - Proyecto 'Soporte 789 - Prueba' creado exitosamente.
+2025-09-10 08:14:44,386 - INFO - Regresando al portafolio 'Sprint 789 - 10 Septiembre 2025 al 11 Septiembre 2025'.
+2025-09-10 08:14:44,726 - INFO - Tipo: Proyecto, Nombre: Soporte 789 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211315411323162/list, Team: Team prueba
+2025-09-10 08:14:45,518 - INFO - Regresado a la página de Sprints.
+2025-09-10 08:14:45,520 - INFO - Procesando equipo: Team QA
+2025-09-10 08:14:45,869 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 08:14:46,596 - INFO - Menú 'More actions' abierto.
+2025-09-10 08:14:46,886 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 08:14:47,891 - INFO - Nombre del portafolio ingresado: Sprint 789 - 10 Septiembre 2025 al 11 Septiembre 2025
+2025-09-10 08:14:47,956 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 08:14:48,120 - INFO - Portafolio 'Sprint 789 - 10 Septiembre 2025 al 11 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 08:14:48,182 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 789 - 10 Septiembre 2025 al 11 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211315411323166/list, Team: Team QA
+2025-09-10 08:14:49,297 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:14:49,522 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:14:50,212 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:14:50,619 - INFO - Nombre del proyecto ingresado: Proyecto 789 - QA
+2025-09-10 08:14:50,728 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:14:51,177 - INFO - Proyecto 'Proyecto 789 - QA' creado exitosamente.
+2025-09-10 08:14:54,134 - INFO - Regresando al portafolio 'Sprint 789 - 10 Septiembre 2025 al 11 Septiembre 2025'.
+2025-09-10 08:14:54,379 - INFO - Tipo: Proyecto, Nombre: Proyecto 789 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211315411323170/list, Team: Team QA
+2025-09-10 08:14:54,460 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:14:54,653 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:14:55,321 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:14:55,650 - INFO - Nombre del proyecto ingresado: Soporte 789 - QA
+2025-09-10 08:14:55,782 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:14:56,100 - INFO - Proyecto 'Soporte 789 - QA' creado exitosamente.
+2025-09-10 08:14:57,882 - INFO - Regresando al portafolio 'Sprint 789 - 10 Septiembre 2025 al 11 Septiembre 2025'.
+2025-09-10 08:14:58,139 - INFO - Tipo: Proyecto, Nombre: Soporte 789 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211315415787256/list, Team: Team QA
+2025-09-10 08:14:58,751 - INFO - Regresado a la página de Sprints.
+2025-09-10 08:14:58,752 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 08:14:58,753 - INFO - Automatización completada exitosamente.
+2025-09-10 08:15:01,498 - INFO - Driver cerrado.
+2025-09-10 08:15:01,500 - INFO - 192.168.21.36 - - [10/Sep/2025 08:15:01] "POST /run http/1.1" 200 -
+2025-09-10 08:35:09,532 - INFO - 192.168.21.36 - - [10/Sep/2025 08:35:09] "GET / http/1.1" 200 -
+2025-09-10 08:35:24,528 - INFO - Iniciando automatización para Sprint 532, 2025-09-11 al 2025-10-03
+2025-09-10 08:35:26,158 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 08:35:32,273 - INFO - Navegando a la página de Asana.
+2025-09-10 08:35:32,691 - INFO - Correo ingresado.
+2025-09-10 08:35:32,753 - INFO - Botón 'Continue' clickeado.
+2025-09-10 08:35:33,455 - INFO - Contraseña ingresada.
+2025-09-10 08:35:33,520 - INFO - Botón 'Log in' clickeado.
+2025-09-10 08:35:39,577 - INFO - Login completado.
+2025-09-10 08:35:39,579 - INFO - Procesando equipo: Team prueba
+2025-09-10 08:35:41,824 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 08:35:43,291 - INFO - Menú 'More actions' abierto.
+2025-09-10 08:35:44,414 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 08:35:45,765 - INFO - Nombre del portafolio ingresado: Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025
+2025-09-10 08:35:45,856 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 08:35:46,093 - INFO - Portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 08:35:46,128 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211315640946040/list, Team: Team prueba
+2025-09-10 08:35:47,240 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:35:47,410 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:35:48,634 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:35:49,245 - INFO - Nombre del proyecto ingresado: Proyecto 532 - Prueba
+2025-09-10 08:35:49,375 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:35:49,714 - INFO - Proyecto 'Proyecto 532 - Prueba' creado exitosamente.
+2025-09-10 08:35:52,027 - INFO - Regresando al portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025'.
+2025-09-10 08:35:52,361 - INFO - Tipo: Proyecto, Nombre: Proyecto 532 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211315640946044/list, Team: Team prueba
+2025-09-10 08:35:52,465 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:35:52,649 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:35:53,359 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:35:53,752 - INFO - Nombre del proyecto ingresado: Soporte 532 - Prueba
+2025-09-10 08:35:53,836 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:35:54,112 - INFO - Proyecto 'Soporte 532 - Prueba' creado exitosamente.
+2025-09-10 08:35:56,562 - INFO - Regresando al portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025'.
+2025-09-10 08:35:56,745 - INFO - Tipo: Proyecto, Nombre: Soporte 532 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211315640946048/list, Team: Team prueba
+2025-09-10 08:35:57,158 - INFO - Regresado a la página de Sprints.
+2025-09-10 08:35:57,159 - INFO - Procesando equipo: Team QA
+2025-09-10 08:35:57,796 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 08:35:58,383 - INFO - Menú 'More actions' abierto.
+2025-09-10 08:35:58,557 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 08:35:59,583 - INFO - Nombre del portafolio ingresado: Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025
+2025-09-10 08:35:59,645 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 08:35:59,788 - INFO - Portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 08:35:59,822 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211315640946052/list, Team: Team QA
+2025-09-10 08:36:00,934 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:36:01,061 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:36:01,721 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:36:02,071 - INFO - Nombre del proyecto ingresado: Proyecto 532 - QA
+2025-09-10 08:36:02,143 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:36:02,419 - INFO - Proyecto 'Proyecto 532 - QA' creado exitosamente.
+2025-09-10 08:36:05,183 - INFO - Regresando al portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025'.
+2025-09-10 08:36:05,399 - INFO - Tipo: Proyecto, Nombre: Proyecto 532 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211315640946056/list, Team: Team QA
+2025-09-10 08:36:05,494 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:36:05,654 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:36:06,292 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:36:06,646 - INFO - Nombre del proyecto ingresado: Soporte 532 - QA
+2025-09-10 08:36:06,750 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:36:06,994 - INFO - Proyecto 'Soporte 532 - QA' creado exitosamente.
+2025-09-10 08:36:09,201 - INFO - Regresando al portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025'.
+2025-09-10 08:36:09,461 - INFO - Tipo: Proyecto, Nombre: Soporte 532 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211315640946060/list, Team: Team QA
+2025-09-10 08:36:09,936 - INFO - Regresado a la página de Sprints.
+2025-09-10 08:36:09,936 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 08:36:09,937 - INFO - Automatización completada exitosamente.
+2025-09-10 08:36:12,419 - INFO - Driver cerrado.
+2025-09-10 08:36:12,420 - INFO - 192.168.21.36 - - [10/Sep/2025 08:36:12] "POST /run http/1.1" 200 -
+2025-09-10 08:36:58,374 - INFO - Iniciando automatización para Sprint 532, 2025-09-11 al 2025-10-03
+2025-09-10 08:36:59,816 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 08:37:06,299 - INFO - Navegando a la página de Asana.
+2025-09-10 08:37:06,801 - INFO - Correo ingresado.
+2025-09-10 08:37:06,855 - INFO - Botón 'Continue' clickeado.
+2025-09-10 08:37:07,803 - INFO - Contraseña ingresada.
+2025-09-10 08:37:07,878 - INFO - Botón 'Log in' clickeado.
+2025-09-10 08:37:13,649 - INFO - Login completado.
+2025-09-10 08:37:13,649 - INFO - Procesando equipo: Team prueba
+2025-09-10 08:37:16,223 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 08:37:16,848 - INFO - Menú 'More actions' abierto.
+2025-09-10 08:37:17,075 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 08:37:19,837 - INFO - Nombre del portafolio ingresado: Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025
+2025-09-10 08:37:20,426 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 08:37:20,848 - INFO - Portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 08:37:21,008 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211315664810668/list, Team: Team prueba
+2025-09-10 08:37:22,915 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:37:23,223 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:37:24,468 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:37:25,153 - INFO - Nombre del proyecto ingresado: Proyecto 532 - Prueba
+2025-09-10 08:37:25,255 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:37:25,571 - INFO - Proyecto 'Proyecto 532 - Prueba' creado exitosamente.
+2025-09-10 08:37:28,053 - INFO - Regresando al portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025'.
+2025-09-10 08:37:28,372 - INFO - Tipo: Proyecto, Nombre: Proyecto 532 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211315664810672/list, Team: Team prueba
+2025-09-10 08:37:28,452 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:37:28,699 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:37:29,442 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:37:29,849 - INFO - Nombre del proyecto ingresado: Soporte 532 - Prueba
+2025-09-10 08:37:29,953 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:37:30,341 - INFO - Proyecto 'Soporte 532 - Prueba' creado exitosamente.
+2025-09-10 08:37:32,698 - INFO - Regresando al portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025'.
+2025-09-10 08:37:32,969 - INFO - Tipo: Proyecto, Nombre: Soporte 532 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211315664810676/list, Team: Team prueba
+2025-09-10 08:37:33,472 - INFO - Regresado a la página de Sprints.
+2025-09-10 08:37:33,473 - INFO - Procesando equipo: Team QA
+2025-09-10 08:37:33,670 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 08:37:34,256 - INFO - Menú 'More actions' abierto.
+2025-09-10 08:37:34,475 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 08:37:35,424 - INFO - Nombre del portafolio ingresado: Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025
+2025-09-10 08:37:35,483 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 08:37:35,631 - INFO - Portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 08:37:35,664 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211315664810680/list, Team: Team QA
+2025-09-10 08:37:36,783 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:37:36,925 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:37:37,660 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:37:38,033 - INFO - Nombre del proyecto ingresado: Proyecto 532 - QA
+2025-09-10 08:37:38,117 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:37:38,333 - INFO - Proyecto 'Proyecto 532 - QA' creado exitosamente.
+2025-09-10 08:37:40,188 - INFO - Regresando al portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025'.
+2025-09-10 08:37:40,446 - INFO - Tipo: Proyecto, Nombre: Proyecto 532 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211315667864378/list, Team: Team QA
+2025-09-10 08:37:40,527 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:37:40,682 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:37:41,335 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:37:41,643 - INFO - Nombre del proyecto ingresado: Soporte 532 - QA
+2025-09-10 08:37:41,754 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:37:42,071 - INFO - Proyecto 'Soporte 532 - QA' creado exitosamente.
+2025-09-10 08:37:44,824 - INFO - Regresando al portafolio 'Sprint 532 - 11 Septiembre 2025 al 3 Octubre 2025'.
+2025-09-10 08:37:45,052 - INFO - Tipo: Proyecto, Nombre: Soporte 532 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211315667864382/list, Team: Team QA
+2025-09-10 08:37:45,505 - INFO - Regresado a la página de Sprints.
+2025-09-10 08:37:45,506 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 08:37:45,506 - INFO - Automatización completada exitosamente.
+2025-09-10 08:37:47,940 - INFO - Driver cerrado.
+2025-09-10 08:37:47,941 - INFO - 192.168.21.36 - - [10/Sep/2025 08:37:47] "POST /run http/1.1" 200 -
+2025-09-10 08:38:10,257 - INFO - 192.168.21.36 - - [10/Sep/2025 08:38:10] "GET / http/1.1" 200 -
+2025-09-10 08:44:41,148 - INFO - 192.168.21.36 - - [10/Sep/2025 08:44:41] "GET / http/1.1" 200 -
+2025-09-10 08:45:08,456 - INFO - Iniciando automatización para Sprint 310, 2025-10-01 al 2025-11-14
+2025-09-10 08:45:10,147 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 08:45:16,507 - INFO - Navegando a la página de Asana.
+2025-09-10 08:45:17,009 - INFO - Correo ingresado.
+2025-09-10 08:45:17,073 - INFO - Botón 'Continue' clickeado.
+2025-09-10 08:45:17,759 - INFO - Contraseña ingresada.
+2025-09-10 08:45:17,812 - INFO - Botón 'Log in' clickeado.
+2025-09-10 08:45:23,770 - INFO - Login completado.
+2025-09-10 08:45:23,771 - INFO - Procesando equipo: Team prueba
+2025-09-10 08:45:26,185 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 08:45:27,341 - INFO - Menú 'More actions' abierto.
+2025-09-10 08:45:29,017 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 08:45:30,460 - INFO - Nombre del portafolio ingresado: Sprint 310 - 1 Octubre 2025 al 14 Noviembre 2025
+2025-09-10 08:45:30,572 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 08:45:30,828 - INFO - Portafolio 'Sprint 310 - 1 Octubre 2025 al 14 Noviembre 2025' creado y accedido exitosamente.
+2025-09-10 08:45:30,891 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 310 - 1 Octubre 2025 al 14 Noviembre 2025, Link: http://app.asana.com/0/portfolio/1211315701656591/list, Team: Team prueba
+2025-09-10 08:45:32,246 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:45:32,501 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:45:33,804 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:45:34,685 - INFO - Nombre del proyecto ingresado: Proyecto 310 - Prueba
+2025-09-10 08:45:34,861 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:45:35,201 - INFO - Proyecto 'Proyecto 310 - Prueba' creado exitosamente.
+2025-09-10 08:45:37,639 - INFO - Regresando al portafolio 'Sprint 310 - 1 Octubre 2025 al 14 Noviembre 2025'.
+2025-09-10 08:45:37,907 - INFO - Tipo: Proyecto, Nombre: Proyecto 310 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211315701656595/list, Team: Team prueba
+2025-09-10 08:45:37,992 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:45:38,184 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:45:38,891 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:45:39,338 - INFO - Nombre del proyecto ingresado: Soporte 310 - Prueba
+2025-09-10 08:45:39,459 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:45:40,014 - INFO - Proyecto 'Soporte 310 - Prueba' creado exitosamente.
+2025-09-10 08:45:42,304 - INFO - Regresando al portafolio 'Sprint 310 - 1 Octubre 2025 al 14 Noviembre 2025'.
+2025-09-10 08:45:42,500 - INFO - Tipo: Proyecto, Nombre: Soporte 310 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211315701656599/list, Team: Team prueba
+2025-09-10 08:45:42,911 - INFO - Regresado a la página de Sprints.
+2025-09-10 08:45:42,912 - INFO - Procesando equipo: Team QA
+2025-09-10 08:45:43,604 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 08:45:44,200 - INFO - Menú 'More actions' abierto.
+2025-09-10 08:45:44,367 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 08:45:45,280 - INFO - Nombre del portafolio ingresado: Sprint 310 - 1 Octubre 2025 al 14 Noviembre 2025
+2025-09-10 08:45:45,338 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 08:45:45,483 - INFO - Portafolio 'Sprint 310 - 1 Octubre 2025 al 14 Noviembre 2025' creado y accedido exitosamente.
+2025-09-10 08:45:45,528 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 310 - 1 Octubre 2025 al 14 Noviembre 2025, Link: http://app.asana.com/0/portfolio/1211315701656603/list, Team: Team QA
+2025-09-10 08:45:47,140 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:45:47,293 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:45:47,939 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:45:48,291 - INFO - Nombre del proyecto ingresado: Proyecto 310 - QA
+2025-09-10 08:45:48,384 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:45:48,615 - INFO - Proyecto 'Proyecto 310 - QA' creado exitosamente.
+2025-09-10 08:45:50,935 - INFO - Regresando al portafolio 'Sprint 310 - 1 Octubre 2025 al 14 Noviembre 2025'.
+2025-09-10 08:45:51,130 - INFO - Tipo: Proyecto, Nombre: Proyecto 310 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211315701656607/list, Team: Team QA
+2025-09-10 08:45:51,211 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 08:45:51,369 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 08:45:52,028 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 08:45:52,357 - INFO - Nombre del proyecto ingresado: Soporte 310 - QA
+2025-09-10 08:45:52,454 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 08:45:52,714 - INFO - Proyecto 'Soporte 310 - QA' creado exitosamente.
+2025-09-10 08:45:54,982 - INFO - Regresando al portafolio 'Sprint 310 - 1 Octubre 2025 al 14 Noviembre 2025'.
+2025-09-10 08:45:55,232 - INFO - Tipo: Proyecto, Nombre: Soporte 310 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211315701656611/list, Team: Team QA
+2025-09-10 08:45:55,650 - INFO - Regresado a la página de Sprints.
+2025-09-10 08:45:55,651 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 08:45:55,651 - INFO - Automatización completada exitosamente.
+2025-09-10 08:45:58,087 - INFO - Driver cerrado.
+2025-09-10 08:45:58,091 - INFO - 192.168.21.36 - - [10/Sep/2025 08:45:58] "POST /run http/1.1" 200 -
+2025-09-10 08:57:45,611 - INFO - 192.168.21.36 - - [10/Sep/2025 08:57:45] "GET / http/1.1" 200 -
+2025-09-10 09:04:40,030 - INFO - 192.168.21.36 - - [10/Sep/2025 09:04:40] "GET / http/1.1" 200 -
+2025-09-10 09:09:57,379 - INFO - 192.168.21.36 - - [10/Sep/2025 09:09:57] "GET / http/1.1" 200 -
+2025-09-10 09:10:39,871 - INFO - 192.168.21.36 - - [10/Sep/2025 09:10:39] "GET / http/1.1" 200 -
+2025-09-10 09:12:36,014 - INFO - 192.168.21.36 - - [10/Sep/2025 09:12:36] "GET / http/1.1" 200 -
+2025-09-10 09:13:37,919 - INFO - 192.168.21.36 - - [10/Sep/2025 09:13:37] "GET / http/1.1" 200 -
+2025-09-10 09:13:38,936 - INFO - 192.168.21.36 - - [10/Sep/2025 09:13:38] "GET / http/1.1" 200 -
+2025-09-10 09:14:18,103 - INFO - 192.168.21.36 - - [10/Sep/2025 09:14:18] "GET / http/1.1" 200 -
+2025-09-10 09:14:19,241 - INFO - 192.168.21.36 - - [10/Sep/2025 09:14:19] "GET / http/1.1" 200 -
+2025-09-10 09:14:19,566 - INFO - 192.168.21.36 - - [10/Sep/2025 09:14:19] "GET / http/1.1" 200 -
+2025-09-10 09:15:12,987 - INFO - 192.168.21.36 - - [10/Sep/2025 09:15:12] "GET / http/1.1" 200 -
+2025-09-10 09:16:01,119 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:01] "GET / http/1.1" 200 -
+2025-09-10 09:16:22,202 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:22] "GET / http/1.1" 200 -
+2025-09-10 09:16:28,060 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:28] "GET / http/1.1" 200 -
+2025-09-10 09:16:51,036 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:51] "GET / http/1.1" 200 -
+2025-09-10 09:16:55,363 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:55] "GET / http/1.1" 200 -
+2025-09-10 09:16:55,840 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:55] "GET / http/1.1" 200 -
+2025-09-10 09:18:23,124 - INFO - 192.168.21.36 - - [10/Sep/2025 09:18:23] "GET / http/1.1" 200 -
+2025-09-10 09:18:49,713 - INFO - 192.168.21.36 - - [10/Sep/2025 09:18:49] "GET / http/1.1" 200 -
+2025-09-10 09:18:50,579 - INFO - 192.168.21.36 - - [10/Sep/2025 09:18:50] "GET / http/1.1" 200 -
+2025-09-10 09:18:56,745 - INFO - 192.168.21.36 - - [10/Sep/2025 09:18:56] "GET / http/1.1" 200 -
+2025-09-10 09:19:28,612 - INFO - 192.168.21.36 - - [10/Sep/2025 09:19:28] "GET / http/1.1" 200 -
+2025-09-10 09:21:14,485 - INFO - 192.168.21.36 - - [10/Sep/2025 09:21:14] "GET / http/1.1" 200 -
+2025-09-10 09:21:16,456 - INFO - 192.168.21.36 - - [10/Sep/2025 09:21:16] "GET / http/1.1" 200 -
+2025-09-10 09:21:44,595 - INFO - 192.168.21.36 - - [10/Sep/2025 09:21:44] "GET / http/1.1" 200 -
+2025-09-10 09:21:45,074 - INFO - 192.168.21.36 - - [10/Sep/2025 09:21:45] "GET / http/1.1" 200 -
+2025-09-10 09:21:45,374 - INFO - 192.168.21.36 - - [10/Sep/2025 09:21:45] "GET / http/1.1" 200 -
+2025-09-10 09:22:22,326 - INFO - 192.168.21.36 - - [10/Sep/2025 09:22:22] "GET / http/1.1" 200 -
+2025-09-10 09:23:00,524 - INFO - Iniciando automatización para Sprint 951, 2025-09-11 al 2025-10-10
+2025-09-10 09:23:02,243 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 09:23:09,768 - INFO - Navegando a la página de Asana.
+2025-09-10 09:23:10,155 - INFO - Correo ingresado.
+2025-09-10 09:23:10,219 - INFO - Botón 'Continue' clickeado.
+2025-09-10 09:23:10,912 - INFO - Contraseña ingresada.
+2025-09-10 09:23:10,971 - INFO - Botón 'Log in' clickeado.
+2025-09-10 09:23:18,095 - INFO - Login completado.
+2025-09-10 09:23:18,100 - INFO - Procesando equipo: Team prueba
+2025-09-10 09:23:20,526 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 09:23:23,072 - INFO - Menú 'More actions' abierto.
+2025-09-10 09:23:23,357 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 09:23:24,411 - INFO - Nombre del portafolio ingresado: Sprint 951 - 11 Septiembre 2025 al 10 Octubre 2025
+2025-09-10 09:23:24,485 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 09:23:24,740 - INFO - Portafolio 'Sprint 951 - 11 Septiembre 2025 al 10 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 09:23:24,796 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 951 - 11 Septiembre 2025 al 10 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211316245929004/list, Team: Team prueba
+2025-09-10 09:23:26,573 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:23:26,779 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:23:28,011 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:23:28,759 - INFO - Nombre del proyecto ingresado: Proyecto 951 - Prueba
+2025-09-10 09:23:28,834 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:23:29,082 - INFO - Proyecto 'Proyecto 951 - Prueba' creado exitosamente.
+2025-09-10 09:23:32,181 - INFO - Regresando al portafolio 'Sprint 951 - 11 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 09:23:32,420 - INFO - Tipo: Proyecto, Nombre: Proyecto 951 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211316249747415/list, Team: Team prueba
+2025-09-10 09:23:32,528 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:23:32,702 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:23:33,443 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:23:33,848 - INFO - Nombre del proyecto ingresado: Soporte 951 - Prueba
+2025-09-10 09:23:33,934 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:23:34,163 - INFO - Proyecto 'Soporte 951 - Prueba' creado exitosamente.
+2025-09-10 09:23:36,549 - INFO - Regresando al portafolio 'Sprint 951 - 11 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 09:23:36,773 - INFO - Tipo: Proyecto, Nombre: Soporte 951 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211316249747419/list, Team: Team prueba
+2025-09-10 09:23:37,231 - INFO - Regresado a la página de Sprints.
+2025-09-10 09:23:37,231 - INFO - Procesando equipo: Team QA
+2025-09-10 09:23:37,423 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 09:23:38,186 - INFO - Menú 'More actions' abierto.
+2025-09-10 09:23:38,368 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 09:23:39,280 - INFO - Nombre del portafolio ingresado: Sprint 951 - 11 Septiembre 2025 al 10 Octubre 2025
+2025-09-10 09:23:39,339 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 09:23:39,487 - INFO - Portafolio 'Sprint 951 - 11 Septiembre 2025 al 10 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 09:23:39,516 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 951 - 11 Septiembre 2025 al 10 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211316249747423/list, Team: Team QA
+2025-09-10 09:23:40,601 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:23:40,747 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:23:41,410 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:23:41,788 - INFO - Nombre del proyecto ingresado: Proyecto 951 - QA
+2025-09-10 09:23:41,881 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:23:42,281 - INFO - Proyecto 'Proyecto 951 - QA' creado exitosamente.
+2025-09-10 09:23:44,113 - INFO - Regresando al portafolio 'Sprint 951 - 11 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 09:23:44,356 - INFO - Tipo: Proyecto, Nombre: Proyecto 951 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211316249747427/list, Team: Team QA
+2025-09-10 09:23:44,440 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:23:44,635 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:23:45,298 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:23:45,674 - INFO - Nombre del proyecto ingresado: Soporte 951 - QA
+2025-09-10 09:23:45,805 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:23:46,030 - INFO - Proyecto 'Soporte 951 - QA' creado exitosamente.
+2025-09-10 09:23:47,904 - INFO - Regresando al portafolio 'Sprint 951 - 11 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 09:23:48,148 - INFO - Tipo: Proyecto, Nombre: Soporte 951 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211316249747431/list, Team: Team QA
+2025-09-10 09:23:48,611 - INFO - Regresado a la página de Sprints.
+2025-09-10 09:23:48,613 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 09:23:48,614 - INFO - Automatización completada exitosamente.
+2025-09-10 09:23:51,137 - INFO - Driver cerrado.
+2025-09-10 09:23:51,138 - INFO - 192.168.21.36 - - [10/Sep/2025 09:23:51] "POST /run http/1.1" 200 -
+2025-09-10 09:34:45,637 - INFO - Iniciando automatización para Sprint 789, 2025-09-12 al 2025-09-19
+2025-09-10 09:34:47,245 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 09:34:53,688 - INFO - Navegando a la página de Asana.
+2025-09-10 09:34:54,036 - INFO - Correo ingresado.
+2025-09-10 09:34:54,093 - INFO - Botón 'Continue' clickeado.
+2025-09-10 09:34:54,868 - INFO - Contraseña ingresada.
+2025-09-10 09:34:54,918 - INFO - Botón 'Log in' clickeado.
+2025-09-10 09:35:00,128 - INFO - Login completado.
+2025-09-10 09:35:00,129 - INFO - Procesando equipo: Team prueba
+2025-09-10 09:35:02,110 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 09:35:03,684 - INFO - Menú 'More actions' abierto.
+2025-09-10 09:35:03,972 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 09:35:05,139 - INFO - Nombre del portafolio ingresado: Sprint 789 - 12 Septiembre 2025 al 19 Septiembre 2025
+2025-09-10 09:35:05,215 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 09:35:05,424 - INFO - Portafolio 'Sprint 789 - 12 Septiembre 2025 al 19 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 09:35:05,479 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 789 - 12 Septiembre 2025 al 19 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211316432767492/list, Team: Team prueba
+2025-09-10 09:35:06,581 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:35:06,724 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:35:07,899 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:35:08,390 - INFO - Nombre del proyecto ingresado: Proyecto 789 - Prueba
+2025-09-10 09:35:08,468 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:35:08,700 - INFO - Proyecto 'Proyecto 789 - Prueba' creado exitosamente.
+2025-09-10 09:35:10,551 - INFO - Regresando al portafolio 'Sprint 789 - 12 Septiembre 2025 al 19 Septiembre 2025'.
+2025-09-10 09:35:10,836 - INFO - Tipo: Proyecto, Nombre: Proyecto 789 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211316432767496/list, Team: Team prueba
+2025-09-10 09:35:10,921 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:35:11,133 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:35:11,800 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:35:12,180 - INFO - Nombre del proyecto ingresado: Soporte 789 - Prueba
+2025-09-10 09:35:12,255 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:35:12,574 - INFO - Proyecto 'Soporte 789 - Prueba' creado exitosamente.
+2025-09-10 09:35:14,948 - INFO - Regresando al portafolio 'Sprint 789 - 12 Septiembre 2025 al 19 Septiembre 2025'.
+2025-09-10 09:35:15,268 - INFO - Tipo: Proyecto, Nombre: Soporte 789 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211316432767500/list, Team: Team prueba
+2025-09-10 09:35:16,097 - INFO - Regresado a la página de Sprints.
+2025-09-10 09:35:16,098 - INFO - Procesando equipo: Team QA
+2025-09-10 09:35:16,465 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 09:35:17,280 - INFO - Menú 'More actions' abierto.
+2025-09-10 09:35:17,564 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 09:35:18,685 - INFO - Nombre del portafolio ingresado: Sprint 789 - 12 Septiembre 2025 al 19 Septiembre 2025
+2025-09-10 09:35:18,768 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 09:35:18,977 - INFO - Portafolio 'Sprint 789 - 12 Septiembre 2025 al 19 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 09:35:19,044 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 789 - 12 Septiembre 2025 al 19 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211316432767504/list, Team: Team QA
+2025-09-10 09:35:20,890 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:35:21,127 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:35:21,866 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:35:22,324 - INFO - Nombre del proyecto ingresado: Proyecto 789 - QA
+2025-09-10 09:35:22,441 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:35:22,724 - INFO - Proyecto 'Proyecto 789 - QA' creado exitosamente.
+2025-09-10 09:35:25,396 - INFO - Regresando al portafolio 'Sprint 789 - 12 Septiembre 2025 al 19 Septiembre 2025'.
+2025-09-10 09:35:25,922 - INFO - Tipo: Proyecto, Nombre: Proyecto 789 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211316432767508/list, Team: Team QA
+2025-09-10 09:35:26,097 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:35:26,421 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:35:27,225 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:35:27,890 - INFO - Nombre del proyecto ingresado: Soporte 789 - QA
+2025-09-10 09:35:28,061 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:35:28,405 - INFO - Proyecto 'Soporte 789 - QA' creado exitosamente.
+2025-09-10 09:35:30,410 - INFO - Regresando al portafolio 'Sprint 789 - 12 Septiembre 2025 al 19 Septiembre 2025'.
+2025-09-10 09:35:30,866 - INFO - Tipo: Proyecto, Nombre: Soporte 789 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211316432767512/list, Team: Team QA
+2025-09-10 09:35:31,583 - INFO - Regresado a la página de Sprints.
+2025-09-10 09:35:31,583 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 09:35:31,583 - INFO - Automatización completada exitosamente.
+2025-09-10 09:35:34,302 - INFO - Driver cerrado.
+2025-09-10 09:35:34,304 - INFO - 192.168.21.36 - - [10/Sep/2025 09:35:34] "POST /run http/1.1" 200 -
+2025-09-10 09:39:49,748 - INFO - 192.168.21.36 - - [10/Sep/2025 09:39:49] "GET / http/1.1" 200 -
+2025-09-10 09:42:22,258 - INFO - 192.168.21.36 - - [10/Sep/2025 09:42:22] "GET / http/1.1" 200 -
+2025-09-10 09:42:46,754 - INFO - 192.168.21.36 - - [10/Sep/2025 09:42:46] "GET / http/1.1" 200 -
+2025-09-10 09:45:20,882 - INFO - 192.168.21.36 - - [10/Sep/2025 09:45:20] "GET / http/1.1" 200 -
+2025-09-10 09:47:48,357 - INFO - 192.168.21.36 - - [10/Sep/2025 09:47:48] "GET / http/1.1" 200 -
+2025-09-10 09:50:42,052 - INFO - 192.168.21.36 - - [10/Sep/2025 09:50:42] "GET / http/1.1" 200 -
+2025-09-10 09:52:01,998 - INFO - Iniciando automatización para Sprint 123, 2025-09-10 al 2025-10-01
+2025-09-10 09:52:04,768 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 09:52:15,222 - INFO - Navegando a la página de Asana.
+2025-09-10 09:52:15,944 - INFO - Correo ingresado.
+2025-09-10 09:52:16,032 - INFO - Botón 'Continue' clickeado.
+2025-09-10 09:52:16,802 - INFO - Contraseña ingresada.
+2025-09-10 09:52:16,872 - INFO - Botón 'Log in' clickeado.
+2025-09-10 09:52:25,167 - INFO - Login completado.
+2025-09-10 09:52:25,170 - INFO - Procesando equipo: Team prueba
+2025-09-10 09:52:27,699 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 09:52:29,228 - INFO - Menú 'More actions' abierto.
+2025-09-10 09:52:30,417 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 09:52:32,657 - INFO - Nombre del portafolio ingresado: Sprint 123 - 10 Septiembre 2025 al 1 Octubre 2025
+2025-09-10 09:52:32,810 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 09:52:33,101 - INFO - Portafolio 'Sprint 123 - 10 Septiembre 2025 al 1 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 09:52:33,242 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 123 - 10 Septiembre 2025 al 1 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211316546930025/list, Team: Team prueba
+2025-09-10 09:52:34,883 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:52:35,137 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:52:36,427 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:52:37,278 - INFO - Nombre del proyecto ingresado: Proyecto 123 - Prueba
+2025-09-10 09:52:37,403 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:52:37,825 - INFO - Proyecto 'Proyecto 123 - Prueba' creado exitosamente.
+2025-09-10 09:52:39,814 - INFO - Regresando al portafolio 'Sprint 123 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 09:52:40,402 - INFO - Tipo: Proyecto, Nombre: Proyecto 123 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211316546930029/list, Team: Team prueba
+2025-09-10 09:52:40,620 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:52:41,110 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:52:42,028 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:52:43,044 - INFO - Nombre del proyecto ingresado: Soporte 123 - Prueba
+2025-09-10 09:52:43,198 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:52:43,916 - INFO - Proyecto 'Soporte 123 - Prueba' creado exitosamente.
+2025-09-10 09:52:46,153 - INFO - Regresando al portafolio 'Sprint 123 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 09:52:46,481 - INFO - Tipo: Proyecto, Nombre: Soporte 123 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211316546930033/list, Team: Team prueba
+2025-09-10 09:52:47,281 - INFO - Regresado a la página de Sprints.
+2025-09-10 09:52:47,282 - INFO - Procesando equipo: Team QA
+2025-09-10 09:52:47,610 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 09:52:48,397 - INFO - Menú 'More actions' abierto.
+2025-09-10 09:52:48,706 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 09:52:49,827 - INFO - Nombre del portafolio ingresado: Sprint 123 - 10 Septiembre 2025 al 1 Octubre 2025
+2025-09-10 09:52:49,907 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 09:52:50,143 - INFO - Portafolio 'Sprint 123 - 10 Septiembre 2025 al 1 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 09:52:50,217 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 123 - 10 Septiembre 2025 al 1 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211316546930037/list, Team: Team QA
+2025-09-10 09:52:51,370 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:52:51,578 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:52:52,279 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:52:52,943 - INFO - Nombre del proyecto ingresado: Proyecto 123 - QA
+2025-09-10 09:52:53,103 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:52:53,418 - INFO - Proyecto 'Proyecto 123 - QA' creado exitosamente.
+2025-09-10 09:52:55,544 - INFO - Regresando al portafolio 'Sprint 123 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 09:52:55,872 - INFO - Tipo: Proyecto, Nombre: Proyecto 123 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211316548211788/list, Team: Team QA
+2025-09-10 09:52:55,962 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:52:56,176 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:52:56,887 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:52:57,311 - INFO - Nombre del proyecto ingresado: Soporte 123 - QA
+2025-09-10 09:52:57,475 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:52:57,925 - INFO - Proyecto 'Soporte 123 - QA' creado exitosamente.
+2025-09-10 09:52:59,954 - INFO - Regresando al portafolio 'Sprint 123 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 09:53:00,286 - INFO - Tipo: Proyecto, Nombre: Soporte 123 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211316548211792/list, Team: Team QA
+2025-09-10 09:53:00,823 - INFO - Regresado a la página de Sprints.
+2025-09-10 09:53:00,823 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 09:53:00,824 - INFO - Automatización completada exitosamente.
+2025-09-10 09:53:03,505 - INFO - Driver cerrado.
+2025-09-10 09:53:03,507 - INFO - 192.168.21.36 - - [10/Sep/2025 09:53:03] "POST /run http/1.1" 200 -
+2025-09-10 09:55:56,829 - INFO - 192.168.21.36 - - [10/Sep/2025 09:55:56] "GET / http/1.1" 200 -
+2025-09-10 09:55:57,512 - INFO - 192.168.21.36 - - [10/Sep/2025 09:55:57] "GET / http/1.1" 200 -
+2025-09-10 09:57:29,208 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 09:57:29,815 - INFO -  * Restarting with stat
+2025-09-10 09:57:36,461 - WARNING -  * Debugger is active!
+2025-09-10 09:57:36,476 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 09:58:06,734 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 09:58:06,862 - INFO -  * Restarting with stat
+2025-09-10 09:58:09,294 - WARNING -  * Debugger is active!
+2025-09-10 09:58:09,299 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 09:58:20,310 - INFO - 192.168.21.36 - - [10/Sep/2025 09:58:20] "GET / http/1.1" 200 -
+2025-09-10 09:58:52,914 - INFO - Iniciando automatización para Sprint 753, 2025-09-10 al 2025-10-10
+2025-09-10 09:58:54,748 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 09:59:02,569 - INFO - Navegando a la página de Asana.
+2025-09-10 09:59:03,203 - INFO - Correo ingresado.
+2025-09-10 09:59:03,275 - INFO - Botón 'Continue' clickeado.
+2025-09-10 09:59:04,027 - INFO - Contraseña ingresada.
+2025-09-10 09:59:04,091 - INFO - Botón 'Log in' clickeado.
+2025-09-10 09:59:11,909 - INFO - Login completado.
+2025-09-10 09:59:11,922 - INFO - Procesando equipo: Team SIICOP v.2
+2025-09-10 09:59:14,750 - INFO - Equipo 'Team SIICOP v.2' seleccionado.
+2025-09-10 09:59:18,149 - INFO - Menú 'More actions' abierto.
+2025-09-10 09:59:18,601 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 09:59:19,861 - INFO - Nombre del portafolio ingresado: Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025
+2025-09-10 09:59:19,942 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 09:59:20,238 - INFO - Portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 09:59:20,309 - INFO - Tipo: Portafolio, Nombre: Team SIICOP v.2 Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211316692435148/list, Team: Team SIICOP v.2
+2025-09-10 09:59:21,818 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:59:22,227 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:59:23,243 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:59:23,960 - INFO - Nombre del proyecto ingresado: Proyecto 753 - SIICOP V2
+2025-09-10 09:59:24,069 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:59:24,662 - INFO - Proyecto 'Proyecto 753 - SIICOP V2' creado exitosamente.
+2025-09-10 09:59:26,921 - INFO - Regresando al portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 09:59:27,213 - INFO - Tipo: Proyecto, Nombre: Proyecto 753 - SIICOP V2, Link: http://app.asana.com/1/1204083449956184/project/1211316692435152/list, Team: Team SIICOP v.2
+2025-09-10 09:59:27,355 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:59:27,603 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:59:28,376 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:59:28,861 - INFO - Nombre del proyecto ingresado: Soporte 753 - SIICOP V2
+2025-09-10 09:59:28,957 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:59:29,304 - INFO - Proyecto 'Soporte 753 - SIICOP V2' creado exitosamente.
+2025-09-10 09:59:31,757 - INFO - Regresando al portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 09:59:32,192 - INFO - Tipo: Proyecto, Nombre: Soporte 753 - SIICOP V2, Link: http://app.asana.com/1/1204083449956184/project/1211316692435156/list, Team: Team SIICOP v.2
+2025-09-10 09:59:33,037 - INFO - Regresado a la página de Sprints.
+2025-09-10 09:59:33,037 - INFO - Procesando equipo: Team QA
+2025-09-10 09:59:33,384 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 09:59:34,215 - INFO - Menú 'More actions' abierto.
+2025-09-10 09:59:34,540 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 09:59:35,673 - INFO - Nombre del portafolio ingresado: Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025
+2025-09-10 09:59:35,742 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 09:59:35,944 - INFO - Portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 09:59:35,982 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211316692435160/list, Team: Team QA
+2025-09-10 09:59:37,338 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:59:37,594 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:59:38,414 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:59:39,392 - INFO - Nombre del proyecto ingresado: Proyecto 753 - QA
+2025-09-10 09:59:39,518 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:59:40,183 - INFO - Proyecto 'Proyecto 753 - QA' creado exitosamente.
+2025-09-10 09:59:42,926 - INFO - Regresando al portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 09:59:43,424 - INFO - Tipo: Proyecto, Nombre: Proyecto 753 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211316692435164/list, Team: Team QA
+2025-09-10 09:59:43,523 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:59:43,826 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:59:44,617 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:59:45,134 - INFO - Nombre del proyecto ingresado: Soporte 753 - QA
+2025-09-10 09:59:45,270 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:59:45,591 - INFO - Proyecto 'Soporte 753 - QA' creado exitosamente.
+2025-09-10 09:59:48,267 - INFO - Regresando al portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 09:59:48,608 - INFO - Tipo: Proyecto, Nombre: Soporte 753 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211316692435168/list, Team: Team QA
+2025-09-10 09:59:49,304 - INFO - Regresado a la página de Sprints.
+2025-09-10 09:59:49,305 - INFO - Procesando equipo: Team INTEGRACIONES
+2025-09-10 09:59:49,500 - INFO - Equipo 'Team INTEGRACIONES' seleccionado.
+2025-09-10 09:59:50,264 - INFO - Menú 'More actions' abierto.
+2025-09-10 09:59:50,467 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 09:59:51,411 - INFO - Nombre del portafolio ingresado: Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025
+2025-09-10 09:59:51,480 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 09:59:51,635 - INFO - Portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 09:59:51,680 - INFO - Tipo: Portafolio, Nombre: Team INTEGRACIONES Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211316692435172/list, Team: Team INTEGRACIONES
+2025-09-10 09:59:53,374 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:59:53,516 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:59:54,183 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:59:54,816 - INFO - Nombre del proyecto ingresado: Proyecto 753 - Integraciones - Ecommerce
+2025-09-10 09:59:55,166 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:59:55,527 - INFO - Proyecto 'Proyecto 753 - Integraciones - Ecommerce' creado exitosamente.
+2025-09-10 09:59:57,311 - INFO - Regresando al portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 09:59:57,563 - INFO - Tipo: Proyecto, Nombre: Proyecto 753 - Integraciones - Ecommerce, Link: http://app.asana.com/1/1204083449956184/project/1211316692435176/list, Team: Team INTEGRACIONES
+2025-09-10 09:59:57,664 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 09:59:57,905 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 09:59:58,594 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 09:59:59,163 - INFO - Nombre del proyecto ingresado: Soporte 753 - Integraciones - Ecommerce
+2025-09-10 09:59:59,256 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 09:59:59,549 - INFO - Proyecto 'Soporte 753 - Integraciones - Ecommerce' creado exitosamente.
+2025-09-10 10:00:01,837 - INFO - Regresando al portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 10:00:02,006 - INFO - Tipo: Proyecto, Nombre: Soporte 753 - Integraciones - Ecommerce, Link: http://app.asana.com/1/1204083449956184/project/1211316692438285/list, Team: Team INTEGRACIONES
+2025-09-10 10:00:02,797 - INFO - Regresado a la página de Sprints.
+2025-09-10 10:00:02,798 - INFO - Procesando equipo: Team POSWEB
+2025-09-10 10:00:03,014 - INFO - Equipo 'Team POSWEB' seleccionado.
+2025-09-10 10:00:04,153 - INFO - Menú 'More actions' abierto.
+2025-09-10 10:00:04,442 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 10:00:05,519 - INFO - Nombre del portafolio ingresado: Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025
+2025-09-10 10:00:05,584 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 10:00:05,752 - INFO - Portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 10:00:05,790 - INFO - Tipo: Portafolio, Nombre: Team POSWEB Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211316692438289/list, Team: Team POSWEB
+2025-09-10 10:00:07,429 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 10:00:07,628 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 10:00:08,302 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 10:00:08,762 - INFO - Nombre del proyecto ingresado: Proyecto 753 - POSWEB
+2025-09-10 10:00:08,851 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 10:00:09,131 - INFO - Proyecto 'Proyecto 753 - POSWEB' creado exitosamente.
+2025-09-10 10:00:10,934 - INFO - Regresando al portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 10:00:11,170 - INFO - Tipo: Proyecto, Nombre: Proyecto 753 - POSWEB, Link: http://app.asana.com/1/1204083449956184/project/1211316692438293/list, Team: Team POSWEB
+2025-09-10 10:00:11,268 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 10:00:11,471 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 10:00:12,168 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 10:00:12,587 - INFO - Nombre del proyecto ingresado: Soporte 753 - POSWEB
+2025-09-10 10:00:12,702 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 10:00:12,968 - INFO - Proyecto 'Soporte 753 - POSWEB' creado exitosamente.
+2025-09-10 10:00:14,902 - INFO - Regresando al portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 10:00:15,162 - INFO - Tipo: Proyecto, Nombre: Soporte 753 - POSWEB, Link: http://app.asana.com/1/1204083449956184/project/1211316692438297/list, Team: Team POSWEB
+2025-09-10 10:00:15,745 - INFO - Regresado a la página de Sprints.
+2025-09-10 10:00:15,746 - INFO - Procesando equipo: Team SIICOP
+2025-09-10 10:00:15,945 - INFO - Equipo 'Team SIICOP' seleccionado.
+2025-09-10 10:00:16,754 - INFO - Menú 'More actions' abierto.
+2025-09-10 10:00:17,038 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 10:00:18,016 - INFO - Nombre del portafolio ingresado: Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025
+2025-09-10 10:00:18,085 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 10:00:18,242 - INFO - Portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 10:00:18,275 - INFO - Tipo: Portafolio, Nombre: Team SIICOP Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211316692438301/list, Team: Team SIICOP
+2025-09-10 10:00:19,961 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 10:00:20,218 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 10:00:21,041 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 10:00:21,718 - INFO - Nombre del proyecto ingresado: Proyecto 753 - SIICOP
+2025-09-10 10:00:21,842 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 10:00:22,131 - INFO - Proyecto 'Proyecto 753 - SIICOP' creado exitosamente.
+2025-09-10 10:00:24,185 - INFO - Regresando al portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 10:00:24,508 - INFO - Tipo: Proyecto, Nombre: Proyecto 753 - SIICOP, Link: http://app.asana.com/1/1204083449956184/project/1211316692438305/list, Team: Team SIICOP
+2025-09-10 10:00:24,627 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 10:00:24,909 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 10:00:25,607 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 10:00:26,142 - INFO - Nombre del proyecto ingresado: Soporte 753 - SIICOP
+2025-09-10 10:00:26,220 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 10:00:26,504 - INFO - Proyecto 'Soporte 753 - SIICOP' creado exitosamente.
+2025-09-10 10:00:29,020 - INFO - Regresando al portafolio 'Sprint 753 - 10 Septiembre 2025 al 10 Octubre 2025'.
+2025-09-10 10:00:29,303 - INFO - Tipo: Proyecto, Nombre: Soporte 753 - SIICOP, Link: http://app.asana.com/1/1204083449956184/project/1211316692438309/list, Team: Team SIICOP
+2025-09-10 10:00:29,822 - INFO - Regresado a la página de Sprints.
+2025-09-10 10:00:29,822 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 10:00:29,823 - INFO - Automatización completada exitosamente.
+2025-09-10 10:00:32,584 - INFO - Driver cerrado.
+2025-09-10 10:00:32,586 - INFO - 192.168.21.36 - - [10/Sep/2025 10:00:32] "POST /run http/1.1" 200 -
+2025-09-10 10:11:20,052 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 10:11:20,994 - INFO -  * Restarting with stat
+2025-09-10 10:12:14,202 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-10 10:12:14,202 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 10:12:14,205 - INFO -  * Restarting with stat
+2025-09-10 10:12:15,692 - WARNING -  * Debugger is active!
+2025-09-10 10:12:15,698 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 10:12:17,298 - INFO - 192.168.21.36 - - [10/Sep/2025 10:12:17] "GET / http/1.1" 200 -
+2025-09-10 10:12:37,199 - INFO - Iniciando automatización para Sprint 88888, 2025-10-01 al 2025-10-29
+2025-09-10 10:12:39,063 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 10:12:54,160 - INFO - Navegando a la página de Asana.
+2025-09-10 10:12:54,162 - ERROR - Error durante el login: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.81)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6013cfca5+79861]
+	GetHandleVerifier [0x0x7ff6013cfd00+79952]
+	(No symbol) [0x0x7ff60114cada]
+	(No symbol) [0x0x7ff601124b91]
+	(No symbol) [0x0x7ff6011d40fe]
+	(No symbol) [0x0x7ff6011f48c2]
+	(No symbol) [0x0x7ff6011cc8b3]
+	(No symbol) [0x0x7ff601195272]
+	(No symbol) [0x0x7ff601196043]
+	GetHandleVerifier [0x0x7ff60168b9dd+2946349]
+	GetHandleVerifier [0x0x7ff601685c5a+2922410]
+	GetHandleVerifier [0x0x7ff6016a59e7+3052855]
+	GetHandleVerifier [0x0x7ff6013eaa8e+189918]
+	GetHandleVerifier [0x0x7ff6013f2a2f+222591]
+	GetHandleVerifier [0x0x7ff6013d8ac4+116244]
+	GetHandleVerifier [0x0x7ff6013d8c79+116681]
+	GetHandleVerifier [0x0x7ff6013bf058+11176]
+	BaseThreadInitThunk [0x0x7ffdbaf2e8d7+23]
+	RtlUserThreadStart [0x0x7ffdbb65c34c+44]
+
+2025-09-10 10:12:54,163 - ERROR - Fallo en el login. Terminando.
+2025-09-10 10:13:35,490 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-10 10:13:35,490 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 10:13:35,496 - INFO -  * Restarting with stat
+2025-09-10 10:13:37,484 - WARNING -  * Debugger is active!
+2025-09-10 10:13:37,488 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 10:13:38,540 - INFO - 192.168.21.36 - - [10/Sep/2025 10:13:38] "GET / http/1.1" 200 -
+2025-09-10 10:13:50,704 - INFO - Iniciando automatización para Sprint 12311, 2025-11-05 al 2025-11-26
+2025-09-10 10:13:52,440 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 10:14:27,512 - INFO - Navegando a la página de Asana.
+2025-09-10 10:14:27,880 - INFO - Correo ingresado.
+2025-09-10 10:14:27,936 - INFO - Botón 'Continue' clickeado.
+2025-09-10 10:14:28,665 - INFO - Contraseña ingresada.
+2025-09-10 10:14:28,755 - INFO - Botón 'Log in' clickeado.
+2025-09-10 10:14:57,382 - INFO - Login completado.
+2025-09-10 10:14:57,392 - INFO - Procesando equipo: Team QA
+2025-09-10 10:15:14,736 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 10:15:15,470 - INFO - Menú 'More actions' abierto.
+2025-09-10 10:15:15,681 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 10:15:33,793 - INFO - Nombre del portafolio ingresado: Sprint 12311 - 5 Noviembre 2025 al 26 Noviembre 2025
+2025-09-10 10:15:33,858 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 10:15:34,059 - INFO - Portafolio 'Sprint 12311 - 5 Noviembre 2025 al 26 Noviembre 2025' creado y accedido exitosamente.
+2025-09-10 10:15:34,313 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 12311 - 5 Noviembre 2025 al 26 Noviembre 2025, Link: http://app.asana.com/0/portfolio/1211316774176623/list, Team: Team QA
+2025-09-10 10:15:35,940 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 10:15:36,222 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 10:15:37,716 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 10:15:38,913 - INFO - Nombre del proyecto ingresado: Proyecto 12311 - QA
+2025-09-10 10:15:39,037 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 10:15:39,293 - INFO - Proyecto 'Proyecto 12311 - QA' creado exitosamente.
+2025-09-10 10:15:41,034 - INFO - Regresando al portafolio 'Sprint 12311 - 5 Noviembre 2025 al 26 Noviembre 2025'.
+2025-09-10 10:15:41,480 - INFO - Tipo: Proyecto, Nombre: Proyecto 12311 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211316774176627/list, Team: Team QA
+2025-09-10 10:15:41,570 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 10:15:41,861 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 10:15:43,164 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 10:15:43,627 - INFO - Nombre del proyecto ingresado: Soporte 12311 - QA
+2025-09-10 10:15:43,786 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 10:15:44,266 - INFO - Proyecto 'Soporte 12311 - QA' creado exitosamente.
+2025-09-10 10:15:46,813 - INFO - Regresando al portafolio 'Sprint 12311 - 5 Noviembre 2025 al 26 Noviembre 2025'.
+2025-09-10 10:15:47,247 - INFO - Tipo: Proyecto, Nombre: Soporte 12311 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211316774176631/list, Team: Team QA
+2025-09-10 10:15:47,654 - INFO - Regresado a la página de Sprints.
+2025-09-10 10:15:47,655 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 10:15:47,655 - INFO - Automatización completada exitosamente.
+2025-09-10 10:15:50,264 - INFO - Driver cerrado.
+2025-09-10 10:15:50,266 - INFO - 192.168.21.36 - - [10/Sep/2025 10:15:50] "POST /run http/1.1" 200 -
+2025-09-10 10:26:09,766 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-10 10:26:09,767 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 10:26:09,772 - INFO -  * Restarting with stat
+2025-09-10 10:26:11,651 - WARNING -  * Debugger is active!
+2025-09-10 10:26:11,656 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 10:26:14,026 - INFO - 192.168.21.36 - - [10/Sep/2025 10:26:14] "GET / http/1.1" 200 -
+2025-09-10 10:26:14,412 - INFO - 192.168.21.36 - - [10/Sep/2025 10:26:14] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-10 10:29:29,894 - INFO - Iniciando automatización para Sprint 456, 2025-09-10 al 2025-10-01
+2025-09-10 10:29:31,906 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 10:29:39,028 - INFO - Navegando a la página de Asana.
+2025-09-10 10:29:39,404 - INFO - Correo ingresado.
+2025-09-10 10:29:39,447 - INFO - Botón 'Continue' clickeado.
+2025-09-10 10:29:40,149 - INFO - Contraseña ingresada.
+2025-09-10 10:29:40,199 - INFO - Botón 'Log in' clickeado.
+2025-09-10 10:29:49,058 - INFO - Login completado.
+2025-09-10 10:29:49,069 - INFO - Procesando equipo: Team prueba
+2025-09-10 10:29:51,393 - INFO - Equipo 'Team prueba' seleccionado.
+2025-09-10 10:29:53,948 - INFO - Menú 'More actions' abierto.
+2025-09-10 10:29:54,723 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 10:29:56,601 - INFO - Nombre del portafolio ingresado: Sprint 456 - 10 Septiembre 2025 al 1 Octubre 2025
+2025-09-10 10:29:56,765 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 10:29:57,200 - INFO - Portafolio 'Sprint 456 - 10 Septiembre 2025 al 1 Octubre 2025' creado y accedido exitosamente.
+2025-09-10 10:29:57,243 - INFO - Tipo: Portafolio, Nombre: Team prueba Sprint 456 - 10 Septiembre 2025 al 1 Octubre 2025, Link: http://app.asana.com/0/portfolio/1211316969318771/list, Team: Team prueba
+2025-09-10 10:29:58,576 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 10:29:58,798 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 10:30:00,176 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 10:30:00,896 - INFO - Nombre del proyecto ingresado: Proyecto 456 - Prueba
+2025-09-10 10:30:01,000 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 10:30:01,670 - INFO - Proyecto 'Proyecto 456 - Prueba' creado exitosamente.
+2025-09-10 10:30:03,792 - INFO - Regresando al portafolio 'Sprint 456 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 10:30:04,163 - INFO - Tipo: Proyecto, Nombre: Proyecto 456 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211316969318775/list, Team: Team prueba
+2025-09-10 10:30:04,264 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 10:30:04,456 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 10:30:05,217 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 10:30:05,742 - INFO - Nombre del proyecto ingresado: Soporte 456 - Prueba
+2025-09-10 10:30:05,853 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 10:30:06,511 - INFO - Proyecto 'Soporte 456 - Prueba' creado exitosamente.
+2025-09-10 10:30:08,552 - INFO - Regresando al portafolio 'Sprint 456 - 10 Septiembre 2025 al 1 Octubre 2025'.
+2025-09-10 10:30:08,926 - INFO - Tipo: Proyecto, Nombre: Soporte 456 - Prueba, Link: http://app.asana.com/1/1204083449956184/project/1211316969318779/list, Team: Team prueba
+2025-09-10 10:30:09,488 - INFO - Regresado a la página de Sprints.
+2025-09-10 10:30:09,489 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 10:30:09,489 - INFO - Automatización completada exitosamente.
+2025-09-10 10:30:12,090 - INFO - Driver cerrado.
+2025-09-10 10:30:12,091 - INFO - 192.168.21.36 - - [10/Sep/2025 10:30:12] "POST /run http/1.1" 200 -
+2025-09-10 11:05:35,653 - INFO - 192.168.21.36 - - [10/Sep/2025 11:05:35] "GET / http/1.1" 200 -
+2025-09-10 11:05:42,146 - INFO - 192.168.21.36 - - [10/Sep/2025 11:05:42] "GET / http/1.1" 200 -
+2025-09-10 11:07:30,085 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
+2025-09-10 11:07:30,339 - INFO -  * Restarting with stat
+2025-09-10 11:07:33,763 - WARNING -  * Debugger is active!
+2025-09-10 11:07:33,767 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 11:08:09,023 - INFO - Iniciando automatización para Sprint 7856, 2025-10-31 al 2025-11-28
+2025-09-10 11:08:11,232 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 11:08:22,077 - INFO - Navegando a la página de Asana.
+2025-09-10 11:08:22,434 - INFO - Correo ingresado.
+2025-09-10 11:08:22,577 - INFO - Botón 'Continue' clickeado.
+2025-09-10 11:08:23,335 - INFO - Contraseña ingresada.
+2025-09-10 11:08:23,386 - INFO - Botón 'Log in' clickeado.
+2025-09-10 11:08:37,122 - INFO - Login completado.
+2025-09-10 11:08:37,181 - INFO - Procesando equipo: Team SIICOP v.2
+2025-09-10 11:08:39,651 - INFO - Equipo 'Team SIICOP v.2' seleccionado.
+2025-09-10 11:08:43,258 - INFO - Menú 'More actions' abierto.
+2025-09-10 11:08:43,872 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 11:08:45,604 - INFO - Nombre del portafolio ingresado: Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025
+2025-09-10 11:08:45,679 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 11:08:45,930 - INFO - Portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025' creado y accedido exitosamente.
+2025-09-10 11:08:45,985 - INFO - Tipo: Portafolio, Nombre: Team SIICOP v.2 Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025, Link: http://app.asana.com/0/portfolio/1211317615312783/list, Team: Team SIICOP v.2
+2025-09-10 11:08:47,388 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 11:08:47,653 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 11:08:49,340 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 11:08:49,848 - INFO - Nombre del proyecto ingresado: Proyecto 7856 - SIICOP V2
+2025-09-10 11:08:50,177 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 11:08:50,712 - INFO - Proyecto 'Proyecto 7856 - SIICOP V2' creado exitosamente.
+2025-09-10 11:08:52,807 - INFO - Regresando al portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025'.
+2025-09-10 11:08:53,073 - INFO - Tipo: Proyecto, Nombre: Proyecto 7856 - SIICOP V2, Link: http://app.asana.com/1/1204083449956184/project/1211317615312787/list, Team: Team SIICOP v.2
+2025-09-10 11:08:53,140 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 11:08:53,350 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 11:08:54,024 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 11:08:54,472 - INFO - Nombre del proyecto ingresado: Soporte 7856 - SIICOP V2
+2025-09-10 11:08:54,614 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 11:08:55,147 - INFO - Proyecto 'Soporte 7856 - SIICOP V2' creado exitosamente.
+2025-09-10 11:08:57,090 - INFO - Regresando al portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025'.
+2025-09-10 11:08:57,366 - INFO - Tipo: Proyecto, Nombre: Soporte 7856 - SIICOP V2, Link: http://app.asana.com/1/1204083449956184/project/1211317615312791/list, Team: Team SIICOP v.2
+2025-09-10 11:08:57,884 - INFO - Regresado a la página de Sprints.
+2025-09-10 11:08:57,885 - INFO - Procesando equipo: Team QA
+2025-09-10 11:08:58,306 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 11:08:58,979 - INFO - Menú 'More actions' abierto.
+2025-09-10 11:08:59,239 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 11:09:00,269 - INFO - Nombre del portafolio ingresado: Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025
+2025-09-10 11:09:00,326 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 11:09:00,507 - INFO - Portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025' creado y accedido exitosamente.
+2025-09-10 11:09:00,623 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025, Link: http://app.asana.com/0/portfolio/1211317615312795/list, Team: Team QA
+2025-09-10 11:09:01,870 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 11:09:02,026 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 11:09:02,799 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 11:09:03,449 - INFO - Nombre del proyecto ingresado: Proyecto 7856 - QA
+2025-09-10 11:09:03,628 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 11:09:04,046 - INFO - Proyecto 'Proyecto 7856 - QA' creado exitosamente.
+2025-09-10 11:09:06,656 - INFO - Regresando al portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025'.
+2025-09-10 11:09:06,908 - INFO - Tipo: Proyecto, Nombre: Proyecto 7856 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211317618068782/list, Team: Team QA
+2025-09-10 11:09:06,979 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 11:09:07,131 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 11:09:07,840 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 11:09:08,367 - INFO - Nombre del proyecto ingresado: Soporte 7856 - QA
+2025-09-10 11:09:08,486 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 11:09:08,861 - INFO - Proyecto 'Soporte 7856 - QA' creado exitosamente.
+2025-09-10 11:09:11,457 - INFO - Regresando al portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025'.
+2025-09-10 11:09:11,781 - INFO - Tipo: Proyecto, Nombre: Soporte 7856 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211317618068786/list, Team: Team QA
+2025-09-10 11:09:12,474 - INFO - Regresado a la página de Sprints.
+2025-09-10 11:09:12,476 - INFO - Procesando equipo: Team INTEGRACIONES
+2025-09-10 11:09:12,721 - INFO - Equipo 'Team INTEGRACIONES' seleccionado.
+2025-09-10 11:09:13,626 - INFO - Menú 'More actions' abierto.
+2025-09-10 11:09:13,842 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 11:09:14,921 - INFO - Nombre del portafolio ingresado: Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025
+2025-09-10 11:09:14,987 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 11:09:15,418 - INFO - Portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025' creado y accedido exitosamente.
+2025-09-10 11:09:15,532 - INFO - Tipo: Portafolio, Nombre: Team INTEGRACIONES Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025, Link: http://app.asana.com/0/portfolio/1211317618068790/list, Team: Team INTEGRACIONES
+2025-09-10 11:09:17,368 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 11:09:17,519 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 11:09:18,208 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 11:09:19,187 - INFO - Nombre del proyecto ingresado: Proyecto 7856 - Integraciones - Ecommerce
+2025-09-10 11:09:19,270 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 11:09:19,666 - INFO - Proyecto 'Proyecto 7856 - Integraciones - Ecommerce' creado exitosamente.
+2025-09-10 11:09:22,207 - INFO - Regresando al portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025'.
+2025-09-10 11:09:22,502 - INFO - Tipo: Proyecto, Nombre: Proyecto 7856 - Integraciones - Ecommerce, Link: http://app.asana.com/1/1204083449956184/project/1211317618068794/list, Team: Team INTEGRACIONES
+2025-09-10 11:09:22,592 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 11:09:22,811 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 11:09:23,486 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 11:09:24,198 - INFO - Nombre del proyecto ingresado: Soporte 7856 - Integraciones - Ecommerce
+2025-09-10 11:09:24,319 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 11:09:24,690 - INFO - Proyecto 'Soporte 7856 - Integraciones - Ecommerce' creado exitosamente.
+2025-09-10 11:09:26,645 - INFO - Regresando al portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025'.
+2025-09-10 11:09:26,945 - INFO - Tipo: Proyecto, Nombre: Soporte 7856 - Integraciones - Ecommerce, Link: http://app.asana.com/1/1204083449956184/project/1211317618068798/list, Team: Team INTEGRACIONES
+2025-09-10 11:09:27,551 - INFO - Regresado a la página de Sprints.
+2025-09-10 11:09:27,552 - INFO - Procesando equipo: Team POSWEB
+2025-09-10 11:09:27,828 - INFO - Equipo 'Team POSWEB' seleccionado.
+2025-09-10 11:09:28,774 - INFO - Menú 'More actions' abierto.
+2025-09-10 11:09:29,035 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 11:09:30,079 - INFO - Nombre del portafolio ingresado: Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025
+2025-09-10 11:09:30,147 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 11:09:30,345 - INFO - Portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025' creado y accedido exitosamente.
+2025-09-10 11:09:30,405 - INFO - Tipo: Portafolio, Nombre: Team POSWEB Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025, Link: http://app.asana.com/0/portfolio/1211317618068802/list, Team: Team POSWEB
+2025-09-10 11:09:31,731 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 11:09:31,931 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 11:09:32,815 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 11:09:33,440 - INFO - Nombre del proyecto ingresado: Proyecto 7856 - POSWEB
+2025-09-10 11:09:33,589 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 11:09:34,023 - INFO - Proyecto 'Proyecto 7856 - POSWEB' creado exitosamente.
+2025-09-10 11:09:36,062 - INFO - Regresando al portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025'.
+2025-09-10 11:09:36,428 - INFO - Tipo: Proyecto, Nombre: Proyecto 7856 - POSWEB, Link: http://app.asana.com/1/1204083449956184/project/1211317618068806/list, Team: Team POSWEB
+2025-09-10 11:09:36,506 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 11:09:36,723 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 11:09:37,414 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 11:09:38,068 - INFO - Nombre del proyecto ingresado: Soporte 7856 - POSWEB
+2025-09-10 11:09:38,197 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 11:09:38,658 - INFO - Proyecto 'Soporte 7856 - POSWEB' creado exitosamente.
+2025-09-10 11:09:40,923 - INFO - Regresando al portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025'.
+2025-09-10 11:09:41,222 - INFO - Tipo: Proyecto, Nombre: Soporte 7856 - POSWEB, Link: http://app.asana.com/1/1204083449956184/project/1211317618068810/list, Team: Team POSWEB
+2025-09-10 11:09:41,923 - INFO - Regresado a la página de Sprints.
+2025-09-10 11:09:41,924 - INFO - Procesando equipo: Team SIICOP
+2025-09-10 11:09:42,181 - INFO - Equipo 'Team SIICOP' seleccionado.
+2025-09-10 11:09:43,273 - INFO - Menú 'More actions' abierto.
+2025-09-10 11:09:43,571 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 11:09:44,580 - INFO - Nombre del portafolio ingresado: Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025
+2025-09-10 11:09:44,724 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 11:09:44,930 - INFO - Portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025' creado y accedido exitosamente.
+2025-09-10 11:09:45,070 - INFO - Tipo: Portafolio, Nombre: Team SIICOP Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025, Link: http://app.asana.com/0/portfolio/1211317618068814/list, Team: Team SIICOP
+2025-09-10 11:09:46,310 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 11:09:46,579 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 11:09:47,331 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 11:09:48,024 - INFO - Nombre del proyecto ingresado: Proyecto 7856 - SIICOP
+2025-09-10 11:09:48,124 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 11:09:48,545 - INFO - Proyecto 'Proyecto 7856 - SIICOP' creado exitosamente.
+2025-09-10 11:09:50,690 - INFO - Regresando al portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025'.
+2025-09-10 11:09:50,970 - INFO - Tipo: Proyecto, Nombre: Proyecto 7856 - SIICOP, Link: http://app.asana.com/1/1204083449956184/project/1211317618068818/list, Team: Team SIICOP
+2025-09-10 11:09:51,048 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 11:09:51,312 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 11:09:52,008 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 11:09:52,468 - INFO - Nombre del proyecto ingresado: Soporte 7856 - SIICOP
+2025-09-10 11:09:52,639 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 11:09:53,064 - INFO - Proyecto 'Soporte 7856 - SIICOP' creado exitosamente.
+2025-09-10 11:09:55,069 - INFO - Regresando al portafolio 'Sprint 7856 - 31 Octubre 2025 al 28 Noviembre 2025'.
+2025-09-10 11:09:55,382 - INFO - Tipo: Proyecto, Nombre: Soporte 7856 - SIICOP, Link: http://app.asana.com/1/1204083449956184/project/1211317618068822/list, Team: Team SIICOP
+2025-09-10 11:09:55,971 - INFO - Regresado a la página de Sprints.
+2025-09-10 11:09:55,971 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 11:09:55,972 - INFO - Automatización completada exitosamente.
+2025-09-10 11:09:58,979 - INFO - Driver cerrado.
+2025-09-10 11:09:58,981 - INFO - 192.168.21.36 - - [10/Sep/2025 11:09:58] "POST /run http/1.1" 200 -
+2025-09-10 16:07:04,576 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-10 16:07:04,576 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 16:07:04,582 - INFO -  * Restarting with stat
+2025-09-10 16:07:07,652 - WARNING -  * Debugger is active!
+2025-09-10 16:07:07,662 - INFO -  * Debugger PIN: 107-283-771
+2025-09-10 16:07:07,760 - INFO - 192.168.21.41 - - [10/Sep/2025 16:07:07] "GET / http/1.1" 200 -
+2025-09-10 16:07:07,761 - INFO - 192.168.21.41 - - [10/Sep/2025 16:07:07] "GET / http/1.1" 200 -
+2025-09-10 16:07:08,392 - INFO - 192.168.21.41 - - [10/Sep/2025 16:07:08] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-10 16:07:25,632 - INFO - Iniciando automatización para Sprint 78955, 2025-09-10 al 2025-09-18
+2025-09-10 16:07:27,418 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 16:07:39,293 - INFO - Navegando a la página de Asana.
+2025-09-10 16:07:39,703 - INFO - Correo ingresado.
+2025-09-10 16:07:39,782 - INFO - Botón 'Continue' clickeado.
+2025-09-10 16:07:40,473 - INFO - Contraseña ingresada.
+2025-09-10 16:07:40,535 - INFO - Botón 'Log in' clickeado.
+2025-09-10 16:07:47,371 - INFO - Login completado.
+2025-09-10 16:07:47,380 - INFO - Procesando equipo: Team SIICOP v.2
+2025-09-10 16:07:52,496 - INFO - Equipo 'Team SIICOP v.2' seleccionado.
+2025-09-10 16:07:52,771 - INFO - Menú 'More actions' abierto.
+2025-09-10 16:07:53,289 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 16:07:54,457 - INFO - Nombre del portafolio ingresado: Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025
+2025-09-10 16:07:54,524 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 16:07:54,689 - INFO - Portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 16:07:54,723 - INFO - Tipo: Portafolio, Nombre: Team SIICOP v.2 Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211320151207589/list, Team: Team SIICOP v.2
+2025-09-10 16:07:56,455 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:07:56,649 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:07:57,479 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:07:58,249 - INFO - Nombre del proyecto ingresado: Proyecto 78955 - SIICOP V2
+2025-09-10 16:07:58,353 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:07:58,771 - INFO - Proyecto 'Proyecto 78955 - SIICOP V2' creado exitosamente.
+2025-09-10 16:08:01,090 - INFO - Regresando al portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025'.
+2025-09-10 16:08:01,357 - INFO - Tipo: Proyecto, Nombre: Proyecto 78955 - SIICOP V2, Link: http://app.asana.com/1/1204083449956184/project/1211320151207593/list, Team: Team SIICOP v.2
+2025-09-10 16:08:01,476 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:08:01,665 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:08:02,370 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:08:02,918 - INFO - Nombre del proyecto ingresado: Soporte 78955 - SIICOP V2
+2025-09-10 16:08:03,080 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:08:03,582 - INFO - Proyecto 'Soporte 78955 - SIICOP V2' creado exitosamente.
+2025-09-10 16:08:05,841 - INFO - Regresando al portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025'.
+2025-09-10 16:08:06,059 - INFO - Tipo: Proyecto, Nombre: Soporte 78955 - SIICOP V2, Link: http://app.asana.com/1/1204083449956184/project/1211320151207597/list, Team: Team SIICOP v.2
+2025-09-10 16:08:06,597 - INFO - Regresado a la página de Sprints.
+2025-09-10 16:08:06,598 - INFO - Procesando equipo: Team QA
+2025-09-10 16:08:06,852 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 16:08:07,655 - INFO - Menú 'More actions' abierto.
+2025-09-10 16:08:07,898 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 16:08:09,017 - INFO - Nombre del portafolio ingresado: Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025
+2025-09-10 16:08:09,090 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 16:08:09,273 - INFO - Portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 16:08:09,316 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211320155393215/list, Team: Team QA
+2025-09-10 16:08:10,970 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:08:11,116 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:08:11,768 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:08:12,162 - INFO - Nombre del proyecto ingresado: Proyecto 78955 - QA
+2025-09-10 16:08:12,343 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:08:12,697 - INFO - Proyecto 'Proyecto 78955 - QA' creado exitosamente.
+2025-09-10 16:08:15,659 - INFO - Regresando al portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025'.
+2025-09-10 16:08:16,001 - INFO - Tipo: Proyecto, Nombre: Proyecto 78955 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211320155393219/list, Team: Team QA
+2025-09-10 16:08:16,085 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:08:16,311 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:08:17,040 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:08:17,793 - INFO - Nombre del proyecto ingresado: Soporte 78955 - QA
+2025-09-10 16:08:17,891 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:08:18,142 - INFO - Proyecto 'Soporte 78955 - QA' creado exitosamente.
+2025-09-10 16:08:20,422 - INFO - Regresando al portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025'.
+2025-09-10 16:08:20,630 - INFO - Tipo: Proyecto, Nombre: Soporte 78955 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211320155393223/list, Team: Team QA
+2025-09-10 16:08:21,122 - INFO - Regresado a la página de Sprints.
+2025-09-10 16:08:21,122 - INFO - Procesando equipo: Team INTEGRACIONES
+2025-09-10 16:08:21,331 - INFO - Equipo 'Team INTEGRACIONES' seleccionado.
+2025-09-10 16:08:22,060 - INFO - Menú 'More actions' abierto.
+2025-09-10 16:08:22,252 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 16:08:23,148 - INFO - Nombre del portafolio ingresado: Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025
+2025-09-10 16:08:23,201 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 16:08:23,337 - INFO - Portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 16:08:23,371 - INFO - Tipo: Portafolio, Nombre: Team INTEGRACIONES Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211320155393227/list, Team: Team INTEGRACIONES
+2025-09-10 16:08:24,979 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:08:25,092 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:08:25,763 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:08:26,669 - INFO - Nombre del proyecto ingresado: Proyecto 78955 - Integraciones - Ecommerce
+2025-09-10 16:08:26,741 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:08:27,018 - INFO - Proyecto 'Proyecto 78955 - Integraciones - Ecommerce' creado exitosamente.
+2025-09-10 16:08:28,859 - INFO - Regresando al portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025'.
+2025-09-10 16:08:29,079 - INFO - Tipo: Proyecto, Nombre: Proyecto 78955 - Integraciones - Ecommerce, Link: http://app.asana.com/1/1204083449956184/project/1211320155393231/list, Team: Team INTEGRACIONES
+2025-09-10 16:08:29,192 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:08:29,371 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:08:30,075 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:08:30,687 - INFO - Nombre del proyecto ingresado: Soporte 78955 - Integraciones - Ecommerce
+2025-09-10 16:08:30,794 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:08:31,068 - INFO - Proyecto 'Soporte 78955 - Integraciones - Ecommerce' creado exitosamente.
+2025-09-10 16:08:33,415 - INFO - Regresando al portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025'.
+2025-09-10 16:08:33,659 - INFO - Tipo: Proyecto, Nombre: Soporte 78955 - Integraciones - Ecommerce, Link: http://app.asana.com/1/1204083449956184/project/1211320155393235/list, Team: Team INTEGRACIONES
+2025-09-10 16:08:34,123 - INFO - Regresado a la página de Sprints.
+2025-09-10 16:08:34,123 - INFO - Procesando equipo: Team POSWEB
+2025-09-10 16:08:34,327 - INFO - Equipo 'Team POSWEB' seleccionado.
+2025-09-10 16:08:35,147 - INFO - Menú 'More actions' abierto.
+2025-09-10 16:08:35,348 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 16:08:36,246 - INFO - Nombre del portafolio ingresado: Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025
+2025-09-10 16:08:36,310 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 16:08:36,473 - INFO - Portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 16:08:36,517 - INFO - Tipo: Portafolio, Nombre: Team POSWEB Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211320155393239/list, Team: Team POSWEB
+2025-09-10 16:08:38,150 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:08:38,282 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:08:38,951 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:08:39,362 - INFO - Nombre del proyecto ingresado: Proyecto 78955 - POSWEB
+2025-09-10 16:08:39,480 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:08:39,758 - INFO - Proyecto 'Proyecto 78955 - POSWEB' creado exitosamente.
+2025-09-10 16:08:42,023 - INFO - Regresando al portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025'.
+2025-09-10 16:08:42,285 - INFO - Tipo: Proyecto, Nombre: Proyecto 78955 - POSWEB, Link: http://app.asana.com/1/1204083449956184/project/1211320155393243/list, Team: Team POSWEB
+2025-09-10 16:08:42,365 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:08:42,559 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:08:43,220 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:08:43,578 - INFO - Nombre del proyecto ingresado: Soporte 78955 - POSWEB
+2025-09-10 16:08:43,684 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:08:43,942 - INFO - Proyecto 'Soporte 78955 - POSWEB' creado exitosamente.
+2025-09-10 16:08:45,796 - INFO - Regresando al portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025'.
+2025-09-10 16:08:46,010 - INFO - Tipo: Proyecto, Nombre: Soporte 78955 - POSWEB, Link: http://app.asana.com/1/1204083449956184/project/1211320155393247/list, Team: Team POSWEB
+2025-09-10 16:08:46,568 - INFO - Regresado a la página de Sprints.
+2025-09-10 16:08:46,569 - INFO - Procesando equipo: Team SIICOP
+2025-09-10 16:08:46,754 - INFO - Equipo 'Team SIICOP' seleccionado.
+2025-09-10 16:08:47,450 - INFO - Menú 'More actions' abierto.
+2025-09-10 16:08:47,667 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 16:08:48,565 - INFO - Nombre del portafolio ingresado: Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025
+2025-09-10 16:08:48,615 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 16:08:48,805 - INFO - Portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 16:08:48,846 - INFO - Tipo: Portafolio, Nombre: Team SIICOP Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211320155393251/list, Team: Team SIICOP
+2025-09-10 16:08:50,476 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:08:50,617 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:08:51,295 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:08:51,769 - INFO - Nombre del proyecto ingresado: Proyecto 78955 - SIICOP
+2025-09-10 16:08:51,860 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:08:52,174 - INFO - Proyecto 'Proyecto 78955 - SIICOP' creado exitosamente.
+2025-09-10 16:08:54,964 - INFO - Regresando al portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025'.
+2025-09-10 16:08:55,178 - INFO - Tipo: Proyecto, Nombre: Proyecto 78955 - SIICOP, Link: http://app.asana.com/1/1204083449956184/project/1211320155393255/list, Team: Team SIICOP
+2025-09-10 16:08:55,274 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:08:55,417 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:08:56,140 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:08:56,565 - INFO - Nombre del proyecto ingresado: Soporte 78955 - SIICOP
+2025-09-10 16:08:56,640 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:08:56,898 - INFO - Proyecto 'Soporte 78955 - SIICOP' creado exitosamente.
+2025-09-10 16:08:58,690 - INFO - Regresando al portafolio 'Sprint 78955 - 10 Septiembre 2025 al 18 Septiembre 2025'.
+2025-09-10 16:08:58,986 - INFO - Tipo: Proyecto, Nombre: Soporte 78955 - SIICOP, Link: http://app.asana.com/1/1204083449956184/project/1211320155393259/list, Team: Team SIICOP
+2025-09-10 16:08:59,446 - INFO - Regresado a la página de Sprints.
+2025-09-10 16:08:59,446 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 16:08:59,447 - INFO - Automatización completada exitosamente.
+2025-09-10 16:09:02,113 - INFO - Driver cerrado.
+2025-09-10 16:09:02,115 - INFO - 192.168.21.41 - - [10/Sep/2025 16:09:02] "POST /run http/1.1" 200 -
+2025-09-10 16:11:50,889 - INFO - 192.168.21.36 - - [10/Sep/2025 16:11:50] "GET / http/1.1" 200 -
+2025-09-10 16:12:32,508 - INFO - Iniciando automatización para Sprint 158, 2025-09-15 al 2025-09-26
+2025-09-10 16:12:34,529 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-10 16:12:44,758 - INFO - Navegando a la página de Asana.
+2025-09-10 16:12:45,308 - INFO - Correo ingresado.
+2025-09-10 16:12:45,373 - INFO - Botón 'Continue' clickeado.
+2025-09-10 16:12:46,161 - INFO - Contraseña ingresada.
+2025-09-10 16:12:46,232 - INFO - Botón 'Log in' clickeado.
+2025-09-10 16:12:55,637 - INFO - Login completado.
+2025-09-10 16:12:55,652 - INFO - Procesando equipo: Team SIICOP v.2
+2025-09-10 16:12:59,187 - INFO - Equipo 'Team SIICOP v.2' seleccionado.
+2025-09-10 16:13:01,118 - INFO - Menú 'More actions' abierto.
+2025-09-10 16:13:03,138 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 16:13:05,033 - INFO - Nombre del portafolio ingresado: Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025
+2025-09-10 16:13:05,136 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 16:13:05,539 - INFO - Portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 16:13:05,592 - INFO - Tipo: Portafolio, Nombre: Team SIICOP v.2 Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211320366990934/list, Team: Team SIICOP v.2
+2025-09-10 16:13:06,954 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:13:07,313 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:13:08,282 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:13:09,355 - INFO - Nombre del proyecto ingresado: Proyecto 158 - SIICOP V2
+2025-09-10 16:13:09,506 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:13:09,952 - INFO - Proyecto 'Proyecto 158 - SIICOP V2' creado exitosamente.
+2025-09-10 16:13:12,894 - INFO - Regresando al portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025'.
+2025-09-10 16:13:13,425 - INFO - Tipo: Proyecto, Nombre: Proyecto 158 - SIICOP V2, Link: http://app.asana.com/1/1204083449956184/project/1211320366990938/list, Team: Team SIICOP v.2
+2025-09-10 16:13:13,523 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:13:13,818 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:13:14,595 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:13:15,251 - INFO - Nombre del proyecto ingresado: Soporte 158 - SIICOP V2
+2025-09-10 16:13:15,399 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:13:15,953 - INFO - Proyecto 'Soporte 158 - SIICOP V2' creado exitosamente.
+2025-09-10 16:13:17,963 - INFO - Regresando al portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025'.
+2025-09-10 16:13:18,361 - INFO - Tipo: Proyecto, Nombre: Soporte 158 - SIICOP V2, Link: http://app.asana.com/1/1204083449956184/project/1211320366990942/list, Team: Team SIICOP v.2
+2025-09-10 16:13:19,180 - INFO - Regresado a la página de Sprints.
+2025-09-10 16:13:19,180 - INFO - Procesando equipo: Team QA
+2025-09-10 16:13:19,448 - INFO - Equipo 'Team QA' seleccionado.
+2025-09-10 16:13:20,170 - INFO - Menú 'More actions' abierto.
+2025-09-10 16:13:20,477 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 16:13:21,603 - INFO - Nombre del portafolio ingresado: Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025
+2025-09-10 16:13:21,676 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 16:13:21,898 - INFO - Portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 16:13:21,948 - INFO - Tipo: Portafolio, Nombre: Team QA Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211320366990946/list, Team: Team QA
+2025-09-10 16:13:23,111 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:13:23,398 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:13:24,433 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:13:25,071 - INFO - Nombre del proyecto ingresado: Proyecto 158 - QA
+2025-09-10 16:13:25,163 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:13:25,575 - INFO - Proyecto 'Proyecto 158 - QA' creado exitosamente.
+2025-09-10 16:13:27,635 - INFO - Regresando al portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025'.
+2025-09-10 16:13:27,949 - INFO - Tipo: Proyecto, Nombre: Proyecto 158 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211320366990950/list, Team: Team QA
+2025-09-10 16:13:28,052 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:13:28,312 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:13:29,096 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:13:29,612 - INFO - Nombre del proyecto ingresado: Soporte 158 - QA
+2025-09-10 16:13:29,757 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:13:30,111 - INFO - Proyecto 'Soporte 158 - QA' creado exitosamente.
+2025-09-10 16:13:32,532 - INFO - Regresando al portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025'.
+2025-09-10 16:13:32,820 - INFO - Tipo: Proyecto, Nombre: Soporte 158 - QA, Link: http://app.asana.com/1/1204083449956184/project/1211320366990954/list, Team: Team QA
+2025-09-10 16:13:33,666 - INFO - Regresado a la página de Sprints.
+2025-09-10 16:13:33,667 - INFO - Procesando equipo: Team INTEGRACIONES
+2025-09-10 16:13:33,937 - INFO - Equipo 'Team INTEGRACIONES' seleccionado.
+2025-09-10 16:13:34,813 - INFO - Menú 'More actions' abierto.
+2025-09-10 16:13:35,151 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 16:13:36,326 - INFO - Nombre del portafolio ingresado: Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025
+2025-09-10 16:13:36,399 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 16:13:36,601 - INFO - Portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 16:13:36,633 - INFO - Tipo: Portafolio, Nombre: Team INTEGRACIONES Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211320367856077/list, Team: Team INTEGRACIONES
+2025-09-10 16:13:37,838 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:13:38,115 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:13:38,860 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:13:39,689 - INFO - Nombre del proyecto ingresado: Proyecto 158 - Integraciones - Ecommerce
+2025-09-10 16:13:39,774 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:13:40,083 - INFO - Proyecto 'Proyecto 158 - Integraciones - Ecommerce' creado exitosamente.
+2025-09-10 16:13:42,041 - INFO - Regresando al portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025'.
+2025-09-10 16:13:42,390 - INFO - Tipo: Proyecto, Nombre: Proyecto 158 - Integraciones - Ecommerce, Link: http://app.asana.com/1/1204083449956184/project/1211320367856081/list, Team: Team INTEGRACIONES
+2025-09-10 16:13:42,507 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:13:42,767 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:13:43,601 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:13:44,363 - INFO - Nombre del proyecto ingresado: Soporte 158 - Integraciones - Ecommerce
+2025-09-10 16:13:44,467 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:13:44,813 - INFO - Proyecto 'Soporte 158 - Integraciones - Ecommerce' creado exitosamente.
+2025-09-10 16:13:46,799 - INFO - Regresando al portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025'.
+2025-09-10 16:13:47,186 - INFO - Tipo: Proyecto, Nombre: Soporte 158 - Integraciones - Ecommerce, Link: http://app.asana.com/1/1204083449956184/project/1211320367856085/list, Team: Team INTEGRACIONES
+2025-09-10 16:13:48,011 - INFO - Regresado a la página de Sprints.
+2025-09-10 16:13:48,016 - INFO - Procesando equipo: Team POSWEB
+2025-09-10 16:13:48,512 - INFO - Equipo 'Team POSWEB' seleccionado.
+2025-09-10 16:13:49,358 - INFO - Menú 'More actions' abierto.
+2025-09-10 16:13:49,750 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 16:13:50,867 - INFO - Nombre del portafolio ingresado: Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025
+2025-09-10 16:13:50,950 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 16:13:51,147 - INFO - Portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 16:13:51,187 - INFO - Tipo: Portafolio, Nombre: Team POSWEB Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211320367856089/list, Team: Team POSWEB
+2025-09-10 16:13:52,534 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:13:52,828 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:13:53,582 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:13:54,316 - INFO - Nombre del proyecto ingresado: Proyecto 158 - POSWEB
+2025-09-10 16:13:54,434 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:13:54,835 - INFO - Proyecto 'Proyecto 158 - POSWEB' creado exitosamente.
+2025-09-10 16:13:58,206 - INFO - Regresando al portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025'.
+2025-09-10 16:13:58,715 - INFO - Tipo: Proyecto, Nombre: Proyecto 158 - POSWEB, Link: http://app.asana.com/1/1204083449956184/project/1211320367856093/list, Team: Team POSWEB
+2025-09-10 16:13:58,854 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:13:59,243 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:14:00,150 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:14:01,026 - INFO - Nombre del proyecto ingresado: Soporte 158 - POSWEB
+2025-09-10 16:14:01,143 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:14:01,642 - INFO - Proyecto 'Soporte 158 - POSWEB' creado exitosamente.
+2025-09-10 16:14:04,286 - INFO - Regresando al portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025'.
+2025-09-10 16:14:04,805 - INFO - Tipo: Proyecto, Nombre: Soporte 158 - POSWEB, Link: http://app.asana.com/1/1204083449956184/project/1211320367856097/list, Team: Team POSWEB
+2025-09-10 16:14:05,728 - INFO - Regresado a la página de Sprints.
+2025-09-10 16:14:05,732 - INFO - Procesando equipo: Team SIICOP
+2025-09-10 16:14:06,049 - INFO - Equipo 'Team SIICOP' seleccionado.
+2025-09-10 16:14:06,784 - INFO - Menú 'More actions' abierto.
+2025-09-10 16:14:07,183 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-10 16:14:08,442 - INFO - Nombre del portafolio ingresado: Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025
+2025-09-10 16:14:08,567 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-10 16:14:08,846 - INFO - Portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025' creado y accedido exitosamente.
+2025-09-10 16:14:08,988 - INFO - Tipo: Portafolio, Nombre: Team SIICOP Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211320367856101/list, Team: Team SIICOP
+2025-09-10 16:14:11,012 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:14:11,384 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:14:12,408 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:14:13,276 - INFO - Nombre del proyecto ingresado: Proyecto 158 - SIICOP
+2025-09-10 16:14:13,414 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:14:13,915 - INFO - Proyecto 'Proyecto 158 - SIICOP' creado exitosamente.
+2025-09-10 16:14:16,470 - INFO - Regresando al portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025'.
+2025-09-10 16:14:16,820 - INFO - Tipo: Proyecto, Nombre: Proyecto 158 - SIICOP, Link: http://app.asana.com/1/1204083449956184/project/1211320367856105/list, Team: Team SIICOP
+2025-09-10 16:14:16,968 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-10 16:14:17,269 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-10 16:14:17,993 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-10 16:14:18,761 - INFO - Nombre del proyecto ingresado: Soporte 158 - SIICOP
+2025-09-10 16:14:18,912 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-10 16:14:19,229 - INFO - Proyecto 'Soporte 158 - SIICOP' creado exitosamente.
+2025-09-10 16:14:22,010 - INFO - Regresando al portafolio 'Sprint 158 - 15 Septiembre 2025 al 26 Septiembre 2025'.
+2025-09-10 16:14:22,309 - INFO - Tipo: Proyecto, Nombre: Soporte 158 - SIICOP, Link: http://app.asana.com/1/1204083449956184/project/1211320367856109/list, Team: Team SIICOP
+2025-09-10 16:14:22,989 - INFO - Regresado a la página de Sprints.
+2025-09-10 16:14:22,990 - INFO - Procesamiento completado para todos los teams.
+2025-09-10 16:14:22,992 - INFO - Automatización completada exitosamente.
+2025-09-10 16:14:25,867 - INFO - Driver cerrado.
+2025-09-10 16:14:25,931 - INFO - 192.168.21.36 - - [10/Sep/2025 16:14:25] "POST /run http/1.1" 200 -
+2025-09-15 15:08:30,448 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-15 15:08:30,449 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-15 15:08:30,455 - INFO -  * Restarting with stat
+2025-09-15 15:08:34,789 - WARNING -  * Debugger is active!
+2025-09-15 15:08:34,795 - INFO -  * Debugger PIN: 107-283-771
+2025-09-15 15:08:40,556 - INFO - 192.168.21.36 - - [15/Sep/2025 15:08:40] "GET / http/1.1" 200 -
+2025-09-15 15:08:41,114 - INFO - 192.168.21.36 - - [15/Sep/2025 15:08:41] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-15 15:09:29,710 - INFO - Iniciando automatización para Sprint 197, 2025-09-15 al 2025-09-23
+2025-09-15 15:09:31,987 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-15 15:09:39,135 - INFO - Navegando a la página de Asana.
+2025-09-15 15:09:39,760 - INFO - Correo ingresado.
+2025-09-15 15:09:39,853 - INFO - Botón 'Continue' clickeado.
+2025-09-15 15:09:40,581 - INFO - Contraseña ingresada.
+2025-09-15 15:09:40,656 - INFO - Botón 'Log in' clickeado.
+2025-09-15 15:09:46,252 - INFO - Login completado.
+2025-09-15 15:09:46,258 - INFO - Procesando equipo: Team SIICOP v.2
+2025-09-15 15:09:48,109 - INFO - Equipo 'Team SIICOP v.2' seleccionado.
+2025-09-15 15:09:51,643 - INFO - Menú 'More actions' abierto.
+2025-09-15 15:09:52,277 - INFO - Opción 'Crear un portafolio nuevo' seleccionada.
+2025-09-15 15:09:54,045 - INFO - Nombre del portafolio ingresado: Sprint 197 - 15 Septiembre 2025 al 23 Septiembre 2025
+2025-09-15 15:09:54,159 - INFO - Botón 'Continuar' para portafolio clickeado.
+2025-09-15 15:09:54,277 - INFO - Opción 'Comparte con compañeros de equipo' seleccionada.
+2025-09-15 15:09:54,557 - INFO - Portafolio 'Sprint 197 - 15 Septiembre 2025 al 23 Septiembre 2025' creado y accedido exitosamente.
+2025-09-15 15:09:56,492 - WARNING - Elemento para correo 'david.forero.cop@gmail.commiguel.lopez@copservir.co' se refrescó. Reintentando...
+2025-09-15 15:10:02,004 - INFO - Correo 'miguel.lopez@copservir.co' ingresado y confirmado.
+2025-09-15 15:10:07,572 - INFO - Correo 'jhon.primero@copservir.co' ingresado y confirmado.
+2025-09-15 15:10:18,200 - INFO - Botón 'Invitar' clickeado. Invitaciones enviadas.
+2025-09-15 15:10:20,201 - INFO - Invitados agregados al portafolio 'Sprint 197 - 15 Septiembre 2025 al 23 Septiembre 2025' para el equipo 'Team SIICOP v.2'.
+2025-09-15 15:10:20,227 - INFO - Tipo: Portafolio, Nombre: Team SIICOP v.2 Sprint 197 - 15 Septiembre 2025 al 23 Septiembre 2025, Link: http://app.asana.com/0/portfolio/1211366213430049/list, Team: Team SIICOP v.2
+2025-09-15 15:10:20,319 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-15 15:10:20,489 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-15 15:10:21,426 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-15 15:10:21,905 - INFO - Nombre del proyecto ingresado: Proyecto 197 - SIICOP V2
+2025-09-15 15:10:21,975 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-15 15:10:22,278 - INFO - Proyecto 'Proyecto 197 - SIICOP V2' creado exitosamente.
+2025-09-15 15:10:24,567 - INFO - Regresando al portafolio 'Sprint 197 - 15 Septiembre 2025 al 23 Septiembre 2025'.
+2025-09-15 15:10:24,812 - INFO - Tipo: Proyecto, Nombre: Proyecto 197 - SIICOP V2, Link: http://app.asana.com/1/1204083449956184/project/1211366213430055/list, Team: Team SIICOP v.2
+2025-09-15 15:10:24,900 - INFO - Menú 'More actions' abierto para proyecto.
+2025-09-15 15:10:25,075 - INFO - Opción 'Crear un proyecto nuevo' seleccionada.
+2025-09-15 15:10:25,751 - INFO - Tipo 'Proyecto en blanco' seleccionado.
+2025-09-15 15:10:26,183 - INFO - Nombre del proyecto ingresado: Soporte 197 - SIICOP V2
+2025-09-15 15:10:26,284 - INFO - Botón 'Continuar' para proyecto clickeado.
+2025-09-15 15:10:26,634 - INFO - Proyecto 'Soporte 197 - SIICOP V2' creado exitosamente.
+2025-09-15 15:10:28,432 - INFO - Regresando al portafolio 'Sprint 197 - 15 Septiembre 2025 al 23 Septiembre 2025'.
+2025-09-15 15:10:28,749 - INFO - Tipo: Proyecto, Nombre: Soporte 197 - SIICOP V2, Link: http://app.asana.com/1/1204083449956184/project/1211366213430059/list, Team: Team SIICOP v.2
+2025-09-15 15:10:29,080 - INFO - Regresado a la página de Sprints.
+2025-09-15 15:10:29,081 - INFO - Procesamiento completado para todos los teams.
+2025-09-15 15:10:29,081 - INFO - Automatización completada exitosamente.
+2025-09-15 15:10:31,696 - INFO - Driver cerrado.
+2025-09-15 15:10:31,698 - INFO - 192.168.21.36 - - [15/Sep/2025 15:10:31] "POST /run http/1.1" 200 -
+2025-09-15 15:16:41,331 - INFO - 192.168.21.36 - - [15/Sep/2025 15:16:41] "GET / http/1.1" 200 -
+2025-09-18 16:05:24,304 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-18 16:05:24,305 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 16:05:24,307 - INFO -  * Restarting with stat
+2025-09-18 16:05:25,372 - WARNING -  * Debugger is active!
+2025-09-18 16:05:25,380 - INFO -  * Debugger PIN: 401-074-375
+2025-09-18 16:06:14,480 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-18 16:06:14,481 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 16:06:14,483 - INFO -  * Restarting with stat
+2025-09-18 16:06:15,152 - WARNING -  * Debugger is active!
+2025-09-18 16:06:15,156 - INFO -  * Debugger PIN: 401-074-375
+2025-09-18 16:07:31,345 - INFO - 192.168.21.36 - - [18/Sep/2025 16:07:31] "GET / http/1.1" 200 -
+2025-09-18 16:07:31,605 - INFO - 192.168.21.36 - - [18/Sep/2025 16:07:31] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-18 16:07:43,830 - INFO - Iniciando automatización para Sprint 232, 2025-09-18 al 2025-09-28
+2025-09-18 16:07:43,831 - INFO - ====== WebDriver manager ======
+2025-09-18 16:07:47,682 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-18 16:07:48,973 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-18 16:07:50,051 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.185\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-18 16:07:52,741 - INFO - Driver de Chrome iniciado exitosamente.
+2025-09-18 16:07:53,788 - INFO - Navegando a la página de Asana.
+2025-09-18 16:07:53,792 - ERROR - Error durante el login: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.186)
+Stacktrace:
+	GetHandleVerifier [0x0xe00c13+66051]
+	GetHandleVerifier [0x0xe00c54+66116]
+	(No symbol) [0x0xbddb33]
+	(No symbol) [0x0xbbc3bd]
+	(No symbol) [0x0xc507de]
+	(No symbol) [0x0xc6b109]
+	(No symbol) [0x0xc49d86]
+	(No symbol) [0x0xc1b53e]
+	(No symbol) [0x0xc1c414]
+	GetHandleVerifier [0x0x1048a13+2457603]
+	GetHandleVerifier [0x0x10439d2+2437058]
+	GetHandleVerifier [0x0xe297f2+232930]
+	GetHandleVerifier [0x0xe19a18+167944]
+	GetHandleVerifier [0x0xe2092d+196381]
+	GetHandleVerifier [0x0xe08ee8+99544]
+	GetHandleVerifier [0x0xe09082+99954]
+	GetHandleVerifier [0x0xdf322a+10266]
+	BaseThreadInitThunk [0x0x76ce5d49+25]
+	RtlInitializeExceptionChain [0x0x77bbd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x77bbd661+561]
+
+2025-09-18 16:07:53,793 - ERROR - Fallo en el login. Terminando.
+2025-09-18 16:07:55,927 - INFO - Driver cerrado.
+2025-09-18 16:07:55,928 - INFO - 192.168.21.36 - - [18/Sep/2025 16:07:55] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-18 16:07:59,273 - INFO - 192.168.21.36 - - [18/Sep/2025 16:07:59] "GET / http/1.1" 200 -
+2025-09-23 08:53:59,136 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.21.36:5003
+2025-09-23 08:53:59,137 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 08:53:59,141 - INFO -  * Restarting with stat
+2025-09-23 08:53:59,831 - WARNING -  * Debugger is active!
+2025-09-23 08:53:59,841 - INFO -  * Debugger PIN: 401-074-375
+2025-09-23 09:11:14,062 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\frond.py', reloading
+2025-09-23 09:11:14,220 - INFO -  * Restarting with stat
+2025-09-23 09:11:15,173 - WARNING -  * Debugger is active!
+2025-09-23 09:11:15,177 - INFO -  * Debugger PIN: 401-074-375

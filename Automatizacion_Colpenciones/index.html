@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatización Colpensiones</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Dark theme visual override (keeps existing IDs and JS intact) */
+        @import url('http://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        :root{
+            --bg-900:#0b1220;
+            --bg-800:#0f1724;
+            --panel:#0b1220;
+            --muted:#94a3b8;
+            --accent:#60a5fa; /* blue-400 */
+            --accent-rgb: 96,165,250;
+            --green:#10b981;
+            --red:#ef4444;
+            --yellow:#f59e0b;
+            --card-shadow: 0 10px 30px rgba(2,6,23,0.6);
+        }
+
+        html,body{
+            height:100%;
+            margin:0;
+            padding:0;
+            background: linear-gradient(180deg, var(--bg-900) 0%, var(--bg-800) 100%);
+            color: var(--muted);
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+        }
+
+        /* Main centered card (overrides Tailwind classes visually only) */
+        body > div {
+            background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+            border: 1px solid rgba(255,255,255,0.03);
+            box-shadow: var(--card-shadow);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            width:100%;
+            max-width: 56rem;
+        }
+
+        h1 {
+            color: var(--accent) !important;
+            font-size: 1.95rem !important; /* slightly larger */
+            margin: 0 0 0.75rem 0 !important;
+            text-align:center !important;
+            font-weight:800 !important; /* bolder */
+            letter-spacing: -0.02em !important;
+            text-shadow: 0 2px 10px rgba(2,6,23,0.45) !important;
+        }
+
+        /* Buttons area styling */
+        #buttons { display:flex; gap:0.75rem; flex-direction:column; }
+        @media(min-width:768px){ #buttons { flex-direction:row; } }
+
+        #buttons button {
+            border: none;
+            color: #fff;
+            padding: 0.65rem 1rem;
+            border-radius: 9999px;
+            font-weight:600;
+            cursor: pointer;
+            transition: transform .22s cubic-bezier(.2,.9,.2,1), box-shadow .22s ease, opacity .12s ease, background-position .5s ease;
+            box-shadow: 0 6px 18px rgba(2,6,23,0.45);
+            display: inline-flex;
+            align-items:center;
+            justify-content:center;
+            gap:0.6rem;
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            backface-visibility: hidden;
+            will-change: transform, box-shadow;
+        }
+
+        /* Hover / active micro-interactions */
+        #buttons button:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 18px 40px rgba(2,6,23,0.6), 0 0 30px rgba(var(--accent-rgb),0.06);
+        }
+
+        #buttons button:active {
+            transform: translateY(-2px) scale(0.995);
+            box-shadow: 0 8px 22px rgba(2,6,23,0.5);
+        }
+
+        #buttons button:focus {
+            outline: none;
+            box-shadow: 0 18px 40px rgba(2,6,23,0.6), 0 0 30px rgba(var(--accent-rgb),0.09);
+        }
+
+        /* Subtle icon motion on hover */
+        #buttons i, #buttons svg { transition: transform .22s ease; }
+        #buttons button:hover i, #buttons button:hover svg { transform: translateX(4px) scale(1.03); }
+
+        /* Individual button colors */
+        #runAutomation{ background:var(--green) !important; }
+        #stopAutomation{ background:var(--red) !important; }
+        #clearProgress{ background:var(--yellow) !important; color:#0b1220 !important; }
+        #reloadPage{ background:#374151 !important; }
+
+        /* Generic control button used in layout */
+        .control-btn {
+            background: var(--accent);
+            color: #0b1220;
+            padding: 0.65rem 1rem;
+            border-radius: 0.75rem;
+            border: none;
+            font-weight:600;
+            display:flex;
+            gap:0.6rem;
+            align-items:center;
+            justify-content:center;
+            cursor:pointer;
+        }
+
+        /* Disabled look */
+        #buttons button[disabled], #buttons button.disabled {
+            opacity:0.5;
+            cursor:not-allowed;
+            transform:none;
+            box-shadow:none;
+        }
+
+        /* Status pill */
+        #status{
+            background: rgba(255,255,255,0.02);
+            color: var(--muted);
+            padding: 0.6rem 1rem;
+            border-radius: 0.6rem;
+            text-align:center;
+            margin-top:1rem;
+        }
+
+        /* Make icons inside buttons match */
+        #buttons i, #buttons svg { opacity:0.95; }
+
+        /* Log console styling (if present elsewhere) */
+        #logConsole{
+            background: rgba(2,6,23,0.45);
+            border:1px solid rgba(255,255,255,0.03);
+            color: #cbd5e1;
+            padding:1rem;
+            border-radius:0.75rem;
+            max-height: 22rem;
+            overflow:auto;
+        }
+
+        /* Responsive tweaks */
+        @media (min-width:640px){
+            body > div { padding:2rem; }
+            #buttons button { padding:0.75rem 1.25rem; }
+            h1 { font-size: 1.95rem !important; }
+        }
+
+        /* Small helpers to keep text readable */
+        p, span, label { color: #cbd5e1; }
+        .text-blue-600 { color: var(--accent) !important; }
+        .text-red-600 { color: var(--red) !important; }
+        .text-green-600 { color: var(--green) !important; }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container" style="max-width:1100px; margin:3rem auto;">
+        <!-- Header -->
+        <header style="text-align:center; margin-bottom:1rem;">
+            <h1 style="margin:0;">Automatización Colpensiones</h1>
+            <p style="margin-top:0.35rem; color:var(--muted);">Panel de control para iniciar y detener la automatización</p>
+        </header>
+
+        <!-- Main grid: controls | status -->
+        <main style="display:grid; grid-template-columns: 1fr 360px; gap:1rem; align-items:start;">
+            <!-- Left: Controls -->
+            <section aria-labelledby="controls-title" style="background:transparent; padding:0;">
+                <h2 id="controls-title" style="color:var(--accent); margin:0 0 0.5rem 0; font-weight:700;">Controles</h2>
+                <div id="buttons" style="display:flex; flex-direction:column; gap:0.75rem;">
+                    <button id="runAutomation" class="control-btn"><i class="fas fa-play"></i> Iniciar Automatización</button>
+                    <button id="stopAutomation" class="control-btn hidden"><i class="fas fa-stop"></i> Detener Automatización</button>
+                    <div style="display:flex; gap:0.75rem;">
+                        <button id="clearProgress" class="control-btn" style="flex:1;"><i class="fas fa-trash"></i> Limpiar Progreso</button>
+                        <button id="reloadPage" class="control-btn" style="flex:1; background:#334155;"><i class="fas fa-sync-alt"></i> Recargar</button>
+                    </div>
+                </div>
+
+                <!-- Progress bar -->
+                <div style="margin-top:1rem;">
+                    <h3 style="margin:0 0 0.5rem 0; color:var(--accent);">Progreso</h3>
+                    <div style="background: rgba(255,255,255,0.03); padding:0.75rem; border-radius:0.6rem;">
+                        <div style="display:flex; align-items:center; justify-content:space-between; gap:0.5rem; margin-bottom:0.5rem;">
+                            <div id="progressText" style="font-weight:600; color:var(--muted);">Cargando datos...</div>
+                            <button id="refreshProgressBtn" class="control-btn" style="background:transparent; border:1px solid rgba(255,255,255,0.03); color:var(--muted); padding:0.35rem 0.6rem; font-size:0.85rem;">Actualizar</button>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.02); height:14px; border-radius:999px; overflow:hidden;">
+                            <div id="progressBar" style="height:100%; width:0%; background: linear-gradient(90deg, var(--accent), rgba(96,165,250,0.8)); transition: width 600ms ease; box-shadow: 0 6px 18px rgba(2,6,23,0.3);"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right: Status panel -->
+            <aside aria-labelledby="status-title" style="background:transparent;">
+                <h2 id="status-title" style="color:var(--accent); margin:0 0 0.5rem 0; font-weight:700;">Estado</h2>
+                <div style="background:rgba(255,255,255,0.02); padding:1rem; border-radius:0.6rem;">
+                    <p id="status" style="margin:0; font-weight:600; text-align:center;">Estado: Inactivo</p>
+                </div>
+                <!-- Link directo a Google Sheets (abierto en nueva pestaña) -->
+                <div style="margin-top:3.45rem; text-align:center;">
+                    <a href="https://docs.google.com/spreadsheets/d/1qsdXTesrr_v2nyooemhgKMgskA52HQTVRzZ4dQ0Howg/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" style="display:inline-flex; flex-direction:column; align-items:center; gap:0.45rem; text-decoration:none;">
+                        <!-- Simple SVG icon (Google Sheets-like) -->
+                        <svg width="110" height="66" viewBox="0 0 110 66" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display:block;">
+                            <rect rx="8" width="110" height="66" fill="#0f9d58" />
+                            <rect x="10" y="10" width="36" height="46" rx="4" fill="#fff" opacity="0.08" />
+                            <rect x="56" y="10" width="44" height="46" rx="4" fill="#fff" opacity="0.06" />
+                            <!-- table lines -->
+                            <g fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="1.6">
+                                <path d="M16 22h26" />
+                                <path d="M16 30h26" />
+                                <path d="M16 38h26" />
+                                <path d="M62 24h30" />
+                                <path d="M62 34h30" />
+                                <path d="M62 44h30" />
+                            </g>
+                        </svg>
+                        <div style="margin-top:0.125rem; color:var(--muted); font-weight:600; text-align:center;">Abrir Hoja de Cálculo</div>
+                    </a>
+                </div>
+            </aside>
+        </main>
+        
+        <!-- Optional Console area (kept hidden unless used) -->
+        <section id="consoleArea" style="margin-top:1rem; display:none;">
+            <div id="logConsole"></div>
+        </section>
+    </div>
+
+    <script>
+        const runButton = document.getElementById('runAutomation');
+        const stopButton = document.getElementById('stopAutomation');
+        const clearProgressButton = document.getElementById('clearProgress');
+        const reloadPageButton = document.getElementById('reloadPage');
+        const statusElement = document.getElementById('status');
+    // no realtime logs UI
+
+        // Estado inicial
+        runButton.classList.remove('hidden');
+        stopButton.classList.add('hidden');
+        clearProgressButton.disabled = false;
+        clearProgressButton.classList.remove('opacity-50', 'cursor-not-allowed');
+        statusElement.textContent = 'Estado: Inactivo';
+
+        async function updateUI(isRunning) {
+            if (isRunning) {
+                runButton.classList.add('hidden');
+                stopButton.classList.remove('hidden');
+                clearProgressButton.disabled = true;
+                clearProgressButton.classList.add('opacity-50', 'cursor-not-allowed');
+                statusElement.textContent = 'Estado: Ejecutando...';
+                statusElement.classList.add('text-blue-600');
+            } else {
+                runButton.classList.remove('hidden');
+                stopButton.classList.add('hidden');
+                clearProgressButton.disabled = false;
+                clearProgressButton.classList.remove('opacity-50', 'cursor-not-allowed');
+                statusElement.textContent = 'Estado: Inactivo';
+                statusElement.classList.remove('text-blue-600', 'text-red-600', 'text-green-600');
+            }
+        }
+
+        async function fetchStatus() {
+            try {
+                const response = await fetch('/status', { credentials: 'same-origin' });
+                const data = await response.json();
+                updateUI(data.is_running);
+            } catch (error) {
+                console.error('Error status:', error);
+                updateUI(false);
+            }
+        }
+
+        runButton.addEventListener('click', async () => {
+            statusElement.textContent = 'Iniciando...';
+            statusElement.classList.remove('text-red-600', 'text-green-600');
+
+            try {
+                const response = await fetch('/run-automation', { method: 'POST', credentials: 'same-origin' });
+                const result = await response.json();
+
+                if (response.ok) {
+                    statusElement.textContent = `✅ ${result.message}`;
+                    statusElement.classList.add('text-green-600');
+                    updateUI(true);
+                    setTimeout(fetchStatus, 2000);
+                } else {
+                    statusElement.textContent = `❌ Error: ${result.error}`;
+                    statusElement.classList.add('text-red-600');
+                    updateUI(false);
+                }
+            } catch (error) {
+                statusElement.textContent = `❌ Error: ${error.message}`;
+                statusElement.classList.add('text-red-600');
+            }
+        });
+
+        stopButton.addEventListener('click', async () => {
+            statusElement.textContent = 'Deteniendo...';
+            statusElement.classList.remove('text-red-600', 'text-green-600');
+
+            try {
+                const response = await fetch('/stop-automation', { method: 'POST', credentials: 'same-origin' });
+                const result = await response.json();
+
+                if (response.ok) {
+                    statusElement.textContent = `✅ ${result.message}`;
+                    statusElement.classList.add('text-green-600');
+                    updateUI(false);
+                    // Actualización de estado; no logs en interfaz
+                } else {
+                    statusElement.textContent = `❌ Error: ${result.error}`;
+                    statusElement.classList.add('text-red-600');
+                }
+            } catch (error) {
+                statusElement.textContent = `❌ Error: ${error.message}`;
+                statusElement.classList.add('text-red-600');
+            }
+        });
+
+        clearProgressButton.addEventListener('click', async () => {
+            statusElement.textContent = 'Limpiando progreso...';
+            statusElement.classList.remove('text-red-600', 'text-green-600');
+
+            try {
+                const response = await fetch('/clear-progress', { method: 'POST', credentials: 'same-origin' });
+                const result = await response.json();
+
+                if (response.ok) {
+                    statusElement.textContent = `✅ ${result.message}`;
+                    statusElement.classList.add('text-green-600');
+                } else {
+                    statusElement.textContent = `❌ Error: ${result.error}`;
+                    statusElement.classList.add('text-red-600');
+                }
+            } catch (error) {
+                statusElement.textContent = `❌ Error: ${error.message}`;
+                statusElement.classList.add('text-red-600');
+            }
+        });
+
+        reloadPageButton.addEventListener('click', () => {
+            if (confirm('¿Recargar?')) {
+                window.location.reload();
+            }
+        });
+
+        // Auto-login sin password
+        async function autoLogin() {
+            try {
+                const response = await fetch('/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: 'username=colpensiones',
+                    credentials: 'same-origin'
+                });
+                if (response.ok) {
+                    console.log('Login exitoso');
+                } else {
+                    console.error('Login falló');
+                    statusElement.textContent = '❌ Error: Debes iniciar sesión (username: colpensiones)';
+                    statusElement.classList.add('text-red-600');
+                }
+            } catch (error) {
+                console.error('Error en login:', error);
+                statusElement.textContent = '❌ Error: No se pudo conectar al servidor';
+                statusElement.classList.add('text-red-600');
+            }
+        }
+
+        // Inicia login y polling de estado
+        autoLogin();
+        fetchStatus();
+        setInterval(fetchStatus, 10000);
+
+        // Progress polling
+        const progressText = document.getElementById('progressText');
+        const progressBar = document.getElementById('progressBar');
+
+        async function fetchProgress() {
+            try {
+                const res = await fetch('/progress-data', { credentials: 'same-origin' });
+                if (!res.ok) {
+                    if (res.status === 401 || res.status === 302) {
+                        progressText.textContent = 'No autenticado';
+                    }
+                    return;
+                }
+                const contentType = res.headers.get('content-type') || '';
+                if (!contentType.includes('application/json')) {
+                    console.warn('progress-data: respuesta no-json', contentType);
+                    return;
+                }
+                const data = await res.json();
+                const { total, processed, percent } = data;
+                if (total === 0) {
+                    progressText.textContent = 'No hay datos disponibles';
+                    progressBar.style.width = '0%';
+                    console.debug('progress: no hay datos');
+                } else {
+                    progressText.textContent = `Procesado: ${processed} / ${total} (${percent}%)`;
+                    progressBar.style.width = `${percent}%`;
+                    console.debug('progress:', total, processed, percent);
+                }
+            } catch (err) {
+                console.error('Error fetchProgress', err);
+                progressText.textContent = 'Error cargando progreso';
+            }
+        }
+
+        // cargar al inicio y cada 5s
+        fetchProgress();
+        setInterval(fetchProgress, 5000);
+    const refreshProgressBtn = document.getElementById('refreshProgressBtn');
+    if (refreshProgressBtn) refreshProgressBtn.addEventListener('click', () => { fetchProgress(); });
+    </script>
+</body>
+</html>

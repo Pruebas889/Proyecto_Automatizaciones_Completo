@@ -1,0 +1,122 @@
+/* Importar una fuente de Google Fonts para un mejor aspecto */
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --copservir-verde: #4CAF50; /* Un verde vibrante y amigable */
+    --copservir-amarillo: #FFEB3B; /* Un amarillo que resalta */
+    --background-color: #e8f5e9; /* Un fondo verde muy claro */
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --input-border: #c8e6c9; /* Un borde sutil que combina */
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-strong: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.login-container {
+    background-color: var(--card-background);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    box-shadow: var(--shadow-strong);
+    transform: translateY(-5px);
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--copservir-verde);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: var(--copservir-verde);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--copservir-verde);
+    color: var(--card-background);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #388E3C; /* Un verde más oscuro para el hover */
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+/* Animación opcional para la aparición del formulario */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.logo {
+    width: 120px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 20px;
+}
