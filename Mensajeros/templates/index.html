@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Control - Mensajeros</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <h1>Mensajeros</h1>
+        <div class="subtitle">Control de la automatización SIMIT</div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="card controls-card">
+        <div class="card-body">
+              <div class="controls-row">
+                <button id="startBtn" class="btn btn-primary btn-large">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="icon">
+                    <path fill="currentColor" d="M5 3v18l15-9L5 3z"></path>
+                  </svg>
+                  <span>Iniciar</span>
+                </button>
+                <button id="stopBtn" class="btn btn-danger btn-large" disabled>
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="icon">
+                    <rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"></rect>
+                  </svg>
+                  <span>Detener</span>
+                </button>
+                <a href="https://docs.google.com/spreadsheets/d/1yVszdoqBzG10ZYXsuX9EXs0tuD_Ni9HBsW7DdK1OxN4/edit?gid=0#gid=0" target="_blank" class="btn btn-success btn-large">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="icon">
+                    <path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1.4 3.5h-3.8v1.6h3.8v9.3H6.4V8.1h3.8V6.5H6.4V5h11.2v1.5z"/>
+                  </svg>
+                  <span>Ver Excel</span>
+                </a>
+              </div>
+
+          <div class="status-row">
+            <div id="status" class="status-badge">Estado: <strong>Desconocido</strong></div>
+            <div id="spinner" class="spinner" aria-hidden="true" style="opacity:0"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card log-card">
+        <div class="card-header">
+          <small class="muted">Últimas acciones y mensajes</small>
+        </div>
+        <div class="card-body">
+          <pre id="start-output" class="output">-- En Espera --</pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Interfaz local para controlar la automatización. No compartas claves ni credenciales.</small>
+    </footer>
+
+    <script>
+      (function(){
+            const startBtn = document.getElementById('startBtn');
+            const stopBtn = document.getElementById('stopBtn');
+        const statusEl = document.getElementById('status');
+        const outEl = document.getElementById('start-output');
+        const spinner = document.getElementById('spinner');
+
+        // Update UI status and button states in a consistent way.
+        // running: whether the automation process is known to be running
+        // busy: transient operation in progress (start/stop request outstanding)
+        function setStatus(text, running=false, busy=false){
+          // update content safely
+          statusEl.textContent = 'Estado: ';
+          const strong = document.createElement('strong');
+          strong.textContent = text;
+          statusEl.appendChild(strong);
+
+          // start should be disabled while running or during a busy operation
+          startBtn.disabled = running || busy;
+          // stop should be disabled when not running or during a busy operation
+          stopBtn.disabled = (!running) || busy;
+
+          spinner.style.opacity = busy ? '1' : '0';
+          spinner.setAttribute('aria-hidden', (!busy).toString());
+        }
+
+        async function fetchStatus(){
+          try{
+            const r = await fetch('/api/status');
+            const j = await r.json();
+            if(j.ok && j.running){
+              setStatus('En ejecución (pid ' + j.pid + ')', true, false);
+            } else {
+              setStatus('Detenido', false, false);
+            }
+          }catch(e){
+            setStatus('Error al consultar estado', false, false);
+            console.error(e);
+          }
+        }
+
+        async function perform(path){
+          try{
+            const r = await fetch(path, {method:'POST'});
+            const j = await r.json();
+            return j;
+          }catch(e){
+            return {ok:false, error: String(e)};
+          }
+        }
+
+        startBtn.addEventListener('click', async function(){
+          outEl.textContent = 'Iniciando...';
+          setStatus('Iniciando...', false, true);
+          const res = await perform('/api/start');
+          if(res && res.ok){
+            setStatus('En ejecución (pid ' + res.pid + ')', true, false);
+            outEl.textContent = 'Iniciado';
+          } else {
+            setStatus('Detenido', false, false);
+            outEl.textContent = 'Error: ' + (res && res.error ? res.error : 'No se pudo iniciar');
+          }
+        });
+
+        stopBtn.addEventListener('click', async function(){
+          outEl.textContent = 'Deteniendo...';
+          // mark busy and set running=true so start stays disabled while we stop
+          setStatus('Deteniendo...', true, true);
+          const res = await perform('/api/stop');
+          if(res && res.ok){
+            setStatus('Detenido', false, false);
+            outEl.textContent = 'Detenido';
+          } else {
+            outEl.textContent = 'Error: ' + (res && res.error ? res.error : 'No se pudo detener');
+            setStatus('Error', false, false);
+          }
+        });
+
+            // Manual refresh button removed; keep automatic polling via setInterval
+
+        // Auto-refresh
+        fetchStatus();
+        setInterval(fetchStatus, 5000);
+      })();
+    </script>
+  </body>
+</html>

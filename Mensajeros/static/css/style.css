@@ -1,0 +1,168 @@
+/* -------------------------
+	Variables y reset
+	------------------------- */
+:root{
+  --bg: #071029;
+  --bg-2: #071b2a;
+  --card: #08121b;
+  --muted: #9aa4b2;
+  --accent: #6ee7b7;
+  --accent-2: #3be8a0;
+  --danger: #ff6b6b;
+  --glass: rgba(255,255,255,0.03);
+  --text: #e6eef6;
+  --success-contrast: #022018;
+}
+
+/* Spacing scale */
+:root{
+	--space-xs: 6px;
+	--space-sm: 12px;
+	--space-md: 20px;
+	--space-lg: 28px;
+	--card-radius: 12px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, 'Segoe UI', Roboto, Arial, sans-serif;background:linear-gradient(180deg,var(--bg) 0%, var(--bg-2) 100%);color:var(--text);-webkit-font-smoothing:antialiased}
+
+/* -------------------------
+	Layout helpers
+	------------------------- */
+.spacer{height:8px}
+/* Page centering: ensure each main block is centered and constrained */
+:root{
+	--page-max-width: 960px;
+	--gutter: 20px;
+}
+
+.container{max-width:var(--page-max-width);margin:36px auto;padding:20px}
+.topbar, .app-header{display:flex;flex-direction:column;align-items:center;padding:calc(var(--space-md));border-radius:var(--card-radius);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 8px 30px rgba(2,6,23,0.5);max-width:var(--page-max-width);margin:20px auto;padding-left:var(--gutter);padding-right:var(--gutter);text-align:center}
+.brand h1{margin:0;font-size:22px;letter-spacing:0.4px}
+.subtitle{color:var(--muted);font-size:13px;margin-top:var(--space-xs)}
+.meta{color:var(--muted);font-size:13px;margin-top:var(--space-sm)}
+
+main.main{margin-top:8px;max-width:var(--page-max-width);margin-left:auto;margin-right:auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+
+/* -------------------------
+	Cards
+	------------------------- */
+.card{margin-top:var(--space-md);padding:var(--space-md);border-radius:var(--card-radius);background:var(--card);box-shadow:0 10px 40px rgba(2,6,23,0.45);max-width:var(--page-max-width);margin-left:auto;margin-right:auto}
+.card .card-header{display:flex;justify-content:center;align-items:center;margin-bottom:var(--space-sm)}
+.card .card-header h3{margin:0;font-size:18px;text-align:center}
+.card-body{padding-top:6px;display:flex;flex-direction:column;align-items:center;width:100%}
+
+/* -------------------------
+	Controls / Buttons
+	------------------------- */
+.controls-row{display:flex;gap:var(--space-sm);align-items:center;justify-content:center;flex-wrap:wrap;width:100%}
+.controls-row .btn{min-width:140px}
+.btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700;background:transparent;color:var(--text);display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:all 160ms ease}
+.btn-large{padding:12px 18px;font-size:15px}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:var(--success-contrast);box-shadow:0 6px 18px rgba(59,232,160,0.08)}
+.btn-danger{background:linear-gradient(90deg,#ff9b9b,var(--danger));color:#2b0606;box-shadow:0 6px 18px rgba(255,107,107,0.06)}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 10px 24px rgba(2,6,23,0.25)}
+.btn:disabled{opacity:0.45;cursor:not-allowed}
+
+/* small helper for grouping */
+.controls-card{display:block}
+
+/* -------------------------
+	Status area
+	------------------------- */
+.status-row{display:flex;gap:var(--space-sm);align-items:center;margin-top:var(--space-md);justify-content:center}
+.status-badge{padding:10px 16px;border-radius:14px;background:var(--glass);color:var(--muted);font-weight:600;min-width:220px;text-align:center}
+.status-badge strong{color:var(--text);font-weight:700}
+
+/* Spinner */
+.spinner{width:22px;height:22px;border-radius:50%;background:conic-gradient(var(--accent), var(--accent-2));opacity:0;transition:opacity 160ms linear}
+.spinner[aria-hidden="false"]{opacity:1}
+.spinner.loading{animation:spin 900ms linear infinite}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+/* -------------------------
+	Log / Output
+	------------------------- */
+.log-card .output, pre.output{margin:0;padding:14px;border-radius:10px;background:#03121a;color:#bfeadf;min-height:120px;overflow:auto;white-space:pre-wrap;font-family:monospace;font-size:13px;width:100%;max-width:880px}
+
+/* Make the log and controls align visually by constraining widths */
+.controls-card, .log-card{max-width:880px;margin-left:auto;margin-right:auto;width:100%}
+
+/* Ensure the log sits nicely under controls with a consistent gap */
+.controls-card{margin-bottom:6px}
+
+/* Center footer content in line with page width */
+.footer{max-width:var(--page-max-width);margin:18px auto 40px auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+
+/* Slight typographic improvements for headings */
+.brand h1{font-weight:700}
+.card .card-header h3{font-weight:700}
+
+/* Make spinner sit inside the status badge area harmoniously */
+.status-row .spinner{margin-left:6px}
+
+/* ---- Visual polish to match Tailwind example (colors, rounded-full buttons, shadows) ---- */
+/* Title color similar to text-blue-400 */
+.brand h1{color:#60a5fa}
+
+/* Card variants closer to gray-800 / gray-900 */
+.card{background:#1f2937;border:1px solid rgba(255,255,255,0.03)}
+.controls-card, .log-card{background:#111827;border:1px solid rgba(255,255,255,0.04)}
+
+/* Buttons: rounded-full, shadow, distinct colors like example */
+.btn{border-radius:9999px;padding:12px 18px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn-primary{background:linear-gradient(90deg,#16a34a,#059669);color:#ffffff}
+.btn-danger{background:linear-gradient(90deg,#ef4444,#dc2626);color:#fff}
+.btn-success{background:linear-gradient(90deg,#107C41,#0B5A30);color:#fff;text-decoration:none}
+.btn-ghost{background:#374151;color:#e5e7eb;border:1px solid rgba(255,255,255,0.04)}
+.btn[disabled]{opacity:0.45;cursor:not-allowed}
+.btn{box-shadow:0 6px 18px rgba(2,6,23,0.3);transition:transform 180ms ease, box-shadow 180ms ease}
+.btn:hover:not(:disabled){transform:translateY(-3px);box-shadow:0 12px 28px rgba(2,6,23,0.35)}
+
+/* Make primary/secondary buttons match the provided scale */
+.controls-row .btn{min-width:140px;padding-left:18px;padding-right:18px}
+
+/* Icons sizing helper (if using lucide or similar) */
+[data-icon], .btn i[data-lucide], .btn svg{width:18px;height:18px}
+.btn .icon{width:18px;height:18px;margin-right:8px;flex:0 0 18px}
+
+/* Status/summary panels to look like the sample */
+.status-badge{background:transparent;color:var(--muted);padding:10px 16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+
+/* Log console like bg-gray-900, monospace, fixed height */
+#logConsole, .log-card .output, pre.output{background:#0b1220;border:1px solid rgba(255,255,255,0.03);color:#cbd5e1}
+#logConsole p.animate-pulse{color:#94a3b8}
+
+/* Make headings inside cards more prominent */
+.card .card-header h3{color:#e6eef6}
+.card .card-header h2{color:#e6eef6}
+
+/* Small screens: ensure full width for controls */
+@media(max-width:640px){
+	.controls-row .btn{width:100%;min-width:0}
+}
+
+/* Small visual spacing helpers */
+.card + .card{margin-top:14px}
+
+/* -------------------------
+	Footer
+	------------------------- */
+.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+/* -------------------------
+	Responsiveness
+	------------------------- */
+@media(max-width:760px){
+  .controls-row{flex-direction:column;align-items:stretch}
+  .topbar{flex-direction:column;align-items:flex-start}
+  .status-row{flex-direction:column;align-items:flex-start}
+}
+
+/* Accessibility focus */
+.btn:focus{outline:2px solid rgba(110,231,183,0.2);outline-offset:2px}
+
+/* Backwards-compatible selectors for previous class names */
+.actions .row{display:flex;gap:12px;align-items:center}
+.app-header .muted{color:var(--muted);margin:6px 0 0;font-size:13px}
