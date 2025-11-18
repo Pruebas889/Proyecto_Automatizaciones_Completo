@@ -124,7 +124,7 @@
                     const response = await fetch('/stop', { method: 'POST', credentials: 'include' });
                     if (!response.ok && response.status === 401) {
                         logContainer.textContent += 'Sesión expirada, redirigiendo a login...\n';
-                        window.location.href = 'http://192.168.21.36:5000';
+                        window.location.href = 'http://192.168.21.37:5000';
                         return;
                     }
                     const result = await response.json();

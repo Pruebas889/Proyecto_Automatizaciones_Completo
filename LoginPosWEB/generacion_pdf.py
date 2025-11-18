@@ -18,16 +18,42 @@ except ImportError:
     REPORTLAB_AVAILABLE = False
 import pyautogui
 
-# Carpeta principal del parche (se crea una vez por ejecución)
-FECHA_HORA_PARCHE = datetime.now().strftime("Parche_%d-%m-%Y_%H-%M-%S")
-CARPETA_PRINCIPAL_PARCHE = os.path.join(os.getcwd(), FECHA_HORA_PARCHE)
-os.makedirs(CARPETA_PRINCIPAL_PARCHE, exist_ok=True)
+# Force output under the LoginPosWEB/capturas directory (same folder as this module)
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+CAPTURAS_ROOT = os.path.join(BASE_DIR, 'capturas')
+os.makedirs(CAPTURAS_ROOT, exist_ok=True)
+
+# The "parche" folder will be created lazily when needed (e.g. when starting the automation)
+FECHA_HORA_PARCHE = None
+CARPETA_PRINCIPAL_PARCHE = None
+
+def init_parche(name=None):
+    """Create the Parche folder under BASE_DIR and return its path.
+
+    If name is provided it will be used as folder name, otherwise a timestamp is generated.
+    """
+    global FECHA_HORA_PARCHE, CARPETA_PRINCIPAL_PARCHE
+    if name:
+        FECHA_HORA_PARCHE = name
+    else:
+        FECHA_HORA_PARCHE = datetime.now().strftime("Parche_%d-%m-%Y_%H-%M-%S")
+    CARPETA_PRINCIPAL_PARCHE = os.path.join(BASE_DIR, FECHA_HORA_PARCHE)
+    os.makedirs(CARPETA_PRINCIPAL_PARCHE, exist_ok=True)
+    return CARPETA_PRINCIPAL_PARCHE
+
+def ensure_parche():
+    """Ensure a parche folder exists and return its path."""
+    global CARPETA_PRINCIPAL_PARCHE
+    if CARPETA_PRINCIPAL_PARCHE and os.path.exists(CARPETA_PRINCIPAL_PARCHE):
+        return CARPETA_PRINCIPAL_PARCHE
+    return init_parche()
 
 def escribir_log(nombre_automatizacion, mensaje):
     """
     Escribe un mensaje en el archivo log_automatizacion.txt dentro de la subcarpeta de la automatización.
     """
-    carpeta_automatizacion = os.path.join(CARPETA_PRINCIPAL_PARCHE, nombre_automatizacion)
+    carpeta_parche = ensure_parche()
+    carpeta_automatizacion = os.path.join(carpeta_parche, nombre_automatizacion)
     os.makedirs(carpeta_automatizacion, exist_ok=True)
     log_path = os.path.join(carpeta_automatizacion, "log_automatizacion.txt")
 
@@ -61,7 +87,8 @@ def generar_pdf_consolidado(nombre_automatizacion, capturas, textos):
     """
     start_time = time.time()
     try:
-        carpeta_automatizacion = os.path.join(CARPETA_PRINCIPAL_PARCHE, nombre_automatizacion)
+        carpeta_parche = ensure_parche()
+        carpeta_automatizacion = os.path.join(carpeta_parche, nombre_automatizacion)
         os.makedirs(carpeta_automatizacion, exist_ok=True)
         pdf_path = os.path.join(carpeta_automatizacion, "reporte_consolidado.pdf")
 
@@ -146,8 +173,10 @@ def generar_pdf_consolidado(nombre_automatizacion, capturas, textos):
         # Clean up compressed images
         for captura in compressed_capturas:
             if "_compressed.png" in captura and os.path.exists(captura):
-                os.remove(captura)
-                # escribir_log(nombre_automatizacion, f"✅ Imagen comprimida eliminada: {captura}")
+                try:
+                    os.remove(captura)
+                except Exception:
+                    pass
 
     except Exception as e:
         escribir_log(nombre_automatizacion, f"❌ Error al generar PDF: {str(e)}")
@@ -159,27 +188,37 @@ def guardar_captura_modal_en_pdf(nombre_archivo, mensaje_pdf):
     Toma una captura de pantalla del modal y la guarda en un PDF independiente.
     """
     try:
-        # Tomar la captura de pantalla
-        captura_path = "captura_modal_parche.png"
+        # Ensure parche folder exists and get its path
+        carpeta_parche = ensure_parche()
+
+        # Tomar la captura de pantalla (guardar temporalmente en CAPTURAS_ROOT)
+        captura_path = os.path.join(CAPTURAS_ROOT, "captura_modal_parche.png")
         pyautogui.screenshot(captura_path)
-        
+
         # Crear el PDF
         pdf = FPDF()
         pdf.add_page()
         pdf.set_font("Arial", size=12)
         pdf.multi_cell(0, 10, mensaje_pdf)
-        
+
         # Añadir la imagen al PDF
         if os.path.exists(captura_path):
-            pdf.image(captura_path, x=10, y=40, w=180)
-            
-        pdf_path = os.path.join(CARPETA_PRINCIPAL_PARCHE, f"{nombre_archivo}.pdf")
+            try:
+                pdf.image(captura_path, x=10, y=40, w=180)
+            except Exception:
+                # imagen podría no ajustarse; continuar
+                pass
+
+        pdf_path = os.path.join(carpeta_parche, f"{nombre_archivo}.pdf")
         pdf.output(pdf_path)
-        
+
         # Eliminar la imagen temporal
-        os.remove(captura_path)
-        
+        try:
+            if os.path.exists(captura_path):
+                os.remove(captura_path)
+        except Exception:
+            pass
+
         print(f"✅ PDF del modal guardado correctamente en: {pdf_path}")
-        
     except Exception as e:
         print(f"❌ Error al guardar el PDF del modal: {e}")

@@ -27,48 +27,48 @@ logging.basicConfig(
 # Lista de equipos válidos
 VALID_TEAMS = [
     # "Team prueba",
-    # "Team SIICOP v.2",
+    "Team SIICOP v.2",
     "Team QA",
-    # "Team INTEGRACIONES",
-    # "Team POSWEB",
-    # "Team SIICOP"
+    "Team INTEGRACIONES",
+    "Team POSWEB",
+    "Team SIICOP"
 ]
 
 TEAM_SUFFIXES = {
     # "Team prueba": "Prueba",
-    # "Team SIICOP v.2": "SIICOP V2",
+    "Team SIICOP v.2": "SIICOP V2",
     "Team QA": "QA",
-    # "Team INTEGRACIONES": "Integraciones - Ecommerce",
-    # "Team POSWEB": "POSWEB",
-    # "Team SIICOP": "SIICOP"
+    "Team INTEGRACIONES": "Integraciones - Ecommerce",
+    "Team POSWEB": "POSWEB",
+    "Team SIICOP": "SIICOP"
 }
 
 TEAM_CORREOS = {
-    # "Team SIICOP v.2": [
-    #     "david.forero.cop@gmail.com"
-    #     "miguel.lopez@copservir.co",
-    #     "miguel.lopez@copservir.co",
-    #     "jhon.primero@copservir.co"
-    # ],
+    "Team SIICOP v.2": [
+        "david.forero.cop@gmail.com",
+        "miguel.lopez@copservir.co",
+        "miguel.lopez@copservir.co",
+        "jhon.primero@copservir.co"
+    ],
     "Team QA": [
         "david.forero.cop@gmail.com",
         "david.forero.cop@gmail.com"
+    ],
+    "Team INTEGRACIONES": [
+        "miguel.lopez@copservir.co",
+        "miguel.lopez@copservir.co",
+        "andres.velasco@copservir.co"
+    ],
+    "Team POSWEB": [
+        "miguel.lopez@copservir.co",
+        "miguel.lopez@copservir.co",
+        "juan.walteros@copservir.co"
+    ],
+    "Team SIICOP": [
+        "miguel.lopez@copservir.co",
+        "miguel.lopez@copservir.co",
+        "diego.palacio@copservir.co"
     ]
-    # "Team INTEGRACIONES": [
-    #     "miguel.lopez@copservir.co",
-    #     "miguel.lopez@copservir.co",
-    #     "andres.velasco@copservir.co"
-    # ],
-    # "Team POSWEB": [
-    #     "miguel.lopez@copservir.co",
-    #     "miguel.lopez@copservir.co",
-    #     "juan.walteros@copservir.co"
-    # ],
-    # "Team SIICOP": [
-    #     "miguel.lopez@copservir.co",
-    #     "miguel.lopez@copservir.co",
-    #     "diego.palacio@copservir.co"
-    # ]
 }
 
 # Conversión de fechas a español

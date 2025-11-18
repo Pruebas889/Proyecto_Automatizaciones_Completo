@@ -65,45 +65,45 @@ def dashboard():
 @app.route('/login_claro')
 def login_claro():
     if session.get('logged_in') and session.get('role') == 'claro':
-        return redirect(f'http://192.168.21.36:{PORT_CLARO}')
+        return redirect(f'http://192.168.21.37:{PORT_CLARO}')
     return app.send_static_file('index.html')
 
 @app.route('/login_colpensiones')
 def login_colpensiones():
     if session.get('logged_in') and session.get('role') == 'colpensiones':
-        return redirect(f'http://192.168.21.36:{PORT_COLPENSIONES}')
+        return redirect(f'http://192.168.21.37:{PORT_COLPENSIONES}')
     return app.send_static_file('index.html')
 
 @app.route('/login_asana')
 def login_asana():
     if session.get('logged_in') and session.get('role') == 'asana':
-        return redirect(f'http://192.168.21.36:{PORT_ASANA}')
+        return redirect(f'http://192.168.21.37:{PORT_ASANA}')
     return app.send_static_file('index.html')
 
 @app.route('/login_posweb')
 def login_posweb():
     if session.get('logged_in') and session.get('role') == 'POSWEB':
-        return redirect(f'http://192.168.21.36:{PORT_POSWEB}')
+        return redirect(f'http://192.168.21.37:{PORT_POSWEB}')
     return app.send_static_file('index.html')
 
 @app.route('/login_mensajeros')
 def login_mensajeros():
     if session.get('logged_in') and session.get('role') == 'mensajeros':
-        return redirect(f'http://192.168.21.36:{PORT_MENSAJEROS}')
+        return redirect(f'http://192.168.21.37:{PORT_MENSAJEROS}')
     return app.send_static_file('index.html')
 
 
 @app.route('/login_larebaja')
 def login_larebaja():
     if session.get('logged_in') and session.get('role') == 'larebaja':
-        return redirect(f'http://192.168.21.36:{PORT_REBAJA}')
+        return redirect(f'http://192.168.21.37:{PORT_REBAJA}')
     return app.send_static_file('index.html')
 
 
 @app.route('/login_docuseal')
 def login_docuseal():
     if session.get('logged_in') and session.get('role') == 'DocusealOP':
-        return redirect(f'http://192.168.21.36:{PORT_DOCUSEAL}')
+        return redirect(f'http://192.168.21.37:{PORT_DOCUSEAL}')
     return app.send_static_file('index.html')
 
 # Ruta para procesar el login
@@ -144,20 +144,20 @@ def login():
 
 
                 if user['role'] == 'claro':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.36:{PORT_CLARO}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_CLARO}'})
                 elif user['role'] == 'colpensiones':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.36:{PORT_COLPENSIONES}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_COLPENSIONES}'})
                 elif user['role'] == 'asana':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.36:{PORT_ASANA}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_ASANA}'})
                 elif user['role'] == 'POSWEB':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.36:{PORT_POSWEB}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_POSWEB}'})
                 elif user['role'] == 'larebaja':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.36:{PORT_REBAJA}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_REBAJA}'})
                 elif user['role'] == 'mensajeros':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.36:{PORT_MENSAJEROS}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_MENSAJEROS}'})
                 elif user['role'] in ['DocusealOP', 'Docuseal1OP', 'Docuseal2OP']:
                     session['temp_password'] = password
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.36:{PORT_DOCUSEAL}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_DOCUSEAL}'})
                 else:
                     return jsonify({'success': False, 'message': 'Rol no reconocido.'}), 403
             else:

@@ -197,7 +197,7 @@ def extraer_datos(texto):
             pass
     datos["IVA"] = round(total_iva_extraido, 2)
 
-    patron_servicio_fecha = r"([A-ZÁÉÍÓÚÑ0-9 \*\+\-]{5,})\s+(\d{2}-[A-Za-z]{3}-\d{2,4})\s+(\d{2}-[A-Za-z]{3}-\d{2,4})\s+(\d+)\s+\$?\s*([\-\d\.,]+)"
+    patron_servicio_fecha = r"([A-ZÁÉÍÓÚÑ0-9 \*\+\-]{5,})\s+(\d{2}-[A-Za-z]{3}-\d{2,4})\s+(\d{2}-[A-Zaelz]{3}-\d{2,4})\s+(\d+)\s+\$?\s*([\-\d\.,]+)"
     for m in re.finditer(patron_servicio_fecha, texto):
         try:
             descripcion = m.group(1).strip()
@@ -259,6 +259,46 @@ def extraer_datos(texto):
         datos["Diferencia IVA"] = 0.0
         datos["IVA Correcto"] = "No"
 
+    # --- NUEVO: Calcular Internet y Telefonía SIN IVA ---
+    def quitar_iva(monto, tasa=0.19):
+        try:
+            if monto is None:
+                return None
+            if monto == 0:
+                return 0.0
+            return round(monto / (1 + tasa), 2)
+        except:
+            return None
+
+    # Sumar desde Servicios Detalle si hay líneas con INTERNET / TELEFONIA
+    internet_raw = 0.0
+    telefonia_raw = 0.0
+    internet_found = False
+    telefonia_found = False
+    for s in datos["Servicios Detalle"]:
+        d = s.get("Descripción", "").upper()
+        val = s.get("Valor", 0.0)
+        if "INTERNET" in d:
+            internet_raw += val
+            internet_found = True
+        elif "TELEFONIA" in d or "TELÉFON" in d or "TELEFONÍA" in d:
+            telefonia_raw += val
+            telefonia_found = True
+
+    # Si no se encontraron líneas, usar los valores extraídos por regex (si existen)
+    if not internet_found and datos.get("Internet Total") is not None:
+        internet_raw = datos["Internet Total"]
+    if not telefonia_found and datos.get("Telefonia Total") is not None:
+        telefonia_raw = datos["Telefonia Total"]
+
+    # Guardar bruto y luego reemplazar por valor sin IVA
+    datos["Internet Total (Bruto)"] = internet_raw if internet_raw != 0.0 else (datos.get("Internet Total") or None)
+    datos["Telefonia Total (Bruto)"] = telefonia_raw if telefonia_raw != 0.0 else (datos.get("Telefonia Total") or None)
+
+    datos["Internet Total"] = quitar_iva(internet_raw) if internet_raw else None
+    datos["Telefonia Total"] = quitar_iva(telefonia_raw) if telefonia_raw else None
+    # --- FIN NUEVO ---
+
     return datos
 
 def exportar_excel_multiple(lista_datos, nombre_archivo, total_general, folder_id_drive):
@@ -300,7 +340,12 @@ def exportar_excel_multiple(lista_datos, nombre_archivo, total_general, folder_i
 
     for datos in lista_datos:
         internet_valor = datos.get("Internet Total")
-        telefonia_valor = datos.get("Telefonia Total")
+        telefonica_valor = datos.get("Telefonia Total")
+        
+        # Restar 1 a Internet antes de subir a Excel
+        if internet_valor is not None:
+            internet_valor = internet_valor - 1
+        
         otros_servicios_fila = []
         current_category = None  # Para rastrear la sección actual (Internet o Telefonía)
 
@@ -310,13 +355,13 @@ def exportar_excel_multiple(lista_datos, nombre_archivo, total_general, folder_i
             # Detectar y cambiar categoría basada en palabras clave
             if "INTERNET" in desc:
                 current_category = "internet"
-            elif "TELEFONIA" in desc:
-                current_category = "telefonia"
+            elif "TELEFONICA" in desc or "TELEFONIA" in desc or "TELÉFON" in desc:
+                current_category = "telefonica"
 
             # Sumar a la categoría actual si aplica
             if current_category == "internet":
                 pass  # Ya tenemos el total del recibo, no sumamos aquí
-            elif current_category == "telefonia":
+            elif current_category == "telefonica":
                 pass  # Ya tenemos el total del recibo, no sumamos aquí
             else:
                 otros_servicios_fila.append(s)
@@ -331,7 +376,7 @@ def exportar_excel_multiple(lista_datos, nombre_archivo, total_general, folder_i
             datos.get("Total a Pagar"),
             datos.get("Pagos Efectuados"),
             internet_valor,
-            telefonia_valor,
+            telefonica_valor,
             datos.get("IVA"),
             datos.get("Subtotal Servicios (Base Imponible)"),
             datos.get("IVA Calculado"),
@@ -368,7 +413,11 @@ def exportar_excel_multiple(lista_datos, nombre_archivo, total_general, folder_i
                 max_length = max(len(val) for val in column_values)
             hoja.column_dimensions[get_column_letter(i)].width = (max_length + 2) * 1.2
 
+    # Columnas sin decimales
+    columnas_sin_decimales = ["Total a Pagar", "Pagos Efectuados", "Internet", "Telefonía", "IVA (Extraído Total)"]
+    # Columnas con decimales
     formato_numero = '#,##0.00'
+    formato_sin_decimales = '#,##0'
     columnas_numericas = [
         "Total a Pagar", "Pagos Efectuados", "Internet", "Telefonía",
         "IVA (Extraído Total)", "Subtotal Servicios (Base Imponible)",
@@ -383,7 +432,10 @@ def exportar_excel_multiple(lista_datos, nombre_archivo, total_general, folder_i
                 for row in range(2, hoja.max_row + 1):
                     cell = hoja.cell(row=row, column=col_idx)
                     if isinstance(cell.value, (int, float)):
-                        cell.number_format = formato_numero
+                        if col_name in columnas_sin_decimales:
+                            cell.number_format = formato_sin_decimales
+                        else:
+                            cell.number_format = formato_numero
 
     excel_buffer = io.BytesIO()
     try:
@@ -460,3 +512,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+	
+	
+	
+
+	

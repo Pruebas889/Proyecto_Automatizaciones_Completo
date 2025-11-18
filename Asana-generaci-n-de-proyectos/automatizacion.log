@@ -345,13 +345,13 @@
 2025-09-10 06:51:17,382 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-10 06:51:17,382 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-10 06:51:17,387 - INFO -  * Restarting with stat
 2025-09-10 06:51:19,092 - WARNING -  * Debugger is active!
 2025-09-10 06:51:19,096 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 06:51:21,674 - INFO - 192.168.21.36 - - [10/Sep/2025 06:51:21] "GET / http/1.1" 200 -
-2025-09-10 06:51:22,460 - INFO - 192.168.21.36 - - [10/Sep/2025 06:51:22] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-10 06:51:21,674 - INFO - 192.168.21.37 - - [10/Sep/2025 06:51:21] "GET / http/1.1" 200 -
+2025-09-10 06:51:22,460 - INFO - 192.168.21.37 - - [10/Sep/2025 06:51:22] "[33mGET /favicon.ico http/1.1[0m" 404 -
 2025-09-10 06:51:44,586 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-13
 2025-09-10 06:51:44,587 - INFO - ====== WebDriver manager ======
 2025-09-10 06:51:46,171 - INFO - Get LATEST chromedriver version for google-chrome
@@ -360,16 +360,16 @@
 2025-09-10 06:51:49,107 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
 
 2025-09-10 06:51:49,108 - ERROR - No se pudo iniciar el driver. Terminando.
-2025-09-10 06:51:49,109 - INFO - 192.168.21.36 - - [10/Sep/2025 06:51:49] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 06:51:49,109 - INFO - 192.168.21.37 - - [10/Sep/2025 06:51:49] "[35m[1mPOST /run http/1.1[0m" 500 -
 2025-09-10 06:53:34,337 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-10 06:53:34,338 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-10 06:53:34,343 - INFO -  * Restarting with stat
 2025-09-10 06:53:36,222 - WARNING -  * Debugger is active!
 2025-09-10 06:53:36,229 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 06:53:41,916 - INFO - 192.168.21.36 - - [10/Sep/2025 06:53:41] "GET / http/1.1" 200 -
+2025-09-10 06:53:41,916 - INFO - 192.168.21.37 - - [10/Sep/2025 06:53:41] "GET / http/1.1" 200 -
 2025-09-10 06:53:51,949 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-11
 2025-09-10 06:53:53,533 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 06:54:00,079 - INFO - Navegando a la página de Asana.
@@ -400,12 +400,12 @@ Stacktrace:
 
 2025-09-10 06:54:32,580 - ERROR - Fallo en el login. Terminando.
 2025-09-10 06:54:34,827 - INFO - Driver cerrado.
-2025-09-10 06:54:34,828 - INFO - 192.168.21.36 - - [10/Sep/2025 06:54:34] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 06:54:34,828 - INFO - 192.168.21.37 - - [10/Sep/2025 06:54:34] "[35m[1mPOST /run http/1.1[0m" 500 -
 2025-09-10 06:57:21,523 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
 2025-09-10 06:57:21,711 - INFO -  * Restarting with stat
 2025-09-10 06:57:25,705 - WARNING -  * Debugger is active!
 2025-09-10 06:57:25,711 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 06:57:53,354 - INFO - 192.168.21.36 - - [10/Sep/2025 06:57:53] "GET / http/1.1" 200 -
+2025-09-10 06:57:53,354 - INFO - 192.168.21.37 - - [10/Sep/2025 06:57:53] "GET / http/1.1" 200 -
 2025-09-10 06:58:05,032 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-13
 2025-09-10 06:58:05,032 - INFO - ====== WebDriver manager ======
 2025-09-10 06:58:06,861 - INFO - Get LATEST chromedriver version for google-chrome
@@ -414,12 +414,12 @@ Stacktrace:
 2025-09-10 06:58:09,399 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
 
 2025-09-10 06:58:09,399 - ERROR - No se pudo iniciar el driver. Terminando.
-2025-09-10 06:58:09,400 - INFO - 192.168.21.36 - - [10/Sep/2025 06:58:09] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 06:58:09,400 - INFO - 192.168.21.37 - - [10/Sep/2025 06:58:09] "[35m[1mPOST /run http/1.1[0m" 500 -
 2025-09-10 06:58:51,357 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
 2025-09-10 06:58:51,472 - INFO -  * Restarting with stat
 2025-09-10 06:58:55,196 - WARNING -  * Debugger is active!
 2025-09-10 06:58:55,205 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 06:59:17,867 - INFO - 192.168.21.36 - - [10/Sep/2025 06:59:17] "GET / http/1.1" 200 -
+2025-09-10 06:59:17,867 - INFO - 192.168.21.37 - - [10/Sep/2025 06:59:17] "GET / http/1.1" 200 -
 2025-09-10 06:59:30,127 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-15
 2025-09-10 06:59:31,690 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 06:59:38,475 - INFO - Navegando a la página de Asana.
@@ -450,11 +450,11 @@ Stacktrace:
 
 2025-09-10 07:00:09,090 - ERROR - Fallo en el login. Terminando.
 2025-09-10 07:00:11,344 - INFO - Driver cerrado.
-2025-09-10 07:00:11,344 - INFO - 192.168.21.36 - - [10/Sep/2025 07:00:11] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 07:00:11,344 - INFO - 192.168.21.37 - - [10/Sep/2025 07:00:11] "[35m[1mPOST /run http/1.1[0m" 500 -
 2025-09-10 07:06:25,545 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-10 07:06:25,579 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-10 07:06:25,584 - INFO -  * Restarting with stat
 2025-09-10 07:06:27,069 - WARNING -  * Debugger is active!
@@ -463,7 +463,7 @@ Stacktrace:
 2025-09-10 07:07:23,539 - INFO -  * Restarting with stat
 2025-09-10 07:07:25,687 - WARNING -  * Debugger is active!
 2025-09-10 07:07:25,692 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 07:07:28,892 - INFO - 192.168.21.36 - - [10/Sep/2025 07:07:28] "GET / http/1.1" 200 -
+2025-09-10 07:07:28,892 - INFO - 192.168.21.37 - - [10/Sep/2025 07:07:28] "GET / http/1.1" 200 -
 2025-09-10 07:07:38,743 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-12
 2025-09-10 07:07:40,335 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 07:07:45,789 - INFO - Navegando a la página de Asana.
@@ -496,12 +496,12 @@ Stacktrace:
 
 2025-09-10 07:08:17,326 - ERROR - Fallo en el login. Terminando.
 2025-09-10 07:08:19,590 - INFO - Driver cerrado.
-2025-09-10 07:08:19,591 - INFO - 192.168.21.36 - - [10/Sep/2025 07:08:19] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 07:08:19,591 - INFO - 192.168.21.37 - - [10/Sep/2025 07:08:19] "[35m[1mPOST /run http/1.1[0m" 500 -
 2025-09-10 07:08:34,140 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
 2025-09-10 07:08:34,286 - INFO -  * Restarting with stat
 2025-09-10 07:08:37,401 - WARNING -  * Debugger is active!
 2025-09-10 07:08:37,405 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 07:08:37,440 - INFO - 192.168.21.36 - - [10/Sep/2025 07:08:37] "GET / http/1.1" 200 -
+2025-09-10 07:08:37,440 - INFO - 192.168.21.37 - - [10/Sep/2025 07:08:37] "GET / http/1.1" 200 -
 2025-09-10 07:08:46,594 - INFO - Iniciando automatización para Sprint 199, 2025-09-10 al 2025-09-12
 2025-09-10 07:08:48,011 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 07:08:53,950 - INFO - Navegando a la página de Asana.
@@ -552,7 +552,7 @@ Stacktrace:
 	RtlUserThreadStart [0x0x7ffdbb65c34c+44]
 
 2025-09-10 07:10:12,959 - WARNING - No se pudo crear proyecto Soporte 199 - Prueba en Team prueba
-2025-09-10 07:10:13,298 - INFO - 192.168.21.36 - - [10/Sep/2025 07:10:13] "GET / http/1.1" 200 -
+2025-09-10 07:10:13,298 - INFO - 192.168.21.37 - - [10/Sep/2025 07:10:13] "GET / http/1.1" 200 -
 2025-09-10 07:10:13,523 - INFO - Regresado a la página de Sprints.
 2025-09-10 07:10:13,523 - INFO - Procesando equipo: Team QA
 2025-09-10 07:10:13,749 - INFO - Equipo 'Team QA' seleccionado.
@@ -584,13 +584,13 @@ Stacktrace:
 2025-09-10 07:11:47,901 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 07:11:47,901 - INFO - Automatización completada exitosamente.
 2025-09-10 07:11:52,025 - INFO - Driver cerrado.
-2025-09-10 07:11:52,025 - INFO - 192.168.21.36 - - [10/Sep/2025 07:11:52] "POST /run http/1.1" 200 -
+2025-09-10 07:11:52,025 - INFO - 192.168.21.37 - - [10/Sep/2025 07:11:52] "POST /run http/1.1" 200 -
 2025-09-10 07:14:37,685 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
 2025-09-10 07:14:37,906 - INFO -  * Restarting with stat
 2025-09-10 07:14:41,957 - WARNING -  * Debugger is active!
 2025-09-10 07:14:41,961 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 07:15:53,464 - INFO - 192.168.21.36 - - [10/Sep/2025 07:15:53] "GET / http/1.1" 200 -
-2025-09-10 07:15:53,739 - INFO - 192.168.21.36 - - [10/Sep/2025 07:15:53] "GET / http/1.1" 200 -
+2025-09-10 07:15:53,464 - INFO - 192.168.21.37 - - [10/Sep/2025 07:15:53] "GET / http/1.1" 200 -
+2025-09-10 07:15:53,739 - INFO - 192.168.21.37 - - [10/Sep/2025 07:15:53] "GET / http/1.1" 200 -
 2025-09-10 07:16:09,854 - INFO - Iniciando automatización para Sprint 158, 2025-09-10 al 2025-09-15
 2025-09-10 07:16:09,854 - INFO - ====== WebDriver manager ======
 2025-09-10 07:16:12,012 - INFO - Get LATEST chromedriver version for google-chrome
@@ -599,12 +599,12 @@ Stacktrace:
 2025-09-10 07:16:14,534 - ERROR - Error al iniciar el driver: Message: Service C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.82\chromedriver-win32/chromedriver.exe unexpectedly exited. Status code was: 1
 
 2025-09-10 07:16:14,534 - ERROR - No se pudo iniciar el driver. Terminando.
-2025-09-10 07:16:14,535 - INFO - 192.168.21.36 - - [10/Sep/2025 07:16:14] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 07:16:14,535 - INFO - 192.168.21.37 - - [10/Sep/2025 07:16:14] "[35m[1mPOST /run http/1.1[0m" 500 -
 2025-09-10 07:16:45,840 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
 2025-09-10 07:16:45,981 - INFO -  * Restarting with stat
 2025-09-10 07:16:48,331 - WARNING -  * Debugger is active!
 2025-09-10 07:16:48,336 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 07:16:48,370 - INFO - 192.168.21.36 - - [10/Sep/2025 07:16:48] "GET / http/1.1" 200 -
+2025-09-10 07:16:48,370 - INFO - 192.168.21.37 - - [10/Sep/2025 07:16:48] "GET / http/1.1" 200 -
 2025-09-10 07:17:07,461 - INFO - Iniciando automatización para Sprint 201, 2025-09-10 al 2025-10-01
 2025-09-10 07:17:09,058 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 07:17:13,503 - INFO - Navegando a la página de login de Asana.
@@ -616,14 +616,14 @@ Stacktrace:
 
 2025-09-10 07:17:45,245 - ERROR - Fallo en el login. Terminando.
 2025-09-10 07:17:47,631 - INFO - Driver cerrado.
-2025-09-10 07:17:47,631 - INFO - 192.168.21.36 - - [10/Sep/2025 07:17:47] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-10 07:17:47,631 - INFO - 192.168.21.37 - - [10/Sep/2025 07:17:47] "[35m[1mPOST /run http/1.1[0m" 500 -
 2025-09-10 07:18:17,905 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
 2025-09-10 07:18:18,015 - INFO -  * Restarting with stat
 2025-09-10 07:18:21,151 - WARNING -  * Debugger is active!
 2025-09-10 07:18:21,159 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 07:18:55,944 - INFO - 192.168.21.36 - - [10/Sep/2025 07:18:55] "GET / http/1.1" 200 -
-2025-09-10 07:18:56,930 - INFO - 192.168.21.36 - - [10/Sep/2025 07:18:56] "GET / http/1.1" 200 -
-2025-09-10 07:18:57,156 - INFO - 192.168.21.36 - - [10/Sep/2025 07:18:57] "GET / http/1.1" 200 -
+2025-09-10 07:18:55,944 - INFO - 192.168.21.37 - - [10/Sep/2025 07:18:55] "GET / http/1.1" 200 -
+2025-09-10 07:18:56,930 - INFO - 192.168.21.37 - - [10/Sep/2025 07:18:56] "GET / http/1.1" 200 -
+2025-09-10 07:18:57,156 - INFO - 192.168.21.37 - - [10/Sep/2025 07:18:57] "GET / http/1.1" 200 -
 2025-09-10 07:19:14,726 - INFO - Iniciando automatización para Sprint 899, 2025-09-10 al 2025-10-01
 2025-09-10 07:19:16,202 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 07:19:22,484 - INFO - Navegando a la página de Asana.
@@ -721,16 +721,16 @@ Stacktrace:
 2025-09-10 07:21:47,344 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 07:21:47,345 - INFO - Automatización completada exitosamente.
 2025-09-10 07:21:49,685 - INFO - Driver cerrado.
-2025-09-10 07:21:49,686 - INFO - 192.168.21.36 - - [10/Sep/2025 07:21:49] "POST /run http/1.1" 200 -
+2025-09-10 07:21:49,686 - INFO - 192.168.21.37 - - [10/Sep/2025 07:21:49] "POST /run http/1.1" 200 -
 2025-09-10 07:41:14,884 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-10 07:41:14,885 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-10 07:41:14,889 - INFO -  * Restarting with stat
 2025-09-10 07:41:16,794 - WARNING -  * Debugger is active!
 2025-09-10 07:41:16,799 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 07:41:17,870 - INFO - 192.168.21.36 - - [10/Sep/2025 07:41:17] "GET / http/1.1" 200 -
+2025-09-10 07:41:17,870 - INFO - 192.168.21.37 - - [10/Sep/2025 07:41:17] "GET / http/1.1" 200 -
 2025-09-10 07:41:32,016 - INFO - Iniciando automatización para Sprint 896, 2025-09-10 al 2025-10-01
 2025-09-10 07:41:33,644 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 07:41:43,791 - INFO - Navegando a la página de Asana.
@@ -792,7 +792,7 @@ Stacktrace:
 2025-09-10 07:42:22,658 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 07:42:22,658 - INFO - Automatización completada exitosamente.
 2025-09-10 07:42:25,299 - INFO - Driver cerrado.
-2025-09-10 07:42:25,300 - INFO - 192.168.21.36 - - [10/Sep/2025 07:42:25] "POST /run http/1.1" 200 -
+2025-09-10 07:42:25,300 - INFO - 192.168.21.37 - - [10/Sep/2025 07:42:25] "POST /run http/1.1" 200 -
 2025-09-10 07:50:42,228 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
 2025-09-10 07:50:42,511 - INFO -  * Restarting with stat
 2025-09-10 07:50:47,343 - WARNING -  * Debugger is active!
@@ -802,12 +802,12 @@ Stacktrace:
 2025-09-10 07:52:01,645 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-10 07:52:01,645 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-10 07:52:01,647 - INFO -  * Restarting with stat
 2025-09-10 07:52:03,191 - WARNING -  * Debugger is active!
 2025-09-10 07:52:03,195 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 07:52:04,758 - INFO - 192.168.21.36 - - [10/Sep/2025 07:52:04] "GET / http/1.1" 200 -
+2025-09-10 07:52:04,758 - INFO - 192.168.21.37 - - [10/Sep/2025 07:52:04] "GET / http/1.1" 200 -
 2025-09-10 07:52:19,931 - INFO - Iniciando automatización para Sprint 655, 2025-09-10 al 2025-10-01
 2025-09-10 07:52:21,515 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 07:52:29,491 - INFO - Navegando a la página de Asana.
@@ -869,8 +869,8 @@ Stacktrace:
 2025-09-10 07:53:11,707 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 07:53:11,707 - INFO - Automatización completada exitosamente.
 2025-09-10 07:53:14,234 - INFO - Driver cerrado.
-2025-09-10 07:53:14,235 - INFO - 192.168.21.36 - - [10/Sep/2025 07:53:14] "POST /run http/1.1" 200 -
-2025-09-10 08:12:28,914 - INFO - 192.168.21.36 - - [10/Sep/2025 08:12:28] "GET / http/1.1" 200 -
+2025-09-10 07:53:14,235 - INFO - 192.168.21.37 - - [10/Sep/2025 07:53:14] "POST /run http/1.1" 200 -
+2025-09-10 08:12:28,914 - INFO - 192.168.21.37 - - [10/Sep/2025 08:12:28] "GET / http/1.1" 200 -
 2025-09-10 08:14:07,523 - INFO - Iniciando automatización para Sprint 789, 2025-09-10 al 2025-09-11
 2025-09-10 08:14:09,140 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 08:14:15,625 - INFO - Navegando a la página de Asana.
@@ -932,8 +932,8 @@ Stacktrace:
 2025-09-10 08:14:58,752 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 08:14:58,753 - INFO - Automatización completada exitosamente.
 2025-09-10 08:15:01,498 - INFO - Driver cerrado.
-2025-09-10 08:15:01,500 - INFO - 192.168.21.36 - - [10/Sep/2025 08:15:01] "POST /run http/1.1" 200 -
-2025-09-10 08:35:09,532 - INFO - 192.168.21.36 - - [10/Sep/2025 08:35:09] "GET / http/1.1" 200 -
+2025-09-10 08:15:01,500 - INFO - 192.168.21.37 - - [10/Sep/2025 08:15:01] "POST /run http/1.1" 200 -
+2025-09-10 08:35:09,532 - INFO - 192.168.21.37 - - [10/Sep/2025 08:35:09] "GET / http/1.1" 200 -
 2025-09-10 08:35:24,528 - INFO - Iniciando automatización para Sprint 532, 2025-09-11 al 2025-10-03
 2025-09-10 08:35:26,158 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 08:35:32,273 - INFO - Navegando a la página de Asana.
@@ -995,7 +995,7 @@ Stacktrace:
 2025-09-10 08:36:09,936 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 08:36:09,937 - INFO - Automatización completada exitosamente.
 2025-09-10 08:36:12,419 - INFO - Driver cerrado.
-2025-09-10 08:36:12,420 - INFO - 192.168.21.36 - - [10/Sep/2025 08:36:12] "POST /run http/1.1" 200 -
+2025-09-10 08:36:12,420 - INFO - 192.168.21.37 - - [10/Sep/2025 08:36:12] "POST /run http/1.1" 200 -
 2025-09-10 08:36:58,374 - INFO - Iniciando automatización para Sprint 532, 2025-09-11 al 2025-10-03
 2025-09-10 08:36:59,816 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 08:37:06,299 - INFO - Navegando a la página de Asana.
@@ -1057,9 +1057,9 @@ Stacktrace:
 2025-09-10 08:37:45,506 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 08:37:45,506 - INFO - Automatización completada exitosamente.
 2025-09-10 08:37:47,940 - INFO - Driver cerrado.
-2025-09-10 08:37:47,941 - INFO - 192.168.21.36 - - [10/Sep/2025 08:37:47] "POST /run http/1.1" 200 -
-2025-09-10 08:38:10,257 - INFO - 192.168.21.36 - - [10/Sep/2025 08:38:10] "GET / http/1.1" 200 -
-2025-09-10 08:44:41,148 - INFO - 192.168.21.36 - - [10/Sep/2025 08:44:41] "GET / http/1.1" 200 -
+2025-09-10 08:37:47,941 - INFO - 192.168.21.37 - - [10/Sep/2025 08:37:47] "POST /run http/1.1" 200 -
+2025-09-10 08:38:10,257 - INFO - 192.168.21.37 - - [10/Sep/2025 08:38:10] "GET / http/1.1" 200 -
+2025-09-10 08:44:41,148 - INFO - 192.168.21.37 - - [10/Sep/2025 08:44:41] "GET / http/1.1" 200 -
 2025-09-10 08:45:08,456 - INFO - Iniciando automatización para Sprint 310, 2025-10-01 al 2025-11-14
 2025-09-10 08:45:10,147 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 08:45:16,507 - INFO - Navegando a la página de Asana.
@@ -1121,35 +1121,35 @@ Stacktrace:
 2025-09-10 08:45:55,651 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 08:45:55,651 - INFO - Automatización completada exitosamente.
 2025-09-10 08:45:58,087 - INFO - Driver cerrado.
-2025-09-10 08:45:58,091 - INFO - 192.168.21.36 - - [10/Sep/2025 08:45:58] "POST /run http/1.1" 200 -
-2025-09-10 08:57:45,611 - INFO - 192.168.21.36 - - [10/Sep/2025 08:57:45] "GET / http/1.1" 200 -
-2025-09-10 09:04:40,030 - INFO - 192.168.21.36 - - [10/Sep/2025 09:04:40] "GET / http/1.1" 200 -
-2025-09-10 09:09:57,379 - INFO - 192.168.21.36 - - [10/Sep/2025 09:09:57] "GET / http/1.1" 200 -
-2025-09-10 09:10:39,871 - INFO - 192.168.21.36 - - [10/Sep/2025 09:10:39] "GET / http/1.1" 200 -
-2025-09-10 09:12:36,014 - INFO - 192.168.21.36 - - [10/Sep/2025 09:12:36] "GET / http/1.1" 200 -
-2025-09-10 09:13:37,919 - INFO - 192.168.21.36 - - [10/Sep/2025 09:13:37] "GET / http/1.1" 200 -
-2025-09-10 09:13:38,936 - INFO - 192.168.21.36 - - [10/Sep/2025 09:13:38] "GET / http/1.1" 200 -
-2025-09-10 09:14:18,103 - INFO - 192.168.21.36 - - [10/Sep/2025 09:14:18] "GET / http/1.1" 200 -
-2025-09-10 09:14:19,241 - INFO - 192.168.21.36 - - [10/Sep/2025 09:14:19] "GET / http/1.1" 200 -
-2025-09-10 09:14:19,566 - INFO - 192.168.21.36 - - [10/Sep/2025 09:14:19] "GET / http/1.1" 200 -
-2025-09-10 09:15:12,987 - INFO - 192.168.21.36 - - [10/Sep/2025 09:15:12] "GET / http/1.1" 200 -
-2025-09-10 09:16:01,119 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:01] "GET / http/1.1" 200 -
-2025-09-10 09:16:22,202 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:22] "GET / http/1.1" 200 -
-2025-09-10 09:16:28,060 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:28] "GET / http/1.1" 200 -
-2025-09-10 09:16:51,036 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:51] "GET / http/1.1" 200 -
-2025-09-10 09:16:55,363 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:55] "GET / http/1.1" 200 -
-2025-09-10 09:16:55,840 - INFO - 192.168.21.36 - - [10/Sep/2025 09:16:55] "GET / http/1.1" 200 -
-2025-09-10 09:18:23,124 - INFO - 192.168.21.36 - - [10/Sep/2025 09:18:23] "GET / http/1.1" 200 -
-2025-09-10 09:18:49,713 - INFO - 192.168.21.36 - - [10/Sep/2025 09:18:49] "GET / http/1.1" 200 -
-2025-09-10 09:18:50,579 - INFO - 192.168.21.36 - - [10/Sep/2025 09:18:50] "GET / http/1.1" 200 -
-2025-09-10 09:18:56,745 - INFO - 192.168.21.36 - - [10/Sep/2025 09:18:56] "GET / http/1.1" 200 -
-2025-09-10 09:19:28,612 - INFO - 192.168.21.36 - - [10/Sep/2025 09:19:28] "GET / http/1.1" 200 -
-2025-09-10 09:21:14,485 - INFO - 192.168.21.36 - - [10/Sep/2025 09:21:14] "GET / http/1.1" 200 -
-2025-09-10 09:21:16,456 - INFO - 192.168.21.36 - - [10/Sep/2025 09:21:16] "GET / http/1.1" 200 -
-2025-09-10 09:21:44,595 - INFO - 192.168.21.36 - - [10/Sep/2025 09:21:44] "GET / http/1.1" 200 -
-2025-09-10 09:21:45,074 - INFO - 192.168.21.36 - - [10/Sep/2025 09:21:45] "GET / http/1.1" 200 -
-2025-09-10 09:21:45,374 - INFO - 192.168.21.36 - - [10/Sep/2025 09:21:45] "GET / http/1.1" 200 -
-2025-09-10 09:22:22,326 - INFO - 192.168.21.36 - - [10/Sep/2025 09:22:22] "GET / http/1.1" 200 -
+2025-09-10 08:45:58,091 - INFO - 192.168.21.37 - - [10/Sep/2025 08:45:58] "POST /run http/1.1" 200 -
+2025-09-10 08:57:45,611 - INFO - 192.168.21.37 - - [10/Sep/2025 08:57:45] "GET / http/1.1" 200 -
+2025-09-10 09:04:40,030 - INFO - 192.168.21.37 - - [10/Sep/2025 09:04:40] "GET / http/1.1" 200 -
+2025-09-10 09:09:57,379 - INFO - 192.168.21.37 - - [10/Sep/2025 09:09:57] "GET / http/1.1" 200 -
+2025-09-10 09:10:39,871 - INFO - 192.168.21.37 - - [10/Sep/2025 09:10:39] "GET / http/1.1" 200 -
+2025-09-10 09:12:36,014 - INFO - 192.168.21.37 - - [10/Sep/2025 09:12:36] "GET / http/1.1" 200 -
+2025-09-10 09:13:37,919 - INFO - 192.168.21.37 - - [10/Sep/2025 09:13:37] "GET / http/1.1" 200 -
+2025-09-10 09:13:38,936 - INFO - 192.168.21.37 - - [10/Sep/2025 09:13:38] "GET / http/1.1" 200 -
+2025-09-10 09:14:18,103 - INFO - 192.168.21.37 - - [10/Sep/2025 09:14:18] "GET / http/1.1" 200 -
+2025-09-10 09:14:19,241 - INFO - 192.168.21.37 - - [10/Sep/2025 09:14:19] "GET / http/1.1" 200 -
+2025-09-10 09:14:19,566 - INFO - 192.168.21.37 - - [10/Sep/2025 09:14:19] "GET / http/1.1" 200 -
+2025-09-10 09:15:12,987 - INFO - 192.168.21.37 - - [10/Sep/2025 09:15:12] "GET / http/1.1" 200 -
+2025-09-10 09:16:01,119 - INFO - 192.168.21.37 - - [10/Sep/2025 09:16:01] "GET / http/1.1" 200 -
+2025-09-10 09:16:22,202 - INFO - 192.168.21.37 - - [10/Sep/2025 09:16:22] "GET / http/1.1" 200 -
+2025-09-10 09:16:28,060 - INFO - 192.168.21.37 - - [10/Sep/2025 09:16:28] "GET / http/1.1" 200 -
+2025-09-10 09:16:51,036 - INFO - 192.168.21.37 - - [10/Sep/2025 09:16:51] "GET / http/1.1" 200 -
+2025-09-10 09:16:55,363 - INFO - 192.168.21.37 - - [10/Sep/2025 09:16:55] "GET / http/1.1" 200 -
+2025-09-10 09:16:55,840 - INFO - 192.168.21.37 - - [10/Sep/2025 09:16:55] "GET / http/1.1" 200 -
+2025-09-10 09:18:23,124 - INFO - 192.168.21.37 - - [10/Sep/2025 09:18:23] "GET / http/1.1" 200 -
+2025-09-10 09:18:49,713 - INFO - 192.168.21.37 - - [10/Sep/2025 09:18:49] "GET / http/1.1" 200 -
+2025-09-10 09:18:50,579 - INFO - 192.168.21.37 - - [10/Sep/2025 09:18:50] "GET / http/1.1" 200 -
+2025-09-10 09:18:56,745 - INFO - 192.168.21.37 - - [10/Sep/2025 09:18:56] "GET / http/1.1" 200 -
+2025-09-10 09:19:28,612 - INFO - 192.168.21.37 - - [10/Sep/2025 09:19:28] "GET / http/1.1" 200 -
+2025-09-10 09:21:14,485 - INFO - 192.168.21.37 - - [10/Sep/2025 09:21:14] "GET / http/1.1" 200 -
+2025-09-10 09:21:16,456 - INFO - 192.168.21.37 - - [10/Sep/2025 09:21:16] "GET / http/1.1" 200 -
+2025-09-10 09:21:44,595 - INFO - 192.168.21.37 - - [10/Sep/2025 09:21:44] "GET / http/1.1" 200 -
+2025-09-10 09:21:45,074 - INFO - 192.168.21.37 - - [10/Sep/2025 09:21:45] "GET / http/1.1" 200 -
+2025-09-10 09:21:45,374 - INFO - 192.168.21.37 - - [10/Sep/2025 09:21:45] "GET / http/1.1" 200 -
+2025-09-10 09:22:22,326 - INFO - 192.168.21.37 - - [10/Sep/2025 09:22:22] "GET / http/1.1" 200 -
 2025-09-10 09:23:00,524 - INFO - Iniciando automatización para Sprint 951, 2025-09-11 al 2025-10-10
 2025-09-10 09:23:02,243 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 09:23:09,768 - INFO - Navegando a la página de Asana.
@@ -1211,7 +1211,7 @@ Stacktrace:
 2025-09-10 09:23:48,613 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 09:23:48,614 - INFO - Automatización completada exitosamente.
 2025-09-10 09:23:51,137 - INFO - Driver cerrado.
-2025-09-10 09:23:51,138 - INFO - 192.168.21.36 - - [10/Sep/2025 09:23:51] "POST /run http/1.1" 200 -
+2025-09-10 09:23:51,138 - INFO - 192.168.21.37 - - [10/Sep/2025 09:23:51] "POST /run http/1.1" 200 -
 2025-09-10 09:34:45,637 - INFO - Iniciando automatización para Sprint 789, 2025-09-12 al 2025-09-19
 2025-09-10 09:34:47,245 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 09:34:53,688 - INFO - Navegando a la página de Asana.
@@ -1273,13 +1273,13 @@ Stacktrace:
 2025-09-10 09:35:31,583 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 09:35:31,583 - INFO - Automatización completada exitosamente.
 2025-09-10 09:35:34,302 - INFO - Driver cerrado.
-2025-09-10 09:35:34,304 - INFO - 192.168.21.36 - - [10/Sep/2025 09:35:34] "POST /run http/1.1" 200 -
-2025-09-10 09:39:49,748 - INFO - 192.168.21.36 - - [10/Sep/2025 09:39:49] "GET / http/1.1" 200 -
-2025-09-10 09:42:22,258 - INFO - 192.168.21.36 - - [10/Sep/2025 09:42:22] "GET / http/1.1" 200 -
-2025-09-10 09:42:46,754 - INFO - 192.168.21.36 - - [10/Sep/2025 09:42:46] "GET / http/1.1" 200 -
-2025-09-10 09:45:20,882 - INFO - 192.168.21.36 - - [10/Sep/2025 09:45:20] "GET / http/1.1" 200 -
-2025-09-10 09:47:48,357 - INFO - 192.168.21.36 - - [10/Sep/2025 09:47:48] "GET / http/1.1" 200 -
-2025-09-10 09:50:42,052 - INFO - 192.168.21.36 - - [10/Sep/2025 09:50:42] "GET / http/1.1" 200 -
+2025-09-10 09:35:34,304 - INFO - 192.168.21.37 - - [10/Sep/2025 09:35:34] "POST /run http/1.1" 200 -
+2025-09-10 09:39:49,748 - INFO - 192.168.21.37 - - [10/Sep/2025 09:39:49] "GET / http/1.1" 200 -
+2025-09-10 09:42:22,258 - INFO - 192.168.21.37 - - [10/Sep/2025 09:42:22] "GET / http/1.1" 200 -
+2025-09-10 09:42:46,754 - INFO - 192.168.21.37 - - [10/Sep/2025 09:42:46] "GET / http/1.1" 200 -
+2025-09-10 09:45:20,882 - INFO - 192.168.21.37 - - [10/Sep/2025 09:45:20] "GET / http/1.1" 200 -
+2025-09-10 09:47:48,357 - INFO - 192.168.21.37 - - [10/Sep/2025 09:47:48] "GET / http/1.1" 200 -
+2025-09-10 09:50:42,052 - INFO - 192.168.21.37 - - [10/Sep/2025 09:50:42] "GET / http/1.1" 200 -
 2025-09-10 09:52:01,998 - INFO - Iniciando automatización para Sprint 123, 2025-09-10 al 2025-10-01
 2025-09-10 09:52:04,768 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 09:52:15,222 - INFO - Navegando a la página de Asana.
@@ -1341,9 +1341,9 @@ Stacktrace:
 2025-09-10 09:53:00,823 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 09:53:00,824 - INFO - Automatización completada exitosamente.
 2025-09-10 09:53:03,505 - INFO - Driver cerrado.
-2025-09-10 09:53:03,507 - INFO - 192.168.21.36 - - [10/Sep/2025 09:53:03] "POST /run http/1.1" 200 -
-2025-09-10 09:55:56,829 - INFO - 192.168.21.36 - - [10/Sep/2025 09:55:56] "GET / http/1.1" 200 -
-2025-09-10 09:55:57,512 - INFO - 192.168.21.36 - - [10/Sep/2025 09:55:57] "GET / http/1.1" 200 -
+2025-09-10 09:53:03,507 - INFO - 192.168.21.37 - - [10/Sep/2025 09:53:03] "POST /run http/1.1" 200 -
+2025-09-10 09:55:56,829 - INFO - 192.168.21.37 - - [10/Sep/2025 09:55:56] "GET / http/1.1" 200 -
+2025-09-10 09:55:57,512 - INFO - 192.168.21.37 - - [10/Sep/2025 09:55:57] "GET / http/1.1" 200 -
 2025-09-10 09:57:29,208 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
 2025-09-10 09:57:29,815 - INFO -  * Restarting with stat
 2025-09-10 09:57:36,461 - WARNING -  * Debugger is active!
@@ -1352,7 +1352,7 @@ Stacktrace:
 2025-09-10 09:58:06,862 - INFO -  * Restarting with stat
 2025-09-10 09:58:09,294 - WARNING -  * Debugger is active!
 2025-09-10 09:58:09,299 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 09:58:20,310 - INFO - 192.168.21.36 - - [10/Sep/2025 09:58:20] "GET / http/1.1" 200 -
+2025-09-10 09:58:20,310 - INFO - 192.168.21.37 - - [10/Sep/2025 09:58:20] "GET / http/1.1" 200 -
 2025-09-10 09:58:52,914 - INFO - Iniciando automatización para Sprint 753, 2025-09-10 al 2025-10-10
 2025-09-10 09:58:54,748 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 09:59:02,569 - INFO - Navegando a la página de Asana.
@@ -1489,18 +1489,18 @@ Stacktrace:
 2025-09-10 10:00:29,822 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 10:00:29,823 - INFO - Automatización completada exitosamente.
 2025-09-10 10:00:32,584 - INFO - Driver cerrado.
-2025-09-10 10:00:32,586 - INFO - 192.168.21.36 - - [10/Sep/2025 10:00:32] "POST /run http/1.1" 200 -
+2025-09-10 10:00:32,586 - INFO - 192.168.21.37 - - [10/Sep/2025 10:00:32] "POST /run http/1.1" 200 -
 2025-09-10 10:11:20,052 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
 2025-09-10 10:11:20,994 - INFO -  * Restarting with stat
 2025-09-10 10:12:14,202 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-10 10:12:14,202 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-10 10:12:14,205 - INFO -  * Restarting with stat
 2025-09-10 10:12:15,692 - WARNING -  * Debugger is active!
 2025-09-10 10:12:15,698 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 10:12:17,298 - INFO - 192.168.21.36 - - [10/Sep/2025 10:12:17] "GET / http/1.1" 200 -
+2025-09-10 10:12:17,298 - INFO - 192.168.21.37 - - [10/Sep/2025 10:12:17] "GET / http/1.1" 200 -
 2025-09-10 10:12:37,199 - INFO - Iniciando automatización para Sprint 88888, 2025-10-01 al 2025-10-29
 2025-09-10 10:12:39,063 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 10:12:54,160 - INFO - Navegando a la página de Asana.
@@ -1532,12 +1532,12 @@ Stacktrace:
 2025-09-10 10:13:35,490 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-10 10:13:35,490 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-10 10:13:35,496 - INFO -  * Restarting with stat
 2025-09-10 10:13:37,484 - WARNING -  * Debugger is active!
 2025-09-10 10:13:37,488 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 10:13:38,540 - INFO - 192.168.21.36 - - [10/Sep/2025 10:13:38] "GET / http/1.1" 200 -
+2025-09-10 10:13:38,540 - INFO - 192.168.21.37 - - [10/Sep/2025 10:13:38] "GET / http/1.1" 200 -
 2025-09-10 10:13:50,704 - INFO - Iniciando automatización para Sprint 12311, 2025-11-05 al 2025-11-26
 2025-09-10 10:13:52,440 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 10:14:27,512 - INFO - Navegando a la página de Asana.
@@ -1574,17 +1574,17 @@ Stacktrace:
 2025-09-10 10:15:47,655 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 10:15:47,655 - INFO - Automatización completada exitosamente.
 2025-09-10 10:15:50,264 - INFO - Driver cerrado.
-2025-09-10 10:15:50,266 - INFO - 192.168.21.36 - - [10/Sep/2025 10:15:50] "POST /run http/1.1" 200 -
+2025-09-10 10:15:50,266 - INFO - 192.168.21.37 - - [10/Sep/2025 10:15:50] "POST /run http/1.1" 200 -
 2025-09-10 10:26:09,766 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-10 10:26:09,767 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-10 10:26:09,772 - INFO -  * Restarting with stat
 2025-09-10 10:26:11,651 - WARNING -  * Debugger is active!
 2025-09-10 10:26:11,656 - INFO -  * Debugger PIN: 107-283-771
-2025-09-10 10:26:14,026 - INFO - 192.168.21.36 - - [10/Sep/2025 10:26:14] "GET / http/1.1" 200 -
-2025-09-10 10:26:14,412 - INFO - 192.168.21.36 - - [10/Sep/2025 10:26:14] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-10 10:26:14,026 - INFO - 192.168.21.37 - - [10/Sep/2025 10:26:14] "GET / http/1.1" 200 -
+2025-09-10 10:26:14,412 - INFO - 192.168.21.37 - - [10/Sep/2025 10:26:14] "[33mGET /favicon.ico http/1.1[0m" 404 -
 2025-09-10 10:29:29,894 - INFO - Iniciando automatización para Sprint 456, 2025-09-10 al 2025-10-01
 2025-09-10 10:29:31,906 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 10:29:39,028 - INFO - Navegando a la página de Asana.
@@ -1621,9 +1621,9 @@ Stacktrace:
 2025-09-10 10:30:09,489 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 10:30:09,489 - INFO - Automatización completada exitosamente.
 2025-09-10 10:30:12,090 - INFO - Driver cerrado.
-2025-09-10 10:30:12,091 - INFO - 192.168.21.36 - - [10/Sep/2025 10:30:12] "POST /run http/1.1" 200 -
-2025-09-10 11:05:35,653 - INFO - 192.168.21.36 - - [10/Sep/2025 11:05:35] "GET / http/1.1" 200 -
-2025-09-10 11:05:42,146 - INFO - 192.168.21.36 - - [10/Sep/2025 11:05:42] "GET / http/1.1" 200 -
+2025-09-10 10:30:12,091 - INFO - 192.168.21.37 - - [10/Sep/2025 10:30:12] "POST /run http/1.1" 200 -
+2025-09-10 11:05:35,653 - INFO - 192.168.21.37 - - [10/Sep/2025 11:05:35] "GET / http/1.1" 200 -
+2025-09-10 11:05:42,146 - INFO - 192.168.21.37 - - [10/Sep/2025 11:05:42] "GET / http/1.1" 200 -
 2025-09-10 11:07:30,085 - INFO -  * Detected change in 'c:\\Users\\dforero\\Pictures\\Asana-generaci-n-de-proyectos\\asana_generacion_proyectos.py', reloading
 2025-09-10 11:07:30,339 - INFO -  * Restarting with stat
 2025-09-10 11:07:33,763 - WARNING -  * Debugger is active!
@@ -1764,11 +1764,11 @@ Stacktrace:
 2025-09-10 11:09:55,971 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 11:09:55,972 - INFO - Automatización completada exitosamente.
 2025-09-10 11:09:58,979 - INFO - Driver cerrado.
-2025-09-10 11:09:58,981 - INFO - 192.168.21.36 - - [10/Sep/2025 11:09:58] "POST /run http/1.1" 200 -
+2025-09-10 11:09:58,981 - INFO - 192.168.21.37 - - [10/Sep/2025 11:09:58] "POST /run http/1.1" 200 -
 2025-09-10 16:07:04,576 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-10 16:07:04,576 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-10 16:07:04,582 - INFO -  * Restarting with stat
 2025-09-10 16:07:07,652 - WARNING -  * Debugger is active!
@@ -1913,7 +1913,7 @@ Stacktrace:
 2025-09-10 16:08:59,447 - INFO - Automatización completada exitosamente.
 2025-09-10 16:09:02,113 - INFO - Driver cerrado.
 2025-09-10 16:09:02,115 - INFO - 192.168.21.41 - - [10/Sep/2025 16:09:02] "POST /run http/1.1" 200 -
-2025-09-10 16:11:50,889 - INFO - 192.168.21.36 - - [10/Sep/2025 16:11:50] "GET / http/1.1" 200 -
+2025-09-10 16:11:50,889 - INFO - 192.168.21.37 - - [10/Sep/2025 16:11:50] "GET / http/1.1" 200 -
 2025-09-10 16:12:32,508 - INFO - Iniciando automatización para Sprint 158, 2025-09-15 al 2025-09-26
 2025-09-10 16:12:34,529 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-10 16:12:44,758 - INFO - Navegando a la página de Asana.
@@ -2050,17 +2050,17 @@ Stacktrace:
 2025-09-10 16:14:22,990 - INFO - Procesamiento completado para todos los teams.
 2025-09-10 16:14:22,992 - INFO - Automatización completada exitosamente.
 2025-09-10 16:14:25,867 - INFO - Driver cerrado.
-2025-09-10 16:14:25,931 - INFO - 192.168.21.36 - - [10/Sep/2025 16:14:25] "POST /run http/1.1" 200 -
+2025-09-10 16:14:25,931 - INFO - 192.168.21.37 - - [10/Sep/2025 16:14:25] "POST /run http/1.1" 200 -
 2025-09-15 15:08:30,448 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-15 15:08:30,449 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-15 15:08:30,455 - INFO -  * Restarting with stat
 2025-09-15 15:08:34,789 - WARNING -  * Debugger is active!
 2025-09-15 15:08:34,795 - INFO -  * Debugger PIN: 107-283-771
-2025-09-15 15:08:40,556 - INFO - 192.168.21.36 - - [15/Sep/2025 15:08:40] "GET / http/1.1" 200 -
-2025-09-15 15:08:41,114 - INFO - 192.168.21.36 - - [15/Sep/2025 15:08:41] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-15 15:08:40,556 - INFO - 192.168.21.37 - - [15/Sep/2025 15:08:40] "GET / http/1.1" 200 -
+2025-09-15 15:08:41,114 - INFO - 192.168.21.37 - - [15/Sep/2025 15:08:41] "[33mGET /favicon.ico http/1.1[0m" 404 -
 2025-09-15 15:09:29,710 - INFO - Iniciando automatización para Sprint 197, 2025-09-15 al 2025-09-23
 2025-09-15 15:09:31,987 - INFO - Driver de Chrome iniciado exitosamente.
 2025-09-15 15:09:39,135 - INFO - Navegando a la página de Asana.
@@ -2103,12 +2103,12 @@ Stacktrace:
 2025-09-15 15:10:29,081 - INFO - Procesamiento completado para todos los teams.
 2025-09-15 15:10:29,081 - INFO - Automatización completada exitosamente.
 2025-09-15 15:10:31,696 - INFO - Driver cerrado.
-2025-09-15 15:10:31,698 - INFO - 192.168.21.36 - - [15/Sep/2025 15:10:31] "POST /run http/1.1" 200 -
-2025-09-15 15:16:41,331 - INFO - 192.168.21.36 - - [15/Sep/2025 15:16:41] "GET / http/1.1" 200 -
+2025-09-15 15:10:31,698 - INFO - 192.168.21.37 - - [15/Sep/2025 15:10:31] "POST /run http/1.1" 200 -
+2025-09-15 15:16:41,331 - INFO - 192.168.21.37 - - [15/Sep/2025 15:16:41] "GET / http/1.1" 200 -
 2025-09-18 16:05:24,304 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-18 16:05:24,305 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-18 16:05:24,307 - INFO -  * Restarting with stat
 2025-09-18 16:05:25,372 - WARNING -  * Debugger is active!
@@ -2116,13 +2116,13 @@ Stacktrace:
 2025-09-18 16:06:14,480 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-18 16:06:14,481 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-18 16:06:14,483 - INFO -  * Restarting with stat
 2025-09-18 16:06:15,152 - WARNING -  * Debugger is active!
 2025-09-18 16:06:15,156 - INFO -  * Debugger PIN: 401-074-375
-2025-09-18 16:07:31,345 - INFO - 192.168.21.36 - - [18/Sep/2025 16:07:31] "GET / http/1.1" 200 -
-2025-09-18 16:07:31,605 - INFO - 192.168.21.36 - - [18/Sep/2025 16:07:31] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-18 16:07:31,345 - INFO - 192.168.21.37 - - [18/Sep/2025 16:07:31] "GET / http/1.1" 200 -
+2025-09-18 16:07:31,605 - INFO - 192.168.21.37 - - [18/Sep/2025 16:07:31] "[33mGET /favicon.ico http/1.1[0m" 404 -
 2025-09-18 16:07:43,830 - INFO - Iniciando automatización para Sprint 232, 2025-09-18 al 2025-09-28
 2025-09-18 16:07:43,831 - INFO - ====== WebDriver manager ======
 2025-09-18 16:07:47,682 - INFO - Get LATEST chromedriver version for google-chrome
@@ -2157,12 +2157,12 @@ Stacktrace:
 
 2025-09-18 16:07:53,793 - ERROR - Fallo en el login. Terminando.
 2025-09-18 16:07:55,927 - INFO - Driver cerrado.
-2025-09-18 16:07:55,928 - INFO - 192.168.21.36 - - [18/Sep/2025 16:07:55] "[35m[1mPOST /run http/1.1[0m" 500 -
-2025-09-18 16:07:59,273 - INFO - 192.168.21.36 - - [18/Sep/2025 16:07:59] "GET / http/1.1" 200 -
+2025-09-18 16:07:55,928 - INFO - 192.168.21.37 - - [18/Sep/2025 16:07:55] "[35m[1mPOST /run http/1.1[0m" 500 -
+2025-09-18 16:07:59,273 - INFO - 192.168.21.37 - - [18/Sep/2025 16:07:59] "GET / http/1.1" 200 -
 2025-09-23 08:53:59,136 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5003
- * Running on http://192.168.21.36:5003
+ * Running on http://192.168.21.37:5003
 2025-09-23 08:53:59,137 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-23 08:53:59,141 - INFO -  * Restarting with stat
 2025-09-23 08:53:59,831 - WARNING -  * Debugger is active!

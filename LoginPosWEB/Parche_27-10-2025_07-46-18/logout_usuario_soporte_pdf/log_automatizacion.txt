@@ -1,0 +1,7 @@
+27-10-2025 07:46:27 - Se hizo clic en el botón del logo de 'POSWEB' correctamente.
+27-10-2025 07:46:28 - Se hizo clic en el botón de 'Logout' correctamente.
+27-10-2025 07:46:29 - ✅ Imagen agregada al PDF: capturas\logout_compressed.png
+27-10-2025 07:46:29 - ✅ Imagen agregada al PDF: capturas\captura_logout_compressed.png
+27-10-2025 07:46:29 - ✅ Imagen agregada al PDF: capturas\captura_logout_final_compressed.png
+27-10-2025 07:46:29 - ✅ PDF guardado correctamente en 0.52 segundos.
+27-10-2025 07:46:29 - PDF consolidado generado exitosamente

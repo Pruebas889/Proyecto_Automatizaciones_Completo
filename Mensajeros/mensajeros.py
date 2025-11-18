@@ -44,7 +44,7 @@ from email.message import EmailMessage
 
 # CONFIGURACIÓN GLOBAL de google sheets
 def inicializar_sheets():
-    CREDENTIALS_PATH = r"C:\Users\dforero\Pictures\MENSAJEROS\automatizaciones-471213-ba561bdefbc9.json"
+    CREDENTIALS_PATH = r"C:\Users\dforero\Pictures\Proyecto_Automatizaciones_Completo\Mensajeros\automatizaciones-471213-ba561bdefbc9.json"
     SPREADSHEET_ID = "1yVszdoqBzG10ZYXsuX9EXs0tuD_Ni9HBsW7DdK1OxN4"
     SHEET_NAME = "Cédula de Domiciliarios"
     SHEET_NAME2 = "Reporte Comparendos"
@@ -254,12 +254,18 @@ def normalize_checkpoint_meta_file():
         logging.debug(f'No se pudo ejecutar normalize_checkpoint_meta_file: {e}')
 
 def borrar_checkpoint():
-    """Elimina el archivo de checkpoint si existe."""
+    """Vacía el archivo de checkpoint sin eliminarlo del sistema de archivos.
+
+    Preferimos mantener el archivo presente (por permisos y por consistencia con
+    otros procesos) pero borrando su contenido para indicar 'sin checkpoint'.
+    """
     try:
-        if os.path.exists(CHECKPOINT_FILE):
-            os.remove(CHECKPOINT_FILE)
+        # Abrir en modo escritura truncará el archivo o lo creará si no existe
+        with open(CHECKPOINT_FILE, 'w', encoding='utf-8') as f:
+            f.write('')
+        logging.info(f"Checkpoint vaciado correctamente: {CHECKPOINT_FILE}")
     except Exception as e:
-        logging.warning(f"No se pudo borrar el checkpoint: {e}")
+        logging.warning(f"No se pudo vaciar el checkpoint: {e}")
 
 # ------------------------------------------------------------
 
@@ -1228,96 +1234,138 @@ def procesar_cedulas(driver, sheet, sheet2, inicio_desde=1):
 
 def leer_y_subir_cedulas(sheet):
     """
-    Lee las cédulas del archivo Excel y las sube a Google Sheets.
+    Lee las cédulas del archivo HTML (disfrazado de .xls) y las sube a Google Sheets.
+    Usa BeautifulSoup para parsear HTML de forma confiable.
     """
-    # Lee listadoMensajerosActivos.xls (HTML disfrazado de XLS),
-    # filtra las cédulas válidas y sube a Google Sheets.
+    from bs4 import BeautifulSoup
+    import re
+
     downloads_path = os.path.expanduser("~/Downloads")
     archivo_xls = os.path.join(downloads_path, "listadoMensajerosActivos.xls")
 
     if not os.path.exists(archivo_xls):
-        logging.error("El archivo listadoMensajerosActivos.xls no se encuentra en Downloads.")
+        logging.error("❌ El archivo listadoMensajerosActivos.xls no se encuentra en Downloads.")
         raise FileNotFoundError(f"El archivo {archivo_xls} no se encuentra en el directorio de descargas.")
 
-    # Abrir el archivo tolerando caracteres no decodificables y reemplazándolos
+    logging.info(f"✅ Archivo encontrado: {archivo_xls}")
+
+    # Leer el archivo
     try:
         with open(archivo_xls, 'r', encoding='utf-8', errors='replace') as f:
             contenido = f.read()
+        logging.info("✅ Archivo leído correctamente")
     except Exception as e:
-        logging.error(f"Error al leer el archivo {archivo_xls}: {e}")
+        logging.error(f"❌ Error al leer el archivo {archivo_xls}: {e}")
         raise
 
-    df_raw = None
+    cedulas_extraidas = []
     try:
-        if '<html' in contenido.lower() or '<table' in contenido.lower():
-            logging.info("El archivo es HTML con extensión .xls. Procesando como HTML...")
-            tablas = pd.read_html(StringIO(contenido))
-            if not tablas:
-                logging.error("No se encontraron tablas en el archivo HTML.")
-                raise ValueError("No se encontraron tablas en el archivo HTML.")
+        logging.info("🔄 Parseando HTML con BeautifulSoup (búsqueda de la tabla correcta)...")
+        soup = BeautifulSoup(contenido, 'html.parser')
+        tablas = soup.find_all('table')
+        logging.info(f"🔎 Tablas encontradas en el HTML: {len(tablas)}")
 
-            # Seleccionar la tabla más probable: preferir la tabla en índice 1 cuando exista
-            if len(tablas) > 1:
-                df_raw = tablas[1]
-                logging.info("Se seleccionó la Tabla 1 (índice 1) para procesamiento.")
+        if not tablas:
+            logging.error("❌ No se encontraron tablas en el HTML")
+            raise ValueError("No se encontró tabla en el archivo HTML")
+
+        # Intentar seleccionar la tabla que contiene la cabecera 'CEDULA' (caso-insens)
+        tabla_seleccionada = None
+        for i, t in enumerate(tablas):
+            primeras = t.find_all('tr')[:1]
+            header_text = ' '.join([c.get_text(strip=True) for tr in primeras for c in tr.find_all(['th','td'])])
+            if 'cedula' in header_text.lower():
+                tabla_seleccionada = t
+                logging.info(f"✅ Se seleccionó la tabla {i+1} porque contiene 'CEDULA' en el encabezado.")
+                break
+
+        # Si no encontramos por texto, escoger la tabla con más filas
+        if tabla_seleccionada is None:
+            tablas_y_filas = [(i, len(t.find_all('tr'))) for i,t in enumerate(tablas)]
+            idx_max, max_filas = max(tablas_y_filas, key=lambda x: x[1])
+            tabla_seleccionada = tablas[idx_max]
+            logging.info(f"ℹ️ No se encontró 'CEDULA' en encabezados; se seleccionó la tabla {idx_max+1} con {max_filas} filas.")
+
+        filas = tabla_seleccionada.find_all('tr')
+        logging.info(f"📊 Filas en la tabla seleccionada: {len(filas)}")
+
+        # Determinar fila de encabezado: buscar fila que contenga 'CEDULA'
+        header_idx = 0
+        for i, fila in enumerate(filas[:3]):
+            textos = [c.get_text(strip=True).lower() for c in fila.find_all(['td','th'])]
+            if any('cedula' in t for t in textos):
+                header_idx = i
+                break
+
+        # Procesar filas posteriores al encabezado
+        for idx, fila in enumerate(filas[header_idx+1:], start=1):
+            celdas = fila.find_all(['td', 'th'])
+            if not celdas:
+                continue
+
+            found = None
+            # Buscar en cada celda la primera secuencia de dígitos razonable
+            for c in celdas:
+                txt = c.get_text(strip=True)
+                # Normalizar: quitar caracteres no dígito
+                clean = re.sub(r'\D', '', txt)
+                # Si no quedan dígitos, intentar buscar secuencias de 6-12 dígitos
+                if not clean:
+                    matches = re.findall(r'\d{6,12}', txt)
+                    if matches:
+                        clean = matches[0]
+
+                if clean and 6 <= len(clean) <= 12 and clean not in ['12345', '99999']:
+                    found = clean
+                    break
+
+            if found:
+                cedulas_extraidas.append([found])
             else:
-                df_raw = tablas[0]
-                logging.warning("No se encontró la Tabla 1. Se usará la Tabla 0 como respaldo.")
-        else:
-            logging.info("El archivo parece ser Excel real. Procesando con read_excel...")
-            df_raw = pd.read_excel(archivo_xls, header=None, engine='openpyxl')
+                # Para diagnóstico, loguear las celdas de filas problemáticas cada 200 filas
+                if idx % 200 == 0:
+                    contenidos = [c.get_text(strip=True) for c in celdas]
+                    logging.debug(f"Fila {idx} sin cédula detectada. Textos: {contenidos}")
 
-        logging.info("Primeras filas leídas de la tabla seleccionada:")
-        try:
-            logging.info(df_raw.head(7).to_string())
-        except Exception:
-            # En caso de que df_raw no sea un DataFrame usual
-            logging.debug("No se pudo volcar head() de df_raw para logging.")
+            if idx % 200 == 0:
+                logging.info(f"  📍 Procesadas {idx} filas...")
 
-        # Normalizar encabezados y datos
-        encabezados = df_raw.iloc[0].astype(str)
-        df = df_raw.iloc[1:].copy()
-        df.columns = encabezados
-        df = df.loc[:, df.columns.notna()]
-        df.columns = [str(col).strip() for col in df.columns]
+        logging.info(f"✅ Total cédulas extraídas: {len(cedulas_extraidas)}")
 
-        # Buscar columna que contenga 'CEDULA' (case-insensitive)
-        col_cedula = next((col for col in df.columns if 'cedula' in str(col).lower()), None)
-        if not col_cedula:
-            logging.error(f"No se encontró columna de cédulas. Encabezados disponibles: {df.columns.tolist()}")
-            raise ValueError("No se encontró columna de cédulas en el archivo.")
-
-        # Seleccione la columna 'CEDULA' y elimine las filas con valores NaN
-        df_cedulas = df[[col_cedula]].dropna()
-        df_cedulas.columns = ['Cédula']
-
-        # Eliminar cédulas de prueba
-        df_cedulas = df_cedulas[~df_cedulas['Cédula'].astype(str).isin(['12345', '99999'])]
-
-        if df_cedulas.empty:
-            logging.warning("No se encontraron cédulas válidas después de aplicar los filtros.")
-            raise ValueError("No se encontraron cédulas válidas.")
+        if not cedulas_extraidas:
+            logging.error("❌ No se encontraron cédulas válidas")
+            raise ValueError("No se encontraron cédulas válidas en la tabla seleccionada")
 
         # Subir a Google Sheets
-        lista_cedulas = [['Cédula']] + df_cedulas.values.tolist()
+        # Preparar lista con cédulas y fechas (Opción 1: todas con la misma fecha de carga)
+        fecha_carga = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        lista_cedulas = [['Cédula', 'Fecha de Carga']]  # Encabezado con dos columnas
+        for cedula in cedulas_extraidas:
+            lista_cedulas.append([cedula[0], fecha_carga])
+        
         try:
+            logging.info("🔄 Limpiando hoja de Google Sheets...")
             sheet.clear()
-            sheet.update(lista_cedulas)
-            logging.info(f"Se subieron {len(df_cedulas)} cédulas a la hoja de Google Sheets.")
+            logging.info(f"🔄 Escribiendo {len(cedulas_extraidas)} cédulas en Google Sheets (A1)...")
+            sheet.update('A1', lista_cedulas)
+            logging.info(f"✅ Se subieron {len(cedulas_extraidas)} cédulas con fecha de carga a la hoja de Google Sheets.")
+            logging.info(f"📅 Fecha de carga: {fecha_carga}")
         except Exception as e:
-            logging.exception(f"Error al actualizar Google Sheets: {str(e)}")
+            logging.exception(f"❌ Error al actualizar Google Sheets: {str(e)}")
             raise
 
+    except Exception as e:
+        logging.error(f"❌ Error al procesar cédulas: {e}")
+        traceback.print_exc()
+        raise
     finally:
-        # Intentar eliminar el archivo de forma segura después del procesamiento (si existe)
+        # Intentar eliminar el archivo de forma segura después del procesamiento
         try:
             if os.path.exists(archivo_xls):
                 os.remove(archivo_xls)
-                logging.info(f"Archivo {archivo_xls} eliminado después de procesar.")
-        except OSError as e:
-            logging.warning(f"No se pudo eliminar el archivo {archivo_xls}: {e}")
+                logging.info(f"🗑️  Archivo {archivo_xls} eliminado después de procesar.")
         except Exception as e:
-            logging.warning(f"Error inesperado al intentar eliminar {archivo_xls}: {e}")
+            logging.warning(f"⚠️  No se pudo eliminar el archivo {archivo_xls}: {e}")
 
 def descargar_excel(driver):
     """
@@ -1556,6 +1604,44 @@ def limpiar_hoja(sheet3):
             logging.info("La hoja ya estaba vacía (solo encabezados).")
     except Exception as e:
         logging.error(f"Error al limpiar la hoja: {e}")
+
+
+def limpiar_hojas_inicio():
+    """
+    Limpia las hojas iniciales usadas por la automatización (Hoja 1: Cédula de Domiciliarios,
+    Hoja 2: Reporte Comparendos). Mantiene la primera fila (encabezados) y borra datos
+    desde A2 hacia abajo. Retorna True si todo fue exitoso, False en caso contrario.
+    """
+    try:
+        client, credentials, sheet, sheet2, sheet3, SPREADSHEET_ID, SHEET_NAME2 = inicializar_sheets()
+        # Limpiar hoja 1 (Cédula de Domiciliarios)
+        try:
+            data1 = sheet.get_all_values()
+            if len(data1) > 1:
+                sheet.batch_clear(["A2:Z10000"])
+                logging.info("Hoja 'Cédula de Domiciliarios' limpiada (A2:Z10000).")
+            else:
+                logging.info("Hoja 'Cédula de Domiciliarios' ya estaba vacía.")
+        except Exception as e:
+            logging.error(f"Error limpiando Hoja 1: {e}")
+            return False
+
+        # Limpiar hoja 2 (Reporte Comparendos)
+        try:
+            data2 = sheet2.get_all_values()
+            if len(data2) > 1:
+                sheet2.batch_clear(["A2:Z10000"])
+                logging.info("Hoja 'Reporte Comparendos' limpiada (A2:Z10000).")
+            else:
+                logging.info("Hoja 'Reporte Comparendos' ya estaba vacía.")
+        except Exception as e:
+            logging.error(f"Error limpiando Hoja 2: {e}")
+            return False
+
+        return True
+    except Exception as e:
+        logging.error(f"Error inicializando Google Sheets para limpiar hojas: {e}")
+        return False
 
 
 def borrar_resultados_de_cedula(sheet2, cedula: str):

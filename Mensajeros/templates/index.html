@@ -59,6 +59,18 @@
       <small>Interfaz local para controlar la automatización. No compartas claves ni credenciales.</small>
     </footer>
 
+    <!-- Modal de confirmación para decidir si guardar progreso -->
+    <div id="confirmModal" class="modal-overlay" style="display:none;">
+      <div class="modal-content">
+        <h2>¿Guardar progreso?</h2>
+        <p>¿Deseas guardar el progreso actual y continuar desde el último punto, o comenzar desde cero?</p>
+        <div class="modal-buttons">
+          <button id="saveContinueBtn" class="btn btn-primary">Sí, guardar y continuar</button>
+          <button id="startFreshBtn" class="btn btn-danger">No, comenzar desde cero</button>
+        </div>
+      </div>
+    </div>
+
     <script>
       (function(){
             const startBtn = document.getElementById('startBtn');
@@ -66,6 +78,9 @@
         const statusEl = document.getElementById('status');
         const outEl = document.getElementById('start-output');
         const spinner = document.getElementById('spinner');
+        const confirmModal = document.getElementById('confirmModal');
+        const saveContinueBtn = document.getElementById('saveContinueBtn');
+        const startFreshBtn = document.getElementById('startFreshBtn');
 
         // Update UI status and button states in a consistent way.
         // running: whether the automation process is known to be running
@@ -101,27 +116,74 @@
           }
         }
 
-        async function perform(path){
+        async function perform(path, freshStart=false){
           try{
-            const r = await fetch(path, {method:'POST'});
-            const j = await r.json();
-            return j;
+            const body = JSON.stringify({fresh_start: freshStart});
+            const r = await fetch(path, {
+              method:'POST',
+              headers: {'Content-Type': 'application/json'},
+              body: body
+            });
+            
+            // Intenta parsear como JSON
+            try {
+              const j = await r.json();
+              return j;
+            } catch(parseError) {
+              // Si el JSON no es válido, retorna el texto de la respuesta
+              const text = await r.text();
+              console.error('Response was not valid JSON:', text.substring(0, 200));
+              return {ok: false, error: `Server error (invalid response): ${text.substring(0, 100)}`};
+            }
           }catch(e){
-            return {ok:false, error: String(e)};
+            console.error('Fetch error:', e);
+            return {ok:false, error: `Network error: ${String(e)}`};
           }
         }
 
-        startBtn.addEventListener('click', async function(){
-          outEl.textContent = 'Iniciando...';
+        // Mostrar el modal de confirmación
+        function showConfirmModal(){
+          confirmModal.style.display = 'flex';
+        }
+
+        // Ocultar el modal de confirmación
+        function hideConfirmModal(){
+          confirmModal.style.display = 'none';
+        }
+
+        // Manejar clic en "Sí, guardar y continuar"
+        saveContinueBtn.addEventListener('click', async function(){
+          hideConfirmModal();
+          outEl.textContent = 'Iniciando (guardando progreso)...';
           setStatus('Iniciando...', false, true);
-          const res = await perform('/api/start');
+          const res = await perform('/api/start', false);  // fresh_start = false
           if(res && res.ok){
             setStatus('En ejecución (pid ' + res.pid + ')', true, false);
-            outEl.textContent = 'Iniciado';
+            outEl.textContent = 'Iniciado desde el checkpoint';
           } else {
             setStatus('Detenido', false, false);
             outEl.textContent = 'Error: ' + (res && res.error ? res.error : 'No se pudo iniciar');
           }
+        });
+
+        // Manejar clic en "No, comenzar desde cero"
+        startFreshBtn.addEventListener('click', async function(){
+          hideConfirmModal();
+          outEl.textContent = 'Limpiando datos y comenzando desde cero...';
+          setStatus('Preparando inicio desde cero...', false, true);
+          const res = await perform('/api/start', true);  // fresh_start = true
+          if(res && res.ok){
+            setStatus('En ejecución (pid ' + res.pid + ')', true, false);
+            outEl.textContent = 'Iniciado desde cero (datos y progreso limpiados)';
+          } else {
+            setStatus('Detenido', false, false);
+            outEl.textContent = 'Error: ' + (res && res.error ? res.error : 'No se pudo iniciar');
+          }
+        });
+
+        startBtn.addEventListener('click', function(){
+          // Mostrar el modal en lugar de iniciar directamente
+          showConfirmModal();
         });
 
         stopBtn.addEventListener('click', async function(){

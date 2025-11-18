@@ -13,8 +13,8 @@ def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if not session.get('logged_in') or session.get('role') != 'DocusealOP':
-            logging.info("Acceso no autorizado, redirigiendo a http://192.168.21.36:5000")
-            return redirect('http://192.168.21.36:5000')
+            logging.info("Acceso no autorizado, redirigiendo a http://192.168.21.37:5000")
+            return redirect('http://192.168.21.37:5000')
         return f(*args, **kwargs)
     return decorated_function
 

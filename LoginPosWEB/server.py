@@ -32,8 +32,8 @@ def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if not session.get('logged_in') or session.get('role') != 'POSWEB':
-            logging.info("Acceso no autorizado, redirigiendo a http://192.168.21.36:5000")
-            return redirect('http://192.168.21.36:5000')
+            logging.info("Acceso no autorizado, redirigiendo a http://192.168.21.37:5000")
+            return redirect('http://192.168.21.37:5000')
         return f(*args, **kwargs)
     return decorated_function
 
@@ -159,6 +159,19 @@ INDEX_HTML = """
                         <label>Carpetas de Parche</label>
                         <div id="parcheList" style="max-height:260px; overflow:auto; padding:8px; border-radius:8px; background:#fff; border:1px solid #eef7ef; margin-top:8px"></div>
                         <div class="muted" style="margin-top:6px">Puedes descargar la carpeta como zip o copiarla a tu carpeta de drive configurada.</div>
+                        <!-- Área de acciones rápidas para el último parche generado -->
+                        <div style="margin-top:12px">
+                            <label>Último parche generado</label>
+                            <div class="muted" style="margin-top:6px">Cuando termine una ejecución, aquí aparecerán acciones rápidas para el parche recién creado.</div>
+                            <div style="margin-top:8px; display:flex; gap:8px; align-items:center">
+                                <div style="flex:1">Parche: <span id="last-parche-name" class="status-value">-</span></div>
+                                <div id="lastParcheActions" style="display:none; gap:8px">
+                                    <button id="downloadLastParche">Descargar último parche</button>
+                                    <button id="sendLastParche" style="background:#fff;color:var(--accent-2);border:1px solid #e6f4ea">Enviar a Drive</button>
+                                    <button id="copyLastParcheLocal" style="background:#fff;color:var(--accent-2);border:1px solid #e6f4ea">Copiar a carpeta local</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,7 +250,60 @@ INDEX_HTML = """
                 }catch(e){ console.error('No se pudieron cargar los parches', e) }
             }
             loadParcheList();
+            // Mostrar acciones para el último parche cuando exista
+            document.getElementById('downloadLastParche').addEventListener('click', () => {
+                const name = document.getElementById('last-parche-name').innerText;
+                if(!name || name === '-') return alert('No hay parche disponible');
+                window.location = `/download_parche?name=${encodeURIComponent(name)}`;
+            });
+            document.getElementById('sendLastParche').addEventListener('click', async () => {
+                const name = document.getElementById('last-parche-name').innerText;
+                if(!name || name === '-') return alert('No hay parche disponible');
+                const dest = prompt('Ingrese URL de Google Drive (carpeta) o deje vacío para usar la carpeta por defecto:', DEFAULT_GDRIVE_URL);
+                if(dest === null) return;
+                const res = await fetch('/copy_parche', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ name, dest }) });
+                const data = await res.json();
+                alert(data.message);
+            });
+            document.getElementById('copyLastParcheLocal').addEventListener('click', async () => {
+                const name = document.getElementById('last-parche-name').innerText;
+                if(!name || name === '-') return alert('No hay parche disponible');
+                const dest = prompt('Ingrese la ruta local destino (por ejemplo: D:\\MiDrive\\Parches). Dejar vacío para usar DRIVE_ROOT si está configurado:', '');
+                if(dest === null) return;
+                const res = await fetch('/copy_parche', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ name, dest }) });
+                const data = await res.json();
+                alert(data.message);
+            });
             setInterval(loadParcheList, 5000);
+            // Actualiza la interfaz cuando cambie el estado (muestra acciones para last_parche)
+            const _lastStatus = { running: null };
+            const origUpdateStatus = updateStatus;
+            async function updateStatusWithActions(){
+                const res = await fetch('/status');
+                const data = await res.json();
+                document.getElementById('status-running').innerText = data.running ? 'En ejecución' : 'Inactivo';
+                document.getElementById('status-started').innerText = data.last_started || '-';
+                document.getElementById('status-message').innerText = data.message || '-';
+                // last parche handling
+                const last = data.last_parche || null;
+                document.getElementById('last-parche-name').innerText = last || '-';
+                const actions = document.getElementById('lastParcheActions');
+                if(last){ actions.style.display = 'inline-flex'; } else { actions.style.display = 'none'; }
+                // detect transition from running -> not running to optionally auto-show UI
+                if(_lastStatus.running === true && data.running === false){
+                    // automation just finished
+                    if(last){
+                        // reload parche list to ensure new parche is visible
+                        loadParcheList();
+                        // focus the actions area (visual cue)
+                        actions.scrollIntoView({behavior:'smooth', block:'center'});
+                    }
+                }
+                _lastStatus.running = data.running;
+            }
+            // replace the periodic status updater with the enhanced one
+            updateStatusWithActions();
+            setInterval(updateStatusWithActions, 3000);
         </script>
     </body>
 </html>
@@ -305,7 +371,7 @@ def extract_gdrive_folder_id(url):
     return None
 
 def upload_folder_to_gdrive(folder_path, folder_id):
-    CLIENT_SECRETS_FILE = r"C:\Users\dforero\Pictures\Proyecto_Automatizaciones_Completo\LoginPosWEB\client_secret_777079944211-b8j5p3ij4t9s6estq9fjt16p9jeo8bdm.apps.googleusercontent.com.json"
+    CLIENT_SECRETS_FILE = r"C:\\Users\\dforero\\Pictures\\Proyecto_Automatizaciones_Completo\\LoginPosWEB\\client_secret_777079944211-b8j5p3ij4t9s6estq9fjt16p9jeo8bdm.apps.googleusercontent.com.json"
     try:
         flow = InstalledAppFlow.from_client_secrets_file(
             CLIENT_SECRETS_FILE,
