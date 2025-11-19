@@ -246,19 +246,19 @@ def asignar_cliente(driver, wait, capturas, textos, nombre_automatizacion, docum
         resaltar_elemento(driver, boton_cliente)
         driver.execute_script("arguments[0].click();", boton_cliente)
         escribir_log(nombre_automatizacion, "Accedió a la sección 'Cliente'.")
-        tomar_captura(driver, "captura_cliente", "Se accedió correctamente a la sección 'Cliente'.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_cliente", "Se accedió correctamente a la sección 'Cliente'.", capturas, textos, nombre_automatizacion)
         
         descuento_cliente = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='OmitirCliente']")))
         resaltar_elemento(driver, descuento_cliente)
         escribir_log(nombre_automatizacion, "Omitió documento del cliente.")
-        tomar_captura(driver, "captura_omitir_documento_cliente", "Se omitió el documento del cliente correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_omitir_documento_cliente", "Se omitió el documento del cliente correctamente.", capturas, textos, nombre_automatizacion)
         driver.execute_script("arguments[0].click();", descuento_cliente)
 
         buscar_cliente_input = wait.until(EC.visibility_of_element_located((By.XPATH, "//*[@id='Cliente']")))
         resaltar_elemento(driver, buscar_cliente_input)
         buscar_cliente_input.send_keys(documento_cliente)
         escribir_log(nombre_automatizacion, f"Cliente {documento_cliente} buscado correctamente.")
-        tomar_captura(driver, "captura_buscar_cliente", "Se realizó la búsqueda del cliente correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_buscar_cliente", "Se realizó la búsqueda del cliente correctamente.", capturas, textos, nombre_automatizacion)
         
         # Presionar Enter para mostrar la lista
         buscar_cliente_input.send_keys(Keys.RETURN)
@@ -270,13 +270,13 @@ def asignar_cliente(driver, wait, capturas, textos, nombre_automatizacion, docum
         keyboard.press_and_release('enter')
         
         escribir_log(nombre_automatizacion, "Cliente seleccionado de la lista.")
-        tomar_captura(driver, "captura_cliente_seleccionado", "Cliente seleccionado correctamente de la lista.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_cliente_seleccionado", "Cliente seleccionado correctamente de la lista.", capturas, textos, nombre_automatizacion)
         
         boton_confirmar_cliente = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='BtnContinuarCliente']")))
         resaltar_elemento(driver, boton_confirmar_cliente)
         driver.execute_script("arguments[0].click();", boton_confirmar_cliente)
         escribir_log(nombre_automatizacion, "Cliente confirmado correctamente.")
-        tomar_captura(driver, "captura_confirmar_cliente", "Cliente confirmado correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_confirmar_cliente", "Cliente confirmado correctamente.", capturas, textos, nombre_automatizacion)
         time.sleep(0.5)
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException, WebDriverException) as e:
         escribir_log(nombre_automatizacion, f"Error al asignar cliente: {e}")
@@ -300,6 +300,7 @@ def realizar_pago(driver, wait, capturas, textos, nombre_automatizacion):
             resaltar_elemento(driver, clic_facturar)
             driver.execute_script("arguments[0].click();", clic_facturar)
             escribir_log(nombre_automatizacion, "Clic en 'Facturar' realizado correctamente.")
+            esperar_carga_desaparezca(driver, wait, nombre_automatizacion, "realizar pago")
         except TimeoutException:
             try:
                 clic_facturar = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#FormValoresFormasPago > div:nth-child(3) > div:nth-child(2) > div:nth-child(2)")))

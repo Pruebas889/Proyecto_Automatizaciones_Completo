@@ -161,9 +161,18 @@ def buscar_y_seleccionar_producto(driver, wait, capturas, textos, nombre_automat
         escribir_log(nombre_automatizacion, f"Producto {codigo_producto} buscado correctamente.")
         tomar_captura(driver, "captura_producto_busqueda", "Se realizó la búsqueda del producto correctamente.", capturas, textos, nombre_automatizacion)
 
+        # Verificar que el input tenga el valor antes de presionar Enter
+        valor_input = driver.execute_script("return arguments[0].value;", buscar_input)
+        escribir_log(nombre_automatizacion, f"Valor en input antes de Enter: {valor_input}")
+        
         actions = ActionChains(driver)
         actions.send_keys(Keys.RETURN).perform()
         escribir_log(nombre_automatizacion, "Producto seleccionado con Enter.")
+        
+        # Esperar más tiempo después del Enter para que cargue el producto
+        time.sleep(2)
+        escribir_log(nombre_automatizacion, "Esperando 2 segundos adicionales después del Enter.")
+        
         tomar_captura(driver, "captura_seleccion_producto", "Se seleccionó el producto correctamente.", capturas, textos, nombre_automatizacion)
         esperar_carga_desaparezca(driver, wait, nombre_automatizacion, "seleccionar producto")
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException, WebDriverException) as e:
@@ -224,19 +233,54 @@ def capturar_precio_producto(driver, wait, nombre_automatizacion, max_retries=3)
 
 def seleccionar_unidad_producto(driver, wait, capturas, textos, nombre_automatizacion, cantidad="1"):
     try:
-        unidad_input = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='CantidadUnidadesVenta-12957']")))
+        # Primero verificar que el elemento existe
+        escribir_log(nombre_automatizacion, "Esperando a que aparezca el elemento de unidad...")
+        time.sleep(1)
+        
+        # Intentar múltiples formas de encontrar el elemento
+        unidad_input = None
+        selectors = [
+            (By.XPATH, "//*[@id='CantidadUnidadesVenta-12957']"),
+            (By.ID, "CantidadUnidadesVenta-12957"),
+            (By.CSS_SELECTOR, "input[id*='CantidadUnidadesVenta']"),
+        ]
+        
+        for selector_type, selector_value in selectors:
+            try:
+                unidad_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((selector_type, selector_value)))
+                escribir_log(nombre_automatizacion, f"Elemento de unidad encontrado con selector: {selector_value}")
+                break
+            except TimeoutException:
+                escribir_log(nombre_automatizacion, f"No encontrado con selector {selector_value}, intentando siguiente...")
+                continue
+        
+        if not unidad_input:
+            raise NoSuchElementException("No se encontró el elemento de unidad con ningún selector")
+        
+        # Esperar a que sea clickeable
+        unidad_input = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='CantidadUnidadesVenta-12957']")))
         resaltar_elemento(driver, unidad_input)
+        escribir_log(nombre_automatizacion, "Elemento de unidad ahora es clickeable.")
+        
         driver.execute_script("arguments[0].click();", unidad_input)
+        time.sleep(0.3)
         unidad_input.send_keys(Keys.CONTROL, "a")
+        time.sleep(0.2)
         unidad_input.send_keys(Keys.DELETE)
+        time.sleep(0.2)
         unidad_input.send_keys(cantidad)
         escribir_log(nombre_automatizacion, f"Unidad seleccionada: {cantidad}.")
         tomar_captura(driver, "captura_unidad_seleccionada", "Unidad de producto seleccionada correctamente.", capturas, textos, nombre_automatizacion)
         esperar_carga_desaparezca(driver, wait, nombre_automatizacion, "seleccionar unidad")
         time.sleep(0.5)
         unidad_input.send_keys(Keys.RETURN)
+        escribir_log(nombre_automatizacion, "Enter presionado después de seleccionar unidad.")
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException, WebDriverException) as e:
         escribir_log(nombre_automatizacion, f"Error al seleccionar unidad: {e}")
+        # Tomar captura de debug
+        debug_captura = os.path.join("capturas", f"debug_unidad_error_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
+        driver.save_screenshot(debug_captura)
+        escribir_log(nombre_automatizacion, f"Captura de debug guardada: {debug_captura}")
         raise
 
 def facturar_venta(driver, wait, capturas, textos, nombre_automatizacion):

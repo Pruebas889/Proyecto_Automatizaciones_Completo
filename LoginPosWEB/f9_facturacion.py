@@ -16,6 +16,7 @@ from selenium.common.exceptions import (
 )
 from generacion_pdf import generar_pdf_consolidado, escribir_log
 
+
 # Global variable to store sale information
 venta_f9_info = {}
 
@@ -69,7 +70,7 @@ def mostrar_mensaje(driver, mensaje, nombre_automatizacion):
 
 def tomar_captura(driver, nombre_archivo, texto, capturas, textos, nombre_automatizacion):
     try:
-        time.sleep(0.7)
+        time.sleep(0.7)  # Esperar un momento para asegurar que la página esté lista
         # Asegurarse de que la carpeta existe
         carpeta_capturas = "capturas"
         os.makedirs(carpeta_capturas, exist_ok=True)

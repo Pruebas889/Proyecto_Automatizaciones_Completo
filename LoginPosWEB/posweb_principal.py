@@ -26,7 +26,7 @@ from logout_soporte import logout_usuario_soporte
 from asignacion_caja import asignar_caja
 from generar_turnos import turnos
 from cliente_generico import generico
-from Rappi_Payless import rappi_payless
+# from Rappi_Payless import rappi_payless
 from Globo_descuentos import descuentos
 # from Addi_congelar import Addi_congelacion
 # from orden_compra_actualizacion import orden_y_actualizacion
@@ -43,7 +43,6 @@ from visualizar_copia_factura import copia_factura
 from reporte_f9_facturacion import tecla_f9_reportes
 from ajuste_inventario_final import inventario_final
 from inventario_ajuste_final import inventario_final_ajuste
-from actualizar_generar_orden import actualizacion_y_generacion_orden
 from gastos import control_gastos
 from ventas_vendedor_pdv import reportes_ventas_vendedor_pdv
 from generacion_pdf import guardar_captura_modal_en_pdf
@@ -222,7 +221,7 @@ def run_automation(version=None, interactive=True, selected_steps=None):
                 ("Generación de turnos", turnos),
                 # ("Addi Descongelacion", Addi_congelacion),
                 ("Cliente Generico", generico),
-                ("Rappi Payless", rappi_payless),
+                # ("Rappi Payless", rappi_payless),
                 ("Descuentos Globo", descuentos),
                 # ("Orden de compra y actualización",orden_y_actualizacion),
                 ("Visualización copia de factura", copia_factura),
@@ -327,7 +326,7 @@ def available_processes():
             "Generación de turnos",
             # "Addi Descongelacion",
             "Cliente Generico",
-            "Rappi Payless",
+            # "Rappi Payless",
             "Descuentos Globo",
             # "Orden de compra y actualización",
             "Visualización copia de factura",

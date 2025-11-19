@@ -113,7 +113,7 @@ def navegar_a_cajero(driver, wait, capturas, textos, nombre_automatizacion):
         menu_cajero = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "body > div > aside > section > ul > li:nth-child(4) > a")))
         resaltar_elemento(driver, menu_cajero)
         escribir_log(nombre_automatizacion, "Accediendo al menú 'Cajero'.")
-        tomar_captura(driver, "captura_menu_cajero", "Acceso al menú 'Cajero' realizado correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_menu_cajero", "Acceso al menú 'Cajero' realizado correctamente.", capturas, textos, nombre_automatizacion)
         driver.execute_script("arguments[0].click();", menu_cajero)
         escribir_log(nombre_automatizacion, "Accedió al menú 'Cajero' correctamente.")
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException) as e:
@@ -125,7 +125,7 @@ def navegar_a_ventas(driver, wait, capturas, textos, nombre_automatizacion):
         menu_ventas = wait.until(EC.element_to_be_clickable((By.XPATH, "//li[contains(@class, 'active')]//ul//li[1]//a")))
         resaltar_elemento(driver, menu_ventas)
         escribir_log(nombre_automatizacion, "Accedió a 'Ventas' correctamente.")
-        tomar_captura(driver, "captura_menu_ventas", "Acceso al menú 'Ventas' realizado correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_menu_ventas", "Acceso al menú 'Ventas' realizado correctamente.", capturas, textos, nombre_automatizacion)
         driver.execute_script("arguments[0].click();", menu_ventas)
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException) as e:
         escribir_log(nombre_automatizacion, f"Error al navegar a 'Ventas': {e}")
@@ -136,7 +136,7 @@ def iniciar_factura(driver, wait, capturas, textos, nombre_automatizacion):
         boton_facturar = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "body > div > div > section:nth-child(1) > div > div:nth-child(4) > a")))
         resaltar_elemento(driver, boton_facturar)
         escribir_log(nombre_automatizacion, "Accedió a 'Facturar' correctamente.")
-        tomar_captura(driver, "captura_facturar_facturar", "Acceso al botón 'Facturar' realizado correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_facturar", "Acceso al botón 'Facturar' realizado correctamente.", capturas, textos, nombre_automatizacion)
         driver.execute_script("arguments[0].click();", boton_facturar)
         esperar_carga_desaparezca(driver, wait, nombre_automatizacion, "acceder a facturar")
         # Esperar hasta 80s para el botón 'Iniciar Factura'
@@ -146,7 +146,7 @@ def iniciar_factura(driver, wait, capturas, textos, nombre_automatizacion):
         esperar_carga_desaparezca(driver, wait, nombre_automatizacion, "acceder a facturar")
         resaltar_elemento(driver, iniciar_factura_btn)
         escribir_log(nombre_automatizacion, "Accedió a 'Iniciar Factura' correctamente.")
-        tomar_captura(driver, "captura_iniciar_factura", "Inicio de factura realizado correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_iniciar_factura", "Inicio de factura realizado correctamente.", capturas, textos, nombre_automatizacion)
 
         driver.execute_script("arguments[0].click();", iniciar_factura_btn)
 
@@ -160,12 +160,12 @@ def buscar_y_seleccionar_producto(driver, wait, capturas, textos, nombre_automat
         resaltar_elemento(driver, buscar_input)
         buscar_input.send_keys(codigo_producto)
         escribir_log(nombre_automatizacion, f"Producto {codigo_producto} buscado correctamente.")
-        tomar_captura(driver, "captura_buscar_producto", "Se realizó la búsqueda del producto correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_buscar_producto", "Se realizó la búsqueda del producto correctamente.", capturas, textos, nombre_automatizacion)
 
         actions = ActionChains(driver)
         actions.send_keys(Keys.RETURN).perform()
         escribir_log(nombre_automatizacion, "Producto seleccionado con Enter.")
-        tomar_captura(driver, "captura_busqueda_producto", "Se realizó la búsqueda del producto correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_busqueda_producto", "Se realizó la búsqueda del producto correctamente.", capturas, textos, nombre_automatizacion)
         esperar_carga_desaparezca(driver, wait, nombre_automatizacion, "acceder a facturar")
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException, WebDriverException) as e:
         escribir_log(nombre_automatizacion, f"Error al buscar o seleccionar producto: {e}")
@@ -178,7 +178,7 @@ def cerrar_modal_lasa(driver, wait, capturas, textos, nombre_automatizacion):
         resaltar_elemento(driver, cerrar)
         driver.execute_script("arguments[0].click();", cerrar)
         escribir_log(nombre_automatizacion, "Modal de producto lasa cerrado correctamente.")
-        tomar_captura(driver, "captura_producto_lasa", "Modal de producto lasa cerrado correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_producto_lasa", "Modal de producto lasa cerrado correctamente.", capturas, textos, nombre_automatizacion)
     except TimeoutException:
         escribir_log(nombre_automatizacion, "Advertencia: No se encontró el popup de carga del producto (ModalLasa), continuando.")
     except (NoSuchElementException, StaleElementReferenceException) as e:
@@ -232,7 +232,7 @@ def seleccionar_fraccion_producto(driver, wait, capturas, textos, nombre_automat
         Fraccion_input.send_keys(Keys.DELETE)
         Fraccion_input.send_keys(cantidad)
         escribir_log(nombre_automatizacion, f"Cantidad de fracción seleccionada: {cantidad}.")
-        tomar_captura(driver, "captura_cantidad_fracciones", f"Cantidad de fracción ingresada correctamente: {cantidad}.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_cantidad_fracciones", f"Cantidad de fracción ingresada correctamente: {cantidad}.", capturas, textos, nombre_automatizacion)
         esperar_carga_desaparezca(driver, wait, nombre_automatizacion, "Seleccionar fracción")
         time.sleep(0.5)
         Fraccion_input.send_keys(Keys.RETURN)
@@ -246,19 +246,19 @@ def asignar_cliente(driver, wait, capturas, textos, nombre_automatizacion, docum
         resaltar_elemento(driver, boton_cliente)
         driver.execute_script("arguments[0].click();", boton_cliente)
         escribir_log(nombre_automatizacion, "Accedió a la sección 'Cliente'.")
-        tomar_captura(driver, "captura_cliente", "Se accedió correctamente a la sección 'Cliente'.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_cliente", "Se accedió correctamente a la sección 'Cliente'.", capturas, textos, nombre_automatizacion)
         
         descuento_cliente = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='OmitirCliente']")))
         resaltar_elemento(driver, descuento_cliente)
         escribir_log(nombre_automatizacion, "Omitió documento del cliente.")
-        tomar_captura(driver, "captura_omitir_documento_cliente", "Se omitió el documento del cliente correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_omitir_documento_cliente", "Se omitió el documento del cliente correctamente.", capturas, textos, nombre_automatizacion)
         driver.execute_script("arguments[0].click();", descuento_cliente)
 
         buscar_cliente_input = wait.until(EC.visibility_of_element_located((By.XPATH, "//*[@id='Cliente']")))
         resaltar_elemento(driver, buscar_cliente_input)
         buscar_cliente_input.send_keys(documento_cliente)
         escribir_log(nombre_automatizacion, f"Cliente {documento_cliente} buscado correctamente.")
-        tomar_captura(driver, "captura_buscar_cliente", "Se realizó la búsqueda del cliente correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_buscar_cliente", "Se realizó la búsqueda del cliente correctamente.", capturas, textos, nombre_automatizacion)
         
         # Presionar Enter para mostrar la lista
         buscar_cliente_input.send_keys(Keys.RETURN)
@@ -270,13 +270,14 @@ def asignar_cliente(driver, wait, capturas, textos, nombre_automatizacion, docum
         keyboard.press_and_release('enter')
         
         escribir_log(nombre_automatizacion, "Cliente seleccionado de la lista.")
-        tomar_captura(driver, "captura_cliente_seleccionado", "Cliente seleccionado correctamente de la lista.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_cliente_seleccionado", "Cliente seleccionado correctamente de la lista.", capturas, textos, nombre_automatizacion)
         
         boton_confirmar_cliente = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='BtnContinuarCliente']")))
         resaltar_elemento(driver, boton_confirmar_cliente)
         driver.execute_script("arguments[0].click();", boton_confirmar_cliente)
+        esperar_carga_desaparezca(driver, wait, nombre_automatizacion, "Confirmar cliente")
         escribir_log(nombre_automatizacion, "Cliente confirmado correctamente.")
-        tomar_captura(driver, "captura_confirmar_cliente", "Cliente confirmado correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_confirmar_cliente", "Cliente confirmado correctamente.", capturas, textos, nombre_automatizacion)
         time.sleep(0.5)
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException, WebDriverException) as e:
         escribir_log(nombre_automatizacion, f"Error al asignar cliente: {e}")
@@ -288,7 +289,7 @@ def facturar_venta(driver, wait, capturas, textos, nombre_automatizacion):
         resaltar_elemento(driver, facturar_venta)
         driver.execute_script("arguments[0].click();", facturar_venta)
         escribir_log(nombre_automatizacion, "Accedió a 'Facturar Venta' correctamente.")
-        tomar_captura(driver, "captura_facturar_venta", "Venta de fracciones facturada correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_facturar_venta", "Venta de fracciones facturada correctamente.", capturas, textos, nombre_automatizacion)
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException) as e:
         escribir_log(nombre_automatizacion, f"Error al facturar venta: {e}")
         raise
@@ -316,14 +317,14 @@ def realizar_pago(driver, wait, capturas, textos, nombre_automatizacion):
             escribir_log(nombre_automatizacion, "Error: El botón 'Facturar' se volvió obsoleto en el primer intento.")
             raise
 
-        tomar_captura(driver, "captura_pago", "Pago realizado correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_pago", "Pago realizado correctamente.", capturas, textos, nombre_automatizacion)
         esperar_carga_desaparezca(driver, wait, nombre_automatizacion, "realizar pago")
         try:
             escribir_log(nombre_automatizacion, "Realizando captura de confirmación de pago.")
             # Clic en "OK" para confirmar el pago
             ok_pago = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".swal-button")))
             resaltar_elemento(driver, ok_pago)
-            tomar_captura(driver, "captura_confirmacion_pago", "Confirmación de pago realizada correctamente.", capturas, textos, nombre_automatizacion)
+            tomar_captura(driver, "vc_captura_confirmacion_pago", "Confirmación de pago realizada correctamente.", capturas, textos, nombre_automatizacion)
             # Esperar a que el overlay de swal esté visible y clickeable
             driver.execute_script("arguments[0].click();", ok_pago)
             escribir_log(nombre_automatizacion, "Clic en 'OK' realizado correctamente.")
@@ -409,7 +410,7 @@ def capturar_numero_factura(driver, wait, capturas, textos, nombre_automatizacio
             escribir_log(nombre_automatizacion, f"Error al extraer el número de factura: {texto_factura}")
             raise ValueError("Formato de número de factura inválido")
 
-        tomar_captura(driver, "captura_factura_numero", "Número de factura mostrado correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_factura_numero", "Número de factura mostrado correctamente.", capturas, textos, nombre_automatizacion)
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException, AttributeError) as e:
         escribir_log(nombre_automatizacion, f"Error al capturar número de factura: {e}")
         raise
@@ -420,7 +421,7 @@ def cerrar_modal_factura(driver, wait, capturas, textos, nombre_automatizacion):
         resaltar_elemento(driver, cerrar_factura)
         driver.execute_script("arguments[0].click();", cerrar_factura)
         escribir_log(nombre_automatizacion, "Cerró la 'Factura de la Venta' correctamente.")
-        tomar_captura(driver, "captura_modal_cerrado", "Modal cerrado correctamente después de mostrar el número de factura.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_modal_cerrado", "Modal cerrado correctamente después de mostrar el número de factura.", capturas, textos, nombre_automatizacion)
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException) as e:
         escribir_log(nombre_automatizacion, f"Error al cerrar modal de factura: {e}")
         raise
@@ -438,7 +439,7 @@ def fraccion_venta_cliente(driver):
         venta_fracciones_cliente_info["timestamp"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         abrir_menu_lateral(driver, wait, nombre_automatizacion)
         mostrar_mensaje(driver, "Se realiza la venta de fracciones con cliente", nombre_automatizacion)
-        tomar_captura(driver, "captura_inicio_venta_fracciones", "Se inició el proceso de venta de fracciones con cliente correctamente.", capturas, textos, nombre_automatizacion)
+        tomar_captura(driver, "vc_captura_inicio_venta_fracciones", "Se inició el proceso de venta de fracciones con cliente correctamente.", capturas, textos, nombre_automatizacion)
 
         navegar_a_cajero(driver, wait, capturas, textos, nombre_automatizacion)
         navegar_a_ventas(driver, wait, capturas, textos, nombre_automatizacion)

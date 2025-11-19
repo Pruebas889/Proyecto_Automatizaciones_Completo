@@ -96,19 +96,21 @@ def abrir_menu_lateral(driver, wait, nombre_automatizacion):
 
 def navegar_a_reportes(driver, wait, capturas, textos, nombre_automatizacion):
     try:
-        menu_reportes = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/aside/section/ul/li[8]/a")))
+        xpath_menu_reportes = "//aside//a[.//span[normalize-space(text())='Reportes'] and .//i[contains(@class,'fa-bars')]]"
+        menu_reportes = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_menu_reportes)))
         resaltar_elemento(driver, menu_reportes)
-        escribir_log(nombre_automatizacion, "Accedió al módulo 'Reportes' correctamente.")
-        tomar_captura(driver, "captura_menu_reportes", "Acceso al módulo 'Reportes' realizado correctamente.", capturas, textos, nombre_automatizacion)
-        time.sleep(0.5)
         driver.execute_script("arguments[0].click();", menu_reportes)
+        escribir_log(nombre_automatizacion, "Accedió al menú 'Reportes' correctamente.")
+        tomar_captura(driver, "captura_menu_reportes", "Acceso al menú 'Reportes' realizado correctamente.", capturas, textos, nombre_automatizacion)
+        time.sleep(0.5)
     except (TimeoutException, NoSuchElementException, StaleElementReferenceException) as e:
         escribir_log(nombre_automatizacion, f"Error al navegar a 'Reportes': {e}")
         raise
 
 def navegar_a_reporte_ventas(driver, capturas, textos, wait, nombre_automatizacion):
     try:
-        reporte_ventas = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/aside/section/ul/li[8]/ul/li[11]/a")))
+        xpath_reporte_ventas = "//aside//a[contains(@href,'/reportes/reporte-de-ventas/consultar') and .//span[normalize-space(text())='Reporte De Ventas'] and .//i[contains(@class,'fa-usd')]]"
+        reporte_ventas = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_reporte_ventas)))
         resaltar_elemento(driver, reporte_ventas)
         driver.execute_script("arguments[0].click();", reporte_ventas)
         escribir_log(nombre_automatizacion, "Accedió al reporte de ventas correctamente.")

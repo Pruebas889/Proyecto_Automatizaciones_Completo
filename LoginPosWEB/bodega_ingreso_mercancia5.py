@@ -1,8 +1,8 @@
 """
 Script para automatizar el ingreso de mercancia a bodega 5
 """
-import time
 import os
+import time
 import logging
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait, Select
@@ -76,8 +76,10 @@ def tomar_captura(driver, nombre_archivo, texto, capturas, textos, nombre_automa
         driver.save_screenshot(ruta_captura)
         capturas.append(ruta_captura)
         textos.append(texto)
-        # escribir_log(nombre_automatizacion, f"Captura tomada: {ruta_captura}") # Agregar el texto a la lista de textos con nombre de captura
-        time.sleep(0.5)
+        # escribir_log(nombre_automatizacion, f"Captura tomada: {ruta_captura}") 
+        # Agregar el texto a la lista de textos con nombre de captura
+
+        time.sleep(1)
     except WebDriverException as e:
         escribir_log(nombre_automatizacion, f"Error al tomar captura {nombre_archivo}: {e}")
         raise

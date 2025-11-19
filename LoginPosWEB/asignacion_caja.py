@@ -158,7 +158,7 @@ def cerrar_caja(driver, wait, caja_id, capturas, textos, nombre_automatizacion):
         textos.append(f"Se hizo clic en 'Cerrar Caja {caja_id * 10}' y se muestra la ventana de confirmación.")
         escribir_log(nombre_automatizacion, f"Captura tomada: Ventana de confirmación para cerrar Caja {caja_id * 10}.")
         
-        confirmar = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[3]/div/div[4]/div[2]/button")))
+        confirmar = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(@class, 'swal-button--confirm')]")))
         resaltar_elemento(driver, confirmar)
         time.sleep(0.5)
         

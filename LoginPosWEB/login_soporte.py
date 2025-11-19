@@ -11,6 +11,10 @@ from selenium.webdriver.support.ui import Select
 from generacion_pdf import generar_pdf_consolidado, escribir_log  # Generador de PDF y logger
 import logging
 
+
+# Funciones auxiliares que sirven para resaltar elementos y manejar los procesos fundamentales de la automatizacion 
+# Tener en cuenta estos primeros (resaltar_elemento, mostrar_mensaje_inicio, capturar_pantalla y aunque no este en este mismo scripy tambien esta esperar_carga o algo asi  que sive para cuando sale el modal de carga)
+
 def resaltar_elemento(driver, elemento, color="red", grosor="3px", duracion_ms=1000):
     driver.execute_script(f"""
         var elem = arguments[0];

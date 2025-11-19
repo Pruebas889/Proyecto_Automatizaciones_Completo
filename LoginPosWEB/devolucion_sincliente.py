@@ -18,6 +18,10 @@ from selenium.common.exceptions import (
 from ventas_sincliente import venta_sin_cliente_info
 from generacion_pdf import generar_pdf_consolidado, escribir_log
 
+# Tiempo (segundos) para esperar que el loader/overlay desaparezcan.
+# Cambia este valor para reducir o aumentar los timeouts de espera de carga.
+CARGA_TIMEOUT = 15
+
 def resaltar_elemento(driver, elemento, color="green", grosor="4px", duracion_ms=2000):
     try:
         driver.execute_script(
@@ -86,8 +90,9 @@ def tomar_captura(driver, nombre_archivo, texto, capturas, textos, nombre_automa
 def esperar_carga_desaparezca(driver, nombre_automatizacion, contexto):
     try:
         escribir_log(nombre_automatizacion, f"Esperando a que desaparezca el gif de carga tras {contexto}.")
-        WebDriverWait(driver, 60).until(EC.invisibility_of_element_located((By.ID, "loading")))
-        WebDriverWait(driver, 60).until(EC.invisibility_of_element_located((By.CLASS_NAME, "swal-overlay")))
+        # Usar la constante CARGA_TIMEOUT para controlar fácilmente el tiempo de espera.
+        WebDriverWait(driver, CARGA_TIMEOUT).until(EC.invisibility_of_element_located((By.ID, "loading")))
+        WebDriverWait(driver, CARGA_TIMEOUT).until(EC.invisibility_of_element_located((By.CLASS_NAME, "swal-overlay")))
         escribir_log(nombre_automatizacion, f"Carga y overlay desaparecidos tras {contexto}.")
     except TimeoutException:
         escribir_log(nombre_automatizacion, f"Advertencia: Carga o overlay no desaparecieron tras {contexto}, continuando.")

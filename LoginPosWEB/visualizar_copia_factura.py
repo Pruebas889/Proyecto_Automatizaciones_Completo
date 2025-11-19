@@ -98,7 +98,7 @@ def tomar_captura(driver, nombre_archivo, texto, capturas, textos, nombre_automa
 
 def navegar_a_reportes(driver, wait, capturas, textos, nombre_automatizacion):
     try:
-        menu_reportes = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div/aside/section/ul/li[8]/a")))
+        menu_reportes = wait.until(EC.element_to_be_clickable((By.XPATH, "//aside//a[.//span[normalize-space(text())='Reportes'] and .//i[contains(@class,'fa-bars')]]")))
         resaltar_elemento(driver, menu_reportes)
         driver.execute_script("arguments[0].click();", menu_reportes)
         escribir_log(nombre_automatizacion, "Accedió al menú 'Reportes' correctamente.")
@@ -109,7 +109,7 @@ def navegar_a_reportes(driver, wait, capturas, textos, nombre_automatizacion):
 
 def navegar_a_facturas(driver, wait, capturas, textos, nombre_automatizacion):
     try:
-        menu_facturas = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div/aside/section/ul/li[8]/ul/li[4]/a")))
+        menu_facturas = wait.until(EC.element_to_be_clickable((By.XPATH, "//aside//a[contains(@href,'/reportes/facturas') and .//span[normalize-space(text())='Facturas'] and .//i[contains(@class,'fa-usd')]]")))
         resaltar_elemento(driver, menu_facturas)
         driver.execute_script("arguments[0].click();", menu_facturas)
         escribir_log(nombre_automatizacion, "Accedió al módulo 'Facturas' correctamente.")

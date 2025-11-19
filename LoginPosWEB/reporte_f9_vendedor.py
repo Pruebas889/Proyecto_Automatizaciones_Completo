@@ -97,7 +97,8 @@ def abrir_menu_lateral(driver, wait, nombre_automatizacion):
 
 def navegar_a_reportes(driver, wait, capturas, textos, nombre_automatizacion):
     try:
-        menu_reportes = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "body > div > aside > section > ul > li:nth-child(8) > a")))
+        xpath_menu_reportes = "//aside//a[.//span[normalize-space(text())='Reportes'] and .//i[contains(@class,'fa-bars')]]"
+        menu_reportes = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_menu_reportes)))
         resaltar_elemento(driver, menu_reportes)
         driver.execute_script("arguments[0].click();", menu_reportes)
         escribir_log(nombre_automatizacion, "Accedió al menú 'Reportes' correctamente.")
@@ -109,7 +110,8 @@ def navegar_a_reportes(driver, wait, capturas, textos, nombre_automatizacion):
 
 def seleccionar_reporte_f9(driver, wait, capturas, textos, nombre_automatizacion):
     try:
-        menu_reporte_f9 = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "body > div > aside > section > ul > li.active > ul > li:nth-child(12) > a")))
+        xpath_menu_reporte_f9 = "//aside//a[contains(@href,'/reportes/reporte-f9/generar') and .//span[normalize-space(text())='Reporte F9'] and .//i[contains(@class,'fa-usd')]]"
+        menu_reporte_f9 = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_menu_reporte_f9)))
         resaltar_elemento(driver, menu_reporte_f9)
         driver.execute_script("arguments[0].click();", menu_reporte_f9)
         escribir_log(nombre_automatizacion, "Accedió a 'Reporte F9' correctamente.")

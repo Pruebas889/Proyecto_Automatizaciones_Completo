@@ -95,7 +95,7 @@ def realizar_logout(driver, wait, nombre_automatizacion):
 def generar_pdf(capturas, textos, nombre_automatizacion):
     """Genera un PDF consolidado con las capturas y textos."""
     try:
-        generar_pdf_consolidado("logout_usuario_soporte_pdf", capturas, textos)
+        generar_pdf_consolidado("logout_usuario_administrador_pdf", capturas, textos)
         escribir_log(nombre_automatizacion, "PDF consolidado generado exitosamente")
     except Exception as e:
         escribir_log(nombre_automatizacion, f"Error al generar el PDF consolidado: {e}")
@@ -108,7 +108,7 @@ def logout_posweb(driver):
     wait = WebDriverWait(driver, 20)
     capturas = []
     textos = []
-    nombre_automatizacion = "logout_usuario_soporte_pdf"
+    nombre_automatizacion = "logout_usuario_administrador_pdf"
 
     try:
         mostrar_mensaje_inicio(driver, nombre_automatizacion)

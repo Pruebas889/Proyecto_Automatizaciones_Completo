@@ -16,6 +16,7 @@ from selenium.common.exceptions import (
 )
 from generacion_pdf import generar_pdf_consolidado, escribir_log
 
+
 # Global variable to store inventory dispatch information
 salida_mercancia7_info = {}
 

@@ -1,8 +1,8 @@
 """
 Script para automatizar el ingreso de mercancia a bodega 8
 """
-import time
 import os
+import time
 import logging
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait, Select
@@ -76,8 +76,10 @@ def tomar_captura(driver, nombre_archivo, texto, capturas, textos, nombre_automa
         driver.save_screenshot(ruta_captura)
         capturas.append(ruta_captura)
         textos.append(texto)
-        # escribir_log(nombre_automatizacion, f"Captura tomada: {ruta_captura}") # Agregar el texto a la lista de textos con nombre de captura
-        time.sleep(0.5)
+        # escribir_log(nombre_automatizacion, f"Captura tomada: {ruta_captura}") 
+        # Agregar el texto a la lista de textos con nombre de captura
+
+        time.sleep(1)
     except WebDriverException as e:
         escribir_log(nombre_automatizacion, f"Error al tomar captura {nombre_archivo}: {e}")
         raise
@@ -267,7 +269,7 @@ def ingreso_mercancia8(driver, codigo_producto="12957", tipo_transaccion_index=1
         
         generar_pdf_consolidado(nombre_automatizacion, capturas, textos)
         escribir_log(nombre_automatizacion, "PDF consolidado generado exitosamente.")
-        print(f"Detalles del ingreso de mercancía: Código producto: {ingreso_mercancia8_info.get('codigo_prodcto', 'No capturado')}, "
+        print(f"Detalles del ingreso de mercancía: Código producto: {ingreso_mercancia8_info.get('codigo_producto', 'No capturado')}, "
               f"Tipo de transacción: {ingreso_mercancia8_info.get('tipo_transaccion', 'No capturado')}, "
               f"Tipo de causal: {ingreso_mercancia8_info.get('tipo_causal', 'No capturado')}, "
               f"Unidades: {ingreso_mercancia8_info.get('unidades', 'No capturado')}")
@@ -276,4 +278,3 @@ def ingreso_mercancia8(driver, codigo_producto="12957", tipo_transaccion_index=1
         escribir_log(nombre_automatizacion, f"Error durante el proceso de ingreso de mercancía: {e}")
         logging.error(f"❌ Error durante el proceso: {e}")
         raise
-

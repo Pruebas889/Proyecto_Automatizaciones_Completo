@@ -2,7 +2,6 @@
 import time
 import os
 import logging
-import keyboard
 from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -158,6 +157,7 @@ def asignar_cliente(driver, wait, capturas, textos, nombre_automatizacion, docum
         resaltar_elemento(driver, boton_cliente)
         driver.execute_script("arguments[0].click();", boton_cliente)
         escribir_log(nombre_automatizacion, "Accedió a la sección 'Cliente'.")
+        time.sleep(1.2)
         tomar_captura(driver, "captura_cliente", "Se accedió correctamente a la sección 'Cliente'.", capturas, textos, nombre_automatizacion)
         
         descuento_cliente = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='OmitirCliente']")))
@@ -172,15 +172,8 @@ def asignar_cliente(driver, wait, capturas, textos, nombre_automatizacion, docum
         escribir_log(nombre_automatizacion, f"Cliente {documento_cliente} buscado correctamente.")
         tomar_captura(driver, "captura_buscar_cliente", "Se realizó la búsqueda del cliente correctamente.", capturas, textos, nombre_automatizacion)
         
-        # Presionar Enter para mostrar la lista
-        buscar_cliente_input.send_keys(Keys.RETURN)
-        time.sleep(0.5)
-        
-        # Usar keyboard para simular la tecla flecha abajo y enter
-        keyboard.press_and_release('down')
-        time.sleep(0.5)
-        keyboard.press_and_release('enter')
-        
+        actions = ActionChains(driver)
+        actions.send_keys(Keys.RETURN).pause(0.5).send_keys(Keys.ARROW_DOWN).pause(0.5).send_keys(Keys.RETURN).perform()
         escribir_log(nombre_automatizacion, "Cliente seleccionado de la lista.")
         tomar_captura(driver, "captura_cliente_seleccionado", "Cliente seleccionado correctamente de la lista.", capturas, textos, nombre_automatizacion)
         
