@@ -5,5 +5,5 @@
    Use a production WSGI server instead.
  * Debug mode: off
 2025-10-08 12:02:03,100 - INFO -  * Running on http://172.26.160.1:5004/ (Press CTRL+C to quit)
-2025-10-08 12:02:03,204 - INFO - Acceso no autorizado, redirigiendo a http://192.168.21.37:5000
+2025-10-08 12:02:03,204 - INFO - Acceso no autorizado, redirigiendo a http://192.168.21.56:5000
 2025-10-08 12:02:03,205 - INFO - 172.26.160.1 - - [08/Oct/2025 12:02:03] "[32mGET / HTTP/1.1[0m" 302 -

@@ -1,0 +1,1098 @@
+2025-11-27 13:54:33,713 - INFO - No se pasaron URLs; se usarán 3 URLs de prueba por defecto.
+2025-11-27 13:54:33,714 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 13:54:33,714 - INFO - ====== WebDriver manager ======
+2025-11-27 13:54:35,292 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 13:54:36,443 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 13:54:37,452 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 13:54:39,579 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 13:54:48,126 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 13:54:48,528 - INFO - Correo ingresado.
+2025-11-27 13:54:48,596 - INFO - Botón 'Continue' clickeado.
+2025-11-27 13:54:49,314 - INFO - Contraseña ingresada.
+2025-11-27 13:54:49,371 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 13:54:50,372 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 13:55:01,340 - INFO - Esperando selector div#task_pane_assignee_input para asignar david.forero.cop@gmail.com...
+2025-11-27 13:55:06,428 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 13:55:06,428 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:55:06,512 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 13:55:06,512 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:55:06,551 - INFO - Responsable establecido correctamente: david.forero.cop@gmail.com
+2025-11-27 13:55:06,551 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 13:55:09,300 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 13:55:09,300 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 13:55:09,979 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 13:55:10,552 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 13:55:11,017 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 13:55:11,018 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 13:55:11,018 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 13:55:17,011 - INFO - Esperando selector div#task_pane_assignee_input para asignar david.forero.cop@gmail.com...
+2025-11-27 13:55:22,083 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 13:55:22,084 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:55:22,145 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 13:55:22,145 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:55:22,169 - WARNING - Responsable detectado diferente: 'Manuel Alejandro Villota Insuasty' (esperado 'david.forero.cop@gmail.com').
+2025-11-27 13:55:22,170 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 13:55:22,171 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 13:55:24,695 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 13:55:24,720 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 13:55:25,499 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 13:55:26,067 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 13:55:26,528 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 13:55:26,528 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 13:55:26,528 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 13:55:31,729 - INFO - Esperando selector div#task_pane_assignee_input para asignar david.forero.cop@gmail.com...
+2025-11-27 13:55:36,386 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 13:55:36,386 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:55:36,449 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 13:55:36,449 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:55:36,471 - WARNING - Responsable detectado diferente: 'Manuel Alejandro Villota Insuasty' (esperado 'david.forero.cop@gmail.com').
+2025-11-27 13:55:36,472 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 13:55:36,473 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 13:55:38,938 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 13:55:38,938 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 13:55:39,615 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 13:55:40,205 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 13:55:40,675 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 13:55:40,676 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 13:57:48,682 - INFO - No se pasaron URLs; se usarán 3 URLs de prueba por defecto.
+2025-11-27 13:57:48,683 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 13:57:48,684 - INFO - ====== WebDriver manager ======
+2025-11-27 13:57:50,368 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 13:57:51,321 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 13:57:52,278 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 13:57:53,694 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 13:58:28,310 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 13:58:28,685 - INFO - Correo ingresado.
+2025-11-27 13:58:28,770 - INFO - Botón 'Continue' clickeado.
+2025-11-27 13:58:29,512 - INFO - Contraseña ingresada.
+2025-11-27 13:58:29,566 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 13:58:30,567 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 13:58:41,268 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 13:58:46,640 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 13:58:46,640 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:58:46,733 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 13:58:46,734 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:58:46,772 - WARNING - Responsable detectado diferente: 'Yesid Sánchez Salcedo' (esperado 'yesid.sanchez@copservir.co').
+2025-11-27 13:58:46,772 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 13:58:46,773 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 13:58:49,332 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 13:58:49,332 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 13:58:50,065 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 13:58:50,731 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 13:58:51,271 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 13:58:51,272 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 13:58:51,272 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 13:58:57,233 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 13:59:02,269 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 13:59:02,269 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:59:02,327 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 13:59:02,327 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:59:02,355 - WARNING - Responsable detectado diferente: 'Yesid Sánchez Salcedo' (esperado 'yesid.sanchez@copservir.co').
+2025-11-27 13:59:02,356 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 13:59:02,357 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 13:59:04,874 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 13:59:04,875 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 13:59:05,546 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 13:59:06,114 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 13:59:06,637 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 13:59:06,638 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 13:59:06,638 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 13:59:11,630 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 13:59:16,314 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 13:59:16,315 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:59:16,400 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 13:59:16,400 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 13:59:16,422 - WARNING - Responsable detectado diferente: 'Manuel Alejandro Villota Insuasty' (esperado 'yesid.sanchez@copservir.co').
+2025-11-27 13:59:16,422 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 13:59:16,423 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 13:59:18,924 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 13:59:18,925 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 13:59:19,589 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 13:59:20,154 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 13:59:20,672 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 13:59:20,673 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:04:15,741 - INFO - No se pasaron URLs; se usarán 3 URLs de prueba por defecto.
+2025-11-27 14:04:15,741 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 14:04:15,742 - INFO - ====== WebDriver manager ======
+2025-11-27 14:04:17,671 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:04:18,993 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:04:21,140 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 14:04:22,796 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 14:04:37,898 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:04:38,357 - INFO - Correo ingresado.
+2025-11-27 14:04:38,422 - INFO - Botón 'Continue' clickeado.
+2025-11-27 14:04:39,394 - INFO - Contraseña ingresada.
+2025-11-27 14:04:39,493 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 14:04:40,494 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:04:54,874 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:04:59,708 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 14:04:59,709 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:04:59,809 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 14:04:59,810 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:04:59,861 - WARNING - Responsable detectado diferente: 'Yesid Sánchez Salcedo' (esperado 'yesid.sanchez@copservir.co'). Intentando reintento...
+2025-11-27 14:04:59,862 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:05:04,367 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:05:08,614 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:05:08,615 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:05:08,622 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:05:11,258 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:05:11,262 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:05:11,987 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:05:12,597 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:05:13,067 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:05:13,068 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:05:13,068 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:05:19,938 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:05:25,706 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 14:05:25,706 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:05:25,782 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 14:05:25,782 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:05:25,808 - WARNING - Responsable detectado diferente: 'Yesid Sánchez Salcedo' (esperado 'yesid.sanchez@copservir.co'). Intentando reintento...
+2025-11-27 14:05:25,808 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:05:30,209 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:05:34,561 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:05:34,561 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:05:34,562 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:05:37,077 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:05:37,078 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:05:37,779 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:05:38,357 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:05:38,823 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:05:38,823 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:05:38,824 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:05:41,265 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:05:46,702 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 14:05:46,703 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:05:46,774 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 14:05:46,774 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:05:46,944 - WARNING - Responsable detectado diferente: 'Manuel Alejandro Villota Insuasty' (esperado 'yesid.sanchez@copservir.co'). Intentando reintento...
+2025-11-27 14:05:46,950 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:05:46,983 - WARNING - Error en reintento asignación: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xc14103
+	0xc14144
+	0xa1e71d
+	0xa25493
+	0xa27b04
+	0xaafe34
+	0xa8c90c
+	0xaaee17
+	0xa8c706
+	0xa5da30
+	0xa5ed54
+	0xe857b4
+	0xe8098a
+	0xc3c392
+	0xc2c4c8
+	0xc3324d
+	0xc1c478
+	0xc1c63c
+	0xc067ca
+	0x75d45d49
+	0x7763d6db
+	0x7763d661
+
+2025-11-27 14:05:46,984 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:05:47,008 - WARNING - Error en reintento asignación: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xc14103
+	0xc14144
+	0xa1e71d
+	0xa25493
+	0xa27b04
+	0xaafe34
+	0xa8c90c
+	0xaaee17
+	0xa8c706
+	0xa5da30
+	0xa5ed54
+	0xe857b4
+	0xe8098a
+	0xc3c392
+	0xc2c4c8
+	0xc3324d
+	0xc1c478
+	0xc1c63c
+	0xc067ca
+	0x75d45d49
+	0x7763d6db
+	0x7763d661
+
+2025-11-27 14:05:47,009 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:05:47,010 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:05:47,010 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:05:49,514 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:05:49,515 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:05:50,209 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:05:50,793 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:05:51,264 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:05:51,264 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:15:18,599 - INFO - No se pasaron URLs; se usarán 3 URLs de prueba por defecto.
+2025-11-27 14:15:18,600 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 14:15:18,601 - INFO - ====== WebDriver manager ======
+2025-11-27 14:15:20,603 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:15:22,054 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:15:23,757 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 14:15:25,421 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 14:16:01,123 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:16:01,611 - INFO - Correo ingresado.
+2025-11-27 14:16:01,688 - INFO - Botón 'Continue' clickeado.
+2025-11-27 14:16:02,484 - INFO - Contraseña ingresada.
+2025-11-27 14:16:02,549 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 14:16:03,549 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:16:11,530 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:16:17,097 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 14:16:17,098 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:16:17,183 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 14:16:17,183 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:16:17,224 - WARNING - Responsable detectado diferente: 'Yesid Sánchez Salcedo' (esperado 'yesid.sanchez@copservir.co'). Intentando reintento...
+2025-11-27 14:16:17,224 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:16:21,605 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:16:26,267 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:16:26,268 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:16:26,268 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:16:29,242 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:16:29,242 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:16:29,976 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:16:30,572 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:16:31,049 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:16:31,050 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:16:31,050 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:16:38,153 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:16:44,089 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 14:16:44,089 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:16:44,164 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 14:16:44,164 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:16:44,195 - WARNING - Responsable detectado diferente: 'Yesid Sánchez Salcedo' (esperado 'yesid.sanchez@copservir.co'). Intentando reintento...
+2025-11-27 14:16:44,195 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:16:48,582 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:16:52,969 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:16:52,970 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:16:52,970 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:16:55,537 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:16:55,537 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:16:56,252 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:16:56,846 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:16:57,330 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:16:57,330 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:16:57,331 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:16:59,543 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 14:16:59,545 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:17:04,941 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; no se seleccionará ninguna para evitar errores.
+2025-11-27 14:17:04,941 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:17:05,018 - WARNING - No se encontró una sugerencia que coincida exactamente con el correo; candidatos: []
+2025-11-27 14:17:05,019 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:17:05,020 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 14:17:05,021 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 14:17:05,050 - WARNING - Responsable detectado diferente: 'Manuel Alejandro Villota Insuasty' (esperado 'yesid.sanchez@copservir.co'). Intentando reintento...
+2025-11-27 14:17:05,050 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:17:09,730 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:17:14,339 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:17:14,339 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:17:14,340 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:17:16,941 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:17:16,941 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:17:17,692 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:17:18,283 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:17:18,751 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:17:18,752 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:20:43,429 - INFO - No se pasaron URLs; se usarán 3 URLs de prueba por defecto.
+2025-11-27 14:20:43,430 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 14:20:43,430 - INFO - ====== WebDriver manager ======
+2025-11-27 14:20:45,276 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:20:46,575 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:20:47,802 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 14:20:49,332 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 14:21:00,662 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:21:01,122 - INFO - Correo ingresado.
+2025-11-27 14:21:01,190 - INFO - Botón 'Continue' clickeado.
+2025-11-27 14:21:01,950 - INFO - Contraseña ingresada.
+2025-11-27 14:21:02,034 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 14:21:03,035 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:21:06,197 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:21:20,714 - ERROR - Error inesperado al asignar responsable: 'NoneType' object has no attribute 'is_displayed'
+2025-11-27 14:21:20,733 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:21:20,734 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:21:20,758 - ERROR - Error inesperado al establecer fecha de entrega: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xc14103
+	0xc14144
+	0xa1e71d
+	0x9fc32d
+	0xa9329e
+	0xaae749
+	0xa8c706
+	0xa5da30
+	0xa5ed54
+	0xe857b4
+	0xe8098a
+	0xc3c392
+	0xc2c4c8
+	0xc3324d
+	0xc1c478
+	0xc1c63c
+	0xc067ca
+	0x75d45d49
+	0x7763d6db
+	0x7763d661
+
+2025-11-27 14:21:20,760 - WARNING - No se pudo fijar fecha en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:21:20,761 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:21:20,767 - ERROR - Error al convertir la tarea a Aprobación: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xc14103
+	0xc14144
+	0xa1e71d
+	0x9fc32d
+	0xa9329e
+	0xaae749
+	0xa8c706
+	0xa5da30
+	0xa5ed54
+	0xe857b4
+	0xe8098a
+	0xc3c392
+	0xc2c4c8
+	0xc3324d
+	0xc1c478
+	0xc1c63c
+	0xc067ca
+	0x75d45d49
+	0x7763d6db
+	0x7763d661
+
+2025-11-27 14:21:20,795 - ERROR - No se pudo convertir a Aprobación en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:21:20,795 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:21:20,797 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:21:20,801 - ERROR - Excepción al procesar https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xc14103
+	0xc14144
+	0xa1e71d
+	0x9fc32d
+	0xa9329e
+	0xaae749
+	0xa8c706
+	0xa5da30
+	0xa5ed54
+	0xe857b4
+	0xe8098a
+	0xc3c392
+	0xc2c4c8
+	0xc3324d
+	0xc1c478
+	0xc1c63c
+	0xc067ca
+	0x75d45d49
+	0x7763d6db
+	0x7763d661
+
+2025-11-27 14:21:20,816 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:21:20,826 - ERROR - Excepción al procesar https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xc14103
+	0xc14144
+	0xa1e71d
+	0x9fc32d
+	0xa9329e
+	0xaae749
+	0xa8c706
+	0xa5da30
+	0xa5ed54
+	0xe857b4
+	0xe8098a
+	0xc3c392
+	0xc2c4c8
+	0xc3324d
+	0xc1c478
+	0xc1c63c
+	0xc067ca
+	0x75d45d49
+	0x7763d6db
+	0x7763d661
+
+2025-11-27 14:21:26,987 - INFO - No se pasaron URLs; se usarán 3 URLs de prueba por defecto.
+2025-11-27 14:21:26,990 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 14:21:26,991 - INFO - ====== WebDriver manager ======
+2025-11-27 14:21:28,843 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:21:30,151 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:21:31,455 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 14:21:33,108 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 14:22:36,010 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:22:36,512 - INFO - Correo ingresado.
+2025-11-27 14:22:36,594 - INFO - Botón 'Continue' clickeado.
+2025-11-27 14:22:37,407 - INFO - Contraseña ingresada.
+2025-11-27 14:22:37,476 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 14:22:38,477 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:22:50,604 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:22:57,202 - WARNING - No se pudo leer la etiqueta del responsable tras la asignación. Intentando reintento...
+2025-11-27 14:22:57,203 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:23:02,705 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:23:07,077 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:23:07,078 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:23:07,078 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:23:09,727 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:23:09,729 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:23:10,469 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:23:11,072 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:23:11,542 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:23:11,542 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:23:11,543 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:23:12,715 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:23:24,426 - WARNING - No se pudo leer la etiqueta del responsable tras la asignación. Intentando reintento...
+2025-11-27 14:23:24,427 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:23:30,061 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:23:34,518 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:23:34,518 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:23:34,519 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:23:36,117 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:23:36,118 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:23:36,870 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:23:37,459 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:23:37,926 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:23:37,927 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:23:37,927 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:23:44,147 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 14:23:44,148 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:23:49,867 - WARNING - No se pudo leer la etiqueta del responsable tras la asignación. Intentando reintento...
+2025-11-27 14:23:49,868 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:23:55,216 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:23:59,583 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:23:59,583 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:23:59,589 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:24:02,196 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:24:02,197 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:24:02,902 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:24:03,495 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:24:03,961 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:24:03,962 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:26:51,967 - INFO - No se pasaron URLs; se usarán 3 URLs de prueba por defecto.
+2025-11-27 14:26:51,968 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 14:26:51,969 - INFO - ====== WebDriver manager ======
+2025-11-27 14:26:54,070 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:26:55,415 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:26:56,791 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 14:26:58,471 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 14:28:00,946 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:28:01,466 - INFO - Correo ingresado.
+2025-11-27 14:28:01,569 - INFO - Botón 'Continue' clickeado.
+2025-11-27 14:28:02,823 - INFO - Contraseña ingresada.
+2025-11-27 14:28:02,889 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 14:28:03,891 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:28:11,417 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:28:20,590 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:28:23,303 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:28:23,341 - WARNING - Responsable detectado diferente: 'Yesid Sánchez Salcedo' (esperado 'yesid.sanchez@copservir.co'). Intentando reintento...
+2025-11-27 14:28:23,342 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:28:27,649 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:28:31,948 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:28:31,949 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:28:31,950 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:28:34,546 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:28:34,546 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:28:35,284 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:28:35,884 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:28:36,360 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:28:36,364 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:28:36,365 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:28:43,134 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:28:51,764 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:28:54,523 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:28:54,548 - WARNING - Responsable detectado diferente: 'Yesid Sánchez Salcedo' (esperado 'yesid.sanchez@copservir.co'). Intentando reintento...
+2025-11-27 14:28:54,551 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:28:59,181 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:29:03,594 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:29:03,594 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:29:03,595 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:29:06,199 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:29:06,199 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:29:06,908 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:29:07,495 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:29:07,986 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:29:07,987 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:29:07,988 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:29:10,453 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 14:29:10,454 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:29:18,458 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:29:21,139 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:29:21,140 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 14:29:21,181 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 14:29:21,214 - WARNING - Responsable detectado diferente: 'Yesid Sánchez Salcedo' (esperado 'yesid.sanchez@copservir.co'). Intentando reintento...
+2025-11-27 14:29:21,215 - INFO - Reintento 1: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:29:25,661 - INFO - Reintento 2: intentando reasignar yesid.sanchez@copservir.co...
+2025-11-27 14:29:30,151 - ERROR - No fue posible asignar el responsable con el correo solicitado después de reintentos.
+2025-11-27 14:29:30,152 - ERROR - Fallo al asignar responsable en https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:29:30,152 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:29:32,784 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:29:32,784 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:29:33,490 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:29:34,216 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:29:34,686 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:29:34,687 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:37:49,495 - INFO - No se pasaron URLs; se usarán 3 URLs de prueba por defecto.
+2025-11-27 14:37:49,496 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 14:37:49,496 - INFO - ====== WebDriver manager ======
+2025-11-27 14:37:51,502 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:37:52,898 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 14:37:54,268 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 14:37:55,785 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 14:38:31,480 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:38:31,867 - INFO - Correo ingresado.
+2025-11-27 14:38:31,932 - INFO - Botón 'Continue' clickeado.
+2025-11-27 14:38:32,695 - INFO - Contraseña ingresada.
+2025-11-27 14:38:32,762 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 14:38:33,763 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:38:45,862 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:38:54,398 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:38:57,071 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:38:57,109 - INFO - Responsable detectado por nombre: Yesid Sánchez Salcedo — se considera asignado.
+2025-11-27 14:38:57,110 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:38:59,927 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:38:59,927 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:39:00,682 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:39:01,302 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:39:01,797 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:39:01,798 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 14:39:01,799 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:39:08,809 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:39:16,690 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:39:19,295 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:39:19,323 - INFO - Responsable detectado por nombre: Yesid Sánchez Salcedo — se considera asignado.
+2025-11-27 14:39:19,324 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:39:21,905 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:39:21,906 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:39:22,763 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:39:23,350 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:39:23,820 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:39:23,820 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 14:39:23,821 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 14:39:30,087 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 14:39:30,088 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 14:39:37,736 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:39:40,684 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 14:39:40,684 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 14:39:40,720 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 14:39:40,752 - INFO - Responsable detectado por nombre: Yesid Sánchez Salcedo — se considera asignado.
+2025-11-27 14:39:40,753 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 14:39:43,363 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 14:39:43,363 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 14:39:44,083 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 14:39:44,669 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 14:39:45,140 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 14:39:45,141 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 15:01:51,734 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:01:51,787 - INFO -  * Restarting with stat
+2025-11-27 15:01:52,358 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:01:52,373 - WARNING -  * Debugger is active!
+2025-11-27 15:01:52,377 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 15:01:53,361 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 15:01:53,362 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 15:01:58,546 - INFO - Acceso no autorizado, redirigiendo a http://192.168.21.37:5000
+2025-11-27 15:01:58,550 - INFO - 192.168.21.30 - - [27/Nov/2025 15:01:58] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-27 15:02:56,981 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:02:57,013 - INFO -  * Restarting with stat
+2025-11-27 15:02:57,819 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:02:57,838 - WARNING -  * Debugger is active!
+2025-11-27 15:02:57,842 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 15:02:58,250 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 15:02:58,251 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 15:03:01,357 - INFO - 192.168.21.30 - - [27/Nov/2025 15:03:01] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-27 15:03:01,607 - INFO - 192.168.21.30 - - [27/Nov/2025 15:03:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-27 15:05:37,362 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:05:37,405 - INFO -  * Restarting with stat
+2025-11-27 15:05:38,197 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:05:38,213 - WARNING -  * Debugger is active!
+2025-11-27 15:05:38,221 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 15:05:38,944 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 15:05:38,945 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 15:05:42,741 - INFO - 192.168.21.30 - - [27/Nov/2025 15:05:42] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-27 15:07:46,752 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:07:46,803 - INFO -  * Restarting with stat
+2025-11-27 15:07:47,666 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:07:47,687 - WARNING -  * Debugger is active!
+2025-11-27 15:07:47,696 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 15:07:48,237 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 15:07:48,239 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 15:07:52,156 - INFO - 192.168.21.30 - - [27/Nov/2025 15:07:52] "GET / HTTP/1.1" 200 -
+2025-11-27 15:07:55,131 - INFO - Iniciando automatización para Sprint 1, 2025-11-27 al 2025-12-04
+2025-11-27 15:07:55,132 - INFO - Ejecutando comando: ['C:\\Users\\dforero\\AppData\\Local\\Programs\\Python\\Python313\\python.exe', 'c:\\Users\\dforero\\Pictures\\Aprobados\\aprobado.py']
+2025-11-27 15:07:56,266 - INFO - No se pasaron URLs; se usarán 3 URLs de prueba por defecto.
+2025-11-27 15:07:56,266 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 15:07:56,266 - INFO - ====== WebDriver manager ======
+2025-11-27 15:07:58,315 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:07:59,760 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:08:01,115 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 15:08:02,668 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 15:08:38,058 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:08:38,600 - INFO - Correo ingresado.
+2025-11-27 15:08:38,754 - INFO - Botón 'Continue' clickeado.
+2025-11-27 15:08:39,584 - INFO - Contraseña ingresada.
+2025-11-27 15:08:39,712 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 15:08:40,713 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:08:54,407 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 15:09:03,564 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:09:06,351 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:09:06,386 - INFO - Responsable detectado por nombre: Yesid Sánchez Salcedo — se considera asignado.
+2025-11-27 15:09:06,386 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:09:09,064 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:09:09,064 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:09:09,798 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:09:10,398 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:09:10,883 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:09:10,883 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:09:10,884 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 15:09:19,534 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 15:09:27,771 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:09:30,936 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:09:30,969 - INFO - Responsable detectado por nombre: Yesid Sánchez Salcedo — se considera asignado.
+2025-11-27 15:09:30,969 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:09:33,597 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:09:33,597 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:09:34,331 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:09:34,921 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:09:35,397 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:09:35,397 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 15:09:35,397 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 15:09:41,925 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 15:09:41,925 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 15:09:50,064 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:09:52,820 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:09:52,821 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 15:09:52,855 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 15:09:52,887 - INFO - Responsable detectado por nombre: Yesid Sánchez Salcedo — se considera asignado.
+2025-11-27 15:09:52,887 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:09:55,710 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:09:55,710 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:09:56,427 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:09:57,025 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:09:57,493 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:09:57,493 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 15:10:00,172 - INFO - `aprobado.py` finalizó con código 0
+2025-11-27 15:10:00,173 - INFO - 192.168.21.30 - - [27/Nov/2025 15:10:00] "POST /run HTTP/1.1" 200 -
+2025-11-27 15:20:23,637 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:20:23,693 - INFO -  * Restarting with stat
+2025-11-27 15:20:24,465 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:20:24,484 - WARNING -  * Debugger is active!
+2025-11-27 15:20:24,490 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 15:20:25,002 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 15:20:25,003 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 15:20:28,204 - INFO - 192.168.21.30 - - [27/Nov/2025 15:20:28] "GET / HTTP/1.1" 200 -
+2025-11-27 15:21:48,596 - INFO - Iniciando automatización para Sprint 1, 2025-11-27 al 2025-12-04
+2025-11-27 15:21:48,597 - INFO - Ejecutando comando: ['C:\\Users\\dforero\\AppData\\Local\\Programs\\Python\\Python313\\python.exe', 'c:\\Users\\dforero\\Pictures\\Aprobados\\aprobado.py', '--urls', 'https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true,https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true,https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true']
+2025-11-27 15:21:49,772 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 15:21:49,772 - INFO - ====== WebDriver manager ======
+2025-11-27 15:21:51,727 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:21:53,253 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:21:54,552 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 15:21:56,132 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 15:22:30,916 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:22:31,485 - INFO - Correo ingresado.
+2025-11-27 15:22:31,748 - INFO - Botón 'Continue' clickeado.
+2025-11-27 15:22:32,529 - INFO - Contraseña ingresada.
+2025-11-27 15:22:32,614 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 15:22:33,615 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:22:47,014 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 15:22:56,680 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:22:59,768 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:22:59,800 - INFO - Responsable detectado por nombre: Yesid Sánchez Salcedo — se considera asignado.
+2025-11-27 15:22:59,800 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:23:01,422 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:23:01,423 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:23:02,148 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:23:02,750 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:23:03,236 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:23:03,236 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:23:03,237 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 15:23:11,399 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 15:23:19,804 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:23:22,558 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:23:22,600 - INFO - Responsable detectado por nombre: Yesid Sánchez Salcedo — se considera asignado.
+2025-11-27 15:23:22,600 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:23:25,174 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:23:25,174 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:23:25,877 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:23:26,480 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:23:26,949 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:23:26,949 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 15:23:26,950 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 15:23:33,531 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 15:23:33,531 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 15:23:42,164 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:23:44,910 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:23:44,911 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 15:23:44,947 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 15:23:44,973 - INFO - Responsable detectado por nombre: Yesid Sánchez Salcedo — se considera asignado.
+2025-11-27 15:23:44,973 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:23:47,627 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:23:47,627 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:23:48,396 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:23:49,029 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:23:49,508 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:23:49,508 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 15:23:52,242 - INFO - `aprobado.py` finalizó con código 0
+2025-11-27 15:23:52,244 - INFO - 192.168.21.30 - - [27/Nov/2025 15:23:52] "POST /run HTTP/1.1" 200 -
+2025-11-27 15:24:20,075 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:24:20,126 - INFO -  * Restarting with stat
+2025-11-27 15:24:20,972 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:24:20,999 - WARNING -  * Debugger is active!
+2025-11-27 15:24:21,003 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 15:24:21,568 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 15:24:21,569 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 15:24:28,156 - INFO - 192.168.21.30 - - [27/Nov/2025 15:24:28] "GET / HTTP/1.1" 200 -
+2025-11-27 15:24:38,510 - INFO - Iniciando automatización para Sprint 1, 2025-11-27 al 2025-12-04
+2025-11-27 15:24:38,511 - INFO - Ejecutando comando: ['C:\\Users\\dforero\\AppData\\Local\\Programs\\Python\\Python313\\python.exe', 'c:\\Users\\dforero\\Pictures\\Aprobados\\aprobado.py', '--urls', 'https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true']
+2025-11-27 15:24:39,584 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 15:24:39,584 - INFO - ====== WebDriver manager ======
+2025-11-27 15:24:41,871 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:24:43,282 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:24:44,638 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 15:24:46,133 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 15:24:53,174 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:24:53,671 - INFO - Correo ingresado.
+2025-11-27 15:24:53,799 - INFO - Botón 'Continue' clickeado.
+2025-11-27 15:24:54,609 - INFO - Contraseña ingresada.
+2025-11-27 15:24:54,681 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 15:24:55,681 - INFO - Procesando 1/1: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:25:09,070 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 15:25:09,071 - INFO - Esperando selector div#task_pane_assignee_input para asignar yesid.sanchez@copservir.co...
+2025-11-27 15:25:18,100 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:25:21,026 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:25:21,027 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 15:25:21,059 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 15:25:21,093 - INFO - Responsable detectado por nombre: Yesid Sánchez Salcedo — se considera asignado.
+2025-11-27 15:25:21,093 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:25:23,732 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:25:23,732 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:25:24,503 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:25:25,091 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:25:25,563 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:25:25,563 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:25:28,260 - INFO - `aprobado.py` finalizó con código 0
+2025-11-27 15:25:28,261 - INFO - 192.168.21.30 - - [27/Nov/2025 15:25:28] "POST /run HTTP/1.1" 200 -
+2025-11-27 15:35:51,614 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:35:51,648 - INFO -  * Restarting with stat
+2025-11-27 15:35:52,290 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:35:52,305 - WARNING -  * Debugger is active!
+2025-11-27 15:35:52,310 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 15:35:52,727 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 15:35:52,728 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 15:35:55,313 - INFO - 192.168.21.30 - - [27/Nov/2025 15:35:55] "GET / HTTP/1.1" 200 -
+2025-11-27 15:36:56,775 - INFO - Iniciando automatización para Sprint 1, 2025-11-27 al 2025-12-04
+2025-11-27 15:36:56,776 - INFO - Ejecutando comando: ['C:\\Users\\dforero\\AppData\\Local\\Programs\\Python\\Python313\\python.exe', 'c:\\Users\\dforero\\Pictures\\Aprobados\\aprobado.py', '--urls', 'https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true', '--emails', 'javier.perdomo@copservir.co']
+2025-11-27 15:36:57,557 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 15:36:57,557 - INFO - ====== WebDriver manager ======
+2025-11-27 15:36:59,150 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:37:00,242 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:37:01,225 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 15:37:02,540 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 15:37:37,966 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:37:38,384 - INFO - Correo ingresado.
+2025-11-27 15:37:38,467 - INFO - Botón 'Continue' clickeado.
+2025-11-27 15:37:39,213 - INFO - Contraseña ingresada.
+2025-11-27 15:37:39,274 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 15:37:40,275 - INFO - Procesando 1/1: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:37:51,277 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 15:37:51,277 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 15:37:59,487 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:38:02,422 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:38:02,422 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 15:38:02,454 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 15:38:02,486 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 15:38:02,486 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:38:04,063 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:38:04,063 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:38:04,764 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:38:05,352 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:38:05,825 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:38:05,826 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:38:08,323 - INFO - `aprobado.py` finalizó con código 0
+2025-11-27 15:38:08,324 - INFO - 192.168.21.30 - - [27/Nov/2025 15:38:08] "POST /run HTTP/1.1" 200 -
+2025-11-27 15:39:37,528 - INFO - Iniciando automatización para Sprint 1, 2025-11-27 al 2025-12-04
+2025-11-27 15:39:37,529 - INFO - Ejecutando comando: ['C:\\Users\\dforero\\AppData\\Local\\Programs\\Python\\Python313\\python.exe', 'c:\\Users\\dforero\\Pictures\\Aprobados\\aprobado.py', '--urls', 'https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true', '--emails', 'javier.perdomo@copservir.co']
+2025-11-27 15:39:38,265 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 15:39:38,265 - INFO - ====== WebDriver manager ======
+2025-11-27 15:39:39,872 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:39:40,923 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:39:41,921 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 15:39:43,227 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 15:40:45,638 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:40:45,995 - INFO - Correo ingresado.
+2025-11-27 15:40:46,093 - INFO - Botón 'Continue' clickeado.
+2025-11-27 15:40:46,817 - INFO - Contraseña ingresada.
+2025-11-27 15:40:46,875 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 15:40:47,876 - INFO - Procesando 1/1: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:40:54,869 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 15:40:54,870 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 15:41:02,682 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:41:05,269 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:41:05,269 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 15:41:05,303 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 15:41:05,332 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 15:41:05,332 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:41:06,861 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:41:06,861 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:41:07,581 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:41:08,180 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:41:08,634 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:41:08,634 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:41:11,152 - INFO - `aprobado.py` finalizó con código 0
+2025-11-27 15:41:11,153 - INFO - 192.168.21.30 - - [27/Nov/2025 15:41:11] "POST /run HTTP/1.1" 200 -
+2025-11-27 15:48:00,679 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:48:00,719 - INFO -  * Restarting with stat
+2025-11-27 15:48:01,518 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:48:01,541 - WARNING -  * Debugger is active!
+2025-11-27 15:48:01,546 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 15:48:02,110 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 15:48:02,110 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 15:48:07,944 - INFO - 192.168.21.30 - - [27/Nov/2025 15:48:07] "GET / HTTP/1.1" 200 -
+2025-11-27 15:49:07,418 - INFO - Iniciando automatización para Sprint 1, 2025-11-27 al 2025-12-04
+2025-11-27 15:49:07,419 - INFO - Ejecutando comando: ['C:\\Users\\dforero\\AppData\\Local\\Programs\\Python\\Python313\\python.exe', 'c:\\Users\\dforero\\Pictures\\Aprobados\\aprobado.py', '--urls', 'https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true,https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true,https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true', '--email', 'javier.perdomo@copservir.co']
+2025-11-27 15:49:08,438 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 15:49:08,440 - INFO - ====== WebDriver manager ======
+2025-11-27 15:49:10,443 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:49:11,759 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 15:49:13,112 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 15:49:14,550 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 15:50:17,758 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:50:18,242 - INFO - Correo ingresado.
+2025-11-27 15:50:18,424 - INFO - Botón 'Continue' clickeado.
+2025-11-27 15:50:19,255 - INFO - Contraseña ingresada.
+2025-11-27 15:50:19,326 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 15:50:20,327 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:50:28,063 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 15:50:37,055 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:50:39,700 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:50:39,733 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 15:50:39,734 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:50:41,381 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:50:41,382 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:50:42,122 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:50:42,756 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:50:43,245 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:50:43,247 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 15:50:43,248 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 15:50:50,460 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 15:50:58,503 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:51:01,893 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:51:01,920 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 15:51:01,920 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:51:03,489 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:51:03,489 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:51:04,189 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:51:04,773 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:51:05,244 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:51:05,245 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 15:51:05,245 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 15:51:07,541 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 15:51:07,542 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 15:51:15,214 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:51:18,231 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 15:51:18,231 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 15:51:18,259 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 15:51:18,288 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 15:51:18,288 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 15:51:19,955 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 15:51:19,955 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 15:51:20,649 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 15:51:21,252 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 15:51:21,720 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 15:51:21,721 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 15:51:24,367 - INFO - `aprobado.py` finalizó con código 0
+2025-11-27 15:51:24,369 - INFO - 192.168.21.30 - - [27/Nov/2025 15:51:24] "POST /run HTTP/1.1" 200 -
+2025-11-27 15:54:02,492 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:54:02,543 - INFO -  * Restarting with stat
+2025-11-27 15:54:03,316 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:54:03,340 - WARNING -  * Debugger is active!
+2025-11-27 15:54:03,345 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 15:54:03,862 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 15:54:03,863 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 15:54:07,268 - INFO - 192.168.21.30 - - [27/Nov/2025 15:54:07] "GET / HTTP/1.1" 200 -
+2025-11-27 15:54:13,159 - INFO - 192.168.21.30 - - [27/Nov/2025 15:54:13] "GET / HTTP/1.1" 200 -
+2025-11-27 15:57:34,468 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:57:34,509 - INFO -  * Restarting with stat
+2025-11-27 15:57:35,312 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 15:57:35,332 - WARNING -  * Debugger is active!
+2025-11-27 15:57:35,343 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 15:57:35,857 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 15:57:35,857 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 15:57:38,476 - INFO - 192.168.21.30 - - [27/Nov/2025 15:57:38] "GET / HTTP/1.1" 200 -
+2025-11-27 15:57:48,317 - INFO - 192.168.21.30 - - [27/Nov/2025 15:57:48] "GET / HTTP/1.1" 200 -
+2025-11-27 15:57:48,498 - INFO - 192.168.21.30 - - [27/Nov/2025 15:57:48] "GET / HTTP/1.1" 200 -
+2025-11-27 15:57:48,711 - INFO - 192.168.21.30 - - [27/Nov/2025 15:57:48] "GET / HTTP/1.1" 200 -
+2025-11-27 16:05:24,419 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 16:05:24,449 - INFO -  * Restarting with stat
+2025-11-27 16:05:25,054 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 16:05:25,070 - WARNING -  * Debugger is active!
+2025-11-27 16:05:25,073 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 16:05:25,426 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 16:05:25,427 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 16:05:48,951 - INFO - 192.168.21.30 - - [27/Nov/2025 16:05:48] "GET / HTTP/1.1" 200 -
+2025-11-27 16:07:15,224 - INFO - Iniciando automatización para Sprint 1, 2025-11-27 al 2025-12-04
+2025-11-27 16:07:15,225 - INFO - Ejecutando comando: ['C:\\Users\\dforero\\AppData\\Local\\Programs\\Python\\Python313\\python.exe', 'c:\\Users\\dforero\\Pictures\\Aprobados\\aprobado.py', '--urls', 'https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true,https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true,https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true', '--email', 'javier.perdomo@copservir.co']
+2025-11-27 16:07:16,009 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 16:07:16,009 - INFO - ====== WebDriver manager ======
+2025-11-27 16:07:17,580 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 16:07:18,494 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 16:07:19,465 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 16:07:20,803 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 16:08:24,191 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 16:08:24,833 - INFO - Correo ingresado.
+2025-11-27 16:08:24,975 - INFO - Botón 'Continue' clickeado.
+2025-11-27 16:08:25,740 - INFO - Contraseña ingresada.
+2025-11-27 16:08:25,808 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 16:08:26,809 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 16:08:38,337 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 16:08:46,485 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:08:49,490 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:08:49,526 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 16:08:49,526 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 16:08:51,134 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 16:08:51,134 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 16:08:51,845 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 16:08:52,431 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 16:08:52,970 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 16:08:52,971 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 16:08:52,971 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 16:08:59,937 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 16:09:07,435 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:09:10,468 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:09:10,493 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 16:09:10,494 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 16:09:12,031 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 16:09:12,032 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 16:09:12,712 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 16:09:13,287 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 16:09:13,807 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 16:09:13,807 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 16:09:13,807 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 16:09:19,047 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 16:09:19,047 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 16:09:26,115 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:09:28,890 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:09:28,891 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 16:09:28,922 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 16:09:28,948 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 16:09:28,948 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 16:09:30,406 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 16:09:30,406 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 16:09:31,056 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 16:09:31,630 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 16:09:32,146 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 16:09:32,147 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 16:09:34,734 - INFO - `aprobado.py` finalizó con código 0
+2025-11-27 16:09:34,735 - INFO - 192.168.21.30 - - [27/Nov/2025 16:09:34] "POST /run HTTP/1.1" 200 -
+2025-11-27 16:10:10,888 - INFO - 192.168.21.30 - - [27/Nov/2025 16:10:10] "GET / HTTP/1.1" 200 -
+2025-11-27 16:14:12,017 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 16:14:12,041 - INFO -  * Restarting with stat
+2025-11-27 16:14:12,593 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-27 16:14:12,611 - WARNING -  * Debugger is active!
+2025-11-27 16:14:12,615 - INFO -  * Debugger PIN: 323-501-352
+2025-11-27 16:14:12,997 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-27 16:14:12,998 - INFO -  * Running on http://192.168.21.30:5009/ (Press CTRL+C to quit)
+2025-11-27 16:14:30,712 - INFO - 192.168.21.30 - - [27/Nov/2025 16:14:30] "GET / HTTP/1.1" 200 -
+2025-11-27 16:14:31,690 - INFO - 192.168.21.30 - - [27/Nov/2025 16:14:31] "GET / HTTP/1.1" 200 -
+2025-11-27 16:14:31,958 - INFO - 192.168.21.30 - - [27/Nov/2025 16:14:31] "GET / HTTP/1.1" 200 -
+2025-11-27 16:14:32,110 - INFO - 192.168.21.30 - - [27/Nov/2025 16:14:32] "GET / HTTP/1.1" 200 -
+2025-11-27 16:14:32,274 - INFO - 192.168.21.30 - - [27/Nov/2025 16:14:32] "GET / HTTP/1.1" 200 -
+2025-11-27 16:14:54,963 - INFO - Iniciando automatización para Sprint 1, 2025-11-27 al 2025-12-04
+2025-11-27 16:14:54,964 - INFO - Ejecutando comando: ['C:\\Users\\dforero\\AppData\\Local\\Programs\\Python\\Python313\\python.exe', 'c:\\Users\\dforero\\Pictures\\Aprobados\\aprobado.py', '--urls', 'https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true,https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true,https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true', '--email', 'javier.perdomo@copservir.co']
+2025-11-27 16:14:55,892 - INFO - Ejecutando `aprobado.py`: iniciando driver y ejecutando login.
+2025-11-27 16:14:55,892 - INFO - ====== WebDriver manager ======
+2025-11-27 16:14:57,474 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 16:14:58,611 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 16:14:59,524 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-27 16:15:00,896 - INFO - Driver de Chrome iniciado exitosamente.
+2025-11-27 16:15:35,848 - INFO - Navegando a la URL inicial de tarea: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 16:15:36,467 - INFO - Correo ingresado.
+2025-11-27 16:15:36,544 - INFO - Botón 'Continue' clickeado.
+2025-11-27 16:15:37,242 - INFO - Contraseña ingresada.
+2025-11-27 16:15:37,296 - INFO - Botón 'Iniciar sesión' clickeado.
+2025-11-27 16:15:38,297 - INFO - Procesando 1/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 16:15:47,851 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 16:15:55,709 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:15:58,266 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:15:58,293 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 16:15:58,293 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 16:15:59,799 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 16:15:59,799 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 16:16:00,473 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 16:16:01,057 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 16:16:01,543 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 16:16:01,543 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692246?focus=true
+2025-11-27 16:16:01,543 - INFO - Procesando 2/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 16:16:03,995 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 16:16:11,483 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:16:14,038 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:16:14,062 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 16:16:14,062 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 16:16:15,529 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 16:16:15,529 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 16:16:16,210 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 16:16:16,782 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 16:16:17,235 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 16:16:17,236 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692248?focus=true
+2025-11-27 16:16:17,236 - INFO - Procesando 3/3: https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 16:16:19,221 - INFO - Última URL: activando modo agresivo para asignación de responsable.
+2025-11-27 16:16:19,221 - INFO - Esperando selector div#task_pane_assignee_input para asignar javier.perdomo@copservir.co...
+2025-11-27 16:16:26,252 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:16:28,861 - INFO - No se hizo selección automática de sugerencia para evitar asignaciones incorrectas.
+2025-11-27 16:16:28,862 - INFO - Modo agresivo activado: intentando estrategias adicionales para seleccionar la sugerencia...
+2025-11-27 16:16:28,886 - WARNING - Modo agresivo: no se logró seleccionar la sugerencia correcta tras intentos adicionales.
+2025-11-27 16:16:28,907 - INFO - Responsable detectado por nombre: Javier Perdomo Lozada — se considera asignado.
+2025-11-27 16:16:28,907 - INFO - Esperando selector div#task_pane_due_date_input para establecer fecha de entrega...
+2025-11-27 16:16:30,432 - INFO - Fecha establecida usando formato: 2025-11-28 -> Mañana
+2025-11-27 16:16:30,432 - INFO - Intentando abrir 'Más acciones'...
+2025-11-27 16:16:31,092 - INFO - Buscando opción 'Convertir a' por texto...
+2025-11-27 16:16:31,671 - INFO - Seleccionando 'Aprobación' por texto...
+2025-11-27 16:16:32,120 - INFO - La tarea fue enviada a 'Aprobación' (se intentó el flujo).
+2025-11-27 16:16:32,120 - INFO - Flujo completado para https://app.asana.com/1/1204083449956184/project/1205231252391291/task/1212208336692250?focus=true
+2025-11-27 16:16:34,650 - INFO - `aprobado.py` finalizó con código 0
+2025-11-27 16:16:34,651 - INFO - 192.168.21.30 - - [27/Nov/2025 16:16:34] "POST /run HTTP/1.1" 200 -
+2025-11-28 09:22:28,228 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-28 09:22:28,330 - INFO -  * Restarting with stat
+2025-11-28 09:22:29,110 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-11-28 09:22:29,130 - WARNING -  * Debugger is active!
+2025-11-28 09:22:29,135 - INFO -  * Debugger PIN: 323-501-352
+2025-11-28 09:22:30,302 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-11-28 09:22:30,303 - INFO -  * Running on http://192.168.21.36:5009/ (Press CTRL+C to quit)
+2025-11-28 09:22:32,675 - INFO - 192.168.21.36 - - [28/Nov/2025 09:22:32] "GET / HTTP/1.1" 200 -
+2025-11-28 09:22:36,952 - INFO - 192.168.21.36 - - [28/Nov/2025 09:22:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-11 13:49:09,825 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-12-11 13:49:09,896 - INFO -  * Restarting with stat
+2025-12-11 13:49:10,560 - INFO - Iniciando el servidor de la interfaz web para Asana... 🚀
+2025-12-11 13:49:10,574 - WARNING -  * Debugger is active!
+2025-12-11 13:49:10,580 - INFO -  * Debugger PIN: 116-732-759
+2025-12-11 13:49:13,012 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-12-11 13:49:13,012 - INFO -  * Running on http://192.168.21.56:5009/ (Press CTRL+C to quit)
+2025-12-11 13:49:16,680 - INFO - 192.168.21.56 - - [11/Dec/2025 13:49:16] "GET / HTTP/1.1" 200 -
+2025-12-11 13:49:17,295 - INFO - 192.168.21.56 - - [11/Dec/2025 13:49:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

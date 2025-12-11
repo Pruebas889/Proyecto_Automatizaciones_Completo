@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatización Estados Reportes F.E</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+    <script src="http://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto space-y-8">
+        <header class="text-center">
+            <h1 class="text-4xl font-extrabold text-teal-400 mb-2">Automatización de Reportes Facturas Electrónicas </h1>
+            <p class="text-gray-300">Selecciona una fecha y ejecuta el proceso automáticamente.</p>
+        </header>
+
+        <!-- Panel principal -->
+        <div class="bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-700">
+            <h2 class="text-2xl font-bold mb-4 text-teal-300"><center>Panel de Control de Fechas</center></h2>
+            <form id="automation-form" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="fecha" class="block text-sm font-medium text-gray-300">Seleccionar Fecha de Inicio </label>
+                        <input type="date" id="fecha" name="fecha" class="w-full p-2 bg-slate-700 rounded-md border border-slate-600 text-gray-100" required>
+                    </div>
+                </div>
+            </form>
+
+            <div class="flex space-x-3 mt-6">
+                <button id="startButton" class="bg-teal-600 hover:bg-teal-700 px-5 py-3 rounded-lg text-white font-semibold flex items-center space-x-2">
+                    <i data-lucide="play"></i><span>Iniciar</span>
+                </button>
+                <button id="stopButton" disabled class="bg-gray-600 px-5 py-3 rounded-lg text-white font-semibold flex items-center space-x-2">
+                    <i data-lucide="stop-circle"></i><span>Detener</span>
+                </button>
+            </div>
+            <!-- Estado simple -->
+            <div class="mt-4">
+                <span id="statusPill" class="inline-block bg-slate-700 text-gray-300 px-3 py-1 rounded-md">Estado: Inactivo</span>
+            </div>
+        </div>
+
+        <!-- Logs -->
+        <div class="bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-700">
+            <h2 class="text-2xl font-bold mb-4 text-teal-300">Logs del Proceso</h2>
+            <div id="logConsole" class="bg-slate-900 p-4 rounded-lg h-96 overflow-y-auto text-sm font-mono">
+                <p class="text-gray-500 animate-pulse">Esperando para iniciar la automatización...</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+    </script>
+    <script>
+    const startButton = document.getElementById('startButton');
+    const stopButton = document.getElementById('stopButton');
+    const logConsole = document.getElementById('logConsole');
+    const statusPill = document.getElementById('statusPill');
+    let eventSource;
+    let isRunning = false;
+
+    function appendLog(msg) {
+        const p = document.createElement('p');
+        p.textContent = msg;
+        p.className = "text-gray-300";
+        logConsole.appendChild(p);
+        logConsole.scrollTop = logConsole.scrollHeight;
+    }
+
+    startButton.addEventListener('click', async () => {
+        if (isRunning) return;
+        appendLog("🚀 Solicitando inicio de automatización...");
+        startButton.disabled = true; // evitar clicks duplicados mientras esperamos respuesta
+        try {
+            const formData = new FormData(document.getElementById('automation-form'));
+            const res = await fetch('/start', { method: 'POST', body: formData });
+            const data = await res.json();
+            if (data.success) {
+                isRunning = true;
+                appendLog("✅ Automatización iniciada en el servidor.");
+                statusPill.textContent = 'Estado: Procesando';
+                statusPill.className = 'inline-block bg-yellow-600 text-white px-3 py-1 rounded-md';
+                stopButton.disabled = false;
+                startLogStream();
+            } else {
+                appendLog("❌ " + (data.message || 'Error al iniciar'));
+                startButton.disabled = false;
+            }
+        } catch (e) {
+            appendLog("❌ Error al iniciar: " + e);
+            startButton.disabled = false;
+        }
+    });
+
+    stopButton.addEventListener('click', async () => {
+        appendLog("🛑 Solicitando detención de la automatización...");
+        try {
+            await fetch('/stop', { method: 'POST' });
+            appendLog('🟠 Señal de detención enviada al servidor.');
+            statusPill.textContent = 'Estado: Detenido';
+            statusPill.className = 'inline-block bg-gray-600 text-white px-3 py-1 rounded-md';
+            isRunning = false;
+            startButton.disabled = false;
+            stopButton.disabled = true;
+            if (eventSource) eventSource.close();
+        } catch (e) {
+            appendLog("⚠️ Error al detener: " + e);
+        }
+    });
+
+    function startLogStream() {
+        eventSource = new EventSource('/stream_logs');
+        eventSource.onmessage = e => {
+            appendLog(e.data);
+            const text = (e.data || '').toString().toLowerCase();
+            if (text.includes('iniciando automatización para la fecha') || text.includes('automatización iniciada')) {
+                statusPill.textContent = 'Estado: Procesando';
+                statusPill.className = 'inline-block bg-gray-600 text-white px-3 py-1 rounded-md';
+                stopButton.disabled = false;
+            }
+            if (text.includes('automatización completada') || text.includes('automatización finalizada') || text.includes('terminado')) {
+                statusPill.textContent = 'Estado: Terminado';
+                statusPill.className = 'inline-block bg-gray-600 text-white px-3 py-1 rounded-md';
+                isRunning = false;
+                const fechaInput = document.getElementById('fecha');
+                if (fechaInput) fechaInput.value = '';
+                startButton.disabled = false;
+                stopButton.disabled = true;
+                if (eventSource) eventSource.close();
+            }
+            if (text.includes('error') || text.includes('permissionerror') || text.includes('invalid')) {
+                statusPill.textContent = 'Estado: Error';
+                statusPill.className = 'inline-block bg-red-600 text-white px-3 py-1 rounded-md';
+            }
+        };
+        eventSource.onerror = () => {
+            appendLog("❌ Error en el stream de logs.");
+            if (eventSource) eventSource.close();
+        };
+    }
+
+    lucide.createIcons();
+    
+</script>
+</body>
+</html>

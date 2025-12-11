@@ -20,8 +20,8 @@ def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if not session.get('logged_in') or session.get('role') != 'larebaja':
-            logging.info("Acceso no autorizado, redirigiendo a http://192.168.21.37:5000")
-            return redirect('http://192.168.21.37:5000')
+            logging.info("Acceso no autorizado, redirigiendo a http://192.168.21.56:5000")
+            return redirect('http://192.168.21.56:5000')
         return f(*args, **kwargs)
     return decorated_function
 
@@ -172,5 +172,5 @@ if __name__ == "__main__":
     port = 5004
     
     # Iniciar el servidor Flask
-    logging.info(f"Servidor iniciado en http://192.168.21.37:{port}")
+    logging.info(f"Servidor iniciado en http://192.168.21.56:{port}")
     app.run(host='0.0.0.0', port=port, debug=False)

@@ -1,4 +1,4 @@
 2025-10-08 12:01:56,876 - INFO - Iniciando el servidor de la interfaz web... \U0001f680
 2025-10-08 12:01:56,900 - WARNING -  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-2025-10-08 12:01:56,901 - INFO -  * Running on http://192.168.21.37:5002/ (Press CTRL+C to quit)
+2025-10-08 12:01:56,901 - INFO -  * Running on http://192.168.21.56:5002/ (Press CTRL+C to quit)

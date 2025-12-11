@@ -5,4 +5,4 @@
 2025-10-08 12:02:00,146 - INFO -  * Debugger PIN: 107-530-431
 2025-10-08 12:02:00,522 - WARNING -  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-2025-10-08 12:02:00,523 - INFO -  * Running on http://192.168.21.37:5003/ (Press CTRL+C to quit)
+2025-10-08 12:02:00,523 - INFO -  * Running on http://192.168.21.56:5003/ (Press CTRL+C to quit)

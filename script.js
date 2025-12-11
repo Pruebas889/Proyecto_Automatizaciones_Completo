@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         sistema = 'larebaja';
     } else if (window.location.pathname.includes('login_mensajeros')) {
         sistema = 'mensajeros';
+    } else if (window.location.pathname.includes('login_reportes')) {
+        sistema = 'reportes';
+    } else if (window.location.pathname.includes('login_aprobados')) {
+        sistema = 'aprobados';
     } else if (window.location.pathname.includes('login_docuseal')) {
         sistema = 'DocusealOP';
     }

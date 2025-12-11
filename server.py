@@ -32,6 +32,8 @@ PORT_REBAJA = 5004
 PORT_DOCUSEAL = 5005
 PORT_POSWEB = 5006
 PORT_MENSAJEROS = 5007
+PORT_REPORTES = 5008
+PORT_APROBADOS = 5009
 
 def get_db_connection():
     print("Configuración de conexión:", db_config)
@@ -65,45 +67,59 @@ def dashboard():
 @app.route('/login_claro')
 def login_claro():
     if session.get('logged_in') and session.get('role') == 'claro':
-        return redirect(f'http://192.168.21.37:{PORT_CLARO}')
+        return redirect(f'http://192.168.21.56:{PORT_CLARO}')
     return app.send_static_file('index.html')
 
 @app.route('/login_colpensiones')
 def login_colpensiones():
     if session.get('logged_in') and session.get('role') == 'colpensiones':
-        return redirect(f'http://192.168.21.37:{PORT_COLPENSIONES}')
+        return redirect(f'http://192.168.21.56:{PORT_COLPENSIONES}')
     return app.send_static_file('index.html')
 
 @app.route('/login_asana')
 def login_asana():
     if session.get('logged_in') and session.get('role') == 'asana':
-        return redirect(f'http://192.168.21.37:{PORT_ASANA}')
+        return redirect(f'http://192.168.21.56:{PORT_ASANA}')
     return app.send_static_file('index.html')
 
 @app.route('/login_posweb')
 def login_posweb():
     if session.get('logged_in') and session.get('role') == 'POSWEB':
-        return redirect(f'http://192.168.21.37:{PORT_POSWEB}')
+        return redirect(f'http://192.168.21.56:{PORT_POSWEB}')
     return app.send_static_file('index.html')
 
 @app.route('/login_mensajeros')
 def login_mensajeros():
     if session.get('logged_in') and session.get('role') == 'mensajeros':
-        return redirect(f'http://192.168.21.37:{PORT_MENSAJEROS}')
+        return redirect(f'http://192.168.21.56:{PORT_MENSAJEROS}')
     return app.send_static_file('index.html')
 
 
 @app.route('/login_larebaja')
 def login_larebaja():
     if session.get('logged_in') and session.get('role') == 'larebaja':
-        return redirect(f'http://192.168.21.37:{PORT_REBAJA}')
+        return redirect(f'http://192.168.21.56:{PORT_REBAJA}')
+    return app.send_static_file('index.html')
+
+
+@app.route('/login_aprobados')
+def login_aprobados():
+    if session.get('logged_in') and session.get('role') == 'aprobados':
+        return redirect(f'http://192.168.21.56:{PORT_APROBADOS}')
+    return app.send_static_file('index.html')
+
+
+@app.route('/login_reportes')
+def login_reportes():
+    if session.get('logged_in') and session.get('role') == 'reportes':
+        return redirect(f'http://192.168.21.56:{PORT_REPORTES}')
     return app.send_static_file('index.html')
 
 
 @app.route('/login_docuseal')
 def login_docuseal():
     if session.get('logged_in') and session.get('role') == 'DocusealOP':
-        return redirect(f'http://192.168.21.37:{PORT_DOCUSEAL}')
+        return redirect(f'http://192.168.21.56:{PORT_DOCUSEAL}')
     return app.send_static_file('index.html')
 
 # Ruta para procesar el login
@@ -135,6 +151,9 @@ def login():
                 (sistema == 'POSWEB' and user['role'] == 'POSWEB') or
                 (sistema == 'larebaja' and user['role'] == 'larebaja') or
                 (sistema == 'mensajeros' and user['role'] == 'mensajeros') or
+                (sistema == 'aprobados' and user['role'] == 'aprobados') or
+                (sistema == 'reportes' and user['role'] == 'reportes') or
+
                 (sistema == 'DocusealOP' and user['role'] in ['DocusealOP', 'Docuseal1OP', 'Docuseal2OP'])
             ):
                 session['logged_in'] = True
@@ -144,20 +163,26 @@ def login():
 
 
                 if user['role'] == 'claro':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_CLARO}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.56:{PORT_CLARO}'})
                 elif user['role'] == 'colpensiones':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_COLPENSIONES}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.56:{PORT_COLPENSIONES}'})
                 elif user['role'] == 'asana':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_ASANA}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.56:{PORT_ASANA}'})
                 elif user['role'] == 'POSWEB':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_POSWEB}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.56:{PORT_POSWEB}'})
                 elif user['role'] == 'larebaja':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_REBAJA}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.56:{PORT_REBAJA}'})
                 elif user['role'] == 'mensajeros':
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_MENSAJEROS}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.56:{PORT_MENSAJEROS}'})
+                elif user['role'] == 'reportes':
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.56:{PORT_REPORTES}'})
+                elif user['role'] == 'aprobados':
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.56:{PORT_APROBADOS}'})
+                
                 elif user['role'] in ['DocusealOP', 'Docuseal1OP', 'Docuseal2OP']:
                     session['temp_password'] = password
-                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.37:{PORT_DOCUSEAL}'})
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.21.56:{PORT_DOCUSEAL}'})
+                
                 else:
                     return jsonify({'success': False, 'message': 'Rol no reconocido.'}), 403
             else:
@@ -267,6 +292,8 @@ if __name__ == '__main__':
     larebaja_server_path = os.path.join("LoginRebaja", "server.py")
     mensajeros_server_path = os.path.join("Mensajeros", "server.py")
     docuseal_server_path = os.path.join("Docuseal_Automatizacion", "server.py")
+    reportes_server_path = os.path.join ("Reportes.F.E", "server.py")
+    aprobados_server_path = os.path.join ("Aprobados-Asana-", "server.py")
     
     if not os.path.exists(claro_server_path):
         print(f"Error: No se encontró {claro_server_path}")
@@ -303,6 +330,18 @@ if __name__ == '__main__':
         subprocess.Popen(["python", mensajeros_server_path], cwd=os.getcwd())
         time.sleep(1)
 
+    if not os.path.exists(reportes_server_path):
+        print(f"Error: No se encontró {reportes_server_path}")
+    else:
+        subprocess.Popen(["python", reportes_server_path], cwd=os.getcwd())
+        time.sleep(1)
+
+    if not os.path.exists(aprobados_server_path):
+        print(f"Error: No se encontró {aprobados_server_path}")
+    else:
+        subprocess.Popen(["python", aprobados_server_path], cwd=os.getcwd())
+        time.sleep(1)
+
     if not os.path.exists(docuseal_server_path):
         print(f"Error: No se encontró {docuseal_server_path}")
     else:
@@ -316,6 +355,9 @@ if __name__ == '__main__':
     print(f"Servidor de PosWeb iniciado en el puerto {PORT_POSWEB}")
     print(f"Servidor de La Rebaja iniciado en el puerto {PORT_REBAJA}")
     print(f"Servidor de Mensajeros iniciado en el puerto {PORT_MENSAJEROS}")
+    print(f"Servidor de Mensajeros iniciado en el puerto {PORT_REPORTES}")
+    print(f"Servidor de Mensajeros iniciado en el puerto {PORT_APROBADOS}")
+
 
     print(f"Servidor de DocusealOP iniciado en el puerto {PORT_DOCUSEAL}")
 
