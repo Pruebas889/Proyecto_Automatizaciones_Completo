@@ -19,7 +19,7 @@ def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if not session.get('logged_in') or session.get('username') != 'claro':
-            return redirect('http://192.168.21.56:5000')
+            return redirect('http://192.168.20.8:5000')
         return f(*args, **kwargs)
     return decorated_function
 
@@ -47,7 +47,6 @@ HTML_TEMPLATE = """
     <title>Automatización de Facturas</title>
     <script src="http://cdn.tailwindcss.com"></script>
     <script src="http://unpkg.com/lucide@latest"></script>
-    <link rel="icon" type="image/x-icon" href="images/Logo_Copservir.png">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -59,13 +58,13 @@ HTML_TEMPLATE = """
 <body class="bg-gray-900 min-h-screen p-8 antialiased">
     <div class="max-w-4xl mx-auto space-y-8">
         <header class="text-center">
-            <h1 class="text-4xl font-extrabold text-blue-400 mb-2">Automatización de Facturas</h1>
+            <h1 class="text-4xl font-extrabold text-teal-400 mb-2">Automatización de Facturas</h1>
             <p class="text-gray-300">Interfaz de control para el script de descarga de facturas de Claro Empresas.</p>
         </header>
 
         <!-- Panel de Control -->
         <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700">
-            <h2 class="text-2xl font-bold text-gray-100 mb-4">Panel de Control</h2>
+            <h2 class="text-2xl font-bold mb-4 text-teal-300"><center>Panel de Control</center></h2>
             <!-- Formulario para Año y Mes -->
             <form id="automation-form" class="mb-6 space-y-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -97,23 +96,23 @@ HTML_TEMPLATE = """
             </form>
             <div class="flex items-center justify-between">
                 <div class="flex space-x-2">
-                    <button id="startButton" class="flex items-center space-x-2 px-6 py-3 rounded-full text-white font-semibold transition-transform duration-200 transform hover:scale-105 shadow-md bg-green-600 hover:bg-green-700 active:bg-green-800">
+                    <button id="startButton" class="bg-teal-600 hover:bg-teal-700 px-5 py-3 rounded-lg text-white font-semibold flex items-center space-x-2">
                         <i data-lucide="play" class="h-5 w-5"></i>
-                        <span>Iniciar</span>
+                        <span>Iniciar</span>                                                                                                                                                                            
                     </button>
-                    <button id="restartButton" class="flex items-center space-x-2 px-6 py-3 rounded-full text-white font-semibold transition-transform duration-200 transform hover:scale-105 shadow-md bg-blue-600 hover:bg-blue-700 active:bg-blue-800">
+                    <button id="restartButton" class="flex items-center space-x-2 px-6 py-3 rounded-md text-white font-semibold transition-transform duration-200 transform hover:scale-105 shadow-md bg-blue-600 hover:bg-blue-700 active:bg-blue-800">
                         <i data-lucide="rotate-ccw" class="h-5 w-5"></i>
                         <span>Reiniciar</span>
                     </button>
-                    <button id="stopButton" disabled class="flex items-center space-x-2 px-6 py-3 rounded-full text-white font-semibold transition-transform duration-200 transform hover:scale-105 shadow-md bg-gray-600 cursor-not-allowed">
+                    <button id="stopButton" disabled class="flex items-center space-x-2 px-6 py-3 rounded-md text-white font-semibold transition-transform duration-200 transform hover:scale-105 shadow-md bg-gray-500 hover:bg-gray-600 active:bg-gray-700 cursor-not-allowed">
                         <i data-lucide="stop-circle" class="h-5 w-5"></i>
                         <span>Detener</span>
                     </button>
-                    <button id="procesarRecibosButton" class="flex items-center space-x-2 px-6 py-3 rounded-full text-white font-semibold transition-transform duration-200 transform hover:scale-105 shadow-md bg-purple-600 hover:bg-purple-700 active:bg-purple-800">
+                    <button id="procesarRecibosButton" class="flex items-center space-x-2 px-6 py-3 rounded-md text-white font-semibold transition-transform duration-200 transform hover:scale-105 shadow-md bg-purple-600 hover:bg-purple-700 active:bg-purple-800">
                         <i data-lucide="file-text" class="h-5 w-5"></i>
                         <span>Procesar Recibos PDF</span>
                     </button>
-                    <button id="borrarProgresoButton" class="flex items-center space-x-2 px-6 py-3 rounded-full text-white font-semibold transition-transform duration-200 transform hover:scale-105 shadow-md bg-red-600 hover:bg-red-700 active:bg-red-800">
+                    <button id="borrarProgresoButton" class="flex items-center space-x-2 px-6 py-3 rounded-md text-white font-semibold transition-transform duration-200 transform hover:scale-105 shadow-md bg-red-600 hover:bg-red-700 active:bg-red-800">
                         <i data-lucide="trash-2" class="h-5 w-5"></i>
                         <span>Borrar Progreso Descargas</span>
                     </button>
@@ -123,7 +122,7 @@ HTML_TEMPLATE = """
 
         <!-- Estado y Resumen -->
         <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700">
-            <h2 class="text-2xl font-bold text-gray-100 mb-2">Estado Actual</h2>
+            <h2 class="text-2xl font-bold mb-4 text-teal-300">Estado Actual</h2>
             <div class="flex items-center space-x-3 mb-4 text-lg">
                 <div id="statusIcon">
                     <i data-lucide="info" class="text-gray-500"></i>
@@ -161,7 +160,7 @@ HTML_TEMPLATE = """
 
         <!-- Consola de Logs -->
         <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700">
-            <h2 class="text-2xl font-bold text-gray-100 mb-4">Consola de Logs</h2>
+            <h2 class="text-2xl font-bold mb-4 text-teal-300">Consola de Logs</h2>
             <div id="logConsole" class="bg-gray-900 p-4 rounded-lg h-96 overflow-y-auto text-sm leading-6 tracking-wide font-mono">
                 <p class="text-gray-500 animate-pulse">Esperando para iniciar la automatización...</p>
             </div>
@@ -451,7 +450,7 @@ def start():
     
     username = "maria_garcia@copservir.com"
     password = "Clave1234*"
-    download_dir = r"C:\Users\dforero\Downloads\Facturas_Claro_Pruebas"
+    download_dir = r"C:\Users\jperdomolc\Downloads\Facturas_Claro_Pruebas"
     
     anio = request.form.get('anio')
     mes = request.form.get('mes')
@@ -557,7 +556,7 @@ def borrar_progreso():
             import json
             json.dump(progreso_inicial, f, indent=4, ensure_ascii=False)
         
-        facturas_dir = r"C:\Users\dforero\Downloads\Facturas_Claro_Pruebas"
+        facturas_dir = r"C:\Users\jperdomolc\Downloads\Facturas_Claro_Pruebas"
         import shutil
         if os.path.exists(facturas_dir):
             for filename in os.listdir(facturas_dir):

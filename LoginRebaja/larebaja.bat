@@ -6,7 +6,7 @@ echo =======================================
 echo  INICIANDO AUTOMATIZACION LA REBAJA
 echo =======================================
 :: Ir a la carpeta del script
-cd /d "C:\Users\dforero\Pictures\LoginRebaja"
+cd /d "C:\Users\jperdomolc\Pictures\LoginRebaja"
 
 :: Ejecutar el script
 

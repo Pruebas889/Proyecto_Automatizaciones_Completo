@@ -11,7 +11,7 @@ import pandas as pd
 
 # Configuración para Google Sheets
 scopes = ['https://www.googleapis.com/auth/spreadsheets']
-creds = Credentials.from_service_account_file('C:\\Users\\dforero\\Pictures\\Proyecto_Automatizaciones_Completo\\Docuseal_Automatizacion\\docuseal2025-9b64ba667ffb.json', scopes=scopes)
+creds = Credentials.from_service_account_file(r'C:\Users\jperdomolc\Pictures\Proyecto_Automatizaciones_Completo\Docuseal_Automatizacion\docuseal2025-9b64ba667ffb.json', scopes=scopes)
 client = gspread.authorize(creds)
 for ws_index in [0, 1]:
     sheet = client.open_by_key('1W4YUEPY0JL6Vk9g8XTdXpA9S5ja9eQ0RI0yHyb1pLEM').get_worksheet(ws_index)

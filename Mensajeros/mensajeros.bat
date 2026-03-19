@@ -1,5 +1,5 @@
 @echo off
-cd "C:\Users\dforero\Documents\Mensajeros\mensajeros.py"
+cd "C:\Users\jperdomolc\Documents\Mensajeros\mensajeros.py"
 
 :inicio
 python mensajeros.py

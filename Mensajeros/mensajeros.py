@@ -15,6 +15,7 @@ import json
 import pandas as pd
 from io import StringIO
 from typing import Optional
+from urllib.parse import urlparse, parse_qs
 from datetime import datetime
 from gspread.exceptions import SpreadsheetNotFound
 from google.oauth2.service_account import Credentials
@@ -44,8 +45,8 @@ from email.message import EmailMessage
 
 # CONFIGURACIÓN GLOBAL de google sheets
 def inicializar_sheets():
-    CREDENTIALS_PATH = r"C:\Users\dforero\Pictures\Proyecto_Automatizaciones_Completo\Mensajeros\automatizaciones-471213-ba561bdefbc9.json"
-    SPREADSHEET_ID = "1yVszdoqBzG10ZYXsuX9EXs0tuD_Ni9HBsW7DdK1OxN4"
+    CREDENTIALS_PATH = r"C:\Users\jperdomolc\Pictures\Proyecto_Automatizaciones_Completo\Mensajeros\n8ncopservir-a054ae9a846e.json"
+    SPREADSHEET_ID = "1rjkrWEHarZ5dC-LdWP1UKV9edAhncFvMA9rEb0yWOoI"
     SHEET_NAME = "Cédula de Domiciliarios"
     SHEET_NAME2 = "Reporte Comparendos"
     SHEET_NAME3 = "Control"
@@ -453,7 +454,7 @@ def manejar_modal_coincidencias(driver):
         "Cédula de ciudadanía",
         "Nit",
         "Pasaporte",
-        "Cédula de extranjería"
+        "Cédula de extranjería" 
     ]
     try:
         # Esperar a que aparezca el modal
@@ -1065,8 +1066,12 @@ def procesar_cedulas(driver, sheet, sheet2, inicio_desde=1):
     # todos los resultados previos. Ahora no se realiza esa limpieza para
     # que los nuevos registros se agreguen por debajo de los existentes.
     # Obtener la lista de cédulas de la hoja
-    cedulas = sheet.col_values(1)[1:]
+    # Acumulador temporal de resultados antes de escribir por bloques
     resultados_bloque = []
+    cedulas = sheet.col_values(1)[1:]
+    # Escribiremos en sheet2 tras procesar CADA cédula (batch por cédula).
+    # Esto evita escribir fila por fila desde recolectar_multas. Mantiene deduplicación
+    # y checkpoint solo después de una escritura exitosa.
     # Iniciar driver
     try:
         driver.get("https://www.fcm.org.co/simit/#/home-public")
@@ -1095,6 +1100,7 @@ def procesar_cedulas(driver, sheet, sheet2, inicio_desde=1):
             input_cedula.clear()
             print(f"Procesando cédula {index}/{len(cedulas)}: {cedula}")
             input_cedula.send_keys(cedula)
+            time.sleep(0.8)
             esperar_loader(driver)
             try:
                 try:
@@ -1116,21 +1122,99 @@ def procesar_cedulas(driver, sheet, sheet2, inicio_desde=1):
                 raise 
 
             multas = recolectar_multas(driver, cedula)
+            # Pequeña pausa para evitar que la pestaña se cierre inmediatamente
+            time.sleep(0.6)
             fin = datetime.now()
 
+            # Preparar filas para escritura correspondientes a ESTA cédula
             if not multas:
-                resultados_bloque.append([cedula, "No hay comparendos actuales"] + [""] * 10 + [current_date, inicio.strftime("%H:%M:%S") , fin.strftime("%H:%M:%S")])
+                filas_a_escribir = [[cedula, "No hay comparendos actuales"] + [""] * 10 + [current_date, inicio.strftime("%H:%M:%S") , fin.strftime("%H:%M:%S")]]
             else:
                 # Aseguramos que todas las filas de multas tengan las fechas de inicio y fin.
-                multas_con_fechas = []
+                filas_a_escribir = []
                 for multa in multas:
-                    if len(multa) < 15: # Si la longitud de la fila no es 14, significa que le faltan las fechas
-                        multa.extend([""] * (12 - len(multa) + 3)) # Rellenamos con vacíos hasta la posición correcta si es necesario
+                    if len(multa) < 15:
+                        multa.extend([""] * (15 - len(multa)))
                     multa[-3] = current_date
-                    multa[-2] = inicio.strftime("%H:%M:%S") # Actualizamos la penúltima posición con la fecha de inicio
-                    multa[-1] = fin.strftime("%H:%M:%S")   # Actualizamos la última posición con la fecha de fin
-                    multas_con_fechas.append(multa)
-                resultados_bloque.extend(multas_con_fechas)
+                    multa[-2] = inicio.strftime("%H:%M:%S")
+                    multa[-1] = fin.strftime("%H:%M:%S")
+                    filas_a_escribir.append(multa)
+
+            # Deduplicación y escritura inmediata para las filas de ESTA cédula
+            try:
+                # Leer existentes para deduplicar
+                existing_pairs = set()
+                existing_cedulas = set()
+                try:
+                    existing_vals = sheet2.get_all_values()
+                    for row in existing_vals[1:]:
+                        ced_exist = str(row[0]).strip() if len(row) > 0 else ''
+                        num_exist = str(row[3]).strip() if len(row) > 3 else ''
+                        if ced_exist:
+                            existing_cedulas.add(ced_exist)
+                        if ced_exist and num_exist:
+                            existing_pairs.add((ced_exist, num_exist))
+                except Exception as e:
+                    logging.warning(f"No se pudieron leer filas existentes de sheet2 para deduplicación (cedula {cedula}): {e}")
+
+                bloque_filtrado_dedup = []
+                seen_pairs = set()
+                seen_ceds = set()
+                for fila in filas_a_escribir:
+                    ced = str(fila[0]).strip() if len(fila) > 0 else ''
+                    tipo = str(fila[1]).strip() if len(fila) > 1 else ''
+                    num = str(fila[3]).strip() if len(fila) > 3 else ''
+
+                    if tipo == "No hay comparendos actuales" or num == '':
+                        if (ced in existing_cedulas) or (ced in seen_ceds):
+                            logging.debug(f"Omitiendo fila 'No hay comparendos' para cédula {ced} porque ya existe.")
+                            continue
+                        bloque_filtrado_dedup.append(fila)
+                        seen_ceds.add(ced)
+                    else:
+                        key = (ced, num)
+                        if key in existing_pairs or key in seen_pairs:
+                            logging.debug(f"Omitiendo fila duplicada para (cedula,comparendo)={key}")
+                            continue
+                        bloque_filtrado_dedup.append(fila)
+                        seen_pairs.add(key)
+
+                if not bloque_filtrado_dedup:
+                    logging.info(f"Ninguna fila nueva para escribir para la cédula {cedula}.")
+                    try:
+                        meta = {
+                            'last_cedula_index': int(index),
+                            'last_sheet2_row': int(fila_actual - 1),
+                            'last_cedula': str(cedula)
+                        }
+                        guardar_checkpoint_meta(meta)
+                        logging.debug(f"Checkpoint meta guardado (sin filas nuevas para {cedula}): {meta}")
+                    except Exception as e:
+                        logging.warning(f"No se pudo guardar checkpoint meta tras omitir escritura para {cedula}: {e}")
+                else:
+                    try:
+                        siguiente_libre = write_block_safe(sheet2, fila_actual, bloque_filtrado_dedup)
+                        # Espera breve tras la escritura para darle tiempo a Sheets y a la conexión
+                        time.sleep(2)
+                        alinear_derecha(sheet2, f"I{fila_actual}:I{siguiente_libre - 1}")
+                        last_written_row = int(siguiente_libre - 1)
+                        fila_actual = siguiente_libre
+                        try:
+                            meta = {
+                                'last_cedula_index': int(index),
+                                'last_sheet2_row': last_written_row,
+                                'last_cedula': str(cedula)
+                            }
+                            guardar_checkpoint_meta(meta)
+                            logging.debug(f"Checkpoint meta guardado tras escribir cédula {cedula}: {meta}")
+                        except Exception as e:
+                            logging.warning(f"No se pudo guardar el checkpoint meta tras escribir cédula {cedula}: {e}")
+                    except Exception as e:
+                        logging.error(f"Fallo al escribir filas de la cédula {cedula} en Google Sheets: {e}")
+                        raise
+            except Exception as e:
+                logging.error(f"Error durante la deduplicación/escritura para la cédula {cedula}: {e}")
+                raise
         except Exception as e:
             logging.error("Error con la cédula %s: %s", cedula, str(e))
             fin = datetime.now() # Registramos el fin incluso en caso de error
@@ -1204,6 +1288,8 @@ def procesar_cedulas(driver, sheet, sheet2, inicio_desde=1):
                         # Escribir solo las filas no duplicadas
                         try:
                             siguiente_libre = write_block_safe(sheet2, fila_actual, bloque_filtrado_dedup)
+                            # Espera breve tras la escritura para mayor estabilidad
+                            time.sleep(2)
                             # Alinear la columna de valores (I) en el rango escrito
                             alinear_derecha(sheet2, f"I{fila_actual}:I{siguiente_libre - 1}")
                             last_written_row = int(siguiente_libre - 1)
@@ -1226,8 +1312,6 @@ def procesar_cedulas(driver, sheet, sheet2, inicio_desde=1):
                 except Exception as e:
                     logging.error(f"Error durante la deduplicación/escritura del bloque: {e}")
                     raise
-            # limpiar bloque actual para que no se acumule y dañe la informacion
-            resultados_bloque.clear()  
             time.sleep(2)
         # Nota: el checkpoint ahora se guarda solo después de escribir bloques en la hoja 2.
 

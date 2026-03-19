@@ -24,7 +24,7 @@ DB_CONFIG = {
 # Configuración de Google Sheets
 SHEET_ID = '1m6FU7RFKpKhhbOp_bjwzSjLHJWiQwiONCJPqmLFMEhI'  # Del URL
 # Use a raw string for Windows path to avoid unicode escape errors (e.g. \U)
-CREDENTIALS_FILE = r"C:\Users\ymongui\Videos\Proyecto_Automatizaciones_Completo\Reportes.F.E\estados-476114-a49973226bb3.json"
+CREDENTIALS_FILE = r"C:\Users\jperdomolc\Pictures\Proyecto_Automatizaciones_Completo\Reportes.F.E\estados-476114-a49973226bb3.json"
 SHEET_NAME_1 = 'Rechazados'  # Pestaña para la primera consulta
 SHEET_NAME_2 = 'General'  # Pestaña para la segunda consulta
 # Si APPEND_MODE = True, el script no limpiará los datos previos (salvo fila 1) y

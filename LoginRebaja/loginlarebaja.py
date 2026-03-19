@@ -1197,7 +1197,7 @@ def guardar_en_google_sheets(datos, url_valida=True):
             "https://www.googleapis.com/auth/drive"
         ]
         creds = ServiceAccountCredentials.from_json_keyfile_name(
-            r"C:\Users\jperdomolc\Music\LoginRebaja\booming-mission-451620-a9-fbad2efec009.json", scope # type: ignore
+            r"C:\Users\jperdomolc\Pictures\Proyecto_Automatizaciones_Completo\LoginRebaja\booming-mission-451620-a9-fbad2efec009.json", scope # type: ignore
         )
         client = gspread.authorize(creds) # type: ignore
         sheet = client.open_by_key("1EcCiF1nRMfqKgHv7z4wPxy-QRvW1z2-sLQXlZSvgDgw").worksheet("TiemposAutomatización")

@@ -12,7 +12,7 @@ import pandas as pd
 
 # Configuración para Google Sheets
 scopes = ['https://www.googleapis.com/auth/spreadsheets']
-creds = Credentials.from_service_account_file("C:\\Users\\dforero\\Pictures\\Proyecto_Automatizaciones_Completo\\Docuseal_Automatizacion\\docuseal2025-9b64ba667ffb.json", scopes=scopes)
+creds = Credentials.from_service_account_file(r"C:\Users\jperdomolc\Pictures\Proyecto_Automatizaciones_Completo\Docuseal_Automatizacion\docuseal2025-9b64ba667ffb.json", scopes=scopes)
 client = gspread.authorize(creds)
 sheet = client.open_by_key('1Q1hKsx8QiYPc1y2MSHeNOvX-y4XRGz8WMBUlzzPmSaM').get_worksheet(0)  # Cambia 'YOUR_SHEET_ID' por el ID real
 

@@ -1,10 +1,10 @@
-2025-09-23 15:25:06,518 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:25:06,531 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:25:06,683 - INFO - 192.168.21.56 - - [23/Sep/2025 15:25:06] "GET / http/1.1" 200 -
-2025-09-23 15:25:06,751 - INFO - 192.168.21.56 - - [23/Sep/2025 15:25:06] "[33mGET /favicon.ico http/1.1[0m" 404 -
-2025-09-23 15:25:08,629 - INFO - 192.168.21.56 - - [23/Sep/2025 15:25:08] "GET / http/1.1" 200 -
+2025-09-23 15:25:06,518 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:25:06,531 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:25:06,683 - INFO - 192.168.20.8 - - [23/Sep/2025 15:25:06] "GET / http/1.1" 200 -
+2025-09-23 15:25:06,751 - INFO - 192.168.20.8 - - [23/Sep/2025 15:25:06] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-23 15:25:08,629 - INFO - 192.168.20.8 - - [23/Sep/2025 15:25:08] "GET / http/1.1" 200 -
 2025-09-23 15:25:12,352 - INFO - Iniciando automatización...
-2025-09-23 15:25:12,353 - INFO - 192.168.21.56 - - [23/Sep/2025 15:25:12] "POST /start http/1.1" 200 -
+2025-09-23 15:25:12,353 - INFO - 192.168.20.8 - - [23/Sep/2025 15:25:12] "POST /start http/1.1" 200 -
 2025-09-23 15:25:12,354 - INFO - Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 15:25:12,355 - INFO - ====== WebDriver manager ======
 2025-09-23 15:25:13,675 - INFO - Get LATEST chromedriver version for google-chrome
@@ -16,7 +16,7 @@
 2025-09-23 15:25:17,658 - INFO - About to download new driver from http://storage.googleapis.com/chrome-for-testing-public/140.0.7339.207/win32/chromedriver-win32.zip
 2025-09-23 15:25:18,948 - INFO - Driver downloading response is 200
 2025-09-23 15:25:24,983 - INFO - Get LATEST chromedriver version for google-chrome
-2025-09-23 15:25:26,411 - INFO - Driver has been saved in cache [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.207]
+2025-09-23 15:25:26,411 - INFO - Driver has been saved in cache [C:\Users\jperdomolc\.wdm\drivers\chromedriver\win64\140.0.7339.207]
 2025-09-23 15:25:31,755 - INFO - Página solicitada: http://www.larebajavirtual.com/
 2025-09-23 15:25:31,758 - ERROR - Error inesperado al abrir la página: Message: no such window: target window already closed
 from unknown error: web view not found
@@ -94,69 +94,69 @@ Stacktrace:
 	RtlGetAppContainerNamedObjectPath [0x0x76f5d661+561]
 
 2025-09-23 15:25:31,766 - ERROR - No se pudo abrir la página para el método Codigo de validacion. Saltando al siguiente...
-2025-09-23 15:28:15,055 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:28:15,068 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:28:15,214 - INFO - 192.168.21.56 - - [23/Sep/2025 15:28:15] "GET / http/1.1" 200 -
-2025-09-23 15:29:18,189 - INFO - 192.168.21.56 - - [23/Sep/2025 15:29:18] "GET / http/1.1" 200 -
-2025-09-23 15:31:51,374 - INFO - 192.168.21.56 - - [23/Sep/2025 15:31:51] "GET / http/1.1" 200 -
-2025-09-23 15:31:51,979 - INFO - 192.168.21.56 - - [23/Sep/2025 15:31:51] "GET / http/1.1" 200 -
-2025-09-23 15:31:52,301 - INFO - 192.168.21.56 - - [23/Sep/2025 15:31:52] "GET / http/1.1" 200 -
-2025-09-23 15:33:35,449 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:33:35,465 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:33:35,585 - INFO - 192.168.21.56 - - [23/Sep/2025 15:33:35] "GET / http/1.1" 200 -
-2025-09-23 15:33:35,617 - INFO - 192.168.21.56 - - [23/Sep/2025 15:33:35] "[33mGET /static/Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:33:37,399 - INFO - 192.168.21.56 - - [23/Sep/2025 15:33:37] "GET / http/1.1" 200 -
-2025-09-23 15:33:37,424 - INFO - 192.168.21.56 - - [23/Sep/2025 15:33:37] "[33mGET /static/Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:33:59,383 - INFO - 192.168.21.56 - - [23/Sep/2025 15:33:59] "GET / http/1.1" 200 -
-2025-09-23 15:33:59,410 - INFO - 192.168.21.56 - - [23/Sep/2025 15:33:59] "[33mGET /static/Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:34:01,319 - INFO - 192.168.21.56 - - [23/Sep/2025 15:34:01] "GET / http/1.1" 200 -
-2025-09-23 15:34:01,347 - INFO - 192.168.21.56 - - [23/Sep/2025 15:34:01] "[33mGET /static/Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:38:00,730 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:38:00,742 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:38:00,898 - INFO - 192.168.21.56 - - [23/Sep/2025 15:38:00] "GET / http/1.1" 200 -
-2025-09-23 15:38:00,941 - INFO - 192.168.21.56 - - [23/Sep/2025 15:38:00] "[33mGET /Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:38:03,219 - INFO - 192.168.21.56 - - [23/Sep/2025 15:38:03] "GET / http/1.1" 200 -
-2025-09-23 15:38:03,242 - INFO - 192.168.21.56 - - [23/Sep/2025 15:38:03] "[33mGET /Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:39:16,511 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:16] "GET / http/1.1" 200 -
-2025-09-23 15:39:16,536 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:16] "[33mGET /Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:39:17,383 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:17] "GET / http/1.1" 200 -
-2025-09-23 15:39:17,407 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:17] "[33mGET /Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:39:17,855 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:17] "GET / http/1.1" 200 -
-2025-09-23 15:39:17,875 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:17] "[33mGET /Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:39:50,974 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:39:51,000 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:39:51,136 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:51] "GET / http/1.1" 200 -
-2025-09-23 15:39:51,169 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:51] "[33mGET /Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:39:52,966 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:52] "GET / http/1.1" 200 -
-2025-09-23 15:39:52,994 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:52] "[33mGET /Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:39:53,774 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:53] "GET / http/1.1" 200 -
-2025-09-23 15:39:53,803 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:53] "[33mGET /Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:39:54,334 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:54] "GET / http/1.1" 200 -
-2025-09-23 15:39:54,360 - INFO - 192.168.21.56 - - [23/Sep/2025 15:39:54] "[33mGET /Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:40:02,416 - INFO - 192.168.21.56 - - [23/Sep/2025 15:40:02] "GET / http/1.1" 200 -
-2025-09-23 15:40:02,440 - INFO - 192.168.21.56 - - [23/Sep/2025 15:40:02] "[33mGET /Rebaja.png http/1.1[0m" 404 -
-2025-09-23 15:44:36,713 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:44:36,726 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:44:36,846 - INFO - 192.168.21.56 - - [23/Sep/2025 15:44:36] "GET / http/1.1" 200 -
-2025-09-23 15:44:36,996 - INFO - 192.168.21.56 - - [23/Sep/2025 15:44:36] "GET /images/Rebaja.png http/1.1" 200 -
-2025-09-23 15:44:39,275 - INFO - 192.168.21.56 - - [23/Sep/2025 15:44:39] "GET / http/1.1" 200 -
-2025-09-23 15:44:39,307 - INFO - 192.168.21.56 - - [23/Sep/2025 15:44:39] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-23 15:47:08,565 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:08] "GET / http/1.1" 200 -
-2025-09-23 15:47:08,593 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:08] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-23 15:47:09,945 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:09] "[33mPOST /start http/1.1[0m" 404 -
-2025-09-23 15:47:21,691 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:47:21,706 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:47:21,860 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:21] "GET / http/1.1" 200 -
-2025-09-23 15:47:22,100 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:22] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:28:15,055 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:28:15,068 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:28:15,214 - INFO - 192.168.20.8 - - [23/Sep/2025 15:28:15] "GET / http/1.1" 200 -
+2025-09-23 15:29:18,189 - INFO - 192.168.20.8 - - [23/Sep/2025 15:29:18] "GET / http/1.1" 200 -
+2025-09-23 15:31:51,374 - INFO - 192.168.20.8 - - [23/Sep/2025 15:31:51] "GET / http/1.1" 200 -
+2025-09-23 15:31:51,979 - INFO - 192.168.20.8 - - [23/Sep/2025 15:31:51] "GET / http/1.1" 200 -
+2025-09-23 15:31:52,301 - INFO - 192.168.20.8 - - [23/Sep/2025 15:31:52] "GET / http/1.1" 200 -
+2025-09-23 15:33:35,449 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:33:35,465 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:33:35,585 - INFO - 192.168.20.8 - - [23/Sep/2025 15:33:35] "GET / http/1.1" 200 -
+2025-09-23 15:33:35,617 - INFO - 192.168.20.8 - - [23/Sep/2025 15:33:35] "[33mGET /static/Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:33:37,399 - INFO - 192.168.20.8 - - [23/Sep/2025 15:33:37] "GET / http/1.1" 200 -
+2025-09-23 15:33:37,424 - INFO - 192.168.20.8 - - [23/Sep/2025 15:33:37] "[33mGET /static/Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:33:59,383 - INFO - 192.168.20.8 - - [23/Sep/2025 15:33:59] "GET / http/1.1" 200 -
+2025-09-23 15:33:59,410 - INFO - 192.168.20.8 - - [23/Sep/2025 15:33:59] "[33mGET /static/Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:34:01,319 - INFO - 192.168.20.8 - - [23/Sep/2025 15:34:01] "GET / http/1.1" 200 -
+2025-09-23 15:34:01,347 - INFO - 192.168.20.8 - - [23/Sep/2025 15:34:01] "[33mGET /static/Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:38:00,730 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:38:00,742 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:38:00,898 - INFO - 192.168.20.8 - - [23/Sep/2025 15:38:00] "GET / http/1.1" 200 -
+2025-09-23 15:38:00,941 - INFO - 192.168.20.8 - - [23/Sep/2025 15:38:00] "[33mGET /Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:38:03,219 - INFO - 192.168.20.8 - - [23/Sep/2025 15:38:03] "GET / http/1.1" 200 -
+2025-09-23 15:38:03,242 - INFO - 192.168.20.8 - - [23/Sep/2025 15:38:03] "[33mGET /Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:39:16,511 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:16] "GET / http/1.1" 200 -
+2025-09-23 15:39:16,536 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:16] "[33mGET /Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:39:17,383 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:17] "GET / http/1.1" 200 -
+2025-09-23 15:39:17,407 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:17] "[33mGET /Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:39:17,855 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:17] "GET / http/1.1" 200 -
+2025-09-23 15:39:17,875 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:17] "[33mGET /Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:39:50,974 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:39:51,000 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:39:51,136 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:51] "GET / http/1.1" 200 -
+2025-09-23 15:39:51,169 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:51] "[33mGET /Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:39:52,966 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:52] "GET / http/1.1" 200 -
+2025-09-23 15:39:52,994 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:52] "[33mGET /Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:39:53,774 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:53] "GET / http/1.1" 200 -
+2025-09-23 15:39:53,803 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:53] "[33mGET /Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:39:54,334 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:54] "GET / http/1.1" 200 -
+2025-09-23 15:39:54,360 - INFO - 192.168.20.8 - - [23/Sep/2025 15:39:54] "[33mGET /Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:40:02,416 - INFO - 192.168.20.8 - - [23/Sep/2025 15:40:02] "GET / http/1.1" 200 -
+2025-09-23 15:40:02,440 - INFO - 192.168.20.8 - - [23/Sep/2025 15:40:02] "[33mGET /Rebaja.png http/1.1[0m" 404 -
+2025-09-23 15:44:36,713 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:44:36,726 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:44:36,846 - INFO - 192.168.20.8 - - [23/Sep/2025 15:44:36] "GET / http/1.1" 200 -
+2025-09-23 15:44:36,996 - INFO - 192.168.20.8 - - [23/Sep/2025 15:44:36] "GET /images/Rebaja.png http/1.1" 200 -
+2025-09-23 15:44:39,275 - INFO - 192.168.20.8 - - [23/Sep/2025 15:44:39] "GET / http/1.1" 200 -
+2025-09-23 15:44:39,307 - INFO - 192.168.20.8 - - [23/Sep/2025 15:44:39] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:47:08,565 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:08] "GET / http/1.1" 200 -
+2025-09-23 15:47:08,593 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:08] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:47:09,945 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:09] "[33mPOST /start http/1.1[0m" 404 -
+2025-09-23 15:47:21,691 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:47:21,706 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:47:21,860 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:21] "GET / http/1.1" 200 -
+2025-09-23 15:47:22,100 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:22] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
 2025-09-23 15:47:23,100 - INFO - Iniciando automatización...
-2025-09-23 15:47:23,101 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:23] "POST /start http/1.1" 200 -
+2025-09-23 15:47:23,101 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:23] "POST /start http/1.1" 200 -
 2025-09-23 15:47:23,102 - INFO - Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 15:47:23,103 - INFO - ====== WebDriver manager ======
 2025-09-23 15:47:24,289 - INFO - Get LATEST chromedriver version for google-chrome
 2025-09-23 15:47:25,092 - INFO - Get LATEST chromedriver version for google-chrome
-2025-09-23 15:47:25,940 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
-2025-09-23 15:47:31,548 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:31] "POST /start http/1.1" 200 -
-2025-09-23 15:47:33,179 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:33] "POST /start http/1.1" 200 -
+2025-09-23 15:47:25,940 - INFO - Driver [C:\Users\jperdomolc\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-23 15:47:31,548 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:31] "POST /start http/1.1" 200 -
+2025-09-23 15:47:33,179 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:33] "POST /start http/1.1" 200 -
 2025-09-23 15:47:34,669 - INFO - Página solicitada: http://www.larebajavirtual.com/
 2025-09-23 15:47:34,986 - INFO - ✅ Etiqueta <body> detectada. Carga inicial completada.
 2025-09-23 15:47:35,066 - INFO - Logo de La Rebaja detectado. Página cargada correctamente.
@@ -368,54 +368,54 @@ Stacktrace:
 
 2025-09-23 15:47:40,750 - ERROR - Fallo el login para el método Codigo de validacion. Saltando al siguiente...
 2025-09-23 15:47:43,037 - ERROR - Error en la automatización: [Errno 2] No such file or directory: 'C:\\Users\\jperdomolc\\Music\\LoginRebaja\\booming-mission-451620-a9-fbad2efec009.json'
-2025-09-23 15:47:54,237 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:54] "GET / http/1.1" 200 -
-2025-09-23 15:47:54,282 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:54] "GET /images/Rebaja.png http/1.1" 200 -
+2025-09-23 15:47:54,237 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:54] "GET / http/1.1" 200 -
+2025-09-23 15:47:54,282 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:54] "GET /images/Rebaja.png http/1.1" 200 -
 2025-09-23 15:47:55,283 - INFO - Iniciando automatización...
-2025-09-23 15:47:55,284 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:55] "POST /start http/1.1" 200 -
+2025-09-23 15:47:55,284 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:55] "POST /start http/1.1" 200 -
 2025-09-23 15:47:55,292 - ERROR - Error en la automatización: I/O operation on closed file.
 2025-09-23 15:47:57,507 - INFO - Iniciando automatización...
-2025-09-23 15:47:57,507 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:57] "POST /start http/1.1" 200 -
+2025-09-23 15:47:57,507 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:57] "POST /start http/1.1" 200 -
 2025-09-23 15:47:57,511 - ERROR - Error en la automatización: I/O operation on closed file
 2025-09-23 15:47:57,859 - INFO - Iniciando automatización...
-2025-09-23 15:47:57,859 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:57] "POST /start http/1.1" 200 -
+2025-09-23 15:47:57,859 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:57] "POST /start http/1.1" 200 -
 2025-09-23 15:47:57,862 - ERROR - Error en la automatización: I/O operation on closed file
 2025-09-23 15:47:58,106 - INFO - Iniciando automatización...
-2025-09-23 15:47:58,107 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:58] "POST /start http/1.1" 200 -
+2025-09-23 15:47:58,107 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:58] "POST /start http/1.1" 200 -
 2025-09-23 15:47:58,109 - ERROR - Error en la automatización: I/O operation on closed file
 2025-09-23 15:47:58,387 - INFO - Iniciando automatización...
-2025-09-23 15:47:58,387 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:58] "POST /start http/1.1" 200 -
+2025-09-23 15:47:58,387 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:58] "POST /start http/1.1" 200 -
 2025-09-23 15:47:58,390 - ERROR - Error en la automatización: I/O operation on closed file
 2025-09-23 15:47:58,899 - INFO - Iniciando automatización...
-2025-09-23 15:47:58,900 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:58] "POST /start http/1.1" 200 -
+2025-09-23 15:47:58,900 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:58] "POST /start http/1.1" 200 -
 2025-09-23 15:47:58,903 - ERROR - Error en la automatización: I/O operation on closed file
 2025-09-23 15:47:59,972 - INFO - Iniciando automatización...
-2025-09-23 15:47:59,972 - INFO - 192.168.21.56 - - [23/Sep/2025 15:47:59] "POST /start http/1.1" 200 -
+2025-09-23 15:47:59,972 - INFO - 192.168.20.8 - - [23/Sep/2025 15:47:59] "POST /start http/1.1" 200 -
 2025-09-23 15:47:59,975 - ERROR - Error en la automatización: I/O operation on closed file
 2025-09-23 15:48:00,627 - INFO - Iniciando automatización...
-2025-09-23 15:48:00,628 - INFO - 192.168.21.56 - - [23/Sep/2025 15:48:00] "POST /start http/1.1" 200 -
+2025-09-23 15:48:00,628 - INFO - 192.168.20.8 - - [23/Sep/2025 15:48:00] "POST /start http/1.1" 200 -
 2025-09-23 15:48:00,630 - ERROR - Error en la automatización: I/O operation on closed file
 2025-09-23 15:48:01,203 - INFO - Iniciando automatización...
-2025-09-23 15:48:01,204 - INFO - 192.168.21.56 - - [23/Sep/2025 15:48:01] "POST /start http/1.1" 200 -
+2025-09-23 15:48:01,204 - INFO - 192.168.20.8 - - [23/Sep/2025 15:48:01] "POST /start http/1.1" 200 -
 2025-09-23 15:48:01,206 - ERROR - Error en la automatización: I/O operation on closed file
 2025-09-23 15:48:01,804 - INFO - Iniciando automatización...
-2025-09-23 15:48:01,804 - INFO - 192.168.21.56 - - [23/Sep/2025 15:48:01] "POST /start http/1.1" 200 -
+2025-09-23 15:48:01,804 - INFO - 192.168.20.8 - - [23/Sep/2025 15:48:01] "POST /start http/1.1" 200 -
 2025-09-23 15:48:01,807 - ERROR - Error en la automatización: I/O operation on closed file
 2025-09-23 15:48:04,147 - INFO - Iniciando automatización...
-2025-09-23 15:48:04,148 - INFO - 192.168.21.56 - - [23/Sep/2025 15:48:04] "POST /start http/1.1" 200 -
+2025-09-23 15:48:04,148 - INFO - 192.168.20.8 - - [23/Sep/2025 15:48:04] "POST /start http/1.1" 200 -
 2025-09-23 15:48:04,150 - ERROR - Error en la automatización: I/O operation on closed file
-2025-09-23 15:48:22,843 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:48:22,857 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:48:22,994 - INFO - 192.168.21.56 - - [23/Sep/2025 15:48:22] "GET / http/1.1" 200 -
-2025-09-23 15:48:23,240 - INFO - 192.168.21.56 - - [23/Sep/2025 15:48:23] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-23 15:48:28,089 - INFO - 192.168.21.56 - - [23/Sep/2025 15:48:28] "GET / http/1.1" 200 -
-2025-09-23 15:48:28,112 - INFO - 192.168.21.56 - - [23/Sep/2025 15:48:28] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:48:22,843 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:48:22,857 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:48:22,994 - INFO - 192.168.20.8 - - [23/Sep/2025 15:48:22] "GET / http/1.1" 200 -
+2025-09-23 15:48:23,240 - INFO - 192.168.20.8 - - [23/Sep/2025 15:48:23] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:48:28,089 - INFO - 192.168.20.8 - - [23/Sep/2025 15:48:28] "GET / http/1.1" 200 -
+2025-09-23 15:48:28,112 - INFO - 192.168.20.8 - - [23/Sep/2025 15:48:28] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
 2025-09-23 15:48:29,700 - INFO - Iniciando automatización...
-2025-09-23 15:48:29,700 - INFO - 192.168.21.56 - - [23/Sep/2025 15:48:29] "POST /start http/1.1" 200 -
+2025-09-23 15:48:29,700 - INFO - 192.168.20.8 - - [23/Sep/2025 15:48:29] "POST /start http/1.1" 200 -
 2025-09-23 15:48:29,701 - INFO - Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 15:48:29,702 - INFO - ====== WebDriver manager ======
 2025-09-23 15:48:30,832 - INFO - Get LATEST chromedriver version for google-chrome
 2025-09-23 15:48:31,653 - INFO - Get LATEST chromedriver version for google-chrome
-2025-09-23 15:48:32,479 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-23 15:48:32,479 - INFO - Driver [C:\Users\jperdomolc\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
 2025-09-23 15:48:38,377 - INFO - Página solicitada: http://www.larebajavirtual.com/
 2025-09-23 15:48:38,386 - ERROR - Error inesperado al abrir la página: Message: no such window: target window already closed
 from unknown error: web view not found
@@ -495,23 +495,23 @@ Stacktrace:
 2025-09-23 15:48:38,399 - ERROR - No se pudo abrir la página para el método Codigo de validacion. Saltando al siguiente...
 2025-09-23 15:48:45,693 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.httpConnection object at 0x0000025EDCAD7C50>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/a9358ff3a0bdfa7852bbb585ceda8551
 2025-09-23 15:48:49,777 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.httpConnection object at 0x0000025EDCAD7D90>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/a9358ff3a0bdfa7852bbb585ceda8551
-2025-09-23 15:50:03,779 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:50:03,806 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:50:03,914 - INFO - 192.168.21.56 - - [23/Sep/2025 15:50:03] "GET / http/1.1" 200 -
-2025-09-23 15:50:04,061 - INFO - 192.168.21.56 - - [23/Sep/2025 15:50:04] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-23 15:50:05,466 - INFO - 192.168.21.56 - - [23/Sep/2025 15:50:05] "GET / http/1.1" 200 -
-2025-09-23 15:50:05,497 - INFO - 192.168.21.56 - - [23/Sep/2025 15:50:05] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:50:03,779 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:50:03,806 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:50:03,914 - INFO - 192.168.20.8 - - [23/Sep/2025 15:50:03] "GET / http/1.1" 200 -
+2025-09-23 15:50:04,061 - INFO - 192.168.20.8 - - [23/Sep/2025 15:50:04] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:50:05,466 - INFO - 192.168.20.8 - - [23/Sep/2025 15:50:05] "GET / http/1.1" 200 -
+2025-09-23 15:50:05,497 - INFO - 192.168.20.8 - - [23/Sep/2025 15:50:05] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
 2025-09-23 15:50:06,405 - INFO - Iniciando automatización...
-2025-09-23 15:50:06,406 - INFO - 192.168.21.56 - - [23/Sep/2025 15:50:06] "POST /start http/1.1" 200 -
+2025-09-23 15:50:06,406 - INFO - 192.168.20.8 - - [23/Sep/2025 15:50:06] "POST /start http/1.1" 200 -
 2025-09-23 15:50:06,407 - INFO - Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 15:50:06,407 - INFO - ====== WebDriver manager ======
 2025-09-23 15:50:07,567 - INFO - Get LATEST chromedriver version for google-chrome
 2025-09-23 15:50:08,363 - INFO - Get LATEST chromedriver version for google-chrome
-2025-09-23 15:50:09,149 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-23 15:50:09,149 - INFO - Driver [C:\Users\jperdomolc\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
 2025-09-23 15:50:17,137 - INFO - Página solicitada: http://www.larebajavirtual.com/
 2025-09-23 15:50:17,177 - INFO - ✅ Etiqueta <body> detectada. Carga inicial completada.
 2025-09-23 15:50:17,202 - INFO - Logo de La Rebaja detectado. Página cargada correctamente.
-2025-09-23 15:50:17,839 - INFO - 192.168.21.56 - - [23/Sep/2025 15:50:17] "POST /stop http/1.1" 200 -
+2025-09-23 15:50:17,839 - INFO - 192.168.20.8 - - [23/Sep/2025 15:50:17] "POST /stop http/1.1" 200 -
 2025-09-23 15:50:18,548 - INFO - Modal cerrado exitosamente usando selector: //a[@href='#__cn_close_content']
 2025-09-23 15:50:18,548 - INFO - ✅ Tiempo de abrir_pagina: 8.185 segundos
 2025-09-23 15:50:18,548 - INFO - Intentando hacer clic en el botón 'Mi Cuenta'.
@@ -657,19 +657,19 @@ Stacktrace:
 	RtlGetAppContainerNamedObjectPath [0x0x76f5d661+561]
 
 2025-09-23 15:50:46,898 - ERROR - Fallo el login para el método Codigo de validacion. Saltando al siguiente...
-2025-09-23 15:51:06,441 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:51:06,452 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:51:06,593 - INFO - 192.168.21.56 - - [23/Sep/2025 15:51:06] "GET / http/1.1" 200 -
-2025-09-23 15:51:06,801 - INFO - 192.168.21.56 - - [23/Sep/2025 15:51:06] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-23 15:51:12,869 - INFO - 192.168.21.56 - - [23/Sep/2025 15:51:12] "GET / http/1.1" 200 -
-2025-09-23 15:51:12,896 - INFO - 192.168.21.56 - - [23/Sep/2025 15:51:12] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:51:06,441 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:51:06,452 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:51:06,593 - INFO - 192.168.20.8 - - [23/Sep/2025 15:51:06] "GET / http/1.1" 200 -
+2025-09-23 15:51:06,801 - INFO - 192.168.20.8 - - [23/Sep/2025 15:51:06] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:51:12,869 - INFO - 192.168.20.8 - - [23/Sep/2025 15:51:12] "GET / http/1.1" 200 -
+2025-09-23 15:51:12,896 - INFO - 192.168.20.8 - - [23/Sep/2025 15:51:12] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
 2025-09-23 15:51:13,735 - INFO - Iniciando automatización...
-2025-09-23 15:51:13,735 - INFO - 192.168.21.56 - - [23/Sep/2025 15:51:13] "POST /start http/1.1" 200 -
+2025-09-23 15:51:13,735 - INFO - 192.168.20.8 - - [23/Sep/2025 15:51:13] "POST /start http/1.1" 200 -
 2025-09-23 15:51:13,737 - INFO - Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 15:51:13,737 - INFO - ====== WebDriver manager ======
 2025-09-23 15:51:14,933 - INFO - Get LATEST chromedriver version for google-chrome
 2025-09-23 15:51:15,871 - INFO - Get LATEST chromedriver version for google-chrome
-2025-09-23 15:51:16,800 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-23 15:51:16,800 - INFO - Driver [C:\Users\jperdomolc\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
 2025-09-23 15:51:22,351 - INFO - Página solicitada: http://www.larebajavirtual.com/
 2025-09-23 15:51:22,373 - INFO - ✅ Etiqueta <body> detectada. Carga inicial completada.
 2025-09-23 15:51:24,990 - INFO - Logo de La Rebaja detectado. Página cargada correctamente.
@@ -677,7 +677,7 @@ Stacktrace:
 2025-09-23 15:51:26,758 - INFO - ✅ Tiempo de abrir_pagina: 8.654 segundos
 2025-09-23 15:51:26,758 - INFO - Intentando hacer clic en el botón 'Mi Cuenta'.
 2025-09-23 15:51:27,494 - INFO - Clic realizado en el botón 'Mi Cuenta'.
-2025-09-23 15:51:27,839 - INFO - 192.168.21.56 - - [23/Sep/2025 15:51:27] "POST /stop http/1.1" 200 -
+2025-09-23 15:51:27,839 - INFO - 192.168.20.8 - - [23/Sep/2025 15:51:27] "POST /stop http/1.1" 200 -
 2025-09-23 15:51:38,421 - INFO - No se encontró ningún modal para cerrar o todos los intentos fallaron.
 2025-09-23 15:51:38,421 - INFO - Intentando hacer clic en la opción de login: 'Codigo de validacion'.
 2025-09-23 15:51:38,524 - INFO - Clic realizado en 'Recibir código de acceso por e-mail'.
@@ -689,19 +689,19 @@ Stacktrace:
 2025-09-23 15:51:47,441 - WARNING - La modal de Connectif no pudo ser cerrada, el flujo podría verse afectado.
 2025-09-23 15:51:47,686 - INFO - Email para código de validación ingresado.
 2025-09-23 15:51:48,811 - INFO - Clic en botón 'Enviar' para código de validación.
-2025-09-23 15:53:24,189 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:53:24,222 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:53:24,329 - INFO - 192.168.21.56 - - [23/Sep/2025 15:53:24] "GET / http/1.1" 200 -
-2025-09-23 15:53:24,537 - INFO - 192.168.21.56 - - [23/Sep/2025 15:53:24] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-23 15:53:26,654 - INFO - 192.168.21.56 - - [23/Sep/2025 15:53:26] "GET / http/1.1" 200 -
-2025-09-23 15:53:26,680 - INFO - 192.168.21.56 - - [23/Sep/2025 15:53:26] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:53:24,189 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:53:24,222 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:53:24,329 - INFO - 192.168.20.8 - - [23/Sep/2025 15:53:24] "GET / http/1.1" 200 -
+2025-09-23 15:53:24,537 - INFO - 192.168.20.8 - - [23/Sep/2025 15:53:24] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:53:26,654 - INFO - 192.168.20.8 - - [23/Sep/2025 15:53:26] "GET / http/1.1" 200 -
+2025-09-23 15:53:26,680 - INFO - 192.168.20.8 - - [23/Sep/2025 15:53:26] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
 2025-09-23 15:53:28,307 - INFO - Iniciando automatización...
-2025-09-23 15:53:28,307 - INFO - 192.168.21.56 - - [23/Sep/2025 15:53:28] "POST /start http/1.1" 200 -
+2025-09-23 15:53:28,307 - INFO - 192.168.20.8 - - [23/Sep/2025 15:53:28] "POST /start http/1.1" 200 -
 2025-09-23 15:53:28,308 - INFO - Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 15:53:28,309 - INFO - ====== WebDriver manager ======
 2025-09-23 15:53:29,450 - INFO - Get LATEST chromedriver version for google-chrome
 2025-09-23 15:53:30,380 - INFO - Get LATEST chromedriver version for google-chrome
-2025-09-23 15:53:31,158 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-23 15:53:31,158 - INFO - Driver [C:\Users\jperdomolc\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
 2025-09-23 15:53:38,905 - INFO - Página solicitada: http://www.larebajavirtual.com/
 2025-09-23 15:53:39,345 - INFO - ✅ Etiqueta <body> detectada. Carga inicial completada.
 2025-09-23 15:53:39,562 - INFO - Logo de La Rebaja detectado. Página cargada correctamente.
@@ -709,7 +709,7 @@ Stacktrace:
 2025-09-23 15:53:40,716 - INFO - ✅ Tiempo de abrir_pagina: 8.290 segundos
 2025-09-23 15:53:40,716 - INFO - Intentando hacer clic en el botón 'Mi Cuenta'.
 2025-09-23 15:53:40,816 - INFO - Clic realizado en el botón 'Mi Cuenta'.
-2025-09-23 15:53:42,738 - INFO - 192.168.21.56 - - [23/Sep/2025 15:53:42] "POST /stop http/1.1" 200 -
+2025-09-23 15:53:42,738 - INFO - 192.168.20.8 - - [23/Sep/2025 15:53:42] "POST /stop http/1.1" 200 -
 2025-09-23 15:53:51,706 - INFO - No se encontró ningún modal para cerrar o todos los intentos fallaron.
 2025-09-23 15:53:51,707 - INFO - Intentando hacer clic en la opción de login: 'Codigo de validacion'.
 2025-09-23 15:53:51,799 - INFO - Clic realizado en 'Recibir código de acceso por e-mail'.
@@ -752,21 +752,21 @@ Stacktrace:
 2025-09-23 15:54:23,302 - ERROR - Fallo al enviar el correo de error: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  http://support.google.com/mail/?p=BadCredentials 6a1803df08f44-7934693139asm96582446d6.21 - gsmtp')
 2025-09-23 15:54:23,302 - ERROR - Detalle del error al enviar correo:
 Traceback (most recent call last):
-  File "c:\Users\dforero\Pictures\LoginRebaja\loginlarebaja.py", line 542, in login_codigo_validacion
+  File "c:\Users\jperdomolc\Pictures\LoginRebaja\loginlarebaja.py", line 542, in login_codigo_validacion
     boton_try_again = WebDriverWait(driver, 30).until(
         EC.element_to_be_clickable((By.XPATH, "//button[normalize-space(text())='Try again']"))
     )
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\wait.py", line 129, in until
     value = method(self._driver)
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\expected_conditions.py", line 624, in _predicate
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\expected_conditions.py", line 624, in _predicate
     target = driver.find_element(*target)  # grab element at locator
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 926, in find_element
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 926, in find_element
     return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
     self.error_handler.check_response(response)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
     raise exception_class(message, screen, stacktrace)
 selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
 from disconnected: not connected to DevTools
@@ -798,19 +798,19 @@ Stacktrace:
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "c:\Users\dforero\Pictures\LoginRebaja\loginlarebaja.py", line 71, in send_error_email
+  File "c:\Users\jperdomolc\Pictures\LoginRebaja\loginlarebaja.py", line 71, in send_error_email
     server.login(SENDER_EMAIL, SENDER_PASSWORD)
     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 750, in login
+  File "C:\Users\jperdomolc\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 750, in login
     raise last_exception
-  File "C:\Users\dforero\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 739, in login
+  File "C:\Users\jperdomolc\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 739, in login
     (code, resp) = self.auth(
                    ~~~~~~~~~^
         authmethod, getattr(self, method_name),
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         initial_response_ok=initial_response_ok)
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 662, in auth
+  File "C:\Users\jperdomolc\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 662, in auth
     raise SMTPAuthenticationError(code, resp)
 smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  http://support.google.com/mail/?p=BadCredentials 6a1803df08f44-7934693139asm96582446d6.21 - gsmtp')
 2025-09-23 15:54:23,319 - INFO - ✅ Tiempo de login_codigo_validacion: 31.488 segundos
@@ -1008,19 +1008,19 @@ Stacktrace:
 	RtlGetAppContainerNamedObjectPath [0x0x76f5d661+561]
 
 2025-09-23 15:54:26,455 - ERROR - Error en la automatización: [Errno 2] No such file or directory: 'C:\\Users\\jperdomolc\\Music\\LoginRebaja\\booming-mission-451620-a9-fbad2efec009.json'
-2025-09-23 15:56:04,949 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 15:56:04,976 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 15:56:05,070 - INFO - 192.168.21.56 - - [23/Sep/2025 15:56:05] "GET / http/1.1" 200 -
-2025-09-23 15:56:05,196 - INFO - 192.168.21.56 - - [23/Sep/2025 15:56:05] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-23 15:56:13,817 - INFO - 192.168.21.56 - - [23/Sep/2025 15:56:13] "GET / http/1.1" 200 -
-2025-09-23 15:56:13,848 - INFO - 192.168.21.56 - - [23/Sep/2025 15:56:13] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:56:04,949 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 15:56:04,976 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 15:56:05,070 - INFO - 192.168.20.8 - - [23/Sep/2025 15:56:05] "GET / http/1.1" 200 -
+2025-09-23 15:56:05,196 - INFO - 192.168.20.8 - - [23/Sep/2025 15:56:05] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 15:56:13,817 - INFO - 192.168.20.8 - - [23/Sep/2025 15:56:13] "GET / http/1.1" 200 -
+2025-09-23 15:56:13,848 - INFO - 192.168.20.8 - - [23/Sep/2025 15:56:13] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
 2025-09-23 15:56:15,358 - INFO - Iniciando automatización...
-2025-09-23 15:56:15,358 - INFO - 192.168.21.56 - - [23/Sep/2025 15:56:15] "POST /start http/1.1" 200 -
+2025-09-23 15:56:15,358 - INFO - 192.168.20.8 - - [23/Sep/2025 15:56:15] "POST /start http/1.1" 200 -
 2025-09-23 15:56:15,359 - INFO - Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 15:56:15,360 - INFO - ====== WebDriver manager ======
 2025-09-23 15:56:16,519 - INFO - Get LATEST chromedriver version for google-chrome
 2025-09-23 15:56:17,411 - INFO - Get LATEST chromedriver version for google-chrome
-2025-09-23 15:56:22,204 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-23 15:56:22,204 - INFO - Driver [C:\Users\jperdomolc\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
 2025-09-23 15:56:29,804 - INFO - Página solicitada: http://www.larebajavirtual.com/
 2025-09-23 15:56:29,873 - INFO - ✅ Etiqueta <body> detectada. Carga inicial completada.
 2025-09-23 15:56:31,091 - INFO - Logo de La Rebaja detectado. Página cargada correctamente.
@@ -1057,29 +1057,29 @@ Stacktrace:
 2025-09-23 15:56:38,301 - ERROR - Fallo al enviar el correo de error: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  http://support.google.com/mail/?p=BadCredentials af79cd13be357-84bc62df395sm381174085a.40 - gsmtp')
 2025-09-23 15:56:38,302 - ERROR - Detalle del error al enviar correo:
 Traceback (most recent call last):
-  File "c:\Users\dforero\Pictures\LoginRebaja\loginlarebaja.py", line 713, in clic_mi_cuenta
+  File "c:\Users\jperdomolc\Pictures\LoginRebaja\loginlarebaja.py", line 713, in clic_mi_cuenta
     boton_mi_cuenta = WebDriverWait(driver, 15).until(
         EC.element_to_be_clickable((By.XPATH, "//div[contains(@class, 'LoginPopUpCustom_button') and .//span[text()='Mi cuenta']]"))
     )
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\wait.py", line 129, in until
     value = method(self._driver)
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\expected_conditions.py", line 625, in _predicate
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\expected_conditions.py", line 625, in _predicate
     element = visibility_of(target)(driver)
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\expected_conditions.py", line 252, in _predicate
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\expected_conditions.py", line 252, in _predicate
     return _element_if_visible(element)
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\expected_conditions.py", line 272, in _element_if_visible
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\expected_conditions.py", line 272, in _element_if_visible
     return element if element.is_displayed() == visibility else False
                       ~~~~~~~~~~~~~~~~~~~~^^
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webelement.py", line 341, in is_displayed
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webelement.py", line 341, in is_displayed
     return self.parent.execute_script(f"/* isDisplayed */return ({isDisplayed_js}).apply(null, arguments);", self)
            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 555, in execute_script
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 555, in execute_script
     return self.execute(command, {"script": script, "args": converted_args})["value"]
            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
     self.error_handler.check_response(response)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
     raise exception_class(message, screen, stacktrace)
 selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
   (Session info: chrome=140.0.7339.186); For documentation on this error, please visit: http://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
@@ -1111,19 +1111,19 @@ Stacktrace:
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "c:\Users\dforero\Pictures\LoginRebaja\loginlarebaja.py", line 71, in send_error_email
+  File "c:\Users\jperdomolc\Pictures\LoginRebaja\loginlarebaja.py", line 71, in send_error_email
     server.login(SENDER_EMAIL, SENDER_PASSWORD)
     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 750, in login
+  File "C:\Users\jperdomolc\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 750, in login
     raise last_exception
-  File "C:\Users\dforero\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 739, in login
+  File "C:\Users\jperdomolc\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 739, in login
     (code, resp) = self.auth(
                    ~~~~~~~~~^
         authmethod, getattr(self, method_name),
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         initial_response_ok=initial_response_ok)
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 662, in auth
+  File "C:\Users\jperdomolc\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 662, in auth
     raise SMTPAuthenticationError(code, resp)
 smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  http://support.google.com/mail/?p=BadCredentials af79cd13be357-84bc62df395sm381174085a.40 - gsmtp')
 2025-09-23 15:56:38,310 - INFO - ✅ Tiempo de clic_mi_cuenta: 5.321 segundos
@@ -1158,11 +1158,11 @@ Stacktrace:
 2025-09-23 15:57:21,841 - ERROR - Fallo al enviar el correo de error: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  http://support.google.com/mail/?p=BadCredentials af79cd13be357-8532944b608sm130613285a.37 - gsmtp')
 2025-09-23 15:57:21,841 - ERROR - Detalle del error al enviar correo:
 Traceback (most recent call last):
-  File "c:\Users\dforero\Pictures\LoginRebaja\loginlarebaja.py", line 513, in login_codigo_validacion
+  File "c:\Users\jperdomolc\Pictures\LoginRebaja\loginlarebaja.py", line 513, in login_codigo_validacion
     user_input_email = WebDriverWait(driver, 30).until(
         EC.presence_of_element_located((By.XPATH, "//input[@name='email']"))
     )
-  File "C:\Users\dforero\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\wait.py", line 138, in until
+  File "C:\Users\jperdomolc\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\support\wait.py", line 138, in until
     raise TimeoutException(message, screen, stacktrace)
 selenium.common.exceptions.TimeoutException: Message: 
 Stacktrace:
@@ -1193,29 +1193,29 @@ Stacktrace:
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "c:\Users\dforero\Pictures\LoginRebaja\loginlarebaja.py", line 71, in send_error_email
+  File "c:\Users\jperdomolc\Pictures\LoginRebaja\loginlarebaja.py", line 71, in send_error_email
     server.login(SENDER_EMAIL, SENDER_PASSWORD)
     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 750, in login
+  File "C:\Users\jperdomolc\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 750, in login
     raise last_exception
-  File "C:\Users\dforero\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 739, in login
+  File "C:\Users\jperdomolc\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 739, in login
     (code, resp) = self.auth(
                    ~~~~~~~~~^
         authmethod, getattr(self, method_name),
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         initial_response_ok=initial_response_ok)
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\dforero\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 662, in auth
+  File "C:\Users\jperdomolc\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 662, in auth
     raise SMTPAuthenticationError(code, resp)
 smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  http://support.google.com/mail/?p=BadCredentials af79cd13be357-8532944b608sm130613285a.37 - gsmtp')
 2025-09-23 15:57:21,844 - INFO - ✅ Tiempo de login_codigo_validacion: 43.533 segundos
 2025-09-23 15:57:21,844 - INFO - Esperando que la URL sea la del home y detección de elementos clave.
-2025-09-23 16:00:19,115 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 16:00:19,126 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 16:00:19,245 - INFO - 192.168.21.56 - - [23/Sep/2025 16:00:19] "GET / http/1.1" 200 -
-2025-09-23 16:00:19,451 - INFO - 192.168.21.56 - - [23/Sep/2025 16:00:19] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 16:00:19,115 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 16:00:19,126 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 16:00:19,245 - INFO - 192.168.20.8 - - [23/Sep/2025 16:00:19] "GET / http/1.1" 200 -
+2025-09-23 16:00:19,451 - INFO - 192.168.20.8 - - [23/Sep/2025 16:00:19] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
 2025-09-23 16:00:21,090 - INFO - Iniciando automatización...
-2025-09-23 16:00:21,090 - INFO - 192.168.21.56 - - [23/Sep/2025 16:00:21] "POST /start http/1.1" 200 -
+2025-09-23 16:00:21,090 - INFO - 192.168.20.8 - - [23/Sep/2025 16:00:21] "POST /start http/1.1" 200 -
 2025-09-23 16:00:21,092 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:00:21,092 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:00:21,093 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
@@ -51732,7 +51732,7 @@ smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepte
 2025-09-23 16:00:37,282 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:00:37,282 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:00:37,283 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
-2025-09-23 16:00:37,284 - INFO - 192.168.21.56 - - [23/Sep/2025 16:00:37] "POST /stop http/1.1" 200 -
+2025-09-23 16:00:37,284 - INFO - 192.168.20.8 - - [23/Sep/2025 16:00:37] "POST /stop http/1.1" 200 -
 2025-09-23 16:00:37,284 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:00:37,285 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:00:37,285 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
@@ -78060,12 +78060,12 @@ smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepte
 2025-09-23 16:00:44,931 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:00:44,931 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:00:44,932 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
-2025-09-23 16:01:14,737 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 16:01:14,748 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 16:01:14,858 - INFO - 192.168.21.56 - - [23/Sep/2025 16:01:14] "GET / http/1.1" 200 -
-2025-09-23 16:01:15,068 - INFO - 192.168.21.56 - - [23/Sep/2025 16:01:15] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 16:01:14,737 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 16:01:14,748 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 16:01:14,858 - INFO - 192.168.20.8 - - [23/Sep/2025 16:01:14] "GET / http/1.1" 200 -
+2025-09-23 16:01:15,068 - INFO - 192.168.20.8 - - [23/Sep/2025 16:01:15] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
 2025-09-23 16:01:16,525 - INFO - Iniciando automatización...
-2025-09-23 16:01:16,525 - INFO - 192.168.21.56 - - [23/Sep/2025 16:01:16] "POST /start http/1.1" 200 -
+2025-09-23 16:01:16,525 - INFO - 192.168.20.8 - - [23/Sep/2025 16:01:16] "POST /start http/1.1" 200 -
 2025-09-23 16:01:16,526 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:01:16,527 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:01:16,527 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
@@ -102620,23 +102620,23 @@ smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepte
 2025-09-23 16:01:24,756 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:01:24,757 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:01:24,757 - INFO - ⏳ Iniciando ciclo de ejecución de pruebas de login...
-2025-09-23 16:22:33,607 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-23 16:22:33,635 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-23 16:22:33,749 - INFO - 192.168.21.56 - - [23/Sep/2025 16:22:33] "GET / http/1.1" 200 -
-2025-09-23 16:22:33,971 - INFO - 192.168.21.56 - - [23/Sep/2025 16:22:33] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-23 16:32:29,233 - INFO - 192.168.21.56 - - [23/Sep/2025 16:32:29] "GET / http/1.1" 200 -
-2025-09-23 16:32:29,265 - INFO - 192.168.21.56 - - [23/Sep/2025 16:32:29] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-23 16:32:30,075 - INFO - 192.168.21.56 - - [23/Sep/2025 16:32:30] "GET / http/1.1" 200 -
-2025-09-23 16:32:30,098 - INFO - 192.168.21.56 - - [23/Sep/2025 16:32:30] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 16:22:33,607 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-23 16:22:33,635 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-23 16:22:33,749 - INFO - 192.168.20.8 - - [23/Sep/2025 16:22:33] "GET / http/1.1" 200 -
+2025-09-23 16:22:33,971 - INFO - 192.168.20.8 - - [23/Sep/2025 16:22:33] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 16:32:29,233 - INFO - 192.168.20.8 - - [23/Sep/2025 16:32:29] "GET / http/1.1" 200 -
+2025-09-23 16:32:29,265 - INFO - 192.168.20.8 - - [23/Sep/2025 16:32:29] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-23 16:32:30,075 - INFO - 192.168.20.8 - - [23/Sep/2025 16:32:30] "GET / http/1.1" 200 -
+2025-09-23 16:32:30,098 - INFO - 192.168.20.8 - - [23/Sep/2025 16:32:30] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
 2025-09-23 16:32:30,984 - INFO - Iniciando automatización...
-2025-09-23 16:32:30,985 - INFO - 192.168.21.56 - - [23/Sep/2025 16:32:30] "POST /start http/1.1" 200 -
+2025-09-23 16:32:30,985 - INFO - 192.168.20.8 - - [23/Sep/2025 16:32:30] "POST /start http/1.1" 200 -
 2025-09-23 16:32:30,986 - INFO - Iniciando ciclo de ejecución de pruebas de login...
 2025-09-23 16:32:30,987 - INFO - ====== WebDriver manager ======
 2025-09-23 16:32:32,174 - INFO - Get LATEST chromedriver version for google-chrome
 2025-09-23 16:32:33,039 - INFO - Get LATEST chromedriver version for google-chrome
-2025-09-23 16:32:34,018 - INFO - Driver [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
+2025-09-23 16:32:34,018 - INFO - Driver [C:\Users\jperdomolc\.wdm\drivers\chromedriver\win64\140.0.7339.207\chromedriver-win32/chromedriver.exe] found in cache
 2025-09-23 16:32:35,532 - INFO - Página solicitada: http://www.larebajavirtual.com/
-2025-09-23 16:32:40,025 - INFO - 192.168.21.56 - - [23/Sep/2025 16:32:40] "POST /stop http/1.1" 200 -
+2025-09-23 16:32:40,025 - INFO - 192.168.20.8 - - [23/Sep/2025 16:32:40] "POST /stop http/1.1" 200 -
 2025-09-23 16:32:43,355 - INFO - ✅ Etiqueta <body> detectada. Carga inicial completada.
 2025-09-23 16:32:43,390 - INFO - Logo de La Rebaja detectado. Página cargada correctamente.
 2025-09-23 16:32:44,519 - INFO - Modal cerrado exitosamente usando selector: //a[@href='#__cn_close_content']
@@ -102678,21 +102678,21 @@ smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepte
 2025-09-23 16:34:57,904 - INFO - ✅ Tiempo de confirmar_login: 40.222 segundos
 2025-09-23 16:35:01,272 - WARNING - Elemento obsoleto, intentando nuevamente...
 2025-09-23 16:35:05,824 - WARNING - Elemento obsoleto, intentando nuevamente...
-2025-09-24 06:44:33,470 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-24 06:44:33,503 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-24 06:44:33,841 - INFO - 192.168.21.56 - - [24/Sep/2025 06:44:33] "GET / http/1.1" 200 -
-2025-09-24 06:44:34,131 - INFO - 192.168.21.56 - - [24/Sep/2025 06:44:34] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-24 06:44:34,162 - INFO - 192.168.21.56 - - [24/Sep/2025 06:44:34] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-24 06:44:33,470 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-24 06:44:33,503 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-24 06:44:33,841 - INFO - 192.168.20.8 - - [24/Sep/2025 06:44:33] "GET / http/1.1" 200 -
+2025-09-24 06:44:34,131 - INFO - 192.168.20.8 - - [24/Sep/2025 06:44:34] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-24 06:44:34,162 - INFO - 192.168.20.8 - - [24/Sep/2025 06:44:34] "[33mGET /favicon.ico http/1.1[0m" 404 -
 2025-09-24 06:44:43,488 - INFO - Iniciando automatización...
-2025-09-24 06:44:43,489 - INFO - 192.168.21.56 - - [24/Sep/2025 06:44:43] "POST /start http/1.1" 200 -
-2025-09-24 06:45:44,017 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-24 06:45:44,090 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-24 06:45:44,355 - INFO - 192.168.21.56 - - [24/Sep/2025 06:45:44] "GET / http/1.1" 200 -
-2025-09-24 06:45:44,372 - INFO - 192.168.21.56 - - [24/Sep/2025 06:45:44] "GET / http/1.1" 200 -
-2025-09-24 06:45:44,669 - INFO - 192.168.21.56 - - [24/Sep/2025 06:45:44] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
-2025-09-24 06:45:44,680 - INFO - 192.168.21.56 - - [24/Sep/2025 06:45:44] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-24 06:44:43,489 - INFO - 192.168.20.8 - - [24/Sep/2025 06:44:43] "POST /start http/1.1" 200 -
+2025-09-24 06:45:44,017 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-24 06:45:44,090 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-24 06:45:44,355 - INFO - 192.168.20.8 - - [24/Sep/2025 06:45:44] "GET / http/1.1" 200 -
+2025-09-24 06:45:44,372 - INFO - 192.168.20.8 - - [24/Sep/2025 06:45:44] "GET / http/1.1" 200 -
+2025-09-24 06:45:44,669 - INFO - 192.168.20.8 - - [24/Sep/2025 06:45:44] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
+2025-09-24 06:45:44,680 - INFO - 192.168.20.8 - - [24/Sep/2025 06:45:44] "[36mGET /images/Rebaja.png http/1.1[0m" 304 -
 2025-09-24 06:45:46,530 - INFO - Iniciando automatización...
-2025-09-24 06:45:46,531 - INFO - 192.168.21.56 - - [24/Sep/2025 06:45:46] "POST /start http/1.1" 200 -
+2025-09-24 06:45:46,531 - INFO - 192.168.20.8 - - [24/Sep/2025 06:45:46] "POST /start http/1.1" 200 -
 2025-09-24 06:45:46,535 - INFO - Iniciando ciclo de ejecución de pruebas de login...
 2025-09-24 06:45:46,540 - INFO - ====== WebDriver manager ======
 2025-09-24 06:45:48,658 - INFO - Get LATEST chromedriver version for google-chrome
@@ -102703,7 +102703,7 @@ smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepte
 2025-09-24 06:45:54,294 - INFO - About to download new driver from http://storage.googleapis.com/chrome-for-testing-public/140.0.7339.207/win32/chromedriver-win32.zip
 2025-09-24 06:45:55,655 - INFO - Driver downloading response is 200
 2025-09-24 06:45:57,976 - INFO - Get LATEST chromedriver version for google-chrome
-2025-09-24 06:45:59,375 - INFO - Driver has been saved in cache [C:\Users\dforero\.wdm\drivers\chromedriver\win64\140.0.7339.207]
+2025-09-24 06:45:59,375 - INFO - Driver has been saved in cache [C:\Users\jperdomolc\.wdm\drivers\chromedriver\win64\140.0.7339.207]
 2025-09-24 06:46:09,365 - INFO - Página solicitada: http://www.larebajavirtual.com/
 2025-09-24 06:46:09,668 - INFO - ✅ Etiqueta <body> detectada. Carga inicial completada.
 2025-09-24 06:46:10,000 - INFO - Logo de La Rebaja detectado. Página cargada correctamente.
@@ -102711,10 +102711,10 @@ smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepte
 2025-09-24 06:46:11,586 - INFO - ✅ Tiempo de abrir_pagina: 10.282 segundos
 2025-09-24 06:46:11,588 - INFO - Intentando hacer clic en el botón 'Mi Cuenta'.
 2025-09-24 06:46:11,679 - INFO - Deteniendo el servidor y la automatización (simulando Ctrl+C)...
-2025-09-24 06:46:11,686 - INFO - 192.168.21.56 - - [24/Sep/2025 06:46:11] "POST /stop http/1.1" 200 -
+2025-09-24 06:46:11,686 - INFO - 192.168.20.8 - - [24/Sep/2025 06:46:11] "POST /stop http/1.1" 200 -
 2025-09-24 06:46:11,841 - INFO - Clic realizado en el botón 'Mi Cuenta'.
-2025-09-25 12:00:59,928 - INFO - Servidor iniciado en http://192.168.21.56:5005
-2025-09-25 12:00:59,945 - INFO -  * Running on http://192.168.21.56:5005/ (Press CTRL+C to quit)
-2025-09-25 12:01:00,100 - INFO - 192.168.21.56 - - [25/Sep/2025 12:01:00] "GET / http/1.1" 200 -
-2025-09-25 12:01:00,279 - INFO - 192.168.21.56 - - [25/Sep/2025 12:01:00] "GET /images/Rebaja.png http/1.1" 200 -
-2025-09-25 12:01:00,316 - INFO - 192.168.21.56 - - [25/Sep/2025 12:01:00] "[33mGET /favicon.ico http/1.1[0m" 404 -
+2025-09-25 12:00:59,928 - INFO - Servidor iniciado en http://192.168.20.8:5005
+2025-09-25 12:00:59,945 - INFO -  * Running on http://192.168.20.8:5005/ (Press CTRL+C to quit)
+2025-09-25 12:01:00,100 - INFO - 192.168.20.8 - - [25/Sep/2025 12:01:00] "GET / http/1.1" 200 -
+2025-09-25 12:01:00,279 - INFO - 192.168.20.8 - - [25/Sep/2025 12:01:00] "GET /images/Rebaja.png http/1.1" 200 -
+2025-09-25 12:01:00,316 - INFO - 192.168.20.8 - - [25/Sep/2025 12:01:00] "[33mGET /favicon.ico http/1.1[0m" 404 -

@@ -28,7 +28,7 @@ if sys.stdout.encoding.lower() != "utf-8":
 SCOPES = ['https://www.googleapis.com/auth/drive.file']
 FOLDER_ID_GOOGLE_DRIVE = '14U16Cej8SroNhWfAfL102gNHs-qtS_GY'
 CREDENTIALS_FILE = 'credentials.json'
-PDF_DIR = r"C:\Users\dforero\Downloads\Facturas_Claro_Pruebas"  # Definición de PDF_DIR
+PDF_DIR = r"C:\Users\jperdomolc\Downloads\Facturas_Claro_Pruebas"  # Definición de PDF_DIR
 
 def get_or_create_pdf_folder(service, parent_folder_id):
     """Busca o crea una subcarpeta llamada 'PDFs' dentro de la carpeta principal."""

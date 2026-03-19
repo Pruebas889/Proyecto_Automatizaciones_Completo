@@ -20,8 +20,8 @@ def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if not session.get('logged_in') or session.get('role') != 'larebaja':
-            logging.info("Acceso no autorizado, redirigiendo a http://192.168.21.56:5000")
-            return redirect('http://192.168.21.56:5000')
+            logging.info("Acceso no autorizado, redirigiendo a http://192.168.20.8:5000")
+            return redirect('http://192.168.20.8:5000')
         return f(*args, **kwargs)
     return decorated_function
 
@@ -85,7 +85,7 @@ def start_automation():
     
     try:
         # Ruta absoluta a loginlarebaja.py
-        script_path = r"C:\Users\dforero\Pictures\Proyecto_Automatizaciones_Completo\LoginRebaja\loginlarebaja.py"
+        script_path = r"C:\Users\jperdomolc\Pictures\Proyecto_Automatizaciones_Completo\LoginRebaja\loginlarebaja.py"
         # Verificar si el archivo existe
         if not os.path.exists(script_path):
             error_msg = f"No se encontró el archivo: {script_path}"
@@ -172,5 +172,5 @@ if __name__ == "__main__":
     port = 5004
     
     # Iniciar el servidor Flask
-    logging.info(f"Servidor iniciado en http://192.168.21.56:{port}")
+    logging.info(f"Servidor iniciado en http://192.168.20.8:{port}")
     app.run(host='0.0.0.0', port=port, debug=False)

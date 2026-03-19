@@ -32,8 +32,8 @@ def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if not session.get('logged_in') or session.get('role') != 'POSWEB':
-            logging.info("Acceso no autorizado, redirigiendo a http://192.168.21.56:5000")
-            return redirect('http://192.168.21.56:5000')
+            logging.info("Acceso no autorizado, redirigiendo a http://192.168.20.8:5000")
+            return redirect('http://192.168.20.8:5000')
         return f(*args, **kwargs)
     return decorated_function
 
@@ -371,7 +371,7 @@ def extract_gdrive_folder_id(url):
     return None
 
 def upload_folder_to_gdrive(folder_path, folder_id):
-    CLIENT_SECRETS_FILE = r"C:\\Users\\dforero\\Pictures\\Proyecto_Automatizaciones_Completo\\LoginPosWEB\\client_secret_777079944211-b8j5p3ij4t9s6estq9fjt16p9jeo8bdm.apps.googleusercontent.com.json"
+    CLIENT_SECRETS_FILE = r"C:\\Users\\jperdomolc\\Pictures\\Proyecto_Automatizaciones_Completo\\LoginPosWEB\\client_secret_777079944211-b8j5p3ij4t9s6estq9fjt16p9jeo8bdm.apps.googleusercontent.com.json"
     try:
         flow = InstalledAppFlow.from_client_secrets_file(
             CLIENT_SECRETS_FILE,

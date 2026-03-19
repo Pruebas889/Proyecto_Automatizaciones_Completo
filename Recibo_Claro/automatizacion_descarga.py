@@ -181,7 +181,7 @@ def mover_mouse_humano(driver, elemento):
 ## Función Principal de Automatización MODIFICADA para usar progreso
 # -----------------------------------------------------------------------------
 
-def automatizar_claro_empresas_completo(username, password, download_dir, anio, mes, max_reintentos=3):  
+def automatizar_claro_empresas_completo(username, password, download_dir, anio, mes, max_reintentos=7):  
     
     """
     Automatiza el proceso de login y descarga de facturas en Mi Claro Empresas.
@@ -254,7 +254,7 @@ def automatizar_claro_empresas_completo(username, password, download_dir, anio, 
                 boton_login.click()
                 pausa_humana(2, 5)
                 logging.info(f"Intento {intento}: Credenciales ingresadas y login enviado. 🔒")
-                time.sleep(7)
+                time.sleep(10)
                 try:
                     popup_error = WebDriverWait(driver, 5).until(
                         EC.visibility_of_element_located((By.XPATH, '//*[@id="errorRecaptcha"]/div/div/div[2]/button'))
@@ -281,7 +281,7 @@ def automatizar_claro_empresas_completo(username, password, download_dir, anio, 
 
         # Navegación a facturas (se mantiene igual)
         try:
-            btn_consulta_facturas = esperar_clickable(driver, '//*[@id="js-portlet-_cenaccesosrapidosportlet_"]/div/div/div/div/div[2]/div[2]')
+            btn_consulta_facturas = esperar_clickable(driver, '#js-portlet-_cenaccesosrapidosportlet_INSTANCE_xU0BvWLZHNBp_ > div > div > div > div > div:nth-child(1) > div > div:nth-child(2) > div > a > div > div.text-box')
             mover_mouse_humano(driver, btn_consulta_facturas)
             pausa_humana()
             btn_consulta_facturas.click()
