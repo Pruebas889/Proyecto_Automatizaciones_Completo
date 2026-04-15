@@ -5,6 +5,8 @@ import random
 import glob
 import json
 import sys
+import threading
+from control_flow import stop_automation_flag
 from selenium.webdriver.support.ui import Select
 from datetime import datetime
 from selenium import webdriver
@@ -20,8 +22,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
 
-# <<<<<< MODIFICACIÓN: Importar de control_flow.py en lugar de server.py
-from control_flow import stop_automation_flag
+
 
 # Configuración de logs
 logging.basicConfig(
@@ -30,26 +31,18 @@ logging.basicConfig(
     handlers=[logging.StreamHandler()]
 )
 
-# -----------------------------------------------------------------------------
-# Funciones para verificar archivos descargados en disco
-# -----------------------------------------------------------------------------
-
+# Funciones para verificar archivos descargados
 def obtener_nombres_facturas_descargadas(directorio_descarga):
     archivos = glob.glob(os.path.join(directorio_descarga, "Factura_*.pdf"))
     nombres = set(os.path.basename(f) for f in archivos)
     return nombres
 
-# -----------------------------------------------------------------------------
-# Funciones para manejar el progreso
-# -----------------------------------------------------------------------------
-
+# Funciones para manejar progreso
 def cargar_progreso(ruta_archivo: str = 'progreso_descargas.json') -> dict:
-    """Carga el progreso guardado desde un archivo JSON con verificación mejorada"""
     try:
         if os.path.exists(ruta_archivo):
             with open(ruta_archivo, 'r') as f:
                 progreso = json.load(f)
-                # Verificar estructura del archivo
                 if not all(key in progreso for key in ['ultima_pagina', 'facturas_descargadas', 'facturas_fallidas']):
                     raise ValueError("Estructura de progreso inválida")
                 return progreso
@@ -59,28 +52,19 @@ def cargar_progreso(ruta_archivo: str = 'progreso_descargas.json') -> dict:
         'ultima_pagina': 1,
         'facturas_descargadas': [],
         'facturas_fallidas': [],
-        'ultima_factura_procesada': None  # Nuevo campo para tracking preciso
+        'ultima_factura_procesada': None
     }
 
 def guardar_progreso(progreso: dict, ruta_archivo: str = 'progreso_descargas.json'):
-    """Guarda el progreso actual en un archivo JSON con verificación y sin duplicados"""
     try:
-        # Eliminar duplicados antes de guardar
-        # Eliminar duplicados conservando el orden
         progreso['facturas_descargadas'] = list(dict.fromkeys(progreso['facturas_descargadas']))
         progreso['facturas_fallidas'] = list(dict.fromkeys(progreso['facturas_fallidas']))
-
         with open(ruta_archivo, 'w') as f:
             json.dump(progreso, f, indent=4, ensure_ascii=False)
     except Exception as e:
         logging.error(f"Error al guardar progreso: {e}")
 
-
 def esperar_descarga_completa_con_nombre(directorio_descarga, nombre_archivo, timeout=90):
-    """
-    Espera a que un archivo específico termine de descargarse.
-    Timeout en segundos.
-    """
     ruta_completa = os.path.join(directorio_descarga, nombre_archivo)
     fin_tiempo = time.time() + timeout
     while time.time() < fin_tiempo:
@@ -92,13 +76,8 @@ def esperar_descarga_completa_con_nombre(directorio_descarga, nombre_archivo, ti
     logging.warning(f"Tiempo de espera agotado para la descarga de '{nombre_archivo}'. ❌")
     return False
 
-
-# -----------------------------------------------------------------------------
-## Funciones Auxiliares (mantenidas igual)
-# -----------------------------------------------------------------------------
-
+# Funciones Auxiliares
 def esperar_clickable(driver, selector, timeout=15, intentos=2):
-    """Espera a que el elemento esté clickable, puede ser XPath o CSS selector."""
     for intento in range(intentos):
         try:
             if selector.startswith("/") or selector.startswith("//"):
@@ -118,7 +97,6 @@ def esperar_clickable(driver, selector, timeout=15, intentos=2):
     raise TimeoutException(f"No se pudo encontrar elemento clickable tras {intentos} intentos: {selector}")
 
 def esperar_visible(driver, selector, timeout=30, intentos=3):
-    """Espera a que el elemento esté visible, puede ser XPath o CSS selector."""
     for intento in range(intentos):
         try:
             if selector.startswith("/") or selector.startswith("//") or selector.startswith('('):
@@ -138,16 +116,11 @@ def esperar_visible(driver, selector, timeout=30, intentos=3):
     raise TimeoutException(f"No se pudo encontrar elemento visible tras {intentos} intentos: {selector}")
 
 def cerrar_popup(driver, selector, nombre="popup"):
-    """
-    Intenta cerrar un popup usando un clic normal y, si falla, un clic con JavaScript.
-    Maneja TimeoutException si el popup no aparece.
-    """
     try:
         popup = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, selector))
         )
         logging.info(f"Popup '{nombre}' detectado. Intentando cerrar. 🚪")
-        
         try:
             popup.click()
             logging.info(f"{nombre} cerrado correctamente con clic normal. 👍")
@@ -155,20 +128,480 @@ def cerrar_popup(driver, selector, nombre="popup"):
             logging.warning(f"Clic normal falló para {nombre}. Intentando con JavaScript.")
             driver.execute_script("arguments[0].click();", popup)
             logging.info(f"{nombre} cerrado correctamente con JavaScript. ✅")
-            
         time.sleep(1)
     except TimeoutException:
         logging.info(f"No apareció el {nombre} a tiempo, continuando.")
     except Exception as e:
         logging.warning(f"Error inesperado al intentar cerrar {nombre}: {e}. Continuando.")
 
-def pausa_humana(min_s=0.3, max_s=0.7):
-    """Pausa aleatoria para simular comportamiento humano."""
-    time.sleep(random.uniform(min_s, max_s))
+
+def debug_encontrar_paneles(driver):
+    """
+    Función de depuración: Muestra todos los elementos que podrían ser paneles/acordeones
+    """
+    logging.info("=== DEPURACIÓN: Buscando estructuras de paneles ===")
     
+    # Buscar por diferentes patrones comunes
+    patrones = [
+        "//div[@role='tab']",
+        "//div[@role='button']",
+        "//*[contains(@class, 'accordion')]",
+        "//*[contains(@class, 'tab')]",
+        "//*[contains(@class, 'panel')]",
+        "//*[contains(@class, 'collapse')]",
+        "//button[contains(@class, 'accordion')]",
+        "//h3[contains(@class, 'accordion')]",
+        "//span[contains(@class, 'accordion')]"
+    ]
+    
+    for i, patron in enumerate(patrones):
+        try:
+            elementos = driver.find_elements(By.XPATH, patron)
+            if elementos:
+                logging.info(f"Patrón {i+1} '{patron}': Encontré {len(elementos)} elementos")
+                for j, elem in enumerate(elementos[:3]):  # Mostrar solo primeros 3
+                    logging.info(f"  Elemento {j+1}: tag={elem.tag_name}, class='{elem.get_attribute('class')}', text='{elem.text[:50]}'")
+        except Exception as e:
+            pass
+    
+    # Buscar específicamente el texto "Soluciones Fijas"
+    try:
+        elementos = driver.find_elements(By.XPATH, "//*[contains(text(), 'Soluciones Fijas')]")
+        logging.info(f"\n🔍 Elementos que contienen 'Soluciones Fijas': {len(elementos)}")
+        for j, elem in enumerate(elementos):
+            logging.info(f"  Elemento {j+1}: tag={elem.tag_name}, class='{elem.get_attribute('class')}', id='{elem.get_attribute('id')}'")
+            logging.info(f"    XPATH sugerido: {elem.tag_name}[@class='{elem.get_attribute('class')}']")
+            # Mostrar el padre
+            padre = elem.find_element(By.XPATH, "..")
+            logging.info(f"    Padre: {padre.tag_name}[@class='{padre.get_attribute('class')}']")
+    except Exception as e:
+        logging.error(f"Error en búsqueda de texto: {e}")
+    
+    logging.info("=== FIN DEPURACIÓN ===")
+
+# ========== AGREGAR ESTA NUEVA FUNCIÓN AQUÍ (después de cerrar_popup) ==========
+def seleccionar_soluciones_fijas(driver):
+    """
+    Busca y selecciona 'Soluciones Fijas (HFC)' - Versión mejorada con múltiples estrategias
+    """
+    try:
+        logging.info("🔍 Buscando 'Soluciones Fijas (HFC)' después del clic en facturas...")
+        
+        # Esperar a que aparezca el popup/panel
+        time.sleep(3)
+        
+        # ESTRATEGIA 1: Buscar por texto exacto en cualquier lugar
+        try:
+            elemento_hfc = WebDriverWait(driver, 15).until(
+                EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Soluciones Fijas (HFC)') or contains(text(), 'Soluciones Fijas')]"))
+            )
+            driver.execute_script("arguments[0].scrollIntoView(true);", elemento_hfc)
+            time.sleep(0.5)
+            mover_mouse_humano(driver, elemento_hfc)
+            elemento_hfc.click()
+            logging.info("✅ Clic en 'Soluciones Fijas (HFC)' - Estrategia 1 exitosa")
+            time.sleep(2)
+            return True
+        except:
+            logging.info("Estrategia 1 falló, intentando Estrategia 2...")
+        
+        # ESTRATEGIA 2: Buscar por clase de acordeón/panel
+        try:
+            paneles = driver.find_elements(By.XPATH, 
+                "//div[contains(@class, 'accordion')] | " +
+                "//div[contains(@class, 'panel')] | " +
+                "//div[contains(@class, 'collapse')] | " +
+                "//div[@role='tab'] | " +
+                "//button[contains(@class, 'accordion')]"
+            )
+            
+            for panel in paneles:
+                texto = panel.text
+                if "Soluciones Fijas" in texto:
+                    driver.execute_script("arguments[0].scrollIntoView(true);", panel)
+                    time.sleep(0.5)
+                    mover_mouse_humano(driver, panel)
+                    panel.click()
+                    logging.info(f"✅ Clic en panel con texto: '{texto[:50]}'")
+                    time.sleep(2)
+                    return True
+        except:
+            logging.info("Estrategia 2 falló...")
+        
+        # ESTRATEGIA 3: Buscar en iframes si existe
+        try:
+            driver.switch_to.default_content()
+            iframes = driver.find_elements(By.TAG_NAME, "iframe")
+            for i, iframe in enumerate(iframes):
+                try:
+                    driver.switch_to.frame(iframe)
+                    elementos = driver.find_elements(By.XPATH, "//*[contains(text(), 'Soluciones Fijas')]")
+                    if elementos:
+                        elementos[0].click()
+                        logging.info(f"✅ Clic en 'Soluciones Fijas' dentro del iframe {i+1}")
+
+                        time.sleep(2)
+                        return True
+                    driver.switch_to.default_content()
+                except:
+                    driver.switch_to.default_content()
+        except Exception as e:
+            logging.info(f"Búsqueda en iframes falló: {e}")
+        
+        logging.warning("❌ No se encontró 'Soluciones Fijas (HFC)' después de todas las estrategias")
+        return False
+        
+    except Exception as e:
+        logging.error(f"❌ Error general en seleccionar_soluciones_fijas: {e}")
+        return False
+# ========== FIN DE LA NUEVA FUNCIÓN ==========
+
+# ========== NUEVAS FUNCIONES PARA BÚSQUEDA DINÁMICA ==========
+
+def encontrar_contenedores_facturas_dinamico(driver, timeout=15):
+    """
+    Busca contenedores de facturas usando múltiples estrategias.
+    Retorna lista de elementos contenedores encontrados.
+    """
+    logging.info("🔍 Iniciando búsqueda dinámica de contenedores de facturas...")
+    
+    estrategias = [
+        # Estrategia 1: Buscar por estructura con información de cuenta y factura
+        {
+            "nombre": "Por contenedor con Nro. cuenta + Nro. factura",
+            "xpath": "//div[contains(., 'Nro. cuenta') and contains(., 'Nro. factura')]"
+        },
+        # Estrategia 2: Buscar por filas de tabla
+        {
+            "nombre": "Por filas de tabla",
+            "xpath": "//table//tbody//tr[contains(., 'Nro. cuenta')]"
+        },
+        # Estrategia 3: Buscar por divs con estructura de tarjeta/panel
+        {
+            "nombre": "Por divs con clase 'row' o 'card'",
+            "xpath": "//div[contains(@class, 'row') or contains(@class, 'card') or contains(@class, 'item')][contains(., '$')]"
+        },
+        # Estrategia 4: Buscar por divs que contengan información de monto
+        {
+            "nombre": "Por divs con monto ($)",
+            "xpath": "//div[contains(text(), '$') and contains(., 'Nro.')]"
+        },
+        # Estrategia 5: Buscar divs simples con estructura numérica
+        {
+            "nombre": "Por divs con estructura de factura",
+            "xpath": "//div[contains(@class, 'factura') or contains(@class, 'bill') or contains(@class, 'invoice')]"
+        }
+    ]
+    
+    for estrategia in estrategias:
+        try:
+            logging.info(f"  Intentando: {estrategia['nombre']}")
+            contenedores = WebDriverWait(driver, timeout).until(
+                EC.presence_of_all_elements_located((By.XPATH, estrategia['xpath']))
+            )
+            
+            if contenedores and len(contenedores) > 0:
+                logging.info(f"  ✅ Éxito: Se encontraron {len(contenedores)} contenedores")
+                return contenedores, estrategia['nombre']
+        except (TimeoutException, NoSuchElementException):
+            logging.info(f"  ❌ Falló esta estrategia")
+            continue
+    
+    logging.warning("⚠️ No se encontraron contenedores con ninguna estrategia")
+    return [], "Ninguna"
+
+
+def encontrar_boton_descarga_en_contenedor(driver, contenedor, indice_contenedor):
+    """
+    Busca el botón de descarga dentro de un contenedor específico.
+    Retorna el botón o None si no lo encuentra.
+    """
+    logging.info(f"  🔍 Buscando botón de descarga en contenedor {indice_contenedor + 1}...")
+    # 🔥 FIX REAL: buscar SOLO dentro del contenedor (NO rompe el acordeón)
+    try:
+        img = contenedor.find_element(By.XPATH, ".//img[@alt='DescargaFactura']")
+
+        boton = driver.execute_script("""
+            let el = arguments[0];
+            while (el && el.tagName != 'BUTTON' && el.tagName != 'A') {
+                el = el.parentElement;
+            }
+            return el;
+        """, img)
+
+        if boton:
+            logging.info("    ✅ BOTÓN ENCONTRADO POR ALT (FIX REAL)")
+            return boton
+
+    except Exception:
+        logging.info("    ❌ ALT dentro del contenedor no encontrado")
+
+    estrategias_boton = [
+        # ⭐ ESTRATEGIA PRINCIPAL: Buscar la imagen con alt="DescargaFactura"
+        {
+            "nombre": "Por imagen alt 'DescargaFactura' exacto",
+            "xpath": ".//img[@alt='DescargaFactura']/ancestor::button | .//img[@alt='DescargaFactura']/ancestor::a | .//img[@alt='DescargaFactura']/parent::*"
+        },
+        # Estrategia 1: Por aria-label con "Descargar"
+        {
+            "nombre": "Por aria-label 'Descargar'",
+            "xpath": ".//*[@aria-label and contains(translate(@aria-label, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'descargar')]"
+        },
+        # Estrategia 2: Por title con "Descargar"
+        {
+            "nombre": "Por title 'Descargar'",
+            "xpath": ".//*[@title and contains(translate(@title, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'descargar')]"
+        },
+        # Estrategia 3: Por button con clase descarga
+        {
+            "nombre": "Por button con clase descarga",
+            "xpath": ".//button[contains(@class, 'descarga') or contains(@class, 'download') or contains(@class, 'download-btn')]"
+        },
+        # Estrategia 4: Por div/a/button dentro del contenedor con ícono SVG
+        {
+            "nombre": "Por elemento con SVG de descarga",
+            "xpath": ".//*[contains(@class, 'download') or contains(@class, 'descarga')]//button | .//*[contains(@class, 'download') or contains(@class, 'descarga')]//a"
+        },
+        # Estrategia 5: Por button que sea clickeable sin clase específica
+        {
+            "nombre": "Por primer button clickeable",
+            "xpath": ".//button[not(contains(@disabled, 'disabled'))]"
+        },
+        # Estrategia 6: Por elemento con atributo onclick o data-action
+        {
+            "nombre": "Por onclick o data-action",
+            "xpath": ".//*[@onclick or @data-action or @data-download]"
+        },
+        # Estrategia 7: Por spans/divs dentro de botones
+        {
+            "nombre": "Por span/div con ícono dentro de botón",
+            "xpath": ".//button//span | .//button//div | .//a//span[contains(@class, 'icon')]"
+        }
+    ]
+    
+    for estrategia_btn in estrategias_boton:
+        try:
+            elemento = contenedor.find_element(By.XPATH, estrategia_btn['xpath'])
+            
+            # Si encontramos un span/div, obtener su padre button
+            if elemento.tag_name in ['span', 'div']:
+                try:
+                    elemento = elemento.find_element(By.XPATH, "./ancestor::button")
+                except:
+                    try:
+                        elemento = elemento.find_element(By.XPATH, "./ancestor::a")
+                    except:
+                        continue
+            
+            logging.info(f"    ✅ {estrategia_btn['nombre']}: Encontrado ({elemento.tag_name})")
+            return elemento
+            
+        except (NoSuchElementException, StaleElementReferenceException):
+            logging.info(f"    ❌ {estrategia_btn['nombre']}: No encontrado")
+            continue
+        except Exception as e:
+            logging.debug(f"    ⚠️ {estrategia_btn['nombre']}: Error {str(e)[:50]}")
+            continue
+    
+    logging.warning(f"    ❌ No se encontró botón de descarga en contenedor {indice_contenedor + 1}")
+    return None
+
+
+def extraer_info_factura(contenedor):
+    """
+    Extrae información de la factura desde el contenedor para logging.
+    """
+    try:
+        nro_cuenta = None
+        nro_factura = None
+        monto = None
+        
+        # Intentar extraer número de cuenta
+        try:
+            nro_cuenta = contenedor.find_element(By.XPATH, ".//*[contains(text(), 'Nro. cuenta')]/following-sibling::*").text
+        except:
+            pass
+        
+        # Intentar extraer número de factura
+        try:
+            nro_factura = contenedor.find_element(By.XPATH, ".//*[contains(text(), 'Nro. factura')]/following-sibling::*").text
+        except:
+            pass
+        
+        # Intentar extraer monto
+        try:
+            monto = contenedor.find_element(By.XPATH, ".//*[contains(text(), '$')]/ancestor::*[1]").text.split('$')[1].split()[0]
+        except:
+            pass
+        
+        info = []
+        if nro_cuenta:
+            info.append(f"Cuenta: {nro_cuenta}")
+        if nro_factura:
+            info.append(f"Factura: {nro_factura}")
+        if monto:
+            info.append(f"Monto: ${monto}")
+        
+        return " | ".join(info) if info else "Sin información"
+    except:
+        return "Información no disponible"
+
+
+def procesar_contenedores_facturas_dinamico(driver, download_dir, progreso):
+    """
+    Procesa contenedores de facturas encontrados dinámicamente.
+    Esta es la función PRINCIPAL que reemplaza las anteriores.
+    """
+    logging.info("="*60)
+    logging.info("🎯 INICIANDO PROCESAMIENTO DINÁMICO DE FACTURAS")
+    logging.info("="*60)
+    
+    try:
+        # PASO 1: Encontrar contenedores
+        contenedores, estrategia_usada = encontrar_contenedores_facturas_dinamico(driver)
+        
+        if not contenedores:
+            logging.error("❌ No se encontraron contenedores de facturas")
+            return 0
+        
+        logging.info(f"📊 Estrategia usada: {estrategia_usada}")
+        logging.info(f"📦 Total de facturas encontradas: {len(contenedores)}")
+        logging.info("-"*60)
+        
+        # PASO 2: Procesar cada contenedor
+        descargas_exitosas = 0
+
+        
+        for idx, contenedor in enumerate(contenedores):
+            if stop_automation_flag.is_set():
+                logging.info("🛑 Proceso detenido por el usuario")
+                break
+            
+            try:
+                # Extraer información para logging
+                info_factura = extraer_info_factura(contenedor)
+                logging.info(f"\n📋 Factura {idx + 1}/{len(contenedores)}: {info_factura}")
+                
+                # Hacer scroll al contenedor
+                driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", contenedor)
+                time.sleep(1)
+                
+                # Encontrar botón de descarga
+                boton_descarga = encontrar_boton_descarga_en_contenedor(driver, contenedor, idx)
+                
+                if not boton_descarga:
+                    logging.warning(f"  ⚠️ No se encontró botón para factura {idx + 1}")
+                    progreso['facturas_fallidas'].append(f"dinamico_{idx}")
+                    continue
+                
+                # Hacer clic en el botón
+                try:
+                    mover_mouse_humano(driver, boton_descarga)
+                    driver.execute_script("arguments[0].click();", boton_descarga)
+                    logging.info(f"  ✅ Clic exitoso en botón de descarga")
+                    pausa_humana(2, 4)
+                    descargas_exitosas += 1
+                    progreso['facturas_descargadas'].append(f"dinamico_{idx}")
+                    
+                except Exception as e:
+                    logging.error(f"  ❌ Error al hacer clic: {e}")
+                    progreso['facturas_fallidas'].append(f"dinamico_{idx}")
+                    continue
+                
+            except Exception as e:
+                logging.error(f"  ❌ Error procesando factura {idx + 1}: {e}")
+                continue
+        
+        logging.info("\n" + "="*60)
+        logging.info(f"✅ Descargas exitosas: {descargas_exitosas}/{len(contenedores)}")
+        logging.info("="*60)
+        
+        return descargas_exitosas
+        
+    except Exception as e:
+        logging.error(f"❌ Error general en procesar_contenedores_facturas_dinamico: {e}")
+        return 0
+
+# ========== FIN NUEVAS FUNCIONES ==========
+
+# ========== FUNCIÓN PARA BOTÓN DE DESCARGA POR TEXTO ==========
+def hacer_clic_boton_descarga_dinamico(driver):
+    """
+    Busca y hace clic en el botón con el texto "Descargar factura"
+    """
+    try:
+        logging.info("🔍 Buscando botón con texto 'Descargar factura'...")
+        
+        # Esperar a que aparezca el botón
+        time.sleep(2)
+        
+        # Buscar botones dentro de cada bloque de factura (más robusto)
+        facturas = driver.find_elements(By.XPATH, "//div[contains(., 'Nro. cuenta')]")
+
+        botones = []
+
+        for factura in facturas:
+            try:
+                btn = factura.find_element(By.XPATH, ".//button | .//a | .//*[name()='svg']/ancestor::button")
+                botones.append(btn)
+            except:
+                continue
+        
+        logging.info(f"✅ Se encontraron {len(botones)} botón(es) 'Descargar factura'")
+        
+        if not botones:
+            logging.warning("❌ No se encontraron botones de descarga dentro de facturas")
+            return False
+            for i, btn in enumerate(todos_botones[:5]):
+                logging.info(f"  Botón {i+1}: texto='{btn.text}', class='{btn.get_attribute('class')}'")
+            return False
+        
+        # Hacer clic en CADA botón de "Descargar factura" encontrado
+        for i, boton in enumerate(botones):
+            try:
+                logging.info(f"🎯 Procesando botón {i+1} de {len(botones)}...")
+                
+                # Intentar obtener el número de cuenta asociado (si existe)
+                try:
+                    # Buscar el número de cuenta cercano al botón
+                    cuenta = boton.find_element(By.XPATH, "./ancestor::tr/preceding-sibling::tr//td[contains(text(), 'Nro. cuenta')] | ./preceding::*[contains(text(), 'Nro. cuenta')][1]")
+                    texto_cuenta = cuenta.text if cuenta else "desconocida"
+                    logging.info(f"📄 Descargando factura para cuenta: {texto_cuenta}")
+                except:
+                    logging.info(f"📄 Descargando factura {i+1}")
+                
+                # Hacer scroll hasta el botón
+                driver.execute_script("arguments[0].scrollIntoView(true);", boton)
+                time.sleep(1)
+                
+                # Hacer clic en el botón
+                mover_mouse_humano(driver, boton)
+                driver.execute_script("arguments[0].click();", boton)
+                logging.info(f"✅ Clic exitoso en botón {i+1}")
+                time.sleep(3)  # Esperar entre descargas
+                
+            except Exception as e:
+                logging.error(f"❌ Error al hacer clic en botón {i+1}: {e}")
+                continue
+        
+        logging.info(f"🎉 Procesados {len(botones)} botón(es) 'Descargar factura'")
+        return len(botones) > 0
+        
+    except Exception as e:
+        logging.error(f"❌ Error general en hacer_clic_boton_descarga_dinamico: {e}")
+        return False
+# ========== FIN FUNCIÓN BOTÓN DINÁMICO ==========
+
+
+
+
+
+
+
+def pausa_humana(min_s=0.3, max_s=0.7):
+    time.sleep(random.uniform(min_s, max_s))
 
 def mover_mouse_humano(driver, elemento):
-    """Mueve el mouse a un elemento de forma más humana."""
     try:
         actions = ActionChains(driver)
         actions.move_to_element(elemento).perform()
@@ -176,19 +609,11 @@ def mover_mouse_humano(driver, elemento):
     except Exception as e:
         logging.debug(f"No se pudo mover el mouse de forma humana: {e}")
 
-
-# -----------------------------------------------------------------------------
-## Función Principal de Automatización MODIFICADA para usar progreso
-# -----------------------------------------------------------------------------
-
-def automatizar_claro_empresas_completo(username, password, download_dir, anio, mes, max_reintentos=7):  
-    
-    """
-    Automatiza el proceso de login y descarga de facturas en Mi Claro Empresas.
-    """
+# FUNCIÓN PRINCIPAL
+def automatizar_claro_empresas_completo(username, password, download_dir, anio, mes, max_reintentos=7):
     try:
         anio = int(anio)
-        mes = mes.zfill(2)  # Asegura formato "01" a "12"
+        mes = mes.zfill(2)
         current_year = datetime.now().year
         if anio not in [current_year, current_year - 1] or mes not in [f"{i:02d}" for i in range(1, 13)]:
             logging.error("Año o mes inválido.")
@@ -197,21 +622,17 @@ def automatizar_claro_empresas_completo(username, password, download_dir, anio, 
         logging.error("Año o mes no son valores válidos.")
         return None
 
-
-    # Cargar progreso anterior
     progreso = cargar_progreso()
     
-    # Opciones para Chrome
     options = ChromeOptions()
-    options.add_argument("--start-maximized") 
-
-    # Configuración de descarga para Chrome
+    options.add_argument("--start-maximized")
+    
     prefs = {
         "download.default_directory": download_dir,
         "download.prompt_for_download": False,
         "download.directory_upgrade": True,
         "plugins.always_open_pdf_externally": True,
-        "profile.default_content_setting_values.automatic_downloads": 1  # <<<<<< MODIFICACIÓN: Permitir descargas automáticas múltiples sin confirmar
+        "profile.default_content_setting_values.automatic_downloads": 1
     }
     options.add_experimental_option("prefs", prefs)
     options.add_argument("--disable-notifications")
@@ -227,7 +648,6 @@ def automatizar_claro_empresas_completo(username, password, download_dir, anio, 
         return None
 
     try:
-        # Proceso de login (se mantiene igual)
         driver.get("https://miclaroempresas.com.co/login")
         logging.info("Página de login cargada.")
 
@@ -274,12 +694,13 @@ def automatizar_claro_empresas_completo(username, password, download_dir, anio, 
             driver.quit()
             return None
 
-        # Cierre de popups (se mantiene igual)
         cerrar_popup(driver, "//button[text()='Aceptar']", "popup de bienvenida")
         cerrar_popup(driver, '/html/body/div[5]/div[3]/div/img', "Popup de información después del login")
         cerrar_popup(driver, '//img[@src="https://siteintercept.qualtrics.com/static/q-siteintercept/~/img/svg-close-btn-black-7.svg"]', "Popup de encuesta Qualtrics")
 
-        # Navegación a facturas (se mantiene igual)
+
+        
+        
         try:
             btn_consulta_facturas = esperar_clickable(driver, '#js-portlet-_cenaccesosrapidosportlet_INSTANCE_xU0BvWLZHNBp_ > div > div > div > div > div:nth-child(1) > div > div:nth-child(2) > div > a > div > div.text-box')
             mover_mouse_humano(driver, btn_consulta_facturas)
@@ -301,374 +722,206 @@ def automatizar_claro_empresas_completo(username, password, download_dir, anio, 
 
         cerrar_popup(driver, '//*[@id="senna_surface1"]/div[5]/div[3]/div/img', "Popup post-submenu de descarga")
         pausa_humana(1, 2)
-
-   
-      
-        # Cierra cualquier popup que pueda aparecer después del clic en el submenú
         cerrar_popup(driver, '//*[@id="senna_surface1"]/div[5]/div[3]/div/img', "Popup post-submenu de descarga")
         pausa_humana(1, 2)
 
-        # <<<<<< COMIENZO DEL NUEVO PASO INTEGRADO Y REFORZADO >>>>>>
-        try:
-            logging.info("Añadiendo una pausa para que la página principal cargue el iframe. 🧘‍♂️")
-            pausa_humana(2, 4)
-            
-            iframe_xpath = "//iframe[contains(@src, 'https://facturasclaro.paradigma.com.co/ebpClaroCorp/Pages/Bill/Proxy.aspx')]"
-            WebDriverWait(driver, 10).until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, iframe_xpath)))
-            logging.info("Cambiado al contexto del iframe de facturas. ✅")
-            
-            logging.info(f"Seleccionando filtro por Año: {anio} y Mes: {mes}.")
-            try:
-                select_anio = esperar_visible(driver, '//*[@id="selectYear"]', timeout=10)  # Aumentado timeout
-                select_obj = Select(select_anio)  # Usar Select para mayor fiabilidad
-                select_obj.select_by_value(str(anio))  # Seleccionar por valor "2024" o "2025"
-                pausa_humana(0.3, 0.7)
-                logging.info(f"Año {anio} seleccionado. ✅")
-            except Exception as e:
-                logging.error(f"Error al seleccionar año {anio}: {e}")
-                driver.switch_to.default_content()
-                driver.quit()
-                return None
-            
-            try:
-                select_mes = esperar_visible(driver, '//*[@id="selectMonth"]', timeout=10)
-                select_obj = Select(select_mes)
-                select_obj.select_by_value(mes)
-                pausa_humana(0.3, 0.7)
-                logging.info(f"Mes {mes} seleccionado. ✅")
-            except Exception as e:
-                logging.error(f"Error al seleccionar mes {mes}: {e}")
-                driver.switch_to.default_content()
-                driver.quit()
-                return None
-            
-            pausa_humana(0.3, 0.7)
-            boton_consultar = esperar_clickable(driver, '//*[@id="btnFindByFilter"]', timeout=15)
-            mover_mouse_humano(driver, boton_consultar)
-            pausa_humana()
-            try:
-                driver.execute_script("arguments[0].click();", boton_consultar)
-                logging.info("Botón 'Consultar' clickeado para aplicar filtro personalizado. ✅")
-            except Exception as e:
-                logging.error(f"Error al hacer clic en 'Consultar': {e}")
-                driver.switch_to.default_content()
-                driver.quit()
-                return None
+        logging.info("🎯 Intentando seleccionar 'Soluciones Fijas (HFC)' después del popup...")
+        seleccionar_soluciones_fijas(driver)
 
-            logging.info("Esperando que la tabla de facturas se recargue... ⏳")
-            WebDriverWait(driver, 15).until(
-                EC.presence_of_element_located((By.XPATH, "//table/tbody/tr[1]"))
-            )
-            logging.info("Tabla de facturas recargada. ✔️")
-            driver.switch_to.default_content()
-            logging.info("Volviendo al contenido principal. 🔄")
-        except Exception as e:
-            logging.error(f"No se pudo aplicar el filtro personalizado: {e} ❌")
-            try:
-                driver.switch_to.default_content()
-            except:
-                pass
-            driver.quit()
-            return None
-        # <<<<<< FIN DEL NUEVO PASO INTEGRADO Y REFORZADO >>>>>>
-        
-        
+        logging.info("Esperando que el panel se expanda....")
+        time.sleep(5)
 
-        # Procesamiento con paginación - MODIFICADO para usar progreso
-        logging.info("Iniciando procesamiento de facturas con paginación... 📊")
-        iframe_xpath = "//iframe[contains(@src, 'https://facturasclaro.paradigma.com.co/ebpClaroCorp/Pages/Bill/Proxy.aspx')]"
-        segundo_iframe_xpath = '//*[@id="frameBill"]'
-        boton_descarga_pdf_final_xpath = '//*[@id="exportPdf"]'
-        boton_siguiente_pagina_xpath = "//a[@title='Ir a siguiente página' and contains(@class, 'k-pager-nav')]"
-        contenedor_facturas_xpath = "/html/body/div[2]/div[1]/section/div[3]/div[2]"
-        base_boton_descarga_xpath = ".//table//tbody//tr//td[5]//button"
+        # 🔥 LOOP ESTABLE (REEMPLAZO)
 
-        # Comenzar desde la última página guardada o desde 1
-        pagina_actual = progreso.get('ultima_pagina', 1)
-        if pagina_actual > 1:
-            logging.info(f"Reanudando desde página {pagina_actual}, navegando paso a paso...")
-        for _ in range(pagina_actual - 1): # Modificación aquí
+        logging.info("🔥 Iniciando ciclo con paginación automática...")
 
-            try:
-                WebDriverWait(driver, 20).until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, iframe_xpath)))
-                btn_siguiente_pagina = WebDriverWait(driver, 10).until(
-                    EC.element_to_be_clickable((By.XPATH, boton_siguiente_pagina_xpath))
-                )
-                mover_mouse_humano(driver, btn_siguiente_pagina)
-                btn_siguiente_pagina.click()
-                pausa_humana(5, 8)
-                driver.switch_to.default_content()
-            except Exception as e:
-                logging.error(f"Error al navegar hasta la página {pagina_actual}: {e}")
-                return None
-        logging.info(f"Se alcanzó la página {pagina_actual}. Reanudando procesamiento normal.")
+        pagina = 1
 
+        contador_facturas = 0
 
         while True:
-            # <<<< AÑADIDO: Comprobar la bandera de detención
-            if stop_automation_flag.is_set():
-                logging.info("🛑 Proceso detenido por el usuario.")
-                if driver:
-                    driver.quit()
-                return None
-            
-            # Actualizar progreso
-            progreso['ultima_pagina'] = pagina_actual
-            progreso['ultima_factura_procesada'] = 0  # <-- reiniciar al entrar
-            guardar_progreso(progreso)
+            logging.info(f"📄 Procesando página {pagina}")
 
+            i = 0
 
-            logging.info(f"Procesando Página {pagina_actual} de facturas. 📑")
-
-            try:
-                driver.switch_to.default_content()
-                WebDriverWait(driver, 20).until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, iframe_xpath)))
-                logging.info(f"Cambiado al contexto del iframe de facturas (tabla) para Página {pagina_actual}. ✔️")
-                pausa_humana(5, 8)
-            except TimeoutException:
-                logging.error(f"No se pudo cambiar al iframe de facturas a tiempo (40s) en Página {pagina_actual}. ❌")
-                break
-            except NoSuchElementException:
-                logging.error(f"El iframe de facturas no fue encontrado en Página {pagina_actual}. ❌")
-                break
-
-            WebDriverWait(driver, 15).until(
-                EC.presence_of_element_located((By.XPATH, "//table/tbody/tr[1]"))
-            )
-            logging.info(f"La primera fila de la tabla de facturas dentro del iframe está presente en Página {pagina_actual}. ✔️")
-
-            try:
-                contenedor_facturas = WebDriverWait(driver, 15).until(
-                    EC.presence_of_element_located((By.XPATH, contenedor_facturas_xpath))
-                )
-                botones_descarga = contenedor_facturas.find_elements(By.XPATH, base_boton_descarga_xpath)
-                logging.info(f"Se encontraron {len(botones_descarga)} botones de descarga en Página {pagina_actual}. 🟢")
-            except TimeoutException:
-                logging.warning("No se encontró el contenedor de facturas o no contiene botones de descarga. ⚠️")
-                botones_descarga = []
-
-            if not botones_descarga and pagina_actual == 1:
-                logging.warning(f"No se detectaron facturas con botones de descarga en la Página {pagina_actual}. 🚫")
-                break
-            elif not botones_descarga:
-                logging.info(f"No hay facturas con botones de descarga en la Página {pagina_actual}. Probando ir a siguiente página. 🚶‍♂️")
-
-            processed_count_on_page = 0
-            inicio_idx = progreso.get('ultima_factura_procesada', 0)
-            for idx in range(inicio_idx, len(botones_descarga)):
-
-                # <<<< AÑADIDO: Comprobar la bandera de detención
+            while True:
                 if stop_automation_flag.is_set():
-                    logging.info("🛑 Proceso detenido por el usuario.")
-                    if driver:
-                        driver.quit()
-                    return None
-                    
-                factura_id = f"pagina_{pagina_actual}_factura_{idx+1}"
-
-                # Comprobación por existencia real del archivo en disco
-                nombres_pdf_en_disco = obtener_nombres_facturas_descargadas(download_dir)
-                nombre_esperado = f"Factura_{factura_id.upper().replace('PAGINA_', '').replace('_FACTURA_', '_')}.pdf"
-
-                if nombre_esperado in nombres_pdf_en_disco:
-                    logging.info(f"Factura ya existe en disco como archivo PDF: {nombre_esperado}, omitiendo...")
-                    progreso['facturas_descargadas'].append(factura_id)
-                    continue
-
-                
-                # Saltar si ya fue descargada exitosamente
-                if factura_id in progreso['facturas_descargadas']:
-                    logging.info(f"Factura {factura_id} ya descargada, omitiendo...")
-                    continue
-                
-                # Saltar si falló más de 3 veces
-                if progreso['facturas_fallidas'].count(factura_id) >= 3:
-                    logging.warning(f"Factura {factura_id} falló 3 veces, omitiendo...")
-                    continue
-
-                logging.info(f"Intentando procesar factura {idx+1} de {len(botones_descarga)} en Página {pagina_actual} 👇")
-
-                MAX_REINTENTOS_CLIC = 3
-                found_and_clicked = False
-                for intento_clic in range(MAX_REINTENTOS_CLIC):
-                    try:
-                        current_buttons_list = WebDriverWait(driver, 5).until(
-                            EC.presence_of_all_elements_located((By.XPATH, base_boton_descarga_xpath))
-                        )
-                        if idx >= len(current_buttons_list):
-                            logging.warning(f"Índice {idx+1} fuera de rango para botones actuales ({len(current_buttons_list)}). Terminando facturas de página.")
-                            found_and_clicked = True
-                            break
-                        boton_actual = current_buttons_list[idx]
-                        mover_mouse_humano(driver, boton_actual)
-                        
-                        # Solo se usa el clic con JavaScript, ya que el clic normal falla
-                        driver.execute_script("arguments[0].click();", boton_actual)
-                        logging.info(f"Clic JS exitoso en botón descarga {idx+1} de Página {pagina_actual}. ✅")
-                        found_and_clicked = True
-                        break # Salir del bucle de reintentos si el clic JS es exitoso
-                        
-                    except (StaleElementReferenceException, TimeoutException, NoSuchElementException, WebDriverException) as e:
-                        # Se incluye WebDriverException aquí por si el JS click también falla por alguna razón
-                        logging.warning(f"Reintento {intento_clic+1}: problema al hacer clic en el botón de descarga de la fila {idx+1}: {e}. Reintentando...")
-                        pausa_humana(1,2)
-                    except Exception as e:
-                        logging.error(f"Error inesperado en reintentos clic botón {idx+1}: {e}")
-                        pausa_humana(1,2)
-                
-                if not found_and_clicked:
-                    logging.error(f"No se pudo hacer clic en la factura {idx+1} después de {MAX_REINTENTOS_CLIC} intentos, saltando.")
-                    progreso['facturas_fallidas'].append(factura_id)
-                    progreso['ultima_factura_procesada'] = idx + 1
-                    guardar_progreso(progreso)
-
-                    continue
-
-                processed_count_on_page += 1
-                pausa_humana(3, 5)
-
-
-                logging.info(f"Cambiando a iframe visor PDF para factura {idx+1} de Página {pagina_actual}. 📄")
-
-                descarga_exitosa = False  # Aquí va al inicio de cada factura
-                nombre_descargado = None
-
-                try:
-                    WebDriverWait(driver, 40).until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, segundo_iframe_xpath)))
-                    logging.info("Contexto cambiado al iframe visor PDF. ✔️")
-                    pausa_humana(15, 18)
-
-                    archivos_antes_descarga = obtener_nombres_facturas_descargadas(download_dir)
-
-                    for intento_export in range(3):
-                        try:
-                            boton_descarga_final = esperar_clickable(driver, boton_descarga_pdf_final_xpath, timeout=50)
-                            mover_mouse_humano(driver, boton_descarga_final)
-                            driver.execute_script("arguments[0].click();", boton_descarga_final)
-                            logging.info(f"Intento {intento_export+1}: Botón exportPdf clickeado mediante JavaScript.")
-                            pausa_humana(5, 10)
-
-                            archivos_despues_descarga = obtener_nombres_facturas_descargadas(download_dir)
-                            nuevos_archivos = archivos_despues_descarga - archivos_antes_descarga
-                            
-                            if nuevos_archivos:
-                                nombre_descargado = list(nuevos_archivos)[0]
-                                if esperar_descarga_completa_con_nombre(directorio_descarga=download_dir, nombre_archivo=nombre_descargado, timeout=190):
-                                    descarga_exitosa = True
-                                    break
-                                else:
-                                    logging.warning(f"Archivo {nombre_descargado} no se completó tras intento {intento_export+1}. Reintentando...")
-                                    pausa_humana(3, 6)
-                            else:
-                                logging.warning(f"No se detectó un nuevo archivo PDF tras intento {intento_export+1}. Reintentando...")
-                                pausa_humana(3, 6)
-
-                        except TimeoutException:
-                            logging.error(f"No se cargó el iframe visor PDF para factura {idx+1} Página {pagina_actual}.")
-                            pausa_humana(0.5, 1)
-
-                        except Exception as e:
-                            logging.error(f"Error inesperado en visor PDF para factura {idx+1}: {e}")
-                            pausa_humana(0.5, 1)
-
-                except TimeoutException:
-                    logging.error(f"No se encontró iframe para factura {idx+1} de Página {pagina_actual}.")
-                except Exception as e:
-                    logging.error(f"Error al interactuar en el iframe PDF factura {idx+1}: {e}")
-                
-                # Lógica de registro FINAL
-                driver.switch_to.default_content() 
-
-                if descarga_exitosa:
-                    progreso['facturas_descargadas'].append(factura_id)
-                    if factura_id in progreso['facturas_fallidas']:
-                        progreso['facturas_fallidas'].remove(factura_id)
-                    logging.info(f"✅ Factura {factura_id} descargada con éxito. Archivo: {nombre_descargado}")
-                else:
-                    logging.warning(f"❌ Descarga fallida para factura {factura_id}.")
-                    progreso['facturas_fallidas'].append(factura_id)
-
-                progreso['ultima_factura_procesada'] = idx + 1
-                guardar_progreso(progreso)
-
-                driver.switch_to.default_content()
-                logging.info(f"Volviendo a contenido principal tras factura {idx+1} de Página {pagina_actual}. 🔄")
-                pausa_humana(1, 2)
-
-                logging.info(f"Intentando cerrar modal overlay PDF para factura {idx+1} de Página {pagina_actual}...")
-                try:
-                    boton_cerrar_modal_overlay = WebDriverWait(driver, 5).until(
-                        EC.element_to_be_clickable((By.XPATH, '/html/body/div[5]/div[1]/div/a/span'))
-                    )
-                    mover_mouse_humano(driver, boton_cerrar_modal_overlay)
-                    boton_cerrar_modal_overlay.click()
-                    logging.info(f"Modal PDF cerrado factura {idx+1} de Página {pagina_actual}. ✖️")
-                    pausa_humana(1, 2)
-                except TimeoutException:
-                    logging.info(f"No se encontró botón cierre modal factura {idx+1}, asumiendo cerrado.")
-                except Exception as e:
-                    logging.warning(f"Error cerrando modal factura {idx+1}: {e}")
-
-                try:
-                    WebDriverWait(driver, 10).until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, iframe_xpath)))
-                    logging.info(f"Vuelto al iframe de facturas para siguiente factura en Página {pagina_actual}. ✔️")
-                except Exception as e:
-                    logging.error(f"No se pudo volver al iframe de facturas tras PDF factura {idx+1}: {e}")
-                    driver.quit()
-                    return None
-
-            logging.info(f"Procesadas {processed_count_on_page} facturas de {len(botones_descarga)} intentos en Página {pagina_actual}.")
-            if processed_count_on_page == 0 and len(botones_descarga) > 0 and pagina_actual > 1:
-                logging.warning(f"No se pudo procesar ninguna factura en Página {pagina_actual}, a pesar de detectar {len(botones_descarga)}. Intentando avanzar.")
-
-            # Paginación
-            logging.info(f"Intentando avanzar a la siguiente página desde Página {pagina_actual}. ▶️")
-            try:
-                btn_siguiente_pagina = WebDriverWait(driver, 15).until(
-                    EC.element_to_be_clickable((By.XPATH, boton_siguiente_pagina_xpath))
-                )
-                is_disabled = btn_siguiente_pagina.get_attribute('aria-disabled') == 'true' or \
-                             btn_siguiente_pagina.get_attribute('disabled') == 'true' or \
-                             ("k-state-disabled" in (btn_siguiente_pagina.get_attribute('class') or ""))
-                if is_disabled:
-                    logging.info(f"Botón 'Siguiente Página' deshabilitado en Página {pagina_actual}. Fin de la paginación.")
                     break
-                else:
-                    mover_mouse_humano(driver, btn_siguiente_pagina)
-                    try:
-                        btn_siguiente_pagina.click()
-                        logging.info(f"Clic normal en botón 'Siguiente Página' Página {pagina_actual}.")
-                    except WebDriverException:
-                        logging.warning("Clic normal falló en 'Siguiente Página', usando JS.")
-                        driver.execute_script("arguments[0].click();", btn_siguiente_pagina)
-                        logging.info(f"Clic JS exitoso en botón 'Siguiente Página' Página {pagina_actual}.")
 
-                    pausa_humana(5, 8)
-                    if pagina_actual % 10 == 0:
-                        logging.info("Pausa larga para aliviar el navegador tras 10 páginas.")
-                        pausa_humana(30, 45)
-                    pagina_actual += 1
-                    progreso['ultima_factura_procesada'] = 0
+                botones = driver.find_elements(By.XPATH, "//img[@alt='DescargaFactura']")
+
+                if i >= len(botones):
+                    logging.info("✅ Facturas de esta página terminadas")
+                    break
+
+                try:
+                    logging.info(f"📄 Factura {i+1} de {len(botones)} (página {pagina})")
+
+                    btn = botones[i]
+                    
+
+                    # 🔥 FILTRO POR MES ACTUAL
+
+                    meses_map = {
+                        "01": "Ene", "02": "Feb", "03": "Mar", "04": "Abr",
+                        "05": "May", "06": "Jun", "07": "Jul", "08": "Ago",
+                        "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dic"
+                    }
+
+                    mes_actual_txt = meses_map[mes]
+
+                    try:
+                        contenedor = btn.find_element(By.XPATH, "./ancestor::div[contains(., 'Fecha límite de pago')]")
+
+                        texto_fecha = contenedor.text
+
+                        if mes_actual_txt not in texto_fecha:
+                            logging.info(f"🛑 Se detectó cambio de mes ({texto_fecha}). Fin del proceso.")
+                            
+                            # 🔥 SALIR COMPLETAMENTE
+                            return driver
+
+                    except Exception as e:
+                        logging.warning(f"⚠️ No se pudo validar mes en factura {i+1}: {e}")
+                        i += 1
+                        continue
+
+                    
+
+                    driver.execute_script("arguments[0].scrollIntoView({block:'center'});", btn)
+                    time.sleep(1)
+
+                    boton_real = driver.execute_script("""
+                        let el = arguments[0];
+                        while (el && el.tagName != 'BUTTON' && el.tagName != 'A') {
+                            el = el.parentElement;
+                        }
+                        return el;
+                    """, btn)
+
+                    driver.execute_script("arguments[0].click();", boton_real)
+                    time.sleep(5)
+
+                    pdf_btn = WebDriverWait(driver, 10).until(
+                        EC.element_to_be_clickable((By.XPATH, "//img[@alt='Imagen_PDF']"))
+                    )
+
+                    pdf_real = driver.execute_script("""
+                        let el = arguments[0];
+                        while (el && el.tagName != 'BUTTON' && el.tagName != 'A') {
+                            el = el.parentElement;
+                        }
+                        return el;
+                    """, pdf_btn)
+                    time.sleep(5)
+
+                    driver.execute_script("arguments[0].click();", pdf_real)
+                    # 🔥 ESPERA PARA QUE DESCARGUE Y ESTABILICE
+                    time.sleep(4)
+
+                    logging.info(f"✅ Descarga OK factura {i+1}")
+                    contador_facturas += 1
+
+                    factura_id = f"pagina_{pagina}_factura_{i+1}"
+                    progreso['facturas_descargadas'].append(factura_id)
                     guardar_progreso(progreso)
 
-            except TimeoutException:
-                logging.info(f"No se encontró botón 'Siguiente Página' en Página {pagina_actual}. Asumiendo final de paginación.")
-                break
+                    if contador_facturas % 10 == 0:
+                        pausa_random = random.randint(30, 60)
+                        logging.info(f"⏸️ Pausa aleatoria de {pausa_random} segundos (anti-bloqueo)...")
+                        time.sleep(pausa_random)
+                    factura_id = f"pagina_{pagina}_factura_{i+1}"
+                    progreso['facturas_descargadas'].append(factura_id)
+                    guardar_progreso(progreso)
+                    time.sleep(5)
+
+                    # 🔥 CIERRE ROBUSTO DEL MODAL PDF
+
+                    cerrado = False
+
+                    # intento 1: ESC
+                    try:
+                        driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.ESCAPE)
+                        time.sleep(2)
+                        cerrado = True
+                    except:
+                        pass
+
+                    # intento 2: botón cerrar (X)
+                    if not cerrado:
+                        try:
+                            btn_close = driver.find_element(By.XPATH, "//button[contains(@class,'close') or contains(@aria-label,'Close')]")
+                            driver.execute_script("arguments[0].click();", btn_close)
+                            time.sleep(2)
+                            cerrado = True
+                        except:
+                            pass
+
+                    # intento 3: clic fuera del modal
+                    if not cerrado:
+                        try:
+                            driver.execute_script("document.body.click();")
+                            time.sleep(2)
+                            cerrado = True
+                        except:
+                            pass
+
+                    # intento 4: verificación final
+                    try:
+                        WebDriverWait(driver, 3).until_not(
+                            EC.presence_of_element_located((By.XPATH, "//img[@alt='Imagen_PDF']"))
+                        )
+                    except:
+                        logging.warning("⚠️ Modal PDF sigue abierto, forzando ESC adicional")
+                        driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.ESCAPE)
+                        time.sleep(2)
+
+                    i += 1
+
+                except Exception as e:
+                    logging.error(f"❌ Error en factura {i+1}: {e}")
+                    factura_id = f"pagina_{pagina}_factura_{i+1}"
+                    progreso['facturas_fallidas'].append(factura_id)
+                    guardar_progreso(progreso)
+                    i += 1
+                    continue
+
+            # 🔥 SIGUIENTE PÁGINA
+
+            try:
+                logging.info("➡️ Buscando botón 'Next page'...")
+
+                btn_next = WebDriverWait(driver, 5).until(
+                    EC.element_to_be_clickable((
+                        By.XPATH,
+                        "//a[contains(@class,'rz-pager-next') and (@aria-label='Go to next page.' or @title='Next page')]"
+                    ))
+                )
+
+                if btn_next.get_attribute("aria-disabled") == "true":
+                    logging.info("🏁 No hay más páginas. FIN.")
+                    break
+
+                driver.execute_script("arguments[0].click();", btn_next)
+
+                logging.info("➡️ Avanzando a la siguiente página...")
+                time.sleep(5)
+
+                pagina += 1
+
             except Exception as e:
-                logging.error(f"Error al clicar botón 'Siguiente Página' en Página {pagina_actual}: {e}")
+                logging.warning(f"⚠️ No se pudo avanzar de página: {e}")
                 break
 
-        logging.info("Todas las páginas de facturas procesadas correctamente. ✔️")
-        driver.switch_to.default_content()
-        logging.info("Vuelto al contenido principal al finalizar. 🔄")
-        
-        # Resumen final
+        # 🔥 AQUÍ VA (FUERA DEL WHILE)
         logging.info("Resumen de descargas:")
         logging.info(f"- Total facturas descargadas: {len(progreso['facturas_descargadas'])}")
         logging.info(f"- Facturas con errores: {len(progreso['facturas_fallidas'])}")
-        
+
         logging.info("Automatización finalizada con éxito. 🎉")
         return driver
+
+        
 
     except Exception as e:
         logging.error(f"Error general en la automatización: {e}")
@@ -676,12 +929,12 @@ def automatizar_claro_empresas_completo(username, password, download_dir, anio, 
             driver.quit()
         return None
 
-# <<<< AÑADIDO: Bloque de ejecución principal para recibir argumentos desde el server
+# ========== EJECUCIÓN PRINCIPAL ==========
 if __name__ == "__main__":
-    if len(sys.argv) != 6:  # Ahora espera 6 argumentos
+    if len(sys.argv) != 6:
         logging.error("Uso: python automatizacion_descarga.py <usuario> <contraseña> <directorio_descarga> <anio> <mes>")
         sys.exit(1)
-    
+
     mi_usuario = sys.argv[1]
     mi_contrasena = sys.argv[2]
     mi_carpeta_descarga = sys.argv[3]
@@ -693,8 +946,11 @@ if __name__ == "__main__":
         os.makedirs(mi_carpeta_descarga)
 
     logging.info("Iniciando el proceso de automatización... 🚀")
-    driver_claro = automatizar_claro_empresas_completo(mi_usuario, mi_contrasena, mi_carpeta_descarga, mi_anio, mi_mes) # type: ignore
 
-    if driver_claro:
-        logging.info("Automatización completada. Cerrando el navegador.")
-        driver_claro.quit()
+    driver_claro = automatizar_claro_empresas_completo(
+        mi_usuario,
+        mi_contrasena,
+        mi_carpeta_descarga,
+        mi_anio,
+        mi_mes
+    )
