@@ -45,14 +45,14 @@ TEAM_SUFFIXES = {
 
 TEAM_CORREOS = {
     "Team SIICOP v.2": [
-        "david.forero.cop@gmail.com",
+        "carlosstivenmarroquin893@gmail.com",
         "miguel.lopez@copservir.co",
         "miguel.lopez@copservir.co",
         "jhon.primero@copservir.co"
     ],
     "Team QA": [
-        "david.forero.cop@gmail.com",
-        "david.forero.cop@gmail.com"
+        "yiniher.est.cop@gmail.com",
+        "carlosstivenmarroquin893@gmail.com"
     ],
     "Team INTEGRACIONES": [
         "miguel.lopez@copservir.co",
@@ -85,49 +85,136 @@ def format_date_to_spanish(date_str: str) -> str:
 def iniciar_driver() -> Optional[webdriver.Chrome]:
     try:
         options = webdriver.ChromeOptions()
+        
+        # Opciones básicas
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--disable-gpu")
+        
+        # Opciones para evitar detección
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        options.add_experimental_option('useAutomationExtension', False)
+        
+        # Opciones de rendimiento
+        options.add_argument("--disable-extensions")
+        options.add_argument("--disable-notifications")
+        options.add_argument("--disable-popup-blocking")
+        
+        # Para servidor (sin GUI)
+        import platform
+        if platform.system() != 'Windows' and 'DISPLAY' not in os.environ:
+            logging.info("Ejecutando en modo headless")
+            options.add_argument("--headless=new")
+            options.add_argument("--window-size=1920,1080")
+        else:
+            options.add_argument("--start-maximized")
+        
         service = ChromeService(executable_path=ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=options)
-        driver.maximize_window()
+        
+        # Ejecutar script para ocultar webdriver
+        driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        
+        driver.set_page_load_timeout(60)
+        
         logging.info("Driver de Chrome iniciado exitosamente.")
         return driver
     except WebDriverException as e:
         logging.error(f"Error al iniciar el driver: {e}")
         return None
-
+    
 def login_asana(driver):
-    try:
+    try: 
         driver.get("http://app.asana.com/0/portfolio/1205257480867940/1207672212054810")
         logging.info("Navegando a la página de Asana.")
 
+        # Ingresar credenciales
         input_correo = WebDriverWait(driver, 30).until(
             EC.element_to_be_clickable((By.XPATH, "//input[@type='email' and @name='e']")))
         input_correo.click()
+        input_correo.clear()
         input_correo.send_keys(os.getenv('ASANA_EMAIL', 'javier.perdomo@copservir.co'))
         logging.info("Correo ingresado.")
 
-        continuar = WebDriverWait(driver, 30).until(
-            EC.element_to_be_clickable((By.XPATH, "//div[@role='button' and contains(@class,'LoginEmailForm-continueButton') and contains(text(), 'Continuar')]")))
-        driver.execute_script("arguments[0].click();", continuar)
-        logging.info("Botón 'Continue' clickeado.")
+        # Reintentar el proceso de continuar hasta que aparezca el campo contraseña
+        max_intentos = 3
+        for intento in range(max_intentos):
+            # Hacer TAB y luego ENTER para continuar
+            try:
+                # Opción 1: TAB + ENTER (más simple)
+                input_correo.send_keys(Keys.TAB)  # Tab para mover el foco al botón
+                time.sleep(0.5)
+                input_correo.send_keys(Keys.ENTER)  # Enter para hacer clic
+                logging.info(f"TAB + ENTER ejecutado para continuar (intento {intento + 1})")
+                
+            except Exception as e:
+                logging.warning(f"Error con TAB+ENTER: {e}")
+                
+                # Opción 2: TAB y buscar el botón específicamente
+                try:
+                    input_correo.send_keys(Keys.TAB)
+                    time.sleep(0.5)
+                    
+                    # El elemento que tiene el foco después del TAB
+                    focused_element = driver.switch_to.active_element
+                    focused_element.click()
+                    logging.info(f"Click en elemento con foco después de TAB (intento {intento + 1})")
+                except:
+                    pass
 
+            # VERIFICAR si apareció el campo contraseña
+            try:
+                WebDriverWait(driver, 5).until(
+                    EC.element_to_be_clickable((By.XPATH, "//input[@type='password' and @name='p']")))
+                logging.info("Campo contraseña encontrado, continuando...")
+                break  # Salir del bucle si encontramos el campo
+            except:
+                logging.warning(f"Campo contraseña no encontrado en intento {intento + 1}, reintentando...")
+                if intento < max_intentos - 1:
+                    # Volver a cargar la URL del portafolio
+                    try:
+                        driver.get("http://app.asana.com/0/portfolio/1205257480867940/1207672212054810")
+                        logging.info(f"Recargando página del portafolio (intento {intento + 2})")
+                        time.sleep(30)
+                        
+                        # Volver a encontrar el campo de correo
+                        input_correo = WebDriverWait(driver, 30).until(
+                            EC.element_to_be_clickable((By.XPATH, "//input[@type='email' and @name='e']")))
+                        input_correo.click()
+                        input_correo.clear()
+                        input_correo.send_keys(os.getenv('ASANA_EMAIL', 'javier.perdomo@copservir.co'))
+                        logging.info(f"Correo reingresado después de recargar (intento {intento + 2})")
+                        time.sleep(0.5)
+                    except Exception as e:
+                        logging.error(f"Error al recargar la página: {e}")
+                else:
+                    logging.error("No se pudo acceder al campo contraseña después de 3 intentos")
+                    return False
+
+        # Esperar campo de contraseña (por si acaso)
         input_contrasena = WebDriverWait(driver, 30).until(
             EC.element_to_be_clickable((By.XPATH, "//input[@type='password' and @name='p']")))
         input_contrasena.click()
+        input_contrasena.clear()
         input_contrasena.send_keys(os.getenv('ASANA_PASSWORD', 'Clave123+-'))
         logging.info("Contraseña ingresada.")
 
-        iniciar_sesion = WebDriverWait(driver, 30).until(
-            EC.element_to_be_clickable((By.XPATH, "//div[@role='button' and contains(text(), 'Iniciar sesión')]")))
-        driver.execute_script("arguments[0].click();", iniciar_sesion)
-        logging.info("Botón 'Log in' clickeado.")
+        # Para el login, también usar TAB + ENTER
+        try:
+            input_contrasena.send_keys(Keys.TAB)  # Tab al botón "Iniciar sesión"
+            time.sleep(0.5)
+            input_contrasena.send_keys(Keys.ENTER)  # Enter para hacer clic
+            logging.info("TAB + ENTER para iniciar sesión")
+        except Exception as e:
+            logging.warning(f"Error en login con TAB+ENTER: {e}")
 
+        # Verificar login
         WebDriverWait(driver, 30).until(
             EC.url_contains("/0/portfolio/"))
-        logging.info("Login completado.")
+        logging.info("Login completado exitosamente.")
         return True
+        
     except Exception as e:
         logging.error(f"Error durante el login: {e}")
         return False

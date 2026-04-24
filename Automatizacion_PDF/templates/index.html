@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QA Automation | Lector ENEL Copservir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --copservir-green: #008751;
+        --copservir-light: #10b981;
+        --dark-accent: #0f172a;
+      }
+      body { 
+        font-family: 'Plus Jakarta Sans', sans-serif; 
+        background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        min-height: 100vh;
+        color: #f8fafc;
+      }
+      .mono { font-family: 'JetBrains Mono', monospace; }
+      
+      .glass-card { 
+        background: rgba(30, 41, 59, 0.7); 
+        backdrop-filter: blur(16px); 
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      }
+
+      .boton-deshabilitado { 
+        background-color: rgba(15, 23, 42, 0.5) !important;
+        color: #475569 !important;
+        border: 1px solid rgba(71, 85, 105, 0.3) !important;
+        opacity: 0.4; 
+        cursor: not-allowed; 
+        filter: grayscale(1);
+      }
+
+      @keyframes glowPulse {
+        0% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.2); }
+        50% { box-shadow: 0 0 25px rgba(16, 185, 129, 0.5); }
+        100% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.2); }
+      }
+
+      .btn-active-blue { 
+        background: linear-gradient(135deg, #3b82f6, #2563eb) !important; color: white !important; 
+        box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4); border: none !important;
+      }
+      .btn-active-orange { 
+        background: linear-gradient(135deg, #fb923c, #ea580c) !important; color: white !important; 
+        box-shadow: 0 8px 20px rgba(234, 88, 12, 0.4); border: none !important;
+      }
+      .btn-active-purple { 
+        background: linear-gradient(135deg, #c084fc, #9333ea) !important; color: white !important; 
+        box-shadow: 0 8px 20px rgba(147, 51, 234, 0.4); border: none !important;
+      }
+      .btn-active-green { 
+        background: linear-gradient(135deg, #34d399, #059669) !important; color: white !important; 
+        box-shadow: 0 0 20px rgba(16, 185, 129, 0.5); animation: glowPulse 2s infinite; border: none !important;
+      }
+      .btn-active-dark { 
+        background: linear-gradient(135deg, #64748b, #334155) !important; color: white !important; 
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); border: none !important;
+      }
+      
+      .drop-area { 
+        background: rgba(15, 23, 42, 0.4);
+        border: 2px dashed rgba(71, 85, 105, 0.5); 
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .drop-area:hover { border-color: var(--copservir-light); background: rgba(15, 23, 42, 0.6); }
+      .drop-area.drag { background: rgba(16, 185, 129, 0.1); border-color: var(--copservir-light); transform: scale(1.02); }
+
+      #mensajesArea::-webkit-scrollbar { width: 4px; }
+      #mensajesArea::-webkit-scrollbar-thumb { background: #475569; border-radius: 10px; }
+    </style>
+  </head>
+  <body class="pb-10">
+    
+    <nav class="bg-slate-950/50 backdrop-blur-xl border-b border-white/5 h-16 flex items-center px-8 sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
+        <div class="flex items-center gap-4">
+          <div class="bg-white/10 p-1.5 rounded-xl backdrop-blur-md">
+            <img src="https://res.cloudinary.com/dz7okl1ko/image/upload/v1752180853/5134606975890468276-removebg-preview_iskqsd.png" alt="Logo" class="h-8 brightness-110">
+          </div>
+          <div class="h-6 w-px bg-white/10"></div>
+          <span class="text-[11px] font-black text-emerald-400 uppercase tracking-[0.4em]">
+            Automation <span class="text-white opacity-90">Studio</span>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto p-6 space-y-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="glass-card rounded-[2.5rem] p-8 space-y-5">
+          <div class="flex justify-between items-center mb-2">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse shadow-[0_0_10px_#3b82f6]"></span>
+              <h3 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Cloud Engine</h3>
+            </div>
+            <a href="https://drive.google.com/drive/u/0/folders/1z4__4EDoV_CT0z-aHupEYgrTa7W_FatA" target="_blank" class="text-[9px] font-black text-cyan-400 hover:text-cyan-300 hover:bg-cyan-400/10 transition-all uppercase tracking-widest border border-cyan-400/30 px-3 py-1.5 rounded-xl flex items-center gap-2">
+              Ver Carpeta ↗
+            </a>
+          </div>
+          
+          <button id="buscarPdfBtn" class="w-full py-4 rounded-2xl font-bold btn-active-blue transition-all active:scale-95 text-sm">
+            🔍 Localizar Archivo Maestro
+          </button>
+          
+          <div class="grid grid-cols-2 gap-4">
+            <button id="dividirBtn" class="py-4 rounded-2xl font-bold boton-deshabilitado text-xs transition-all uppercase" disabled>✂️ Dividir</button>
+            <button id="analizarBtn" class="py-4 rounded-2xl font-bold boton-deshabilitado text-xs transition-all uppercase" disabled>📊 Analizar</button>
+          </div>
+          
+          <div class="h-px bg-white/5 my-2"></div>
+          
+          <button id="exportarExcelBtn" class="w-full py-4 rounded-2xl font-black boton-deshabilitado transition-all uppercase text-xs tracking-widest" disabled>📥 Generar Reporte Final</button>
+          <button id="moverProcesadosBtn" class="w-full py-4 rounded-2xl font-bold boton-deshabilitado text-xs transition-all uppercase" disabled>📦 Archivar Proceso</button>
+        </div>
+
+        <div class="glass-card rounded-[2.5rem] p-8 flex flex-col">
+          <div class="flex items-center gap-2 mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_10px_#10b981]"></span>
+            <h3 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Local Processing</h3>
+          </div>
+          <div id="dropArea" class="drop-area flex-1 flex flex-col items-center justify-center rounded-[2rem] p-6 group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center mb-3 border border-white/10 group-hover:border-emerald-500/50 transition-all">
+              <span class="text-2xl opacity-80">📁</span>
+            </div>
+            <p class="text-[10px] font-bold text-slate-500 uppercase mb-4">Arrastra PDFs aquí</p>
+            <label for="fileInput" class="text-[10px] font-black text-emerald-950 bg-emerald-400 px-6 py-2.5 rounded-xl shadow-lg shadow-emerald-900/20 cursor-pointer hover:bg-emerald-300 transition-colors uppercase">Examinar PC</label>
+            <input id="fileInput" name="file" type="file" class="hidden" accept=".pdf" multiple>
+          </div>
+          <div class="flex gap-3 mt-6">
+            <button id="procesarLocalBtn" class="flex-1 py-4 bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 rounded-2xl font-bold text-xs hover:bg-emerald-600 hover:text-white transition-all uppercase tracking-widest">Iniciar Proceso</button>
+            <button id="limpiarBtn" class="px-6 py-4 bg-slate-800 text-slate-400 rounded-2xl hover:bg-slate-700 transition-colors">🗑️</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-[2rem] shadow-2xl border-[1px] border-slate-200 overflow-hidden relative">
+        <div class="px-6 py-4 bg-slate-50 flex justify-between items-center border-b border-slate-200">
+          <div class="flex gap-2 items-center">
+            <div class="flex gap-1.5">
+              <div id="led-rojo" class="w-3 h-3 rounded-full bg-slate-300 transition-all duration-500"></div>
+              <div id="led-amarillo" class="w-3 h-3 rounded-full bg-slate-300 transition-all duration-500"></div>
+              <div id="led-verde" class="w-3 h-3 rounded-full bg-slate-300 transition-all duration-500"></div>
+            </div>
+            <span id="estado-texto" class="ml-4 text-[10px] mono text-slate-500 uppercase font-black tracking-[0.2em]">Sistema Listo</span>
+          </div>
+          <span id="porcentaje-texto" class="text-[12px] font-black mono text-slate-400">0%</span>
+        </div>
+        
+        <div class="p-8 space-y-4">
+          <div class="w-full h-4 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
+            <div id="barra-progreso" class="h-full bg-gradient-to-r from-blue-500 to-emerald-500 w-0 transition-all duration-300 shadow-[0_0_15px_rgba(16,185,129,0.3)]"></div>
+          </div>
+          <div id="detalle-proceso" class="text-center mono text-[11px] text-slate-400 italic">
+            Esperando inicio de operación...
+          </div>
+        </div>
+        <div id="mensajesArea" class="hidden p-4 max-h-48 overflow-y-auto bg-slate-900/30 border-t border-slate-200"></div>
+      </div>
+
+    </main>
+
+    <script>
+      // ========== INICIALIZACIÓN SEGURA DEL DOM ==========
+      const getDOMElement = (id) => {
+        const el = document.getElementById(id);
+        if (!el) console.warn(`⚠️ Elemento no encontrado: ${id}`);
+        return el;
+      };
+
+      const buscarPdfBtn = getDOMElement('buscarPdfBtn');
+      const dividirBtn = getDOMElement('dividirBtn');
+      const analizarBtn = getDOMElement('analizarBtn');
+      const exportarExcelBtn = getDOMElement('exportarExcelBtn');
+      const moverProcesadosBtn = getDOMElement('moverProcesadosBtn');
+      const procesarLocalBtn = getDOMElement('procesarLocalBtn');
+      const limpiarBtn = getDOMElement('limpiarBtn');
+      const fileInput = getDOMElement('fileInput');
+      const dropArea = getDOMElement('dropArea');
+      const mensajesArea = getDOMElement('mensajesArea');
+      const barrProgreso = getDOMElement('barra-progreso');
+      const txtEstado = getDOMElement('estado-texto');
+      const txtDetalle = getDOMElement('detalle-proceso');
+      const txtPorcentaje = getDOMElement('porcentaje-texto');
+      const ledR = getDOMElement('led-rojo');
+      const ledA = getDOMElement('led-amarillo');
+      const ledV = getDOMElement('led-verde');
+
+      let selectedFiles = [], lastExcelFile = null, mensajes = [];
+
+      // ========== FUNCIONES AUXILIARES SEGURAS ==========
+      function habilitarBotones(buscar=false, dividir=false, analizar=false, exportar=false, mover=false) {
+        const buttons = [
+          { el: buscarPdfBtn, enabled: buscar, activeClass: 'btn-active-blue' },
+          { el: dividirBtn, enabled: dividir, activeClass: 'btn-active-orange' },
+          { el: analizarBtn, enabled: analizar, activeClass: 'btn-active-purple' },
+          { el: exportarExcelBtn, enabled: exportar, activeClass: 'btn-active-green' },
+          { el: moverProcesadosBtn, enabled: mover, activeClass: 'btn-active-dark' }
+        ];
+
+        buttons.forEach(btn => {
+          if (!btn.el) return; // Saltar si no existe
+          
+          btn.el.disabled = !btn.enabled;
+          btn.el.className = btn.enabled 
+            ? `${btn.activeClass} px-6 py-4 rounded-2xl font-bold transition-all uppercase text-xs`
+            : 'boton-deshabilitado px-6 py-4 rounded-2xl font-bold transition-all uppercase text-xs';
+        });
+      }
+
+      function actualizarProgreso(fase, porcentaje, mensaje) {
+        try {
+          if (barrProgreso) barrProgreso.style.width = porcentaje + '%';
+          if (txtPorcentaje) txtPorcentaje.innerText = porcentaje + '%';
+          if (txtDetalle) txtDetalle.innerText = mensaje;
+          if (txtEstado) txtEstado.innerText = fase;
+
+          // Reset de luces
+          [ledR, ledA, ledV].forEach(l => {
+            if (l) l.className = "w-3 h-3 rounded-full bg-slate-300 transition-all duration-500";
+          });
+
+          if (porcentaje <= 30 && ledR) {
+            ledR.classList.add('bg-rose-500', 'shadow-[0_0_10px_#f43f5e]');
+          } else if (porcentaje < 100 && ledA) {
+            ledA.classList.add('bg-amber-500', 'shadow-[0_0_10px_#f59e0b]');
+          } else if (ledV) {
+            ledV.classList.add('bg-emerald-500', 'shadow-[0_0_10px_#10b981]');
+          }
+        } catch(e) {
+          console.error('❌ Error actualizando progreso:', e);
+        }
+      }
+
+      function agregarMensaje(tipo, texto) {
+        try {
+          const timestamp = new Date().toLocaleTimeString();
+          const color = { '✅': 'text-emerald-400', '❌': 'text-rose-400', '⚠️': 'text-amber-400', '📄': 'text-sky-400', '🔄': 'text-blue-400' }[tipo] || 'text-white';
+          mensajes.push(`[${timestamp}] ${tipo}: ${texto}`);
+          
+          if (mensajesArea) {
+            mensajesArea.classList.remove('hidden');
+            mensajesArea.innerHTML += `<div class="${color} py-0.5 text-xs"><span class="text-slate-400 mr-3 text-[9px] mono">[${timestamp}]</span> ${texto}</div>`;
+            mensajesArea.scrollTop = mensajesArea.scrollHeight;
+          }
+        } catch(e) {
+          console.error('❌ Error agregando mensaje:', e);
+        }
+      }
+
+      // ========== EVENT LISTENERS CLOUD ==========
+      if (buscarPdfBtn) {
+        buscarPdfBtn.onclick = async () => {
+          actualizarProgreso('Busqueda', 10, 'Buscando archivo en Drive...');
+          agregarMensaje('🔄', 'Conectando con Google Drive...');
+          try {
+            const r = await fetch('/buscar-pdf-drive', {method:'POST'}), d = await r.json();
+            if(d.success) { 
+              agregarMensaje('✅', d.mensaje); 
+              habilitarBotones(true, d.requiere_division, !d.requiere_division, false, false); 
+            } else { 
+              agregarMensaje('❌', d.error); 
+            }
+            actualizarProgreso('Busqueda', 100, 'Archivo Localizado...')
+          } catch(e) { 
+            agregarMensaje('❌', 'Error de red: ' + e.message); 
+            actualizarProgreso('Error', 0, 'Error de conexión');
+          }
+        };
+      }
+
+      if (dividirBtn) {
+        dividirBtn.onclick = async () => {
+          actualizarProgreso('Particion', 20, 'Dividiendo PDF en paginas individuales...')
+          agregarMensaje('🔄', 'Dividiendo archivo maestro...');
+          try {
+            const r = await fetch('/dividir-pdf', {method:'POST'}), d = await r.json();
+            if(d.success) { 
+              agregarMensaje('✅', d.mensaje); 
+              habilitarBotones(true, false, true, false, false); 
+            }
+            actualizarProgreso('Particion', 100, 'Division completada')
+          } catch(e) { 
+            agregarMensaje('❌', 'Error: ' + e.message);
+            actualizarProgreso('Error', 0, 'Error en división');
+          }
+        };
+      }
+
+      if (analizarBtn) {
+        analizarBtn.onclick = async () => {
+          actualizarProgreso('Analisis', 20, 'Extrayendo datos de los recibos...')
+          agregarMensaje('🔄', 'Analizando facturas...');
+          try {
+            const r = await fetch('/analizar-pdfs-drive', {method:'POST'}), d = await r.json();
+            if(d.success) { 
+              agregarMensaje('✅', d.mensaje); 
+              habilitarBotones(true, false, false, true, true); 
+            }
+            actualizarProgreso('Analisis', 100, 'Datos extraidos correctamente')
+          } catch(e) { 
+            agregarMensaje('❌', 'Error: ' + e.message);
+            actualizarProgreso('Error', 0, 'Error en análisis');
+          }
+        };
+      }
+
+      if (exportarExcelBtn) {
+        exportarExcelBtn.onclick = async () => {
+          actualizarProgreso('Exportacion', 20, 'Exportacion iniciada...')
+          agregarMensaje('🔄', 'Consolidando Excel...');
+          try {
+            const r = await fetch('/exportar-excel-drive', {method:'POST'}), d = await r.json();
+            if(d.success) { 
+              agregarMensaje('✅', d.mensaje); 
+              lastExcelFile = d.excel_filename;
+            }
+            actualizarProgreso('Exportacion', 100, 'Exportacion Completada....')
+          } catch(e) { 
+            agregarMensaje('❌', 'Error: ' + e.message);
+            actualizarProgreso('Error', 0, 'Error en exportación');
+          }
+        };
+      }
+
+      if (moverProcesadosBtn) {
+        moverProcesadosBtn.onclick = async () => {
+          actualizarProgreso('Procesados', 20, 'Moviendo archivos procesados...')
+          agregarMensaje('🔄', 'Moviendo archivos...');
+          try {
+            const r = await fetch('/mover-procesados', {method:'POST'}), d = await r.json();
+            if(d.success) { 
+              agregarMensaje('✅', d.mensaje); 
+              habilitarBotones(true, false, false, false, false); 
+            }
+            actualizarProgreso('Procesados', 100, 'Archivos procesados movidos correctamente...')
+          } catch(e) { 
+            agregarMensaje('❌', 'Error: ' + e.message);
+            actualizarProgreso('Error', 0, 'Error moviendo archivos');
+          }
+        };
+      }
+
+      // ========== SERVER-SENT EVENTS ==========
+      try {
+        new EventSource('/stream-logs').onmessage = (e) => {
+          if (e.data && !e.data.includes('heartbeat')) {
+            if (mensajesArea) {
+              mensajesArea.classList.remove('hidden');
+              mensajesArea.innerHTML += `<div class="text-slate-500 border-l border-white/5 pl-4 py-0.5 text-xs"><span class="text-emerald-800 mr-3">#</span> ${e.data}</div>`;
+              mensajesArea.scrollTop = mensajesArea.scrollHeight;
+            }
+          }
+        };
+      } catch(e) {
+        console.warn('⚠️ EventSource no disponible');
+      }
+
+      // ========== DRAG & DROP ==========
+      if (dropArea) {
+        dropArea.ondragover = (e) => { 
+          e.preventDefault(); 
+          dropArea.classList.add('drag'); 
+        };
+        
+        dropArea.ondragleave = () => { 
+          dropArea.classList.remove('drag'); 
+        };
+        
+        dropArea.ondrop = (e) => { 
+          e.preventDefault(); 
+          dropArea.classList.remove('drag'); 
+          fileInput.files = e.dataTransfer.files; 
+          selectedFiles = Array.from(e.dataTransfer.files); 
+          agregarMensaje('📄', `Carga local: ${selectedFiles.length} PDFs`); 
+        };
+      }
+
+      if (fileInput) {
+        fileInput.onchange = () => { 
+          selectedFiles = Array.from(fileInput.files); 
+          agregarMensaje('📄', `Seleccionados: ${selectedFiles.length} PDFs`); 
+        };
+      }
+
+      // ========== PROCESAR LOCAL (CRÍTICO) ==========
+      if (procesarLocalBtn) {
+        procesarLocalBtn.onclick = async () => {
+          if(!selectedFiles.length) {
+            agregarMensaje('⚠️', 'Por favor selecciona PDFs');
+            return;
+          }
+          
+          try {
+            actualizarProgreso('Procesando', 30, 'Analizando archivos locales...');
+            agregarMensaje('🔄', 'Iniciando procesamiento...');
+            
+            const form = new FormData(); 
+            selectedFiles.forEach(f => form.append('files', f));
+            
+            const response = await fetch('/procesar-lote', {method:'POST', body: form});
+            
+            if (!response.ok) {
+              throw new Error(`HTTP ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            if(data.success) { 
+              agregarMensaje('✅', 'Proceso local completado'); 
+              lastExcelFile = data.excel_filename; 
+              agregarMensaje('✅', `Excel generado: ${data.excel_filename}`);
+              
+              // Actualizar SOLO los botones que existen
+              habilitarBotones(true, false, false, true, true);
+              actualizarProgreso('Completado', 100, 'Excel generado. Puedes mover o descargar.');
+              
+            } else {
+              throw new Error(data.error || 'Error desconocido');
+            }
+          } catch(error) {
+            console.error('❌ Error procesando:', error);
+            agregarMensaje('❌', `Error: ${error.message}`);
+            actualizarProgreso('Error', 0, 'Error en procesamiento');
+            habilitarBotones(true, false, false, false, false);
+          }
+        };
+      }
+
+      // ========== BOTONES AUXILIARES ==========
+      if (limpiarBtn) {
+        limpiarBtn.onclick = () => { 
+          if (fileInput) fileInput.value = ''; 
+          selectedFiles = []; 
+          if (mensajesArea) {
+            mensajesArea.innerHTML = '';
+            mensajesArea.classList.add('hidden');
+          }
+          lastExcelFile = null;
+          actualizarProgreso('Sistema Listo', 0, 'Esperando inicio de operación...');
+          habilitarBotones(true, false, false, false, false);
+        };
+      }
+
+      // Inicializar estado
+      habilitarBotones(true, false, false, false, false);
+    </script>
+  </body>
+</html>

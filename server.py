@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, redirect, url_for, session, render_template
+from flask import Flask, request, jsonify, redirect, url_for, session, render_template, send_from_directory
 import subprocess
 import os
 import time
@@ -34,6 +34,7 @@ PORT_POSWEB = 5006
 PORT_MENSAJEROS = 5007
 PORT_REPORTES = 5008
 PORT_APROBADOS = 5009
+PORT_PDF = 5010
 
 def get_db_connection():
     print("Configuración de conexión:", db_config)
@@ -122,6 +123,12 @@ def login_docuseal():
         return redirect(f'http://192.168.20.8:{PORT_DOCUSEAL}')
     return app.send_static_file('index.html')
 
+@app.route('/login_pdf')
+def login_pdf():
+    if session.get('logged_in') and session.get('role') == 'pdf':
+        return redirect(f'http://192.168.20.8:{PORT_PDF}')
+    return app.send_static_file('index.html')
+
 
 
 # Ruta para procesar el login
@@ -155,6 +162,7 @@ def login():
                 (sistema == 'mensajeros' and user['role'] == 'mensajeros') or
                 (sistema == 'aprobados' and user['role'] == 'aprobados') or
                 (sistema == 'reportes' and user['role'] == 'reportes') or
+                (sistema == 'pdf' and user['role'] == 'pdf') or
 
                 (sistema == 'DocusealOP' and user['role'] in ['DocusealOP', 'Docuseal1OP', 'Docuseal2OP'])
             ):
@@ -180,7 +188,9 @@ def login():
                     return jsonify({'success': True, 'redirect_url': f'http://192.168.20.8:{PORT_REPORTES}'})
                 elif user['role'] == 'aprobados':
                     return jsonify({'success': True, 'redirect_url': f'http://192.168.20.8:{PORT_APROBADOS}'})
-                
+                elif user['role'] == 'pdf':
+                    return jsonify({'success': True, 'redirect_url': f'http://192.168.20.8:{PORT_PDF}'})
+
                 elif user['role'] in ['DocusealOP', 'Docuseal1OP', 'Docuseal2OP']:
                     session['temp_password'] = password
                     return jsonify({'success': True, 'redirect_url': f'http://192.168.20.8:{PORT_DOCUSEAL}'})
@@ -296,6 +306,7 @@ if __name__ == '__main__':
     docuseal_server_path = os.path.join("Docuseal_Automatizacion", "server.py")
     reportes_server_path = os.path.join ("Reportes.F.E", "server.py")
     aprobados_server_path = os.path.join ("Aprobados-Asana-", "server.py")
+    pdf_server_path = os.path.join ("Automatizacion_PDF", "server.py")
 
     
     if not os.path.exists(claro_server_path):
@@ -345,6 +356,12 @@ if __name__ == '__main__':
         subprocess.Popen(["python", aprobados_server_path], cwd=os.getcwd())
         time.sleep(1)
 
+    if not os.path.exists(pdf_server_path):
+        print(f"Error: No se encontró {pdf_server_path}")
+    else:
+        subprocess.Popen(["python", pdf_server_path], cwd=os.getcwd())
+        time.sleep(1)
+
     if not os.path.exists(docuseal_server_path):
         print(f"Error: No se encontró {docuseal_server_path}")
     else:
@@ -359,9 +376,9 @@ if __name__ == '__main__':
     print(f"Servidor de PosWeb iniciado en el puerto {PORT_POSWEB}")
     print(f"Servidor de La Rebaja iniciado en el puerto {PORT_REBAJA}")
     print(f"Servidor de Mensajeros iniciado en el puerto {PORT_MENSAJEROS}")
-    print(f"Servidor de Mensajeros iniciado en el puerto {PORT_REPORTES}")
-    print(f"Servidor de Mensajeros iniciado en el puerto {PORT_APROBADOS}")
-
+    print(f"Servidor de Reportes iniciado en el puerto {PORT_REPORTES}")
+    print(f"Servidor de Aprobados iniciado en el puerto {PORT_APROBADOS}")
+    print(f"Servidor de PDF iniciado en el puerto {PORT_PDF}")
 
     print(f"Servidor de DocusealOP iniciado en el puerto {PORT_DOCUSEAL}")
 

@@ -1,0 +1,14 @@
+31-03-2026 11:09:32 - Navegador abierto y página cargada
+31-03-2026 11:09:32 - Redirigido a la página de login
+31-03-2026 11:09:33 - Usuario ingresado
+31-03-2026 11:09:34 - Contraseña ingresada
+31-03-2026 11:09:36 - Perfil 'Soporte' seleccionado
+31-03-2026 11:09:38 - Botón de login presionado
+31-03-2026 11:09:39 - ✅ Imagen agregada al PDF: capturas\captura_inicio_login_compressed.png
+31-03-2026 11:09:39 - ✅ Imagen agregada al PDF: capturas\captura_login_link_compressed.png
+31-03-2026 11:09:39 - ✅ Imagen agregada al PDF: capturas\captura_usuario_compressed.png
+31-03-2026 11:09:39 - ✅ Imagen agregada al PDF: capturas\captura_password_compressed.png
+31-03-2026 11:09:39 - ✅ Imagen agregada al PDF: capturas\captura_perfil_compressed.png
+31-03-2026 11:09:39 - ✅ Imagen agregada al PDF: capturas\captura_login_compressed.png
+31-03-2026 11:09:40 - ✅ PDF guardado correctamente en 1.51 segundos.
+31-03-2026 11:09:40 - PDF consolidado generado exitosamente

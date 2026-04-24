@@ -5954,3 +5954,671 @@
  * Running on http://127.0.0.1:5006
  * Running on http://192.168.20.8:5006
 2026-03-19 11:46:03,409 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-20 07:05:03,643 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-03-20 07:05:03,643 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:57:52,627 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-03-25 11:57:52,629 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-27 09:21:40,355 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-03-27 09:21:40,355 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-30 15:51:12,544 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-03-30 15:51:12,544 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-31 11:08:18,379 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:18] "GET / HTTP/1.1" 200 -
+2026-03-31 11:08:18,430 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:18] "GET /processes HTTP/1.1" 200 -
+2026-03-31 11:08:18,437 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:18] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:18,446 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:18] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:08:18,479 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-31 11:08:18,480 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:18] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:21,418 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:21] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:21,453 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:21] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:23,424 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:23] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:08:24,433 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:24] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:24,444 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:24] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:27,424 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:27] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:27,445 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:27] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:28,499 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:28] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:08:30,431 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:30] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:30,453 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:30] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:33,441 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:33] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:33,442 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:33] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:08:33,484 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:33] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:36,433 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:36] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:36,449 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:36] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:38,452 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:38] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:08:39,441 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:39] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:39,464 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:39] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:42,440 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:42] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:42,472 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:42] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:43,433 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:43] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:08:45,508 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:45] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:45,520 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:45] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:48,425 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:48] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:48,426 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:48] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:08:48,440 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:48] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:51,430 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:51] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:51,454 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:51] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:53,429 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:53] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:08:53,684 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:53] "POST /start HTTP/1.1" 200 -
+2026-03-31 11:08:53,695 - INFO - Directorio de trabajo cambiado a: C:\Users\jperdomolc\Pictures\Proyecto_Automatizaciones_Completo\LoginPosWEB
+2026-03-31 11:08:53,700 - INFO - Ejecución no interactiva: usando versión guardada 80
+2026-03-31 11:08:53,700 - INFO - Inicializando WebDriver de Firefox...
+2026-03-31 11:08:53,715 - INFO - ====== WebDriver manager ======
+2026-03-31 11:08:55,135 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:55] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:55,209 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:55] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:55,237 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:55] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:56,888 - INFO - Get LATEST geckodriver version for 148.0 firefox
+2026-03-31 11:08:57,435 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:57] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:57,447 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:57] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:08:58,427 - INFO - Get LATEST geckodriver version for 148.0 firefox
+2026-03-31 11:08:58,437 - INFO - 192.168.21.29 - - [31/Mar/2026 11:08:58] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:08:59,365 - INFO - There is no [win64] geckodriver "v0.36.0" for browser firefox "148.0" in cache
+2026-03-31 11:08:59,366 - INFO - Get LATEST geckodriver version for 148.0 firefox
+2026-03-31 11:09:00,222 - INFO - Getting latest mozilla release info for v0.36.0
+2026-03-31 11:09:00,432 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:00] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:00,453 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:00] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:01,076 - INFO - About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip
+2026-03-31 11:09:02,895 - INFO - Driver downloading response is 200
+2026-03-31 11:09:03,245 - INFO - Get LATEST geckodriver version for 148.0 firefox
+2026-03-31 11:09:03,426 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:03] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:03,429 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:03] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:03,446 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:03] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:04,346 - INFO - Driver has been saved in cache [C:\Users\jperdomolc\.wdm\drivers\geckodriver\win64\v0.36.0]
+2026-03-31 11:09:06,441 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:06] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:06,457 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:06] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:08,437 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:08] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:09,429 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:09] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:09,455 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:09] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:12,431 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:12] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:12,447 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:12] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:13,446 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:13] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:15,489 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:15] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:15,530 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:15] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:18,444 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:18] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:18,446 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:18] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:18,459 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:18] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:19,416 - INFO - WebDriver inicializado correctamente.
+2026-03-31 11:09:21,467 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:21] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:21,483 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:21] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:23,426 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:23] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:23,931 - INFO - Accediendo a http://192.168.100.63
+2026-03-31 11:09:23,931 - INFO - Ejecutando parche_modal y tomando captura de pantalla...
+2026-03-31 11:09:28,272 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:28] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:28,359 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:28] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:28,397 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:28] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:28,421 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:28] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:28,424 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:28] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:30,433 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:30] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:30,449 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:30] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:31,724 - INFO - Ejecutando: Login usuario soporte
+2026-03-31 11:09:33,450 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:33] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:33,457 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:33] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:33,485 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:33] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:36,427 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:36] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:36,445 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:36] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:38,427 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:38] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:39,545 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:39] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:39,662 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:39] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:40,848 - INFO - Ejecutando: Cierre de sesión
+2026-03-31 11:09:42,429 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:42] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:42,455 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:42] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:43,426 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:43] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:45,436 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:45] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:45,449 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:45] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:48,079 - INFO - Cerrando el WebDriver...
+2026-03-31 11:09:48,432 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:48] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:48,445 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:48] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:48,452 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:48] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:51,424 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:51] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:51,438 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:51] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:53,247 - INFO - WebDriver cerrado correctamente.
+2026-03-31 11:09:53,247 - INFO - Automatización finalizada. Logs guardados en: parche_posweb.log
+2026-03-31 11:09:53,429 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:53] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:54,423 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:54] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:54,437 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:54] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:54,491 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:54] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:09:57,427 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:57] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:57,438 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:57] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:09:58,440 - INFO - 192.168.21.29 - - [31/Mar/2026 11:09:58] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:10:00,435 - INFO - 192.168.21.29 - - [31/Mar/2026 11:10:00] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:10:00,450 - INFO - 192.168.21.29 - - [31/Mar/2026 11:10:00] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:10:03,437 - INFO - 192.168.21.29 - - [31/Mar/2026 11:10:03] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:10:03,438 - INFO - 192.168.21.29 - - [31/Mar/2026 11:10:03] "GET /parches HTTP/1.1" 200 -
+2026-03-31 11:10:03,451 - INFO - 192.168.21.29 - - [31/Mar/2026 11:10:03] "GET /status HTTP/1.1" 200 -
+2026-03-31 11:10:05,435 - INFO - 192.168.21.29 - - [31/Mar/2026 11:10:05] "[32mGET /download_parche?name=Parche_31-03-2026_11-09-28 HTTP/1.1[0m" 302 -
+2026-03-31 11:10:05,494 - INFO - 192.168.21.29 - - [31/Mar/2026 11:10:05] "GET /view_parche?name=Parche_31-03-2026_11-09-28 HTTP/1.1" 200 -
+2026-03-31 11:10:21,527 - INFO - 192.168.21.29 - - [31/Mar/2026 11:10:21] "GET /serve_parche_file?name=Parche_31-03-2026_11-09-28&file=logout_usuario_administrador_pdf/reporte_consolidado.pdf HTTP/1.1" 200 -
+2026-03-31 11:11:42,982 - INFO - copy_parche llamado con payload: {'name': 'Parche_31-03-2026_11-09-28', 'dest': '1K9CgElDHIq9QtoMFoAZAdQr0ed5-wy0a'}
+2026-03-31 11:11:42,985 - INFO - Destino seleccionado: 1K9CgElDHIq9QtoMFoAZAdQr0ed5-wy0a
+2026-03-31 11:11:42,992 - INFO - ID de carpeta extraído: 1K9CgElDHIq9QtoMFoAZAdQr0ed5-wy0a
+2026-03-31 11:11:42,992 - INFO - Subiendo carpeta Parche_31-03-2026_11-09-28 a Google Drive
+2026-04-01 10:12:39,397 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-01 10:12:39,398 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-01 11:00:08,485 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-01 11:00:08,485 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-01 11:10:10,326 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-01 11:10:10,327 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-01 11:20:13,415 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-01 11:20:13,416 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-01 16:24:00,307 - INFO - Acceso no autorizado, redirigiendo a http://192.168.20.8:5000
+2026-04-01 16:24:00,380 - INFO - 172.16.200.48 - - [01/Apr/2026 16:24:00] "[32mGET /view_parche?name=Parche_31-03-2026_11-09-28 HTTP/1.1[0m" 302 -
+2026-04-04 07:30:36,169 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-04 07:30:36,172 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-05 17:55:43,040 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-05 17:55:43,044 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-06 09:43:57,577 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-06 09:43:57,577 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-10 08:36:44,839 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-10 08:36:44,840 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-10 08:47:17,385 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-10 08:47:17,386 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-13 10:20:51,451 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-13 10:20:51,451 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-13 11:19:00,290 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-13 11:19:00,290 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-13 11:19:36,321 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-13 11:19:36,323 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-15 11:19:53,100 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-15 11:19:53,101 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-15 11:38:45,876 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-15 11:38:45,877 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-15 13:51:15,542 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-15 13:51:15,544 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 09:23:59,090 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 09:23:59,091 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 09:46:36,115 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:36] "GET / HTTP/1.1" 200 -
+2026-04-22 09:46:36,203 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:36] "GET /processes HTTP/1.1" 200 -
+2026-04-22 09:46:36,210 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:36] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:36,222 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:36] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:36,235 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-22 09:46:36,241 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:36] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:46:39,162 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:39] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:39,166 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:39] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:41,160 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:41] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:46:42,153 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:42] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:42,156 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:42] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:45,495 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:45] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:45,499 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:45] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:46,491 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:46] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:46:48,485 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:48] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:48,489 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:48] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:51,492 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:51] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:51,494 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:51] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:46:51,496 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:51] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:54,494 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:54] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:54,498 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:54] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:56,491 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:56] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:46:57,486 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:57] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:46:57,490 - INFO - 192.168.20.8 - - [22/Apr/2026 09:46:57] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:00,495 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:00] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:00,499 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:00] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:01,490 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:01] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:47:03,494 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:03] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:03,498 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:03] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:06,489 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:06,492 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:47:06,500 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:09,490 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:09] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:09,495 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:09] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:11,500 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:11] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:47:12,494 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:12] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:12,498 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:12] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:15,495 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:15] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:15,499 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:15] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:16,488 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:16] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:47:18,485 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:18] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:18,490 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:18] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:21,491 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:21] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:21,494 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:21] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:47:21,496 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:21] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:24,485 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:24] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:24,491 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:24] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:26,489 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:26] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:47:27,485 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:27] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:27,488 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:27] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:30,487 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:30] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:30,492 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:30] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:31,482 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:31] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:47:33,486 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:33] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:33,489 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:33] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:36,493 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:36] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:36,497 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:36] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:47:36,499 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:36] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:39,494 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:39] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:39,498 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:39] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:41,496 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:41] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:47:42,484 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:42] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:47:42,490 - INFO - 192.168.20.8 - - [22/Apr/2026 09:47:42] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:48:06,496 - INFO - 192.168.20.8 - - [22/Apr/2026 09:48:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:48:06,500 - INFO - 192.168.20.8 - - [22/Apr/2026 09:48:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:48:06,501 - INFO - 192.168.20.8 - - [22/Apr/2026 09:48:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:49:06,499 - INFO - 192.168.20.8 - - [22/Apr/2026 09:49:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:49:06,503 - INFO - 192.168.20.8 - - [22/Apr/2026 09:49:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:49:06,505 - INFO - 192.168.20.8 - - [22/Apr/2026 09:49:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:50:06,702 - INFO - 192.168.20.8 - - [22/Apr/2026 09:50:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:50:06,713 - INFO - 192.168.20.8 - - [22/Apr/2026 09:50:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:50:06,726 - INFO - 192.168.20.8 - - [22/Apr/2026 09:50:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:51:06,606 - INFO - 192.168.20.8 - - [22/Apr/2026 09:51:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:51:06,611 - INFO - 192.168.20.8 - - [22/Apr/2026 09:51:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:51:06,630 - INFO - 192.168.20.8 - - [22/Apr/2026 09:51:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:52:06,697 - INFO - 192.168.20.8 - - [22/Apr/2026 09:52:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:52:06,702 - INFO - 192.168.20.8 - - [22/Apr/2026 09:52:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:52:06,727 - INFO - 192.168.20.8 - - [22/Apr/2026 09:52:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:53:06,504 - INFO - 192.168.20.8 - - [22/Apr/2026 09:53:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:53:06,512 - INFO - 192.168.20.8 - - [22/Apr/2026 09:53:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:53:06,514 - INFO - 192.168.20.8 - - [22/Apr/2026 09:53:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:54:06,525 - INFO - 192.168.20.8 - - [22/Apr/2026 09:54:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:54:06,537 - INFO - 192.168.20.8 - - [22/Apr/2026 09:54:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:54:06,541 - INFO - 192.168.20.8 - - [22/Apr/2026 09:54:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:55:06,511 - INFO - 192.168.20.8 - - [22/Apr/2026 09:55:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:55:06,517 - INFO - 192.168.20.8 - - [22/Apr/2026 09:55:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:55:06,520 - INFO - 192.168.20.8 - - [22/Apr/2026 09:55:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:56:06,547 - INFO - 192.168.20.8 - - [22/Apr/2026 09:56:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:56:06,551 - INFO - 192.168.20.8 - - [22/Apr/2026 09:56:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:56:06,553 - INFO - 192.168.20.8 - - [22/Apr/2026 09:56:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:57:06,672 - INFO - 192.168.20.8 - - [22/Apr/2026 09:57:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:57:06,675 - INFO - 192.168.20.8 - - [22/Apr/2026 09:57:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:57:06,682 - INFO - 192.168.20.8 - - [22/Apr/2026 09:57:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:58:06,505 - INFO - 192.168.20.8 - - [22/Apr/2026 09:58:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:58:06,508 - INFO - 192.168.20.8 - - [22/Apr/2026 09:58:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:58:06,511 - INFO - 192.168.20.8 - - [22/Apr/2026 09:58:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:59:06,502 - INFO - 192.168.20.8 - - [22/Apr/2026 09:59:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 09:59:06,505 - INFO - 192.168.20.8 - - [22/Apr/2026 09:59:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 09:59:06,508 - INFO - 192.168.20.8 - - [22/Apr/2026 09:59:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:00:06,494 - INFO - 192.168.20.8 - - [22/Apr/2026 10:00:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:00:06,498 - INFO - 192.168.20.8 - - [22/Apr/2026 10:00:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:00:06,499 - INFO - 192.168.20.8 - - [22/Apr/2026 10:00:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:01:06,496 - INFO - 192.168.20.8 - - [22/Apr/2026 10:01:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:01:06,503 - INFO - 192.168.20.8 - - [22/Apr/2026 10:01:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:01:06,506 - INFO - 192.168.20.8 - - [22/Apr/2026 10:01:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:02:06,534 - INFO - 192.168.20.8 - - [22/Apr/2026 10:02:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:02:06,536 - INFO - 192.168.20.8 - - [22/Apr/2026 10:02:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:02:06,539 - INFO - 192.168.20.8 - - [22/Apr/2026 10:02:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:03:06,500 - INFO - 192.168.20.8 - - [22/Apr/2026 10:03:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:03:06,503 - INFO - 192.168.20.8 - - [22/Apr/2026 10:03:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:03:06,506 - INFO - 192.168.20.8 - - [22/Apr/2026 10:03:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:04:06,532 - INFO - 192.168.20.8 - - [22/Apr/2026 10:04:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:04:06,535 - INFO - 192.168.20.8 - - [22/Apr/2026 10:04:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:04:06,540 - INFO - 192.168.20.8 - - [22/Apr/2026 10:04:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:05:06,511 - INFO - 192.168.20.8 - - [22/Apr/2026 10:05:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:05:06,515 - INFO - 192.168.20.8 - - [22/Apr/2026 10:05:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:05:06,517 - INFO - 192.168.20.8 - - [22/Apr/2026 10:05:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:06:06,495 - INFO - 192.168.20.8 - - [22/Apr/2026 10:06:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:06:06,499 - INFO - 192.168.20.8 - - [22/Apr/2026 10:06:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:06:06,507 - INFO - 192.168.20.8 - - [22/Apr/2026 10:06:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:07:06,513 - INFO - 192.168.20.8 - - [22/Apr/2026 10:07:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:07:06,517 - INFO - 192.168.20.8 - - [22/Apr/2026 10:07:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:07:06,519 - INFO - 192.168.20.8 - - [22/Apr/2026 10:07:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:08:06,601 - INFO - 192.168.20.8 - - [22/Apr/2026 10:08:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:08:06,604 - INFO - 192.168.20.8 - - [22/Apr/2026 10:08:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:08:06,607 - INFO - 192.168.20.8 - - [22/Apr/2026 10:08:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:08:25,477 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 10:08:25,477 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 10:09:06,515 - INFO - 192.168.20.8 - - [22/Apr/2026 10:09:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:09:06,516 - INFO - 192.168.20.8 - - [22/Apr/2026 10:09:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:09:06,519 - INFO - 192.168.20.8 - - [22/Apr/2026 10:09:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:10:06,497 - INFO - 192.168.20.8 - - [22/Apr/2026 10:10:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:10:06,500 - INFO - 192.168.20.8 - - [22/Apr/2026 10:10:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:10:06,501 - INFO - 192.168.20.8 - - [22/Apr/2026 10:10:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:11:03,999 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 10:11:03,999 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 10:11:06,535 - INFO - 192.168.20.8 - - [22/Apr/2026 10:11:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:11:06,536 - INFO - 192.168.20.8 - - [22/Apr/2026 10:11:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:11:06,546 - INFO - 192.168.20.8 - - [22/Apr/2026 10:11:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:12:06,529 - INFO - 192.168.20.8 - - [22/Apr/2026 10:12:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:12:06,532 - INFO - 192.168.20.8 - - [22/Apr/2026 10:12:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:12:06,533 - INFO - 192.168.20.8 - - [22/Apr/2026 10:12:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:12:48,093 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 10:12:48,093 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 10:13:06,837 - INFO - 192.168.20.8 - - [22/Apr/2026 10:13:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:13:06,842 - INFO - 192.168.20.8 - - [22/Apr/2026 10:13:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:13:06,852 - INFO - 192.168.20.8 - - [22/Apr/2026 10:13:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:14:06,514 - INFO - 192.168.20.8 - - [22/Apr/2026 10:14:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:14:06,531 - INFO - 192.168.20.8 - - [22/Apr/2026 10:14:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:14:06,535 - INFO - 192.168.20.8 - - [22/Apr/2026 10:14:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:15:06,501 - INFO - 192.168.20.8 - - [22/Apr/2026 10:15:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:15:06,507 - INFO - 192.168.20.8 - - [22/Apr/2026 10:15:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:15:06,509 - INFO - 192.168.20.8 - - [22/Apr/2026 10:15:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:16:06,509 - INFO - 192.168.20.8 - - [22/Apr/2026 10:16:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:16:06,512 - INFO - 192.168.20.8 - - [22/Apr/2026 10:16:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:16:06,514 - INFO - 192.168.20.8 - - [22/Apr/2026 10:16:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:17:06,571 - INFO - 192.168.20.8 - - [22/Apr/2026 10:17:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:17:06,579 - INFO - 192.168.20.8 - - [22/Apr/2026 10:17:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:17:06,582 - INFO - 192.168.20.8 - - [22/Apr/2026 10:17:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:18:06,606 - INFO - 192.168.20.8 - - [22/Apr/2026 10:18:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:18:06,612 - INFO - 192.168.20.8 - - [22/Apr/2026 10:18:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:18:06,616 - INFO - 192.168.20.8 - - [22/Apr/2026 10:18:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:19:06,521 - INFO - 192.168.20.8 - - [22/Apr/2026 10:19:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:19:06,522 - INFO - 192.168.20.8 - - [22/Apr/2026 10:19:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:19:06,526 - INFO - 192.168.20.8 - - [22/Apr/2026 10:19:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:20:06,514 - INFO - 192.168.20.8 - - [22/Apr/2026 10:20:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:20:06,518 - INFO - 192.168.20.8 - - [22/Apr/2026 10:20:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:20:06,523 - INFO - 192.168.20.8 - - [22/Apr/2026 10:20:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:21:06,509 - INFO - 192.168.20.8 - - [22/Apr/2026 10:21:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:21:06,516 - INFO - 192.168.20.8 - - [22/Apr/2026 10:21:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:21:06,520 - INFO - 192.168.20.8 - - [22/Apr/2026 10:21:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:22:06,511 - INFO - 192.168.20.8 - - [22/Apr/2026 10:22:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:22:06,513 - INFO - 192.168.20.8 - - [22/Apr/2026 10:22:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:22:06,516 - INFO - 192.168.20.8 - - [22/Apr/2026 10:22:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:23:21,281 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 10:23:21,282 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 10:24:06,584 - INFO - 192.168.20.8 - - [22/Apr/2026 10:24:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:24:06,590 - INFO - 192.168.20.8 - - [22/Apr/2026 10:24:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:24:06,593 - INFO - 192.168.20.8 - - [22/Apr/2026 10:24:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:25:06,525 - INFO - 192.168.20.8 - - [22/Apr/2026 10:25:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:25:06,527 - INFO - 192.168.20.8 - - [22/Apr/2026 10:25:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:25:06,529 - INFO - 192.168.20.8 - - [22/Apr/2026 10:25:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:26:01,917 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 10:26:01,918 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 10:26:06,743 - INFO - 192.168.20.8 - - [22/Apr/2026 10:26:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:26:06,745 - INFO - 192.168.20.8 - - [22/Apr/2026 10:26:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:26:06,759 - INFO - 192.168.20.8 - - [22/Apr/2026 10:26:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:27:06,703 - INFO - 192.168.20.8 - - [22/Apr/2026 10:27:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:27:06,706 - INFO - 192.168.20.8 - - [22/Apr/2026 10:27:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:27:06,713 - INFO - 192.168.20.8 - - [22/Apr/2026 10:27:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:28:04,144 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 10:28:04,145 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 10:28:06,549 - INFO - 192.168.20.8 - - [22/Apr/2026 10:28:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:28:06,551 - INFO - 192.168.20.8 - - [22/Apr/2026 10:28:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:28:06,554 - INFO - 192.168.20.8 - - [22/Apr/2026 10:28:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:29:06,513 - INFO - 192.168.20.8 - - [22/Apr/2026 10:29:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:29:06,515 - INFO - 192.168.20.8 - - [22/Apr/2026 10:29:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:29:06,517 - INFO - 192.168.20.8 - - [22/Apr/2026 10:29:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:30:06,520 - INFO - 192.168.20.8 - - [22/Apr/2026 10:30:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:30:06,522 - INFO - 192.168.20.8 - - [22/Apr/2026 10:30:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:30:06,524 - INFO - 192.168.20.8 - - [22/Apr/2026 10:30:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:31:06,509 - INFO - 192.168.20.8 - - [22/Apr/2026 10:31:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:31:06,512 - INFO - 192.168.20.8 - - [22/Apr/2026 10:31:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:31:06,514 - INFO - 192.168.20.8 - - [22/Apr/2026 10:31:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:32:06,519 - INFO - 192.168.20.8 - - [22/Apr/2026 10:32:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:32:06,524 - INFO - 192.168.20.8 - - [22/Apr/2026 10:32:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:32:06,527 - INFO - 192.168.20.8 - - [22/Apr/2026 10:32:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:40:18,084 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 10:40:18,085 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 10:41:06,526 - INFO - 192.168.20.8 - - [22/Apr/2026 10:41:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:41:06,530 - INFO - 192.168.20.8 - - [22/Apr/2026 10:41:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:41:06,536 - INFO - 192.168.20.8 - - [22/Apr/2026 10:41:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:42:06,525 - INFO - 192.168.20.8 - - [22/Apr/2026 10:42:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:42:06,531 - INFO - 192.168.20.8 - - [22/Apr/2026 10:42:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:42:06,533 - INFO - 192.168.20.8 - - [22/Apr/2026 10:42:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:43:06,523 - INFO - 192.168.20.8 - - [22/Apr/2026 10:43:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:43:06,527 - INFO - 192.168.20.8 - - [22/Apr/2026 10:43:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:43:06,529 - INFO - 192.168.20.8 - - [22/Apr/2026 10:43:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:44:06,525 - INFO - 192.168.20.8 - - [22/Apr/2026 10:44:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:44:06,532 - INFO - 192.168.20.8 - - [22/Apr/2026 10:44:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:44:06,532 - INFO - 192.168.20.8 - - [22/Apr/2026 10:44:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:45:06,537 - INFO - 192.168.20.8 - - [22/Apr/2026 10:45:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:45:06,541 - INFO - 192.168.20.8 - - [22/Apr/2026 10:45:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:45:06,543 - INFO - 192.168.20.8 - - [22/Apr/2026 10:45:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:46:10,327 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 10:46:10,328 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 10:47:06,525 - INFO - 192.168.20.8 - - [22/Apr/2026 10:47:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:47:06,529 - INFO - 192.168.20.8 - - [22/Apr/2026 10:47:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:47:06,530 - INFO - 192.168.20.8 - - [22/Apr/2026 10:47:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:48:06,524 - INFO - 192.168.20.8 - - [22/Apr/2026 10:48:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:48:06,528 - INFO - 192.168.20.8 - - [22/Apr/2026 10:48:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:48:06,529 - INFO - 192.168.20.8 - - [22/Apr/2026 10:48:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:06,529 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:06,532 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:06,536 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:18,430 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:18] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:18,432 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:18] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:18,434 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:18] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:21,513 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:21] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:21,515 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:21] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:21,517 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:21] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:24,520 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:24] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:24,524 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:24] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:26,510 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:26] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:27,518 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:27] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:27,521 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:27] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:30,521 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:30] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:30,524 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:30] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:31,529 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:31] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:33,520 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:33] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:33,527 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:33] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:36,513 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:36] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:36,517 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:36] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:36,518 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:36] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:39,524 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:39] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:39,527 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:39] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:41,522 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:41] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:42,516 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:42] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:42,520 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:42] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:45,515 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:45] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:45,521 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:45] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:46,528 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:46] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:48,522 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:48] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:48,528 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:48] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:51,514 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:51] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:51,518 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:51] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:51,522 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:51] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:54,527 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:54] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:54,531 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:54] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:56,510 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:56] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:49:57,187 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:57] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:49:57,202 - INFO - 192.168.20.8 - - [22/Apr/2026 10:49:57] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:00,513 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:00] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:00,517 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:00] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:01,522 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:01] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:03,521 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:03] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:03,524 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:03] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:06,517 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:06,521 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:06,523 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:09,520 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:09] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:09,528 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:09] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:11,518 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:11] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:12,525 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:12] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:12,528 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:12] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:15,524 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:15] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:15,528 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:15] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:16,515 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:16] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:18,522 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:18] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:18,528 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:18] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:21,539 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:21] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:21,545 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:21] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:21,580 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:21] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:24,524 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:24] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:24,527 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:24] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:26,512 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:26] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:27,519 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:27] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:27,523 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:27] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:30,520 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:30] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:30,527 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:30] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:31,515 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:31] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:33,523 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:33] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:33,526 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:33] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:36,527 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:36] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:36,529 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:36] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:36,531 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:36] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:39,528 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:39] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:39,532 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:39] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:41,521 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:41] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:42,517 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:42] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:42,521 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:42] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:45,536 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:45] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:45,546 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:45] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:46,521 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:46] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:48,524 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:48] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:48,535 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:48] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:51,523 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:51] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:51,533 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:51] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:51,535 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:51] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:50:54,519 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:54] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:54,538 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:54] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:50:56,514 - INFO - 192.168.20.8 - - [22/Apr/2026 10:50:56] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:51:06,518 - INFO - 192.168.20.8 - - [22/Apr/2026 10:51:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:51:06,521 - INFO - 192.168.20.8 - - [22/Apr/2026 10:51:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:51:06,523 - INFO - 192.168.20.8 - - [22/Apr/2026 10:51:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:52:06,555 - INFO - 192.168.20.8 - - [22/Apr/2026 10:52:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:52:06,558 - INFO - 192.168.20.8 - - [22/Apr/2026 10:52:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:52:06,560 - INFO - 192.168.20.8 - - [22/Apr/2026 10:52:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:53:18,920 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 10:53:18,920 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 10:54:06,664 - INFO - 192.168.20.8 - - [22/Apr/2026 10:54:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:54:06,672 - INFO - 192.168.20.8 - - [22/Apr/2026 10:54:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 10:54:06,673 - INFO - 192.168.20.8 - - [22/Apr/2026 10:54:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:55:06,536 - INFO - 192.168.20.8 - - [22/Apr/2026 10:55:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:55:06,542 - INFO - 192.168.20.8 - - [22/Apr/2026 10:55:06] "GET /status HTTP/1.1" 200 -
+2026-04-22 10:55:06,552 - INFO - 192.168.20.8 - - [22/Apr/2026 10:55:06] "GET /parches HTTP/1.1" 200 -
+2026-04-22 11:28:05,423 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-22 11:28:05,428 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-23 09:01:19,078 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-23 09:01:19,079 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-23 09:22:04,294 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-23 09:22:04,294 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-23 09:30:00,615 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-23 09:30:00,616 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-23 10:02:10,068 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-23 10:02:10,069 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-23 10:15:43,740 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-23 10:15:43,741 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-23 10:32:24,732 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-23 10:32:24,732 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-23 10:53:09,302 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-23 10:53:09,303 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-23 11:15:06,714 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-23 11:15:06,714 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-24 07:53:41,632 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-24 07:53:41,635 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-24 09:13:52,882 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-24 09:13:52,883 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-24 10:03:04,186 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-24 10:03:04,186 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-24 10:16:00,244 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-24 10:16:00,244 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-24 10:25:35,039 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-24 10:25:35,040 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-24 11:32:38,075 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5006
+ * Running on http://192.168.20.8:5006
+2026-04-24 11:32:38,075 - INFO - [33mPress CTRL+C to quit[0m

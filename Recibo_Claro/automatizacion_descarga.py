@@ -642,6 +642,14 @@ def automatizar_claro_empresas_completo(username, password, download_dir, anio, 
     try:
         service = ChromeService(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=options)
+        # 🔥 PERMITIR DESCARGAS AUTOMÁTICAS (FIX REAL)
+        driver.execute_cdp_cmd(
+            "Page.setDownloadBehavior",
+            {
+                "behavior": "allow",
+                "downloadPath": download_dir
+            }
+        )
         logging.info("Navegador Chrome iniciado correctamente en pantalla completa. 🚀")
     except WebDriverException as e:
         logging.error(f"Error iniciando el navegador Chrome: {e} ❌")

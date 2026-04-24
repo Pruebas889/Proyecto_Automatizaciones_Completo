@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         sistema = 'reportes';
     } else if (window.location.pathname.includes('login_aprobados')) {
         sistema = 'aprobados';
+    } else if (window.location.pathname.includes('login_pdf')) {
+        sistema = 'pdf';
     } else if (window.location.pathname.includes('login_docuseal')) {
         sistema = 'DocusealOP';
     }

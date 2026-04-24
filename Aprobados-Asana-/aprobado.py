@@ -73,7 +73,10 @@ def login_asana(driver, start_url: str = None):
 
         continuar = WebDriverWait(driver, 30).until(
             EC.element_to_be_clickable((By.XPATH, "//div[@role='button' and contains(@class,'LoginEmailForm-continueButton') and contains(text(), 'Continuar')]")))
-        driver.execute_script("arguments[0].click();", continuar)
+        driver.execute_script("arguments[0].focus();", continuar)
+        continuar.click()
+        time.sleep(0.3)
+        
         logging.info("Botón 'Continue' clickeado.")
 
         input_contrasena = WebDriverWait(driver, 30).until(
@@ -84,7 +87,9 @@ def login_asana(driver, start_url: str = None):
 
         iniciar_sesion = WebDriverWait(driver, 30).until(
             EC.element_to_be_clickable((By.XPATH, "//div[@role='button' and contains(text(), 'Iniciar sesión')]")))
-        driver.execute_script("arguments[0].click();", iniciar_sesion)
+        driver.execute_script("arguments[0].focus();", iniciar_sesion)
+        time.sleep(0.3)
+        iniciar_sesion.click()
         logging.info("Botón 'Iniciar sesión' clickeado.")
 
         # No esperar por rutas específicas de portfolio; devolver éxito tras el clic.
