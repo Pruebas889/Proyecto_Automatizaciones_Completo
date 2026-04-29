@@ -162,7 +162,7 @@
             Esperando inicio de operación...
           </div>
         </div>
-        <div id="mensajesArea" class="hidden p-4 max-h-48 overflow-y-auto bg-slate-900/30 border-t border-slate-200"></div>
+        <div id="mensajesArea" class="hidden p-4 max-h-48 overflow-y-auto bg-slate-950/50 border-t border-slate-200"></div>
       </div>
 
     </main>
@@ -330,24 +330,6 @@
         };
       }
 
-      if (moverProcesadosBtn) {
-        moverProcesadosBtn.onclick = async () => {
-          actualizarProgreso('Procesados', 20, 'Moviendo archivos procesados...')
-          agregarMensaje('🔄', 'Moviendo archivos...');
-          try {
-            const r = await fetch('/mover-procesados', {method:'POST'}), d = await r.json();
-            if(d.success) { 
-              agregarMensaje('✅', d.mensaje); 
-              habilitarBotones(true, false, false, false, false); 
-            }
-            actualizarProgreso('Procesados', 100, 'Archivos procesados movidos correctamente...')
-          } catch(e) { 
-            agregarMensaje('❌', 'Error: ' + e.message);
-            actualizarProgreso('Error', 0, 'Error moviendo archivos');
-          }
-        };
-      }
-
       // ========== SERVER-SENT EVENTS ==========
       try {
         new EventSource('/stream-logs').onmessage = (e) => {
@@ -449,8 +431,155 @@
         };
       }
 
-      // Inicializar estado
-      habilitarBotones(true, false, false, false, false);
+            // ========== INICIALIZAR ESTADO ==========
+            habilitarBotones(true, false, false, false, false);
+            if (moverProcesadosBtn) {
+              moverProcesadosBtn.disabled = false;
+              moverProcesadosBtn.classList.remove('boton-deshabilitado');
+              moverProcesadosBtn.classList.add('btn-active-dark');
+            }
+
+            // ========== MODAL DE CARPETAS ==========
+            // Esperar a que el DOM esté completamente listo
+            function inicializarModal() {
+              const moverProcesadosBtn = document.getElementById('moverProcesadosBtn');
+              const modal = document.getElementById('modalCarpetas');
+              const lista = document.getElementById('listaCarpetas');
+              const confirmarBtn = document.getElementById('confirmarMover');
+
+              console.log('🔍 Verificando elementos del modal:');
+              console.log('- moverProcesadosBtn:', !!moverProcesadosBtn);
+              console.log('- modal:', !!modal);
+              console.log('- lista:', !!lista);
+              console.log('- confirmarBtn:', !!confirmarBtn);
+
+              // ABRIR MODAL
+              if (moverProcesadosBtn && modal && lista) {
+                moverProcesadosBtn.addEventListener('click', async () => {
+                  console.log('✅ Click en moverProcesadosBtn');
+                  
+                  try {
+                    agregarMensaje('🔄', 'Cargando carpetas...');
+                    
+                    const res = await fetch('/listar-carpetas-separados');
+                    const data = await res.json();
+
+                    console.log('📡 Respuesta del servidor:', data);
+
+                    if (!data.success) {
+                      agregarMensaje('❌', 'Error cargando carpetas: ' + (data.error || 'Desconocido'));
+                      return;
+                    }
+
+                    // Limpiar lista anterior
+                    lista.innerHTML = '';
+
+                    if (data.carpetas.length === 0) {
+                      lista.innerHTML = '<p class="text-slate-400">No hay carpetas disponibles</p>';
+                    } else {
+                      data.carpetas.forEach(c => {
+                        const div = document.createElement('div');
+                        div.className = 'p-2 hover:bg-slate-800 rounded-lg transition-colors';
+                        
+                        div.innerHTML = `
+                          <label class="flex gap-3 text-white cursor-pointer items-center">
+                            <input type="checkbox" value="${c.id}" class="w-4 h-4 cursor-pointer">
+                            <span class="text-sm">${c.name}</span>
+                          </label>
+                        `;
+
+                        lista.appendChild(div);
+                      });
+                    }
+
+                    // Mostrar modal
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                    
+                    agregarMensaje('✅', `Se encontraron ${data.carpetas.length} carpetas`);
+
+                  } catch(error) {
+                    console.error('❌ Error:', error);
+                    agregarMensaje('❌', 'Error al cargar carpetas: ' + error.message);
+                  }
+                });
+              }
+
+              // CONFIRMAR MOVIMIENTO
+              if (confirmarBtn && modal && lista) {
+                confirmarBtn.addEventListener('click', async () => {
+                  const checks = document.querySelectorAll('#listaCarpetas input:checked');
+                  const ids = Array.from(checks).map(c => c.value);
+
+                  console.log('📦 IDs seleccionados:', ids);
+
+                  if (ids.length === 0) {
+                    agregarMensaje('⚠️', 'Selecciona al menos una carpeta');
+                    return;
+                  }
+
+                  try {
+                    agregarMensaje('🔄', `Moviendo ${ids.length} carpeta(s)...`);
+                    
+                    const res = await fetch('/mover-carpetas-procesados', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ carpetas: ids })
+                    });
+
+                    const data = await res.json();
+
+                    if (data.success) {
+                      agregarMensaje('✅', 'Carpetas movidas exitosamente');
+                      modal.classList.add('hidden');
+                      modal.classList.remove('flex');
+                      
+                      // Limpiar checkboxes
+                      document.querySelectorAll('#listaCarpetas input').forEach(c => c.checked = false);
+                    } else {
+                      agregarMensaje('❌', 'Error moviendo carpetas: ' + (data.error || 'Desconocido'));
+                    }
+                  } catch(error) {
+                    console.error('❌ Error:', error);
+                    agregarMensaje('❌', 'Error en la solicitud: ' + error.message);
+                  }
+                });
+              }
+
+              // Cerrar modal al hacer click fuera
+              if (modal) {
+                modal.addEventListener('click', (e) => {
+                  if (e.target === modal) {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                  }
+                });
+              }
+            }
+
+            // Ejecutar cuando el DOM esté listo
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', inicializarModal);
+            } else {
+              inicializarModal();
+            }
     </script>
+
+    <div id="modalCarpetas" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 backdrop-blur-sm">
+      <div class="bg-slate-900 border border-white/10 p-8 rounded-3xl w-full max-w-[450px] max-h-[600px] overflow-hidden flex flex-col shadow-2xl">
+        <h2 class="text-white font-bold text-lg mb-6">📦 Seleccionar Carpetas para Mover</h2>
+        
+        <div id="listaCarpetas" class="flex-1 overflow-y-auto space-y-2 mb-6 p-2 bg-slate-950/50 rounded-xl border border-white/5"></div>
+
+        <div class="flex gap-3">
+          <button id="confirmarMover" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-3 rounded-xl font-bold transition-colors">
+            ✅ Mover Seleccionadas
+          </button>
+          <button onclick="document.getElementById('modalCarpetas').classList.add('hidden'); document.getElementById('modalCarpetas').classList.remove('flex');" class="px-6 bg-slate-800 hover:bg-slate-700 text-white py-3 rounded-xl transition-colors">
+            ❌ Cancelar
+          </button>
+        </div>
+      </div>
+    </div>     
   </body>
 </html>

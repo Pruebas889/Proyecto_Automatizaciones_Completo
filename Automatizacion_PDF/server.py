@@ -9,9 +9,46 @@ from datetime import datetime
 from pickle import load, dump
 
 from flask import Flask, request, jsonify, send_from_directory, Response, session, redirect
-from functools import wraps
 import queue
 from flask_cors import CORS
+
+from google_drive_integrador import obtener_mes_real_pdf
+
+def generar_nombre_carpeta():
+    meses = {
+        1: "ENE", 2: "FEB", 3: "MAR", 4: "ABR",
+        5: "MAY", 6: "JUN", 7: "JUL", 8: "AGO",
+        9: "SEP", 10: "OCT", 11: "NOV", 12: "DIC"
+    }
+
+    ahora = datetime.now()
+
+    mes = meses[ahora.month]
+    dia = ahora.day
+    anio = ahora.year
+    hora = ahora.strftime("%H.%M")
+
+    return f"{mes} {dia} {anio}_{hora}"
+
+
+def crear_carpeta_drive(service, nombre_carpeta, carpeta_padre_id):
+    try:
+        file_metadata = {
+            'name': nombre_carpeta,
+            'mimeType': 'application/vnd.google-apps.folder',
+            'parents': [carpeta_padre_id]
+        }
+
+        carpeta = service.files().create(
+            body=file_metadata,
+            fields='id'
+        ).execute()
+
+        return carpeta.get('id')
+
+    except Exception as e:
+        print(f"❌ Error creando carpeta: {e}")
+        return None
 
 from recibos_energia import (
     extraer_paginas_pdf,
@@ -41,8 +78,8 @@ def log_mensaje(tipo, texto, mostrar_en_web=True):
         mensajes_queue.put(mensaje)
 
 APP = Flask(__name__)
-APP.secret_key = '3103487201022947165sG'  # MISMA del servidor principal
-APP.config['PERMANENT_SESSION_LIFETIME'] = 1800
+APP.secret_key = '3103487201022947165sG'
+APP.config['PERMANENT_SESSION_LIFETIME'] = 18000
 
 CORS(APP, supports_credentials=True, origins=[
     "http://192.168.20.8:5000",
@@ -53,7 +90,7 @@ CORS(APP, supports_credentials=True, origins=[
 
 def login_required(f):
     @wraps(f)
-    def decorated_function(*args, **kwargs):
+    def decorated_funtion(*args, **kwargs):
         if not session.get('logged_in') or session.get('role') != 'pdf':
             return redirect('http://192.168.20.8:5000')
         return f(*args, **kwargs)
@@ -69,8 +106,7 @@ if not os.path.exists(TEMP_PDFS_DIR):
     os.makedirs(TEMP_PDFS_DIR)
 
 # 🔥 GOOGLE DRIVE CONFIG
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CREDENTIALS_FILE = os.path.join(BASE_DIR, 'credenciales_google.json')
+CREDENTIALS_FILE = r'C:\Users\jperdomolc\Pictures\Proyecto_Automatizaciones_Completo\Automatizacion_PDF\credenciales_google.json'
 SCOPES = ['https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/auth/drive.file']
 CARPETA_ENTRADA_ID = "1eveBX7jxaV1O8aawhldyTWeMVzBqutZQ"
 CARPETA_SEPARADOS_ID = "1NXNT-9tsn_6bDLJIIgwGNjIPJmyEidqL"
@@ -97,28 +133,56 @@ def autenticar_google_drive():
     token_file = 'token.pickle'
     
     try:
+        # 🔥 FUERZA AUTENTICACIÓN NUEVA SI NO EXISTE TOKEN
         if os.path.exists(token_file):
             with open(token_file, 'rb') as token:
                 creds = load(token)
         
         if not creds or not creds.valid:
             if creds and creds.expired and creds.refresh_token:
-                creds.refresh(Request())
-            else:
+                print("🔄 Refrescando token expirado...")
+                try:
+                    creds.refresh(Request())
+                    print("✅ Token refrescado")
+                except Exception as e:
+                    print(f"⚠️ No se pudo refrescar: {e}")
+                    creds = None
+            
+            if not creds:
+                print("🔐 Iniciando nueva autenticación...")
                 if not os.path.exists(CREDENTIALS_FILE):
+                    print(f"❌ ERROR: Archivo {CREDENTIALS_FILE} no encontrado!")
+                    print("   Descárgalo de: https://console.cloud.google.com/apis/credentials")
                     return None
                 
-                flow = InstalledAppFlow.from_client_secrets_file(
-                    CREDENTIALS_FILE, SCOPES)
-                creds = flow.run_local_server(port=8080, open_browser=True)
-            
-            with open(token_file, 'wb') as token:
-                dump(creds, token)
+                try:
+                    # 🔥 ESTE ABRE UNA VENTANA DEL NAVEGADOR
+                    flow = InstalledAppFlow.from_client_secrets_file(
+                        CREDENTIALS_FILE, SCOPES)
+                    creds = flow.run_local_server(
+                        port=8080, 
+                        open_browser=True,
+                        authorization_prompt_message='Por favor autoriza en el navegador'
+                    )
+                    print("✅ Autenticación completada!")
+                except Exception as e:
+                    print(f"❌ Error en flujo OAuth: {e}")
+                    import traceback
+                    traceback.print_exc()
+                    return None
         
+        # Guardar token
+        with open(token_file, 'wb') as token:
+            dump(creds, token)
+            print(f"✅ Token guardado en {token_file}")
+        
+        print("✅ Construyendo servicio de Google Drive...")
         return build('drive', 'v3', credentials=creds)
     
     except Exception as e:
-        print(f"⚠️ Error autenticando Google Drive: {e}")
+        print(f"❌ Error autenticando: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 def buscar_archivos_en_carpeta(service, carpeta_id, extension=None):
@@ -254,35 +318,66 @@ def procesar_lote():
             archivo.save(ruta_archivo)
             archivos_guardados.append(ruta_archivo)
             log_mensaje('✅', f'Guardado: {archivo.filename}')
-        
-        # PASO 2: Procesar cada PDF
+
+        # 🔥 PASO PRE-CALCULO: Calcular EXACTAMENTE cuántas páginas válidas hay en CADA PDF
+        detalles_pdf = []
+        total_paginas_validas_totales = 0
+
         for ruta_pdf in archivos_guardados:
-            pdf_nombre = os.path.basename(ruta_pdf)
-            log_mensaje('📄', f'Procesando: {pdf_nombre}')
+            try:
+                lector = PdfReader(ruta_pdf)
+                total_paginas = len(lector.pages)
+                
+                # Extraer SOLO páginas con contenido válido
+                paginas_validas = extraer_paginas_pdf(ruta_pdf)
+                num_paginas_validas = len(paginas_validas)
+                
+                detalles_pdf.append({
+                    'ruta': ruta_pdf,
+                    'nombre': os.path.basename(ruta_pdf),
+                    'total_paginas': total_paginas,
+                    'paginas_validas': num_paginas_validas
+                })
+                
+                total_paginas_validas_totales += num_paginas_validas
+                
+            except Exception as e:
+                log_mensaje('⚠️', f'Error pre-calculando {os.path.basename(ruta_pdf)}: {e}')
+
+        # 🔥 CALCULAR OPERACIONES REALES
+        # Cada página válida = 3 operaciones: crear + subir + analizar
+        total_operaciones_reales = total_paginas_validas_totales * 3
+
+        log_mensaje('📊', f'Pre-cálculo: {total_paginas_validas_totales} páginas válidas = {total_operaciones_reales} operaciones')
+        log_mensaje('TOTAL_REAL', str(total_operaciones_reales))
+
+        # 🔥 VARIABLE GLOBAL PARA RASTREAR PROGRESO
+        progreso_actual = {'count': 0}
+
+        # PASO 2: Procesar cada PDF
+        for pdf_detail in detalles_pdf:
+            ruta_pdf = pdf_detail['ruta']
+            pdf_nombre = pdf_detail['nombre']
+            paginas_validas_esperadas = pdf_detail['paginas_validas']
             
-            # Verificar si necesita división
-            lector = PdfReader(ruta_pdf)
-            total_paginas = len(lector.pages)
-            
-            log_mensaje('📊', f'{pdf_nombre} tiene {total_paginas} página(s)')
+            log_mensaje('📄', f'Procesando: {pdf_nombre} ({paginas_validas_esperadas} páginas válidas)')
             
             # PASO 3: Dividir si es necesario
-            if total_paginas > 2:
+            if pdf_detail['total_paginas'] > 2:
                 log_mensaje('✂️', f'Dividiendo {pdf_nombre}...')
                 
                 import re
                 
-                # 🔥 CORRECCIÓN: Definir la lista ANTES de usarla
-                archivos_divididos = []  # ← ¡ESTA ES LA LÍNEA QUE FALTABA!
-                
-                # Extraer SOLO páginas con contenido válido
+                archivos_divididos = []
                 paginas_validas = extraer_paginas_pdf(ruta_pdf)
                 
                 if not paginas_validas:
                     log_mensaje('⚠️', 'No se encontraron páginas con contenido válido')
                     continue
                 
-                log_mensaje('📖', f'Procesando {len(paginas_validas)} página(s) válida(s) de {total_paginas} totales')
+                log_mensaje('📖', f'Procesando {len(paginas_validas)} página(s) válida(s)')
+                
+                lector = PdfReader(ruta_pdf)
                 
                 for pagina_info in paginas_validas:
                     num_pagina_real = pagina_info['numero']
@@ -317,14 +412,8 @@ def procesar_lote():
                                     numero_pagina=num_pagina_real
                                 )
                                 
-                                # MES
-                                mes = ""
-                                if datos and datos.get("Fecha_Inicial"):
-                                    match_fecha = re.search(r'\d{2}\s+([A-Z]{3})\s*/(\d{4})', datos["Fecha_Inicial"])
-                                    if match_fecha:
-                                        mes = f"{match_fecha.group(1)}{match_fecha.group(2)[-2:]}"
+                                mes = obtener_mes_real_pdf(ruta_pdf, num_pagina_real)
                                 
-                                # GRUPO
                                 grupo = ""
                                 if datos and datos.get("Cuenta_Padre"):
                                     if datos["Cuenta_Padre"] == "3968375":
@@ -340,8 +429,7 @@ def procesar_lote():
                         log_mensaje('⚠️', f'Error página {num_pagina_real}: {str(e)}')
                     
                     if not cliente_nombre:
-                        log_mensaje('⏭️', f'Página {num_pagina_real} ignorada (sin datos válidos)')
-                        continue
+                        cliente_nombre = f"pagina_{num_pagina_real:04d}"
                     
                     nombre = f"{cliente_nombre}.pdf"
                     nombre = re.sub(r'[\n\r\t:\"/<>|?*\\]', '', nombre)
@@ -352,26 +440,77 @@ def procesar_lote():
                         escritor.write(f)
                     
                     archivos_divididos.append(ruta_completa)
-                    log_mensaje('📄', f'Creado: {nombre}')
+                    
+                    # 🔥 ENVIAR PROGRESO DESPUÉS DE CADA CREACIÓN
+                    progreso_actual['count'] += 1
+                    log_mensaje('PROGRESO', '1')
                 
                 log_mensaje('✅', f'Dividido en {len(archivos_divididos)} archivo(s)')
                 
                 # Subir PDFs divididos a Google Drive
                 if service:
                     log_mensaje('📤', f'Subiendo {len(archivos_divididos)} PDFs a Google Drive...')
+                    nombre_carpeta = generar_nombre_carpeta()
+                    carpeta_destino_id = crear_carpeta_drive(service, nombre_carpeta, CARPETA_SEPARADOS_ID)
+                    
+                    if not carpeta_destino_id:
+                        carpeta_destino_id = CARPETA_SEPARADOS_ID
+                    
+                    estado_actual['carpeta_proceso_id'] = carpeta_destino_id
+                    
                     for archivo_div in archivos_divididos:
                         nombre_div = os.path.basename(archivo_div)
-                        file_id = subir_archivo_a_drive(service, archivo_div, CARPETA_SEPARADOS_ID, nombre_div)
+                        file_id = subir_archivo_a_drive(service, archivo_div, carpeta_destino_id, nombre_div)
+                        
                         if file_id:
                             archivos_subidos_drive.append({
                                 'id': file_id,
                                 'nombre': nombre_div
                             })
-                            log_mensaje('✅', f'Subido: {nombre_div}', mostrar_en_web=False)
+                            # 🔥 ENVIAR PROGRESO DESPUÉS DE CADA SUBIDA
+                            progreso_actual['count'] += 1
+                            log_mensaje('PROGRESO', '1')
                 
                 pdfs_a_procesar = archivos_divididos
             else:
                 log_mensaje('✅', f'No requiere división')
+
+                # Crear Carpeta para archivos de una sola pagina igualmente
+                nombre_carpeta = generar_nombre_carpeta() + "(1 pagina)"
+
+                carpeta_destino_id = None
+
+                if service:
+                    carpeta_destino_id = crear_carpeta_drive(
+                        service,
+                        nombre_carpeta,
+                        CARPETA_SEPARADOS_ID
+                    )
+
+                    if not carpeta_destino_id:
+                        carpeta_destino_id = CARPETA_SEPARADOS_ID
+
+                    estado_actual['carpeta_proceso_id'] = carpeta_destino_id
+
+                # Subir el pdf a esa carpeta
+
+                if service:
+                    file_id = subir_archivo_a_drive(
+                        service,
+                        ruta_pdf,
+                        carpeta_destino_id,
+                        pdf_nombre
+                    )
+
+                    if file_id:
+                        archivos_subidos_drive.append({
+                            'id': file_id,
+                            'nombre': pdf_nombre
+                        })
+
+                        progreso_actual['count'] += 1
+                        log_mensaje('PROGRESO', '1')
+                pdfs_a_procesar= [ruta_pdf]
                 
                 # Subir el original si no se divide
                 if service:
@@ -381,6 +520,9 @@ def procesar_lote():
                             'id': file_id,
                             'nombre': pdf_nombre
                         })
+                        # 🔥 ENVIAR PROGRESO DESPUÉS DE SUBIR ORIGINAL
+                        progreso_actual['count'] += 1
+                        log_mensaje('PROGRESO', '1')
                 
                 pdfs_a_procesar = [ruta_pdf]
             
@@ -400,8 +542,13 @@ def procesar_lote():
                     if datos and datos.get("Numero_Cliente"):
                         todas_las_facturas.append(datos)
                         log_mensaje('✅', f'Factura: {datos.get("Numero_Cliente")} - {datos.get("Nombre_Cliente")}')
-        
+                    
+                    # 🔥 ENVIAR PROGRESO DESPUÉS DE CADA PÁGINA ANALIZADA
+                    progreso_actual['count'] += 1
+                    log_mensaje('PROGRESO', '1')
         # PASO 5: Generar Excel
+        # 🔥 ENVIAR SEÑAL DE FINALIZACIÓN ANTES DE GENERAR EXCEL
+        log_mensaje('Total facturas procesadas', str(len(todas_las_facturas)))
         log_mensaje('📊', 'Generando Excel...')
         
         if todas_las_facturas:
@@ -457,6 +604,63 @@ def procesar_lote():
         return jsonify({'success': False, 'error': str(e)}), 500
 
 # ==================== RUTAS FLASK ====================
+
+@APP.route('/listar-carpetas-separados', methods=['GET'])
+def listar_carpetas_separados():
+    try:
+        service = autenticar_google_drive()
+        if not service:
+            return jsonify({'success': False, 'error': 'No auth'}), 500
+
+        query = f"'{CARPETA_SEPARADOS_ID}' in parents and mimeType='application/vnd.google-apps.folder' and trashed=false"
+
+        results = service.files().list(
+            q=query,
+            fields='files(id, name)',
+            pageSize=100
+        ).execute()
+
+        carpetas = results.get('files', [])
+
+        print("CARPETAS ENCONTRADAS:", carpetas)  # 👈 DEBUG
+
+        return jsonify({
+            'success': True,
+            'carpetas': carpetas
+        })
+
+    except Exception as e:
+        print("ERROR:", str(e))
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@APP.route('/mover-carpetas-procesados', methods=['POST'])
+def mover_carpetas_procesados():
+    try:
+        data = request.json
+        carpetas_ids = data.get('carpetas', [])
+
+        service = autenticar_google_drive()
+        if not service:
+            return jsonify({'success': False, 'error': 'No auth'}), 500
+
+        for carpeta_id in carpetas_ids:
+            file = service.files().get(fileId=carpeta_id, fields='parents').execute()
+            padres = ",".join(file.get('parents', []))
+
+            service.files().update(
+                fileId=carpeta_id,
+                addParents=CARPETA_PROCESADOS_ID,
+                removeParents=padres,
+                fields='id'
+            ).execute()
+
+        return jsonify({'success': True})
+
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
 
 @APP.route('/')
 def index():
@@ -573,6 +777,13 @@ def dividir_pdf():
         
         log_mensaje('📖', f'Procesando {len(paginas_validas)} página(s) válida(s) de {total_paginas} totales')
         
+        log_mensaje('TOTAL', str(len(paginas_validas)))
+
+        total_operaciones = len(paginas_validas) * 2
+        log_mensaje('TOTAL_REAL', str(total_operaciones))
+        
+        total_operaciones = len(paginas_validas) * 2  # crear + subir
+        log_mensaje('TOTAL_REAL', str(total_operaciones))
         # 🔥 NUEVO: Procesar SOLO las páginas que tienen contenido
         for pagina_info in paginas_validas:
             num_pagina_real = pagina_info['numero']
@@ -617,11 +828,9 @@ def dividir_pdf():
                         )
                         
                         # MES
-                        mes = ""
-                        if datos and datos.get("Fecha_Inicial"):
-                            match_fecha = re.search(r'\d{2}\s+([A-Z]{3})\s*/(\d{4})', datos["Fecha_Inicial"])
-                            if match_fecha:
-                                mes = f"{match_fecha.group(1)}{match_fecha.group(2)[-2:]}"
+                        from google_drive_integrador import obtener_mes_real_pdf
+
+                        mes = obtener_mes_real_pdf(ruta_pdf, num_pagina_real)
                         
                         # GRUPO
                         grupo = ""
@@ -653,12 +862,30 @@ def dividir_pdf():
             
             archivos_creados.append(ruta_completa)
             log_mensaje('📄', f'Creado: {nombre}')
+            log_mensaje('PROGRESO', '1')
+
+            log_mensaje('PROGRESO', '1')
         
+        # 🔥 CREAR CARPETA UNA SOLA VEZ
+        nombre_carpeta = generar_nombre_carpeta()
+        carpeta_destino_id = crear_carpeta_drive(service, nombre_carpeta, CARPETA_SEPARADOS_ID)
+
+        if not carpeta_destino_id:
+            carpeta_destino_id = CARPETA_SEPARADOS_ID
+        
+        estado_actual['carpeta_proceso_id'] = carpeta_destino_id
+
         log_mensaje('📤', f'Subiendo {len(archivos_creados)} PDFs separados...')
+        
+
         
         for archivo in archivos_creados:
             nombre = os.path.basename(archivo)
-            subir_archivo_a_drive(service, archivo, CARPETA_SEPARADOS_ID, nombre)
+            subir_archivo_a_drive(service, archivo, carpeta_destino_id, nombre)
+
+            log_mensaje('PROGRESO', '1')
+
+            
         
         log_mensaje('✅', f'PDFs separados subidos exitosamente')
         
@@ -693,16 +920,15 @@ def analizar_pdfs_drive():
         if not service:
             return jsonify({'success': False, 'error': 'Error de autenticación'}), 500
         
-        if estado_actual.get('pdf_dividido'):
-            pdfs_encontrados = buscar_archivos_en_carpeta(service, CARPETA_SEPARADOS_ID, '.pdf')
-        else:
-            pdfs_encontrados = []
-            if estado_actual.get('pdf_encontrado'):
-                pdfs_encontrados = [{
-                    'id': '',
-                    'name': os.path.basename(estado_actual['pdf_encontrado']['ruta'])
-                }]
-        
+        carpeta_id = estado_actual.get('carpeta_proceso_id')
+
+        if not carpeta_id:
+            return jsonify({'success': False, 'error': 'No hay carpeta de proceso'}), 400
+
+        pdfs_encontrados = buscar_archivos_en_carpeta(service, carpeta_id, '.pdf')
+        total_operaciones = len(pdfs_encontrados)
+        log_mensaje('TOTAL_REAL', str(total_operaciones))
+
         if not pdfs_encontrados:
             return jsonify({'success': False, 'error': 'No hay PDFs para analizar'}), 404
         
@@ -737,6 +963,7 @@ def analizar_pdfs_drive():
                 
                 if datos and datos.get("Numero_Cliente"):
                     facturas_analizadas.append(datos)
+                    log_mensaje('PROGRESO', '1')
                     facturas_en_lote += 1
                     
                     if pdf_nombre not in pdfs_analizados:

@@ -13,6 +13,8 @@ import io
 from PyPDF2 import PdfReader, PdfWriter
 import tempfile
 import shutil
+import pdfplumber
+import re
 
 # Importar funciones de recibos_energia
 from recibos_energia import extraer_paginas_pdf, extraer_datos_factura, generar_excel_facturas
@@ -62,6 +64,10 @@ def autenticar_google_drive():
     return build('drive', 'v3', credentials=creds)
 
 # ==================== FUNCIONES GOOGLE DRIVE ====================
+
+
+
+
 
 def buscar_archivos_en_carpeta(service, carpeta_id, nombre_archivo=None):
     """Busca archivos en una carpeta de Google Drive"""
@@ -123,6 +129,44 @@ def subir_archivo(service, ruta_archivo, carpeta_id, nombre_archivo=None):
         logging.error(f"❌ Error subiendo archivo: {e}")
         return None
 
+def crear_carpeta_drive(service, nombre_carpeta, carpeta_padre_id):
+    """Crea una carpeta en google drive"""
+    try:
+        file_metadata = { 
+            'name': nombre_carpeta,
+            'mimeType': 'application/vnd.google-apps.folder',
+            'parents': [carpeta_padre_id]
+        }
+
+        carpeta = service.files().create(
+            body=file_metadata,
+            fields='id'
+        ).execute()
+        
+
+        logging.info(f"📁 Carpeta creada: {nombre_carpeta}")
+        return carpeta.get('id')
+
+    except Exception as e:
+        logging,error(f"Error creando carpeta: {e}")
+        return None
+
+def generar_nombre_carpeta():
+    meses = {
+        1: "ENE", 2: "FEB", 3: "MAR", 4: "ABR", 5: "MAY", 6: "JUN", 7: "JUL", 8: "AGO", 9: "SEP", 10: "OCT", 11: "NOV", 12: "DIC"
+
+    }
+
+    ahora = datetime.now()
+
+    mes = meses[ahora.month]
+    dia = ahora.day
+    anio = ahora.year
+    hora = ahora.strftime("%H.%M")
+
+    return f"{mes} {dia} {anio}_{hora}"
+
+
 def listar_subcarpetas(service, carpeta_id):
     """Lista las subcarpetas de una carpeta"""
     try:
@@ -142,6 +186,31 @@ def listar_subcarpetas(service, carpeta_id):
         return []
 
 # ==================== FUNCIONES DE PROCESAMIENTO ====================
+
+def obtener_mes_real_pdf(ruta_pdf, numero_pagina):
+    """Extrae el mes real (MAR26, etc) desde zona superior derecha del PDF"""
+    try:
+        with pdfplumber.open(ruta_pdf) as pdf:
+            page = pdf.pages[numero_pagina - 1]
+
+            # 🔥 MISMO bbox que probaste
+            bbox = (300, 0, 600, 300)
+
+            texto = page.within_bbox(bbox).extract_text()
+
+            if not texto:
+                return ""
+
+            matches = re.findall(r'(\d{2})\s+([A-Z]{3})\s*/\s*(\d{4})', texto)
+
+            if matches:
+                _, mes, anio = matches[-1]  # 🔥 última fecha
+                return f"{mes}{anio[-2:]}"
+            
+    except Exception as e:
+        logging.warning(f"⚠️ Error obteniendo mes real: {e}")
+
+    return ""
 
 def dividir_pdf_local(ruta_pdf, carpeta_salida, limite_paginas=2):
     """Divide un PDF en archivos individuales si tiene más de X páginas.
@@ -214,11 +283,7 @@ def dividir_pdf_local(ruta_pdf, carpeta_salida, limite_paginas=2):
                             datos = extraer_datos_factura(texto_pagina)
 
                             # 🔥 MES (ENE26, FEB26, etc)
-                            mes = ""
-                            if datos and datos.get("Fecha_Inicial"):
-                                match_fecha = re.search(r'\d{2}\s+([A-Z]{3})\s*/(\d{4})', datos["Fecha_Inicial"])
-                                if match_fecha:
-                                    mes = f"{match_fecha.group(1)}{match_fecha.group(2)[-2:]}"
+                            mes = obtener_mes_real_pdf(ruta_pdf, numero_pagina_real)
 
                             # 🔥 GRUPO (GA / GB)
                             grupo = ""
@@ -372,6 +437,13 @@ def procesar_carpeta_google_drive():
                 logging.info(f"\n🔍 Verificando tamaño del PDF...")
                 
                 pdfs_a_procesar = dividir_pdf_local(ruta_pdf_temp, tmpdir_separados, limite_paginas=2)
+
+                # 🔥 CREAR CARPETA CON FECHA Y HORA
+                nombre_carpeta = generar_nombre_carpeta()
+                carpeta_destino_id = crear_carpeta_drive(service, nombre_carpeta, CARPETA_SEPARADOS_ID)
+
+                if not carpeta_destino_id:
+                    carpeta_destino_id = CARPETA_SEPARADOS_ID  # fallback
                 
                 # PASO 5: Si se dividió, subir los separados
                 if len(pdfs_a_procesar) > 1:
@@ -379,7 +451,7 @@ def procesar_carpeta_google_drive():
                     
                     for pdf_separado in pdfs_a_procesar:
                         nombre_separado = os.path.basename(pdf_separado)
-                        subir_archivo(service, pdf_separado, CARPETA_SEPARADOS_ID, nombre_separado)
+                        subir_archivo(service, pdf_separado, carpeta_destino_id, nombre_separado)
                 
                 # PASO 6: Procesar PDFs
                 logging.info(f"\n🔄 Procesando {len(pdfs_a_procesar)} PDF(s)...")
