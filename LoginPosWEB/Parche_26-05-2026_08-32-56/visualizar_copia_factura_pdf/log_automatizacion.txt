@@ -1,0 +1,38 @@
+26-05-2026 08:44:39 - Menú lateral abierto correctamente.
+26-05-2026 08:44:40 - Mensaje mostrado: Se realiza la Visualización de Copia de la Factura
+26-05-2026 08:44:41 - Accedió al menú 'Reportes' correctamente.
+26-05-2026 08:44:43 - Accedió al módulo 'Facturas' correctamente.
+26-05-2026 08:44:45 - Seleccionó la opción 'Imprimir' correctamente.
+26-05-2026 08:44:46 - Número de factura 18758 ingresado correctamente.
+26-05-2026 08:44:48 - Consulta de factura realizada correctamente.
+26-05-2026 08:44:50 - Factura visualizada correctamente.
+26-05-2026 08:44:53 - Modal de factura cerrado correctamente.
+26-05-2026 08:44:56 - ✅ Imagen agregada al PDF: capturas\captura_inicio_copia_factura_compressed.png
+26-05-2026 08:44:56 - ✅ Imagen agregada al PDF: capturas\captura_menu_reportes_compressed.png
+26-05-2026 08:44:56 - ✅ Imagen agregada al PDF: capturas\captura_menu_facturas_compressed.png
+26-05-2026 08:44:56 - ✅ Imagen agregada al PDF: capturas\captura_imprimir_compressed.png
+26-05-2026 08:44:56 - ✅ Imagen agregada al PDF: capturas\captura_numero_factura_compressed.png
+26-05-2026 08:44:56 - ✅ Imagen agregada al PDF: capturas\captura_consulta_compressed.png
+26-05-2026 08:44:56 - ✅ Imagen agregada al PDF: capturas\captura_visualizar_compressed.png
+26-05-2026 08:44:56 - ✅ Imagen agregada al PDF: capturas\captura_cerrar_modal_compressed.png
+26-05-2026 08:44:56 - ✅ PDF guardado correctamente en 0.85 segundos.
+26-05-2026 08:44:56 - PDF consolidado generado exitosamente.
+28-05-2026 16:19:44 - Menú lateral abierto correctamente.
+28-05-2026 16:19:45 - Mensaje mostrado: Se realiza la Visualización de Copia de la Factura
+28-05-2026 16:19:46 - Accedió al menú 'Reportes' correctamente.
+28-05-2026 16:19:48 - Accedió al módulo 'Facturas' correctamente.
+28-05-2026 16:19:49 - Seleccionó la opción 'Imprimir' correctamente.
+28-05-2026 16:19:51 - Número de factura 18758 ingresado correctamente.
+28-05-2026 16:19:53 - Consulta de factura realizada correctamente.
+28-05-2026 16:19:54 - Factura visualizada correctamente.
+28-05-2026 16:19:59 - Modal de factura cerrado correctamente.
+28-05-2026 16:20:01 - ✅ Imagen agregada al PDF: capturas\captura_inicio_copia_factura_compressed.png
+28-05-2026 16:20:01 - ✅ Imagen agregada al PDF: capturas\captura_menu_reportes_compressed.png
+28-05-2026 16:20:01 - ✅ Imagen agregada al PDF: capturas\captura_menu_facturas_compressed.png
+28-05-2026 16:20:01 - ✅ Imagen agregada al PDF: capturas\captura_imprimir_compressed.png
+28-05-2026 16:20:01 - ✅ Imagen agregada al PDF: capturas\captura_numero_factura_compressed.png
+28-05-2026 16:20:01 - ✅ Imagen agregada al PDF: capturas\captura_consulta_compressed.png
+28-05-2026 16:20:01 - ✅ Imagen agregada al PDF: capturas\captura_visualizar_compressed.png
+28-05-2026 16:20:01 - ✅ Imagen agregada al PDF: capturas\captura_cerrar_modal_compressed.png
+28-05-2026 16:20:02 - ✅ PDF guardado correctamente en 0.78 segundos.
+28-05-2026 16:20:02 - PDF consolidado generado exitosamente.

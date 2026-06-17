@@ -1,0 +1,52 @@
+26-05-2026 08:48:19 - Menú lateral abierto correctamente.
+26-05-2026 08:48:20 - Mensaje mostrado: Se realiza el ajuste de inventario 3
+26-05-2026 08:48:21 - Accedió al menú 'Administrador' correctamente.
+26-05-2026 08:48:22 - Accedió a 'Ajuste de inventario' correctamente.
+26-05-2026 08:48:24 - Accedió a la sección 'Ajuste' correctamente.
+26-05-2026 08:48:26 - Referencia de producto 12957 ingresada correctamente.
+26-05-2026 08:48:40 - Advertencia: el select de causal no se habilitó o no tiene opciones después de seleccionar tipo de transacción.
+26-05-2026 08:48:40 - Tipo de transacción 'A+' seleccionado correctamente.
+26-05-2026 08:48:54 - Causal de transacción (índice 3) seleccionada correctamente.
+26-05-2026 08:48:57 - Cantidad de fracciones 1 ajustada correctamente.
+26-05-2026 08:48:59 - Ajuste realizado correctamente.
+26-05-2026 08:49:00 - Confirmación del ajuste realizada correctamente.
+26-05-2026 08:49:03 - Alerta final capturada: Ajustes realizados correctamente.
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_inicio_ajuste_inventario_compressed.png
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_menu_admin_compressed.png
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_menu_ajuste_inventario_compressed.png
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_ajuste_compressed.png
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_referencia_compressed.png
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_tipo_transaccion_compressed.png
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_causal_transaccion_compressed.png
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_cantidad_fracciones_compressed.png
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_realizar_ajuste_compressed.png
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_confirmacion_si_compressed.png
+26-05-2026 08:49:05 - ✅ Imagen agregada al PDF: capturas\captura_alerta_final_compressed.png
+26-05-2026 08:49:06 - ✅ PDF guardado correctamente en 1.11 segundos.
+26-05-2026 08:49:06 - PDF consolidado generado exitosamente.
+28-05-2026 16:23:24 - Menú lateral abierto correctamente.
+28-05-2026 16:23:24 - Mensaje mostrado: Se realiza el ajuste de inventario 3
+28-05-2026 16:23:25 - Accedió al menú 'Administrador' correctamente.
+28-05-2026 16:23:27 - Accedió a 'Ajuste de inventario' correctamente.
+28-05-2026 16:23:28 - Accedió a la sección 'Ajuste' correctamente.
+28-05-2026 16:23:30 - Referencia de producto 12957 ingresada correctamente.
+28-05-2026 16:23:45 - Advertencia: el select de causal no se habilitó o no tiene opciones después de seleccionar tipo de transacción.
+28-05-2026 16:23:45 - Tipo de transacción 'A+' seleccionado correctamente.
+28-05-2026 16:23:58 - Causal de transacción (índice 3) seleccionada correctamente.
+28-05-2026 16:24:01 - Cantidad de fracciones 1 ajustada correctamente.
+28-05-2026 16:24:03 - Ajuste realizado correctamente.
+28-05-2026 16:24:05 - Confirmación del ajuste realizada correctamente.
+28-05-2026 16:24:07 - Alerta final capturada: Ajustes realizados correctamente.
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_inicio_ajuste_inventario_compressed.png
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_menu_admin_compressed.png
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_menu_ajuste_inventario_compressed.png
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_ajuste_compressed.png
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_referencia_compressed.png
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_tipo_transaccion_compressed.png
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_causal_transaccion_compressed.png
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_cantidad_fracciones_compressed.png
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_realizar_ajuste_compressed.png
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_confirmacion_si_compressed.png
+28-05-2026 16:24:10 - ✅ Imagen agregada al PDF: capturas\captura_alerta_final_compressed.png
+28-05-2026 16:24:11 - ✅ PDF guardado correctamente en 1.11 segundos.
+28-05-2026 16:24:11 - PDF consolidado generado exitosamente.

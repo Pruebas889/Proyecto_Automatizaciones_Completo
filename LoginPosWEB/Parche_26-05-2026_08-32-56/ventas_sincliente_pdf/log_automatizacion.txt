@@ -1,0 +1,44 @@
+26-05-2026 08:33:38 - Menú lateral abierto correctamente.
+26-05-2026 08:33:38 - Mensaje mostrado: Se realiza la venta sin cliente
+26-05-2026 08:33:40 - Accediendo al menú 'Cajero'.
+26-05-2026 08:33:42 - Accedió al menú 'Cajero' correctamente.
+26-05-2026 08:33:42 - Accedió a 'Ventas' correctamente.
+26-05-2026 08:33:45 - Accedió a 'Facturar' correctamente.
+26-05-2026 08:33:46 - Esperando a que desaparezca el gif de carga tras acceder a facturar.
+26-05-2026 08:33:46 - Carga y overlay desaparecidos tras acceder a facturar.
+26-05-2026 08:34:47 - Error al iniciar factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+26-05-2026 08:34:47 - Error durante el proceso de venta sin cliente: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+28-05-2026 16:08:42 - Menú lateral abierto correctamente.
+28-05-2026 16:08:43 - Mensaje mostrado: Se realiza la venta sin cliente
+28-05-2026 16:08:45 - Accediendo al menú 'Cajero'.
+28-05-2026 16:08:46 - Accedió al menú 'Cajero' correctamente.
+28-05-2026 16:08:47 - Accedió a 'Ventas' correctamente.
+28-05-2026 16:08:49 - Accedió a 'Facturar' correctamente.
+28-05-2026 16:08:51 - Esperando a que desaparezca el gif de carga tras acceder a facturar.
+28-05-2026 16:08:51 - Carga y overlay desaparecidos tras acceder a facturar.
+28-05-2026 16:09:51 - Error al iniciar factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+28-05-2026 16:09:51 - Error durante el proceso de venta sin cliente: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+

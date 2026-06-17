@@ -1,0 +1,42 @@
+26-05-2026 08:42:01 - Menú lateral abierto correctamente.
+26-05-2026 08:42:01 - Mensaje mostrado: Se realiza la Generación de Turnos
+26-05-2026 08:42:05 - Accedió al menú 'Administrador' correctamente.
+26-05-2026 08:42:05 - Accedió al módulo 'Turnos' correctamente.
+26-05-2026 08:42:10 - Empleado con documento 70165482 seleccionado correctamente.
+26-05-2026 08:42:11 - Turno seleccionado correctamente.
+26-05-2026 08:42:13 - Día inicial seleccionado correctamente.
+26-05-2026 08:42:15 - Día final '10' seleccionado correctamente.
+26-05-2026 08:42:17 - Turno asignado correctamente.
+26-05-2026 08:42:19 - Turno guardado correctamente.
+26-05-2026 08:42:21 - ✅ Imagen agregada al PDF: capturas\captura_inicio_turnos_compressed.png
+26-05-2026 08:42:21 - ✅ Imagen agregada al PDF: capturas\captura_menu_admin_compressed.png
+26-05-2026 08:42:21 - ✅ Imagen agregada al PDF: capturas\captura_menu_turnos_compressed.png
+26-05-2026 08:42:21 - ✅ Imagen agregada al PDF: capturas\captura_seleccion_empleado_compressed.png
+26-05-2026 08:42:21 - ✅ Imagen agregada al PDF: capturas\captura_seleccion_turno_compressed.png
+26-05-2026 08:42:21 - ✅ Imagen agregada al PDF: capturas\captura_dia_inicial_compressed.png
+26-05-2026 08:42:21 - ✅ Imagen agregada al PDF: capturas\captura_dia_final_compressed.png
+26-05-2026 08:42:21 - ✅ Imagen agregada al PDF: capturas\captura_asignar_turno_compressed.png
+26-05-2026 08:42:21 - ✅ Imagen agregada al PDF: capturas\captura_guardar_turno_compressed.png
+26-05-2026 08:42:21 - ✅ PDF guardado correctamente en 0.92 segundos.
+26-05-2026 08:42:21 - PDF consolidado generado exitosamente.
+28-05-2026 16:17:05 - Menú lateral abierto correctamente.
+28-05-2026 16:17:06 - Mensaje mostrado: Se realiza la Generación de Turnos
+28-05-2026 16:17:09 - Accedió al menú 'Administrador' correctamente.
+28-05-2026 16:17:10 - Accedió al módulo 'Turnos' correctamente.
+28-05-2026 16:17:14 - Empleado con documento 70165482 seleccionado correctamente.
+28-05-2026 16:17:16 - Turno seleccionado correctamente.
+28-05-2026 16:17:18 - Día inicial seleccionado correctamente.
+28-05-2026 16:17:19 - Día final '10' seleccionado correctamente.
+28-05-2026 16:17:21 - Turno asignado correctamente.
+28-05-2026 16:17:23 - Turno guardado correctamente.
+28-05-2026 16:17:25 - ✅ Imagen agregada al PDF: capturas\captura_inicio_turnos_compressed.png
+28-05-2026 16:17:25 - ✅ Imagen agregada al PDF: capturas\captura_menu_admin_compressed.png
+28-05-2026 16:17:25 - ✅ Imagen agregada al PDF: capturas\captura_menu_turnos_compressed.png
+28-05-2026 16:17:25 - ✅ Imagen agregada al PDF: capturas\captura_seleccion_empleado_compressed.png
+28-05-2026 16:17:25 - ✅ Imagen agregada al PDF: capturas\captura_seleccion_turno_compressed.png
+28-05-2026 16:17:25 - ✅ Imagen agregada al PDF: capturas\captura_dia_inicial_compressed.png
+28-05-2026 16:17:25 - ✅ Imagen agregada al PDF: capturas\captura_dia_final_compressed.png
+28-05-2026 16:17:25 - ✅ Imagen agregada al PDF: capturas\captura_asignar_turno_compressed.png
+28-05-2026 16:17:25 - ✅ Imagen agregada al PDF: capturas\captura_guardar_turno_compressed.png
+28-05-2026 16:17:26 - ✅ PDF guardado correctamente en 0.93 segundos.
+28-05-2026 16:17:26 - PDF consolidado generado exitosamente.

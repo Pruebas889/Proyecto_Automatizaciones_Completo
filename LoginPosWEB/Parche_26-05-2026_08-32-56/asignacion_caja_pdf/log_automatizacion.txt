@@ -1,0 +1,68 @@
+26-05-2026 08:33:17 - Mensaje mostrado: Se realiza la asignación de Caja
+26-05-2026 08:33:19 - Clic en menú 'Administrador' correcto.
+26-05-2026 08:33:21 - Esperando a que desaparezca el gif de carga tras clic en 'Administrador'.
+26-05-2026 08:33:21 - Gif de carga desaparecido tras clic en 'Administrador'.
+26-05-2026 08:33:21 - Clic en 'Gestión Caja' correcto.
+26-05-2026 08:33:23 - Menú lateral cerrado correctamente.
+26-05-2026 08:33:25 - Esperando a que desaparezca el gif de carga tras acceder a Gestión Caja.
+26-05-2026 08:33:25 - Gif de carga desaparecido tras acceder a Gestión Caja.
+26-05-2026 08:33:25 - Estado de Caja 10: ABIERTA
+26-05-2026 08:33:25 - Estado de Caja 20: CERRADA
+26-05-2026 08:33:25 - Caja 10 ABIERTA: cerrando 10 y abriendo 20.
+26-05-2026 08:33:25 - Captura tomada: Ventana de confirmación para cerrar Caja 10.
+26-05-2026 08:33:26 - Captura tomada: Cierre de Caja 10 verificado.
+26-05-2026 08:33:27 - Captura tomada: Caja 20 abierta.
+26-05-2026 08:33:28 - Se abrió la Caja 20
+26-05-2026 08:33:29 - Cédula del cajero ingresada.
+26-05-2026 08:33:30 - Opción 'Vendedor Fijo' marcada.
+26-05-2026 08:33:32 - Cajero asignado correctamente.
+26-05-2026 08:33:32 - Esperando a que desaparezca el gif de carga tras asignar cajero.
+26-05-2026 08:33:33 - Gif de carga desaparecido tras asignar cajero.
+26-05-2026 08:33:33 - Cajero asignado verificado para Caja 20.
+26-05-2026 08:33:36 - ✅ Imagen agregada al PDF: capturas\asignacion_caja_compressed.png
+26-05-2026 08:33:36 - ✅ Imagen agregada al PDF: capturas\captura_administrador_compressed.png
+26-05-2026 08:33:36 - ✅ Imagen agregada al PDF: capturas\captura_gestion_caja_compressed.png
+26-05-2026 08:33:36 - ✅ Imagen agregada al PDF: capturas\captura_caja_compressed.png
+26-05-2026 08:33:36 - ✅ Imagen agregada al PDF: capturas\Captura_asignacion_caja_04_cerrar_10_compressed.png
+26-05-2026 08:33:36 - ✅ Imagen agregada al PDF: capturas\Captura_asignacion_caja_verificacion_compressed.png
+26-05-2026 08:33:36 - ✅ Imagen agregada al PDF: capturas\Captura_asignacion_caja_04_abrir_20_compressed.png
+26-05-2026 08:33:36 - ✅ Imagen agregada al PDF: capturas\Captura_asignacion_caja_05_cedula_cajero_compressed.png
+26-05-2026 08:33:36 - ✅ Imagen agregada al PDF: capturas\Captura_opcion_vendedor_fijo_compressed.png
+26-05-2026 08:33:36 - ✅ Imagen agregada al PDF: capturas\Captura_asignacion_caja_06_cajero_asignado_compressed.png
+26-05-2026 08:33:37 - ✅ PDF guardado correctamente en 1.02 segundos.
+26-05-2026 08:33:37 - PDF consolidado generado exitosamente.
+26-05-2026 08:33:37 - Gestión de Caja completada. Caja asignada: 91
+28-05-2026 16:08:21 - Mensaje mostrado: Se realiza la asignación de Caja
+28-05-2026 16:08:23 - Clic en menú 'Administrador' correcto.
+28-05-2026 16:08:25 - Esperando a que desaparezca el gif de carga tras clic en 'Administrador'.
+28-05-2026 16:08:25 - Gif de carga desaparecido tras clic en 'Administrador'.
+28-05-2026 16:08:25 - Clic en 'Gestión Caja' correcto.
+28-05-2026 16:08:27 - Menú lateral cerrado correctamente.
+28-05-2026 16:08:29 - Esperando a que desaparezca el gif de carga tras acceder a Gestión Caja.
+28-05-2026 16:08:29 - Gif de carga desaparecido tras acceder a Gestión Caja.
+28-05-2026 16:08:29 - Estado de Caja 10: CERRADA
+28-05-2026 16:08:29 - Estado de Caja 20: ABIERTA
+28-05-2026 16:08:29 - Caja 20 ABIERTA: cerrando 20 y abriendo 10.
+28-05-2026 16:08:29 - Captura tomada: Ventana de confirmación para cerrar Caja 20.
+28-05-2026 16:08:31 - Captura tomada: Cierre de Caja 20 verificado.
+28-05-2026 16:08:31 - Captura tomada: Caja 10 abierta.
+28-05-2026 16:08:32 - Se abrió la Caja 10
+28-05-2026 16:08:33 - Cédula del cajero ingresada.
+28-05-2026 16:08:35 - Opción 'Vendedor Fijo' marcada.
+28-05-2026 16:08:36 - Cajero asignado correctamente.
+28-05-2026 16:08:36 - Esperando a que desaparezca el gif de carga tras asignar cajero.
+28-05-2026 16:08:38 - Gif de carga desaparecido tras asignar cajero.
+28-05-2026 16:08:38 - Cajero asignado verificado para Caja 10.
+28-05-2026 16:08:41 - ✅ Imagen agregada al PDF: capturas\asignacion_caja_compressed.png
+28-05-2026 16:08:41 - ✅ Imagen agregada al PDF: capturas\captura_administrador_compressed.png
+28-05-2026 16:08:41 - ✅ Imagen agregada al PDF: capturas\captura_gestion_caja_compressed.png
+28-05-2026 16:08:41 - ✅ Imagen agregada al PDF: capturas\captura_caja_compressed.png
+28-05-2026 16:08:41 - ✅ Imagen agregada al PDF: capturas\Captura_asignacion_caja_04_cerrar_20_compressed.png
+28-05-2026 16:08:41 - ✅ Imagen agregada al PDF: capturas\Captura_asignacion_caja_verificacion_compressed.png
+28-05-2026 16:08:41 - ✅ Imagen agregada al PDF: capturas\Captura_asignacion_caja_04_abrir_10_compressed.png
+28-05-2026 16:08:41 - ✅ Imagen agregada al PDF: capturas\Captura_asignacion_caja_05_cedula_cajero_compressed.png
+28-05-2026 16:08:41 - ✅ Imagen agregada al PDF: capturas\Captura_opcion_vendedor_fijo_compressed.png
+28-05-2026 16:08:41 - ✅ Imagen agregada al PDF: capturas\Captura_asignacion_caja_06_cajero_asignado_compressed.png
+28-05-2026 16:08:42 - ✅ PDF guardado correctamente en 1.00 segundos.
+28-05-2026 16:08:42 - PDF consolidado generado exitosamente.
+28-05-2026 16:08:42 - Gestión de Caja completada. Caja asignada: 90

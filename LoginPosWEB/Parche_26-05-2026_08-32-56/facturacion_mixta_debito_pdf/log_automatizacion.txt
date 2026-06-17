@@ -1,0 +1,44 @@
+26-05-2026 08:39:43 - Menú lateral abierto correctamente.
+26-05-2026 08:39:43 - Mensaje mostrado: Se realiza la facturación mixta (Efectivo-Tarjeta Débito)
+26-05-2026 08:39:45 - Accediendo al menú 'Cajero'.
+26-05-2026 08:39:47 - Accedió al menú 'Cajero' correctamente.
+26-05-2026 08:39:47 - Accedió a 'Ventas' correctamente.
+26-05-2026 08:39:49 - Accedió a 'Facturar' correctamente.
+26-05-2026 08:39:51 - Esperando a que desaparezca el gif de carga tras acceder a facturar.
+26-05-2026 08:39:51 - Carga y overlay desaparecidos tras acceder a facturar.
+26-05-2026 08:40:52 - Error al iniciar factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+26-05-2026 08:40:52 - Error durante el proceso de facturación mixta de débito: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+28-05-2026 16:14:47 - Menú lateral abierto correctamente.
+28-05-2026 16:14:48 - Mensaje mostrado: Se realiza la facturación mixta (Efectivo-Tarjeta Débito)
+28-05-2026 16:14:50 - Accediendo al menú 'Cajero'.
+28-05-2026 16:14:51 - Accedió al menú 'Cajero' correctamente.
+28-05-2026 16:14:52 - Accedió a 'Ventas' correctamente.
+28-05-2026 16:14:54 - Accedió a 'Facturar' correctamente.
+28-05-2026 16:14:56 - Esperando a que desaparezca el gif de carga tras acceder a facturar.
+28-05-2026 16:14:56 - Carga y overlay desaparecidos tras acceder a facturar.
+28-05-2026 16:15:56 - Error al iniciar factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+28-05-2026 16:15:56 - Error durante el proceso de facturación mixta de débito: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+

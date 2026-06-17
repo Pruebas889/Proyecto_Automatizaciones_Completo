@@ -1,0 +1,26 @@
+26-05-2026 08:52:55 - Menú lateral abierto correctamente.
+26-05-2026 08:52:56 - Mensaje mostrado: Se realiza el reporte de ventas por vendedor
+26-05-2026 08:52:57 - Accedió al menú 'Reportes' correctamente.
+26-05-2026 08:52:59 - Accedió al reporte de ventas correctamente.
+26-05-2026 08:53:17 - Accedió al reporte vendedor correctamente.
+26-05-2026 08:53:37 - ✅ Imagen agregada al PDF: capturas\captura_inicio_reporte_vendedor_compressed.png
+26-05-2026 08:53:37 - ✅ Imagen agregada al PDF: capturas\captura_menu_reportes_compressed.png
+26-05-2026 08:53:37 - ✅ Imagen agregada al PDF: capturas\captura_menu_reportes_compressed.png
+26-05-2026 08:53:37 - ✅ Imagen agregada al PDF: capturas\captura_reporte_vendedor_compressed.png
+26-05-2026 08:53:37 - ✅ Imagen agregada al PDF: capturas\captura_generar_reporte_compressed.png
+26-05-2026 08:53:37 - ✅ Imagen agregada al PDF: capturas\captura_reporte_completado_compressed.png
+26-05-2026 08:53:37 - ✅ PDF guardado correctamente en 0.61 segundos.
+26-05-2026 08:53:37 - PDF consolidado generado exitosamente.
+28-05-2026 16:28:02 - Menú lateral abierto correctamente.
+28-05-2026 16:28:02 - Mensaje mostrado: Se realiza el reporte de ventas por vendedor
+28-05-2026 16:28:03 - Accedió al menú 'Reportes' correctamente.
+28-05-2026 16:28:05 - Accedió al reporte de ventas correctamente.
+28-05-2026 16:28:26 - Accedió al reporte vendedor correctamente.
+28-05-2026 16:28:48 - ✅ Imagen agregada al PDF: capturas\captura_inicio_reporte_vendedor_compressed.png
+28-05-2026 16:28:48 - ✅ Imagen agregada al PDF: capturas\captura_menu_reportes_compressed.png
+28-05-2026 16:28:48 - ✅ Imagen agregada al PDF: capturas\captura_menu_reportes_compressed.png
+28-05-2026 16:28:48 - ✅ Imagen agregada al PDF: capturas\captura_reporte_vendedor_compressed.png
+28-05-2026 16:28:48 - ✅ Imagen agregada al PDF: capturas\captura_generar_reporte_compressed.png
+28-05-2026 16:28:48 - ✅ Imagen agregada al PDF: capturas\captura_reporte_completado_compressed.png
+28-05-2026 16:28:48 - ✅ PDF guardado correctamente en 0.62 segundos.
+28-05-2026 16:28:48 - PDF consolidado generado exitosamente.

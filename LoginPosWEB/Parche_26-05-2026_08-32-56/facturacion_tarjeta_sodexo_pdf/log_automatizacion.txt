@@ -1,0 +1,44 @@
+26-05-2026 08:40:52 - Menú lateral abierto correctamente.
+26-05-2026 08:40:52 - Mensaje mostrado: Se realiza la facturación con Tarjeta Sodexo
+26-05-2026 08:40:54 - Accediendo al menú 'Cajero'.
+26-05-2026 08:40:56 - Accedió al menú 'Cajero' correctamente.
+26-05-2026 08:40:56 - Accedió a 'Ventas' correctamente.
+26-05-2026 08:40:59 - Accedió a 'Facturar' correctamente.
+26-05-2026 08:41:00 - Esperando a que desaparezca el gif de carga tras acceder a facturar.
+26-05-2026 08:41:00 - Carga y overlay desaparecidos tras acceder a facturar.
+26-05-2026 08:42:00 - Error al iniciar factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+26-05-2026 08:42:00 - Error durante el proceso de facturación por tarjeta sodexo: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+28-05-2026 16:15:56 - Menú lateral abierto correctamente.
+28-05-2026 16:15:57 - Mensaje mostrado: Se realiza la facturación con Tarjeta Sodexo
+28-05-2026 16:15:59 - Accediendo al menú 'Cajero'.
+28-05-2026 16:16:00 - Accedió al menú 'Cajero' correctamente.
+28-05-2026 16:16:01 - Accedió a 'Ventas' correctamente.
+28-05-2026 16:16:03 - Accedió a 'Facturar' correctamente.
+28-05-2026 16:16:05 - Esperando a que desaparezca el gif de carga tras acceder a facturar.
+28-05-2026 16:16:05 - Carga y overlay desaparecidos tras acceder a facturar.
+28-05-2026 16:17:05 - Error al iniciar factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+28-05-2026 16:17:05 - Error durante el proceso de facturación por tarjeta sodexo: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+

@@ -1,0 +1,42 @@
+26-05-2026 08:52:15 - Menú lateral abierto correctamente.
+26-05-2026 08:52:16 - Mensaje mostrado: Se realiza el ingreso de gastos
+26-05-2026 08:52:17 - Accedió al menú 'Administrador' correctamente.
+26-05-2026 08:52:19 - Accedió al módulo 'Gastos' correctamente.
+26-05-2026 08:52:20 - Categoría de gasto (índice 2) seleccionada correctamente.
+26-05-2026 08:52:22 - Nombre del gasto (índice 1) seleccionado correctamente.
+26-05-2026 08:52:24 - Valor del gasto 30000 ingresado correctamente.
+26-05-2026 08:52:25 - Observación del gasto 'prueba' ingresada correctamente.
+26-05-2026 08:52:27 - Gasto ingresado correctamente.
+26-05-2026 08:52:29 - Confirmación del gasto realizada correctamente.
+26-05-2026 08:52:30 - ✅ Imagen agregada al PDF: capturas\captura_inicio_gestion_gastos_compressed.png
+26-05-2026 08:52:30 - ✅ Imagen agregada al PDF: capturas\captura_menu_admin_compressed.png
+26-05-2026 08:52:30 - ✅ Imagen agregada al PDF: capturas\captura_gastos_compressed.png
+26-05-2026 08:52:30 - ✅ Imagen agregada al PDF: capturas\captura_categoria_compressed.png
+26-05-2026 08:52:30 - ✅ Imagen agregada al PDF: capturas\captura_nombre_gasto_compressed.png
+26-05-2026 08:52:30 - ✅ Imagen agregada al PDF: capturas\captura_valor_compressed.png
+26-05-2026 08:52:30 - ✅ Imagen agregada al PDF: capturas\captura_observacion_compressed.png
+26-05-2026 08:52:30 - ✅ Imagen agregada al PDF: capturas\captura_ingresar_gasto_compressed.png
+26-05-2026 08:52:30 - ✅ Imagen agregada al PDF: capturas\captura_confirmacion_si_compressed.png
+26-05-2026 08:52:31 - ✅ PDF guardado correctamente en 0.87 segundos.
+26-05-2026 08:52:31 - PDF consolidado generado exitosamente.
+28-05-2026 16:27:19 - Menú lateral abierto correctamente.
+28-05-2026 16:27:20 - Mensaje mostrado: Se realiza el ingreso de gastos
+28-05-2026 16:27:21 - Accedió al menú 'Administrador' correctamente.
+28-05-2026 16:27:23 - Accedió al módulo 'Gastos' correctamente.
+28-05-2026 16:27:24 - Categoría de gasto (índice 2) seleccionada correctamente.
+28-05-2026 16:27:26 - Nombre del gasto (índice 1) seleccionado correctamente.
+28-05-2026 16:27:28 - Valor del gasto 30000 ingresado correctamente.
+28-05-2026 16:27:29 - Observación del gasto 'prueba' ingresada correctamente.
+28-05-2026 16:27:31 - Gasto ingresado correctamente.
+28-05-2026 16:27:32 - Confirmación del gasto realizada correctamente.
+28-05-2026 16:27:34 - ✅ Imagen agregada al PDF: capturas\captura_inicio_gestion_gastos_compressed.png
+28-05-2026 16:27:34 - ✅ Imagen agregada al PDF: capturas\captura_menu_admin_compressed.png
+28-05-2026 16:27:34 - ✅ Imagen agregada al PDF: capturas\captura_gastos_compressed.png
+28-05-2026 16:27:34 - ✅ Imagen agregada al PDF: capturas\captura_categoria_compressed.png
+28-05-2026 16:27:34 - ✅ Imagen agregada al PDF: capturas\captura_nombre_gasto_compressed.png
+28-05-2026 16:27:34 - ✅ Imagen agregada al PDF: capturas\captura_valor_compressed.png
+28-05-2026 16:27:34 - ✅ Imagen agregada al PDF: capturas\captura_observacion_compressed.png
+28-05-2026 16:27:34 - ✅ Imagen agregada al PDF: capturas\captura_ingresar_gasto_compressed.png
+28-05-2026 16:27:34 - ✅ Imagen agregada al PDF: capturas\captura_confirmacion_si_compressed.png
+28-05-2026 16:27:35 - ✅ PDF guardado correctamente en 0.90 segundos.
+28-05-2026 16:27:35 - PDF consolidado generado exitosamente.

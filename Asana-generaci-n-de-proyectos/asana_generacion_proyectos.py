@@ -393,12 +393,17 @@ def crear_proyecto(driver, project_name, portfolio_name):
 
         project_url = driver.current_url
 
-        return_portfolio = WebDriverWait(driver, 30).until(
-            EC.element_to_be_clickable((By.XPATH, f"//a[contains(@class,'NavigationBreadcrumbContent-portfolioNameAndIcon')]//span[contains(normalize-space(),'{portfolio_name}')]")))
-        driver.execute_script("arguments[0].click();", return_portfolio)
-        logging.info(f"Regresando al portafolio '{portfolio_name}'.")
+        logging.info("Regresando usando botón atrás del navegador")
+
+        driver.back()
+
+        time.sleep(5)
+
         WebDriverWait(driver, 30).until(
-            EC.url_contains("/0/portfolio/"))
+            EC.url_contains("/portfolio/")
+        )
+
+        logging.info("Se regresó correctamente al portafolio")
         return True, project_url
     except Exception as e:
         logging.error(f"Error al crear proyecto '{project_name}': {e}")
@@ -450,14 +455,20 @@ def procesar_teams(driver, sprint_number: int, start_date: str, end_date: str) -
                     logging.warning(f"No se pudo crear proyecto {project_name} en {team}")
 
             try:
-                sprints_link = WebDriverWait(driver, 30).until(
-                    EC.element_to_be_clickable((By.XPATH, "//a[contains(@class,'NavigationBreadcrumbContent-portfolioNameAndIcon')]//span[normalize-space()='Sprints']")))
-                driver.execute_script("arguments[0].click();", sprints_link)
+                logging.info("Regresando a la URL principal de Sprints")
+
+                driver.get("http://app.asana.com/0/portfolio/1205257480867940/1207672212054810")
+
                 WebDriverWait(driver, 30).until(
-                    EC.url_contains("/0/portfolio/"))
-                logging.info("Regresado a la página de Sprints.")
+                    EC.url_contains("/0/portfolio/")
+                )
+
+                time.sleep(5)
+
+                logging.info("Regresado correctamente a la URL principal")
+
             except Exception as e:
-                logging.error(f"No se pudo regresar a la página de Sprints: {e}")
+                logging.error(f"No se pudo regresar a la URL principal: {e}")
 
         logging.info("Procesamiento completado para todos los teams.")
         return results

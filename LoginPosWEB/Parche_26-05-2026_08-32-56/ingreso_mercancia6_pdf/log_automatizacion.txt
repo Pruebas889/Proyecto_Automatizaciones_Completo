@@ -1,0 +1,56 @@
+26-05-2026 08:57:26 - Mensaje mostrado: Se realiza el ingreso de mercancía a bodega 6
+26-05-2026 08:57:27 - Accedió a la opción 'Ingresar Mercancía' correctamente.
+26-05-2026 08:57:29 - Número de referencia '12957' ingresado correctamente.
+26-05-2026 08:57:31 - Opción seleccionada en el menú desplegable.
+26-05-2026 08:57:32 - Selección del producto confirmada.
+26-05-2026 08:57:33 - Carga completada antes de 'Tipo de Transacción'.
+26-05-2026 08:57:33 - Opción 'ENTRADA A BODEGA NO DISPONIBLE PARA VENTA (BND+)' (índice 1) seleccionada en 'Tipo de Transacción'.
+26-05-2026 08:57:35 - Carga completada antes de 'Tipo de Causal'.
+26-05-2026 08:57:35 - Opción 'ORDEN GUBERNAMENTAL' (índice 6) seleccionada en 'Tipo de Causal'.
+26-05-2026 08:57:36 - Campo de unidades activado correctamente.
+26-05-2026 08:57:37 - Contenido del campo de unidades borrado correctamente.
+26-05-2026 08:57:38 - Cantidad '53' ingresada correctamente en el campo de unidades.
+26-05-2026 08:57:40 - Productos enviados correctamente.
+26-05-2026 08:57:42 - Envío de productos confirmado correctamente.
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_inicio_mercancia_compressed.png
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_ingreso_mercancia_compressed.png
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_campo_busqueda_compressed.png
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_opcion_seleccionada_compressed.png
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_confirmacion_seleccion_compressed.png
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_tipo_transaccion_compressed.png
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_tipo_causal_compressed.png
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_unidades_compressed.png
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_unidades_vacias_compressed.png
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_unidades_modificadas_compressed.png
+26-05-2026 08:57:43 - ✅ Imagen agregada al PDF: capturas\captura_enviar_productos_compressed.png
+26-05-2026 08:57:44 - ✅ Imagen agregada al PDF: capturas\captura_confirmacion_compressed.png
+26-05-2026 08:57:44 - ✅ PDF guardado correctamente en 1.21 segundos.
+26-05-2026 08:57:44 - PDF consolidado generado exitosamente.
+28-05-2026 16:32:36 - Mensaje mostrado: Se realiza el ingreso de mercancía a bodega 6
+28-05-2026 16:32:37 - Accedió a la opción 'Ingresar Mercancía' correctamente.
+28-05-2026 16:32:38 - Número de referencia '12957' ingresado correctamente.
+28-05-2026 16:32:41 - Opción seleccionada en el menú desplegable.
+28-05-2026 16:32:42 - Selección del producto confirmada.
+28-05-2026 16:32:43 - Carga completada antes de 'Tipo de Transacción'.
+28-05-2026 16:32:43 - Opción 'ENTRADA A BODEGA NO DISPONIBLE PARA VENTA (BND+)' (índice 1) seleccionada en 'Tipo de Transacción'.
+28-05-2026 16:32:44 - Carga completada antes de 'Tipo de Causal'.
+28-05-2026 16:32:45 - Opción 'ORDEN GUBERNAMENTAL' (índice 6) seleccionada en 'Tipo de Causal'.
+28-05-2026 16:32:46 - Campo de unidades activado correctamente.
+28-05-2026 16:32:47 - Contenido del campo de unidades borrado correctamente.
+28-05-2026 16:32:48 - Cantidad '53' ingresada correctamente en el campo de unidades.
+28-05-2026 16:32:50 - Productos enviados correctamente.
+28-05-2026 16:32:51 - Envío de productos confirmado correctamente.
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_inicio_mercancia_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_ingreso_mercancia_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_campo_busqueda_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_opcion_seleccionada_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_confirmacion_seleccion_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_tipo_transaccion_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_tipo_causal_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_unidades_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_unidades_vacias_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_unidades_modificadas_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_enviar_productos_compressed.png
+28-05-2026 16:32:53 - ✅ Imagen agregada al PDF: capturas\captura_confirmacion_compressed.png
+28-05-2026 16:32:54 - ✅ PDF guardado correctamente en 1.39 segundos.
+28-05-2026 16:32:54 - PDF consolidado generado exitosamente.

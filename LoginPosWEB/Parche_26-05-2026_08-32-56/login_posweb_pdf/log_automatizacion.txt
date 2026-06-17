@@ -1,0 +1,28 @@
+26-05-2026 08:33:09 - Navegador abierto y página cargada
+26-05-2026 08:33:09 - Redirigido a la página de login
+26-05-2026 08:33:10 - Usuario ingresado correctamente.
+26-05-2026 08:33:11 - Contraseña ingresada
+26-05-2026 08:33:13 - Perfil 'Administrador' seleccionado correctamente.
+26-05-2026 08:33:14 - Botón de login presionado
+26-05-2026 08:33:16 - ✅ Imagen agregada al PDF: capturas\captura_inicio_login_Administrador_compressed.png
+26-05-2026 08:33:16 - ✅ Imagen agregada al PDF: capturas\captura_login_link_Administrador_compressed.png
+26-05-2026 08:33:16 - ✅ Imagen agregada al PDF: capturas\captura_usuario_Administrador_compressed.png
+26-05-2026 08:33:16 - ✅ Imagen agregada al PDF: capturas\captura_password_Administrador_compressed.png
+26-05-2026 08:33:16 - ✅ Imagen agregada al PDF: capturas\captura_perfil_Administrador_compressed.png
+26-05-2026 08:33:16 - ✅ Imagen agregada al PDF: capturas\captura_login_Administrador_compressed.png
+26-05-2026 08:33:17 - ✅ PDF guardado correctamente en 0.63 segundos.
+26-05-2026 08:33:17 - PDF consolidado generado exitosamente
+28-05-2026 16:08:13 - Navegador abierto y página cargada
+28-05-2026 16:08:14 - Redirigido a la página de login
+28-05-2026 16:08:15 - Usuario ingresado correctamente.
+28-05-2026 16:08:16 - Contraseña ingresada
+28-05-2026 16:08:17 - Perfil 'Administrador' seleccionado correctamente.
+28-05-2026 16:08:18 - Botón de login presionado
+28-05-2026 16:08:21 - ✅ Imagen agregada al PDF: capturas\captura_inicio_login_Administrador_compressed.png
+28-05-2026 16:08:21 - ✅ Imagen agregada al PDF: capturas\captura_login_link_Administrador_compressed.png
+28-05-2026 16:08:21 - ✅ Imagen agregada al PDF: capturas\captura_usuario_Administrador_compressed.png
+28-05-2026 16:08:21 - ✅ Imagen agregada al PDF: capturas\captura_password_Administrador_compressed.png
+28-05-2026 16:08:21 - ✅ Imagen agregada al PDF: capturas\captura_perfil_Administrador_compressed.png
+28-05-2026 16:08:21 - ✅ Imagen agregada al PDF: capturas\captura_login_Administrador_compressed.png
+28-05-2026 16:08:21 - ✅ PDF guardado correctamente en 0.49 segundos.
+28-05-2026 16:08:21 - PDF consolidado generado exitosamente

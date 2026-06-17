@@ -1,0 +1,66 @@
+26-05-2026 08:46:06 - Menú lateral abierto correctamente.
+26-05-2026 08:46:07 - Mensaje mostrado: Se realiza la Compra a Droguería
+26-05-2026 08:46:08 - Accedió al menú 'Administrador' correctamente.
+26-05-2026 08:46:10 - Accedió a 'Compra a Droguería' correctamente.
+26-05-2026 08:46:12 - Referencia de producto 12957 ingresada correctamente.
+26-05-2026 08:46:16 - Búsqueda de producto realizada correctamente.
+26-05-2026 08:46:18 - Documento de cruce 12345678 ingresado correctamente.
+26-05-2026 08:46:21 - Cantidad de unidades 2 ingresada correctamente.
+26-05-2026 08:46:23 - Cantidad de fracciones 2 ingresada correctamente.
+26-05-2026 08:46:25 - Valor de unidades 800 ingresado correctamente.
+26-05-2026 08:46:27 - Búsqueda de distribuidor realizada correctamente.
+26-05-2026 08:46:29 - Distribuidor seleccionado correctamente.
+26-05-2026 08:46:31 - Confirmación de selección de distribuidor realizada correctamente.
+26-05-2026 08:46:33 - Compra realizada correctamente.
+26-05-2026 08:46:35 - Confirmación inicial de compra realizada correctamente.
+26-05-2026 08:46:40 - Confirmación final de compra aceptada correctamente.
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_inicio_compra_drogueria_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_menu_admin_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_menu_compra_drogueria_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_referencia_producto_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_busqueda_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_documento_cruce_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_cantidad_unidades_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_cantidad_fracciones_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_valor_unidades_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_buscar_distribuidor_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_seleccionar_distribuidor_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_confirmar_distribuidor_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_realizar_compra_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_confirmacion_si_compressed.png
+26-05-2026 08:46:43 - ✅ Imagen agregada al PDF: capturas\captura_ok_compressed.png
+26-05-2026 08:46:44 - ✅ PDF guardado correctamente en 1.67 segundos.
+26-05-2026 08:46:44 - PDF consolidado generado exitosamente.
+28-05-2026 16:21:11 - Menú lateral abierto correctamente.
+28-05-2026 16:21:12 - Mensaje mostrado: Se realiza la Compra a Droguería
+28-05-2026 16:21:13 - Accedió al menú 'Administrador' correctamente.
+28-05-2026 16:21:16 - Accedió a 'Compra a Droguería' correctamente.
+28-05-2026 16:21:18 - Referencia de producto 12957 ingresada correctamente.
+28-05-2026 16:21:21 - Búsqueda de producto realizada correctamente.
+28-05-2026 16:21:23 - Documento de cruce 12345678 ingresado correctamente.
+28-05-2026 16:21:26 - Cantidad de unidades 2 ingresada correctamente.
+28-05-2026 16:21:28 - Cantidad de fracciones 2 ingresada correctamente.
+28-05-2026 16:21:30 - Valor de unidades 800 ingresado correctamente.
+28-05-2026 16:21:32 - Búsqueda de distribuidor realizada correctamente.
+28-05-2026 16:21:34 - Distribuidor seleccionado correctamente.
+28-05-2026 16:21:36 - Confirmación de selección de distribuidor realizada correctamente.
+28-05-2026 16:21:38 - Compra realizada correctamente.
+28-05-2026 16:21:40 - Confirmación inicial de compra realizada correctamente.
+28-05-2026 16:21:45 - Confirmación final de compra aceptada correctamente.
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_inicio_compra_drogueria_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_menu_admin_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_menu_compra_drogueria_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_referencia_producto_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_busqueda_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_documento_cruce_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_cantidad_unidades_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_cantidad_fracciones_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_valor_unidades_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_buscar_distribuidor_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_seleccionar_distribuidor_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_confirmar_distribuidor_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_realizar_compra_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_confirmacion_si_compressed.png
+28-05-2026 16:21:48 - ✅ Imagen agregada al PDF: capturas\captura_ok_compressed.png
+28-05-2026 16:21:49 - ✅ PDF guardado correctamente en 1.72 segundos.
+28-05-2026 16:21:49 - PDF consolidado generado exitosamente.

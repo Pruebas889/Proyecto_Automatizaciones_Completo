@@ -1,0 +1,44 @@
+26-05-2026 08:43:30 - Menú lateral abierto correctamente.
+26-05-2026 08:43:31 - Mensaje mostrado:  Globo de descuento en el Beneficio 134.
+26-05-2026 08:43:33 - Accediendo al menú 'Cajero'.
+26-05-2026 08:43:35 - Accedió al menú 'Cajero' correctamente.
+26-05-2026 08:43:35 - Accedió a 'Ventas' correctamente.
+26-05-2026 08:43:37 - Accedió a 'Facturar' correctamente.
+26-05-2026 08:43:39 - Esperando a que desaparezca el gif de carga tras acceder a facturar.
+26-05-2026 08:43:39 - Carga y overlay desaparecidos tras acceder a facturar.
+26-05-2026 08:44:39 - Error al iniciar factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+26-05-2026 08:44:39 - Error durante el proceso de venta con cliente: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+28-05-2026 16:18:35 - Menú lateral abierto correctamente.
+28-05-2026 16:18:36 - Mensaje mostrado:  Globo de descuento en el Beneficio 134.
+28-05-2026 16:18:37 - Accediendo al menú 'Cajero'.
+28-05-2026 16:18:39 - Accedió al menú 'Cajero' correctamente.
+28-05-2026 16:18:40 - Accedió a 'Ventas' correctamente.
+28-05-2026 16:18:42 - Accedió a 'Facturar' correctamente.
+28-05-2026 16:18:44 - Esperando a que desaparezca el gif de carga tras acceder a facturar.
+28-05-2026 16:18:44 - Carga y overlay desaparecidos tras acceder a facturar.
+28-05-2026 16:19:44 - Error al iniciar factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+28-05-2026 16:19:44 - Error durante el proceso de venta con cliente: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+

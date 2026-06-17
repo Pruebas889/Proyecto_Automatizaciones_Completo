@@ -1,0 +1,38 @@
+26-05-2026 08:53:38 - Menú lateral abierto correctamente.
+26-05-2026 08:53:39 - Mensaje mostrado: Se realiza la congelación de una factura
+26-05-2026 08:53:41 - Accedió al menú 'Cajero' correctamente.
+26-05-2026 08:53:41 - Accedió al módulo 'Ventas' correctamente.
+26-05-2026 08:53:43 - Accedió a la opción 'Facturar' correctamente.
+26-05-2026 08:54:15 - Error al iniciar factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+26-05-2026 08:54:15 - Error durante el proceso de congelación de factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+28-05-2026 16:28:49 - Menú lateral abierto correctamente.
+28-05-2026 16:28:49 - Mensaje mostrado: Se realiza la congelación de una factura
+28-05-2026 16:28:51 - Accedió al menú 'Cajero' correctamente.
+28-05-2026 16:28:52 - Accedió al módulo 'Ventas' correctamente.
+28-05-2026 16:28:53 - Accedió a la opción 'Facturar' correctamente.
+28-05-2026 16:29:25 - Error al iniciar factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+28-05-2026 16:29:25 - Error durante el proceso de congelación de factura: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+

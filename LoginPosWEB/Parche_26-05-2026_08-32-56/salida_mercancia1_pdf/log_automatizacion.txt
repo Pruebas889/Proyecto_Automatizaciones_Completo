@@ -1,0 +1,44 @@
+26-05-2026 08:54:36 - Mensaje mostrado: Se realiza la salida de mercancía a bodega 1
+26-05-2026 08:54:38 - Accedió a la opción 'Salida Mercancía' correctamente.
+26-05-2026 08:54:40 - Clic en 'Crear' realizado correctamente.
+26-05-2026 08:54:42 - Opción 'SALIDA DE BODEGA NO DISPONIBLE PARA VENTA (BND-)' (índice 2) seleccionada en 'Tipo de Transacción'.
+26-05-2026 08:54:44 - Opción 'ERROR DE TRANSACCION' (índice 1) seleccionada en 'Tipo de Causal'.
+26-05-2026 08:54:45 - Número de referencia '12957' ingresado correctamente.
+26-05-2026 08:54:48 - Carga completada correctamente.
+26-05-2026 08:54:48 - Producto agregado correctamente.
+26-05-2026 08:54:51 - Carga completada correctamente.
+26-05-2026 08:54:51 - Clic en 'Crear Documento' realizado correctamente.
+26-05-2026 08:54:53 - Envío confirmado correctamente.
+26-05-2026 08:54:55 - ✅ Imagen agregada al PDF: capturas\captura_inicio_salida_mercancia_compressed.png
+26-05-2026 08:54:55 - ✅ Imagen agregada al PDF: capturas\captura_salida_mercancia_compressed.png
+26-05-2026 08:54:55 - ✅ Imagen agregada al PDF: capturas\captura_clic_crear_compressed.png
+26-05-2026 08:54:55 - ✅ Imagen agregada al PDF: capturas\captura_tipo_transaccion_compressed.png
+26-05-2026 08:54:55 - ✅ Imagen agregada al PDF: capturas\captura_tipo_causal_compressed.png
+26-05-2026 08:54:55 - ✅ Imagen agregada al PDF: capturas\captura_campo_busqueda_compressed.png
+26-05-2026 08:54:55 - ✅ Imagen agregada al PDF: capturas\captura_agregar_producto_compressed.png
+26-05-2026 08:54:55 - ✅ Imagen agregada al PDF: capturas\captura_crear_documento_compressed.png
+26-05-2026 08:54:55 - ✅ Imagen agregada al PDF: capturas\captura_clic_ok_compressed.png
+26-05-2026 08:54:55 - ✅ PDF guardado correctamente en 0.93 segundos.
+26-05-2026 08:54:55 - PDF consolidado generado exitosamente.
+28-05-2026 16:29:47 - Mensaje mostrado: Se realiza la salida de mercancía a bodega 1
+28-05-2026 16:29:48 - Accedió a la opción 'Salida Mercancía' correctamente.
+28-05-2026 16:29:50 - Clic en 'Crear' realizado correctamente.
+28-05-2026 16:29:52 - Opción 'SALIDA DE BODEGA NO DISPONIBLE PARA VENTA (BND-)' (índice 2) seleccionada en 'Tipo de Transacción'.
+28-05-2026 16:29:54 - Opción 'ERROR DE TRANSACCION' (índice 1) seleccionada en 'Tipo de Causal'.
+28-05-2026 16:29:55 - Número de referencia '12957' ingresado correctamente.
+28-05-2026 16:29:58 - Carga completada correctamente.
+28-05-2026 16:29:58 - Producto agregado correctamente.
+28-05-2026 16:30:01 - Carga completada correctamente.
+28-05-2026 16:30:01 - Clic en 'Crear Documento' realizado correctamente.
+28-05-2026 16:30:03 - Envío confirmado correctamente.
+28-05-2026 16:30:05 - ✅ Imagen agregada al PDF: capturas\captura_inicio_salida_mercancia_compressed.png
+28-05-2026 16:30:05 - ✅ Imagen agregada al PDF: capturas\captura_salida_mercancia_compressed.png
+28-05-2026 16:30:05 - ✅ Imagen agregada al PDF: capturas\captura_clic_crear_compressed.png
+28-05-2026 16:30:05 - ✅ Imagen agregada al PDF: capturas\captura_tipo_transaccion_compressed.png
+28-05-2026 16:30:05 - ✅ Imagen agregada al PDF: capturas\captura_tipo_causal_compressed.png
+28-05-2026 16:30:05 - ✅ Imagen agregada al PDF: capturas\captura_campo_busqueda_compressed.png
+28-05-2026 16:30:05 - ✅ Imagen agregada al PDF: capturas\captura_agregar_producto_compressed.png
+28-05-2026 16:30:05 - ✅ Imagen agregada al PDF: capturas\captura_crear_documento_compressed.png
+28-05-2026 16:30:05 - ✅ Imagen agregada al PDF: capturas\captura_clic_ok_compressed.png
+28-05-2026 16:30:05 - ✅ PDF guardado correctamente en 0.97 segundos.
+28-05-2026 16:30:05 - PDF consolidado generado exitosamente.

@@ -1,4 +1,5 @@
 # server.py (VERSIÓN ACTUALIZADA CON BOTÓN MOVER PROCESADOS)
+
 import os
 import sys
 import tempfile
@@ -90,7 +91,7 @@ CORS(APP, supports_credentials=True, origins=[
 
 def login_required(f):
     @wraps(f)
-    def decorated_funtion(*args, **kwargs):
+    def decorated_function(*args, **kwargs):
         if not session.get('logged_in') or session.get('role') != 'pdf':
             return redirect('http://192.168.20.8:5000')
         return f(*args, **kwargs)
@@ -130,7 +131,11 @@ estado_actual = {
 def autenticar_google_drive():
     """Autentica con Google Drive"""
     creds = None
-    token_file = 'token.pickle'
+    BASE_DIR = r'C:\Users\jperdomolc\Pictures\Proyecto_Automatizaciones_Completo\Automatizacion_PDF'
+    token_file = os.path.join(BASE_DIR, 'token.pickle')
+
+    # Asegurar que la carpeta exista
+    os.makedirs(BASE_DIR, exist_ok=True)
     
     try:
         # 🔥 FUERZA AUTENTICACIÓN NUEVA SI NO EXISTE TOKEN
@@ -139,13 +144,19 @@ def autenticar_google_drive():
                 creds = load(token)
         
         if not creds or not creds.valid:
-            if creds and creds.expired and creds.refresh_token:
-                print("🔄 Refrescando token expirado...")
+            if creds and creds.expired:
+                print("🔄 Token expirado...")
+
                 try:
-                    creds.refresh(Request())
-                    print("✅ Token refrescado")
+                    if creds.refresh_token:
+                        creds.refresh(Request())
+                        print("✅ Token refrescado")
+                    else:
+                        print("⚠️ El token no tiene refresh_token")
+                        creds = None
+
                 except Exception as e:
-                    print(f"⚠️ No se pudo refrescar: {e}")
+                    print(f"⚠️ Error refrescando token: {e}")
                     creds = None
             
             if not creds:
@@ -162,7 +173,8 @@ def autenticar_google_drive():
                     creds = flow.run_local_server(
                         port=8080, 
                         open_browser=True,
-                        authorization_prompt_message='Por favor autoriza en el navegador'
+                        authorization_prompt_message='Por favor autoriza en el navegador',
+                        access_type='offline'
                     )
                     print("✅ Autenticación completada!")
                 except Exception as e:
@@ -683,7 +695,7 @@ def stream_logs():
 
 @APP.route('/buscar-pdf-drive', methods=['POST'])
 def buscar_pdf_drive():
-    """Busca PDF en Google Drive"""
+    """Busca PDF en Google Drive y lo prepara para procesar"""
     global estado_actual
     
     try:
@@ -712,14 +724,35 @@ def buscar_pdf_drive():
         lector = PdfReader(ruta_pdf)
         total_paginas = len(lector.pages)
         
+        # 🔥 NUEVO: Crear carpeta de proceso en Google Drive
+        log_mensaje('📁', 'Creando carpeta de proceso en Google Drive...')
+        nombre_carpeta = generar_nombre_carpeta()
+        carpeta_destino_id = crear_carpeta_drive(service, nombre_carpeta, CARPETA_SEPARADOS_ID)
+        
+        if not carpeta_destino_id:
+            carpeta_destino_id = CARPETA_SEPARADOS_ID
+        
+        log_mensaje('✅', f'Carpeta creada: {nombre_carpeta}')
+        
+        # 🔥 NUEVO: Copiar el PDF original a la carpeta de proceso
+        log_mensaje('📤', f'Subiendo PDF original a carpeta de proceso...')
+        pdf_subido_id = subir_archivo_a_drive(service, ruta_pdf, carpeta_destino_id, pdf_nombre)
+        
+        if not pdf_subido_id:
+            log_mensaje('⚠️', 'Error subiendo PDF a carpeta de proceso')
+            pdf_subido_id = pdf_id
+        
+        # 🔥 Guardar estado
         estado_actual['pdf_encontrado'] = {
             'nombre': pdf_nombre,
             'ruta': ruta_pdf,
             'paginas': total_paginas,
-            'id': pdf_id
+            'id': pdf_id,
+            'id_en_proceso': pdf_subido_id  # 🔥 ID del PDF en la carpeta de proceso
         }
         estado_actual['pdf_original_name'] = pdf_nombre
         estado_actual['pdf_original_id'] = pdf_id
+        estado_actual['carpeta_proceso_id'] = carpeta_destino_id  # 🔥 Guardar carpeta de proceso
         
         log_mensaje('✅', f'PDF encontrado: {pdf_nombre}')
         log_mensaje('📄', f'Total de páginas: {total_paginas}')
@@ -728,11 +761,14 @@ def buscar_pdf_drive():
             'success': True,
             'mensaje': f'✅ PDF encontrado: {pdf_nombre}',
             'paginas': total_paginas,
-            'requiere_division': total_paginas > 2
+            'requiere_division': total_paginas > 2,
+            'carpeta_proceso': nombre_carpeta
         })
     
     except Exception as e:
         log_mensaje('❌', f'Error: {str(e)}')
+        import traceback
+        log_mensaje('❌', traceback.format_exc(), mostrar_en_web=False)
         return jsonify({'success': False, 'error': str(e)}), 500
 
 @APP.route('/dividir-pdf', methods=['POST'])
@@ -906,8 +942,16 @@ def dividir_pdf():
 
 @APP.route('/analizar-pdfs-drive', methods=['POST'])
 def analizar_pdfs_drive():
-    """Analiza los PDFs"""
+    """Analiza los PDFs desde la carpeta de proceso"""
     global estado_actual
+
+    if not estado_actual.get('pdf_encontrado'):
+        return jsonify({'success': False, 'error': 'No hay PDF cargado'}), 400
+
+    ruta_pdf = estado_actual['pdf_encontrado'].get('ruta')
+
+    if not ruta_pdf or not os.path.exists(ruta_pdf):
+        return jsonify({'success': False, 'error': 'PDF no existe en disco'}), 400
     
     try:
         log_mensaje('📊', 'Analizando PDFs...')
@@ -920,17 +964,19 @@ def analizar_pdfs_drive():
         if not service:
             return jsonify({'success': False, 'error': 'Error de autenticación'}), 500
         
+        # 🔥 AHORA SIEMPRE HAY carpeta_proceso_id
         carpeta_id = estado_actual.get('carpeta_proceso_id')
-
+        
         if not carpeta_id:
             return jsonify({'success': False, 'error': 'No hay carpeta de proceso'}), 400
-
+        
         pdfs_encontrados = buscar_archivos_en_carpeta(service, carpeta_id, '.pdf')
-        total_operaciones = len(pdfs_encontrados)
-        log_mensaje('TOTAL_REAL', str(total_operaciones))
-
+        
         if not pdfs_encontrados:
             return jsonify({'success': False, 'error': 'No hay PDFs para analizar'}), 404
+        
+        total_operaciones = len(pdfs_encontrados)
+        log_mensaje('TOTAL_REAL', str(total_operaciones))
         
         FACTURAS_POR_LOTE = 15
         PAUSA_ENTRE_LOTES = 30
@@ -939,22 +985,28 @@ def analizar_pdfs_drive():
         pdfs_analizados = []
         facturas_en_lote = 0
         num_lote = 1
-        ultimo_log_factura = None
         
-        for idx, pdf_info in enumerate(pdfs_encontrados, 1):
+        for pdf_info in pdfs_encontrados:
             pdf_nombre = pdf_info['name']
             ruta_pdf_temp = os.path.join(TEMP_PDFS_DIR, pdf_nombre)
             
-            if not estado_actual.get('pdf_dividido'):
-                ruta_pdf_temp = estado_actual['pdf_encontrado']['ruta']
-            else:
-                if pdf_info['id']:
-                    descargar_archivo_desde_drive(service, pdf_info['id'], ruta_pdf_temp)
+            # 🔥 Descargar desde carpeta de proceso en Drive
+            if not descargar_archivo_desde_drive(service, pdf_info['id'], ruta_pdf_temp):
+                log_mensaje('⚠️', f'Error descargando: {pdf_nombre}')
+                continue
+            
+            log_mensaje('📄', f'Analizando: {pdf_nombre}')
             
             paginas = extraer_paginas_pdf(ruta_pdf_temp)
+            if not paginas:
+                log_mensaje('⚠️', f'PDF sin texto legible: {pdf_nombre}')
+                continue
             
             for pagina_info in paginas:
                 texto_pagina = pagina_info['texto']
+                texto_upper = texto_pagina.upper()
+
+                
                 datos = extraer_datos_factura(
                     texto_pagina,
                     pdf_path=ruta_pdf_temp,
@@ -969,32 +1021,34 @@ def analizar_pdfs_drive():
                     if pdf_nombre not in pdfs_analizados:
                         pdfs_analizados.append(pdf_nombre)
                     
-                    ultimo_log_factura = datos.get('Numero_Cliente')
-                    
-                    # 🔥 PAUSA Y LOG CADA 15 FACTURAS
                     if facturas_en_lote >= FACTURAS_POR_LOTE:
-                        log_mensaje('⏸️', f'Lote {num_lote}: {facturas_en_lote} facturas procesadas')
-                        log_mensaje('⏳', f'Pausa de {PAUSA_ENTRE_LOTES} segundos...')
-                        
+                        log_mensaje('⏸️', f'Lote {num_lote}: {facturas_en_lote} facturas')
+                        log_mensaje('⏳', f'Pausa de {PAUSA_ENTRE_LOTES}s...')
                         time.sleep(PAUSA_ENTRE_LOTES)
-                        
                         facturas_en_lote = 0
                         num_lote += 1
                         log_mensaje('✅', f'Reanudando - Lote {num_lote}')
         
-        log_mensaje('✅', f'Total de facturas analizadas: {len(facturas_analizadas)}')
+        if not facturas_analizadas:
+            return jsonify({
+                'success': False,
+                'error': 'No se encontraron facturas válidas'
+            }), 400
         
+        log_mensaje('✅', f'Facturas analizadas: {len(facturas_analizadas)}')
         estado_actual['facturas_analizadas'] = facturas_analizadas
         
         return jsonify({
             'success': True,
-            'mensaje': f'✅ Se analizaron {len(facturas_analizadas)} facturas',
+            'mensaje': f'✅ {len(facturas_analizadas)} facturas analizadas',
             'total_facturas': len(facturas_analizadas),
             'pdfs_analizados': pdfs_analizados
         })
     
     except Exception as e:
-        log_mensaje('❌', f'Error analizando: {str(e)}')
+        log_mensaje('❌', f'Error: {str(e)}')
+        import traceback
+        log_mensaje('❌', traceback.format_exc(), mostrar_en_web=False)
         return jsonify({'success': False, 'error': str(e)}), 500
 
 @APP.route('/exportar-excel-drive', methods=['POST'])

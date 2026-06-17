@@ -1,0 +1,20 @@
+26-05-2026 08:52:32 - Menú lateral abierto correctamente.
+26-05-2026 08:52:32 - Mensaje mostrado: Se realiza el reporte por PDV
+26-05-2026 08:52:33 - Accedió al menú 'Reportes' correctamente.
+26-05-2026 08:52:35 - Accedió al reporte de ventas correctamente.
+26-05-2026 08:52:55 - ✅ Imagen agregada al PDF: capturas\captura_inicio_reporte_pdv_compressed.png
+26-05-2026 08:52:55 - ✅ Imagen agregada al PDF: capturas\captura_menu_reportes_compressed.png
+26-05-2026 08:52:55 - ✅ Imagen agregada al PDF: capturas\captura_menu_reportes_compressed.png
+26-05-2026 08:52:55 - ✅ Imagen agregada al PDF: capturas\captura_reporte_ventas_compressed.png
+26-05-2026 08:52:55 - ✅ PDF guardado correctamente en 0.42 segundos.
+26-05-2026 08:52:55 - PDF consolidado generado exitosamente.
+28-05-2026 16:27:35 - Menú lateral abierto correctamente.
+28-05-2026 16:27:36 - Mensaje mostrado: Se realiza el reporte por PDV
+28-05-2026 16:27:37 - Accedió al menú 'Reportes' correctamente.
+28-05-2026 16:27:39 - Accedió al reporte de ventas correctamente.
+28-05-2026 16:28:02 - ✅ Imagen agregada al PDF: capturas\captura_inicio_reporte_pdv_compressed.png
+28-05-2026 16:28:02 - ✅ Imagen agregada al PDF: capturas\captura_menu_reportes_compressed.png
+28-05-2026 16:28:02 - ✅ Imagen agregada al PDF: capturas\captura_menu_reportes_compressed.png
+28-05-2026 16:28:02 - ✅ Imagen agregada al PDF: capturas\captura_reporte_ventas_compressed.png
+28-05-2026 16:28:02 - ✅ PDF guardado correctamente en 0.46 segundos.
+28-05-2026 16:28:02 - PDF consolidado generado exitosamente.

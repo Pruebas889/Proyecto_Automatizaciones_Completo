@@ -68,13 +68,30 @@ def extraer_paginas_pdf(pdf_path):
             
             for num_pagina, page in enumerate(reader.pages, 1):
                 page_text = page.extract_text()
-                if page_text and len(page_text.strip()) > 30:
-                    paginas.append({
-                        'numero': num_pagina,
-                        'texto': page_text
-                    })
-                else:
-                    logging.info(f"⏭️ Página {num_pagina} ignorada (en blanco o sin contenido útil)")
+
+                if not page_text or len(page_text.strip()) <= 30:
+                    logging.info(
+                        f"⏭️ Página {num_pagina} ignorada (en blanco o sin contenido útil)"
+                    )
+                    continue
+
+                texto_normalizado = page_text.upper()
+
+                # 🔥 Cartas y avisos que NO son facturas
+                if (
+                    "ASUNTO: NO ACCESO AL MEDIDOR" in texto_normalizado
+                    or "NO ACCESO AL MEDIDOR DE ENERGÍA" in texto_normalizado
+                    or "NO ACCESO AL MEDIDOR DE ENERGIA" in texto_normalizado
+                ):
+                    logging.info(
+                        f"⏭️ Página {num_pagina} ignorada (carta de no acceso al medidor)"
+                    )
+                    continue
+
+                paginas.append({
+                    'numero': num_pagina,
+                    'texto': page_text
+                })
         
         return paginas
     except Exception as e:

@@ -1,0 +1,28 @@
+26-05-2026 08:33:00 - Navegador abierto y página cargada
+26-05-2026 08:33:00 - Redirigido a la página de login
+26-05-2026 08:33:01 - Usuario ingresado
+26-05-2026 08:33:02 - Contraseña ingresada
+26-05-2026 08:33:03 - Perfil 'Soporte' seleccionado
+26-05-2026 08:33:04 - Botón de login presionado
+26-05-2026 08:33:05 - ✅ Imagen agregada al PDF: capturas\captura_inicio_login_compressed.png
+26-05-2026 08:33:05 - ✅ Imagen agregada al PDF: capturas\captura_login_link_compressed.png
+26-05-2026 08:33:05 - ✅ Imagen agregada al PDF: capturas\captura_usuario_compressed.png
+26-05-2026 08:33:05 - ✅ Imagen agregada al PDF: capturas\captura_password_compressed.png
+26-05-2026 08:33:05 - ✅ Imagen agregada al PDF: capturas\captura_perfil_compressed.png
+26-05-2026 08:33:05 - ✅ Imagen agregada al PDF: capturas\captura_login_compressed.png
+26-05-2026 08:33:05 - ✅ PDF guardado correctamente en 0.77 segundos.
+26-05-2026 08:33:05 - PDF consolidado generado exitosamente
+28-05-2026 16:08:04 - Navegador abierto y página cargada
+28-05-2026 16:08:04 - Redirigido a la página de login
+28-05-2026 16:08:05 - Usuario ingresado
+28-05-2026 16:08:06 - Contraseña ingresada
+28-05-2026 16:08:07 - Perfil 'Soporte' seleccionado
+28-05-2026 16:08:08 - Botón de login presionado
+28-05-2026 16:08:09 - ✅ Imagen agregada al PDF: capturas\captura_inicio_login_compressed.png
+28-05-2026 16:08:09 - ✅ Imagen agregada al PDF: capturas\captura_login_link_compressed.png
+28-05-2026 16:08:09 - ✅ Imagen agregada al PDF: capturas\captura_usuario_compressed.png
+28-05-2026 16:08:09 - ✅ Imagen agregada al PDF: capturas\captura_password_compressed.png
+28-05-2026 16:08:09 - ✅ Imagen agregada al PDF: capturas\captura_perfil_compressed.png
+28-05-2026 16:08:09 - ✅ Imagen agregada al PDF: capturas\captura_login_compressed.png
+28-05-2026 16:08:09 - ✅ PDF guardado correctamente en 0.88 segundos.
+28-05-2026 16:08:09 - PDF consolidado generado exitosamente

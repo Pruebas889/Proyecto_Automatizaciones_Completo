@@ -1,0 +1,14 @@
+26-05-2026 08:33:06 - Se hizo clic en el botón del logo de 'POSWEB' correctamente.
+26-05-2026 08:33:07 - Se hizo clic en el botón de 'Logout' correctamente.
+26-05-2026 08:33:08 - ✅ Imagen agregada al PDF: capturas\logout_compressed.png
+26-05-2026 08:33:08 - ✅ Imagen agregada al PDF: capturas\captura_logout_compressed.png
+26-05-2026 08:33:08 - ✅ Imagen agregada al PDF: capturas\captura_logout_final_compressed.png
+26-05-2026 08:33:08 - ✅ PDF guardado correctamente en 0.35 segundos.
+26-05-2026 08:33:08 - PDF consolidado generado exitosamente
+28-05-2026 16:08:10 - Se hizo clic en el botón del logo de 'POSWEB' correctamente.
+28-05-2026 16:08:11 - Se hizo clic en el botón de 'Logout' correctamente.
+28-05-2026 16:08:12 - ✅ Imagen agregada al PDF: capturas\logout_compressed.png
+28-05-2026 16:08:12 - ✅ Imagen agregada al PDF: capturas\captura_logout_compressed.png
+28-05-2026 16:08:12 - ✅ Imagen agregada al PDF: capturas\captura_logout_final_compressed.png
+28-05-2026 16:08:12 - ✅ PDF guardado correctamente en 0.42 segundos.
+28-05-2026 16:08:12 - PDF consolidado generado exitosamente
