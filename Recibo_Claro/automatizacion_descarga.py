@@ -6,6 +6,7 @@ import glob
 import json
 import sys
 import threading
+import re
 from control_flow import stop_automation_flag
 from selenium.webdriver.support.ui import Select
 from datetime import datetime
@@ -41,26 +42,41 @@ def obtener_nombres_facturas_descargadas(directorio_descarga):
 def cargar_progreso(ruta_archivo: str = 'progreso_descargas.json') -> dict:
     try:
         if os.path.exists(ruta_archivo):
-            with open(ruta_archivo, 'r') as f:
+            with open(ruta_archivo, 'r', encoding='utf-8') as f:
                 progreso = json.load(f)
-                if not all(key in progreso for key in ['ultima_pagina', 'facturas_descargadas', 'facturas_fallidas']):
-                    raise ValueError("Estructura de progreso inválida")
-                return progreso
+                
+                if all(
+                    key in progreso
+                    for key in [
+                        "facturas_descargadas",
+                        "facturas_fallidas"
+                    ]
+                ):
+                    return progreso
+                    
+                
     except Exception as e:
-        logging.warning(f"Error al cargar progreso: {e}. Creando nuevo archivo.")
+        logging.warning(f"Error al cargar progreso: {e}. creando un nuevo archivo.")
+
     return {
-        'ultima_pagina': 1,
-        'facturas_descargadas': [],
-        'facturas_fallidas': [],
-        'ultima_factura_procesada': None
+        "facturas_descargadas": [],
+        "facturas_fallidas": []
     }
 
 def guardar_progreso(progreso: dict, ruta_archivo: str = 'progreso_descargas.json'):
     try:
-        progreso['facturas_descargadas'] = list(dict.fromkeys(progreso['facturas_descargadas']))
-        progreso['facturas_fallidas'] = list(dict.fromkeys(progreso['facturas_fallidas']))
-        with open(ruta_archivo, 'w') as f:
+        
+        progreso["facturas_descargadas"] = list(
+            dict.fromkeys(progreso["facturas_descargadas"])
+        )
+
+        progreso["facturas_fallidas"] = list(
+            dict.fromkeys(progreso["facturas_fallidas"])
+        )
+
+        with open(ruta_archivo, "w", encoding='utf-8') as f:
             json.dump(progreso, f, indent=4, ensure_ascii=False)
+
     except Exception as e:
         logging.error(f"Error al guardar progreso: {e}")
 
@@ -447,6 +463,100 @@ def extraer_info_factura(contenedor):
         return "Información no disponible"
 
 
+def obtener_identificador_factura(contenedor):
+    """
+    Obtiene:
+    Nro. cuenta + Nro. factura
+
+    Devuelve algo como:
+
+    6283212-1153910609
+    """
+
+    try:
+
+        texto = contenedor.text
+
+        logging.info("========== TEXTO DEL CONTENEDOR ==========")
+        logging.info(texto)
+        logging.info("=========================================")
+
+        cuenta = re.search(
+            r'Nro\.\s*cuenta:\s*(\d+)',
+            texto,
+            re.IGNORECASE
+        )
+
+        factura = re.search(
+            r'Nro\.\s*factura:\s*(\d+)',
+            texto,
+            re.IGNORECASE
+        )
+
+        if cuenta and factura:
+
+            numero_cuenta = cuenta.group(1)
+            numero_factura = factura.group(1)
+
+            identificador = f"{numero_cuenta}-{numero_factura}"
+
+            logging.info(
+                f"📄 Identificador encontrado: {identificador}"
+            )
+
+            return identificador
+
+        logging.warning(
+            "⚠️ No se pudo obtener Nro. cuenta o Nro. factura"
+        )
+
+        return None
+
+    except Exception as e:
+
+        logging.warning(
+            f"⚠️ Error obteniendo identificador: {e}"
+        )
+
+        return None
+
+
+def obtener_identificador_por_xpath(driver, indice_contenedor):
+
+    try:
+
+        xpath_cuenta = (
+            f"/html/body/article/div/div[4]/div/div/div/div[2]/div[2]/div/div/div[1]/div[{indice_contenedor}]/div[1]/p[1]"
+        )
+
+        xpath_factura = (
+            f"/html/body/article/div/div[4]/div/div/div/div[2]/div[2]/div/div/div[1]/div[{indice_contenedor}]/div[1]/p[2]"
+        )
+
+        texto_cuenta = driver.find_element(By.XPATH, xpath_cuenta).text
+        texto_factura = driver.find_element(By.XPATH, xpath_factura).text
+
+        logging.info(f"Cuenta encontrada: {texto_cuenta}")
+        logging.info(f"Factura encontrada: {texto_factura}")
+
+        numero_cuenta = re.search(r"\d+", texto_cuenta).group()
+        numero_factura = re.search(r"\d+", texto_factura).group()
+
+        identificador = f"{numero_cuenta}-{numero_factura}"
+
+        logging.info(f"📄 IDENTIFICADOR = {identificador}")
+
+        return identificador
+
+    except Exception as e:
+
+        logging.warning(
+            f"⚠️ Error obteniendo identificador del contenedor {indice_contenedor}: {e}"
+        )
+
+        return None
+
+
 def procesar_contenedores_facturas_dinamico(driver, download_dir, progreso):
     """
     Procesa contenedores de facturas encontrados dinámicamente.
@@ -485,6 +595,20 @@ def procesar_contenedores_facturas_dinamico(driver, download_dir, progreso):
                 # Hacer scroll al contenedor
                 driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", contenedor)
                 time.sleep(1)
+
+                #identificador_factura = obtener_identificador_factura(contenedor)
+                identificador_factura = obtener_identificador_por_xpath(
+                    driver,
+                    idx + 1
+                )
+
+                if identificador_factura is None:
+                    logging.warning("No se pudo obetener el identificador de la factura se omite")
+                    continue
+
+                if identificador_factura in progreso['facturas_descargadas']:
+                    logging.info(f"{identificador_factura} ya existe en el json. Saltando factura.")
+                    continue
                 
                 # Encontrar botón de descarga
                 boton_descarga = encontrar_boton_descarga_en_contenedor(driver, contenedor, idx)
@@ -501,7 +625,9 @@ def procesar_contenedores_facturas_dinamico(driver, download_dir, progreso):
                     logging.info(f"  ✅ Clic exitoso en botón de descarga")
                     pausa_humana(2, 4)
                     descargas_exitosas += 1
-                    progreso['facturas_descargadas'].append(f"dinamico_{idx}")
+                    if identificador_factura:
+                        progreso['facturas_descargadas'].append(identificador_factura)
+                        guardar_progreso(progreso)
                     
                 except Exception as e:
                     logging.error(f"  ❌ Error al hacer clic: {e}")
@@ -807,6 +933,22 @@ def automatizar_claro_empresas_completo(username, password, download_dir, anio, 
                         return el;
                     """, btn)
 
+                    identificador_factura = obtener_identificador_por_xpath(
+                        driver,
+                        i + 1
+                    )
+
+                    if identificador_factura in progreso["facturas_descargadas"]:
+
+                        logging.info(
+                            f"⏭ Factura ya descargada: {identificador_factura}"
+                        )
+
+                        i += 1
+
+                        continue
+
+
                     driver.execute_script("arguments[0].click();", boton_real)
                     time.sleep(5)
 
@@ -830,17 +972,38 @@ def automatizar_claro_empresas_completo(username, password, download_dir, anio, 
                     logging.info(f"✅ Descarga OK factura {i+1}")
                     contador_facturas += 1
 
-                    factura_id = f"pagina_{pagina}_factura_{i+1}"
-                    progreso['facturas_descargadas'].append(factura_id)
-                    guardar_progreso(progreso)
+                    identificador_factura = obtener_identificador_por_xpath(
+                        driver,
+                        i + 1
+                    )
+
+                    if identificador_factura:
+
+                        if identificador_factura not in progreso["facturas_descargadas"]:
+
+                            progreso["facturas_descargadas"].append(
+                                identificador_factura
+                            )
+
+                            guardar_progreso(progreso)
+
+                            logging.info(
+                                f"✅ Guardado en JSON: {identificador_factura}"
+                            )
+
+                        else:
+
+                            logging.info(
+                                f"⏭ Ya existía en JSON: {identificador_factura}"
+                            )
+
+                    
 
                     if contador_facturas % 10 == 0:
                         pausa_random = random.randint(30, 60)
                         logging.info(f"⏸️ Pausa aleatoria de {pausa_random} segundos (anti-bloqueo)...")
                         time.sleep(pausa_random)
-                    factura_id = f"pagina_{pagina}_factura_{i+1}"
-                    progreso['facturas_descargadas'].append(factura_id)
-                    guardar_progreso(progreso)
+                    
                     time.sleep(5)
 
                     # 🔥 CIERRE ROBUSTO DEL MODAL PDF
