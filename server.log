@@ -17196,3 +17196,220 @@ MemoryError
  * Running on http://127.0.0.1:5004
  * Running on http://192.168.20.8:5004
 2026-06-18 08:51:14,268 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-19 07:45:25,062 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-06-19 07:45:25,063 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-19 07:45:27,108 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-06-19 07:45:27,140 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-06-19 07:45:27,140 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-22 10:03:37,570 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-06-22 10:03:37,571 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-22 10:03:39,422 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-06-22 10:03:39,560 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-06-22 10:03:39,562 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-23 07:34:10,461 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-06-23 07:34:10,486 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-23 07:34:11,730 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-06-23 07:34:11,752 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-06-23 07:34:11,753 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 07:56:59,855 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-06-24 07:56:59,857 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 07:57:02,179 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-06-24 07:57:02,274 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-06-24 07:57:02,275 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 07:43:41,582 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-06-25 07:43:41,583 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 07:43:43,594 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-06-25 07:43:43,620 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-06-25 07:43:43,621 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 10:45:50,915 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-06-25 10:45:50,916 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 10:45:53,216 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-06-25 10:45:53,328 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-06-25 10:45:53,329 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-26 08:33:40,697 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-06-26 08:33:40,701 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-26 08:33:42,233 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-06-26 08:33:42,399 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-06-26 08:33:42,404 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-30 08:07:16,350 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-06-30 08:07:16,350 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-30 08:07:18,384 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-06-30 08:07:18,412 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-06-30 08:07:18,412 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-01 07:43:51,475 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-07-01 07:43:51,476 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-01 07:43:53,387 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-07-01 07:43:53,433 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-07-01 07:43:53,433 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-01 08:39:22,464 - INFO - 192.168.20.8 - - [01/Jul/2026 08:39:22] "GET / HTTP/1.1" 200 -
+2026-07-01 08:39:22,670 - INFO - 192.168.20.8 - - [01/Jul/2026 08:39:22] "GET /images/Rebaja.png HTTP/1.1" 200 -
+2026-07-01 08:39:22,721 - INFO - 192.168.20.8 - - [01/Jul/2026 08:39:22] "GET /status HTTP/1.1" 200 -
+2026-07-01 08:39:22,731 - INFO - 192.168.20.8 - - [01/Jul/2026 08:39:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-03 15:35:34,942 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-07-03 15:35:34,943 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-03 15:35:37,206 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-07-03 15:35:37,250 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-07-03 15:35:37,250 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-06 07:59:39,978 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-07-06 07:59:39,979 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-06 07:59:41,971 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-07-06 07:59:41,992 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-07-06 07:59:41,992 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-08 07:46:17,807 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-07-08 07:46:17,808 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-08 07:46:19,803 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-07-08 07:46:19,843 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-07-08 07:46:19,844 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-08 08:10:25,565 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:25] "GET / HTTP/1.1" 200 -
+2026-07-08 08:10:26,239 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-07-08 08:10:26,246 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:26] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:10:26,253 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:26] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:10:26,286 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:26] "[36mGET / HTTP/1.1[0m" 304 -
+2026-07-08 08:10:26,850 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-08 08:10:31,239 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:31] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:10:36,243 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:36] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:10:36,246 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:36] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:10:41,252 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:41] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:10:46,536 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:46] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:10:46,537 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:46] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:10:51,524 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:51] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:10:56,540 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:56] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:10:56,542 - INFO - 192.168.20.8 - - [08/Jul/2026 08:10:56] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:01,530 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:01] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:06,525 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:06] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:11:06,527 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:06] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:11,528 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:11] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:16,538 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:16] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:11:16,540 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:16] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:21,545 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:21] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:26,297 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:26] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:11:26,301 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:26] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:29,739 - INFO - Automatización iniciada. PID: 5752
+2026-07-08 08:11:29,740 - INFO - Iniciando lectura de logs del subproceso...
+2026-07-08 08:11:29,741 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:29] "POST /run-automation HTTP/1.1" 200 -
+2026-07-08 08:11:31,246 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:31] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:31,757 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:31] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:11:36,353 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:36] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:11:36,355 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:36] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:41,538 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:41] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:46,546 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:46] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:11:46,550 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:46] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:51,536 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:51] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:11:56,535 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:56] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:11:56,537 - INFO - 192.168.20.8 - - [08/Jul/2026 08:11:56] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:12:01,534 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:01] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:12:06,531 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:06] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:12:06,533 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:06] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:12:11,538 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:11] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:12:16,528 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:16] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:12:16,529 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:16] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:12:21,527 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:21] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:12:26,530 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:26] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:12:26,533 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:26] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:12:31,527 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:31] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:12:36,537 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:36] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:12:36,538 - INFO - 192.168.20.8 - - [08/Jul/2026 08:12:36] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:13:02,563 - INFO - 192.168.20.8 - - [08/Jul/2026 08:13:02] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:13:02,564 - INFO - 192.168.20.8 - - [08/Jul/2026 08:13:02] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:13:09,023 - INFO - 192.168.20.8 - - [08/Jul/2026 08:13:09] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:13:09,042 - INFO - 192.168.20.8 - - [08/Jul/2026 08:13:09] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:13:11,248 - INFO - 192.168.20.8 - - [08/Jul/2026 08:13:11] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:13:11,676 - INFO - Detenida PID 5752 correctamente.
+2026-07-08 08:13:11,678 - INFO - 192.168.20.8 - - [08/Jul/2026 08:13:11] "POST /stop-automation HTTP/1.1" 200 -
+2026-07-08 08:13:16,248 - INFO - 192.168.20.8 - - [08/Jul/2026 08:13:16] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-08 08:13:16,249 - INFO - 192.168.20.8 - - [08/Jul/2026 08:13:16] "GET /status HTTP/1.1" 200 -
+2026-07-08 08:13:21,243 - INFO - 192.168.20.8 - - [08/Jul/2026 08:13:21] "[33mGET /progress-data HTTP/1.1[0m" 404 -
+2026-07-14 09:30:20,277 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-07-14 09:30:20,278 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-14 09:30:22,379 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-07-14 09:30:22,404 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-07-14 09:30:22,404 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-15 08:43:31,986 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.20.8:5001
+2026-07-15 08:43:31,987 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-15 08:43:33,997 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-07-15 08:43:34,019 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.20.8:5004
+2026-07-15 08:43:34,019 - INFO - [33mPress CTRL+C to quit[0m
