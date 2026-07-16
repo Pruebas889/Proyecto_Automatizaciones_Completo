@@ -1,0 +1,8 @@
+fecha,usuario,plantilla_id,plantilla,rol,archivo,total,ok,errores,modo_prueba
+2026-07-15 13:35:00,carlos,1,prueba-firma-docuseal,Segunda Parte,lista_prueba.csv,3,3,0,SI
+2026-07-15 13:45:37,carlos,11108,OTROSÍ CLÁUSULA ANTICORRUPCIÓN Y ÉTICA (1),Primera Parte,lista_de_correos.xlsx,8,8,0,SI
+2026-07-15 14:05:05,carlos,11108,OTROSÍ CLÁUSULA ANTICORRUPCIÓN Y ÉTICA (1),Segunda Parte,lista_de_correos.xlsx,8,8,0,NO
+2026-07-15 14:57:36,carlos_marroquin@copservir.com,11108,OTROSÍ CLÁUSULA ANTICORRUPCIÓN Y ÉTICA (1),Segunda Parte,lista_de_correos.xlsx,8,8,0,NO
+2026-07-16 07:21:07,carlos_marroquin@copservir.com,11108,OTROSÍ CLÁUSULA ANTICORRUPCIÓN Y ÉTICA (1),Segunda Parte,lista_de_correos.xlsx,8,8,0,NO
+2026-07-16 08:39:55,carlos_marroquin@copservir.com,11108,OTROSÍ CLÁUSULA ANTICORRUPCIÓN Y ÉTICA (1),Segunda Parte,lista_de_correos.xlsx,8,8,0,NO
+2026-07-16 09:49:22,carlos_marroquin@copservir.com,11108,OTROSÍ CLÁUSULA ANTICORRUPCIÓN Y ÉTICA (1),Segunda Parte,lista_de_correos.xlsx,8,8,0,NO

@@ -17413,3 +17413,25 @@ MemoryError
  * Running on http://127.0.0.1:5004
  * Running on http://192.168.20.8:5004
 2026-07-15 08:43:34,019 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-16 09:22:55,713 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.21.33:5001
+2026-07-16 09:22:55,715 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-16 09:22:57,789 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-07-16 09:22:57,817 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.21.33:5004
+2026-07-16 09:22:57,817 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-16 09:45:49,376 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.21.33:5001
+2026-07-16 09:45:49,376 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-16 09:45:51,394 - INFO - Servidor iniciado en http://192.168.20.8:5004
+2026-07-16 09:45:51,417 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5004
+ * Running on http://192.168.21.33:5004
+2026-07-16 09:45:51,417 - INFO - [33mPress CTRL+C to quit[0m

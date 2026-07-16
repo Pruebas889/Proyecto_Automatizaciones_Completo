@@ -35,6 +35,7 @@ PORT_MENSAJEROS = 5007
 PORT_REPORTES = 5008
 PORT_APROBADOS = 5009
 PORT_PDF = 5010
+PORT_MASIVO = 8450  # panel Firmas Masivas (Docuseal_Masivo\panel\panel.py)
 
 def get_db_connection():
     print("Configuración de conexión:", db_config)
@@ -122,6 +123,13 @@ def login_docuseal():
     if session.get('logged_in') and session.get('role') == 'DocusealOP':
         return redirect(f'http://192.168.20.8:{PORT_DOCUSEAL}')
     return app.send_static_file('index.html')
+
+@app.route('/login_masivo')
+def login_masivo():
+    # Firmas Masivas no usa el login MySQL: el panel tiene su propio login DocuSeal.
+    # Redirige al mismo host donde el usuario abrio el dashboard (local o servidor).
+    host = request.host.split(':')[0]
+    return redirect(f'http://{host}:{PORT_MASIVO}')
 
 @app.route('/login_pdf')
 def login_pdf():
@@ -307,6 +315,7 @@ if __name__ == '__main__':
     reportes_server_path = os.path.join ("Reportes.F.E", "server.py")
     aprobados_server_path = os.path.join ("Aprobados-Asana-", "server.py")
     pdf_server_path = os.path.join ("Automatizacion_PDF", "server.py")
+    masivo_server_path = os.path.join ("Docuseal_Masivo", "server.py")
 
     
     if not os.path.exists(claro_server_path):
@@ -367,7 +376,13 @@ if __name__ == '__main__':
     else:
         subprocess.Popen(["python", docuseal_server_path], cwd=os.getcwd())
         time.sleep(1)
-        
+
+    if not os.path.exists(masivo_server_path):
+        print(f"Error: No se encontró {masivo_server_path}")
+    else:
+        subprocess.Popen(["python", masivo_server_path], cwd=os.getcwd())
+        time.sleep(1)
+
 
     print(f"Servidor principal iniciado en el puerto {PORT_MAIN}")
     print(f"Servidor de Claro iniciado en el puerto {PORT_CLARO}")
@@ -381,6 +396,7 @@ if __name__ == '__main__':
     print(f"Servidor de PDF iniciado en el puerto {PORT_PDF}")
 
     print(f"Servidor de DocusealOP iniciado en el puerto {PORT_DOCUSEAL}")
+    print(f"Servidor de Firmas Masivas iniciado en el puerto {PORT_MASIVO}")
 
     app.run(host='0.0.0.0', port=PORT_MAIN, debug=True, use_reloader=False)
 
